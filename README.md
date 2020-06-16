@@ -1,3 +1,3 @@
 # Cameron Class Resume / Demo sites
 
-[OlegsPage](/demo/OlegsPage)
+[OlegsPage](https://kamrankutumov.github.io/demo/OlegsPage/){:target="_blank"}
