@@ -1,2 +1,2 @@
-# kamrankutumov.github.io
+# Cameron Class Resume / Demo sites
 My Resume and Demo sites
