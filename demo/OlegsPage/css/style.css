@@ -675,6 +675,10 @@ a {
   border-bottom: 3px solid #272838;
 }
 
+.menu-item:last-child {
+  border-bottom: none;
+}
+
 .menu-item a {
   display: flex;
   justify-content: center;
@@ -1136,7 +1140,7 @@ a {
   }
 
   .menu {
-    padding-bottom: 65px;
+    margin-bottom: 65px;
   }
 
   .button-start {
