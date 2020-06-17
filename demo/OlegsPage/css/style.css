@@ -1059,10 +1059,6 @@ a {
     letter-spacing: 0.02em;
   }
 
-  /* .menu {
-    margin-bottom: 65px;
-  } */
-
   .button-start {
     width: 184px;
     height: 184px;
@@ -1146,6 +1142,33 @@ a {
     clip-path: polygon(13.5% 8.5%, 18.3% 0, 100% 0, 100% 100%, 0 100%, 0 0, 8.6% 0);
     -webkit-clip-path: polygon(13.5% 8.5%, 18.3% 0, 100% 0, 100% 100%, 0 100%, 0 0, 8.6% 0);
   }
+}
+
+/* Android */
+@media (min-width: 340px) and (max-width: 370px) {
+  .header__content h1 span{
+    font-size: 36px;
+  }
+  .app__time{
+    font-size: 10px;
+  }
+  .footer ul li a{
+    font-size: 12px;
+  }
+  .footer p{
+    font-size: 9px;
+  }
+  .button-start{
+    width: 157px;
+    height: 157px;
+  }
+  .menu-item a,
+  .buy-modal__price p,
+  .choose p,
+  .contact-btn{
+    font-size: 14px;
+  }
+
 }
 
 /* Iphone 5 */
