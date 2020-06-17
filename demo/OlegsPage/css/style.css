@@ -675,16 +675,6 @@ a {
   border-bottom: 3px solid #272838;
 }
 
-.menu-item:first-child {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.menu-item:last-child {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .menu-item a {
   display: flex;
   justify-content: center;
