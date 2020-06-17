@@ -983,6 +983,7 @@ a {
 }
 
 .about .buy-modal__content {
+  height: auto;
   display: block;
   padding-top: 50px;
 }
@@ -1033,7 +1034,7 @@ a {
 
 /* About */
 .about .buy-modal {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   height: auto;
 }
 
