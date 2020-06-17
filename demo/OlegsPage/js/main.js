@@ -8,17 +8,24 @@ $(function () {
 
 $(document).ready(function () {
   $(".js-hamburber-header").click(function () {
-    $(".expand-menu").toggleClass("menu-opened", 1000);
+    $(".expand-menu").toggleClass("menu-opened");
     $(this).toggleClass("is-active");
-    $("html").toggleClass("lock");
     $("body").toggleClass("lock");
+
+    if ($(".fixed-menu").hasClass("fixed-menu-active") && ($(window).scrollTop() > 250)) {
+      $("div.fixed-menu").addClass("fixed-menu-active");
+    } else {
+      $("div.fixed-menu").toggleClass("fixed-menu-active");
+    }
   });
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 150) {
+    if ($(window).scrollTop() > 250) {
       $(".header__logo").addClass("header__logo-active");
+      $(".fixed-menu").addClass("fixed-menu-active");
     } else {
       $(".header__logo").removeClass("header__logo-active");
+      $(".fixed-menu").removeClass("fixed-menu-active");
     }
   });
 
