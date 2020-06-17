@@ -894,7 +894,7 @@ a {
 /* Contact */
 .contact .buy-modal,
 .about .buy-modal {
-  height: 100vh;
+  height: auto;
   left: 0;
   z-index: 5;
   position: static;
