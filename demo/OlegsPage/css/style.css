@@ -956,7 +956,7 @@ a {
 
 /* About */
 .about .buy-modal {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   height: auto;
 }
 
