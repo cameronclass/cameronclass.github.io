@@ -909,6 +909,7 @@ a {
   height: auto;
   display: block;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contact p {
@@ -956,7 +957,6 @@ a {
 
 /* About */
 .about .buy-modal {
-  margin-bottom: 50px;
   height: auto;
 }
 
