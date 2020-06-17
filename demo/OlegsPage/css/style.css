@@ -987,9 +987,18 @@ a {
   margin: 0 auto;
 }
 
+.contact-btn-block{
+  width: 100%;
+  background: linear-gradient(108.98deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
 .contact-btn {
-  background-color: #464e6b;
-  border-radius: 10px 10px 0px 0px;
+  display: block;
+  background: transparent;
+
+  border-radius: 10px 10px 0 0;
   font-size: 16px;
   color: #039be5;
   text-transform: inherit;
@@ -997,8 +1006,8 @@ a {
   font-weight: normal;
   letter-spacing: 0.02em;
   padding: 20px 24px 19px;
-  margin-bottom: 1px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 3px solid #272838;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1007,7 +1016,8 @@ a {
 .contact-btn:last-child {
   color: #55cd6c;
   letter-spacing: 0.01em;
-  border-radius: 0px 0px 10px 10px;
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
 }
 
 .btn-function {
@@ -1044,6 +1054,7 @@ a {
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .about p span {
@@ -1069,9 +1080,20 @@ a {
   line-height: 22px;
 }
 
+.sent .sent-btn,
+.sent-2 .sent-btn,
+.error-page .sent-btn{
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  background: #303141;
+  border-radius: 0 0 10px 10px;
+}
+
 .sent-2 .buy-modal__price {
   height: 278px;
-  padding: 61px 0 0;
+  padding: 85px 0 0;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -1127,6 +1149,9 @@ a {
   height: 352px;
   display: flex;
   align-items: center;
+}
+.error-page .buy-modal__price p{
+  margin: 0 auto 50px;
 }
 
 /* Media Quaries */
