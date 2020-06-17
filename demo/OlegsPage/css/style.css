@@ -28,18 +28,6 @@ span {
   overflow: hidden;
 }
 
-.lock-2 {
-  overflow: hidden;
-}
-
-.lock-3 {
-  overflow: hidden;
-}
-
-.lock-4 {
-  overflow: hidden;
-}
-
 :-moz-any-link:focus {
   outline: none;
 }
@@ -54,6 +42,7 @@ a {
   -moz-appearance: none;
   border: none;
   background: none;
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -86,13 +75,12 @@ a {
   text-decoration: none;
   font-family: "soft";
   position: relative;
-  top: 1px;
+  top: 3px;
   opacity: 0;
   transition: 200ms;
 }
 
 .lock .header__logo a,
-.popup-before .header__logo a,
 .header-others .header__logo a,
 .buy-modal .header__logo a,
 .header__logo-active a {
@@ -156,16 +144,16 @@ a {
   background: linear-gradient(90deg, rgba(77, 145, 207, 1) 0%, rgba(78, 148, 209, 1) 50%, rgba(78, 150, 210, 1) 100%);
   clip-path: polygon(100% 0,
       100% 20%,
-      20% 20%,
-      14.7% 100%,
-      9.4% 20%,
+      76px 20%,
+      55px 100%,
+      34px 20%,
       0 20%,
       0 0);
   -webkit-clip-path: polygon(100% 0,
       100% 20%,
-      20% 20%,
-      14.7% 100%,
-      9.4% 20%,
+      76px 20%,
+      55px 100%,
+      34px 20%,
       0 20%,
       0 0);
 }
@@ -215,10 +203,6 @@ a {
 .social__text ul li span {
   display: block;
   text-transform: uppercase;
-}
-
-.social__text ul li img {
-  margin-left: -1px;
 }
 
 .social__message {
@@ -432,7 +416,8 @@ a {
   justify-content: center;
   text-align: center;
 }
-.footer__logo img{
+
+.footer__logo img {
   margin: 0 auto;
   width: 46.28px;
   height: 55.28px;
@@ -775,29 +760,18 @@ a {
   position: relative;
 }
 
-.buy-modal {
-  width: 100%;
+.buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
-  background-color: #272838;
-  position: fixed;
-  top: 0;
-  right: -100%;
-  /* -100 */
-  z-index: 106;
-  transition: 400ms ease-in-out;
-}
-
-.buy-modal .bg-active-color {
-  z-index: 105;
-}
-
-.buy-modal_active {
-  right: 0;
+  width: 92.2%;
+  margin: 0 auto;
 }
 
 .buy-modal__content {
   width: 92.2%;
-  height: 90vh;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -849,7 +823,7 @@ a {
   display: flex;
   align-items: center;
   position: relative;
-  left: 1px;
+  left: 4px;
 }
 
 .price__value span {
@@ -862,16 +836,17 @@ a {
 }
 
 .price__icons {
-  width: 90.4%;
+  width: 88.4%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  bottom: 9px;
+  bottom: 14px;
 }
 
 .price__icons img {
   display: block;
+  width: 156px;
 }
 
 .return {
@@ -888,78 +863,25 @@ a {
   letter-spacing: 0.17605633802816903vh;
 }
 
-.buy-img_1 {
-  width: 12.5px;
-  height: 13.23px;
+.choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding-top: 50px;
 }
 
-.buy-img_2 {
-  width: 36.75px;
-  height: 13.23px;
-}
-
-.buy-img_3 {
-  width: 44.11px;
-  height: 20.58px;
-}
-
-/* pop up */
-.popup-before {
-  background-color: #272838;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  z-index: 104;
-  -webkit-transition: 500ms ease;
-  -o-transition: 500ms ease;
-  transition: 500ms ease;
-  transform: translate3d(0, 0, 0);
-}
-
-.popup {
-  position: fixed;
-  transform: translate3d(0, 0, 0);
-  top: 54%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
-  background-color: #272838;
-  z-index: 105;
-  opacity: 1;
-  text-align: center;
-  -webkit-transition: 500ms ease;
-  -o-transition: 500ms ease;
-  transition: 500ms ease;
-  color: white;
-}
-
-.popup-fade .bg-active-color {
-  z-index: 105;
-}
-
-.popup p {
+.choose p {
   font-size: 16px;
   line-height: 20px;
-  padding-left: 1.7vh;
-  margin-bottom: 7vh;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 25px;
 }
 
 .popup-content {
   margin-top: 150px;
-}
-
-.popup-before,
-.popup {
-  left: -100%;
-  /* -100 */
-}
-
-.popup-fade-active .popup-before,
-.popup-fade-active .popup {
-  left: 0;
 }
 
 /* Redactor */
@@ -972,13 +894,14 @@ a {
 /* Contact */
 .contact .buy-modal,
 .about .buy-modal {
+  height: 100vh;
   left: 0;
   z-index: 5;
   position: static;
 }
 
 .contact .buy-modal__price {
-  padding: 90px 0;
+  padding: 110px 0;
   width: 100%;
 }
 
@@ -993,7 +916,7 @@ a {
   margin: 0 auto;
 }
 
-.contact-btn-block{
+.contact-btn-block {
   width: 100%;
   background: linear-gradient(108.98deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
   border-radius: 10px;
@@ -1003,7 +926,6 @@ a {
 .contact-btn {
   display: block;
   background: transparent;
-
   border-radius: 10px 10px 0 0;
   font-size: 16px;
   color: #039be5;
@@ -1088,7 +1010,7 @@ a {
 
 .sent .sent-btn,
 .sent-2 .sent-btn,
-.error-page .sent-btn{
+.error-page .sent-btn {
   width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -1154,9 +1076,9 @@ a {
 .error-page .buy-modal__price {
   height: 352px;
   display: flex;
-  align-items: center;
 }
-.error-page .buy-modal__price p{
+
+.error-page .buy-modal__price p {
   margin: 0 auto 50px;
 }
 
@@ -1170,9 +1092,9 @@ a {
     letter-spacing: 0.02em;
   }
 
-  .menu {
+  /* .menu {
     margin-bottom: 65px;
-  }
+  } */
 
   .button-start {
     width: 184px;
@@ -1240,16 +1162,16 @@ a {
   .clip-path {
     clip-path: polygon(100% 0,
         100% 20%,
-        18.4% 20%,
-        13.5% 100%,
-        8.7% 20%,
+        77px 20%,
+        56px 100%,
+        35px 20%,
         0 20%,
         0 0);
     -webkit-clip-path: polygon(100% 0,
         100% 20%,
-        18.4% 20%,
-        13.5% 100%,
-        8.7% 20%,
+        77px 20%,
+        56px 100%,
+        35px 20%,
         0 20%,
         0 0);
   }
@@ -1346,16 +1268,16 @@ a {
   .clip-path {
     clip-path: polygon(100% 0,
         100% 20%,
-        20.7% 20%,
-        14.5% 100%,
-        8% 20%,
+        76px 20%,
+        55px 100%,
+        34px 20%,
         0 20%,
         0 0);
     -webkit-clip-path: polygon(100% 0,
         100% 20%,
-        20.7% 20%,
-        14.5% 100%,
-        8% 20%,
+        76px 20%,
+        55px 100%,
+        34px 20%,
         0 20%,
         0 0);
   }

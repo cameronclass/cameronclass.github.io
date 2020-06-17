@@ -51,7 +51,7 @@
     </div>
     <header class="container-fluid header-others">
       <div class="container-fluid menu__box-shadow">
-        <div class="container-fluid fixed-menu-active fixed-menu">
+        <div class="container-fluid fixed-menu fixed-menu-others">
           <div class="header__menu">
             <div class="header__logo">
               <a href="#">намекатор</a>
@@ -76,86 +76,17 @@
         </div>
       </div>
     </header>
-    <main class="container-fluid contact">
+    <main class="container-fluid contact sent-2">
       <div class="buy-modal">
         <div class="buy-modal__content">
           <div class="buy-modal__price">
-            <p>Вы можете отправить Намек в ответ, даже если не знаете, от кого он.</p>
+            <p>Что бы отправить Намёк в ответ скопируйте ID.</p>
+            <button id="js-copy" class="main-btn sent-btn">Копировать <span>ID_1234567890</span></button>
           </div>
-          <div class="contact-btn-block">
-            <a href="#" class="main-btn contact-btn btn-function"><span>Отправить Намёк в ответ</span> <img src="img/arrow.svg" alt=""></a>
-            <a href="sent.html" class="main-btn contact-btn btn-function"><span>Уведомить отправителя о прочтении</span> <img src="img/arrow.svg" alt=""></a>
-          </div>
+          <a href="choose-mesenger.html" class="main-btn">создать намёк</a>
         </div>
       </div>
     </main>
-    <!-- Modal -->
-    <div class="popup-fade">
-      <div class="popup-before">
-        <div class="container-fluid fixed-menu-active fixed-menu ">
-          <div class="header__menu">
-            <div class="header__logo">
-              <a href="#">намекатор</a>
-            </div>
-            <button class="hamburger hamburger--spring is-active js-close-popup">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="popup">
-        <p>Выберите мессенджер<br> что бы продолжить</p>
-        <div class="social-link__content popup-content">
-          <div class="button-start click_pay-html">
-            <div class="button-start__header">
-              <h3 class="app__whatsapp">Бот <br> Whats App</h3>
-              <img src="img/whatsapp.svg" alt="">
-            </div>
-            <div class="button-start__content"> Создать <br> Намёк </div>
-            <div class="button-start__footer"> Напиши Привет </div>
-          </div>
-          <div class="button-start click_pay-html">
-            <div class="button-start__header">
-              <h3 class="app__telegram">Бот <br> Telegram</h3>
-              <img src="img/telegram.svg" alt="">
-            </div>
-            <div class="button-start__content"> Создать <br> Намёк </div>
-            <div class="button-start__footer"> Нажми Start </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Buy Modal -->
-    <div class="buy-modal">
-      <div class="container-fluid fixed-menu-active fixed-menu">
-        <div class="header__menu">
-          <div class="header__logo">
-            <a href="#">намекатор</a>
-          </div>
-          <button class="hamburger hamburger--spring is-active modal-pay-open modal-pay-close close">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        </div>
-      </div>
-      <div class="buy-modal__content">
-        <div class="buy-modal__price">
-          <p>Оформите заказ и мы отправим Намёк в указанный мессенджер. Уведомим Вас о прочтении</p>
-          <div class="price__section d-ix">
-            <div class="price__value">10.0 <span>RUR</span></div>
-          </div>
-          <div class="price__icons">
-            <img src="img/2.png" class="buy-img_2" alt="">
-            <img src="img/3.png" class="buy-img_3" alt="">
-            <img src="img/1.png" class="buy-img_1" alt="">
-          </div>
-        </div>
-        <a href="#" class="main-btn">Оформить заказ</a>
-      </div>
-    </div>
     <!-- Scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
