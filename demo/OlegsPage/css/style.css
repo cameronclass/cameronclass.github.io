@@ -792,7 +792,7 @@ a {
 
 .buy-modal__content {
   width: 92.2%;
-  height: 100%;
+  height: 95vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
