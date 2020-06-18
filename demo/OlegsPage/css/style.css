@@ -184,8 +184,8 @@ a {
 }
 
 .social__text ul {
-  background: -o-linear-gradient(324.68deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
-  background: linear-gradient(125.32deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  background: rgb(47, 48, 64);
+  background: linear-gradient(125deg, rgba(47, 48, 64, 1) 0%, rgba(39, 40, 56, 1) 100%);
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -238,8 +238,8 @@ a {
 /* Social Card */
 .social__card {
   border-radius: 10px;
-  background: -o-linear-gradient(299.09deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
-  background: linear-gradient(150.91deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  background: rgb(48, 49, 64);
+  background: linear-gradient(150deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
@@ -352,8 +352,8 @@ a {
   height: 164px;
   padding: 9px 10.5px;
   border-radius: 10px;
-  background: -o-linear-gradient(333.54deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
-  background: linear-gradient(116.46deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  background: rgb(48, 49, 64);
+  background: linear-gradient(130deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   color: #fff;
   font-weight: 300;
   text-align: center;
@@ -427,10 +427,8 @@ a {
 
 .footer ul li a {
   color: white;
-  background: rgb(47, 48, 64);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 64, 1)), to(rgba(39, 40, 56, 1)));
-  background: -o-linear-gradient(top, rgba(47, 48, 64, 1) 0%, rgba(39, 40, 56, 1) 100%);
-  background: linear-gradient(180deg, rgba(47, 48, 64, 1) 0%, rgba(39, 40, 56, 1) 100%);
+  background: rgb(48, 49, 64);
+  background: linear-gradient(180deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
@@ -707,8 +705,8 @@ a {
   position: relative;
   list-style: none;
   width: 91.2%;
-  background: -o-linear-gradient(314.09deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
-  background: linear-gradient(135.91deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  background: rgb(48, 49, 64);
+  background: linear-gradient(135deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -828,8 +826,8 @@ a {
 }
 
 .buy-modal__price {
-  background: -o-linear-gradient(320.98deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
-  background: linear-gradient(129.02deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  background: rgb(48, 49, 64);
+  background: linear-gradient(129deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -992,8 +990,8 @@ a {
 
 .contact-btn-block {
   width: 100%;
-  background: -o-linear-gradient(341.02deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
-  background: linear-gradient(108.98deg, #303141 0%, rgba(48, 49, 65, 0) 100%);
+  background: rgb(48, 49, 64);
+  background: linear-gradient(108deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   border-radius: 10px;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
