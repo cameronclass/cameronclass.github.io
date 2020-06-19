@@ -51,6 +51,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-family: "Exo 2", sans-serif;
+}
+
 .container-fluid {
   width: 100%;
   position: relative;
@@ -691,9 +695,9 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-transition: ease 0.5s;
-  -o-transition: ease 0.5s;
-  transition: ease 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   z-index: 20;
   width: 100%;
   height: 100vh;
@@ -851,6 +855,10 @@ a {
   line-height: 1.4;
 }
 
+.price .buy-modal__price p{
+  font-size: 14px;
+}
+
 .price__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -972,8 +980,12 @@ a {
 }
 
 .contact .buy-modal__price {
-  padding: 110px 0;
+  /* padding: 110px 0; */
   width: 100%;
+  height: 219px;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .about .buy-modal__content {
@@ -1001,7 +1013,7 @@ a {
   display: block;
   background: transparent;
   border-radius: 10px 10px 0 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #039be5;
   text-transform: inherit;
   line-height: 19px;
@@ -1454,7 +1466,7 @@ a {
   }
 
   .contact-btn {
-    font-size: 14px;
+    font-size: 16px;
     padding: 18px 10px;
     letter-spacing: inherit;
   }
