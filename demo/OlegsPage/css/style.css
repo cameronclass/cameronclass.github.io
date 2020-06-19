@@ -857,6 +857,9 @@ button {
 
 .price .buy-modal__price p{
   font-size: 14px;
+  width: 94%;
+  padding-top: 4px;
+  letter-spacing: normal;
 }
 
 .price__section {
@@ -1000,6 +1003,8 @@ button {
   margin: 0 auto;
 }
 
+
+
 .contact-btn-block {
   width: 100%;
   background: rgb(48, 49, 64);
@@ -1013,8 +1018,8 @@ button {
   display: block;
   background: transparent;
   border-radius: 10px 10px 0 0;
-  font-size: 18px;
-  color: #039be5;
+  font-size: 16px;
+  color: white;
   text-transform: inherit;
   line-height: 19px;
   font-weight: normal;
@@ -1035,8 +1040,6 @@ button {
 }
 
 .contact-btn:last-child {
-  color: #55cd6c;
-  letter-spacing: 0.01em;
   border-bottom: none;
   border-radius: 0 0 10px 10px;
 }
