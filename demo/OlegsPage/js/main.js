@@ -44,5 +44,21 @@ $(document).ready(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
+    navigation: {
+        nextEl: '.swiper-button-next',
+      },
+  });
+
+  var mySwiper2 = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+      },
   });
 });
