@@ -856,7 +856,7 @@ button {
 }
 
 .price .buy-modal__price p{
-  font-size: 14px;
+  font-size: 16px;
   width: 94%;
   padding-top: 4px;
   letter-spacing: normal;
@@ -954,7 +954,7 @@ button {
 }
 
 .choose p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   color: white;
   text-align: center;
@@ -1022,7 +1022,7 @@ button {
   color: white;
   text-transform: inherit;
   line-height: 19px;
-  font-weight: normal;
+  font-weight: 300;
   letter-spacing: 0.02em;
   padding: 20px 24px 19px;
   border-bottom: 3px solid #272838;
@@ -1153,6 +1153,10 @@ button {
 
 .error-page .buy-modal__price p {
   margin: 0 auto 50px;
+}
+
+.thank-you p{
+  width: 75%;
 }
 
 /* Media Quaries */
@@ -1388,7 +1392,7 @@ button {
   }
 
   .buy-modal__price p {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: inherit;
   }
 
@@ -1467,10 +1471,6 @@ button {
     letter-spacing: inherit;
   }
 
-  .popup p {
-    font-size: 14px;
-    font-weight: 300;
-  }
 
   .about h2 {
     padding: 33px 0;
@@ -1484,5 +1484,8 @@ button {
 
   .policy p {
     width: 100%;
+  }
+  .choose p{
+    font-size: 16px;
   }
 }
