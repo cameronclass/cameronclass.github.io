@@ -1,0 +1,357 @@
+
+// Переменные
+$color1: #62a2f6;
+$color2: #ff2a00;
+$color3: #d1d1d1;
+$color4: #1e905d;
+$color-border: #ccc;
+
+$text-muted: #999;
+$color-category-link: #4b4b4b;
+$color-card-title: #009cf0;
+
+$color-star-rated: #ffbb3d;
+$color-star: #999;
+
+$color-pagination: #f56900;
+
+$font: 'Liberation Sans';
+$font-bold: 'Liberation Sans Bold';
+
+
+@mixin icon($content,  $weight) {
+  font-family: "Font Awesome 5 Free";
+  content: $content;
+  font-weight: $weight;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'Liberation Sans Bold';
+    src: url('../fonts/LiberationSans-Bold.woff2') format('woff2'),
+        url('../fonts/LiberationSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Sans Italic';
+    src: url('../fonts/LiberationSans-Italic.woff2') format('woff2'),
+        url('../fonts/LiberationSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Sans';
+    src: url('../fonts/LiberationSans.woff2') format('woff2'),
+        url('../fonts/LiberationSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Liberation Sans Bold Italic';
+    src: url('../fonts/LiberationSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/LiberationSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+body{
+  font-family: $font;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  transition: 300ms all;
+}
+
+input{
+  font-size: 14px;
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid $color-border;
+  &:focus{
+    outline: none;
+    border-color: $color1;
+  }
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 9px 10px;
+  background-image: none;
+  font-size: 14px;
+}
+
+button{
+  &:focus{
+    outline: none;
+  }
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  font-size: 32px;
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+
+p{
+  line-height: 1.5;
+}
+
+// Container
+.container-fluid{
+  width: 100%;
+}
+
+.container{
+  width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Buttons
+.btn{
+  display: block;
+  color: $color1;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid;
+  text-align: center;
+  transition: 100ms;
+
+  &:hover{
+    background-color: $color1;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+// Js Used Classe
+.d-none{
+  display: none !important;
+}
+.display-block{
+  display: block !important;
+}
+.h-auto{
+  height: auto !important;
+}
+
+
+// Tags
+
+.tags{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  ul{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      margin: 5px 5px 5px 0;
+      a{
+        padding: 10px;
+        color: #636363;
+        display: block;
+        font-size: 14px;
+        text-transform: lowercase;
+        border-radius: 4px;
+        border: 1px solid #cdcdcd;
+        text-align: center;
+        &:hover{
+          background-color: #f3f3f3;
+        }
+      }
+    }
+  }
+}
+
+// Contact
+.contact{
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    li{
+      margin-right: 10px;
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color4;
+        border: 1px solid $color4;
+        padding: 5px;
+        border-radius: 4px;
+        color: white;
+        width: 20px;
+        height: 20px;
+
+        &:hover{
+          background-color: white;
+          color: $color4;
+        }
+      }
+    }
+  }
+}
+
+// Card
+.card{
+  width: 100%;
+  border: 1px solid $color-border;
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    .card__title{
+      color: $color-card-title;
+      font-weight: bold;
+    }
+
+    .card__price{
+      color: #000;
+      font-size: 20px;
+      font-weight: bolder;
+      &:after{
+        content: "₽";
+        margin-left: 5px;
+        font-weight: bolder;
+      }
+    }
+
+    .author__name{
+      font-weight: 300;
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: rgb(35,167,27);
+        background: linear-gradient(45deg, rgba(35,167,27,1) 0%, rgba(8,207,14,1) 100%);
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// Stars
+
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text{
+    margin-left: 10px;
+    font-weight: bold;
+    span{
+      color: $color-card-title;
+      font-size: 14px;
+    }
+  }
+
+  &__bookmark{
+    color: $color-border;
+    font-size: 20px;
+    &:hover{
+      color: $color2;
+    }
+  }
+}
+
+.stars{
+  span.rated{
+    color: $color-star-rated;
+  }
+  span{
+    color: $color-star;
+  }
+}
+
+// Pagination
+.pagination{
+
+  ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li{
+      margin: 5px;
+      a{
+        display: block;
+        padding: 8px 14px;
+        border-radius: 4px;
+        color: #000;
+        font-weight: bold;
+        transition: 50ms;
+
+        &:hover{
+          color: #fff;
+          background-color: $color-pagination;
+        }
+      }
+
+      &.active{
+        a{
+          color: #fff;
+          background-color: $color-pagination;
+        }
+      }
+    }
+
+  }
+
+}
+
+.text{
+  ul{
+    padding-left: 18px;
+    li{
+      margin-bottom: 5px;
+    }
+  }
+}

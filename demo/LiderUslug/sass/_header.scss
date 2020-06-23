@@ -1,0 +1,84 @@
+.header{
+  border-bottom: 1px solid $color-border;
+}
+
+.header__block{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 14px 0 10px;
+
+  .header__logo{
+    width: 14%;
+    img{
+      width: 165px;
+    }
+  }
+
+  .header__actions{
+    width: 25.5%;
+    display: flex;
+
+    .header__btn{
+      font-size: 13px;
+    }
+    .header__btn_start{
+      margin-right: 30px;
+    }
+    .header__btn_quick{
+      color: $color2;
+      padding: 8px 19px;
+
+      &:hover{
+        background-color: $color2;
+        color: white;
+      }
+    }
+  }
+
+  .header__search{
+    width: 37%;
+    display: flex;
+
+    .header__search_input{
+      width: 58%;
+      border-radius: 4px 0 0 4px;
+      font-size: 12px;
+      border-right: none;
+    }
+
+    .header__search_btn{
+      border-radius: 0 4px 4px 0;
+      background-color: $color1;
+      color: white;
+      font-size: 13px;
+      border: 1px solid $color1;
+    }
+  }
+
+  .header__controls{
+    width: 9%;
+    display: flex;
+
+    a{
+      margin-right: 16px;
+    }
+
+    i{
+      color: #a6a6a6;
+      font-size: 24px;
+    }
+  }
+
+  .header__login{
+    width: 14.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__login_link{
+      font-size: 14px;
+    }
+  }
+}

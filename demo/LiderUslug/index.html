@@ -24,9 +24,10 @@
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/custom-icon.png">
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/libs.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Fonts -->
+    <!-- Fonts and Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <title>New Project</title>
   </head>
 
@@ -52,7 +53,7 @@
       </div>
     </div>
     <!-- Header -->
-    <header class="container-fluid">
+    <header class="container-fluid header">
       <div class="container header__block">
         <div class="header__logo">
           <a href="#">
@@ -60,21 +61,471 @@
           </a>
         </div>
         <div class="header__actions">
-          <a href="#" class="btn">Разместить задание</a>
-          <a href="#" class="btn">Быстрый заказ</a>
+          <a class="btn header__btn header__btn_start" href="#">Разместить задание</a>
+          <a class="btn header__btn header__btn_quick" href="#">Быстрый заказ</a>
         </div>
-        <div class="header__search"></div>
-        <div class="header__controls"></div>
-        <div class="header__login"></div>
+        <form class="header__search" action="index.html" method="post">
+          <input class="header__search_input" type="text" name="" value="" placeholder="Что нужно сделать?">
+          <button class="btn header__search_btn" type="submit" name="button">Найти специалиста</button>
+        </form>
+        <div class="header__controls">
+          <a href="#"><i class="far fa-heart"></i></a>
+          <a href="#"><i class="fas fa-headphones-alt"></i></a>
+          <a href="#"><i class="fas fa-th"></i></a>
+        </div>
+        <div class="header__login">
+          <a class="header__login_link" href="#">Войти</a>
+          <a class="btn" href="#">Регистрация</a>
+        </div>
       </div>
     </header>
     <!-- Main -->
-    <main>
-      <section></section>
-      <section></section>
+    <main class="container-fluid">
+      <!-- Главная Теги -->
+      <section class="container tags-section">
+        <h1>Услуги Сантехников</h1>
+        <div class="tags">
+          <ul id="js-tags-ul">
+            <li><a href="#">квартире</a></li>
+            <li><a href="#">частном доме</a></li>
+            <li><a href="#">коттедже</a></li>
+            <li><a href="#">под ключ</a></li>
+            <li><a href="#">онлайн</a></li>
+            <li><a href="#">сантехника</a></li>
+            <li><a href="#">ремонт</a></li>
+            <li><a href="#">частные мастера</a></li>
+            <li><a href="#">комрании</a></li>
+            <li><a href="#">на час</a></li>
+            <li><a href="#">квартире</a></li>
+            <li><a href="#">частном доме</a></li>
+            <li><a href="#">коттедже</a></li>
+            <li><a href="#">под ключ</a></li>
+            <li><a href="#">онлайн</a></li>
+            <li><a href="#">сантехника</a></li>
+            <li><a href="#">ремонт</a></li>
+            <li><a href="#">частные мастера</a></li>
+            <li><a href="#">комрании</a></li>
+            <li><a href="#">на час</a></li>
+          </ul>
+          <a class="btn btn-tags js-tags-toogle" href="#">Показать еще</a>
+        </div>
+      </section>
+      <!-- Форма Поиск по объявлениям -->
+      <form class="container content-search" action="#" method="post">
+        <div class="content-search__master">
+          <select>
+            <option value="master1">Мастера по ремонту</option>
+            <option value="master2">Мастера по ремонту 2</option>
+            <option value="master3">Мастера по ремонту 3</option>
+            <option value="master4">Мастера по ремонту 4</option>
+          </select>
+        </div>
+        <div class="content-search__gorod">
+          <select>
+            <option value="master1">Город, Регион или Россия</option>
+            <option value="master2">Мастера по ремонту</option>
+            <option value="master3">Мастера по ремонту</option>
+            <option value="master4">Мастера по ремонту</option>
+          </select>
+        </div>
+        <div class="content-search__rayon">
+          <select>
+            <option value="master1">Радиус / Метро / Район</option>
+            <option value="master2">Мастера по ремонту</option>
+            <option value="master3">Мастера по ремонту</option>
+            <option value="master4">Мастера по ремонту</option>
+          </select>
+        </div>
+        <div class="content-search__poisk">
+          <input type="text" name="" placeholder="Поиск по объявлениям">
+          <button class="btn content-search__btn" type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+      <div class="container catalog">
+        <aside class="catalog__filter">
+          <!-- Общее число предложений в этой категории -->
+          <div class="catalog__filter_title">
+            <span class="catalog__filter_title_number">6892</span>
+            <span class="catalog__filter_title_text">Предложений услуг в этой категории</span>
+          </div>
+          <!-- Тип предложений (Частные, Компании) -->
+          <div class="catalog__filter_radio">
+            <div class="radio-group">
+              <input type="radio" name="tip" id="all-tip" value="Все" checked>
+              <label for="all-tip">Все</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="tip" id="private-tip" value="Частные">
+              <label for="private-tip">Частные</label>
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="tip" id="company-tip" value="Компании">
+              <label for="company-tip">Компании</label>
+            </div>
+          </div>
+          <!-- Тип оплаты за услугу -->
+          <h3>Оплата за услугу</h3>
+          <div class="catalog__filter_pay-price">
+            <input type="number" name="" placeholder="от, руб">
+            <input type="number" name="" placeholder="до, руб">
+          </div>
+          <div class="catalog__filter_pay-type">
+            <label>Наличные <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label>Безналичные <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label>На карту <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label>Безопасная сделка <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <!-- Кнопка поиска -->
+          <a class="btn filter-btn" href="#">Показать все обявления</a>
+          <hr>
+          <h3>Категории</h3>
+          <div class="catalog__filter_category">
+            <a class="return" href="#">Назад</a>
+            <ul class="catalog-ul">
+              <li class="active">
+                <a href="#">Услуги электроника</a>
+                <ul>
+                  <li><a href="#">Услуги электроника Lorem ipsum dolor sit amet.</a></li>
+                  <li><a href="#">Услуги электроника</a></li>
+                  <li><a href="#">Услуги электроника</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Услуги электроника</a>
+              </li>
+              <li>
+                <a href="#">Услуги электроника</a>
+              </li>
+              <li>
+                <a href="#">Услуги электроника</a>
+              </li>
+              <li>
+                <a href="#">Услуги электроника</a>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <!-- Категория теги -->
+          <h3>Также Искали</h3>
+          <div class="catalog__filter_tags tags">
+            <ul>
+              <li><a href="#">Теги</a></li>
+              <li><a href="#">Теги</a></li>
+              <li><a href="#">Теги</a></li>
+              <li><a href="#">Много тегов</a></li>
+              <li><a href="#">Теги</a></li>
+            </ul>
+          </div>
+          <hr>
+          <!-- Категория контакты -->
+          <h3>Расскажите о нас друзьям</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, labore.</p>
+          <div class="catalog__filter_contact contact">
+            <ul>
+              <li><a href="#"><i class="fas fa-bookmark"></i></a></li>
+              <li><a href="#"><i class="fab fa-vk"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+              <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <hr>
+          <div class="catalog__filter_last-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, ex!</p>
+            <a class="btn" href="#">Стать специалистом</a>
+          </div>
+        </aside>
+        <!-- Продукты -->
+        <section class="catalog__products">
+          <!-- Скрытый заголовок -->
+          <h2 class="d-none">Привет Я скрытый заголовок</h2>
+          <!-- Фильрация продуктов -->
+          <div class="catalog__products_view">
+            <div class="catalog__products_view_filter">
+              <button class="js-card-filter" type="button">По популярности</button>
+              <button class="js-card-filter" type="button">По Цене</button>
+            </div>
+            <div class="catalog__products_view_card">
+              <button class="active js-card-table" type="button"><i class="fas fa-th"></i></button>
+              <button class="js-card-list" type="button"><i class="fas fa-list"></i></button>
+            </div>
+          </div>
+          <!-- Карточки продуктов -->
+          <div class="catalog__block">
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+            <!-- Карточка Начало -->
+            <div class="catalog__card card">
+              <img src="./img/catalog/1.png" alt="Catalog image 1">
+              <div class="card__text">
+                <a class="card__title" href="#">Электромонтажные работы в коттеджах, квартирах</a>
+                <span class="card__price">1 500</span>
+                <div class="author__name">Владимир Нелепин</div>
+                <div class="rating">
+                  <div class="stars">
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span class="rated"><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                  </div>
+                  <div class="rating__text"> 3.5 <span>(546)</span></div>
+                  <a class="rating__bookmark" href="#"><i class="fas fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Карточка Конец -->
+          </div>
+          <!-- Продукты Показать еще -->
+          <a class="btn btn-product-more" href="#"><i class="fas fa-redo-alt"></i> Показать еще</a>
+          <!-- Пагинация -->
+          <div class="pagination">
+            <ol>
+              <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li class="active"><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+            </ol>
+          </div>
+          <!-- Продукты Текст -->
+          <div class="text">
+            <h2>Сколько стоит помощь специалиста</h2>
+            <p>Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что консультация с широким активом в значительной степени
+              обуславливает создание системы обучения кадров, соответствует насущным потребностям. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации направлений прогрессивного
+              развития. Разнообразный и богатый опыт новая модель организационной деятельности в значительной степени обуславливает создание форм развития.</p>
+            <p>Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера
+              нашей активности позволяет оценить значение соответствующий условий активизации. Не следует, однако забывать, что консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+              Задача организации, в особенности же начало повседневной работы по формированию позиции способствует подготовки и реализации модели развития.</p>
+            <h2>Сколько стоит помощь специалиста</h2>
+            <p>Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что консультация с широким активом в значительной степени
+              обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+            <p>оварищи! рамки и место обучения кадров в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <p>оварищи! рамки и место обучения кадров в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+            <p>оварищи! рамки и место обучения кадров в значительной степени обуславливает создание направлений прогрессивного развития.</p>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- Footer -->
-    <footer class="footer"></footer>
+    <footer class="container-fluid footer">
+      <div class="container footer__block">
+        <div class="footer__category">
+          <h4>О нас</h4>
+          <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+            <li><a href="#">Ссылка 4</a></li>
+            <li><a href="#">Ссылка 5</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <h4>О нас</h4>
+          <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+            <li><a href="#">Ссылка 4</a></li>
+            <li><a href="#">Ссылка 5</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <h4>О нас</h4>
+          <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+            <li><a href="#">Ссылка 4</a></li>
+            <li><a href="#">Ссылка 5</a></li>
+          </ul>
+        </div>
+        <div class="footer__category">
+          <h4>О нас</h4>
+          <ul>
+            <li><a href="#">Ссылка 1</a></li>
+            <li><a href="#">Ссылка 2</a></li>
+            <li><a href="#">Ссылка 3</a></li>
+            <li><a href="#">Ссылка 4</a></li>
+            <li><a href="#">Ссылка 5</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact contact">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-bookmark"></i></a></li>
+            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <!-- How Write JS Classes -->
     <div id="js-slider" class="my-slider"></div>
     <!-- Scripts -->
