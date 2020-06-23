@@ -11,8 +11,34 @@
 
   .header__logo{
     width: 14%;
+
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #222222;
+    }
+
     img{
-      width: 165px;
+      width: 34px;
+      height: 34px;
+    }
+
+    .logo-text{
+      width: 146px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+
+      span{
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      div{
+        font-size: 12px;
+        text-transform: lowercase;
+      }
     }
   }
 
@@ -54,6 +80,10 @@
       color: white;
       font-size: 13px;
       border: 1px solid $color1;
+
+      &:hover{
+        background-color: darken($color1, 10%);
+      }
     }
   }
 
@@ -63,9 +93,16 @@
 
     a{
       margin-right: 16px;
+
+      &:hover{
+        i{
+          color: black;
+        }
+      }
     }
 
     i{
+      transition: 300ms;
       color: #a6a6a6;
       font-size: 24px;
     }
@@ -79,6 +116,7 @@
 
     .header__login_link{
       font-size: 14px;
+      color: #373737;
     }
   }
 }

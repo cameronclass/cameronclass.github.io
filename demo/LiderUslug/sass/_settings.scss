@@ -84,6 +84,7 @@ input{
   &:focus{
     outline: none;
     border-color: $color1;
+    cursor: pointer;
   }
 }
 
@@ -99,9 +100,18 @@ select{
   padding: 9px 10px;
   background-image: none;
   font-size: 14px;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 button{
+
+  &:hover{
+    cursor: pointer;
+  }
+
   &:focus{
     outline: none;
   }
@@ -245,12 +255,14 @@ p{
     .card__title{
       color: $color-card-title;
       font-weight: bold;
+      margin-bottom: 10px;
     }
 
     .card__price{
       color: #000;
       font-size: 20px;
       font-weight: bolder;
+      margin-bottom: 10px;
       &:after{
         content: "₽";
         margin-left: 5px;
@@ -260,6 +272,7 @@ p{
 
     .author__name{
       font-weight: 300;
+      margin-bottom: 10px;
       &:before{
         content: '';
         display: inline-block;

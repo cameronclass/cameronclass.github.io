@@ -514,6 +514,11 @@
         width: 24%;
         margin-bottom: 20px;
 
+        .card__title{
+          height: 36px;
+          overflow: hidden;
+        }
+
         &:hover{
           box-shadow: 0px 5px 18px -4px rgba(204,204,204,1);
         }
@@ -539,6 +544,10 @@
           object-fit: cover;
         }
 
+        .card__title{
+          height: auto;
+        }
+
         .card__text{
           width: 100%;
           justify-content: space-between;
@@ -547,6 +556,7 @@
     }
 
     .btn-product-more{
+      margin: 10px 0 20px;
       padding: 15px;
       border-color: $color-border;
       color: #333333;
@@ -559,5 +569,9 @@
         background-color: lighten($color-border, 15%);
       }
     }
+  }
+
+  .catalog__pagination{
+    margin-bottom: 20px;
   }
 }
