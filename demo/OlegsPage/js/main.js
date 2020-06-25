@@ -46,3 +46,12 @@ $(document).ready(function () {
     },
   });
 });
+
+
+// Click Copy
+var clipboard = new ClipboardJS('.js-copy');
+
+clipboard.on('success', function(e) {
+   $(e.trigger).text('Скопировано');
+   $(e.trigger).addClass('is-copy');
+});

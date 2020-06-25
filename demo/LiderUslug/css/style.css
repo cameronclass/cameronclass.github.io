@@ -1029,3 +1029,37 @@ p {
         background-color: #f2f2f2; }
   .catalog .catalog__pagination {
     margin-bottom: 20px; }
+
+.master .breadcrumbs {
+  padding: 10px 0 30px; }
+  .master .breadcrumbs ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .master .breadcrumbs ol li {
+      margin-right: 10px; }
+      .master .breadcrumbs ol li:after {
+        content: "|";
+        position: relative;
+        bottom: 2px;
+        margin-left: 10px;
+        color: #999999; }
+      .master .breadcrumbs ol li:last-child::after {
+        display: none; }
+      .master .breadcrumbs ol li a {
+        color: #999999; }
+.master__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
