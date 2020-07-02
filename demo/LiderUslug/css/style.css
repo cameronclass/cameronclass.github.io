@@ -1308,7 +1308,9 @@ hr {
         -ms-flex-pack: center;
             justify-content: center; }
     .master__info .master__image img {
-      width: 180px; }
+      height: 180px;
+      -o-object-fit: contain;
+         object-fit: contain; }
   .master__info .master__text {
     width: 688px; }
   .master__info .master__name {
