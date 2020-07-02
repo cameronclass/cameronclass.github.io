@@ -298,9 +298,21 @@
     }
 
     .master-share{
+      height: auto;
 
-      h4, p{
+      h4{
+        font-size: 22px;
         margin: 0;
+      }
+
+      ul{
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        a{
+          width: 25px;
+          height: 25px;
+        }
       }
     }
   }
