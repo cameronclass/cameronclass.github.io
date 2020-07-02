@@ -47,4 +47,13 @@ $(document).ready(function(){
   //   $(".catalog-ul ul").toggleClass("display-block");
   // });
 
+  $(function(){
+   $('.js-master-readmore').readmore({
+     speed: 500,
+     lessLink: '<div class="js-master-readmore-btn"><a href="#">Свернуть</a></div>',
+     moreLink: '<div class="js-master-readmore-btn"><a href="#">Читать еще</a></div>',
+     collapsedHeight: 58,
+     });
+  });
+
 });
