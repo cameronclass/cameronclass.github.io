@@ -1515,7 +1515,9 @@ hr {
     .master__message .master-share ul {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
-      overflow: auto; }
+      overflow: hidden; }
+      .master__message .master-share ul:hover {
+        overflow: scroll; }
       .master__message .master-share ul a {
         width: 25px;
         height: 25px; }

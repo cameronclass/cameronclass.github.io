@@ -308,7 +308,11 @@
 
       ul{
         flex-wrap: nowrap;
-        overflow: auto;
+        overflow: hidden;
+
+        &:hover{
+          overflow: scroll;
+        }
 
         a{
           width: 25px;
