@@ -1,0 +1,235 @@
+.master-service-details{
+  .breadcrumbs{
+    padding: 10px 0;
+  }
+}
+
+.service{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding:10px 0 15px;
+
+    h1{
+      margin: 0;
+    }
+
+    &_price{
+      font-size: 30px;
+      text-align: right;
+
+      span{
+        color: #d6d1d1;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__details{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .details__sidebar{
+      width: 310px;
+      padding-bottom: 30px;
+
+      .master__name{
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 24px 0;
+
+        .service_rating{
+
+          .number{
+            width: 48px;
+            text-align: right;
+          }
+
+          &_main{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .number{
+              display: flex;
+              align-items: center;
+              color: $color-pagination;
+              margin-right: 15px;
+              i{
+                font-size: 17px;
+                line-height: 0;
+                margin-right: 3px;
+                position: relative;
+                bottom: 1px;
+              }
+              span{
+                font-size: 22px;
+                line-height: 0;
+                color: $color-pagination;
+              }
+            }
+
+            .text{
+              font-size: 18px;
+              font-weight: bold;
+              color: black;
+            }
+          }
+
+          ul{
+            list-style-type: none;
+            margin: 20px 0 0 0;
+            padding: 0;
+
+            li{
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+
+              .number{
+                color: $color4;
+                font-size: 22px;
+                margin-right: 15px;
+              }
+              .text{
+                font-size: 16px;
+                color: black;
+              }
+            }
+          }
+        }
+
+        h3{
+          font-size: 22px;
+          font-weight: normal;
+        }
+        span{
+          color: $color-star;
+          font-size: 14px;
+        }
+      }
+
+      .master__register{
+        padding: 22px 0;
+        border-bottom: 1px solid #ccc;
+
+        &_title{
+          display: flex;
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 20px;
+
+          .icon{
+            width: 25px;
+            color: $color4;
+            margin-right: 15px;
+          }
+
+        }
+
+
+      }
+
+      .sidebar-reviews{
+        padding: 22px 0;
+        border-bottom: 1px solid #ccc;
+
+        .icon-text{
+          margin-top: 25px;
+        }
+      }
+
+      .tags-block{
+        padding: 22px 0;
+        border-bottom: 1px solid #ccc;
+        h3{
+          margin-top: 0;
+        }
+      }
+
+      .sidebar-offer{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 22px;
+        h3{
+          margin-bottom: 15px;
+        }
+        p{
+          font-size: 14px;
+          color: #747474;
+          line-height: 1.2;
+        }
+      }
+
+    }
+
+
+    .details__gallery{
+      width: 688px;
+
+      .service__text{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+  }
+
+
+
+  &__action{
+    border-top: 1px solid #ccc;
+
+    &_views{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      color: #c6c6c6
+    }
+
+    &_block{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .bordered-block{
+    }
+
+    .more{
+      color: #959595;
+    }
+
+    &_text{
+      padding-bottom: 0;
+      border-bottom: 1px solid #ccc;
+      h4{
+        margin-bottom: 10px;
+      }
+      p{
+        margin-top: 5px;
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+    }
+
+    &_contact{
+      border-bottom: 1px solid #ccc;
+    }
+
+  }
+
+}
+
+.master-catalog{
+  padding-bottom: 40px;
+}

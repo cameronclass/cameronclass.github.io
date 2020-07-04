@@ -63,7 +63,6 @@
   }
 
   &__info{
-    width: 1028px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -312,6 +311,7 @@
 
         &:hover{
           overflow: scroll;
+          -webkit-overflow-scrolling: touch;
         }
 
         a{
