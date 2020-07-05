@@ -11,25 +11,6 @@ $( function() {
 
 $(document).ready(function(){
 
-  // Menu dropdown
-  var timer;
-
-  $(".control-btn").on("mouseover", function() {
-    clearTimeout(timer);
-  	openSubmenu();
-  }).on("mouseleave", function() {
-    timer = setTimeout(
-    	closeSubmenu
-    , 200);
-  });
-
-  function openSubmenu() {
-    $(".dropdown-content").addClass("dropdown-content-active");
-  }
-  function closeSubmenu() {
-    $(".dropdown-content").removeClass("dropdown-content-active");
-  }
-
   // Js Toogle
   $(".js-tags-toogle").click(function(){
     $("#js-tags-ul").toggleClass("h-auto");
@@ -74,6 +55,62 @@ $(document).ready(function(){
      collapsedHeight: 58,
      });
   });
+
+
+
+    // $( ".control-btn" ).hover(
+    //   function() {
+    //       $(this).find(".dropdown-content").addClass("dropdown-content-active");
+    //   }, function() {
+    //     // setTimeout(function() {
+    //     	// $(this).find(".dropdown-content").removeClass("dropdown-content-active");
+    //     // }, 200);
+  	//     $(this).find(".dropdown-content").removeClass("dropdown-content-active");
+    //   }
+    // );
+
+    // $( ".control-btn" )
+    // .mouseenter(function() {
+    //      $(this).find(".dropdown-content").addClass("dropdown-content-active");
+    // })
+    // .mouseleave(function() {
+    //     $(this).find(".dropdown-content").removeClass("dropdown-content-active");
+    // });
+
+
+    // Menu dropdown
+    var timer;
+
+    $(".control-btn").on("mouseover", function() {
+      clearTimeout(timer);
+    	openSubmenu();
+    }).on("mouseleave", function() {
+      timer = setTimeout(
+      	closeSubmenu
+      , 200);
+    });
+
+    function openSubmenu() {
+      $(this).find(".dropdown-content").addClass("dropdown-content-active");
+    }
+    function closeSubmenu() {
+      $(this).find(".dropdown-content").removeClass("dropdown-content-active");
+    }
+
+    // $('.control-btn').on({
+    //   mouseenter: function() {
+    //     setTimeout(function() {
+    //       $(this).find(".dropdown-content").addClass("dropdown-content-active");
+    //     }, 0);
+    //   }
+    // });
+    // $('.control-btn').on({
+    //   mouseleave: function() {
+    //     setTimeout(function() {
+    //       $(this).find(".dropdown-content").removeClass("dropdown-content-active");
+    //     }, 500);
+    //   }
+    // });
 
 
 });
