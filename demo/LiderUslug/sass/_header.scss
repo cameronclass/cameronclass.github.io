@@ -64,17 +64,23 @@
   }
 
   .header__search{
-    width: 37%;
+    width: 35%;
     display: flex;
+    position: relative;
 
     .header__search_input{
-      width: 58%;
+      width: 80%;
       border-radius: 4px 0 0 4px;
       font-size: 12px;
       border-right: none;
     }
 
     .header__search_btn{
+      position: absolute;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      padding: 8px 18px;
       border-radius: 0 4px 4px 0;
       background-color: $color1;
       color: white;
@@ -88,23 +94,57 @@
   }
 
   .header__controls{
-    width: 9%;
+    width: 11%;
     display: flex;
+    justify-content: center;
+    position: relative;
 
-    a{
-      margin-right: 16px;
+    .control-btn{
+      padding: 0;
+      margin-right: 9px;
+      margin-left: 9px;
 
       &:hover{
         i{
           color: black;
         }
+
       }
     }
 
-    i{
-      transition: 300ms;
-      color: #a6a6a6;
-      font-size: 24px;
+    img{
+      width: 25px;
+      height: 25px;
+    }
+
+    .dropdown-content{
+      position: absolute;
+      transition: 0ms all;
+      visibility: hidden;
+      top: 38px;
+      width: 200px;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0px 5px 18px -5px rgba(184,184,184,1);
+      transform: translateX(-40%);
+
+       ul{
+         margin: 0;
+         padding: 0;
+         list-style: none;
+
+         li{
+           margin: 10px 0;
+
+           a{
+             transition: 0ms;
+           }
+         }
+       }
+    }
+
+    .dropdown-content-active{
+      visibility: visible;
     }
   }
 
@@ -117,6 +157,11 @@
     .header__login_link{
       font-size: 14px;
       color: #373737;
+      margin-left: 10px;
+    }
+
+    .btn{
+      padding: 8px 18px;
     }
   }
 }

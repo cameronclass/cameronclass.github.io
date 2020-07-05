@@ -197,6 +197,8 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  background: none;
+  border: none;
 }
 
 /**
