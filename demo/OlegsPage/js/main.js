@@ -12,7 +12,10 @@ $(document).ready(function () {
     $(this).toggleClass("is-active");
     $("body").toggleClass("lock");
 
-    if ($(".fixed-menu").hasClass("fixed-menu-active") && ($(window).scrollTop() > 250)) {
+    if (
+      $(".fixed-menu").hasClass("fixed-menu-active") &&
+      $(window).scrollTop() > 250
+    ) {
       $("div.fixed-menu").addClass("fixed-menu-active");
     } else {
       $("div.fixed-menu").toggleClass("fixed-menu-active");
@@ -20,26 +23,35 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 250) {
+    if ($(window).scrollTop() > 470) {
+      $(".js-hamburber-header").addClass("header__logo-active");
       $(".header__logo").addClass("header__logo-active");
       $(".fixed-menu").addClass("fixed-menu-active");
     } else {
+      $(".js-hamburber-header").removeClass("header__logo-active");
       $(".header__logo").removeClass("header__logo-active");
       $(".fixed-menu").removeClass("fixed-menu-active");
     }
   });
-
 });
-
 
 // Slider
 
 $(document).ready(function () {
   //initialize swiper when document ready
-  var mySwiper = new Swiper(".swiper-container", {
+  var mySwiper = new Swiper(".social__about", {
     // Optional parameters
-    direction: "horizontal",
-    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    freeMode: true,
+  });
+});
+
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper2 = new Swiper(".instructions-swiper", {
+    // Optional parameters
+    spaceBetween: 15,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -47,11 +59,10 @@ $(document).ready(function () {
   });
 });
 
-
 // Click Copy
-var clipboard = new ClipboardJS('.js-copy');
+var clipboard = new ClipboardJS(".js-copy");
 
-clipboard.on('success', function(e) {
-   $(e.trigger).text('Скопировано');
-   $(e.trigger).addClass('is-copy');
+clipboard.on("success", function (e) {
+  $(e.trigger).text("Скопировано");
+  $(e.trigger).addClass("is-copy");
 });
