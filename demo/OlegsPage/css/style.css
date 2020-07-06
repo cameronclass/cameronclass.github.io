@@ -1244,48 +1244,6 @@ button {
   .error-page .buy-modal__price {
     height: 354px;
   }
-
-  .clip-path {
-    clip-path: polygon(
-      100% 0,
-      100% 20%,
-      76px 20%,
-      56px 100%,
-      36px 20%,
-      0 20%,
-      0 0
-    );
-    -webkit-clip-path: polygon(
-      100% 0,
-      100% 20%,
-      76px 20%,
-      56px 100%,
-      36px 20%,
-      0 20%,
-      0 0
-    );
-  }
-
-  .footer {
-    clip-path: polygon(
-      13.5% 8.5%,
-      18.3% 0,
-      100% 0,
-      100% 100%,
-      0 100%,
-      0 0,
-      8.6% 0
-    );
-    -webkit-clip-path: polygon(
-      13.5% 8.5%,
-      18.3% 0,
-      100% 0,
-      100% 100%,
-      0 100%,
-      0 0,
-      8.6% 0
-    );
-  }
 }
 
 .sent-2 .js-copy {
@@ -1397,24 +1355,6 @@ button {
 
   .footer {
     padding: 47px 0 18px;
-    clip-path: polygon(
-      14.68% 7%,
-      20.1% 0,
-      100% 0,
-      100% 100%,
-      0 100%,
-      0 0,
-      9% 0
-    );
-    -webkit-clip-path: polygon(
-      14.68% 7%,
-      20.1% 0,
-      100% 0,
-      100% 100%,
-      0 100%,
-      0 0,
-      9% 0
-    );
   }
 
   .footer ul {
@@ -1427,27 +1367,6 @@ button {
 
   .footer p {
     margin-top: 22px;
-  }
-
-  .clip-path {
-    clip-path: polygon(
-      100% 0,
-      100% 20%,
-      67px 20%,
-      46px 100%,
-      25px 20%,
-      0 20%,
-      0 0
-    );
-    -webkit-clip-path: polygon(
-      100% 0,
-      100% 20%,
-      67px 20%,
-      46px 100%,
-      25px 20%,
-      0 20%,
-      0 0
-    );
   }
 
   .buy-modal__price p {
