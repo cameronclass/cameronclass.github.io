@@ -163,6 +163,11 @@ button {
   border-radius: 10px;
 }
 
+.header-others .fixed-menu{
+  opacity: 1;
+  z-index: 101;
+}
+
 .social__text .swiper-slide:first-child {
   margin-left: 35px;
 }
