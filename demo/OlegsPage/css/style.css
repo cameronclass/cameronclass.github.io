@@ -1163,12 +1163,12 @@ button {
   font-size: 10px;
 }
 
-.contact-btn > div > div img{
+.contact-btn > div > div img {
   width: 13px;
   height: 13px;
 }
 
-.contact-btn .contact-btn__block{
+.contact-btn .contact-btn__block {
   width: 30%;
 }
 
@@ -1229,6 +1229,72 @@ button {
   -ms-flex-direction: column;
   flex-direction: column;
   justify-content: center;
+}
+
+.sent .buy-modal__content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Catalog */
+
+.catalog .contact-btn-block{
+  margin-top: 10px;
+}
+
+.catalog-slider {
+  width: 100%;
+}
+
+.catalog__item {
+  width: 100%;
+}
+
+.catalog__block {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+
+.catalog-element {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100px;
+}
+
+.catalog-element img {
+  width: 100%;
+  height: auto;
+}
+
+.catalog-element span {
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.catalog-list-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-list__item {
+  background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
+  border-radius: 2px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  padding-left: 13px;
+  padding-right: 42px;
+  color: #ffffff;
+  margin-bottom: 6px;
 }
 
 /* .sent-btn {

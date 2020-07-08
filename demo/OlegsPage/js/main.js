@@ -57,6 +57,16 @@ $(document).ready(function () {
       clickable: true,
     },
   });
+
+  var swiper3 = new Swiper(".catalog-slider", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
 
 // Click Copy
