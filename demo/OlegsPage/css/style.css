@@ -1473,8 +1473,59 @@ button {
 .about-last .buy-modal__price {
   height: auto;
 }
-.about-last .buy-modal__price{
+.about-last .buy-modal__price {
   margin-bottom: 32px;
+}
+
+.buy-page-btn {
+  text-transform: uppercase;
+}
+
+.price-value {
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.price-value img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.price-value__image {
+  width: 156px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 6px;
+}
+
+.price-value__text {
+  font-weight: 300;
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 9px;
+  color: #ffffff;
+}
+
+.price-value__text span {
+  font-weight: 300;
+  font-size: 22px;
+  position: relative;
+  bottom: 3px;
+}
+
+.buy-last .buy-modal__price p{
+  padding: 0;
+  margin: 25px 0;
+  text-align: left;
+}
+.buy-last p{
+  width: 85.5%;
+  padding-right: 5px;
 }
 
 /* Media Quaries */
