@@ -984,6 +984,7 @@ button {
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   height: 122px;
+  width: 100%;
   font-weight: 300;
   font-size: 18px;
   text-align: center;
@@ -1173,7 +1174,7 @@ button {
 }
 
 .about .buy-modal__content {
-  height: auto;
+  height: 100vh;
   display: block;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1257,10 +1258,15 @@ button {
 }
 
 .about .buy-modal__price {
-  padding: 11px 10px 17px;
+  height: 241px;
   text-align: left;
-  height: auto;
   background: none;
+  padding: 0 26px;
+}
+
+.policy .buy-modal__price p {
+  text-align: left;
+  margin-bottom: 16px;
 }
 
 .about p {
@@ -1293,6 +1299,13 @@ button {
   text-transform: uppercase;
 }
 
+.public-offerty .buy-modal__content {
+  justify-content: center;
+}
+.public-offerty h2 {
+  text-transform: unset;
+}
+
 /* Sent */
 .sent .buy-modal__price {
   height: 352px;
@@ -1304,7 +1317,8 @@ button {
   justify-content: center;
 }
 
-.sent .buy-modal__content {
+.sent .buy-modal__content,
+.public-offerty .buy-modal__content {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -1442,7 +1456,7 @@ button {
   justify-content: flex-start;
 }
 
-.price-last .btn-main{
+.price-last .btn-main {
   padding: 6px 14px;
 }
 
@@ -1453,6 +1467,14 @@ button {
   padding: 31px 30px 0 15px;
   text-align: left;
   letter-spacing: 0.02em;
+}
+
+.about-last .buy-modal__content,
+.about-last .buy-modal__price {
+  height: auto;
+}
+.about-last .buy-modal__price{
+  margin-bottom: 32px;
 }
 
 /* Media Quaries */
