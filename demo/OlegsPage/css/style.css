@@ -1036,6 +1036,7 @@ button {
   display: flex;
   align-items: center;
   letter-spacing: 1px;
+  width: 100%;
 }
 
 .price .buy-modal__price .btn-main {
