@@ -856,7 +856,7 @@ button {
 .buy-modal__content {
   width: 92.2%;
   margin: 0 auto;
-  /* padding-top: 50px; */
+  padding-top: 50px;
 }
 .buy-modal__content-2 {
   display: -webkit-box;
@@ -1129,14 +1129,14 @@ button {
 }
 
 /* Contact */
-/* .contact .buy-modal,
+.contact .buy-modal,
 .about .buy-modal {
   height: auto;
   left: 0;
   z-index: 5;
   position: static;
-} */
-.contact .buy-modal,
+}
+/* .contact .buy-modal,
 .about .buy-modal {
   height: 100vh;
   display: flex;
@@ -1144,7 +1144,7 @@ button {
   left: 0;
   z-index: 5;
   position: static;
-}
+} */
 
 .about .buy-modal__content {
   height: auto;
