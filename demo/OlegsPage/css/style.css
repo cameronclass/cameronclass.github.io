@@ -922,7 +922,7 @@ button {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 21px;
+  margin-top: 32px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 /* choose mesenger */
@@ -1438,279 +1438,32 @@ button {
   height: 58px;
 }
 
-/* .js-copy-text {
-  display: none;
-} */
+.price-last .buy-modal__price {
+  justify-content: flex-start;
+}
+
+.price-last .btn-main{
+  padding: 6px 14px;
+}
+
+.price-last .buy-modal__price h4 {
+  letter-spacing: normal;
+}
+.price-last .buy-modal__price p {
+  padding: 31px 30px 0 15px;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
 
 /* Media Quaries */
 /* Iphone 11 Pro */
 @media (min-width: 400px) and (max-width: 700px) {
-  .social__text_title,
-  .card__content p {
-    font-size: 18px;
-    letter-spacing: 0.02em;
-  }
-
-  .button-start {
-    width: 184px;
-    height: 184px;
-  }
-
-  .buy-modal__content,
-  .social__text ul,
-  .social__card {
-    width: 92.2%;
-  }
-
-  .app__time {
-    padding-right: 8px;
-  }
-
-  .app__name h5 {
-    margin-left: 12px;
-  }
-
-  .card__title {
-    height: 38px;
-  }
-
-  .buy-modal__price p {
-    padding: 0 40px;
-  }
-
-  .buy-modal__price {
-    padding: 82px 23px 140px;
-  }
-
-  .about .buy-modal__price p {
-    padding: 0;
-  }
-
-  .about .buy-modal {
-    height: 90vh;
-  }
-
-  .about h2 {
-    padding: 78px 0;
-  }
-
-  .about .buy-modal__price {
-    padding: 11px 10px 17px;
-  }
-
-  .policy .buy-modal {
-    height: auto;
-  }
-
-  .error-page .buy-modal__price p {
-    font-size: 18px;
-  }
-
-  .error-page .buy-modal__price {
-    height: 354px;
-  }
 }
 
 /* Android */
 @media (min-width: 340px) and (max-width: 370px) {
-  .header__content h1 span {
-    font-size: 36px;
-  }
-
-  .app__time {
-    font-size: 10px;
-  }
-
-  .footer ul li a {
-    font-size: 12px;
-  }
-
-  .footer p {
-    font-size: 9px;
-  }
-
-  .button-start {
-    width: 157px;
-    height: 157px;
-  }
-
-  .menu-item a,
-  .buy-modal__price p,
-  .choose p,
-  .contact-btn {
-    font-size: 14px;
-  }
 }
 
 /* Iphone 5 */
 @media (min-width: 320px) and (max-width: 340px) {
-  .header__content h1 span {
-    font-size: 36px;
-  }
-
-  .header__content h1 {
-    font-size: 16px;
-  }
-
-  .menu-item a {
-    font-size: 14px;
-  }
-
-  .social__text ul li {
-    padding: 20px 12px;
-  }
-
-  .card__content {
-    padding: 0 10px;
-  }
-
-  .app__name h5 {
-    font-size: 14px;
-    margin-left: 23px;
-  }
-
-  .app__telegram {
-    font-size: 16px;
-  }
-
-  .app__time {
-    font-size: 10px;
-  }
-
-  .card__content p {
-    padding-left: 2px;
-  }
-
-  .button-start {
-    width: 136px;
-    height: 136px;
-  }
-
-  .button-start__header h3 {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .button-start__header img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .button-start__content {
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 16px;
-    margin-bottom: -4px;
-  }
-
-  .button-start__footer,
-  .footer ul li a {
-    font-size: 12px;
-  }
-
-  .footer {
-    padding: 47px 0 18px;
-  }
-
-  .footer ul {
-    padding: 0 3px;
-  }
-
-  .footer ul li {
-    margin-bottom: 9px;
-  }
-
-  .footer p {
-    margin-top: 22px;
-  }
-
-  .buy-modal__price p {
-    font-size: 16px;
-    letter-spacing: inherit;
-  }
-
-  .buy-modal__price {
-    padding: 48px 10px 0;
-    height: 279px;
-  }
-
-  .buy-modal__content {
-    width: 90.2%;
-  }
-
-  .d-ix {
-    position: inherit;
-    bottom: inherit;
-  }
-
-  .price__value {
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 58px;
-  }
-
-  .price__section {
-    margin-top: 56px;
-  }
-
-  .price__icons {
-    width: 93%;
-    bottom: 8px;
-  }
-
-  .contact-btn img {
-    width: 20px;
-  }
-
-  .contact-btn {
-    font-size: 16px;
-    padding: 18px 10px;
-    letter-spacing: inherit;
-  }
-
-  .contact p {
-    width: 92%;
-  }
-
-  .sent .buy-modal__price {
-    height: 354px;
-    padding-top: 103px;
-  }
-
-  .sent .buy-modal__price p {
-    font-size: 16px;
-  }
-
-  .sent .sent-btn {
-    margin-top: 121px;
-  }
-
-  .sent-2 .buy-modal__price {
-    height: 279px;
-    padding: 88px 0;
-  }
-
-  .sent-2 .sent-btn {
-    margin-top: 60px;
-    font-size: 14px;
-    letter-spacing: inherit;
-  }
-
-  .about h2 {
-    padding: 33px 0;
-    font-size: 16px;
-  }
-
-  .about .buy-modal__price {
-    height: auto;
-    padding: 11px 8.5px 17px;
-  }
-
-  .policy p {
-    width: 100%;
-  }
-
-  .choose p {
-    font-size: 16px;
-  }
 }
