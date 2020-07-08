@@ -4,6 +4,13 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 5 version
 */
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 5 version
+*/
 @font-face {
   font-family: "soft";
   src: url("../fonts/soft-Bold.woff2") format("woff2"), url("../fonts/soft-Bold.woff") format("woff");
@@ -56,6 +63,7 @@ button {
 
 .btn-main {
   background: #ffffff;
+  -webkit-box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   text-align: center;
@@ -114,7 +122,9 @@ button {
 }
 
 .header__content {
+  background: -o-linear-gradient(286.69deg, #354d9f 9.68%, #519dd7 85.28%);
   background: linear-gradient(163.31deg, #354d9f 9.68%, #519dd7 85.28%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 4;
@@ -164,15 +174,24 @@ button {
   text-align: center;
   width: 142px;
   height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #272838;
   font-size: 16px;
   line-height: 16px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+  background: -o-linear-gradient(top, #ffffff 0%, #cccccc 100%);
   background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
+  -webkit-box-shadow: 2px 3px 0px #303141;
   box-shadow: 2px 3px 0px #303141;
   border-radius: 10px;
 }
@@ -195,26 +214,32 @@ button {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
   margin-left: 50px;
 }
 
 .possibility {
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 20px;
   height: 230px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -258,8 +283,11 @@ button {
 
 .about-service__block {
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background: -o-linear-gradient(308.12deg, #354d9f 0%, #519dd7 143.22%);
   background: linear-gradient(141.88deg, #354d9f 0%, #519dd7 143.22%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   padding: 28px 22px 44px;
@@ -307,7 +335,9 @@ button {
 }
 
 .instructions-slide {
+  background: -o-linear-gradient(263.68deg, #519dd7 11.68%, #354d9f 92.36%);
   background: linear-gradient(186.32deg, #519dd7 11.68%, #354d9f 92.36%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 0 23px;
@@ -338,7 +368,11 @@ button {
   line-height: 24px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -374,10 +408,13 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   width: 164px;
   height: 146px;
+  background: -o-linear-gradient(233.73deg, #354d9f 0%, #519dd7 93.77%);
   background: linear-gradient(216.27deg, #354d9f 0%, #519dd7 93.77%);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   color: #fff;
@@ -400,7 +437,11 @@ button {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.02em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 21px;
   position: relative;
@@ -416,7 +457,11 @@ button {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button-start__footer_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 25px;
   height: 25px;
@@ -439,7 +484,9 @@ button {
 }
 
 .footer {
+  background: -o-linear-gradient(329.49deg, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(120.51deg, #519dd7 0%, #354d9f 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(39, 40, 56, 0.5);
   box-shadow: 0px 4px 4px rgba(39, 40, 56, 0.5);
   padding: 23px 0 20px;
   position: relative;
@@ -464,6 +511,8 @@ button {
 .footer ul li a {
   color: white;
   background: rgb(48, 49, 64);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 49, 64, 1)), to(rgba(38, 39, 56, 1)));
+  background: -o-linear-gradient(top, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   background: linear-gradient(180deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
@@ -772,6 +821,8 @@ button {
   font-weight: 300;
   line-height: 19px;
   letter-spacing: 0.02em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
@@ -799,6 +850,8 @@ button {
 } */
 
 .fixed-menu-others {
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
@@ -880,10 +933,20 @@ button {
   height: 109px;
   font-size: 20px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
   letter-spacing: 0.02em;
@@ -895,6 +958,8 @@ button {
 }
 
 .buy-modal__price {
+  background: -webkit-gradient(linear, left top, left bottom, from(#354d9f), to(#519dd7));
+  background: -o-linear-gradient(top, #354d9f 0%, #519dd7 100%);
   background: linear-gradient(180deg, #354d9f 0%, #519dd7 100%);
   border-radius: 2px;
   margin-bottom: 16px;
@@ -912,7 +977,11 @@ button {
   width: 85%;
   text-align: left;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 33px 0 26px;
 }
@@ -931,11 +1000,14 @@ button {
   background: none;
   padding: 0;
   margin: 0;
+  -webkit-box-shadow: none;
   box-shadow: none;
   border-radius: none;
 }
 
 .choose-mesenger .buy-modal__price {
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
@@ -955,6 +1027,7 @@ button {
   width: 5px;
   height: 5px;
   background: #dadada;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .choose-mesenger .swiper-pagination-bullet-active {
@@ -974,13 +1047,24 @@ button {
   /* padding: 110px 0; */
   width: 100%;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .create__namek-btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   height: 122px;
@@ -989,8 +1073,14 @@ button {
   font-size: 18px;
   text-align: center;
   line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   letter-spacing: 0.02em;
   color: #ffffff;
@@ -1033,7 +1123,11 @@ button {
 }
 
 .price .buy-modal__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   letter-spacing: 1px;
   width: 100%;
@@ -1167,7 +1261,11 @@ button {
 .contact .buy-modal,
 .about .buy-modal {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   left: 0;
   z-index: 5;
@@ -1192,13 +1290,21 @@ button {
 
 .contact-btn {
   display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   letter-spacing: 0.02em;
   padding: 0 25px;
@@ -1210,19 +1316,32 @@ button {
 
 .contact-btn > div {
   width: 103.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 
 .contact-btn > .contact-btn__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .contact-btn > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 10px;
 }
@@ -1283,9 +1402,18 @@ button {
 
 .about h2 {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   color: #dadada;
   height: 109px;
@@ -1301,6 +1429,8 @@ button {
 }
 
 .public-offerty .buy-modal__content {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .public-offerty h2 {
@@ -1315,14 +1445,23 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .sent .buy-modal__content,
 .public-offerty .buy-modal__content {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1341,16 +1480,27 @@ button {
 }
 
 .catalog__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0px 36px;
   height: 224px;
 }
 
 .catalog-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   width: 100px;
@@ -1374,16 +1524,27 @@ button {
 }
 
 .catalog-list-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .catalog-list__item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
+  background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   width: 100%;
   height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.02em;
   padding-left: 14px;
@@ -1444,16 +1605,28 @@ button {
 }
 
 .sent-2 .js-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0;
   height: 58px;
 }
 
 .price-last .buy-modal__price {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -1484,8 +1657,14 @@ button {
 
 .price-value {
   height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 6px;
 }
@@ -1494,12 +1673,15 @@ button {
   width: 100%;
   height: auto;
   display: block;
+  -o-object-fit: contain;
   object-fit: contain;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .price-value__image {
   width: 156px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 6px;
 }
@@ -1538,17 +1720,17 @@ button {
 @media (min-width: 400px) and (max-width: 700px) {
 }
 /* Iphone 6 7 8 */
-@media (min-width: 371) and (max-width: 380px) , (min-height: 650px) and (max-height: 700px){
-  .buy-modal__price{
+@media (min-width: 371) and (max-width: 380px), (min-height: 650px) and (max-height: 700px) {
+  .buy-modal__price {
     height: 225px;
   }
-  .buy-modal__price h3{
+  .buy-modal__price h3 {
     padding: 26px 0 22px;
   }
-  .buy-modal__content h2{
+  .buy-modal__content h2 {
     height: 95px;
   }
-  .contact-btn{
+  .contact-btn {
     height: 54px;
   }
 }
@@ -1558,22 +1740,23 @@ button {
     width: 150px;
     height: 140px;
   }
-  .button-start__content{
+  .button-start__content {
     font-size: 22px;
   }
-  .button-start__footer{
+  .button-start__footer {
     padding: 0 15px;
   }
-  .button-start__footer_title{
+  .button-start__footer_title {
     font-size: 15px;
   }
-  .about-last .buy-modal__price, .about .buy-modal__price{
+  .about-last .buy-modal__price,
+  .about .buy-modal__price {
     padding: 0 20px;
   }
-  .buy-modal__content h2{
+  .buy-modal__content h2 {
     height: 100px;
   }
-  .create__namek-btn{
+  .create__namek-btn {
     height: 110px;
   }
 }
@@ -1653,19 +1836,22 @@ button {
     font-size: 14px;
     height: 54px;
   }
-  .create__namek-btn{
+  .create__namek-btn {
     height: 100px;
   }
-  .catalog-element span, .price .buy-modal__price p, .buy-modal__price p, .btn-main{
+  .catalog-element span,
+  .price .buy-modal__price p,
+  .buy-modal__price p,
+  .btn-main {
     font-size: 15px;
   }
-  .buy-modal__price{
+  .buy-modal__price {
     height: 220px;
   }
-  .create__namek-btn{
+  .create__namek-btn {
     font-size: 16px;
   }
-  .public-offerty h2{
+  .public-offerty h2 {
     font-size: 20px;
   }
 }
