@@ -724,7 +724,7 @@ textarea {
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 4px;
+  bottom: 8px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -732,8 +732,8 @@ textarea {
 }
 
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   display: inline-block;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5);
@@ -745,8 +745,8 @@ textarea {
 }
 
 .swiper-pagination-bullet-active {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   opacity: 1;
   background: #4e94d1;
 }
