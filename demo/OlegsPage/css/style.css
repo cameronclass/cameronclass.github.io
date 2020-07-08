@@ -286,8 +286,8 @@ button {
 }
 
 .about-service__block img {
-  width: 303px;
-  height: 221px;
+  width: 100%;
+  height: auto;
 }
 
 .about-service__block a {
@@ -1518,15 +1518,19 @@ button {
   bottom: 3px;
 }
 
-.buy-last .buy-modal__price p{
+.buy-last .buy-modal__price p {
   padding: 0;
   margin: 25px 0;
   text-align: left;
 }
-.buy-last p{
+.buy-last p {
   width: 85.5%;
   padding-right: 5px;
 }
+
+/* .buy-last .contact-btn {
+  justify-content: center;
+} */
 
 /* Media Quaries */
 /* Iphone 11 Pro */
@@ -1535,8 +1539,118 @@ button {
 
 /* Android */
 @media (min-width: 340px) and (max-width: 370px) {
+  .button-start {
+    width: 150px;
+    height: 140px;
+  }
+  .button-start__content{
+    font-size: 22px;
+  }
+  .button-start__footer{
+    padding: 0 15px;
+  }
+  .button-start__footer_title{
+    font-size: 15px;
+  }
+  .about-last .buy-modal__price, .about .buy-modal__price{
+    padding: 0 20px;
+  }
+  .buy-modal__content h2{
+    height: 100px;
+  }
+  .create__namek-btn{
+    height: 110px;
+  }
 }
 
 /* Iphone 5 */
 @media (min-width: 320px) and (max-width: 340px) {
+  .header__content h1 span {
+    font-size: 30px;
+  }
+  .header__content h1 {
+    font-size: 15px;
+  }
+
+  .social__about h2 {
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+  .about-service__block {
+    padding: 22px 18px 30px;
+    height: 553px;
+  }
+
+  .instructions h3 {
+    font-size: 18px;
+  }
+
+  .button-start {
+    width: 140px;
+    height: 130px;
+  }
+  .button-start__content {
+    font-size: 18px;
+  }
+  .button-start__footer {
+    padding: 0 12px;
+  }
+  .button-start__footer_title {
+    font-size: 14px;
+  }
+  .button-start:first-child .button-start__footer .button-start__footer_img img {
+    width: 28px;
+    height: 28px;
+  }
+  .button-start:last-child .button-start__footer .button-start__footer_img img {
+    width: 29px;
+    height: 26px;
+  }
+  .footer__logo img {
+    width: 46px;
+    height: 54px;
+  }
+  .menu-item a {
+    font-size: 15px;
+  }
+  .about-last .buy-modal__price,
+  .about .buy-modal__price {
+    padding: 0 15px;
+  }
+  .contact-btn {
+    padding: 0 15px;
+    font-size: 15px;
+  }
+  .contact-btn > div {
+    font-size: 13px;
+  }
+  .buy-modal__price h3,
+  .buy-modal__content h2 {
+    font-size: 18px;
+  }
+  .price-value__text {
+    font-size: 32px;
+  }
+  .price-value__text span {
+    font-size: 20px;
+  }
+  .catalog-list__item {
+    font-size: 14px;
+    height: 54px;
+  }
+  .create__namek-btn{
+    height: 100px;
+  }
+  .catalog-element span, .price .buy-modal__price p, .buy-modal__price p, .btn-main{
+    font-size: 15px;
+  }
+  .buy-modal__price{
+    height: 220px;
+  }
+  .create__namek-btn{
+    font-size: 16px;
+  }
+  .public-offerty h2{
+    font-size: 20px;
+  }
 }
