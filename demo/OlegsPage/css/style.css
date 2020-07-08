@@ -6,8 +6,7 @@
 */
 @font-face {
   font-family: "soft";
-  src: url("../fonts/soft-Bold.woff2") format("woff2"),
-    url("../fonts/soft-Bold.woff") format("woff");
+  src: url("../fonts/soft-Bold.woff2") format("woff2"), url("../fonts/soft-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -53,6 +52,19 @@ a {
 
 button {
   font-family: "Exo 2", sans-serif;
+}
+
+.btn-main {
+  background: #ffffff;
+  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 6px 14px;
+  color: #000000;
 }
 
 .container-fluid {
@@ -163,7 +175,7 @@ button {
   border-radius: 10px;
 }
 
-.header-others .fixed-menu{
+.header-others .fixed-menu {
   opacity: 1;
   z-index: 101;
 }
@@ -429,11 +441,7 @@ button {
 .footer ul li a {
   color: white;
   background: rgb(48, 49, 64);
-  background: linear-gradient(
-    180deg,
-    rgba(48, 49, 64, 1) 0%,
-    rgba(38, 39, 56, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -756,8 +764,8 @@ button {
 .fixed-menu-active {
   background: -o-linear-gradient(278.03deg, #354d9f -5.03%, #519dd7 77.75%);
   background: linear-gradient(171.97deg, #354d9f -5.03%, #519dd7 77.75%);
-  -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 1;
   z-index: 101;
 }
@@ -767,10 +775,7 @@ button {
 } */
 
 .fixed-menu-others {
-  background: -o-linear-gradient(278.03deg, #354d9f -5.03%, #519dd7 77.75%);
-  background: linear-gradient(171.97deg, #354d9f -5.03%, #519dd7 77.75%);
-  -webkit-box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
 .menu-opened {
@@ -814,10 +819,22 @@ button {
   margin: 0 auto;
 }
 
+.contact .buy-modal__price p {
+  text-align: center;
+}
+
+.contact .btn-main {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+}
+
 .buy-modal__content {
   width: 92.2%;
-  height: 100vh;
   margin: 0 auto;
+  padding-top: 50px;
+}
+.buy-modal__content-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,31 +848,132 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  height: 100vh;
+  padding-top: 0;
+}
+
+.buy-modal__content h2 {
+  height: 109px;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #dadada;
+}
+.buy-modal__content h2 span {
+  text-transform: lowercase;
 }
 
 .buy-modal__price {
-  background: rgb(48, 49, 64);
-  background: linear-gradient(
-    129deg,
-    rgba(48, 49, 64, 1) 0%,
-    rgba(38, 39, 56, 1) 100%
-  );
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  background: linear-gradient(180deg, #354d9f 0%, #519dd7 100%);
+  border-radius: 2px;
   margin-bottom: 16px;
-  padding: 68px 23px 151px;
+  height: 241px;
   position: relative;
+}
+
+.buy-modal__price h3 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #dadada;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 89px;
+}
+
+.buy-modal__price h4 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 21px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* choose mesenger */
+
+.choose-mesenger .instructions-slide {
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border-radius: none;
+}
+
+.choose-mesenger .buy-modal__price {
+  background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
+}
+
+.choose-mesenger .instructions-slide p {
+  padding: 0;
+  width: 90%;
+  color: #dadada;
+  text-align: left;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.choose-mesenger .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: #dadada;
+  box-shadow: none;
+}
+.choose-mesenger .swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
+}
+
+.choose-mesenger .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 30px;
+}
+
+.contact .buy-modal__price {
+  /* padding: 110px 0; */
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create__namek-btn {
+  background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
+  border-radius: 2px;
+  height: 122px;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .buy-modal__price p {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
-  text-align: center;
   letter-spacing: 0.02em;
-  display: block;
+  padding: 25px 25px;
+  margin-top: 26px;
+  color: #fff;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .buy-modal__thank p {
@@ -866,8 +984,13 @@ button {
 .price .buy-modal__price p {
   font-size: 16px;
   width: 94%;
-  padding-top: 4px;
   letter-spacing: normal;
+}
+
+.price .buy-modal__price .btn-main {
+  position: absolute;
+  bottom: 24px;
+  right: 22px;
 }
 
 .price__section {
@@ -990,15 +1113,6 @@ button {
   position: static;
 }
 
-.contact .buy-modal__price {
-  /* padding: 110px 0; */
-  width: 100%;
-  height: 219px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
 .about .buy-modal__content {
   height: auto;
   display: block;
@@ -1013,45 +1127,49 @@ button {
 
 .contact-btn-block {
   width: 100%;
-  background: rgb(48, 49, 64);
-  background: linear-gradient(
-    108deg,
-    rgba(48, 49, 64, 1) 0%,
-    rgba(38, 39, 56, 1) 100%
-  );
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-btn {
   display: block;
-  background: transparent;
-  border-radius: 10px 10px 0 0;
-  font-size: 16px;
-  color: white;
-  text-transform: inherit;
-  line-height: 19px;
+  background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
+  border-radius: 2px;
   font-weight: 300;
-  letter-spacing: 0.02em;
-  padding: 20px 24px 19px;
-  border-bottom: 3px solid #272838;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-size: 16px;
+  line-height: 19px;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
+  letter-spacing: 0.02em;
+  padding: 0 24px;
+  margin-bottom: 6px;
+  height: 58px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.contact-btn:last-child {
-  border-bottom: none;
-  border-radius: 0 0 10px 10px;
+.contact-btn > div {
+  width: 37%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.contact-btn > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.contact-btn > div > div img{
+  width: 13px;
+  height: 13px;
+}
+
+.contact-btn .contact-btn__block{
+  width: 30%;
 }
 
 .btn-function {
@@ -1068,6 +1186,8 @@ button {
 .about .buy-modal__price {
   padding: 11px 10px 17px;
   text-align: left;
+  height: auto;
+  background: none;
 }
 
 .about p {
@@ -1076,13 +1196,19 @@ button {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
+  padding: 0;
+  margin: 0;
   letter-spacing: 0.02em;
 }
 
 .about h2 {
   text-align: center;
-  color: white;
-  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #dadada;
+  height: 109px;
   letter-spacing: 0.02em;
   font-weight: 300;
   font-size: 20px;
@@ -1105,7 +1231,7 @@ button {
   justify-content: center;
 }
 
-.sent-btn {
+/* .sent-btn {
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1115,7 +1241,7 @@ button {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-}
+} */
 
 .sent .sent-btn,
 .sent-2 .sent-btn,
@@ -1167,15 +1293,18 @@ button {
   width: 75%;
 }
 
-/* .swiper-button-next {
-  width: 100%;
-  height: 242px;
-  position: absolute;
-  top: 20%;
-  z-index: 1;
+.sent-2 .js-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0;
+  height: 58px;
 }
-.next-2{
-  top: 0;
+
+/* .js-copy-text {
+  display: none;
 } */
 
 /* Media Quaries */
@@ -1218,10 +1347,6 @@ button {
     padding: 82px 23px 140px;
   }
 
-  .contact .buy-modal__price p {
-    padding: 0 18px;
-  }
-
   .about .buy-modal__price p {
     padding: 0;
   }
@@ -1249,16 +1374,6 @@ button {
   .error-page .buy-modal__price {
     height: 354px;
   }
-}
-
-.sent-2 .js-copy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 0;
-  height: 58px;
 }
 
 /* Android */
@@ -1408,10 +1523,6 @@ button {
     bottom: 8px;
   }
 
-  .contact .buy-modal__price {
-    height: 219px;
-  }
-
   .contact-btn img {
     width: 20px;
   }
@@ -1424,10 +1535,6 @@ button {
 
   .contact p {
     width: 92%;
-  }
-
-  .contact .buy-modal__price {
-    padding: 86px 0;
   }
 
   .sent .buy-modal__price {

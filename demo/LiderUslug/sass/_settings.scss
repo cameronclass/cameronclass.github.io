@@ -1,4 +1,3 @@
-
 // Переменные
 $color1: #62a2f6;
 $color2: #ff2a00;
@@ -15,80 +14,74 @@ $color-star: #999;
 
 $color-pagination: #f56900;
 
-$font: 'Liberation Sans';
-$font-bold: 'Liberation Sans Bold';
+$font: "Liberation Sans";
+$font-bold: "Liberation Sans Bold";
 
-
-@mixin icon($content,  $weight) {
+@mixin icon($content, $weight) {
   font-family: "Font Awesome 5 Free";
   content: $content;
   font-weight: $weight;
 }
 
-
-
-
-
-
 @font-face {
-    font-family: 'Liberation Sans Bold';
-    src: url('../fonts/LiberationSans-Bold.woff2') format('woff2'),
-        url('../fonts/LiberationSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Liberation Sans Bold";
+  src: url("../fonts/LiberationSans-Bold.woff2") format("woff2"),
+    url("../fonts/LiberationSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Liberation Sans Italic';
-    src: url('../fonts/LiberationSans-Italic.woff2') format('woff2'),
-        url('../fonts/LiberationSans-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Liberation Sans Italic";
+  src: url("../fonts/LiberationSans-Italic.woff2") format("woff2"),
+    url("../fonts/LiberationSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Liberation Sans';
-    src: url('../fonts/LiberationSans.woff2') format('woff2'),
-        url('../fonts/LiberationSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Liberation Sans";
+  src: url("../fonts/LiberationSans.woff2") format("woff2"), url("../fonts/LiberationSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Liberation Sans Bold Italic';
-    src: url('../fonts/LiberationSans-BoldItalic.woff2') format('woff2'),
-        url('../fonts/LiberationSans-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Liberation Sans Bold Italic";
+  src: url("../fonts/LiberationSans-BoldItalic.woff2") format("woff2"),
+    url("../fonts/LiberationSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
-body{
+body {
   font-family: $font;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   transition: 300ms all;
+  box-sizing: border-box;
 }
 
-input{
+input {
   font-size: 14px;
   padding: 9px;
   border-radius: 4px;
   border: 1px solid $color-border;
-  &:focus{
+  &:focus {
     outline: none;
     border-color: $color1;
     cursor: pointer;
   }
 }
 
-select{
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -101,61 +94,60 @@ select{
   background-image: none;
   font-size: 14px;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
 
-button{
-
-  &:hover{
+button {
+  &:hover {
     cursor: pointer;
   }
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
-img{
+img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-h1{
+h1 {
   font-size: 32px;
   margin: 20px 0;
 }
-h2{
+h2 {
   font-size: 28px;
   margin: 20px 0;
 }
-h3{
+h3 {
   font-size: 24px;
   margin: 20px 0;
 }
 
-h4{
+h4 {
   font-size: 20px;
   margin: 20px 0;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
-.title-link{
+.title-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-p{
+p {
   line-height: 1.5;
 }
 
-hr{
+hr {
   border: none; /* Убираем границу для браузера Firefox */
   color: $color-border; /* Цвет линии для остальных браузеров */
   background-color: $color-border; /* Цвет линии для браузера Firefox и Opera */
@@ -163,11 +155,11 @@ hr{
 }
 
 // Container
-.container-fluid{
+.container-fluid {
   width: 100%;
 }
 
-.container{
+.container {
   width: 1364px;
   margin-left: auto;
   margin-right: auto;
@@ -175,28 +167,28 @@ hr{
 
 // Used classes
 
-.mt-2{
+.mt-2 {
   margin-top: 20px;
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
 
-.w-70{
+.w-70 {
   width: 1028px;
 }
-.w-30{
+.w-30 {
   width: 315px;
 }
 
-.d-flex-end{
+.d-flex-end {
   display: flex;
   justify-content: flex-end;
 }
 
 // Buttons
-.btn{
+.btn {
   display: block;
   color: $color1;
   padding: 8px 16px;
@@ -206,41 +198,41 @@ hr{
   text-align: center;
   transition: 100ms;
 
-  &:hover{
+  &:hover {
     background-color: $color1;
     color: white;
     cursor: pointer;
   }
 }
 
-.btn-product-more{
+.btn-product-more {
   width: 100%;
   margin: 10px 0 20px;
   padding: 15px;
   border-color: $color-border;
   color: #333333;
 
-  i{
+  i {
     color: $color-pagination;
   }
 
-  &:hover{
+  &:hover {
     color: #000;
     background-color: lighten($color-border, 15%);
   }
 }
 
-.btn-add-works{
+.btn-add-works {
   background-color: $color1;
   color: white;
 
-  &:hover{
+  &:hover {
     color: $color1;
     background-color: white;
   }
 }
 
-.btn-order{
+.btn-order {
   padding: 13px;
   font-size: 19px;
   color: white;
@@ -250,34 +242,34 @@ hr{
   flex-direction: column;
   font-weight: bold;
 
-  &:hover{
+  &:hover {
     color: #2d9000;
     background-color: white;
   }
 
-  span{
+  span {
     font-size: 14px;
     font-weight: normal;
   }
 }
 
-.btn-order-2{
+.btn-order-2 {
   background-color: $color2;
   border-color: $color2;
   position: relative;
 
-  &:hover{
+  &:hover {
     color: $color2;
   }
 
-  .icon{
+  .icon {
     position: absolute;
     right: 5px;
     top: 5px;
   }
 }
 
-.btn-message{
+.btn-message {
   display: flex;
   flex-direction: column;
   padding: 13px;
@@ -287,57 +279,56 @@ hr{
   border-color: #073f6f;
   font-weight: bold;
 
-  &:hover{
+  &:hover {
     color: #073f6f;
     background-color: white;
   }
 
-  span{
+  span {
     font-size: 14px;
     font-weight: normal;
   }
 }
 
-.btn-offer{
+.btn-offer {
   background-color: $color1;
   color: white;
   border-color: $color1;
 
-  &:hover{
+  &:hover {
     background-color: white;
     color: $color1;
   }
 }
 
 // Js Used Classe
-.d-none{
+.d-none {
   display: none !important;
 }
-.display-block{
+.display-block {
   display: block !important;
 }
-.h-auto{
+.h-auto {
   height: auto !important;
 }
 
-
 // Tags
 
-.tags{
+.tags {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  ul{
+  ul {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
-    li{
+    li {
       margin: 5px 5px 5px 0;
-      a{
+      a {
         padding: 10px;
         color: #636363;
         display: block;
@@ -346,7 +337,7 @@ hr{
         border-radius: 4px;
         border: 1px solid #cdcdcd;
         text-align: center;
-        &:hover{
+        &:hover {
           background-color: #f3f3f3;
         }
       }
@@ -355,27 +346,27 @@ hr{
 }
 
 // Contact
-.contact{
+.contact {
   padding: 20px 0;
 
-  h4{
+  h4 {
     margin-top: 0;
   }
 
-  p{
+  p {
     font-size: 15px;
   }
 
-  ul{
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
 
-    li{
+    li {
       margin-right: 10px;
-      a{
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -387,7 +378,7 @@ hr{
         width: 20px;
         height: 20px;
 
-        &:hover{
+        &:hover {
           background-color: white;
           color: $color4;
         }
@@ -397,43 +388,43 @@ hr{
 }
 
 // Card
-.card{
+.card {
   width: 100%;
   border: 1px solid $color-border;
 
-  &__text{
+  &__text {
     display: flex;
     flex-direction: column;
     padding: 10px;
 
-    .card__title{
+    .card__title {
       color: $color-card-title;
       font-weight: bold;
       margin-bottom: 10px;
     }
 
-    .card__price{
+    .card__price {
       color: #000;
       font-size: 20px;
       font-weight: bolder;
       margin-bottom: 10px;
-      &:after{
+      &:after {
         content: "₽";
         margin-left: 5px;
         font-weight: bolder;
       }
     }
 
-    .author__name{
+    .author__name {
       font-weight: 300;
       margin-bottom: 10px;
-      &:before{
-        content: '';
+      &:before {
+        content: "";
         display: inline-block;
         width: 10px;
         height: 10px;
-        background: rgb(35,167,27);
-        background: linear-gradient(45deg, rgba(35,167,27,1) 0%, rgba(8,207,14,1) 100%);
+        background: rgb(35, 167, 27);
+        background: linear-gradient(45deg, rgba(35, 167, 27, 1) 0%, rgba(8, 207, 14, 1) 100%);
         border-radius: 50%;
         margin-right: 5px;
       }
@@ -443,46 +434,45 @@ hr{
 
 // Stars
 
-.rating{
+.rating {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  &__text{
+  &__text {
     margin-left: 10px;
     font-weight: bold;
-    span{
+    span {
       color: $color-card-title;
       font-size: 14px;
     }
   }
 
-  &__bookmark{
+  &__bookmark {
     color: $color-border;
     font-size: 20px;
-    &:hover{
+    &:hover {
       color: $color2;
     }
   }
 }
 
-.rate__text{
+.rate__text {
   color: #959595;
 }
 
-.stars{
-  span.rated{
+.stars {
+  span.rated {
     color: $color-star-rated;
   }
-  span{
+  span {
     color: $color-star;
   }
 }
 
 // Pagination
-.pagination{
-
-  ol{
+.pagination {
+  ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -490,9 +480,9 @@ hr{
     justify-content: center;
     align-items: center;
 
-    li{
+    li {
       margin: 5px;
-      a{
+      a {
         display: block;
         padding: 8px 14px;
         border-radius: 4px;
@@ -500,122 +490,117 @@ hr{
         font-weight: bold;
         transition: 50ms;
 
-        &:hover{
+        &:hover {
           color: #fff;
           background-color: $color-pagination;
         }
       }
 
-      &.active{
-        a{
+      &.active {
+        a {
           color: #fff;
           background-color: $color-pagination;
         }
       }
     }
-
   }
-
 }
 
-.text{
-  ul{
+.text {
+  ul {
     padding-left: 18px;
-    li{
+    li {
       margin-bottom: 5px;
     }
   }
 }
 
-
-
 // review
 
-.review-list{
+.review-list {
   list-style: none;
   padding: 0;
 
-
-  .review-text{
-    p{
+  .review-text {
+    p {
       margin-bottom: 8px;
       line-height: 1.4;
     }
 
-    span{
+    span {
       font-size: 15px;
       color: #858585;
     }
   }
 
-  .review-control{
+  .review-control {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__which{
+    &__which {
       margin-top: 10px;
-      p{
+      p {
         margin: 0;
       }
-      a{
+      a {
         color: $color1;
       }
     }
 
-    &__reply{
-      a{
+    &__reply {
+      a {
         color: $color1;
       }
     }
   }
 
-  ul{
+  ul {
     list-style: none;
 
-    li{
+    li {
       margin-top: 20px;
     }
 
-    .review-title{
+    .review-title {
+      height: auto;
+      align-items: flex-start;
+
+      .name {
         height: auto;
-        align-items: flex-start;
 
-        .name{
-          height: auto;
-
-          h3{
-            margin-top: 3px;
-            margin-bottom: 10px;
-          }
+        h3 {
+          margin-top: 3px;
+          margin-bottom: 10px;
         }
+      }
     }
   }
 }
 
-.review-title{
+.review-title {
   display: flex;
   align-items: center;
   height: 50px;
 
-  .avatar{
+  .avatar {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    img{
+    img {
       width: 50px;
       height: 50px;
       border-radius: 50%;
     }
   }
 
-  .name{
+  .name {
     height: 50px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    h3{
+    h3 {
       width: 100%;
       margin: 0;
       font-size: 14px;
@@ -624,29 +609,29 @@ hr{
 }
 
 // Sort line
-.sort-links{
+.sort-links {
   width: 100%;
   display: flex;
   border-bottom: 1px solid #ccc;
 
-  a{
+  a {
     padding-bottom: 14px;
     padding-right: 15px;
     margin-right: 15px;
     color: #2e333b;
 
-    &:hover{
+    &:hover {
       color: $color2;
     }
   }
 
-  a.active{
+  a.active {
     border-bottom: 2px solid $color2;
   }
 }
 
 // Примеры работ
-.works-cards{
+.works-cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -655,24 +640,24 @@ hr{
   margin: 0;
   padding: 20px 0 0;
 
-  li{
+  li {
     width: 24%;
     margin-bottom: 20px;
     position: relative;
     transition: 300ms;
 
-    &:hover{
-      box-shadow: 0px 16px 15px -15px rgba(122,122,122,1);
+    &:hover {
+      box-shadow: 0px 16px 15px -15px rgba(122, 122, 122, 1);
     }
 
-    a{
+    a {
       display: block;
       color: white;
       font-weight: bold;
       font-size: 14px;
     }
 
-    .work-title{
+    .work-title {
       position: absolute;
       width: 100%;
       height: auto;
@@ -685,21 +670,21 @@ hr{
 }
 
 // breadcrumb
-.breadcrumbs{
+.breadcrumbs {
   padding: 10px 0 30px;
   display: flex;
   justify-content: space-between;
-  .breadcrumb{
+  .breadcrumb {
     width: 1028px;
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 
-    li{
+    li {
       margin-right: 10px;
 
-      &:after{
+      &:after {
         content: "|";
         position: relative;
         bottom: 2px;
@@ -707,92 +692,90 @@ hr{
         color: #999999;
       }
 
-      &:last-child::after{
+      &:last-child::after {
         display: none;
       }
 
-      a{
+      a {
         color: #999999;
-        &:hover{
+        &:hover {
           color: black;
         }
       }
 
-      &:last-child a:hover{
+      &:last-child a:hover {
         color: #999999;
       }
-
     }
   }
 
-  .control__buttons{
+  .control__buttons {
     width: 315px;
     display: flex;
     justify-content: space-between;
 
-    a{
+    a {
       color: #999999;
-      &:hover{
+      &:hover {
         color: black;
       }
     }
   }
 }
 
-
 // Slider
-.swiper-slide-visible{
+.swiper-slide-visible {
   filter: brightness(0.5);
 }
 
-.swiper-slide-thumb-active{
+.swiper-slide-thumb-active {
   filter: none;
 }
 
-.gallery-thumbs{
+.gallery-thumbs {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 // icon-text
-.icon-text{
+.icon-text {
   display: flex;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
 
-  .icon{
+  .icon {
     width: 40px;
     color: $color4;
   }
 
-  .text{
+  .text {
     font-size: 14px;
   }
 }
 
 // sidebar-reviews
-.sidebar-reviews{
-  &_title{
+.sidebar-reviews {
+  &_title {
     display: flex;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 
-    .icon{
+    .icon {
       width: 25px;
       color: $color4;
       margin-right: 15px;
     }
   }
-  .icon-text{
+  .icon-text {
     align-items: flex-start;
-    .text{
+    .text {
       display: flex;
       flex-direction: column;
       font-style: italic;
 
-      span{
+      span {
         margin-top: 10px;
         font-style: normal;
         color: #818181;
@@ -801,53 +784,48 @@ hr{
   }
 }
 
-.tags-block{
-
+.tags-block {
 }
 
-.bordered-block{
+.bordered-block {
   border-top: 1px solid #ccc;
   padding: 20px 0;
 
-  h3{
+  h3 {
     margin-top: 0;
     margin-bottom: 10px;
   }
-
 }
 
-.icon-list-w50, .icon-list-w100{
+.icon-list-w50,
+.icon-list-w100 {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  li {
+    width: 50%;
 
-    li{
-      width: 50%;
-
-      .icon-text{
-        align-items: flex-start;
-      }
-
-      .icon{
-        width: 25px;
-      }
+    .icon-text {
+      align-items: flex-start;
     }
 
-    .icon-text{
-      margin-top: 5px;
-      margin-bottom: 5px;
+    .icon {
+      width: 25px;
     }
+  }
 
+  .icon-text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
-.icon-list-w100{
-
-    li{
-      width: 100%;
-    }
-
+.icon-list-w100 {
+  li {
+    width: 100%;
+  }
 }
