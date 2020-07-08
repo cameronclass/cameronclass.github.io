@@ -63,7 +63,7 @@ button {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  padding: 6px 14px;
+  padding: 6px 27px;
   color: #000000;
 }
 
@@ -845,18 +845,18 @@ button {
 
 .contact .buy-modal__price p {
   text-align: center;
+  margin-bottom: 46px;
 }
 
 .contact .btn-main {
   position: absolute;
-  bottom: 25px;
-  right: 20px;
+  bottom: 23px;
+  right: 23px;
 }
 
 .buy-modal__content {
   width: 92.2%;
   margin: 0 auto;
-  padding-top: 50px;
 }
 .buy-modal__content-2 {
   display: -webkit-box;
@@ -909,12 +909,12 @@ button {
   letter-spacing: 0.02em;
   color: #dadada;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 90%;
+  width: 85%;
   text-align: left;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 89px;
+  padding: 33px 0 26px;
 }
 
 .buy-modal__price h4 {
@@ -941,10 +941,14 @@ button {
 
 .choose-mesenger .instructions-slide p {
   padding: 0;
-  width: 90%;
+  width: 85%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
   color: #dadada;
   text-align: left;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: normal;
 }
 
 .choose-mesenger .swiper-pagination-bullet {
@@ -959,7 +963,11 @@ button {
 }
 
 .choose-mesenger .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 30px;
+  bottom: 26px;
+}
+
+.choose-mesenger .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 2px;
 }
 
 .contact .buy-modal__price {
@@ -977,14 +985,15 @@ button {
   border-radius: 2px;
   height: 122px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
-  line-height: 19px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-transform: capitalize;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1129,14 +1138,14 @@ button {
 }
 
 /* Contact */
-.contact .buy-modal,
+/* .contact .buy-modal,
 .about .buy-modal {
   height: auto;
   left: 0;
   z-index: 5;
   position: static;
-}
-/* .contact .buy-modal,
+} */
+.contact .buy-modal,
 .about .buy-modal {
   height: 100vh;
   display: flex;
@@ -1144,7 +1153,7 @@ button {
   left: 0;
   z-index: 5;
   position: static;
-} */
+}
 
 .about .buy-modal__content {
   height: auto;
@@ -1173,7 +1182,7 @@ button {
   align-items: center;
   justify-content: space-between;
   letter-spacing: 0.02em;
-  padding: 0 24px;
+  padding: 0 25px;
   margin-bottom: 6px;
   height: 58px;
   color: #ffffff;
@@ -1181,10 +1190,9 @@ button {
 }
 
 .contact-btn > div {
-  width: 37%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
