@@ -1738,6 +1738,10 @@ button {
   margin-bottom: 40px !important;
 }
 
+.public-offerty p{
+  text-align: center;
+}
+
 /* .buy-last .contact-btn {
   justify-content: center;
 } */
@@ -1756,7 +1760,7 @@ button {
   }
   .buy-modal__content h2 {
     height: 100px;
-    font-size: 18px;
+    font-size: 20px;
   }
   .contact-btn {
     height: 54px;
@@ -1918,7 +1922,7 @@ button {
   }
   .buy-modal__price h3,
   .buy-modal__content h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   .price-value__text {
     font-size: 32px;
