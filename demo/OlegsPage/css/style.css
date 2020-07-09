@@ -1751,7 +1751,7 @@ button {
 @media (min-width: 400px) and (max-width: 700px) {
 }
 @media (min-height: 600px) and (max-height: 670px) {
-  .catalog .buy-modal__content-2{
+  .catalog .buy-modal__content-2, .choose-mesenger .catalog{
     margin-bottom: 50px;
   }
 }
