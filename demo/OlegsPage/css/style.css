@@ -1801,10 +1801,9 @@ button {
   .catalog .buy-modal, .namek .buy-modal, .buy-last .buy-modal{
     align-items: flex-start;
   }
-  .price-last .buy-modal__content, .copy-id .buy-modal__content{
+  .price-last .buy-modal__content, .copy-id .buy-modal__content, .resent .buy-modal__content{
     padding-top: 0;
   }
-  
 }
 /* Android */
 @media (min-width: 340px) and (max-width: 370px) {
