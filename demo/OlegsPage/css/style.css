@@ -1801,6 +1801,9 @@ button {
   .catalog .buy-modal{
     align-items: flex-start;
   }
+  .price-last .buy-modal__content{
+    padding-top: 0;
+  }
 }
 /* Android */
 @media (min-width: 340px) and (max-width: 370px) {
