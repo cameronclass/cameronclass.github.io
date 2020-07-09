@@ -1798,6 +1798,9 @@ button {
   .policy .buy-modal__content{
     padding-top: 0;
   }
+  .catalog .buy-modal{
+    align-items: flex-start;
+  }
 }
 /* Android */
 @media (min-width: 340px) and (max-width: 370px) {
