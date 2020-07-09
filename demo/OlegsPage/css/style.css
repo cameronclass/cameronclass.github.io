@@ -1113,13 +1113,13 @@ button {
   letter-spacing: 0.02em;
 }
 
-.sent-last .buy-modal{
+.sent-last .buy-modal {
   display: flex;
   align-items: center;
   height: 100vh;
 }
 
-.sent-last .buy-modal__content{
+.sent-last .buy-modal__content {
   padding-top: 0;
 }
 
@@ -1730,11 +1730,11 @@ button {
   padding-right: 5px;
 }
 
-.m-0{
+.m-0 {
   margin: 0 !important;
 }
 
-.mb-btn{
+.mb-btn {
   margin-bottom: 40px !important;
 }
 
@@ -1795,23 +1795,28 @@ button {
     -ms-flex-align: center;
     align-items: center;
   }
-  .contact .buy-modal{
+  .contact .buy-modal {
     align-items: center;
   }
-  .about .buy-modal{
+  .about .buy-modal {
     align-items: flex-start;
   }
-  .contact .buy-modal__content{
+  .contact .buy-modal__content {
     padding-top: 47px;
   }
 
-  .policy .buy-modal__content{
+  .policy .buy-modal__content {
     padding-top: 0;
   }
-  .catalog .buy-modal, .namek .buy-modal, .buy-last .buy-modal{
+  .catalog .buy-modal,
+  .namek .buy-modal,
+  .buy-last .buy-modal {
     align-items: flex-start;
   }
-  .price-last .buy-modal__content, .copy-id .buy-modal__content, .resent .buy-modal__content{
+  .price-last .buy-modal__content,
+  .copy-id .buy-modal__content,
+  .resent .buy-modal__content,
+  .pt-0 .buy-modal__content {
     padding-top: 0;
   }
 }
