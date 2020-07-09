@@ -1275,8 +1275,6 @@ button {
 .about .buy-modal__content {
   height: 100vh;
   display: block;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .contact p {
@@ -1382,6 +1380,8 @@ button {
   text-align: left;
   background: none;
   padding: 0 26px;
+  display: flex;
+  align-items: center;
 }
 
 .policy .buy-modal__price p {
@@ -1486,7 +1486,7 @@ button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0px 36px;
+  padding: 0px 48px;
   height: 224px;
 }
 
@@ -1509,18 +1509,17 @@ button {
 .catalog-element img {
   width: 100%;
   height: auto;
-  margin-top: 22px;
+  margin-top: 32px;
 }
 
 .catalog-element span {
   letter-spacing: 0.02em;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  margin-bottom: 6px;
-  text-transform: lowercase;
+  margin-bottom: 32px;
 }
 
 .catalog-list-text {
@@ -1720,7 +1719,7 @@ button {
 @media (min-width: 400px) and (max-width: 700px) {
 }
 /* Iphone 6 7 8 */
-@media (min-width: 371) and (max-width: 380px), (min-height: 650px) and (max-height: 700px) {
+@media (min-width: 371) and (max-width: 380px), (min-height: 600px) and (max-height: 700px) {
   .buy-modal__price {
     height: 225px;
   }
@@ -1728,10 +1727,30 @@ button {
     padding: 26px 0 22px;
   }
   .buy-modal__content h2 {
-    height: 95px;
+    height: 100px;
+    font-size: 18px;
   }
   .contact-btn {
     height: 54px;
+  }
+  .contact .buy-modal, .about .buy-modal{
+    align-items: flex-start;
+  }
+  .buy-modal__content{
+    margin-top: 47px;
+  }
+  .namek .buy-modal__price p{
+    font-size: 18px;
+  }
+  .about .buy-modal__content{
+    padding: 0;
+  }
+  .public-offerty .buy-modal__content, .buy-modal__content-2{
+    justify-content: flex-start;
+  }
+  .about .buy-modal__price{
+    display: flex;
+    align-items: center;
   }
 }
 /* Android */
