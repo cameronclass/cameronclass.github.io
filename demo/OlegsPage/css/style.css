@@ -1808,7 +1808,7 @@ button {
 @media (min-width: 371) and (max-width: 380px),
   (min-height: 400px) and (max-height: 700px) {
   .buy-modal__price {
-    height: 198px;
+    height: 215px;
   }
   .buy-modal__price h3 {
     padding: 26px 0 22px;
