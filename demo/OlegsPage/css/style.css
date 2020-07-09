@@ -1798,14 +1798,11 @@ button {
   .policy .buy-modal__content{
     padding-top: 0;
   }
-  .catalog .buy-modal{
+  .catalog .buy-modal, .namek .buy-modal, .buy-last .buy-modal{
     align-items: flex-start;
   }
   .price-last .buy-modal__content, .copy-id .buy-modal__content{
     padding-top: 0;
-  }
-  .buy-last .buy-modal{
-    align-items: flex-start;
   }
   
 }
