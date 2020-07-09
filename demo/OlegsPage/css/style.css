@@ -1810,7 +1810,8 @@ button {
   }
   .catalog .buy-modal,
   .namek .buy-modal,
-  .buy-last .buy-modal {
+  .buy-last .buy-modal,
+  .choose-mesenger .buy-modal {
     align-items: flex-start;
   }
   .price-last .buy-modal__content,
@@ -1818,6 +1819,13 @@ button {
   .resent .buy-modal__content,
   .pt-0 .buy-modal__content {
     padding-top: 0;
+  }
+
+  .choose-mesenger .buy-modal__price{
+    height: 210px;
+  }
+  .choose-mesenger .buy-modal__price h3{
+    padding: 20px 0 18px;
   }
 }
 /* Android */
