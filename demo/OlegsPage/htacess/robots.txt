@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /*utm_
+Disallow: *?*
+Disallow: /thank-you
+Host: https://profi-na-chas.ru/
