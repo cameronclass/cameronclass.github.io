@@ -1386,7 +1386,18 @@ button {
 
 .policy .buy-modal__price p {
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 70px;
+}
+
+.policy .buy-modal__content{
+  margin-top: 48px;
+}
+.about-last .buy-modal__content{
+  margin-top: 48px;
+}
+
+.policy .create__namek-btn{
+  margin-bottom: 40px;
 }
 
 .about p {
@@ -1647,7 +1658,11 @@ button {
   height: auto;
 }
 .about-last .buy-modal__price {
-  margin-bottom: 32px;
+  margin-bottom: 70px;
+}
+
+.about-last .create__namek-btn{
+  margin-bottom: 40px;
 }
 
 .buy-page-btn {
