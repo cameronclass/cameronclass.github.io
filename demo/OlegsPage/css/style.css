@@ -1113,6 +1113,16 @@ button {
   letter-spacing: 0.02em;
 }
 
+.sent-last .buy-modal{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.sent-last .buy-modal__content{
+  padding-top: 0;
+}
+
 .price .buy-modal__price {
   display: -webkit-box;
   display: -ms-flexbox;
