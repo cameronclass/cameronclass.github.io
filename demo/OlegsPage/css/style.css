@@ -1724,6 +1724,10 @@ button {
   margin: 0 !important;
 }
 
+.mb-btn{
+  margin-bottom: 40px !important;
+}
+
 /* .buy-last .contact-btn {
   justify-content: center;
 } */
@@ -1781,11 +1785,18 @@ button {
     -ms-flex-align: center;
     align-items: center;
   }
-  .contact .buy-modal, .about .buy-modal{
+  .contact .buy-modal{
+    align-items: center;
+  }
+  .about .buy-modal{
     align-items: flex-start;
   }
   .contact .buy-modal__content{
     padding-top: 47px;
+  }
+
+  .policy .buy-modal__content{
+    padding-top: 0;
   }
 }
 /* Android */
