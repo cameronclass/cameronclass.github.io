@@ -1801,7 +1801,7 @@ button {
   .about .buy-modal {
     align-items: flex-start;
   }
-  .contact .buy-modal__content {
+  .contact .buy-modal__content, .public-offerty .buy-modal__content{
     padding-top: 47px;
   }
 
@@ -1821,7 +1821,7 @@ button {
     padding-top: 0;
   }
 
-  .choose-mesenger .buy-modal__price{
+  .choose-mesenger .buy-modal__price, .public-offerty .buy-modal__price{
     height: 210px;
   }
   .choose-mesenger .buy-modal__price h3{
