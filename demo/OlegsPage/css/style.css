@@ -5,15 +5,10 @@
 * Browsers: last 5 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 5 version
-*/
 @font-face {
   font-family: "soft";
-  src: url("../fonts/soft-Bold.woff2") format("woff2"), url("../fonts/soft-Bold.woff") format("woff");
+  src: url("../fonts/soft-Bold.woff2") format("woff2"),
+    url("../fonts/soft-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -188,8 +183,14 @@ button {
   color: #272838;
   font-size: 16px;
   line-height: 16px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
   background: -o-linear-gradient(top, #ffffff 0%, #cccccc 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ffffff),
+    to(#cccccc)
+  );
   background: linear-gradient(180deg, #ffffff 0%, #cccccc 100%);
   -webkit-box-shadow: 2px 3px 0px #303141;
   box-shadow: 2px 3px 0px #303141;
@@ -225,8 +226,14 @@ button {
 }
 
 .possibility {
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 20px;
   height: 230px;
@@ -511,9 +518,23 @@ button {
 .footer ul li a {
   color: white;
   background: rgb(48, 49, 64);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 49, 64, 1)), to(rgba(38, 39, 56, 1)));
-  background: -o-linear-gradient(top, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
-  background: linear-gradient(180deg, rgba(48, 49, 64, 1) 0%, rgba(38, 39, 56, 1) 100%);
+  background: -o-linear-gradient(
+    top,
+    rgba(48, 49, 64, 1) 0%,
+    rgba(38, 39, 56, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(48, 49, 64, 1)),
+    to(rgba(38, 39, 56, 1))
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(48, 49, 64, 1) 0%,
+    rgba(38, 39, 56, 1) 100%
+  );
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -821,8 +842,14 @@ button {
   font-weight: 300;
   line-height: 19px;
   letter-spacing: 0.02em;
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
@@ -850,8 +877,14 @@ button {
 } */
 
 .fixed-menu-others {
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
@@ -958,8 +991,14 @@ button {
 }
 
 .buy-modal__price {
-  background: -webkit-gradient(linear, left top, left bottom, from(#354d9f), to(#519dd7));
   background: -o-linear-gradient(top, #354d9f 0%, #519dd7 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#354d9f),
+    to(#519dd7)
+  );
   background: linear-gradient(180deg, #354d9f 0%, #519dd7 100%);
   border-radius: 2px;
   margin-bottom: 16px;
@@ -1006,8 +1045,14 @@ button {
 }
 
 .choose-mesenger .buy-modal__price {
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
 }
 
@@ -1039,7 +1084,10 @@ button {
   bottom: 26px;
 }
 
-.choose-mesenger .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+.choose-mesenger
+  .swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
   margin: 0 2px;
 }
 
@@ -1063,8 +1111,14 @@ button {
 }
 
 .create__namek-btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   height: 122px;
@@ -1288,8 +1342,14 @@ button {
 
 .contact-btn {
   display: block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   font-weight: 300;
@@ -1380,7 +1440,11 @@ button {
   text-align: left;
   background: none;
   padding: 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1389,14 +1453,14 @@ button {
   margin-bottom: 70px;
 }
 
-.policy .buy-modal__content{
+.policy .buy-modal__content {
   margin-top: 48px;
 }
-.about-last .buy-modal__content{
+.about-last .buy-modal__content {
   margin-top: 48px;
 }
 
-.policy .create__namek-btn{
+.policy .create__namek-btn {
   margin-bottom: 40px;
 }
 
@@ -1544,8 +1608,14 @@ button {
 }
 
 .catalog-list__item {
-  background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#519dd7),
+    to(#354d9f)
+  );
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
   border-radius: 2px;
   width: 100%;
@@ -1661,7 +1731,7 @@ button {
   margin-bottom: 70px;
 }
 
-.about-last .create__namek-btn{
+.about-last .create__namek-btn {
   margin-bottom: 40px;
 }
 
@@ -1734,7 +1804,8 @@ button {
 @media (min-width: 400px) and (max-width: 700px) {
 }
 /* Iphone 6 7 8 */
-@media (min-width: 371) and (max-width: 380px), (min-height: 600px) and (max-height: 700px) {
+@media (min-width: 371) and (max-width: 380px),
+  (min-height: 570px) and (max-height: 700px) {
   .buy-modal__price {
     height: 225px;
   }
@@ -1748,23 +1819,33 @@ button {
   .contact-btn {
     height: 54px;
   }
-  .contact .buy-modal, .about .buy-modal{
+  .contact .buy-modal,
+  .about .buy-modal {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
-  .buy-modal__content{
+  .buy-modal__content {
     margin-top: 47px;
   }
-  .namek .buy-modal__price p{
+  .namek .buy-modal__price p {
     font-size: 18px;
   }
-  .about .buy-modal__content{
+  .about .buy-modal__content {
     padding: 0;
   }
-  .public-offerty .buy-modal__content, .buy-modal__content-2{
+  .public-offerty .buy-modal__content,
+  .buy-modal__content-2 {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .about .buy-modal__price{
+  .about .buy-modal__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -1830,7 +1911,10 @@ button {
   .button-start__footer_title {
     font-size: 14px;
   }
-  .button-start:first-child .button-start__footer .button-start__footer_img img {
+  .button-start:first-child
+    .button-start__footer
+    .button-start__footer_img
+    img {
     width: 28px;
     height: 28px;
   }
