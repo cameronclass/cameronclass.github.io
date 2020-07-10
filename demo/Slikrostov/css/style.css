@@ -94,6 +94,72 @@
           flex: 0 0 100%;
   max-width: 100%; }
 
+.header {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  height: auto; }
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 12px; }
+  .header-menu__phone {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header-menu__phone li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header-menu__phone li span {
+        padding-left: 5px; }
+  .header-menu__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .header-menu__user li {
+      padding: 0 2px; }
+      .header-menu__user li a {
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline; }
+  .header .menu-content__basket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 100px; }
+    .header .menu-content__basket span {
+      background-color: #f5f7ff;
+      border-radius: 50%;
+      color: #ED1C24;
+      padding: 3px 7px; }
+      .header .menu-content__basket span:first-child {
+        margin-right: 15px; }
+      .header .menu-content__basket span:last-child {
+        margin-left: 15px; }
+
 * {
   padding: 0;
   margin: 0;
@@ -152,69 +218,6 @@ li {
   height: 25px;
   width: 25px; }
 
-.header {
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  height: auto; }
-  .header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 12px; }
-  .header-menu__phone {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .header-menu__phone li {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .header-menu__phone li span {
-        padding-left: 5px; }
-  .header-menu__user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 100px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; }
-    .header-menu__user li {
-      padding: 0 2px; }
-      .header-menu__user li a {
-        -webkit-text-decoration-line: underline;
-                text-decoration-line: underline; }
-  .header .menu-content__basket {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-right: 150px; }
-    .header .menu-content__basket span {
-      background-color: #F5F7FF;
-      border-radius: 50%;
-      color: #ED1C24;
-      padding: 3px; }
-      .header .menu-content__basket span:first-child {
-        margin-right: 15px; }
-      .header .menu-content__basket span:last-child {
-        margin-left: 15px; }
-
 @media screen and (max-width: 1024px) {
   .container {
     width: 100%; } }
@@ -224,5 +227,3 @@ li {
 @media screen and (max-width: 320px) {
   .container {
     width: 100%; } }
-
-/*# sourceMappingURL=style.css.map */
