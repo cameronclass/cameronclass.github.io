@@ -43,7 +43,7 @@ $(document).ready(function () {
     // Optional parameters
     slidesPerView: "auto",
     spaceBetween: 0,
-    freeMode: true,
+    /* freeMode: true, */
   });
 });
 
