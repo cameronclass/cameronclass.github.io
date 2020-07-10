@@ -60,11 +60,15 @@ li {
     }
 }
 
+
 .logo {
+
     a {
         font-family: 'Times New Roman', Times, serif;
         font-size: 25px;
         font-weight: bold;
+        display: flex;
+        align-items: center;
     }
 
     svg {

@@ -386,13 +386,17 @@
             justify-content: space-between;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 10px; }
+    margin: 10px 0 5px 0; }
     .header .menu-content__basket span {
       background-color: #f5f7ff;
       border-radius: 50%;
       color: #ED1C24;
       padding: 3px 7px;
       margin-right: 10px; }
+  .header .align-items-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 * {
   padding: 0;
@@ -447,7 +451,13 @@ li {
 .logo a {
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
-  font-weight: bold; }
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 .logo svg {
   height: 25px;
   width: 25px; }
