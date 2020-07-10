@@ -1,0 +1,48 @@
+/* Forms Styles */ 
+.site-form {
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    border-radius: 0;
+    border: 1px solid #ececec;
+    background: #f4f4f4;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: #f4f4f4;
+    }
+    @include placeholder {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+  textarea.form-control {
+    height: 130px;
+    width: 100%;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: #f4f4f4;
+    }
+  }
+  input.form-control {
+    height: 50px;
+    line-height: 50px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  label {
+    color: #999;
+    display: block;
+    margin: 0 0 5px;
+  }
+  .submit-btn {
+    margin-top: 15px;
+  }
+  &.contact-form-2 {
+    .form-control {
+      background: #e7e7e7;
+    }
+  }
+}

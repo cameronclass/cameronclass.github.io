@@ -1,0 +1,123 @@
+/* FAQ Page */
+
+.faq-section {
+    padding: 40px 0px 40px;
+    @include mobile {
+        padding: 90px 0px 90px;
+    }
+    @include desktops {
+        padding: 90px 0px 90px;
+    }
+    color: $black-color-2;
+    .section-header {
+        margin-bottom: 18px;
+        @include mobile {
+            margin-bottom: 20px;
+        }
+        @include tablet {
+            margin-bottom: 25px;
+        }
+        h2 {
+            text-transform: uppercase;
+            line-height: 1.35;
+            margin-bottom: 5px;
+            font-size: 22px;
+            @include mobile {
+                font-size: 28px;
+            }
+            @include tablet {
+                font-size: 36px;
+            }
+        }
+    }
+    .section-article {
+        margin-bottom: 30px;
+        @include mobile {
+            margin-bottom: 35px;
+        }
+        @include tablet {
+            margin-bottom: 45px;
+        }
+        h4 {
+            line-height: 1.35;
+            margin-bottom: 5px;
+            font-size: 16px;
+            @include tablet {
+                font-size: 18px;
+            }
+        }
+        p {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.site-faq-accordion {
+    .card {
+        .btn-link {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            height: 100%;
+            padding: 15px 35px 15px 10px;
+            justify-content: flex-start;
+            color: #56a700;
+            line-height: 1.5;
+            display: flex;
+            border-width: 1px;
+            border-style: solid;
+            border-color: $primary-color $primary-color #ececec $primary-color;
+            border-radius: 0;
+            text-decoration: none;
+            white-space: unset;
+            text-align: left;
+            @include mobile {
+                padding: 15px 30px 15px 10px;
+            }
+            @include tablet {
+                padding: 15px 10px 15px 25px;
+            }
+            &.collapsed {
+                border-color: #ececec;
+                color: $black-color-2;
+                &:before {
+                    content: "\f067";
+                }
+            }
+            &:before {
+                content: "\f068";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 15px;
+                position: absolute;
+                right: 0;
+                margin-right: 15px;
+            }
+        }
+        .card-body {
+            padding: 20px 25px;
+            border-bottom: 1px solid $primary-color;
+            border-left: 1px solid $primary-color;
+            border-right: 1px solid $primary-color;
+            padding: 20px 25px;
+        }
+        margin-bottom: 10px;
+    }
+    .card-header {
+        padding: 0;
+        background: #f9f9f9;
+        border-radius: 0;
+        border: 0;
+        h2 {}
+    } // .collapse.show {
+    //   .card-body {
+    //     border-width: 1px;
+    //     border-style: solid;
+    //     border-color: $primary-color;
+    //     border-top-color: transparent;
+    //   }
+    // }
+}

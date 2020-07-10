@@ -1,0 +1,191 @@
+/* About Page */
+
+.about-area {
+    // padding-bottom: 15px;
+    // @include desktops {
+    //     padding-bottom: 40px;
+    // }
+    // @include large-desktops {
+    //     padding-bottom: 35px;
+    // }
+}
+
+.about-text {
+    color: $black-color-2;
+    h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+        @include desktops {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    }
+    p {
+        line-height: 24px;
+    }
+    .btn {
+        width: 145px;
+        height: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.about-two-sp.sec-1 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.about-text p,
+.skill-progress p {
+    // color: #252525;
+}
+
+@media (max-width: 74.9375em) {
+    .skill-progress,
+    .about-text {
+        padding: 60px 0;
+    }
+}
+
+// @media (max-width: 47.94em) {
+//   .skill-progress,
+//   .about-text {
+//     padding: 60px 0;
+//   }
+// }
+@media (max-width: 74.9375em) {
+    .about-text-2 {
+        padding: 0;
+    }
+}
+
+@media (max-width: 74.9375em) {
+    .about-img-2 {
+        padding: 0;
+    }
+}
+
+.fact-area .row [class^="col"]:nth-child(odd) .fact {
+    background-color: #f3f3f3;
+}
+
+.fact-area .row [class^="col"]:nth-child(even) .fact {
+    background-color: #e8e8e8;
+}
+
+@media (max-width: 61.94em) {
+    .fact-area .row [class^="col"]:nth-child(1) .fact,
+    .fact-area .row [class^="col"]:nth-child(4) .fact {
+        background-color: #f3f3f3;
+    }
+    .fact-area .row [class^="col"]:nth-child(2) .fact,
+    .fact-area .row [class^="col"]:nth-child(3) .fact {
+        background-color: #e8e8e8;
+    }
+}
+
+@media (max-width: 35.94em) {
+    .fact-area .row [class^="col"]:nth-child(odd) .fact {
+        background-color: #f3f3f3;
+    }
+    .fact-area .row [class^="col"]:nth-child(even) .fact {
+        background-color: #e8e8e8;
+    }
+}
+
+.fact {
+    padding: 90px 15px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+}
+
+.fact__icon {
+    margin-right: 20px;
+}
+
+.fact__content {
+    text-align: left;
+    color: $black-color-2;
+}
+
+.fact__content h3 {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.fact__content p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.skill-progress {
+    h2 {
+        font-family: Raleway;
+        font-weight: 900;
+        color: $black-color-2;
+    }
+}
+
+.skill-progress__single:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.skill-progress__title {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 50px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    line-height: 1.6;
+}
+
+.skill-progress .progress {
+    background: #f7f7f7;
+    border-radius: 3px;
+    height: 18px;
+    overflow: visible;
+}
+
+.skill-progress .progress-bar {
+    background: #7b7b7b;
+    border-radius: 3px;
+    margin-left: 2px;
+    position: relative;
+}
+
+.skill-progress .progress-bar span {
+    background: #3e3e3e;
+    border: 3px solid #a0a0a0;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    height: 40px;
+    left: -12px;
+    padding-top: 0;
+    position: absolute;
+    text-align: center;
+    top: -13px;
+    width: 40px;
+    line-height: 33px;
+}

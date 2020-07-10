@@ -1,0 +1,423 @@
+/* Spacings */
+
+.section-padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+@for $i from 3 through 30 {
+  .space-db--#{5 * $i} {
+    margin-bottom: -5px *$i;
+  }
+}
+
+@for $i from 6 through 30 {
+  .space-dt--#{5 * $i} {
+    margin-top: -5px *$i;
+  }
+}
+
+@for $i from 6 through 30 {
+  .space-db--#{5 * $i} {
+    margin-bottom: -5px *$i;
+  }
+}
+
+.mb {
+  &--40 {
+    margin-bottom: 40px;
+  }
+  &--25 {
+    margin-bottom: 25px;
+  }
+  &--15 {
+    margin-bottom: 15px;
+  }
+}
+
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout:'only screen and (max-width: 767px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+/* container 450px*/
+
+/*-- Padding Top --*/
+
+@for $i from 1 through 30 {
+  .pt--#{5 * $i} {
+    padding-top: 5px *$i;
+  }
+}
+
+// Large Device only
+@for $i from 1 through 30 {
+  @include desktops {
+    .pt-lg--#{5 * $i} {
+      padding-top: 5px *$i !important;
+    }
+  }
+}
+
+@media #{$large-mobile} {
+  @for $i from 1 through 10 {
+    .pt_sm--#{5 * $i} {
+      padding-top: 5px *$i;
+    }
+  }
+}
+
+/*-- Padding Bottom --*/
+
+@for $i from 1 through 30 {
+  .pb--#{5 * $i} {
+    padding-bottom: 5px *$i;
+  }
+}
+
+@media #{$large-mobile} {
+  @for $i from 1 through 10 {
+    .pb_sm--#{5 * $i} {
+      padding-bottom: 5px *$i;
+    }
+  }
+}
+
+/*-- Padding Left --*/
+
+@for $i from 1 through 30 {
+  .pl--#{5 * $i} {
+    padding-left: 5px *$i;
+  }
+}
+
+@for $i from 1 through 30 {
+  @include desktops {
+    .pl-lg--#{5 * $i} {
+      padding-left: 5px *$i;
+    }
+  }
+}
+
+@for $i from 1 through 30 {
+  @include desktops {
+    .pr-lg--#{5 * $i} {
+      padding-right: 5px *$i;
+    }
+  }
+}
+
+@for $i from 1 through 30 {
+  @include desktops {
+    .mt-lg--#{5 * $i} {
+      margin-top: 5px *$i;
+    }
+  }
+}
+
+.pl--5 {
+  padding-left: 5px !important;
+}
+
+/*-- Padding Right --*/
+
+@for $i from 1 through 30 {
+  .pr--#{5 * $i} {
+    padding-right: 5px *$i;
+  }
+}
+
+/*-- Margin Top --*/
+
+@for $i from 1 through 20 {
+  .mt--#{5 * $i} {
+    margin-top: 5px *$i;
+  }
+}
+
+@media #{$md-layout} {
+  .md-mt--30 {
+    margin-top: 30px;
+  }
+}
+
+@media #{$sm-layout} {
+  .sm-mt--30 {
+    margin-top: 30px;
+  }
+}
+
+@media #{$large-mobile} {
+  .lr-mt--30 {
+    margin-top: 30px;
+  }
+}
+
+/*-- Margin Bottom --*/
+
+@for $i from 1 through 20 {
+  .mb--#{5 * $i} {
+    margin-bottom: 5px *$i;
+  }
+}
+
+/*-- Margin Bottom --*/
+
+@for $i from 1 through 20 {
+  .ptb--#{5 * $i} {
+    padding: 5px *$i 0;
+  }
+}
+
+/*-- Margin Bottom --*/
+
+@for $i from 1 through 20 {
+  .pct-md-#{5 * $i} {
+    @include tablet {
+      padding: 5px *$i 0;
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .pct-lg-#{5 * $i} {
+    @include desktops {
+      padding: 5px *$i 0;
+    }
+  }
+}
+
+/* Paddings */
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktops {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+/* No gutters */
+
+.no-gutters-lg {
+  @include desktops {
+    >.col,
+    >[class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  @include large-desktops {
+    >.col,
+    >[class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  @include extra-large-desktops {
+    >.col,
+    >[class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+/*Padding Top and Bottom*/
+
+@for $i from 0 through 60 {
+  .ptb--#{$i * 5} {
+    padding-top: #{($i * 5)}px !important;
+    padding-bottom: #{($i * 5)}px !important;
+  }
+}
+
+// Padding Bottom
+@for $i from 0 through 60 {
+  .pb--#{$i * 5} {
+    padding-bottom: #{($i * 5)}px !important;
+  }
+}
+
+// Padding top
+@for $i from 0 through 60 {
+  .pt--#{$i * 5} {
+    padding-top: #{($i * 5)}px !important;
+  }
+}
+
+// Padding Right
+@for $i from 0 through 40 {
+  .pr--#{$i * 5} {
+    padding-right: #{($i * 5)}px !important;
+  }
+}
+
+// Padding Left
+@for $i from 0 through 40 {
+  .pl--#{$i * 5} {
+    padding-left: #{($i * 5)}px !important;
+  }
+}
+
+// Padding Left right
+@for $i from 0 through 40 {
+  .plr--#{$i * 5} {
+    padding-left: #{($i * 5)}px !important;
+    padding-right: #{($i * 5)}px !important;
+  }
+}
+
+// Margin Top and Bottom
+@for $i from 0 through 40 {
+  .mtb--#{$i * 5} {
+    margin-top: #{($i * 5)}px !important;
+    margin-bottom: #{($i * 5)}px !important;
+  }
+}
+
+// Margin Bottom
+@for $i from 0 through 40 {
+  .mb--#{$i * 5} {
+    margin-bottom: #{($i * 5)}px !important;
+  }
+}
+
+// Margin top
+@for $i from 0 through 40 {
+  .mt--#{$i * 5} {
+    margin-top: #{($i * 5)}px !important;
+  }
+}
+
+// Margin top for large device
+@for $i from 0 through 40 {
+  @include desktops {
+    .mt-lg--#{$i * 5} {
+      margin-top: #{($i * 5)}px !important;
+    }
+  }
+}
+
+// Margin top for medium device
+@for $i from 0 through 40 {
+  @include tablet {
+    .mt-md--#{$i * 5} {
+      margin-top: #{($i * 5)}px !important;
+    }
+  }
+}
+
+// Margin top for small device
+@for $i from 0 through 40 {
+  @include mobile {
+    .mt-sm--#{$i * 5} {
+      margin-top: #{($i * 5)}px !important;
+    }
+  }
+}
+
+// Margin top for xsmall device
+@for $i from 0 through 40 {
+  @include mobile-xs {
+    .mt-xs--#{$i * 5} {
+      margin-top: #{($i * 5)}px !important;
+    }
+  }
+}
+
+// Margin Left
+@for $i from 0 through 20 {
+  .ml--#{$i * 5} {
+    margin-left: #{($i * 5)}px !important;
+  }
+}
+
+// Margin right
+@for $i from 0 through 10 {
+  .mr--#{$i * 10} {
+    margin-right: #{($i * 10)}px !important;
+  }
+}
+
+@for $i from 0 through 10 {
+  @include desktops {
+    .mr-lg--#{$i * 5} {
+      margin-right: #{($i * 5)}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  @include tablet {
+    .mr-md--#{$i * 5} {
+      margin-right: #{($i * 5)}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  @include mobile {
+    .mr-sm--#{$i * 5} {
+      margin-right: #{($i * 5)}px !important;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  @include mobile-xs {
+    .mr-xs--#{$i * 5} {
+      margin-right: #{($i * 5)}px !important;
+    }
+  }
+}
+
+// Inner Section Paddding
+.sp-inner-page {
+    padding: 60px 0;
+  @include desktops{
+    padding: 90px 0;
+  }
+  &--top {
+    padding-top: 40px;
+    @include tablet {
+      padding-top: 60px;
+    }
+    @include desktops {
+      padding-top: 90px;
+    }
+  }
+  &--bottom {
+    padding-bottom: 40px;
+    @include tablet {
+      padding-bottom: 60px;
+    }
+    @include desktops {
+      padding-bottom: 90px;
+    }
+  }
+}
+
+.left-slide-margin {
+  margin-bottom: 30px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.pt-lg-0 {
+  @include desktops {
+    padding-top: 0!important;
+  }
+}
+.pt-md-0 {
+  @include tablet {
+    padding-top: 0!important;
+  }
+}

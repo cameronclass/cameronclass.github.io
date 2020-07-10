@@ -1,0 +1,211 @@
+/* Sidebars Section */
+
+.single-sidebar {
+    margin-bottom: 40px;
+    .promo-image {
+        max-width: 300px;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.sidebar-title {
+    border-bottom: 2px solid #ececec;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 15px;
+    color: $black-color-2;
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        height: 2px;
+        width: 60px;
+        background: #56a700;
+        left: 0;
+    }
+}
+
+/* Sidebar Search */
+
+.site-mini-search {
+    background: #fff;
+    border: 1px solid #ececec;
+    color: #999;
+    font-family: Rubik, Arial, Helvetica, sans-serif; // max-width: 500px;
+    position: relative;
+    width: 100%;
+    input {
+        background: none;
+        border: none;
+        height: 34px;
+        padding: 0 40px 0 15px;
+        width: 100%;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    button {
+        background: none;
+        border: none;
+        color: #999;
+        font-size: 14px;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 34px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+/*  Sidebar List */
+
+.sidebar-list {
+    list-style: disc;
+    padding-left: 15px;
+    li {
+        color: #1a1f2b;
+        margin-bottom: 5px;
+        a {
+            color: inherit;
+            transition: .4s;
+        }
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.sidebar-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        background: #f1f1f1;
+        border: none;
+        color: #999;
+        display: inline-block;
+        font-size: 1em !important;
+        margin: 0 5px 10px 0;
+        padding: 3px 12px;
+        text-transform: capitalize;
+        transition: all .2s ease;
+        border-radius: 4px;
+        &:hover {
+            background: $primary-color;
+            color: $white-color;
+        }
+    }
+}
+
+/*Shop Sidebar*/
+
+// attr(data-line)
+ul.sidebar-filter-list {
+    li {
+        margin: 0 0 10px 0;
+        a {
+            padding-left: 25px;
+            padding-right: 25px;
+            position: relative;
+            display: block;
+            &:before {
+                border: 1px solid #ececec;
+                content: '\f383';
+                display: block;
+                font-family: 'Ionicons';
+                font-size: 0;
+                height: 16px;
+                left: 0;
+                line-height: 14px;
+                position: absolute;
+                text-align: center;
+                top: 2px;
+                width: 16px;
+                border-radius: 3px;
+            }
+            &:after {
+                content: attr(data-count);
+                position: absolute;
+                right: 0;
+            }
+        }
+        &.active,
+        &:hover {
+            a {
+                &:before {
+                    background: #56a700;
+                    border-color: #56a700;
+                    color: #fff;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* Ranage Slider*/
+
+.pm-range-slider {
+    height: 4px;
+    background: #e8e8e8;
+    .ui-slider-handle {
+        width: 14px;
+        height: 14px;
+        top: -5px;
+        background: #1d62b2;
+        border-radius: 100%;
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+    .ui-widget-header {
+        background: #1d62b2;
+        top: 0;
+        height: 100%;
+    }
+}
+
+.slider-price {
+    margin-top: 25px;
+    text-align: center;
+    p {
+        display: flex;
+        align-items: center;
+        .btn {
+            width: 100px;
+        }
+    }
+    input#amount {
+        background: transparent;
+        border: transparent;
+        color: $black-color-2;
+        text-align: left;
+        word-spacing: 15px;
+    }
+}
+
+// Sidebar Product
+.sidebar-product {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    +.sidebar-product {
+        margin-top: 20px;
+    }
+}

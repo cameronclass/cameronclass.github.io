@@ -191,7 +191,7 @@ button {
   transition: 100ms ease;
 }
 
-.header__content a:focus{
+.header__content a:focus, .header__content a:active{
   box-shadow: 0 0 0 0 rgba(0,123,255,0);
   outline: none;
   transform: translate(2px, 3px);

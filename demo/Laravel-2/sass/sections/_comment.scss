@@ -1,0 +1,86 @@
+/* Comment Section */
+
+.comment-block-wrapper {
+    h3 {
+        display: inline-block;
+        font-size: 17px;
+        margin-bottom: 20px;
+        position: relative;
+        text-transform: uppercase;
+        color: $black-color-2;
+    }
+}
+
+.single-comment {
+    border: 1px solid #ececec;
+    margin: 0 0 20px;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    .comment-avatar {
+        margin-right: 25px;
+        width: 50px;
+        height: 50px;
+    }
+    .comment-text {
+        .author {
+            font-size: 14px;
+            font-weight: 700;
+            color: $black-color-2;
+            margin-bottom: 5px;
+            a {
+                color: inherit;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+        .time {
+            color: #999;
+            margin: 0 0 15px;
+            font-size: .93em;
+            font-style: italic;
+        }
+        p {
+            color: #999;
+        }
+    }
+    .reply-btn {
+        position: absolute;
+        right: 30px;
+        font-weight: 700;
+        color: $primary-color;
+        border: 1px solid $primary-color !important;
+        position: absolute;
+        bottom: 10px;
+        font-weight: 700;
+        color: #56a700;
+        border: 1px solid #56a700 !important;
+        right: 10px;
+        @include mobile-lg {
+            top: 20px;
+            bottom: auto;
+            right: 20px;
+        }
+        &:hover {
+            color: $white-color;
+        }
+    }
+    &:nth-child(odd) {
+        @include tablet {
+            margin-left: 15px;
+            width: calc(100% - 15px);
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.reply-btn {
+    font-size: .8em;
+    width: 75px;
+    height: 28px;
+    line-height: 26px;
+}

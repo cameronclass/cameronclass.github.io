@@ -1,0 +1,143 @@
+/* Hero Area*/
+
+.home-content {
+    height: 500px;
+    display: flex !important;
+    align-items: center;
+    color: $black-color;
+    position: relative;
+    h1 {
+        text-transform: uppercase;
+        font-size: 44px;
+        @include tablet {
+            font-size: 56px;
+        }
+    }
+    h2 {
+        text-transform: uppercase;
+        font-size: 29px;
+        line-height: 40px;
+        @include tablet {
+            font-size: 40px;
+        }
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .slider-btn {
+        color: $primary-color;
+        .btn {
+            height: 40px;
+            display: inline-flex;
+            width: 130px;
+            font-size: 14px;
+            text-transform: uppercase;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// slider progress bar
+.herobanner-progress {
+    animation: initial;
+    background: rgba(51, 51, 51, 0.9);
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 5;
+    opacity: 0.2;
+}
+
+.slick-current {
+    .herobanner-progress {
+        animation: 8000ms ease-in-out 0s normal backwards 1 running hoFill;
+    }
+}
+
+@-webkit-keyframes hoFill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes hoFill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.hero-area-two {
+    .home-content {
+        color: $white-color;
+        padding-left: 15px;
+        @include tablet {
+            padding-left: 60px;
+        }
+        @include desktops {
+            padding-left: 45px;
+            height: 516px;
+        }
+        @include large-desktops {
+            height: 481px;
+        }
+        h4 {
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 32px;
+            line-height: 32px;
+            @include tablet {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+    .slider-btn {
+        color: #fff;
+        .btn {
+            color: inherit;
+        }
+    }
+}
+
+.home-slider-3 {
+    .home-content {
+        padding-left: 10px;
+        color: $white-color;
+        @include tablet {
+            padding-left: 70px;
+        }
+    }
+    .home-slider ul.slick-dots {
+        margin-left: 75px;
+    }
+}
+
+.home-4 {
+    .home-content {
+        height: 520px;
+        ;
+    }
+    .home-slider ul.slick-dots {
+        @include desktops {
+            margin-bottom: 75px;
+        }
+    }
+}
