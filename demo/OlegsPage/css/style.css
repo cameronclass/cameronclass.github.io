@@ -163,6 +163,13 @@ button {
 
 .header__content a {
   position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 80px;
+}
+.header__content a span {
+  position: absolute;
   bottom: 31px;
   right: 31px;
   text-align: center;
@@ -193,8 +200,8 @@ button {
   transition: 100ms ease;
 }
 
-.header__content a:focus,
-.header__content a:active {
+.header__content a:focus span,
+.header__content a:active span {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
   box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
   outline: none;
@@ -839,12 +846,12 @@ button {
 
 .fixed-menu {
   background-color: transparent !important;
-  z-index: -1;
+  z-index: 101;
   position: fixed;
-  -webkit-transition: 200ms all;
-  -o-transition: 200ms all;
-  transition: 200ms all;
-  opacity: 0;
+  -webkit-transition: 400ms all;
+  -o-transition: 400ms all;
+  transition: 400ms all;
+  opacity: 1;
 }
 
 .fixed-menu-active {

@@ -23,7 +23,7 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 470) {
+    if ($(window).scrollTop() > 370) {
       $(".js-hamburber-header").addClass("header__logo-active");
       $(".header__logo").addClass("header__logo-active");
       $(".fixed-menu").addClass("fixed-menu-active");
