@@ -1,20 +1,27 @@
 @media screen and (max-width: 1024px) {
-    .container{
+    .container {
         width: 100%;
-      
-    }
-}
-@media screen and (max-width: 768px) {
-    .container{
-        width: 100%;
-      
     }
 
 }
-@media screen and (max-width: 320px) {
-    .container{
+
+@media screen and (max-width: 768px) {
+    .container {
         width: 100%;
-      
+    }
+    .row {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+
+    }
+    .row {
+        flex-direction: column;
     }
 
 }
