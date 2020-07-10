@@ -589,6 +589,21 @@ html {
     -webkit-box-flex: 0;
             flex: 0 0 100%;
     max-width: 100%; } }
+.logo a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.logo svg {
+  margin-right: 8px;
+  height: 28px;
+  width: 28px; }
+
 .header {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
@@ -626,7 +641,6 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 100px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
     .header-menu__user li {
@@ -634,23 +648,28 @@ html {
       .header-menu__user li a {
         -webkit-text-decoration-line: underline;
                 text-decoration-line: underline; }
-  .header .menu-content__basket {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-right: 150px; }
-    .header .menu-content__basket span {
-      background-color: #F5F7FF;
-      border-radius: 50%;
-      color: #ED1C24;
-      padding: 3px; }
-      .header .menu-content__basket span:first-child {
-        margin-right: 15px; }
-      .header .menu-content__basket span:last-child {
-        margin-left: 15px; }
+  .header .align-items-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header .menu-content {
+    margin-right: 100px; }
+    .header .menu-content__basket {
+      margin: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      text-transform: uppercase;
+      font-family: "Open Sans Bold"; }
+      .header .menu-content__basket span {
+        background-color: #F5F7FF;
+        border-radius: 50%;
+        color: #ED1C24;
+        padding: 3px 8px;
+        margin: 0 10px; }
 
 * {
   padding: 0;
@@ -682,20 +701,81 @@ ul {
 li {
   list-style: none; }
 
+img {
+  height: auto;
+  width: 100%; }
+
 .icon {
   height: 20px;
   width: 20px;
-  fill: #ED1C24; }
+  fill: #ED1C24;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease; }
   .icon:hover {
     fill: #CA1118; }
 
-.logo a {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 25px;
-  font-weight: bold; }
-.logo svg {
-  height: 25px;
-  width: 25px; }
+.btn {
+  display: inline-block;
+  font-family: "Open Sans SemiBold";
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ED1C24;
+  padding: 10px 8px;
+  border-radius: .25rem;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out; }
+
+.btn:hover {
+  background: #CA1118; }
+
+.products .col-sm-6, .products .col-md-6, .products .col-lg-4, .products .col-xl-3 {
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 0 40px; }
+
+.card {
+  background: #FFFFFF;
+  font-family: "Open Sans Bold";
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin-top: 20px;
+  -webkit-transition: -webkit-transform .3s ease-in;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in; }
+  .card-content {
+    padding: 10px 15px 20px; }
+    .card-content__title {
+      font-size: 16px; }
+    .card-content__price {
+      color: #ED1C24;
+      margin: 10px 0 8px; }
+    .card-content-in__stock {
+      font-family: "Open Sans Regular";
+      color: #5A5A5A;
+      font-size: 12px; }
+    .card-content__buttons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 10px; }
 
 @media screen and (max-width: 1024px) {
   .container {

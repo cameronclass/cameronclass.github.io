@@ -34,26 +34,87 @@ ul {
 li {
     list-style: none;
 }
+
+img {
+    height: auto;
+    width: 100%;
+}
+
 .icon {
     height: 20px;
     width: 20px;
     fill: $red;
+    transition: fill .3s ease;
 
     &:hover {
         fill: $red-hover;
     }
 }
 
-.logo {
-    a {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        font-weight: bold;
-    }
 
-    svg {
-        height: 25px;
-        width: 25px;
-    }
+
+.btn {
+    display: inline-block;
+    font-family: $font-semi-bold;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: $red;
+    padding: 10px 8px;
+    border-radius: .25rem;
+    transition: background .2s ease-in-out;
+}
+.btn:hover{
+    background: $red-hover;
 }
 
+.products {
+   .col-sm-6, .col-md-6, .col-lg-4,.col-xl-3 {
+
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 40px;
+}
+
+.card {
+    background: #FFFFFF;
+    font-family: $font-bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: transform .3s ease-in;
+
+    &-content {
+        padding: 10px 15px 20px;
+
+        &__title {
+           
+            font-size: 16px;
+        }
+        &__price{
+            color: $red;
+            margin: 10px 0 8px;
+        }
+        &-in__stock{
+            
+            font-family: $font;
+            color: $grey;
+            font-size: 12px;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          
+     
+        }
+    }
+
+}
