@@ -1847,6 +1847,13 @@ button {
   .choose-mesenger .buy-modal__price h3{
     padding: 20px 0 18px;
   }
+  .price-last .buy-modal__price p{
+    font-size: 15px;
+    padding-top: 28px;
+  }
+  .price-last .buy-modal__price h4{
+    margin-top: 18px;
+  }
 }
 /* Android */
 @media (min-width: 340px) and (max-width: 370px) {
