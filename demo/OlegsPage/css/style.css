@@ -216,12 +216,14 @@ button {
   -ms-flex-align: center;
   align-items: center;
   margin-left: 50px;
+  padding-bottom: 8px;
 }
 
 .possibility {
   background: -o-linear-gradient(top, #519dd7 0%, #354d9f 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(#519dd7), to(#354d9f));
   background: linear-gradient(180deg, #519dd7 0%, #354d9f 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   height: 230px;
   width: 100%;
@@ -273,7 +275,7 @@ button {
 /* About */
 .about-service {
   padding: 0 15px;
-  margin-top: 67px;
+  margin-top: 59px;
 }
 
 .about-service__block {
@@ -309,7 +311,7 @@ button {
 }
 
 .about-service__block img {
-  width: 301px;
+  width: 100%;
   height: auto;
 }
 
@@ -1738,8 +1740,10 @@ button {
   margin-bottom: 40px !important;
 }
 
-.public-offerty p{
-  text-align: center;
+
+.px-0 .buy-modal__price{
+  padding: 0;
+  text
 }
 
 /* .buy-last .contact-btn {
@@ -1852,10 +1856,7 @@ button {
   .button-start__footer_title {
     font-size: 15px;
   }
-  .about-last .buy-modal__price,
-  .about .buy-modal__price {
-    padding: 0 20px;
-  }
+  
   .buy-modal__content h2 {
     height: 100px;
   }
@@ -1914,10 +1915,7 @@ button {
   .menu-item a {
     font-size: 15px;
   }
-  .about-last .buy-modal__price,
-  .about .buy-modal__price {
-    padding: 0 15px;
-  }
+ 
   .contact-btn {
     padding: 0 15px;
     font-size: 15px;
@@ -1956,5 +1954,8 @@ button {
   }
   .public-offerty h2 {
     font-size: 20px;
+  }
+  .height .buy-modal__price{
+    height: 241px !important;
   }
 }
