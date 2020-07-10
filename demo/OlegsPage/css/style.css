@@ -188,6 +188,13 @@ button {
   -webkit-box-shadow: 2px 3px 0px #303141;
   box-shadow: 2px 3px 0px #303141;
   border-radius: 10px;
+  transition: 100ms ease;
+}
+
+.header__content a:focus{
+  box-shadow: 0 0 0 0 rgba(0,123,255,0);
+  outline: none;
+  transform: translate(2px, 3px);
 }
 
 .header-others .fixed-menu {
