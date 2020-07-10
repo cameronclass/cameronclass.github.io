@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    color: $black;
+}
+
+button {
+    display: inline-block;
+}
+
+button:active,
+button,
+:focus {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    fill: $red;
+
+    &:hover {
+        fill: $red-hover;
+    }
+}
+
+.logo {
+    a {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    svg {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+.header {
+    background-color: $white;
+    box-shadow: 0px 8px 7px -2px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    height: auto;
+
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+
+    }
+
+    &-menu__phone {
+        align-items: center;
+        display: flex;
+        li {
+            display: flex;
+            align-items: center;
+
+            span{
+                padding-left: 5px;
+            }
+        }
+   
+    }
+
+    &-menu__user {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        flex-wrap: nowrap;
+
+        li {
+            padding: 0 2px;
+
+            a {
+                text-decoration-line: underline;
+            }
+        }
+
+    }
+    .menu-content__basket{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 150px;
+
+        span{
+            background-color: $white-second;
+            border-radius: 50%;
+            color: $red;
+            padding: 3px;
+            &:first-child{
+                margin-right: 15px;
+            }
+            &:last-child{
+                margin-left: 15px;
+            }
+        }
+    }
+}

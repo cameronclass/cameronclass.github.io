@@ -1,19 +1,38 @@
 
 // Colors
-$color1: #62a2f6;
-$color2: #ff2a00;
-$color3: #d1d1d1;
-$color4: #1e905d;
+$red: #ED1C24;
+$red-hover: #CA1118;
+$black: #000;
+$grey: #5A5A5A;
+$white: #ffffff;
+$white-second: #F5F7FF;
 
 
-$font: 'Liberation Sans';
-$font-bold: 'Liberation Sans Bold';
+
+
+$font: 'Open Sans Regular';
+$font-bold: 'Open Sans Bold';
+$font-bold: 'Open Sans SemiBold';
+
 
 // Mixins
 @mixin icon($content,  $weight) {
   font-family: "Font Awesome 5 Free";
   content: $content;
   font-weight: $weight;
+}
+
+@font-face{
+  font-family: "Open Sans Bold";
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face{
+  font-family: "Open Sans Regular";
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: "Open Sans SemiBold";
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
 }
 
 // Font Family
