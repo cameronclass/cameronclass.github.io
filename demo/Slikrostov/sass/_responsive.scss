@@ -2,8 +2,9 @@
 
     .filter-title h1 {
         font-size: 20px;
-      
+
     }
+
     .header-menu {
         .menu-content {
             margin-right: 0;
@@ -17,35 +18,72 @@
             }
         }
     }
+
     .filter-background {
-        background:linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
-            }
-            .menu-content {
-                margin-right: 0;
-            }
-            .select-container{
-                padding-left: 15px;
-                margin: 30px 0;
-            }
-            .filter .button {
-                margin: 15px 0 0 10px;
-            }
+        background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
+    }
+
+    .menu-content {
+        margin-right: 0;
+    }
+
+    .select-container {
+        padding-left: 15px;
+        margin: 30px 0;
+    }
+
+    .filter .button {
+        margin: 15px 0 0 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
     .filter-background {
-background:linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
+        background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
     }
+
     .menu-content {
         margin-right: 0;
     }
-    .select-container{
+
+    .select-container {
         padding-left: 15px;
         margin: 30px 0;
     }
+
     .filter .button {
         margin: 15px 0 0 10px;
+    }
+
+    .article-container {
+        padding: 0;
+
+        h2,
+        p {
+            padding: 20px;
+        }
+
+        h2 {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        &-img {
+            img {
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 3px;
+            }
+
+            padding: 0;
+
+
+        }
     }
 
 }
@@ -58,9 +96,10 @@ background:linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
     .menu-content {
         margin-right: 0;
     }
+
     .header {
-        .menu-content__basket>li:first-child{
-            span{
+        .menu-content__basket>li:first-child {
+            span {
                 margin-left: 0;
             }
         }
@@ -70,14 +109,16 @@ background:linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        a>span{
-            
-                font-size: 21px;
-            
+
+        a>span {
+
+            font-size: 21px;
+
         }
 
         .header-menu__phone {
             display: block;
+
             svg {
                 width: 16px;
                 height: 16px;
@@ -89,80 +130,100 @@ background:linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
 
         }
     }
-    .menu-content__basket{
+
+    .menu-content__basket {
         margin-top: 10px !important;
     }
-    .header-menu{
+
+    .header-menu {
         margin-top: 10px;
 
     }
-    .search{
+
+    .search {
         align-items: center;
-        h2{
+
+        h2 {
             font-size: 18px;
         }
-        .select{
+
+        .select {
             width: 65%;
             height: 36px;
             font-size: 13px;
-            
-            &-styled::after{
+
+            &-styled::after {
                 padding: 4px;
             }
         }
     }
+
     .filter {
-        &-select{
-            
-            margin: 5px 0 ;
+        &-select {
+
+            margin: 5px 0;
         }
+
         &-background {
-            background:linear-gradient(90deg, #ED1C24 31%, rgba(255, 0, 0, 0) 20%);
-                }
-        .select-container{
+            background: linear-gradient(90deg, #ED1C24 31%, rgba(255, 0, 0, 0) 20%);
+        }
+
+        .select-container {
             flex-direction: column;
             padding-left: 10px;
             margin-top: 15px;
         }
-        .button{
+
+        .button {
             margin: 10px 0 10px 0;
         }
+    }
+
+    .article-img {
+        height: auto;
+        margin-bottom: -5px;
+
     }
 
 
 
 
 }
+
 @media screen and (max-width: 320px) {
 
     .mob-d-none {
         display: none !important;
     }
+
     .menu-content {
         margin-right: 0;
     }
 
-    .header-menu{
+    .header-menu {
         margin-top: 10px;
     }
-    .search{
+
+    .search {
         align-items: center;
-        h2{
+
+        h2 {
             font-size: 18px;
         }
-        .select{
+
+        .select {
             width: 100%;
             height: 33px;
             font-size: 12px;
-            
-            &-styled::after{
+
+            &-styled::after {
                 border: none;
             }
         }
     }
 
 
-    .header-menu  {
+    .header-menu {
         font-size: 10px;
     }
 
