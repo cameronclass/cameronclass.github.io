@@ -5,14 +5,60 @@ $red-hover: #CA1118;
 $black: #000;
 $grey: #5A5A5A;
 $white: #ffffff;
-$background: #f5f7ff;
-
-
-
-
+$white-second: #F5F7FF;
 $font: 'Open Sans Regular';
 $font-bold: 'Open Sans Bold';
-$font-bold: 'Open Sans SemiBold';
+$font-semi-bold: 'Open Sans SemiBold';
+
+$background: #e74c3c;
+$select-color: #fff;
+$select-background: #c0392b;
+$select-width: 220px;
+$select-height: 40px; 
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  color: $black;
+}
+
+button {
+  display: inline-block;
+}
+
+button:active,
+button,
+:focus {
+  outline: none;
+  border: none;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
 
 
 // Mixins
@@ -44,3 +90,4 @@ $font-bold: 'Open Sans SemiBold';
     font-style: normal;
     font-display: swap;
 }
+

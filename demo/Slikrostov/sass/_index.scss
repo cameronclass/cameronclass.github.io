@@ -1,44 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $font;
-    color: $black;
-}
-
-button {
-    display: inline-block;
-}
-
-button:active,
-button,
-:focus {
-    outline: none;
-    border: none;
-}
-
-a {
-    color: $black;
-    text-decoration: none;
-
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-}
-
 .icon {
     height: 20px;
     width: 20px;
     fill: $red;
+    transition: fill .3s ease;
 
     &:hover {
         fill: $red-hover;
@@ -46,19 +10,235 @@ li {
 }
 
 
-.logo {
 
-    a {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-    }
 
-    svg {
-        height: 25px;
-        width: 25px;
+.btn {
+    display: inline-block;
+    font-family: $font-semi-bold;
+    color: $white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: $red;
+    padding: 10px 8px;
+    border-radius: .25rem;
+    transition: background .2s ease-in-out;
+
+    &:hover {
+        background: $red-hover;
     }
 }
 
+
+.products {
+
+    .col-sm-6,
+    .col-md-6,
+    .col-lg-4,
+    .col-xl-3 {
+
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 40px;
+
+}
+
+.select-modifaction {
+
+    .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+    }
+
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+
+    .select {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        color: $red;
+        width: $select-width;
+        height: $select-height;
+        border: 1px solid $red;
+        border-radius: 5px;
+    }
+
+    .select-styled {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: initial;
+        padding: 8px 15px;
+        transition: all 0.2s ease-in;
+
+
+        &:after {
+            content: "";
+            border: 1px solid $red;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 6px;
+            position: absolute;
+            top: 9px;
+            right: 18px;
+            transform: rotate(45deg);
+        }
+
+
+        &:active,
+        &.active {
+
+
+
+            &::after {
+                transform: rotate(-135deg) translateX(-45%);
+                transition: .2s ease-in-out;
+                top: 9px;
+
+            }
+        }
+    }
+
+    .select-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border: 1px solid $red;
+        background-color: $white;
+
+        li {
+            margin: 0;
+            padding: 12px 0;
+            text-indent: 15px;
+            border-top: 1px solid darken($select-background, 10);
+            transition: all 0.15s ease-in;
+
+            &:nth-child(2) {
+                border-top: none;
+            }
+
+            &:hover {
+                color: $select-background;
+                background: $select-color;
+            }
+
+            &[rel="hide"] {
+                display: none;
+            }
+        }
+    }
+
+}
+
+
+.card {
+    background: #FFFFFF;
+    font-family: $font-bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: transform .3s ease-in;
+
+    &-content {
+        padding: 10px 15px 20px;
+
+        &__title {
+
+            font-size: 16px;
+        }
+
+        &__price {
+            color: $red;
+            margin: 10px 0 8px;
+        }
+
+        &-in__stock {
+
+            font-family: $font;
+            color: $grey;
+            font-size: 12px;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+
+
+        }
+    }
+
+}
+.p-0{
+    padding: 0;
+}
+.m-0{
+    margin: 0;
+}
+
+.filter {
+    &-container{
+        background: $white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    .select-container{
+        display: flex;
+        align-items: center;
+    }
+    &-select{
+        width: 100%;
+        margin-right: 15px;
+    }
+    .select-modifaction{
+        label{
+            color: $grey;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+        .select{
+            width: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            border: $white-second;
+            &-options{
+                background-color: $white;
+                border: none;
+                box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+                top: 92%;
+                li{
+                    border: none;
+                }
+               
+            }
+        }
+      
+
+    }
+
+
+}

@@ -11,130 +11,56 @@ $( function() {
 
 $(document).ready(function(){
 
-  // Js Toogle
-  $(".js-tags-toogle").click(function(){
-    $("#js-tags-ul").toggleClass("h-auto");
-  });
+/*
+Reference: http://jsfiddle.net/BB3JK/47/
+*/
 
+$('select').each(function(){
+  var $this = $(this), numberOfOptions = $(this).children('option').length;
 
-  // If more 8 Add Class
-  if ($('#js-tags-ul li').length > 9) {
-    $(".js-tags-toogle").addClass("display-block");
-   } else {
-    $(".js-tags-toogle").removeClass("display-block");
+  $this.addClass('select-hidden'); 
+  $this.wrap('<div class="select"></div>');
+  $this.after('<div class="select-styled"></div>');
+
+  var $styledSelect = $this.next('div.select-styled');
+  $styledSelect.text($this.children('option').eq(0).text());
+
+  var $list = $('<ul />', {
+      'class': 'select-options'
+  }).insertAfter($styledSelect);
+
+  for (var i = 0; i < numberOfOptions; i++) {
+      $('<li />', {
+          text: $this.children('option').eq(i).text(),
+          rel: $this.children('option').eq(i).val()
+      }).appendTo($list);
   }
 
-  // Card filter
-  $(".js-card-filter").click(function(){
-    $(this).toggleClass("card-filter");
+  var $listItems = $list.children('li');
+
+  $styledSelect.click(function(e) {
+      e.stopPropagation();
+      $('div.select-styled.active').not(this).each(function(){
+          $(this).removeClass('active').next('ul.select-options').hide();
+      });
+      $(this).toggleClass('active').next('ul.select-options').toggle();
   });
 
-  // Change Card View
-  $(".js-card-list").click(function(){
-    $(this).addClass("active");
-    $(".js-card-table").removeClass("active");
-    $(".catalog__card").addClass("catalog__card_list");
-  });
-  $(".js-card-table").click(function(){
-    $(this).addClass("active");
-    $(".js-card-list").removeClass("active");
-    $(".catalog__card").removeClass("catalog__card_list");
+  $listItems.click(function(e) {
+      e.stopPropagation();
+      $styledSelect.text($(this).text()).removeClass('active');
+      $this.val($(this).attr('rel'));
+      $list.hide();
+      //console.log($this.val());
   });
 
-  // Category toggleClass
-  // $(".js-category-open").click(function(e){
-  //   e.preventDefault();
-  //   $(".catalog-ul ul").toggleClass("display-block");
-  // });
-
-  $(function(){
-   $('.js-master-readmore').readmore({
-     speed: 500,
-     lessLink: '<div class="js-master-readmore-btn"><a href="#">Свернуть</a></div>',
-     moreLink: '<div class="js-master-readmore-btn"><a href="#">Читать еще</a></div>',
-     collapsedHeight: 58,
-     });
+  $(document).click(function() {
+      $styledSelect.removeClass('active');
+      $list.hide();
   });
 
-
-
-    // $( ".control-btn" ).hover(
-    //   function() {
-    //       $(this).find(".dropdown-content").addClass("dropdown-content-active");
-    //   }, function() {
-    //     // setTimeout(function() {
-    //     	// $(this).find(".dropdown-content").removeClass("dropdown-content-active");
-    //     // }, 200);
-  	//     $(this).find(".dropdown-content").removeClass("dropdown-content-active");
-    //   }
-    // );
-
-    // $( ".control-btn" )
-    // .mouseenter(function() {
-    //      $(this).find(".dropdown-content").addClass("dropdown-content-active");
-    // })
-    // .mouseleave(function() {
-    //     $(this).find(".dropdown-content").removeClass("dropdown-content-active");
-    // });
-
-
-    // Menu dropdown
-    var timer;
-
-    $(".control-btn").on("mouseover", function() {
-      clearTimeout(timer);
-    	openSubmenu();
-    }).on("mouseleave", function() {
-      timer = setTimeout(
-      	closeSubmenu
-      , 200);
-    });
-
-    function openSubmenu() {
-      $(this).find(".dropdown-content").addClass("dropdown-content-active");
-    }
-    function closeSubmenu() {
-      $(this).find(".dropdown-content").removeClass("dropdown-content-active");
-    }
-
-    // $('.control-btn').on({
-    //   mouseenter: function() {
-    //     setTimeout(function() {
-    //       $(this).find(".dropdown-content").addClass("dropdown-content-active");
-    //     }, 0);
-    //   }
-    // });
-    // $('.control-btn').on({
-    //   mouseleave: function() {
-    //     setTimeout(function() {
-    //       $(this).find(".dropdown-content").removeClass("dropdown-content-active");
-    //     }, 500);
-    //   }
-    // });
-
+});
 
 });
 
 
-// Slider
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 8,
-      loop: true,
-      freeMode: true,
-      loopedSlides: 5, //looped slides should be the same
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 10,
-      loop:true,
-      loopedSlides: 5, //looped slides should be the same
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      thumbs: {
-        swiper: galleryThumbs,
-      },
-    });

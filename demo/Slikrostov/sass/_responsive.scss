@@ -1,28 +1,131 @@
-
 @media screen and (max-width: 1024px) {
-    .container {
-        width: 100%;
-    }
 
+    .header-menu {
+        .menu-content {
+            margin-right: 0;
+        }
+
+        .logo {
+            display: flex;
+
+            .header-menu {
+                font-size: 12px !important;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-    }
-    .row {
-        flex-direction: column;
+
+
+    .menu-content {
+        margin-right: 0;
     }
 
 }
 
-@media screen and (max-width: 320px) {
-    .container {
-        width: 100%;
+@media screen and (max-width: 520px) {
+    .mob-d-none {
+        display: none !important;
+    }
+
+    .menu-content {
+        margin-right: 0;
+    }
+    .header {
+        .menu-content__basket>li:first-child{
+            span{
+                margin-left: 0;
+            }
+        }
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a>span{
+            
+                font-size: 21px;
+            
+        }
+
+        .header-menu__phone {
+            display: block;
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            li>a>span {
+                font-size: 12px !important;
+            }
+
+        }
+    }
+    .menu-content__basket{
+        margin-top: 10px !important;
+    }
+    .header-menu{
+        margin-top: 10px;
 
     }
-    .row {
-        flex-direction: column;
+    .search{
+        align-items: center;
+        h2{
+            font-size: 18px;
+        }
+        .select{
+            width: 65%;
+            height: 36px;
+            font-size: 13px;
+            
+            &-styled::after{
+                padding: 4px;
+            }
+        }
     }
+
+
+
+
+}
+@media screen and (max-width: 320px) {
+
+    .mob-d-none {
+        display: none !important;
+    }
+    .menu-content {
+        margin-right: 0;
+    }
+
+    .header-menu{
+        margin-top: 10px;
+    }
+    .search{
+        align-items: center;
+        h2{
+            font-size: 18px;
+        }
+        .select{
+            width: 100%;
+            height: 33px;
+            font-size: 12px;
+            
+            &-styled::after{
+                border: none;
+            }
+        }
+    }
+
+
+    .header-menu  {
+        font-size: 10px;
+    }
+
+
+
+
+
 
 }
