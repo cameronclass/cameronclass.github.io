@@ -29,17 +29,9 @@
     }
 }
 
-
-.products {
-
-    .col-sm-6,
-    .col-md-6,
-    .col-lg-4,
-    .col-xl-3 {
-
-        padding-right: 10px;
-        padding-left: 10px;
-    }
+.mx-auto {
+    margin-right: auto !important;
+    margin-top: auto;
 }
 
 .search {
@@ -212,11 +204,12 @@
 
 .filter {
     &-container {
-        margin-top: 50px;
+
         background: $white;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
         border-radius: 3px;
         box-sizing: border-box;
+        margin: 50px 0;
     }
 
     .select-container {
@@ -271,7 +264,7 @@
     &-background {
         background: linear-gradient(90deg, #ED1C24 25%, rgba(255, 0, 0, 0) 25%);
         padding-left: 0;
-        
+
     }
 
     &-title {
@@ -284,7 +277,7 @@
         }
 
         &__img {
- 
+
             // background: linear-gradient(to right, $red 50%, $white 50%);
 
             img {
@@ -293,4 +286,46 @@
         }
     }
 
+}
+
+.article {
+
+
+    &-container {
+        box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+
+        border-radius: 3px;
+        padding-left: 50px;
+        margin: 50px 0;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 27px;
+        }
+
+        p {
+            color: $grey;
+            font-size: 12px;
+            padding: 0 50px 0 0;
+            margin: auto;
+            text-align: left;
+        }
+
+        &-img {
+            padding-right: 0;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+
+        }
+    }
+
+    &-img {
+        height: 301px;
+
+        img {
+            height: 100%;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    }
 }

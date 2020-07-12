@@ -1,0 +1,49 @@
+.footer {
+    background-color: $black;
+    color: $white;
+    padding: 45px 0 35px;
+    margin-top: 55px;
+   
+
+    a {
+        color: $white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-menu>li>a {
+        font-family: $font-semi-bold;
+    
+    
+    }
+
+    &-contacts li {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        svg {
+            margin-right: 10px;
+        }
+
+
+    }
+
+    &-socials {
+        display: flex;
+
+        li {
+            margin-right: 38px;
+        }
+    }
+
+    .footer-items li {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 32px;
+    }
+}
