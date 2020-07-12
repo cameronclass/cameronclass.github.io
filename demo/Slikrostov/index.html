@@ -44,19 +44,27 @@
   <header class="container-fluid header">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-xl-5 col-lg-4 col-md-6 col-sm-12 ">
+        <div class="col-xl-5 col-lg-4 col-md-4 col-sm-12 ">
           <div class="logo">
             <a href="/">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-logo">
                 <use xlink:href="icons/icons.svg#logo" />
               </svg>
-              Slickrostov.ru
+              <span>
+                Slickrostov.ru
+              </span>
             </a>
+            <ul class="header-menu__phone ">
+              <li><svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <use xlink:href="icons/icons.svg#phone" />
+                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a></li>
+
+            </ul>
           </div>
         </div>
-        <div class="col-xl-7 col-lg-8 col-md-6 col-sm-12">
+        <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12">
           <div class="header-menu">
-            <ul class="header-menu__phone">
+            <ul class="header-menu__phone mob-d-none">
               <li><svg xmlns="http://www.w3.org/2000/svg" class="icon">
                   <use xlink:href="icons/icons.svg#phone" />
                 </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a></li>
@@ -64,24 +72,24 @@
             </ul>
             <div class="menu-content">
               <ul class="header-menu__user">
-                <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                <!-- <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
                     <use xlink:href="icons/icons.svg#person" />
                   </svg></li>
                 <li>
                   <a href="#">Сергей</a>
                 </li>
-                <li>|</li>
+                <li>|</li> -->
 
                 <li>
-                  <a href="#">ред.профиль</a>
+                  <a href="#">Вход</a>
                 </li>
                 <li>|</li>
-                <li><a href="#">выход</a></li>
+                <li><a href="#">Регистрация</a></li>
 
               </ul>
               <ul class="menu-content__basket">
                 <li><a href="#"><span>3</span>Корзина</a></li>
-                <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li>
+                <!-- <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li> -->
               </ul>
             </div>
           </div>
@@ -94,19 +102,74 @@
   </header>
   <!-- Main -->
   <main class="container-fluid">
+    <section class="filter">
+      <div class="container filter-container">
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-0">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                <div class="filter-title">
+                  <div class="filter-title__img">
+                    <img src="img/2.png" alt="">
+                  </div>
+                  <h1>Подобрать
+                    диски</h1>
+                </div>
+              </div>
+              <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 select-modifaction select-container">
+                <div class="filter-select">
+                  <label for="Width">Ширина</label>
+                  <select id="Width">
+                    <option value="hide"></option>
+                    <option value="Название от А до Я">Название от А до Я</option>
+                    <option value="По цене">По цене</option>
+                  </select>
+                </div>
+                  <div class="filter-select">
+                  <label for="Height">Высота</label>
+                  <select id="Height">
+                    <option value="hide"></option>
+                    <option value="Название от А до Я">Название от А до Я</option>
+                    <option value="По цене">По цене</option>
+                  </select>
+                  </div>
+                  <div class="filter-select">
+                  <label for="Diametr">Диаметр</label>
+                  <select id="Diametr">
+                    <option value="hide"></option>
+                    <option value="Название от А до Я">Название от А до Я</option>
+                    <option value="По цене">По цене</option>
+                  </select>
+                  </div>
+                  <div class="filter-select">
+                  <label for="Season">Сезонность</label>
+                  <select id="Season">
+                    <option value="hide"></option>
+                    <option value="Название от А до Я">Название от А до Я</option>
+                    <option value="По цене">По цене</option>
+                  </select>
+                </div>
+
+                <button class="btn">Искать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="products">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 search">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 search select-modifaction">
             <h2 class="search-result">Результаты поиска (8)</h2>
-            <select id="mounth">
+            <select >
               <option value="hide">По популярности</option>
               <option value="Название от А до Я">Название от А до Я</option>
               <option value="По цене">По цене</option>
-          </select> 
+            </select>
           </div>
 
-         
+
 
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="card">
@@ -252,7 +315,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
