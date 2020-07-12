@@ -45,6 +45,7 @@
     display: flex;
     justify-content: space-between;
     margin: 50px 0 40px;
+    padding: 0 10px;
 
 }
 
@@ -84,6 +85,8 @@
         background: initial;
         padding: 8px 15px;
         transition: all 0.2s ease-in;
+        white-space: nowrap;
+    overflow: hidden;
 
 
         &:after {
@@ -195,9 +198,15 @@
 .m-0{
     margin: 0;
 }
-
+.pr-0{
+    padding-right: 0;
+}
+.pl-0{
+    padding-left: 0;
+}
 .filter {
     &-container{
+        margin-top: 50px;
         background: $white;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
         border-radius: 3px;
@@ -206,6 +215,7 @@
     .select-container{
         display: flex;
         align-items: center;
+        
     }
     &-select{
         width: 100%;
@@ -229,7 +239,6 @@
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
 
-                top: 92%;
                 li{
                     border: none;
                 }
@@ -240,5 +249,29 @@
 
     }
 
+    .button{
+        margin: 0 45px 0 58px;
+        padding: 13px 45px;
+        font-size: 12px;
+     
+        
+    }
+    &-title{
+        display: flex;
+        align-items: center;
+
+        h1{
+            font-size: 30px;
+        }
+        &__img{
+            flex-grow: 1;
+            margin-right: 20px;
+            background: linear-gradient(to right, $red 50%, $white 50%);
+
+            img{
+                height: 100%;
+            }
+        }
+    }
 
 }

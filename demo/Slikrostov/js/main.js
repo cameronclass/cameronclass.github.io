@@ -40,6 +40,7 @@ $('select').each(function(){
 
   $styledSelect.click(function(e) {
       e.stopPropagation();
+      
       $('div.select-styled.active').not(this).each(function(){
           $(this).removeClass('active').next('ul.select-options').hide();
       });

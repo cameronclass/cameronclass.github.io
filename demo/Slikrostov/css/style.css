@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -749,7 +749,8 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px 0 40px; }
+  margin: 50px 0 40px;
+  padding: 0 10px; }
 
 .select-modifaction .select-hidden {
   display: none;
@@ -779,7 +780,9 @@ html {
   background: initial;
   padding: 8px 15px;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in; }
+  transition: all 0.2s ease-in;
+  white-space: nowrap;
+  overflow: hidden; }
   .select-modifaction .select-styled:after {
     content: "";
     border: 1px solid #ED1C24;
@@ -861,7 +864,14 @@ html {
 .m-0 {
   margin: 0; }
 
+.pr-0 {
+  padding-right: 0; }
+
+.pl-0 {
+  padding-left: 0; }
+
 .filter-container {
+  margin-top: 50px;
   background: #ffffff;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -894,10 +904,31 @@ html {
     -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    top: 92%; }
+    border-bottom-right-radius: 5px; }
     .filter .select-modifaction .select-options li {
       border: none; }
+.filter .button {
+  margin: 0 45px 0 58px;
+  padding: 13px 45px;
+  font-size: 12px; }
+.filter-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .filter-title h1 {
+    font-size: 30px; }
+  .filter-title__img {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 20px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ED1C24), color-stop(50%, #ffffff));
+    background: linear-gradient(to right, #ED1C24 50%, #ffffff 50%); }
+    .filter-title__img img {
+      height: 100%; }
 
 @media screen and (max-width: 1024px) {
   .header-menu .menu-content {
