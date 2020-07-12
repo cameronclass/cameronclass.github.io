@@ -940,7 +940,17 @@ html {
 
   .filter-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #ED1C24), color-stop(17%, rgba(255, 0, 0, 0)));
-    background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%); } }
+    background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%); }
+
+  .menu-content {
+    margin-right: 0; }
+
+  .select-container {
+    padding-left: 15px;
+    margin: 30px 0; }
+
+  .filter .button {
+    margin: 15px 0 0 10px; } }
 @media screen and (max-width: 768px) {
   .filter-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #ED1C24), color-stop(17%, rgba(255, 0, 0, 0)));
