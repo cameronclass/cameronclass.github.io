@@ -936,7 +936,11 @@ html {
     display: -ms-flexbox;
     display: flex; }
     .header-menu .logo .header-menu {
-      font-size: 12px !important; } }
+      font-size: 12px !important; }
+
+  .filter-background {
+    background: -webkit-gradient(linear, left top, right top, color-stop(17%, #ED1C24), color-stop(17%, rgba(255, 0, 0, 0)));
+    background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%); } }
 @media screen and (max-width: 768px) {
   .filter-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #ED1C24), color-stop(17%, rgba(255, 0, 0, 0)));
