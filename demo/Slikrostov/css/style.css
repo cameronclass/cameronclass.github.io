@@ -888,6 +888,8 @@ html {
     border: none;
     -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     top: 92%; }
     .filter .select-modifaction .select-options li {
       border: none; }
