@@ -41,7 +41,8 @@
         padding-left: 10px;
     }
 }
-.search{
+
+.search {
     display: flex;
     justify-content: space-between;
     margin: 50px 0 40px;
@@ -86,7 +87,7 @@
         padding: 8px 15px;
         transition: all 0.2s ease-in;
         white-space: nowrap;
-    overflow: hidden;
+        overflow: hidden;
 
 
         &:after {
@@ -192,84 +193,101 @@
     }
 
 }
-.p-0{
+
+.p-0 {
     padding: 0;
 }
-.m-0{
+
+.m-0 {
     margin: 0;
 }
-.pr-0{
+
+.pr-0 {
     padding-right: 0;
 }
-.pl-0{
+
+.pl-0 {
     padding-left: 0;
 }
+
 .filter {
-    &-container{
+    &-container {
         margin-top: 50px;
         background: $white;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
         border-radius: 3px;
         box-sizing: border-box;
     }
-    .select-container{
+
+    .select-container {
         display: flex;
         align-items: center;
-        
+
     }
-    &-select{
+
+    &-select {
         width: 100%;
         margin-right: 15px;
     }
-    .select-modifaction{
-        label{
+
+    .select-modifaction {
+        label {
             color: $grey;
             display: block;
             margin-bottom: 5px;
             font-size: 12px;
         }
-        .select{
+
+        .select {
             width: 100%;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
             border: $white-second;
-            &-options{
+
+            &-options {
                 background-color: $white;
                 border: none;
                 box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
 
-                li{
+                li {
                     border: none;
                 }
-               
+
             }
         }
-      
+
 
     }
 
-    .button{
+    .button {
         margin: 0 45px 0 58px;
         padding: 13px 45px;
         font-size: 12px;
-     
+
+
+    }
+
+    &-background {
+        background: linear-gradient(90deg, #ED1C24 25%, rgba(255, 0, 0, 0) 25%);
+        padding-left: 0;
         
     }
-    &-title{
+
+    &-title {
         display: flex;
 
 
-        h1{
+        h1 {
             font-size: 30px;
             margin: auto;
         }
-        &__img{
-            flex-grow: 1;
-            margin-right: 20px;
-            background: linear-gradient(to right, $red 50%, $white 50%);
 
-            img{
+        &__img {
+ 
+            // background: linear-gradient(to right, $red 50%, $white 50%);
+
+            img {
                 height: 100%;
             }
         }
