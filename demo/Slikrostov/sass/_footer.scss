@@ -7,9 +7,10 @@
 
     a {
         color: $white;
+        transition: color .2s ease-in;
 
         &:hover {
-            text-decoration: underline;
+            color: $red;
         }
     }
 
@@ -42,6 +43,7 @@
     }
 
     .footer-items li {
+
         margin-bottom: 10px;
     }
 

@@ -1,57 +1,5 @@
 $(document).ready(function () {
 
-    /*
-    Reference: http://jsfiddle.net/BB3JK/47/
-    */
-
-    $('select').each(function () {
-        var $this = $(this), numberOfOptions = $(this).children('option').length;
-
-        $this.addClass('select-hidden');
-        $this.wrap('<div class="select"></div>');
-        $this.after('<div class="select-styled"></div>');
-
-        var $styledSelect = $this.next('div.select-styled');
-        $styledSelect.text($this.children('option').eq(0).text());
-
-        var $list = $('<ul />', {
-            'class': 'select-options'
-        }).insertAfter($styledSelect);
-
-        for (var i = 0; i < numberOfOptions; i++) {
-            $('<li />', {
-                text: $this.children('option').eq(i).text(),
-                rel: $this.children('option').eq(i).val()
-            }).appendTo($list);
-        }
-
-        var $listItems = $list.children('li');
-
-        $styledSelect.click(function (e) {
-            e.stopPropagation();
-
-            $('div.select-styled.active').not(this).each(function () {
-                $(this).removeClass('active').next('ul.select-options').hide();
-            });
-            $(this).toggleClass('active').next('ul.select-options').toggle();
-        });
-
-        $listItems.click(function (e) {
-            e.stopPropagation();
-            $styledSelect.text($(this).text()).removeClass('active');
-            $this.val($(this).attr('rel'));
-            $list.hide();
-            //console.log($this.val());
-        });
-
-        $(document).click(function () {
-            $styledSelect.removeClass('active');
-
-            $list.hide();
-        });
-
-    });
-
     var swiper = new Swiper('.swiper-container', {
         pagination: {
             el: '.swiper-pagination',
@@ -69,7 +17,7 @@ $(document).ready(function () {
         { year: '2018' },
         { year: '2019' },
         { year: '2020' },
-        
+
     ];
     $('.search-input').on('keyup', (e) => {
         let input = $('.search-input').val();
@@ -86,29 +34,98 @@ $(document).ready(function () {
             const div = document.createElement('div')
             div.innerHTML = suggested.year
             suggestionsPanel.appendChild(div)
-            $('.suggestions div').each(function(elem, index){
-                    $(this).click(function(e){
-                        let val = $(this).text()
-                        suggestionsPanel.classList.remove('active')
-                        $('.search-input').removeClass('search-active')
-                        $('.suggestions').removeClass('search-active-suggestions')
-                        $('.search-input').val(val)
-                    })
+            $('.suggestions div').each(function (elem, index) {
+                $(this).click(function (e) {
+                    let val = $(this).text()
+                    suggestionsPanel.classList.remove('active')
+                    $('.search-input').removeClass('search-active')
+                    $('.suggestions').removeClass('search-active-suggestions')
+                    $('.search-input').val(val)
+                })
             })
 
         })
-        if(input === ''){
+        if (input === '') {
             suggestionsPanel.innerHTML = ''
             suggestionsPanel.classList.remove('active')
             $('.search-input').removeClass('search-active')
             $('.suggestions').removeClass('search-active-suggestions')
-   
+
         }
 
+    });
+
+    $('.filter-container .select-container > input').each(function(e){
+        const string = $(this).val($(this).val().substr(0, 10))
+        // console.log(string.substr(0, 5));
     })
 
 
-    
+    $('.select-container, .filter-container >.select-container').each(function (e) {
+
+
+        $(this).click(function (e) {
+
+            let input = $(this).find('input')
+
+
+            if (input.hasClass('input-active')) {
+
+                $(this).find('.input-arrow').addClass('input-arrow-close')
+                input.removeClass('input-active')
+                $(this).find('.select-container__options').removeClass('active')
+                $(this).find('.input-arrow').removeClass('input-arrow-active')
+               
+                return true;
+            }
+
+            $(this).find('.input-arrow').removeClass('input-arrow-close')
+            input.addClass('input-active')
+            $(this).find('.select-container__options').addClass('active')
+            $(this).find('.input-arrow').addClass('input-arrow-active')
+        })
+
+
+
+    })
+
+    $(this).find('.select-container__options div').each(function (e) {
+        $(this).click(function (e) {
+            const  filterContainer = $(this).parent().parent().parent().parent().parent().hasClass('filter-container')
+
+            if(filterContainer)
+            {
+
+                if($(window).width() < 520){
+                    
+                        $(this).parent().parent().find('input').val($(this).text().substr(0, 45));
+                    
+                  
+                    return true;
+                }
+                
+                if($(window).width() <= 1024){
+                    
+                    $(this).parent().parent().find('input').val($(this).text().substr(0, 7));
+                
+              
+                return true;
+            }
+                if($(this).text().length > 8){
+                    $(this).parent().parent().find('input').val($(this).text().substr(0, 8));
+                    return true
+                }
+            
+            }
+            
+
+            $(this).parent().parent().find('input').val($(this).text());
+
+        });
+    })
+
+
+
 });
 
 

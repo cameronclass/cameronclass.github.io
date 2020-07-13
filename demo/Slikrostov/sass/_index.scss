@@ -42,6 +42,7 @@
 
 }
 
+
 .select-modifaction {
 
     .select-hidden {
@@ -134,6 +135,7 @@
             }
 
             &:hover {
+                
                 color: $select-background;
                 background: $select-color;
             }
@@ -201,8 +203,114 @@
 .pl-0 {
     padding-left: 0;
 }
-.active{
+
+.active {
     display: block !important;
+}
+.select-container {
+    position: relative;
+
+    input {
+        border-radius: 5px;
+        border: 1px solid $red;
+        padding: 10px 20px;
+        background: none;
+        width: 100%;
+        cursor: pointer;
+
+        &:active,
+        &:focus {
+            outline: 0;
+        }
+
+    }
+
+    .input-arrow {
+        content: "";
+        border: 1px solid $red;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 6px;
+        position: absolute;
+        top: 9px;
+        right: 18px;
+        transform: rotate(45deg);
+
+
+    }
+
+    .input-active {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+
+
+    }
+
+    .input-arrow-active {
+        transform: rotate(-135deg);
+        transition: all .2s ease-in-out;
+        top: 15px;
+    }
+
+    .input-arrow-close {
+        transform: rotate(45deg);
+        transition: all .2s ease-in-out;
+        top: 10px;
+    }
+
+    &__options {
+        background-color: $white;
+        position: absolute;
+        display: none;
+        width: 100%;
+        z-index: 300;
+        border: 1px solid $red;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top: none;
+
+        div {
+            border-top: 1px solid $red;
+            padding: 10px 0 10px 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            overflow: hidden;
+
+            &:first-child {
+                border-top: none;
+            }
+
+
+            &:hover {
+
+                background-color: $white-second;
+
+                &:last-child {
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+
+                }
+            }
+        }
+
+    }
+
+}
+
+@keyframes open {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* The element to apply the animation to */
+.select-container__options.active {
+    animation-name: open;
+    animation-duration: .2s;
 }
 
 .filter {
@@ -215,9 +323,36 @@
         margin: 50px 0;
     }
 
-    .select-container {
+    .select-containers {
         display: flex;
         align-items: center;
+        label{
+            margin-bottom: 5px;
+            display: block;
+            color: $grey;
+            font-family: $font-semi-bold;
+            font-size: 12px;
+        }
+
+        .input-select {
+            border: none;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+        }
+        .input-arrow{
+            top: 6px;
+            &-active{
+                top: 14px;
+            }
+        }
+
+        .input-active{
+            
+            border-bottom-left-radius: 0 ;
+            border-bottom-right-radius: 0 ;
+        }
+
+
 
     }
 
@@ -225,6 +360,11 @@
     &-select {
         width: 100%;
         margin-right: 15px;
+        margin-right: 10px;
+        font-size: 12px;
+        &:last-child {
+            margin-right: 0;
+        }
 
         label {
             font-family: $font-semi-bold;
@@ -238,42 +378,45 @@
             }
         }
 
-        .search-filter-container{
+        .search-filter-container {
             background-color: $white-second;
             border-radius: 5px;
             position: relative;
         }
-        
+
         input {
-           
+
             box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
             background: transparent;
             border: 1px solid #FFFFFF;
             box-sizing: border-box;
             border-radius: 5px;
-            padding: 6px 10px 6px 10px;
+            padding: 10px;
             color: $grey;
         }
-        .search-active{
+
+        .search-active {
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-            border-bottom-left-radius: 0 ;
-            border-bottom-right-radius: 0 ;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
             border-bottom: 2px solid $white;
 
         }
-        .search-active-suggestions{
+
+        .search-active-suggestions {
             box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
-            border-bottom-left-radius: 3px ;
+            border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
 
         }
+
         input:focus,
         input:active {
             outline: none;
-           
-  
 
-            
+
+
+
         }
 
         .suggestions {
@@ -282,7 +425,8 @@
             width: 100%;
             background: $white-second;
             z-index: 600;
-            div{
+
+            div {
                 color: $grey;
                 width: 100%;
                 padding-left: 10px;
@@ -291,16 +435,18 @@
                 border-top: 2px solid $white;
                 transition: all .1s ease-in;
                 cursor: pointer;
-                &:first-child{
-                    border-top:2px solid $white-second;
-                    
+
+                &:first-child {
+                    border-top: 2px solid $white-second;
+
                 }
-                &:hover{
-                    border-top:2px solid rgba(90, 90, 90, .5) ;
+
+                &:hover {
+                    border-top: 2px solid rgba(90, 90, 90, .5);
                     background: $white;
 
 
-          
+
                 }
             }
         }
@@ -387,7 +533,7 @@
 
     &-container {
         box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
-
+        background-color: $white;
         border-radius: 3px;
         padding-left: 50px;
         margin: 50px 0;
@@ -497,5 +643,108 @@
             background: none;
             opacity: 1;
         }
+    }
+}
+.d-flex{
+    display: flex;
+}
+
+.one-product {
+    margin-top: 40px;
+    &-container {
+        background-color: $white;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 3px;
+        h2{
+            margin: 40px 0 14px;
+            font-family: $font-bold;
+        }
+    }
+    table{
+       max-width: 100%;
+        margin-right: 65px;
+        min-width: 30%;
+       tr{
+           width: fit-content;
+       }
+       .option{
+           padding-left: 5px;
+       }
+        tbody>tr>td>.dots{
+            background: url('./../icons/dash.svg');
+            background-repeat: repeat-x;
+            padding-bottom: 5px;
+            background-position-y: -1px;
+
+            span{
+                background-color: $white;
+                padding-right: 10px;
+            }
+        }
+    }
+    .attention-price{
+        margin: 50px 0;
+        font-size: 12px;
+        .icon-attenition{
+            fill: none;
+            margin-right: 16px;
+            margin-top: 5px;
+            margin-left: 37px;
+
+        }
+
+
+    }
+    
+    .product-options{
+        display: flex;
+        font-size: 12px;
+        margin: 26px 0 53px;
+        &__option{
+            .model{
+                margin-top: 13px;
+                li:nth-child(2){
+                    margin: 10px 0;
+                    span{
+                        padding-left: 65px;
+                    }
+                }
+                .manufacturer{
+                    display: flex;
+                    align-items: center;
+                    span{
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: bold;
+                        font-size: 22px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 20px;
+                     svg{
+                         width: 22px;
+                         height: 22px;
+                     }
+                    }
+                }
+            }
+        }
+    }
+
+    .buy-product {
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-family: $font-bold;
+            color: $red;
+        }
+      
+     &__buttons{
+        
+        button{
+            margin-left: 23px;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 11px 20px;
+        }
+     }   
     }
 }
