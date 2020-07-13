@@ -35,9 +35,56 @@
     .filter .button {
         margin: 15px 0 0 10px;
     }
+
+    .slider {
+        &-text {
+            h1 {
+                font-size: 45px;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        &-button {
+            bottom: 20%;
+        }
+
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .slider {
+        &-text {
+            top: 15%;
+
+            h1 {
+                font-size: 45px;
+
+                svg {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        &-button {
+            button {
+                font-size: 10px;
+                padding: 8px 22px;
+            }
+        }
+    }
 
     .filter-background {
         background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
@@ -185,6 +232,73 @@
 
     }
 
+    .footer {
+        &-socials {
+            justify-content: center;
+            margin-top: 20px;
+
+            li:last-child {
+                margin-right: 0;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+        &-items {
+            text-align: center;
+
+            li {
+                display: block;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .slider {
+        &-text {
+            h1 {
+                font-size: 18px;
+
+                svg {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .slider-button {
+
+            bottom: 10%;
+
+            button {
+                font-size: 9px;
+                padding: 8px 20px;
+
+            }
+        }
+
+
+
+        .swiper-pagination {
+            position: static;
+
+            span {
+                border: 1px solid rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 0px 4px;
+        }
+    }
+
 
 
 
@@ -225,6 +339,10 @@
 
     .header-menu {
         font-size: 10px;
+    }
+
+    .slider-button {
+        display: none;
     }
 
 
