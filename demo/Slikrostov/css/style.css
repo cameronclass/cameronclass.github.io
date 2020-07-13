@@ -6,7 +6,8 @@
 
 body {
   font-family: "Open Sans Regular";
-  color: #000; }
+  color: #000;
+  background-color: #F5F7FF; }
 
 button {
   display: inline-block; }
@@ -1446,6 +1447,9 @@ html {
 .pl-0 {
   padding-left: 0; }
 
+.active {
+  display: block !important; }
+
 .filter-container {
   background: #ffffff;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -1464,6 +1468,63 @@ html {
 .filter-select {
   width: 100%;
   margin-right: 15px; }
+  .filter-select label {
+    font-family: "Open Sans SemiBold";
+    color: #000;
+    font-size: 12px;
+    margin: 8px 0;
+    display: block; }
+    .filter-select label span {
+      color: rgba(90, 90, 90, 0.5); }
+  .filter-select .search-filter-container {
+    background-color: #F5F7FF;
+    border-radius: 5px;
+    position: relative; }
+  .filter-select input {
+    -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    padding: 6px 10px 6px 10px;
+    color: #5A5A5A; }
+  .filter-select .search-active {
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 2px solid #ffffff; }
+  .filter-select .search-active-suggestions {
+    -webkit-box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .filter-select input:focus,
+  .filter-select input:active {
+    outline: none; }
+  .filter-select .suggestions {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background: #F5F7FF;
+    z-index: 600; }
+    .filter-select .suggestions div {
+      color: #5A5A5A;
+      width: 100%;
+      padding-left: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-top: 2px solid #ffffff;
+      -webkit-transition: all .1s ease-in;
+      transition: all .1s ease-in;
+      cursor: pointer; }
+      .filter-select .suggestions div:first-child {
+        border-top: 2px solid #F5F7FF; }
+      .filter-select .suggestions div:hover {
+        border-top: 2px solid rgba(90, 90, 90, 0.5);
+        background: #ffffff; }
 .filter .select-modifaction label {
   color: #5A5A5A;
   display: block;
@@ -1473,16 +1534,18 @@ html {
   width: 100%;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  border: #F5F7FF; }
+  border: #F5F7FF;
+  background-color: #F5F7FF; }
   .filter .select-modifaction .select-options {
-    background-color: #ffffff;
+    top: 94%;
     border: none;
     -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
+    border-bottom-right-radius: 5px;
+    background-color: #F5F7FF; }
     .filter .select-modifaction .select-options li {
-      border: none; }
+      border-top: 2px solid #ffffff; }
 .filter .button {
   margin: 0 45px 0 58px;
   padding: 13px 45px;
@@ -1490,13 +1553,17 @@ html {
 .filter-background {
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #ED1C24), color-stop(25%, rgba(255, 0, 0, 0)));
   background: linear-gradient(90deg, #ED1C24 25%, rgba(255, 0, 0, 0) 25%);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   padding-left: 0; }
+.filter .search-filter {
+  width: 100%; }
 .filter-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .filter-title h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin: auto; }
   .filter-title__img img {
     height: 100%; }

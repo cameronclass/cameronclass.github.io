@@ -201,6 +201,9 @@
 .pl-0 {
     padding-left: 0;
 }
+.active{
+    display: block !important;
+}
 
 .filter {
     &-container {
@@ -218,10 +221,91 @@
 
     }
 
+
     &-select {
         width: 100%;
         margin-right: 15px;
+
+        label {
+            font-family: $font-semi-bold;
+            color: $black;
+            font-size: 12px;
+            margin: 8px 0;
+            display: block;
+
+            span {
+                color: rgba(90, 90, 90, .5);
+            }
+        }
+
+        .search-filter-container{
+            background-color: $white-second;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        input {
+           
+            box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 6px 10px 6px 10px;
+            color: $grey;
+        }
+        .search-active{
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+            border-bottom-left-radius: 0 ;
+            border-bottom-right-radius: 0 ;
+            border-bottom: 2px solid $white;
+
+        }
+        .search-active-suggestions{
+            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+            border-bottom-left-radius: 3px ;
+            border-bottom-right-radius: 3px;
+
+        }
+        input:focus,
+        input:active {
+            outline: none;
+           
+  
+
+            
+        }
+
+        .suggestions {
+            position: absolute;
+            display: none;
+            width: 100%;
+            background: $white-second;
+            z-index: 600;
+            div{
+                color: $grey;
+                width: 100%;
+                padding-left: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-top: 2px solid $white;
+                transition: all .1s ease-in;
+                cursor: pointer;
+                &:first-child{
+                    border-top:2px solid $white-second;
+                    
+                }
+                &:hover{
+                    border-top:2px solid rgba(90, 90, 90, .5) ;
+                    background: $white;
+
+
+          
+                }
+            }
+        }
     }
+
 
     .select-modifaction {
         label {
@@ -235,16 +319,19 @@
             width: 100%;
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
             border: $white-second;
+            background-color: $white-second;
 
             &-options {
-                background-color: $white;
+                top: 94%;
                 border: none;
                 box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.2);
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
+                background-color: $white-second;
+
 
                 li {
-                    border: none;
+                    border-top: 2px solid $white;
                 }
 
             }
@@ -263,8 +350,15 @@
 
     &-background {
         background: linear-gradient(90deg, #ED1C24 25%, rgba(255, 0, 0, 0) 25%);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+
         padding-left: 0;
 
+    }
+
+    .search-filter {
+        width: 100%;
     }
 
     &-title {
@@ -272,7 +366,7 @@
 
 
         h1 {
-            font-size: 30px;
+            font-size: 28px;
             margin: auto;
         }
 
