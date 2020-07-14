@@ -60,7 +60,7 @@ select {
           box-shadow: none;
   border: 1px solid;
   border-radius: 4px;
-  padding: 9px 10px;
+  padding: 7px 12px;
   background-image: none;
   font-size: 14px; }
   select:hover {
@@ -77,19 +77,19 @@ img {
   display: block; }
 
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   margin: 20px 0; }
 
 h2 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 20px 0; }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
   margin: 20px 0; }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 20px 0; }
 
 .bold {
@@ -122,7 +122,7 @@ hr {
   width: 100%; }
 
 .container {
-  width: 1364px;
+  width: 1361px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -272,15 +272,15 @@ hr {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style: none;
-    margin: 0;
+    margin: 0 0 15px;
     padding: 0; }
     .tags ul li {
       margin: 5px 5px 5px 0; }
       .tags ul li a {
-        padding: 10px;
+        padding: 6px 10px;
         color: #636363;
         display: block;
-        font-size: 14px;
+        font-size: 13px;
         text-transform: lowercase;
         border-radius: 4px;
         border: 1px solid #cdcdcd;
@@ -1309,23 +1309,25 @@ hr {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 20px 0; }
+  padding-top: 20px; }
   .tags-section h1 {
     width: 315px;
     line-height: 1;
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-bottom: 0; }
   .tags-section .tags {
-    width: 1020px; }
+    width: 1028px;
+    margin-top: 4px; }
     .tags-section .tags ul {
-      width: 1020px;
-      height: 50px;
+      width: 910px;
+      height: 40px;
       overflow: hidden; }
   .tags-section .btn-tags {
     margin: 5px 0px;
-    padding: 10px;
+    padding: 6px;
     display: none;
-    width: 10%;
-    font-size: 14px;
+    width: 106px;
+    font-size: 13px;
     color: #636363;
     border-radius: 5px;
     border: 1px solid #f3f3f3;
@@ -1355,7 +1357,7 @@ hr {
     border-right: 0;
     position: relative; }
   .content-search__master {
-    width: 25%;
+    width: 337px;
     position: relative; }
     .content-search__master select {
       border-radius: 4px 0 0 4px; }
@@ -1366,9 +1368,10 @@ hr {
       color: #929292;
       position: absolute;
       right: 10px;
-      top: 10px; }
+      top: 10px;
+      font-size: 14px; }
   .content-search__gorod {
-    width: 19%;
+    width: 258px;
     position: relative; }
     .content-search__gorod:after {
       font-family: "Font Awesome 5 Free";
@@ -1377,9 +1380,10 @@ hr {
       color: #929292;
       position: absolute;
       right: 10px;
-      top: 10px; }
+      top: 10px;
+      font-size: 14px; }
   .content-search__rayon {
-    width: 19%;
+    width: 257px;
     position: relative; }
     .content-search__rayon:after {
       font-family: "Font Awesome 5 Free";
@@ -1388,22 +1392,24 @@ hr {
       color: #929292;
       position: absolute;
       right: 10px;
-      top: 10px; }
+      top: 10px;
+      font-size: 14px; }
   .content-search__poisk {
-    width: 37%;
+    width: 509px;
     position: relative; }
     .content-search__poisk input {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       width: 100%;
-      border-radius: 0 4px 4px 0; }
+      border-radius: 0 4px 4px 0;
+      padding: 7px 12px; }
       .content-search__poisk input:focus ~ .content-search__btn {
         border-left-color: #62a2f6; }
   .content-search__btn {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 9px 20px;
+    padding: 7px 30px;
     color: #818181;
     background-color: #f8f8f8;
     border-radius: 0 4px 4px 0;
@@ -1434,11 +1440,11 @@ hr {
     line-height: 1;
     padding-bottom: 15px; }
     .catalog__filter_title_number {
-      font-size: 38px;
+      font-size: 36px;
       color: #1e905d;
-      padding-left: 10px; }
+      padding-left: 17px; }
     .catalog__filter_title_text {
-      font-size: 15px;
+      font-size: 14px;
       padding-left: 10px; }
   .catalog__filter_radio {
     display: -webkit-box;
@@ -1682,18 +1688,19 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     height: 38px;
-    padding-bottom: 15px; }
+    margin-bottom: 15px; }
     .catalog__products_view_filter button {
+      font-size: 14px;
       background-color: none;
       border: none;
-      margin-right: 20px;
+      margin-right: 9px;
       color: #a5a3a3; }
       .catalog__products_view_filter button:after {
         font-family: "Font Awesome 5 Free";
         content: "";
         font-weight: 700;
-        margin-left: 10px;
-        font-size: 12px;
+        margin-left: 7px;
+        font-size: 9px;
         display: inline-block;
         -webkit-transition: 200ms;
         -o-transition: 200ms;
