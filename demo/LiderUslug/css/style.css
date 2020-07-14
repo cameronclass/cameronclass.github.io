@@ -23,6 +23,10 @@
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 body {
   font-family: "Liberation Sans";
   -webkit-box-sizing: border-box;
@@ -844,9 +848,16 @@ hr {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
   /* Dropdown */ }
   .header__block .header__logo {
-    width: 14%; }
+    width: 14%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .header__block .header__logo a {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -877,6 +888,63 @@ hr {
       .header__block .header__logo .logo-text div {
         font-size: 12px;
         text-transform: lowercase; }
+    .header__block .header__logo .category-open {
+      height: 61px; }
+    .header__block .header__logo .category-open:hover ~ .header__category {
+      visibility: visible; }
+    .header__block .header__logo .header__category {
+      position: absolute;
+      top: 58px;
+      height: 80vh;
+      overflow-y: scroll;
+      width: 100%;
+      z-index: 10;
+      -webkit-transition: 0ms all;
+      -o-transition: 0ms all;
+      transition: 0ms all;
+      visibility: visible;
+      background-color: white;
+      border-radius: 4px;
+      -webkit-box-shadow: 0px 5px 18px -5px #b8b8b8;
+              box-shadow: 0px 5px 18px -5px #b8b8b8;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 36px 15px; }
+      .header__block .header__logo .header__category:hover {
+        visibility: visible; }
+      .header__block .header__logo .header__category .col-4 {
+        width: 24%; }
+        .header__block .header__logo .header__category .col-4-title {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        .header__block .header__logo .header__category .col-4 h4 {
+          margin: 0 0 3px 14px;
+          font-size: 18px; }
+        .header__block .header__logo .header__category .col-4 img {
+          width: 25px;
+          height: 25px; }
+        .header__block .header__logo .header__category .col-4 ul {
+          list-style: none;
+          margin-top: 0; }
+          .header__block .header__logo .header__category .col-4 ul li {
+            margin-bottom: 4px; }
+            .header__block .header__logo .header__category .col-4 ul li a {
+              line-height: 1.3;
+              color: #62a2f6;
+              font-size: 15px; }
   .header__block .header__actions {
     width: 25.5%;
     display: -webkit-box;
@@ -930,7 +998,8 @@ hr {
     margin-right: 9px;
     margin-left: 9px;
     display: block;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .header__block .control-btn:hover .dropdown-content {
       visibility: visible; }
   .header__block img {
@@ -1040,6 +1109,7 @@ hr {
 .header-logged .header__block .header__login {
   width: 18%; }
   .header-logged .header__block .header__login_logged {
+    width: 157px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1076,6 +1146,81 @@ hr {
         margin-left: 5px;
         width: 10px;
         height: 10px; }
+  .header-logged .header__block .header__login .price {
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 61px; }
+    .header-logged .header__block .header__login .price .dropdown-content {
+      padding: 18px;
+      width: 205px; }
+    .header-logged .header__block .header__login .price .price-title {
+      text-align: left;
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-weight: bold; }
+    .header-logged .header__block .header__login .price .balance {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-bottom: 10px; }
+      .header-logged .header__block .header__login .price .balance span {
+        font-size: 13px; }
+      .header-logged .header__block .header__login .price .balance span:nth-child(2) {
+        font-size: 14px;
+        font-weight: bold; }
+    .header-logged .header__block .header__login .price .link {
+      margin-top: 15px; }
+      .header-logged .header__block .header__login .price .link a {
+        padding: 0;
+        margin: 0;
+        color: #62a2f6;
+        font-weight: normal;
+        font-size: 13px;
+        text-decoration: underline;
+        border: none; }
+        .header-logged .header__block .header__login .price .link a:hover {
+          text-decoration: none;
+          background: none; }
+    .header-logged .header__block .header__login .price .btn-action a {
+      margin: 20px 0 0;
+      font-size: 14px;
+      text-align: center;
+      padding: 6px;
+      background-color: #1e905d;
+      border-radius: 4px;
+      color: #fff; }
+      .header-logged .header__block .header__login .price .btn-action a:hover {
+        background-color: #1a7b4f; }
+.header-logged .header__block .header__login_logged {
+  right: 0;
+  height: 61px;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 5px; }
+  .header-logged .header__block .header__login_logged .dropdown-content {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    right: 0; }
+  .header-logged .header__block .header__login_logged .master {
+    width: 205px;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+    .header-logged .header__block .header__login_logged .master li a {
+      color: #62a2f6;
+      border-bottom: none;
+      padding: 6px 18px;
+      font-size: 14px; }
+    .header-logged .header__block .header__login_logged .master hr {
+      margin: 12px auto;
+      width: 92%; }
 
 .footer {
   background-color: #f6f6f6;
