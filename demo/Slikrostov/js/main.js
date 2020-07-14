@@ -89,9 +89,9 @@ $(document).ready(function () {
     $(this).find('.select-container__options div').each(function (e) {
         $(this).click(function (e) {
             const  filterContainer = $(this).parent().parent().parent().parent().parent().hasClass('filter-container')
-           if(filterContainer){
+     /*       if(filterContainer){
             $(this).parent().parent().find('.input-arrow').removeClass('input-arrow').removeClass('input-arrow-active')
-           }
+           } */
             
 
             $(this).parent().parent().find('input').val($(this).text());

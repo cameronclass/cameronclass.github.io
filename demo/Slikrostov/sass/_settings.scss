@@ -1,23 +1,23 @@
-
 // Colors
-$red: #ED1C24;
-$red-hover: #CA1118;
+$red: #ed1c24;
+$red-hover: #ca1118;
 $black: #000;
-$grey: #5A5A5A;
+$grey: #5a5a5a;
 $white: #ffffff;
-$white-second: #F5F7FF;
-$font: 'Open Sans Regular';
-$font-bold: 'Open Sans Bold';
-$font-semi-bold: 'Open Sans SemiBold';
+$white-second: #f5f7ff;
+$font: "Open Sans Regular";
+$font-bold: "Open Sans Bold";
+$font-semi-bold: "Open Sans SemiBold";
 
 $background: #e74c3c;
 $select-color: #fff;
 $select-background: #c0392b;
 $select-width: 220px;
-$select-height: 40px; 
+$select-height: 40px;
 
-
-*,*::before, *::after{
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -43,7 +43,6 @@ button,
 a {
   color: $black;
   text-decoration: none;
-
 }
 
 ul {
@@ -62,34 +61,25 @@ img {
 }
 
 
-
-// Mixins
-@mixin icon($content,  $weight) {
-  font-family: "Font Awesome 5 Free";
-  content: $content;
-  font-weight: $weight;
-}
-
-@font-face{
-  font-family: "Open Sans Bold";
-  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
-}
-@font-face{
-  font-family: "Open Sans Regular";
-  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-}
-@font-face{
-  font-family: "Open Sans SemiBold";
-  src: url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
-}
-
-// Font Family
 @font-face {
-    font-family: 'Liberation Sans Bold';
-    src: url('../fonts/LiberationSans-Bold.woff2') format('woff2'),
-        url('../fonts/LiberationSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 

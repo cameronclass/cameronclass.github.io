@@ -42,54 +42,47 @@
 
   <!-- Header -->
   <header class="container-fluid header">
-    <div class="container">
+    <div class="container h-80">
       <div class="row align-items-center">
-        <div class="col-xl-5 col-lg-4 col-md-4 col-sm-12 ">
+        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 ">
           <div class="logo">
             <a href="/">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-logo">
-                <use xlink:href="icons/icons.svg#logo" />
-              </svg>
+              <img src="img/icons/logo.svg" alt="">
               <span>
-                Slickrostov.ru
+                Slikrostov.ru
               </span>
             </a>
             <ul class="header-menu__phone ">
-              <li><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                  <use xlink:href="icons/icons.svg#phone" />
-                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a></li>
-
+              <li>
+                <img src="img/icons/phone.svg" alt="">
+                <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12">
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
           <div class="header-menu">
             <ul class="header-menu__phone mob-d-none">
-              <li><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                  <use xlink:href="icons/icons.svg#phone" />
-                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a></li>
-
+              <li>
+                <img src="img/icons/phone.svg" alt="">
+                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+              </li>
             </ul>
             <div class="menu-content">
               <ul class="header-menu__user">
-                <!-- <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="icons/icons.svg#person" />
-                  </svg></li>
                 <li>
                   <a href="#">Сергей</a>
                 </li>
-                <li>|</li> -->
-
+                <li>|</li>
                 <li>
-                  <a href="#">Вход</a>
+                  <a href="#">ред. профиль</a>
                 </li>
                 <li>|</li>
-                <li><a href="#">Регистрация</a></li>
-
+                <li><a href="#">выход</a></li>
               </ul>
               <ul class="menu-content__basket">
                 <li><a href="#"><span>3</span>Корзина</a></li>
-                <!-- <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li> -->
+                <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li>
               </ul>
             </div>
           </div>
@@ -105,26 +98,28 @@
     <section class="filter">
       <div class="container ">
         <div class="row filter-container">
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 filter-background">
+          <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 filter-background">
             <div class="filter-title">
               <div class="filter-title__img">
                 <img src="img/2.png" alt="">
               </div>
-              <h1>Подобрать
-                диски</h1>
+              <h1>Подобрать <br> диски</h1>
             </div>
           </div>
-          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 select-containers pl-0">
+          <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 select-containers">
 
             <div class="filter-select">
               <label for="Height">Ширина</label>
               <div class="select-container">
-                <div class="input-arrow"></div>
+
                 <input type="text" readonly class="input-select " value="">
                 <div class="select-container__options ">
                   <div>225</div>
                   <div>227</div>
                   <div>229</div>
+                </div>
+                <div class="input-arrow">
+                  <img src="./img/icons/arrow-down.svg" alt="">
                 </div>
               </div>
             </div>
@@ -166,8 +161,6 @@
             </div>
             <button class="btn button">Искать</button>
           </div>
-
-          <!-- <button class="btn button">Искать</button> -->
         </div>
 
       </div>
@@ -178,220 +171,225 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 search select-modifaction">
             <h2 class="search-result">Результаты поиска (8)</h2>
-            <div class="select-container">
-              <div class="input-arrow"></div>
-              <input type="text" readonly class="input-select " value="По популярности">
-              <div class="select-container__options ">
-                <div>По популярности</div>
-                <div>Название от А до Я</div>
-                <div>По цене</div>
+            <div class="select-container d-flex align-items-center">
+              <span>Сортировка: </span>
+              <div>
+                <div class="input-arrow">
+                  <img src="img/icons/arrow-down.svg" alt="">
+                </div>
+                <input type="text" readonly class="input-select " value="По популярности">
+                <div class="select-container__options ">
+                  <div>По популярности</div>
+                  <div>Название от А до Я</div>
+                  <div>По цене</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="catalog">
           <div class="row">
-            
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
 
-              <img src="img/product.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
 
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
+                <img src="img/product.png" alt="">
 
-              <img src="img/product.png" alt="">
-
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
 
-              <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="">
 
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
-
-              <img src="img/product.png" alt="">
-
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
 
-              <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="">
 
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
-
-              <img src="img/product.png" alt="">
-
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
 
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
+                <img src="img/product.png" alt="">
 
-              <img src="img/product.png" alt="">
-
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
-
-              <img src="img/product.png" alt="">
-
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
 
-              <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="">
 
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
-
-              <img src="img/product.png" alt="">
-
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-            <div class="card">
 
-              <img src="img/product.png" alt="">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
 
-              <div class="card-content">
-                <div class="card-content__title">
-                  <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                </div>
-                <p class="card-content__price">5 640 руб.</p>
-                <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                <div class="card-content__buttons">
-                  <button class="btn">Купить сразу</button>
-                  <button class="btn">В корзину</button>
+                <img src="img/product.png" alt="">
+
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
+
+                <img src="img/product.png" alt="">
+
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
+
+                <img src="img/product.png" alt="">
+
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
+
+                <img src="img/product.png" alt="">
+
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
+
+                <img src="img/product.png" alt="">
+
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
+              <div class="card">
+
+                <img src="img/product.png" alt="">
+
+                <div class="card-content">
+                  <div class="card-content__title">
+                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
+                  </div>
+                  <p class="card-content__price">5 640 руб.</p>
+                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
+                  <div class="card-content__buttons">
+                    <button class="btn">Купить сразу</button>
+                    <button class="btn">В корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
@@ -405,7 +403,7 @@
             <div class="swiper-slide"><img src="./img/slider.png" alt="">
               <div class="slider-text">
                 <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="icons/icons.svg#logo" />
+                    <use xlink:href="img/icons/icons.svg#logo" />
                   </svg>Slik</h1>
                 <p>L-918 Темный хром </p>
 
@@ -418,7 +416,7 @@
             <div class="swiper-slide"><img src="./img/slider.png" alt="">
               <div class="slider-text">
                 <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="icons/icons.svg#logo" />
+                    <use xlink:href="img/icons/icons.svg#logo" />
                   </svg>Slik</h1>
                 <p>L-918 Темный хром </p>
 
@@ -430,7 +428,7 @@
             <div class="swiper-slide"><img src="./img/slider.png" alt="">
               <div class="slider-text">
                 <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="icons/icons.svg#logo" />
+                    <use xlink:href="img/icons/icons.svg#logo" />
                   </svg>Slik</h1>
                 <p>L-918 Темный хром </p>
 
@@ -455,16 +453,18 @@
             <div class="article-text">
               <h2>Кованые диски Slick</h3>
                 <p>Название марки Michelin - это настоящий синоним слова "инновация". За всю свою более чем столетнюю
-                  историю эта компания не переставала удивлять мир новинками. Список изобретений, сделанных данной фирмой,
+                  историю эта компания не переставала удивлять мир новинками. Список изобретений, сделанных данной
+                  фирмой,
                   поистине огромен. Именно они придумали съемные велосипединые шины и шины низкого давления для
                   автомобилей.
                   Резина Michelin (Мишлен) популярна во всех странах мира и в наши дни - в первую очередь, за свое
-                  превосходное качество и высокую надежность. Существуют разные виды продукции этого бренда - летние шины,
+                  превосходное качество и высокую надежность. Существуют разные виды продукции этого бренда - летние
+                  шины,
                   зимние, грузовые, для легковых автомобилей и многие другие. Купить шины Мишлен (Michelin) по выгодной
                   цене
                   и почитать отзывы от других водителей можно на страницах нашего интернет-магазина.</p>
             </div>
-            </div>
+          </div>
           <div class="col-xl-5 col-lg-4 col-md-5 col-sm-12 article-container-img">
             <div class="article-img">
               <img src="img/Rectangle 33.png" alt="Кованые диски Slick">
@@ -489,14 +489,14 @@
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
           <ul class="footer-contacts footer-items">
             <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                <use xlink:href="icons/icons.svg#geo" />
+                <use xlink:href="img/icons/icons.svg#geo" />
               </svg><a href="#">
                 г. Краснодар, ул. Доватора 157.</a></li>
             <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                <use xlink:href="icons/icons.svg#phone" />
+                <use xlink:href="img/icons/icons.svg#phone" />
               </svg><a href="tel:+7 (863) 303-28-25">+7 (863) 303-28-25</a></li>
             <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                <use xlink:href="icons/icons.svg#messages" />
+                <use xlink:href="img/icons/icons.svg#messages" />
               </svg><a href="mailto:info@michelintyre.ru">info@michelintyre.ru</a></li>
           </ul>
         </div>
@@ -504,15 +504,15 @@
           <ul class="footer-socials ">
             <li><a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
                   class="icon">
-                  <use xlink:href="icons/icons.svg#instagram" />
+                  <use xlink:href="img/icons/icons.svg#instagram" />
                 </svg></a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
                   class="icon">
-                  <use xlink:href="icons/icons.svg#vk" />
+                  <use xlink:href="img/icons/icons.svg#vk" />
                 </svg></a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
                   class="icon">
-                  <use xlink:href="icons/icons.svg#youtube" />
+                  <use xlink:href="img/icons/icons.svg#youtube" />
                 </svg></a></li>
           </ul>
           <p>&copy; 2020 Все права защищены. ДонШина - <br>продажа шин, резины и дисков на авто.</p>
