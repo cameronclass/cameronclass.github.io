@@ -37,6 +37,7 @@
 .search {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 50px 0 40px;
 
 
@@ -164,7 +165,7 @@
     transition: transform .3s ease-in;
     height: 100%;
     &-content {
-        padding: 10px 15px 20px;
+        padding: 10px 15px 0;
 
         &__title {
             width: 90%;
@@ -544,6 +545,7 @@
     &-text{
         padding-left: 0;
         margin: 20px 0;
+        margin-left: 35px;
     }
 
     &-container {
@@ -724,11 +726,16 @@
 
 
     }
+    .table-wrapper{
+        overflow:auto;  
+    }
 
     .product-options {
         display: flex;
         font-size: 12px;
         margin: 26px 0 53px;
+        flex-wrap: wrap;
+        position: relative;
 
         &__option {
             .model {
@@ -813,6 +820,7 @@
 
        &__radius{
            display: flex;
+           flex-wrap: wrap;
            li{
                padding-right: 5px;
            }

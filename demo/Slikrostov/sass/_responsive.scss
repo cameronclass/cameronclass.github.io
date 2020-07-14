@@ -63,6 +63,7 @@
             margin-left: 18px;
         }
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -120,8 +121,8 @@
     }
 
     .article-container {
-        &-text{
-            
+        .article-text{
+            margin-left: 0;
         }
 
         h2,
