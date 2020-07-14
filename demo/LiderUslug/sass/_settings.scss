@@ -58,6 +58,10 @@ $font-bold: "Liberation Sans Bold";
   font-display: swap;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: $font;
   box-sizing: border-box;
