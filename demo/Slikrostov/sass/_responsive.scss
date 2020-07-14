@@ -148,10 +148,41 @@
 
         }
     }
+        .model {
+            &-brend__logo {
+                font-size: 60px;
+                justify-content: center;
+
+                svg {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
 
 }
 
 @media screen and (max-width: 520px) {
+    .model {
+
+        &-content{
+            padding-left: 10px;
+        }
+        &-items {
+        flex-direction: column;    
+        }
+
+        &-brend__logo {
+            font-size: 50px;
+            justify-content: center;
+            margin: 10px 0;
+
+            svg {
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
     .one-product-container{
 
 
@@ -290,9 +321,10 @@
 
 
     .select-container {
+        justify-content: space-between;
         input {
 
-            padding: 10px 13px;
+            padding: 10px 10px;
         }
 
         .input-arrow {
@@ -375,6 +407,7 @@
             margin: 0px 4px;
         }
     }
+
 
 
 

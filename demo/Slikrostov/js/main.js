@@ -55,10 +55,7 @@ $(document).ready(function () {
 
     });
 
-    $('.filter-container .select-container > input').each(function(e){
-        const string = $(this).val($(this).val().substr(0, 10))
-        // console.log(string.substr(0, 5));
-    })
+
 
 
     $('.select-container, .filter-container >.select-container').each(function (e) {
@@ -92,31 +89,9 @@ $(document).ready(function () {
     $(this).find('.select-container__options div').each(function (e) {
         $(this).click(function (e) {
             const  filterContainer = $(this).parent().parent().parent().parent().parent().hasClass('filter-container')
-
-            if(filterContainer)
-            {
-
-                if($(window).width() < 520){
-                    
-                        $(this).parent().parent().find('input').val($(this).text().substr(0, 45));
-                    
-                  
-                    return true;
-                }
-                
-                if($(window).width() <= 1024){
-                    
-                    $(this).parent().parent().find('input').val($(this).text().substr(0, 7));
-                
-              
-                return true;
-            }
-                if($(this).text().length > 8){
-                    $(this).parent().parent().find('input').val($(this).text().substr(0, 8));
-                    return true
-                }
-            
-            }
+           if(filterContainer){
+            $(this).parent().parent().find('.input-arrow').removeClass('input-arrow').removeClass('input-arrow-active')
+           }
             
 
             $(this).parent().parent().find('input').val($(this).text());

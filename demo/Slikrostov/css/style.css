@@ -1328,8 +1328,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px 0 40px;
-  padding: 0 10px; }
+  margin: 50px 0 40px; }
 
 .select-modifaction .select-hidden {
   display: none;
@@ -1848,6 +1847,54 @@ html {
       text-transform: uppercase;
       padding: 11px 20px; }
 
+.model {
+  margin-top: 50px; }
+  .model-container {
+    background-color: #ffffff;
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0; }
+  .model-content p {
+    font-family: "Open Sans Bold";
+    color: #ED1C24;
+    margin: 14px 0; }
+  .model-content ul {
+    color: #5A5A5A;
+    font-size: 12px;
+    margin-bottom: 4px; }
+    .model-content ul li {
+      padding-bottom: 5px; }
+  .model-content__radius {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .model-content__radius li {
+      padding-right: 5px; }
+  .model-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .model-brend__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bold; }
+    .model-brend__logo svg {
+      height: 79px;
+      width: 79px; }
+
 @media screen and (max-width: 1024px) {
   .filter-title h1 {
     font-size: 20px; }
@@ -1939,8 +1986,34 @@ html {
       .article-container-img img {
         border-bottom-right-radius: 3px;
         border-top-right-radius: 0;
-        border-bottom-left-radius: 3px; } }
+        border-bottom-left-radius: 3px; }
+
+  .model-brend__logo {
+    font-size: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .model-brend__logo svg {
+      height: 50px;
+      width: 50px; } }
 @media screen and (max-width: 520px) {
+  .model-content {
+    padding-left: 10px; }
+  .model-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .model-brend__logo {
+    font-size: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px 0; }
+    .model-brend__logo svg {
+      height: 30px;
+      width: 30px; }
+
   .one-product-container h2 {
     font-size: 22px; }
   .one-product-container .buy-product__buttons button {
@@ -2031,10 +2104,14 @@ html {
   .input-select {
     font-size: 12px; }
 
-  .select-container input {
-    padding: 10px 13px; }
-  .select-container .input-arrow {
-    padding: 4px; }
+  .select-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .select-container input {
+      padding: 10px 10px; }
+    .select-container .input-arrow {
+      padding: 4px; }
 
   .article-img {
     height: auto;
