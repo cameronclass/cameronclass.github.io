@@ -31,7 +31,8 @@ li {
 
 img {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 @font-face {
   font-family: "Open Sans Bold";
@@ -1405,6 +1406,9 @@ html {
     .select-modifaction .select-options li[rel="hide"] {
       display: none; }
 
+.catalog .card-col {
+  margin-bottom: 23px; }
+
 .card {
   background: #FFFFFF;
   font-family: "Open Sans Bold";
@@ -1415,11 +1419,15 @@ html {
   -webkit-transition: -webkit-transform .3s ease-in;
   transition: -webkit-transform .3s ease-in;
   transition: transform .3s ease-in;
-  transition: transform .3s ease-in, -webkit-transform .3s ease-in; }
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+  height: 100%; }
   .card-content {
     padding: 10px 15px 20px; }
     .card-content__title {
-      font-size: 16px; }
+      width: 90%;
+      font-size: 16px;
+      height: 55px;
+      overflow: hidden; }
     .card-content__price {
       color: #ED1C24;
       margin: 10px 0 8px; }
@@ -1466,6 +1474,9 @@ html {
     content: "";
     border: 1px solid #ED1C24;
     border-width: 0 3px 3px 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 3px;
     display: inline-block;
     padding: 6px;
     position: absolute;
@@ -1549,12 +1560,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .filter .select-containers label {
-    margin-bottom: 5px;
-    display: block;
-    color: #5A5A5A;
-    font-family: "Open Sans SemiBold";
-    font-size: 12px; }
   .filter .select-containers .input-select {
     border: none;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
@@ -1575,8 +1580,7 @@ html {
   .filter-select:last-child {
     margin-right: 0; }
   .filter-select label {
-    font-family: "Open Sans SemiBold";
-    color: #000;
+    color: #5A5A5A;
     font-size: 12px;
     margin: 8px 0;
     display: block; }
@@ -1670,16 +1674,19 @@ html {
   display: flex; }
   .filter-title h1 {
     font-size: 28px;
-    margin: auto; }
+    margin: auto;
+    margin-left: 10px; }
   .filter-title__img img {
     height: 100%; }
 
+.article-text {
+  padding-left: 0;
+  margin: 20px 0; }
 .article-container {
   -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   border-radius: 3px;
-  padding-left: 50px;
   margin: 50px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1696,12 +1703,9 @@ html {
     padding-right: 0;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px; }
-.article-img {
-  height: 301px; }
-  .article-img img {
-    height: 100%;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px; }
+.article-img img {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 .slider {
   margin-top: 50px; }
@@ -1732,6 +1736,8 @@ html {
   .slider .swiper-container {
     width: 100%;
     height: 100%; }
+  .slider .swiper-slide {
+    overflow: hidden; }
   .slider-button {
     position: absolute;
     bottom: 15%;
@@ -1971,22 +1977,20 @@ html {
   .filter .button {
     margin: 15px 0 0 10px; }
 
-  .article-container {
+  .article-container h2,
+  .article-container p {
+    padding: 20px; }
+  .article-container h2 {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .article-container p {
+    margin-bottom: 20px; }
+  .article-container-img {
     padding: 0; }
-    .article-container h2,
-    .article-container p {
-      padding: 20px; }
-    .article-container h2 {
-      padding-bottom: 0;
-      margin-bottom: 0; }
-    .article-container p {
-      margin-bottom: 20px; }
-    .article-container-img {
-      padding: 0; }
-      .article-container-img img {
-        border-bottom-right-radius: 3px;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 3px; }
+    .article-container-img img {
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 3px; }
 
   .model-brend__logo {
     font-size: 60px;
@@ -2112,10 +2116,6 @@ html {
       padding: 10px 10px; }
     .select-container .input-arrow {
       padding: 4px; }
-
-  .article-img {
-    height: auto;
-    margin-bottom: -5px; }
 
   .footer-socials {
     -webkit-box-pack: center;
