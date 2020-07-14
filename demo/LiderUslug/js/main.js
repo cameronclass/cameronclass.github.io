@@ -56,6 +56,15 @@ $(document).ready(function(){
      });
   });
 
+  $(function () {
+    $('.js-category-readmore').readmore({
+      speed: 500,
+      lessLink: '<div class="js-category-readmore-btn close"><a href="#">Свернуть</a></div>',
+      moreLink: '<div class="js-category-readmore-btn"><a href="#">Показать еще</a></div>',
+      collapsedHeight: 115,
+    });
+  });
+
 
 
 

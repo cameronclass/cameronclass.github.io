@@ -56,12 +56,12 @@
     .header__category {
       position: absolute;
       top: 58px;
-      height: 80vh;
+      height: 75vh;
       overflow-y: scroll;
       width: 100%;
       z-index: 10;
       transition: 0ms all;
-      visibility: visible;
+      visibility: hidden;
       background-color: white;
       border-radius: 4px;
       box-shadow: 0px 5px 18px -5px rgba(184, 184, 184, 1);
@@ -70,6 +70,7 @@
       align-items: flex-start;
       flex-wrap: wrap;
       padding: 36px 15px;
+      padding-left: 54px;
 
       
 
@@ -79,18 +80,22 @@
 
       .col-4{
         width: 24%;
+        margin-bottom: 34px;
 
         &-title{
           display: flex;
           align-items: center;
+          position: relative;
         }
 
         h4{
-          margin: 0 0 3px 14px;
+          margin: 0 0 3px 0;
           font-size: 18px;
         }
 
         img{
+          position: absolute;
+          left: -40px;
           width: 25px;
           height: 25px;
         }
@@ -98,6 +103,9 @@
         ul{
           list-style: none;
           margin-top: 0;
+          overflow: hidden;
+          margin: 5px 0 12px;
+          padding: 0;
           li{
             margin-bottom: 4px;
             a{
@@ -105,6 +113,26 @@
               color: $color1;
               font-size: 15px;
             }            
+          }
+        }
+        .js-category-readmore-btn{
+          margin: 0;
+          padding: 0;
+          color: black;
+          font-size: 14px;
+          font-weight: 300;
+          display: flex;
+
+          &:after{
+            content: url(../img/icons/down-arrow.svg);
+            width: 8px;
+            height: 8px;
+            margin-left: 14px;
+          }
+        }
+        .close{
+          &:after{
+            transform: rotateX(180deg) translateY(-9px);
           }
         }
       }
@@ -184,6 +212,21 @@
         visibility: visible;
       }
     }
+
+    .count{
+      position: absolute;
+      right: -14px;
+      top: 14px;
+      width: 20px;
+      height: 20px;
+      font-size: 13px;
+      border-radius: 50%;
+      background-color: $color2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   img {
@@ -226,7 +269,7 @@
         justify-content: center;
         font-size: 10px;
         color: white;
-        background-color: green;
+        background-color: $color2;
         width: 22px;
         height: 22px;
         border-radius: 50%;
@@ -360,8 +403,6 @@
           width: 205px;
         }
 
-        .price-ul {
-        }
 
         .price-title {
           text-align: left;
@@ -450,3 +491,5 @@
     }
   }
 }
+
+
