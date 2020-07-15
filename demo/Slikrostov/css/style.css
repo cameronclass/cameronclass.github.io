@@ -2560,7 +2560,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 27px; }
-  .user-orders .product h3, .user-orders .product p {
+  .user-orders .product h3,
+  .user-orders .product p {
     font-family: "Open Sans Bold";
     font-size: 16px; }
   .user-orders .product h3 {
@@ -2578,6 +2579,18 @@ html {
   margin-top: 17px; }
   .user-orders .delivery .place {
     width: 70%; }
+
+.order-register .product {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .order-register .product p,
+  .order-register .product h3 {
+    margin-right: 0; }
+.order-register input {
+  background-color: #f5f7ff;
+  width: 100%;
+  padding-left: 27px; }
 
 @media screen and (max-width: 1024px) {
   .filter-title h1 {
@@ -2644,6 +2657,23 @@ html {
     .one-product .product-options table {
       margin-right: 0;
       margin-bottom: 30px; }
+
+  .delivery .order-info span {
+    font-size: 8px; }
+  .delivery .order-info p {
+    font-size: 10px; }
+
+  .user-orders__order h2,
+  .user-orders__order p {
+    font-size: 12px; }
+  .user-orders__order .order-info span {
+    font-size: 9px; }
+
+  .user-orders__products {
+    padding: 35px 50px; }
+    .user-orders__products .product h3,
+    .user-orders__products .product p {
+      font-size: 12px; }
 
   .slider-text {
     top: 15%; }
@@ -2738,6 +2768,18 @@ html {
 @media screen and (max-width: 520px) {
   .user-orders .order-info {
     margin: 10px 0; }
+  .user-orders__products {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 35px 20px; }
+    .user-orders__products .product h3 {
+      margin-right: 50px;
+      width: 41%; }
+    .user-orders__products .product p {
+      margin-right: 0; }
+      .user-orders__products .product p:last-child {
+        margin-left: 30px; }
   .user-orders__order {
     padding: 20px; }
     .user-orders__order .row > div {
@@ -2747,6 +2789,15 @@ html {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
+
+  .user-orders .delivery {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
   .finish {
     -webkit-box-pack: justify !important;
@@ -3023,6 +3074,9 @@ html {
   .card img {
     height: 239px; } }
 @media screen and (max-width: 320px) {
+  .user-orders__products .product h3 {
+    margin-right: 10px; }
+
   .user-profile .privacy-policy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

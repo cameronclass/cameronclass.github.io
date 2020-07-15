@@ -1146,9 +1146,10 @@
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-.mob-show{
+.mob-show {
   display: none;
 }
+
 .check_box input[type="checkbox"]:checked~label::after {
   content: '';
   border-radius: 50%;
@@ -1164,16 +1165,18 @@
   margin: auto;
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
-.order-info{
+
+.order-info {
   display: flex;
   flex-direction: column;
 
-  span{
+  span {
     font-size: 12px;
     color: $grey;
-    
+
   }
-  p{
+
+  p {
     color: $red;
     font-family: $font-bold;
     font-size: 16px;
@@ -1306,42 +1309,46 @@
 
 
 }
-.user-orders{
 
-  h1{
+.user-orders {
+
+  h1 {
     font-size: 30px;
     font-family: $font-bold;
   }
 
-  &__order{
+  &__order {
     box-shadow: $shadow;
     background-color: $white;
     margin-bottom: 11px;
     padding: 22px 0;
-    h2{
+
+    h2 {
       font-family: $font-bold;
       font-size: 16px;
     }
-    
 
-   .row{
-    align-items: center;
-    &>div{
-      display: flex;
-      justify-content: center;
+
+    .row {
+      align-items: center;
+
+      &>div {
+        display: flex;
+        justify-content: center;
+      }
     }
-   }
-   
-   img{
-     width: 25px;
-     height: 25px;
-   }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
   }
-  .order{
+
+  .order {
     margin-bottom: 0;
   }
 
-  &__products{
+  &__products {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     box-shadow: $shadow;
@@ -1349,29 +1356,52 @@
     width: 100%;
     background-color: $white;
   }
-  .product{
+
+  .product {
     display: flex;
     margin-bottom: 27px;
-    h3,p{
+
+    h3,
+    p {
       font-family: $font-bold;
       font-size: 16px;
     }
-    h3{
-      
+
+    h3 {
+
       margin-right: 67px;
     }
-    p{
+
+    p {
       color: $red;
       margin-right: 53px;
     }
   }
-  .delivery{
+
+  .delivery {
     display: flex;
     align-items: center;
     margin-top: 17px;
 
-    .place{
+    .place {
       width: 70%;
     }
+  }
+}
+
+.order-register {
+  .product {
+    justify-content: space-between;
+
+    p,
+    h3 {
+      margin-right: 0;
+    }
+  }
+
+  input {
+    background-color: #f5f7ff;
+    width: 100%;
+    padding-left: 27px;
   }
 }
