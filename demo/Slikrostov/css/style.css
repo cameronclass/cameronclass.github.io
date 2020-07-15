@@ -2150,6 +2150,10 @@ html {
       font-size: 12px;
       line-height: 28px;
       color: #ed1c24; }
+      .about-brand .seasons-item:last-child {
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
       .about-brand .seasons-item .winter {
         line-height: 18px;
         border-bottom: 2px solid #ed1c24; }
@@ -2176,18 +2180,20 @@ html {
       background-color: #ffffff;
       margin-bottom: 17px; }
       .about-brand .product-cards .product-card__item-img {
-        width: 161px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -o-object-fit: cover;
-           object-fit: cover; }
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+        .about-brand .product-cards .product-card__item-img img {
+          width: 161px;
+          height: 122px;
+          -o-object-fit: cover;
+             object-fit: cover; }
       .about-brand .product-cards .product-card__item-logo {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2236,10 +2242,11 @@ html {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          margin-top: 7px;
-          overflow: hidden; }
+          margin-top: 7px; }
           .about-brand .product-cards .product-card__item-seasons .radius li {
-            margin-right: 10px; }
+            margin-right: 8px; }
+            .about-brand .product-cards .product-card__item-seasons .radius li:last-child {
+              margin-right: 0; }
       .about-brand .product-cards .product-card__item .button {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2292,7 +2299,14 @@ html {
     bottom: 20%; }
 
   .one-product .attention-price .icon-attenition {
-    margin-left: 18px; } }
+    margin-left: 18px; }
+
+  .about-brand__logo h1 {
+    font-size: 55px; }
+
+  .about-brand__logo img {
+    height: 50px;
+    width: 50px; } }
 @media screen and (max-width: 768px) {
   .one-product .product-options {
     -webkit-box-orient: vertical;
@@ -2361,8 +2375,69 @@ html {
     .header .h-80 {
       height: auto; }
     .header-menu {
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+
+  .seasons .seasons-item:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .product-card__item-title h2 {
+    width: 100%;
+    text-align: center;
+    height: auto !important; }
+  .product-card__item-seasons {
+    margin: 20px 0;
+    padding-left: 10px; } }
 @media screen and (max-width: 520px) {
+  .about-brand__content h1 {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 0; }
+
+  .about-brand__content p {
+    margin: 0;
+    padding: 20px 25px; }
+
+  .seasons .seasons-item:last-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+
+  .about-brand .product-cards .product-card__item-img img {
+    height: auto;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .about-brand .product-cards .product-card__item-title h2 {
+    text-align: left;
+    width: 100%;
+    padding: 10px 25px;
+    height: auto !important; }
+  .about-brand .product-cards .product-card__item-seasons {
+    margin: 20px 0;
+    padding: 10px 25px; }
+  .about-brand .product-cards .product-card__item-logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 25px; }
+  .about-brand .product-cards .product-card__item .button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
   .select-container {
     margin-top: 10px; }
     .select-container span {

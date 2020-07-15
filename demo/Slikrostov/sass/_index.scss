@@ -904,6 +904,10 @@
       font-size: 12px;
       line-height: 28px;
       color: $red;
+      &:last-child{
+        justify-content: flex-end;
+        
+      }
 
       .winter {
         line-height: 18px;
@@ -935,11 +939,15 @@
       margin-bottom: 17px;
 
       &-img {
-        width: 161px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+       img{
+          width: 161px;
+          height: 122px;
         object-fit: cover;
+
+        }
       }
 
 
@@ -991,10 +999,13 @@
         .radius {
           display: flex;
           margin-top: 7px;
-          overflow: hidden;
+
 
           li {
-            margin-right: 10px;
+            margin-right: 8px;
+            &:last-child{
+              margin-right: 0;
+            }
           }
         }
       }
