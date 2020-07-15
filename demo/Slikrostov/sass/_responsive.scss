@@ -72,10 +72,11 @@
         height: 50px;
         width: 50px;
     }
+
     .checkout .product-img {
         height: auto;
         width: 100%;
- 
+
     }
 
 
@@ -215,28 +216,33 @@
 
         }
     }
+
     .user-profile .select-container__options {
         top: 28.9px;
     }
+
     .user-profile__container-content:first-child {
         padding-right: 0;
     }
+
     .user-profile__container-content:last-child {
         padding-left: 0;
     }
-    .date-birth{
+
+    .date-birth {
         margin-top: 25px;
     }
-    .date-birth__inputs{
-     
-            .select-container:last-child{
 
-                margin-right: 0;
-            }
+    .date-birth__inputs {
+
+        .select-container:last-child {
+
+            margin-right: 0;
+        }
     }
 
 
-    .checkout-item{
+    .checkout-item {
         margin-bottom: 10px;
     }
 
@@ -246,73 +252,108 @@
 }
 
 @media screen and (max-width: 520px) {
-    .finish{
+   
+    .user-orders {
+        .order-info{
+            margin: 10px 0;
+        }
+
+        &__order {
+            padding: 20px;
+
+
+            .row {
+         
+
+                &>div {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+
+    .finish {
         justify-content: space-between !important;
-        .checkout-continue
-        {
+
+        .checkout-continue {
             margin: 0;
         }
-        .amount-container{
+
+        .amount-container {
             margin: 0;
         }
     }
-    .moile-show{
+
+    .mob-show {
         display: block;
     }
-    .checkout-buttons{
+
+    .checkout-buttons {
         display: flex;
         width: 100%;
         padding: 10px 15px;
         justify-content: space-between;
         align-items: center;
-        .counter{
+
+        .counter {
             width: 100%;
         }
-        .checkout-item{
+
+        .checkout-item {
             display: block;
             margin: auto;
 
 
-            &:first-child{
+            &:first-child {
                 margin-left: 30px;
             }
-            .delete{
+
+            .delete {
                 margin: auto;
             }
         }
     }
-    .checkout-item{
-       h1{
-           padding: 0 20px;
-       }
-        &-price{
+
+    .checkout-item {
+        h1 {
+            padding: 0 20px;
+        }
+
+        &-price {
             order: 1;
             padding: 0 20px 15px;
         }
-        &-counter{
+
+        &-counter {
             display: inline-block !important;
         }
-        &-delete{
+
+        &-delete {
             display: inline-block !important;
 
         }
     }
+
     .user-profile .privacy-policy .checkbox span {
         padding-left: 20px;
     }
-    .user-profile__container{
+
+    .user-profile__container {
         padding: 40px 17px;
     }
 
-    .about-brand__content h1{
+    .about-brand__content h1 {
         width: 100%;
         font-size: 25px;
         margin-top: 0;
     }
-    .about-brand__content p{
-    margin: 0;        
+
+    .about-brand__content p {
+        margin: 0;
         padding: 20px 25px;
     }
+
     .seasons {
         .seasons-item:last-child {
             justify-content: start;
@@ -350,7 +391,8 @@
                 justify-content: flex-start;
                 padding: 0 25px;
             }
-            .button{
+
+            .button {
                 flex: 0 0 50%;
                 max-width: 50%;
                 margin-bottom: 20px;
@@ -645,23 +687,28 @@
 }
 
 @media screen and (max-width: 320px) {
-    .user-profile .privacy-policy{
+    .user-profile .privacy-policy {
         flex-direction: column;
-        button{
+
+        button {
             margin-top: 20px;
         }
     }
+
     .user-profile .date-birth__inputs {
 
         flex-direction: column;
-        input{
+
+        input {
             width: 100%;
         }
     }
+
     .user-profile .select-container {
         margin-right: 0;
     }
-    .select-container > .position-relative{
+
+    .select-container>.position-relative {
         width: 100%;
     }
 

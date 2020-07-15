@@ -1146,7 +1146,9 @@
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-
+.mob-show{
+  display: none;
+}
 .check_box input[type="checkbox"]:checked~label::after {
   content: '';
   border-radius: 50%;
@@ -1161,6 +1163,21 @@
   display: block;
   margin: auto;
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+.order-info{
+  display: flex;
+  flex-direction: column;
+
+  span{
+    font-size: 12px;
+    color: $grey;
+    
+  }
+  p{
+    color: $red;
+    font-family: $font-bold;
+    font-size: 16px;
+  }
 }
 
 .checkout {
@@ -1180,7 +1197,7 @@
   }
 
   .amount-container {
-   
+
     margin-right: 116px;
 
     span {
@@ -1288,4 +1305,36 @@
   }
 
 
+}
+.user-orders{
+
+  h1{
+    font-size: 30px;
+    font-family: $font-bold;
+  }
+
+  &__order{
+    box-shadow: $shadow;
+    background-color: $white;
+    margin-bottom: 11px;
+    padding: 22px 0;
+    h2{
+      font-family: $font-bold;
+      font-size: 16px;
+    }
+    
+
+   .row{
+    align-items: center;
+    &>div{
+      display: flex;
+      justify-content: center;
+    }
+   }
+   
+   img{
+     width: 25px;
+     height: 25px;
+   }
+  }
 }
