@@ -904,9 +904,10 @@
       font-size: 12px;
       line-height: 28px;
       color: $red;
-      &:last-child{
+
+      &:last-child {
         justify-content: flex-end;
-        
+
       }
 
       .winter {
@@ -942,10 +943,11 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-       img{
+
+        img {
           width: 161px;
           height: 122px;
-        object-fit: cover;
+          object-fit: cover;
 
         }
       }
@@ -1003,7 +1005,8 @@
 
           li {
             margin-right: 8px;
-            &:last-child{
+
+            &:last-child {
               margin-right: 0;
             }
           }
@@ -1023,50 +1026,136 @@
     }
   }
 }
-.user-profile{
-  &__container{
+
+.user-profile {
+  &__container {
     background-color: $white;
     box-shadow: $shadow;
     border-radius: 3px;
     padding: 57px 121px;
-    .row{
+
+
+
+    .row {
       justify-content: space-between;
     }
-    &-content:first-child{
+
+    &-content:first-child {
       padding-right: 48px;
+
+      .filter-select:first-child {
+        label {
+          margin: 0px 0 8px;
+        }
+      }
     }
-    &-content:last-child{
+
+    &-content:last-child {
       padding-left: 48px;
     }
-    
+
   }
-  .date-birth__inputs{
+  h1{
+    margin: 44px 0;
+    font-family: $font-bold;
+    font-size: 30px;
+  }
+
+  .date-birth__inputs {
     display: flex;
-   
+
   }
-  input{
+
+  input {
     background-color: $white-second;
     width: 100%;
+    padding-left: 27px;
   }
-  label{
+
+  label {
     color: $grey;
     font-size: 12px;
     margin-bottom: 5px;
     display: block;
-   
+
   }
-  .select-container__options{
+
+  .select-container__options {
     top: 29.9px;
 
   }
-  .select-container{
+
+  .select-container {
     margin-right: 13px;
 
-    input{
+    input {
       color: $grey;
       border: 1px solid $white;
       background-color: $white-second;
+      padding-left: 9px;
       box-shadow: $shadow;
     }
   }
+
+  .privacy-policy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 59px;
+
+    .checkbox{
+      display: flex;
+      span{
+        padding-left: 30px;
+      }
+      }
+    
+  }
+  button{
+    padding: 13px 24px;
+  }
+}
+
+/* CSS regarding the Checkbox starts from here */
+.check_box {
+  display: flex;
+  position: relative;
+}
+
+.check_box input[type="checkbox"] {
+  display: none;
+}
+
+.check_box label {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid $white-second;
+  width: 15px;
+  height: 15px;
+  transition: all 0.1s ease;
+  z-index: 2;
+  display: block;
+  margin-bottom: 0;
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.check_box input[type="checkbox"]:checked~label::after {
+  content: '';
+  border-radius: 50%;
+  background: $red;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }

@@ -110,7 +110,6 @@ img {
   display: flex;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
@@ -134,7 +133,6 @@ img {
 
 .swiper-container-free-mode > .swiper-wrapper {
   -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   margin: 0 auto; }
 
@@ -146,7 +144,6 @@ img {
   position: relative;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
 
@@ -162,7 +159,6 @@ img {
           align-items: flex-start;
   -webkit-transition-property: height,-webkit-transform;
   transition-property: height,-webkit-transform;
-  -o-transition-property: transform,height;
   transition-property: transform,height;
   transition-property: transform,height,-webkit-transform; }
 
@@ -185,26 +181,18 @@ img {
 
 .swiper-container-3d .swiper-slide-shadow-left {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-3d .swiper-slide-shadow-top {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-css-mode > .swiper-wrapper {
@@ -291,7 +279,6 @@ img {
   position: absolute;
   text-align: center;
   -webkit-transition: .3s opacity;
-  -o-transition: .3s opacity;
   transition: .3s opacity;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -311,38 +298,31 @@ img {
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transform: scale(0.33);
-      -ms-transform: scale(0.33);
           transform: scale(0.33);
   position: relative; }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
   -webkit-transform: scale(0.66);
-      -ms-transform: scale(0.66);
           transform: scale(0.66); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
   -webkit-transform: scale(0.33);
-      -ms-transform: scale(0.33);
           transform: scale(0.33); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
   -webkit-transform: scale(0.66);
-      -ms-transform: scale(0.66);
           transform: scale(0.66); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
   -webkit-transform: scale(0.33);
-      -ms-transform: scale(0.33);
           transform: scale(0.33); }
 
 .swiper-pagination-bullet {
@@ -383,14 +363,12 @@ button.swiper-pagination-bullet {
 .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 8px; }
 
 .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   display: inline-block;
   -webkit-transition: .2s transform,.2s top;
-  -o-transition: .2s transform,.2s top;
   transition: .2s transform,.2s top; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -399,18 +377,15 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   white-space: nowrap; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: .2s transform,.2s left;
-  -o-transition: .2s transform,.2s left;
   transition: .2s transform,.2s left; }
 
 .swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: .2s transform,.2s right;
-  -o-transition: .2s transform,.2s right;
   transition: .2s transform,.2s right; }
 
 .swiper-pagination-progressbar {
@@ -425,15 +400,12 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transform-origin: left top;
-      -ms-transform-origin: left top;
           transform-origin: left top; }
 
 .swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   -webkit-transform-origin: right top;
-      -ms-transform-origin: right top;
           transform-origin: right top; }
 
 .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
@@ -527,7 +499,6 @@ button.swiper-pagination-bullet {
   margin-top: -21px;
   z-index: 10;
   -webkit-transform-origin: 50%;
-      -ms-transform-origin: 50%;
           transform-origin: 50%;
   -webkit-animation: swiper-preloader-spin 1s infinite linear;
           animation: swiper-preloader-spin 1s infinite linear;
@@ -562,13 +533,11 @@ button.swiper-pagination-bullet {
 
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
   -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out; }
 
 .swiper-container-fade .swiper-slide {
   pointer-events: none;
   -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
   transition-property: opacity; }
 
 .swiper-container-fade .swiper-slide .swiper-slide {
@@ -587,7 +556,6 @@ button.swiper-pagination-bullet {
   z-index: 1;
   visibility: hidden;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   width: 100%;
   height: 100%; }
@@ -597,7 +565,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube.swiper-container-rtl .swiper-slide {
   -webkit-transform-origin: 100% 0;
-      -ms-transform-origin: 100% 0;
           transform-origin: 100% 0; }
 
 .swiper-container-cube .swiper-slide-active, .swiper-container-cube .swiper-slide-active .swiper-slide-active {
@@ -1294,6 +1261,11 @@ html {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.justify-content-end {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important; }
+
 .logo a {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
@@ -1374,7 +1346,6 @@ html {
       .header-menu__user li a {
         border-bottom: 1px solid #000;
         -webkit-transition: 300ms;
-        -o-transition: 300ms;
         transition: 300ms; }
         .header-menu__user li a:hover {
           border: none; }
@@ -1402,7 +1373,6 @@ html {
       margin: 15px 0 10px 0px; }
       .header .menu-content__basket a {
         -webkit-transition: 200ms;
-        -o-transition: 200ms;
         transition: 200ms; }
         .header .menu-content__basket a:hover {
           color: #ed1c24; }
@@ -1437,7 +1407,6 @@ html {
   .footer a {
     color: #ffffff;
     -webkit-transition: color .2s ease-in;
-    -o-transition: color .2s ease-in;
     transition: color .2s ease-in; }
     .footer a:hover {
       color: #ed1c24; }
@@ -1472,7 +1441,6 @@ html {
   width: 20px;
   fill: #ed1c24;
   -webkit-transition: fill 0.3s ease;
-  -o-transition: fill 0.3s ease;
   transition: fill 0.3s ease; }
   .icon:hover {
     fill: #ca1118; }
@@ -1491,7 +1459,6 @@ html {
   padding: 10px 8px;
   border-radius: 0.25rem;
   -webkit-transition: background 0.2s ease-in-out;
-  -o-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out; }
   .btn:hover {
     background: #ca1118; }
@@ -1542,7 +1509,6 @@ html {
   background: initial;
   padding: 8px 15px;
   -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   white-space: nowrap;
   overflow: hidden; }
@@ -1556,14 +1522,11 @@ html {
     top: 9px;
     right: 18px;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
   .select-modifaction .select-styled:active::after, .select-modifaction .select-styled.active::after {
     -webkit-transform: rotate(-135deg) translateX(-45%);
-        -ms-transform: rotate(-135deg) translateX(-45%);
             transform: rotate(-135deg) translateX(-45%);
     -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     top: 9px; }
 .select-modifaction .select-options {
@@ -1584,7 +1547,6 @@ html {
     text-indent: 15px;
     border-top: 1px solid #962d22;
     -webkit-transition: all 0.15s ease-in;
-    -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in; }
     .select-modifaction .select-options li:nth-child(2) {
       border-top: none; }
@@ -1618,7 +1580,6 @@ html {
   margin-top: 20px;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   height: 100%; }
@@ -1694,18 +1655,14 @@ html {
     border-bottom-left-radius: 0; }
   .select-container .input-arrow-active {
     -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
             transform: rotate(-180deg);
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     top: 9px; }
   .select-container .input-arrow-close {
     -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
             transform: rotate(0);
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     top: 6px; }
   .select-container__options {
@@ -1844,7 +1801,6 @@ html {
       padding-bottom: 8px;
       border-top: 2px solid #ffffff;
       -webkit-transition: all 0.1s ease-in;
-      -o-transition: all 0.1s ease-in;
       transition: all 0.1s ease-in;
       cursor: pointer; }
       .filter-select .suggestions div:first-child {
@@ -1879,8 +1835,6 @@ html {
   font-size: 12px; }
 .filter-background {
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #ed1c24), color-stop(25%, rgba(255, 0, 0, 0)));
-  background: -webkit-linear-gradient(left, #ed1c24 25%, rgba(255, 0, 0, 0) 25%);
-  background: -o-linear-gradient(left, #ed1c24 25%, rgba(255, 0, 0, 0) 25%);
   background: linear-gradient(90deg, #ed1c24 25%, rgba(255, 0, 0, 0) 25%);
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2339,15 +2293,22 @@ html {
             justify-content: space-between; }
   .user-profile__container-content:first-child {
     padding-right: 48px; }
+    .user-profile__container-content:first-child .filter-select:first-child label {
+      margin: 0px 0 8px; }
   .user-profile__container-content:last-child {
     padding-left: 48px; }
+.user-profile h1 {
+  margin: 44px 0;
+  font-family: "Open Sans Bold";
+  font-size: 30px; }
 .user-profile .date-birth__inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 .user-profile input {
   background-color: #f5f7ff;
-  width: 100%; }
+  width: 100%;
+  padding-left: 27px; }
 .user-profile label {
   color: #5a5a5a;
   font-size: 12px;
@@ -2361,8 +2322,73 @@ html {
     color: #5a5a5a;
     border: 1px solid #ffffff;
     background-color: #f5f7ff;
+    padding-left: 9px;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
+.user-profile .privacy-policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  margin-top: 59px; }
+  .user-profile .privacy-policy .checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .user-profile .privacy-policy .checkbox span {
+      padding-left: 30px; }
+.user-profile button {
+  padding: 13px 24px; }
+
+/* CSS regarding the Checkbox starts from here */
+.check_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.check_box input[type="checkbox"] {
+  display: none; }
+
+.check_box label {
+  content: '';
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid #f5f7ff;
+  width: 15px;
+  height: 15px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  z-index: 2;
+  display: block;
+  margin-bottom: 0;
+  -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2); }
+
+.check_box input[type="checkbox"]:checked ~ label::after {
+  content: '';
+  border-radius: 50%;
+  background: #ed1c24;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2); }
 
 @media screen and (max-width: 1024px) {
   .filter-title h1 {
@@ -2379,8 +2405,6 @@ html {
 
   .filter-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #ED1C24), color-stop(17%, rgba(255, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
-    background: -o-linear-gradient(left, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
     background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%); }
 
   .menu-content {
@@ -2437,8 +2461,6 @@ html {
 
   .filter-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #ED1C24), color-stop(17%, rgba(255, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
-    background: -o-linear-gradient(left, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
     background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%); }
 
   .menu-content {
@@ -2495,8 +2517,29 @@ html {
     height: auto !important; }
   .product-card__item-seasons {
     margin: 20px 0;
-    padding-left: 10px; } }
+    padding-left: 10px; }
+
+  .user-profile .select-container__options {
+    top: 28.9px; }
+
+  .user-profile__container-content:first-child {
+    padding-right: 0; }
+
+  .user-profile__container-content:last-child {
+    padding-left: 0; }
+
+  .date-birth {
+    margin-top: 25px; }
+
+  .date-birth__inputs .select-container:last-child {
+    margin-right: 0; } }
 @media screen and (max-width: 520px) {
+  .user-profile .privacy-policy .checkbox span {
+    padding-left: 20px; }
+
+  .user-profile__container {
+    padding: 40px 17px; }
+
   .about-brand__content h1 {
     width: 100%;
     font-size: 25px;
@@ -2643,8 +2686,6 @@ html {
     font-size: 12px; }
   .filter-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #ED1C24), color-stop(20%, rgba(255, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, #ED1C24 31%, rgba(255, 0, 0, 0) 20%);
-    background: -o-linear-gradient(left, #ED1C24 31%, rgba(255, 0, 0, 0) 20%);
     background: linear-gradient(90deg, #ED1C24 31%, rgba(255, 0, 0, 0) 20%); }
   .filter .select-containers {
     -webkit-box-orient: vertical;
@@ -2722,6 +2763,28 @@ html {
   .card img {
     height: 239px; } }
 @media screen and (max-width: 320px) {
+  .user-profile .privacy-policy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .user-profile .privacy-policy button {
+      margin-top: 20px; }
+
+  .user-profile .date-birth__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .user-profile .date-birth__inputs input {
+      width: 100%; }
+
+  .user-profile .select-container {
+    margin-right: 0; }
+
+  .select-container > .position-relative {
+    width: 100%; }
+
   .header-menu__phone li > a > span {
     font-size: 10px !important; }
 

@@ -210,7 +210,25 @@
 
         }
     }
+    .user-profile .select-container__options {
+        top: 28.9px;
+    }
+    .user-profile__container-content:first-child {
+        padding-right: 0;
+    }
+    .user-profile__container-content:last-child {
+        padding-left: 0;
+    }
+    .date-birth{
+        margin-top: 25px;
+    }
+    .date-birth__inputs{
+     
+            .select-container:last-child{
 
+                margin-right: 0;
+            }
+    }
 
 
 
@@ -219,6 +237,12 @@
 }
 
 @media screen and (max-width: 520px) {
+    .user-profile .privacy-policy .checkbox span {
+        padding-left: 20px;
+    }
+    .user-profile__container{
+        padding: 40px 17px;
+    }
 
     .about-brand__content h1{
         width: 100%;
@@ -561,6 +585,25 @@
 }
 
 @media screen and (max-width: 320px) {
+    .user-profile .privacy-policy{
+        flex-direction: column;
+        button{
+            margin-top: 20px;
+        }
+    }
+    .user-profile .date-birth__inputs {
+
+        flex-direction: column;
+        input{
+            width: 100%;
+        }
+    }
+    .user-profile .select-container {
+        margin-right: 0;
+    }
+    .select-container > .position-relative{
+        width: 100%;
+    }
 
     .header-menu__phone {
         li>a>span {
