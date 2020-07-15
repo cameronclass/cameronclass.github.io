@@ -1337,4 +1337,41 @@
      height: 25px;
    }
   }
+  .order{
+    margin-bottom: 0;
+  }
+
+  &__products{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: $shadow;
+    padding: 35px 121px;
+    width: 100%;
+    background-color: $white;
+  }
+  .product{
+    display: flex;
+    margin-bottom: 27px;
+    h3,p{
+      font-family: $font-bold;
+      font-size: 16px;
+    }
+    h3{
+      
+      margin-right: 67px;
+    }
+    p{
+      color: $red;
+      margin-right: 53px;
+    }
+  }
+  .delivery{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+
+    .place{
+      width: 70%;
+    }
+  }
 }
