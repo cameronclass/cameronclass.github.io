@@ -32,9 +32,9 @@
     color: #636363;
     border-radius: 5px;
     border: 1px solid #f3f3f3;
-    background-color: #e6e6e6;
+    background-color: $color-border;
     &:hover {
-      background-color: lighten(#e6e6e6, 5%);
+      background-color: lighten($color-border, 5%);
     }
   }
 }
@@ -113,7 +113,7 @@
       padding: 7px 12px;
 
       &:focus ~ .content-search__btn {
-        border-left-color: $color1;
+        border-left-color: $blue;
       }
     }
   }
@@ -153,7 +153,7 @@
 
       &_number {
         font-size: 36px;
-        color: $color4;
+        color: $green;
         padding-left: 17px;
       }
       &_text {
@@ -267,12 +267,12 @@
         left: 0;
         height: 16px;
         width: 16px;
-        border: 2px solid $color1;
+        border: 2px solid $blue;
         border-radius: 2px;
       }
 
       label input:checked ~ .checkmark {
-        background-color: $color1;
+        background-color: $blue;
       }
 
       .checkmark:after {
@@ -296,27 +296,27 @@
       }
     }
     .filter-btn {
-      background-color: $color1;
+      background-color: $blue;
       color: white;
       font-size: 16px;
       padding: 5px;
-      border: 2px solid $color1;
+      border: 2px solid $blue;
       margin-bottom: 10px;
       &:hover {
-        color: $color1;
+        color: $blue;
         background-color: white;
       }
     }
 
     &_category {
       .return {
-        color: $text-muted;
+        color: $grey;
         display: flex;
         align-items: center;
         line-height: 1.5;
         margin-bottom: 10px;
         &:before {
-          color: #b8c6d2;
+          color: $color-border;
           font-family: "Font Awesome 5 Free";
           font-weight: 700;
           content: "\f053";
@@ -359,18 +359,18 @@
 
             &:hover {
               a {
-                color: $color2;
+                color: $orange;
               }
 
               &::before {
-                color: $color2;
+                color: $orange;
               }
             }
           }
 
           &:before {
             width: 6%;
-            color: #b8c6d2;
+            color: $color-border;
             font-family: "Font Awesome 5 Free";
             font-weight: 700;
             content: "\f078";
@@ -382,7 +382,7 @@
               color: #000;
             }
             &::before {
-              color: #b8c6d2;
+              color: $color-border;
             }
           }
         }
@@ -396,11 +396,11 @@
 
           &:hover {
             a {
-              color: $color2;
+              color: $orange;
             }
 
             &::before {
-              color: $color2;
+              color: $orange;
             }
           }
 
@@ -410,7 +410,7 @@
 
           &:before {
             width: 5%;
-            color: #b8c6d2;
+            color: $color-border;
             font-family: "Font Awesome 5 Free";
             font-weight: 700;
             content: "\f054";
@@ -421,7 +421,7 @@
         }
 
         a {
-          color: $color-category-link;
+          color: #000;
         }
       }
     }
@@ -489,7 +489,7 @@
           }
         }
         button.active {
-          background-color: $color1;
+          background-color: $blue;
           color: white;
         }
       }

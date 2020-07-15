@@ -41,6 +41,12 @@ $(document).ready(function(){
     $(".catalog__card").removeClass("catalog__card_list");
   });
 
+
+
+  $(".js-master-readmore-btn").click(function () {
+    $(".master__info .master__about").toggleClass("h-auto");
+  });
+
   // Category toggleClass
   // $(".js-category-open").click(function(e){
   //   e.preventDefault();
@@ -52,7 +58,7 @@ $(document).ready(function(){
      speed: 500,
      lessLink: '<div class="js-master-readmore-btn"><a href="#">Свернуть</a></div>',
      moreLink: '<div class="js-master-readmore-btn"><a href="#">Читать еще</a></div>',
-     collapsedHeight: 58,
+     collapsedHeight: 60,
      });
   });
 
@@ -64,6 +70,8 @@ $(document).ready(function(){
       collapsedHeight: 115,
     });
   });
+
+
 
 
 

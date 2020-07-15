@@ -1,18 +1,16 @@
 // Переменные
-$color1: #62a2f6;
-$color2: #ff2a00;
-$color3: #d1d1d1;
-$color4: #1e905d;
-$color-border: #ccc;
 
-$text-muted: #999;
-$color-category-link: #4b4b4b;
-$color-card-title: #009cf0;
+$orange: #f04008;
+$green: #2d9000;
+$blue: #62a2f6;
+$dark-blue: #073f6f;
+$blue-link: #009cf0;
+$yellow: #ffbb3d;
+$grey: #999999;
+$black: #000;
+$static-bg: #fbfbef;
 
-$color-star-rated: #ffbb3d;
-$color-star: #999;
-
-$color-pagination: #f56900;
+$color-border: #e6e6e6;
 
 $font: "Liberation Sans";
 $font-bold: "Liberation Sans Bold";
@@ -43,7 +41,8 @@ $font-bold: "Liberation Sans Bold";
 
 @font-face {
   font-family: "Liberation Sans";
-  src: url("../fonts/LiberationSans.woff2") format("woff2"), url("../fonts/LiberationSans.woff") format("woff");
+  src: url("../fonts/LiberationSans.woff2") format("woff2"),
+    url("../fonts/LiberationSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -58,7 +57,7 @@ $font-bold: "Liberation Sans Bold";
   font-display: swap;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -80,7 +79,7 @@ input {
   border: 1px solid $color-border;
   &:focus {
     outline: none;
-    border-color: $color1;
+    border-color: $blue;
     cursor: pointer;
   }
 }
@@ -164,12 +163,15 @@ hr {
 }
 
 .container {
-  width: 1361px;
+  width: 1364px;
   margin-left: auto;
   margin-right: auto;
 }
 
 // Used classes
+.mt-18 {
+  margin-top: 18px;
+}
 
 .mt-2 {
   margin-top: 20px;
@@ -194,7 +196,7 @@ hr {
 // Buttons
 .btn {
   display: block;
-  color: $color1;
+  color: $blue;
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 4px;
@@ -203,7 +205,7 @@ hr {
   transition: 100ms;
 
   &:hover {
-    background-color: $color1;
+    background-color: $blue;
     color: white;
     cursor: pointer;
   }
@@ -214,31 +216,31 @@ hr {
   margin: 10px 0 20px;
   padding: 15px;
   border-color: $color-border;
-  color: #333333;
+  color: #000;
 
   i {
-    color: $color-pagination;
+    color: $orange;
   }
 
   &:hover {
     color: #000;
-    background-color: lighten($color-border, 15%);
+    background-color: lighten($color-border, 5%);
   }
 }
 
 .btn-add-works {
-  background-color: $color1;
+  background-color: $blue;
   color: white;
 
   &:hover {
-    color: $color1;
+    color: $blue;
     background-color: white;
   }
 }
 
 .btn-order {
-  padding: 13px;
-  font-size: 19px;
+  padding: 11px 5px;
+  font-size: 20px;
   color: white;
   background-color: #2d9000;
   border-color: #2d9000;
@@ -258,12 +260,12 @@ hr {
 }
 
 .btn-order-2 {
-  background-color: $color2;
-  border-color: $color2;
+  background-color: $orange;
+  border-color: $orange;
   position: relative;
 
   &:hover {
-    color: $color2;
+    color: $orange;
   }
 
   .icon {
@@ -295,13 +297,13 @@ hr {
 }
 
 .btn-offer {
-  background-color: $color1;
+  background-color: $blue;
   color: white;
-  border-color: $color1;
+  border-color: $blue;
 
   &:hover {
     background-color: white;
-    color: $color1;
+    color: $blue;
   }
 }
 
@@ -374,8 +376,8 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $color4;
-        border: 1px solid $color4;
+        background-color: $green;
+        border: 1px solid $green;
         padding: 16px;
         border-radius: 4px;
         color: white;
@@ -385,7 +387,7 @@ hr {
 
         &:hover {
           background-color: white;
-          color: $color4;
+          color: $green;
         }
       }
     }
@@ -397,7 +399,7 @@ hr {
   width: 100%;
   border: 1px solid $color-border;
 
-  img{
+  img {
     height: 167px;
     object-fit: cover;
   }
@@ -408,7 +410,7 @@ hr {
     padding: 10px;
 
     .card__title {
-      color: $color-card-title;
+      color: $blue-link;
       font-weight: bold;
       margin-bottom: 10px;
     }
@@ -434,7 +436,11 @@ hr {
         width: 10px;
         height: 10px;
         background: rgb(35, 167, 27);
-        background: linear-gradient(45deg, rgba(35, 167, 27, 1) 0%, rgba(8, 207, 14, 1) 100%);
+        background: linear-gradient(
+          45deg,
+          rgba(35, 167, 27, 1) 0%,
+          rgba(8, 207, 14, 1) 100%
+        );
         border-radius: 50%;
         margin-right: 5px;
       }
@@ -453,7 +459,7 @@ hr {
     margin-left: 10px;
     font-weight: bold;
     span {
-      color: $color-card-title;
+      color: $blue-link;
       font-size: 14px;
     }
   }
@@ -462,7 +468,7 @@ hr {
     color: $color-border;
     font-size: 20px;
     &:hover {
-      color: $color2;
+      color: $orange;
     }
   }
 }
@@ -473,10 +479,10 @@ hr {
 
 .stars {
   span.rated {
-    color: $color-star-rated;
+    color: $yellow;
   }
   span {
-    color: $color-star;
+    color: $grey;
   }
 }
 
@@ -502,14 +508,14 @@ hr {
 
         &:hover {
           color: #fff;
-          background-color: $color-pagination;
+          background-color: $orange;
         }
       }
 
       &.active {
         a {
           color: #fff;
-          background-color: $color-pagination;
+          background-color: $orange;
         }
       }
     }
@@ -553,13 +559,13 @@ hr {
         margin: 0;
       }
       a {
-        color: $color1;
+        color: $blue;
       }
     }
 
     &__reply {
       a {
-        color: $color1;
+        color: $blue;
       }
     }
   }
@@ -631,12 +637,12 @@ hr {
     color: #2e333b;
 
     &:hover {
-      color: $color2;
+      color: $orange;
     }
   }
 
   a.active {
-    border-bottom: 2px solid $color2;
+    border-bottom: 2px solid $orange;
   }
 }
 
@@ -756,7 +762,7 @@ hr {
 
   .icon {
     width: 40px;
-    color: $color4;
+    color: $green;
   }
 
   .text {
@@ -774,7 +780,7 @@ hr {
 
     .icon {
       width: 25px;
-      color: $color4;
+      color: $green;
       margin-right: 15px;
     }
   }
