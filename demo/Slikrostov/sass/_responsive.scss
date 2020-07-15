@@ -33,7 +33,7 @@
     }
 
     .filter .button {
-        margin: 15px 0 0 10px;
+        margin: 15px 20px 0 10px;
     }
 
     .slider {
@@ -63,6 +63,7 @@
             margin-left: 18px;
         }
     }
+    
 
 }
 
@@ -117,7 +118,7 @@
     }
 
     .filter .button {
-        margin: 15px 0 0 10px;
+        margin: 15px 20px 0 10px;
     }
 
     .article-container {
@@ -162,11 +163,39 @@
                 }
             }
         }
+        .header{
+            height: auto;
+
+
+            .h-80{
+                height: auto;
+            }
+            &-menu{
+                margin-bottom: 10px;
+            
+            }
+        }
+       
         
 
 }
 
 @media screen and (max-width: 520px) {
+
+    .select-container {
+        margin-top: 10px;
+        span{
+            display: none;
+
+        }
+    }
+    .header-menu__phone li img {
+        width: 10px;
+        height: 10px;
+        margin-right: 0;
+    }
+   
+    
     .model {
 
         &-content{
@@ -224,28 +253,29 @@
             }
         }
     }
+    .header-menu__user{
+        margin-bottom: 10px;
+    }
 
     .logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 10px;
 
         a>span {
 
-            font-size: 21px;
+            font-size: 19px;
 
         }
+  
 
         .header-menu__phone {
-            display: block;
-
-            svg {
-                width: 16px;
-                height: 16px;
-            }
+            display: flex;
+            justify-content: flex-end;
 
             li>a>span {
-                font-size: 12px !important;
+                font-size: 12px ;
             }
 
         }
@@ -407,6 +437,15 @@
             margin: 0px 4px;
         }
     }
+    .article-container h2{
+        font-size: 20px;
+    }
+    .article-container p{
+        font-size: 12px;
+    }
+    .card img{
+        height: 239px;
+    }
 
 
 
@@ -415,6 +454,13 @@
 }
 
 @media screen and (max-width: 320px) {
+    
+    .header-menu__phone {
+        li>a>span {
+            font-size: 10px !important;
+        }
+
+    }
     .buy-product{
         flex-direction: column-reverse;
         &__buttons{

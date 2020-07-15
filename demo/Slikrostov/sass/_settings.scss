@@ -8,13 +8,14 @@ $white-second: #f5f7ff;
 $font: "Open Sans Regular";
 $font-bold: "Open Sans Bold";
 $font-semi-bold: "Open Sans SemiBold";
-
+$font-noto-bold: "Noto Sans Bold";
 $background: #e74c3c;
 $select-color: #fff;
 $select-background: #c0392b;
 $select-width: 220px;
 $select-height: 40px;
-
+$font-times-bold: "Times New Roman Bold";
+$shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 *,
 *::before,
 *::after {
@@ -60,10 +61,23 @@ img {
   display: block;
 }
 
-
+@font-face {
+  font-family: "Times New Roman Bold";
+  src: url("../fonts/TimesNewRoman-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: "Open Sans Bold";
   src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans Bold";
+  src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;

@@ -40,241 +40,252 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="container-fluid header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-4 col-md-4 col-sm-12 ">
-                    <div class="logo">
-                        <a href="/">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-logo">
-                                <use xlink:href="icons/icons.svg#logo" />
-                            </svg>
-                            <span>
-                                Slickrostov.ru
-                            </span>
-                        </a>
-                        <ul class="header-menu__phone ">
-                            <li><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="icons/icons.svg#phone" />
-                                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-8 col-md-8 col-sm-12">
-                    <div class="header-menu">
-                        <ul class="header-menu__phone mob-d-none">
-                            <li><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="icons/icons.svg#phone" />
-                                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a></li>
-
-                        </ul>
-                        <div class="menu-content">
-                            <ul class="header-menu__user">
-                                <!-- <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="icons/icons.svg#person" />
-                  </svg></li>
+  <!-- Header -->
+  <header class="container-fluid header">
+    <div class="container h-80">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-12 ">
+          <div class="logo">
+            <a href="/">
+              <img src="img/icons/logo.svg" alt="">
+              <span>
+                Slikrostov.ru
+              </span>
+            </a>
+            <ul class="header-menu__phone ">
+              <li>
+                <img src="img/icons/phone.svg" alt="">
+                <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
+          <div class="header-menu">
+            <ul class="header-menu__phone mob-d-none">
+              <li>
+                <img src="img/icons/phone.svg" alt="">
+                </svg> <a href="tel:+7(863)303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+              </li>
+            </ul>
+            <div class="menu-content">
+              <ul class="header-menu__user">
                 <li>
                   <a href="#">Сергей</a>
                 </li>
-                <li>|</li> -->
-
-                                <li>
-                                    <a href="#">Вход</a>
-                                </li>
-                                <li>|</li>
-                                <li><a href="#">Регистрация</a></li>
-
-                            </ul>
-                            <ul class="menu-content__basket">
-                                <li><a href="#"><span>3</span>Корзина</a></li>
-                                <!-- <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <li>|</li>
+                <li>
+                  <a href="#">ред. профиль</a>
+                </li>
+                <li>|</li>
+                <li><a href="#">выход</a></li>
+              </ul>
+              <ul class="menu-content__basket">
+                <li><a href="#"><span>3</span>Корзина</a></li>
+                <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+    </div>
 
 
 
-    </header>
+  </header>
     <!-- Main -->
     <main class="container-fluid">
       <section class="filter">
         <div class="container ">
           <div class="row filter-container">
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 filter-background">
+            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 filter-background">
               <div class="filter-title">
                 <div class="filter-title__img">
                   <img src="img/3.png" alt="">
                 </div>
-                <h1>Подобрать
-                  шины</h1>
+                <h1>Подобрать <br> диски</h1>
               </div>
             </div>
-            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 select-containers pl-0">
+            <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 select-containers">
   
               <div class="filter-select">
                 <label for="Height">Ширина</label>
                 <div class="select-container">
-                  <div class="input-arrow"></div>
+  
                   <input type="text" readonly class="input-select " value="">
                   <div class="select-container__options ">
                     <div>225</div>
                     <div>227</div>
                     <div>229</div>
                   </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
+                  </div>
                 </div>
               </div>
               <div class="filter-select">
                 <label for="Height">Высота</label>
                 <div class="select-container">
-                  <div class="input-arrow"></div>
+  
                   <input type="text" readonly class="input-select " value="">
                   <div class="select-container__options ">
-                    <div>55</div>
-                    <div>45</div>
-                    <div>49</div>
+                    <div>75</div>
+                    <div>95</div>
+                    <div>65</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
                   </div>
                 </div>
               </div>
               <div class="filter-select">
-                <label for="Diametr">Диаметр</label>
+                <label for="Height">Диаметр</label>
                 <div class="select-container">
-                  <div class="input-arrow"></div>
+  
                   <input type="text" readonly class="input-select " value="">
                   <div class="select-container__options ">
-                    <div>22</div>
                     <div>21</div>
-                    <div>28</div>
+                    <div>15</div>
+                    <div>18</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
                   </div>
                 </div>
               </div>
               <div class="filter-select">
-                <label for="Season">Сезонность</label>
+                <label for="Height">Сезонность</label>
                 <div class="select-container">
-                  <div class="input-arrow"></div>
+  
                   <input type="text" readonly class="input-select " value="">
                   <div class="select-container__options ">
                     <div>Летняя</div>
-                    <div>Зимняя</div>
                     <div>Всесезонная</div>
+                    <div>Зимняя</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
                   </div>
                 </div>
               </div>
               <button class="btn button">Искать</button>
             </div>
-  
-            <!-- <button class="btn button">Искать</button> -->
           </div>
   
         </div>
         </div>
       </section>
-          <section class="filter">
-            <div class="container ">
-              <div class="row filter-container">
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 filter-background">
-                  <div class="filter-title">
-                    <div class="filter-title__img">
-                      <img src="img/2.png" alt="">
-                    </div>
-                    <h1>Подобрать
-                      диски</h1>
-                  </div>
+      <section class="filter">
+        <div class="container ">
+          <div class="row filter-container">
+            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 filter-background">
+              <div class="filter-title">
+                <div class="filter-title__img">
+                  <img src="img/2.png" alt="">
                 </div>
-                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 select-containers pl-0">
-      
-                  <div class="filter-select">
-                    <label for="Height">Ширина</label>
-                    <div class="select-container">
-                      <div class="input-arrow"></div>
-                      <input type="text" readonly class="input-select " value="">
-                      <div class="select-container__options ">
-                        <div>225</div>
-                        <div>227</div>
-                        <div>229</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter-select">
-                    <label for="Height">Высота</label>
-                    <div class="select-container">
-                      <div class="input-arrow"></div>
-                      <input type="text" readonly class="input-select " value="">
-                      <div class="select-container__options ">
-                        <div>55</div>
-                        <div>45</div>
-                        <div>49</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter-select">
-                    <label for="Diametr">Диаметр</label>
-                    <div class="select-container">
-                      <div class="input-arrow"></div>
-                      <input type="text" readonly class="input-select " value="">
-                      <div class="select-container__options ">
-                        <div>22</div>
-                        <div>21</div>
-                        <div>28</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="filter-select">
-                    <label for="Season">Сезонность</label>
-                    <div class="select-container">
-                      <div class="input-arrow"></div>
-                      <input type="text" readonly class="input-select " value="">
-                      <div class="select-container__options ">
-                        <div>Летняя</div>
-                        <div>Зимняя</div>
-                        <div>Всесезонная</div>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="btn button">Искать</button>
-                </div>
-      
-                <!-- <button class="btn button">Искать</button> -->
+                <h1>Подобрать <br> диски</h1>
               </div>
-      
             </div>
-            </div>
-          </section>
-        <section class="filter">
-            <div class="container ">
-                <div class="row filter-container">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 filter-background">
-                        <div class="filter-title">
-                            <div class="filter-title__img">
-                                <img src="img/4.png" alt="">
-                            </div>
-                            <h1>Подобрать <br>
-                                по авто</h1>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 select-containers pl-0">
-                        <div class="filter-select ">
-                            <label for="search-input">1. Марка ><span>модель > год выпуска > двигатель >
-                                комплектация</span></label>
-                            <div class="search-filter-container "> <input type="text" id="search-input"
-                                    class="search-filter search-input">
-                                <div class="suggestions ">
-                                </div>
-                            </div>
-                           
-    
-                        </div>
-    
-                        <button class="btn button">Искать</button>
-                    </div>
-    
+            <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 select-containers">
+  
+              <div class="filter-select">
+                <label for="Height">Ширина</label>
+                <div class="select-container">
+  
+                  <input type="text" readonly class="input-select " value="">
+                  <div class="select-container__options ">
+                    <div>225</div>
+                    <div>227</div>
+                    <div>229</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
+                  </div>
                 </div>
+              </div>
+              <div class="filter-select">
+                <label for="Height">Высота</label>
+                <div class="select-container">
+  
+                  <input type="text" readonly class="input-select " value="">
+                  <div class="select-container__options ">
+                    <div>75</div>
+                    <div>95</div>
+                    <div>65</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="filter-select">
+                <label for="Height">Диаметр</label>
+                <div class="select-container">
+  
+                  <input type="text" readonly class="input-select " value="">
+                  <div class="select-container__options ">
+                    <div>21</div>
+                    <div>15</div>
+                    <div>18</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="filter-select">
+                <label for="Height">Сезонность</label>
+                <div class="select-container">
+  
+                  <input type="text" readonly class="input-select " value="">
+                  <div class="select-container__options ">
+                    <div>Летняя</div>
+                    <div>Всесезонная</div>
+                    <div>Зимняя</div>
+                  </div>
+                  <div class="input-arrow">
+                    <img src="./img/icons/arrow-down.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <button class="btn button">Искать</button>
             </div>
-        </section>
+          </div>
+  
+        </div>
+        </div>
+      </section>
+      <section class="filter">
+        <div class="container ">
+            <div class="row filter-container">
+                <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 filter-background">
+                    <div class="filter-title">
+                        <div class="filter-title__img">
+                            <img src="img/4.png" alt="">
+                        </div>
+                        <h1>Подобрать <br>
+                            по авто</h1>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 select-containers ">
+                    <div class="filter-select ">
+                        <label for="search-input">1. Марка ><span>модель > год выпуска > двигатель >
+                            комплектация</span></label>
+                        <div class="search-filter-container "> <input type="text" id="search-input"
+                                class="search-filter search-input">
+                            <div class="suggestions ">
+                            </div>
+                        </div>
+                       
+
+                    </div>
+
+                    <button class="btn button">Искать</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
         <section class="slider">
           <div class="container">
             <div class="swiper-container">
@@ -353,51 +364,51 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <ul class="footer-menu footer-items">
-                        <li><a href="#">Летние шины</a></li>
-                        <li><a href="#">Зимние шины</a></li>
-                        <li><a href="#">Всесезонные шины</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <ul class="footer-contacts footer-items">
-                        <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="icons/icons.svg#geo" />
-                            </svg><a href="#">
-                                г. Краснодар, ул. Доватора 157.</a></li>
-                        <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="icons/icons.svg#phone" />
-                            </svg><a href="tel:+7 (863) 303-28-25">+7 (863) 303-28-25</a></li>
-                        <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                                <use xlink:href="icons/icons.svg#messages" />
-                            </svg><a href="mailto:info@michelintyre.ru">info@michelintyre.ru</a></li>
-                    </ul>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                    <ul class="footer-socials ">
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><svg
-                                    xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="icons/icons.svg#instagram" />
-                                </svg></a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><svg
-                                    xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="icons/icons.svg#vk" />
-                                </svg></a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><svg
-                                    xmlns="http://www.w3.org/2000/svg" class="icon">
-                                    <use xlink:href="icons/icons.svg#youtube" />
-                                </svg></a></li>
-                    </ul>
-                    <p>&copy; 2020 Все права защищены. ДонШина - <br>продажа шин, резины и дисков на авто.</p>
-                </div>
-
-
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <ul class="footer-menu footer-items">
+              <li><a href="#">Летние шины</a></li>
+              <li><a href="#">Зимние шины</a></li>
+              <li><a href="#">Всесезонные шины</a></li>
+            </ul>
+  
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <ul class="footer-contacts footer-items">
+              <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <use xlink:href="img/icons/icons.svg#geo" />
+                </svg><a href="#">
+                  г. Краснодар, ул. Доватора 157.</a></li>
+              <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <use xlink:href="img/icons/icons.svg#phone" />
+                </svg><a href="tel:+7 (863) 303-28-25">+7 (863) 303-28-25</a></li>
+              <li> <svg xmlns="http://www.w3.org/2000/svg" class="icon">
+                  <use xlink:href="img/icons/icons.svg#messages" />
+                </svg><a href="mailto:info@michelintyre.ru">info@michelintyre.ru</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <ul class="footer-socials ">
+              <li><a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon">
+                    <use xlink:href="img/icons/icons.svg#instagram" />
+                  </svg></a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon">
+                    <use xlink:href="img/icons/icons.svg#vk" />
+                  </svg></a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon">
+                    <use xlink:href="img/icons/icons.svg#youtube" />
+                  </svg></a></li>
+            </ul>
+            <p>&copy; 2020 Все права защищены. ДонШина - <br>продажа шин, резины и дисков на авто.</p>
+          </div>
+  
+  
         </div>
+      </div>
     </footer>
     <!-- Scripts -->
     <script src="js/libs.min.js"></script>
