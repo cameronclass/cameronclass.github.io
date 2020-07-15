@@ -104,7 +104,7 @@ $(document).ready(function () {
 $('.checkout-container').each(function(){
     
     $(this).find('.delete').click(function () {
-        console.log($(this).parent().parent().parent().slideDown( "slow", function() {
+        console.log($(this).parent().parent().parent().fadeOut( "slow", function() {
             $(this).remove()
           }))
     })

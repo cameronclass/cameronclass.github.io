@@ -72,6 +72,11 @@
         height: 50px;
         width: 50px;
     }
+    .checkout .product-img {
+        height: auto;
+        width: 100%;
+ 
+    }
 
 
 
@@ -231,12 +236,67 @@
     }
 
 
+    .checkout-item{
+        margin-bottom: 10px;
+    }
+
 
 
 
 }
 
 @media screen and (max-width: 520px) {
+    .finish{
+        justify-content: space-between !important;
+        .checkout-continue
+        {
+            margin: 0;
+        }
+        .amount-container{
+            margin: 0;
+        }
+    }
+    .moile-show{
+        display: block;
+    }
+    .checkout-buttons{
+        display: flex;
+        width: 100%;
+        padding: 10px 15px;
+        justify-content: space-between;
+        align-items: center;
+        .counter{
+            width: 100%;
+        }
+        .checkout-item{
+            display: block;
+            margin: auto;
+
+
+            &:first-child{
+                margin-left: 30px;
+            }
+            .delete{
+                margin: auto;
+            }
+        }
+    }
+    .checkout-item{
+       h1{
+           padding: 0 20px;
+       }
+        &-price{
+            order: 1;
+            padding: 0 20px 15px;
+        }
+        &-counter{
+            display: inline-block !important;
+        }
+        &-delete{
+            display: inline-block !important;
+
+        }
+    }
     .user-profile .privacy-policy .checkbox span {
         padding-left: 20px;
     }

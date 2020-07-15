@@ -1055,7 +1055,8 @@
     }
 
   }
-  h1{
+
+  h1 {
     margin: 44px 0;
     font-family: $font-bold;
     font-size: 30px;
@@ -1104,15 +1105,17 @@
     font-size: 12px;
     margin-top: 59px;
 
-    .checkbox{
+    .checkbox {
       display: flex;
-      span{
+
+      span {
         padding-left: 30px;
       }
-      }
-    
+    }
+
   }
-  button{
+
+  button {
     padding: 13px 24px;
   }
 }
@@ -1159,34 +1162,62 @@
   margin: auto;
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
-.checkout{
 
+.checkout {
 
-  .page{
+  &-continue {
+    font-size: 12px;
+    padding: 15px 20px;
+    margin-right: 30px;
+
+  }
+
+  .finish {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 57px;
+  }
+
+  .amount-container {
+   
+    margin-right: 116px;
+
+    span {
+      color: $grey;
+      font-size: 12px;
+      font-family: $font;
+    }
+  }
+
+  .page {
     margin: 44px 0;
     padding-left: 0;
     font-family: $font-bold;
     font-size: 30px;
   }
 
-  &-container{
+  &-container {
     background: $white;
     box-shadow: $shadow;
     align-items: center;
     margin-bottom: 10px;
   }
 
-  .checkout-item{
+  .checkout-item {
     display: flex;
     justify-content: center;
     align-items: center;
- 
+
   }
-  p,span{
+
+  p,
+  span {
     color: $red;
     font-family: $font-bold;
   }
-  .counter{
+
+  .counter {
     display: flex;
     width: 40%;
     color: $red;
@@ -1194,58 +1225,63 @@
     font-family: $font-bold;
     font-size: 12px;
     text-align: center;
-      span{
-        text-transform: uppercase;
-      }
+
+    span {
+      text-transform: uppercase;
+    }
 
   }
-  .delete{
+
+  .delete {
     height: 25px;
     width: 25px;
     cursor: pointer;
     transition: 200ms;
 
-    &:hover{
-     background-color: $white-second;
-     border-radius: 50%;
+    &:hover {
+      background-color: $white-second;
+      border-radius: 50%;
     }
 
   }
-  input{
+
+  input {
     width: 100%;
     border: none;
     text-align: center;
     color: $red;
   }
-  h1{
+
+  h1 {
     font-size: 16px;
     font-family: $font-bold;
     padding-left: 50px;
   }
-  .product-img{
+
+  .product-img {
     padding-left: 10px;
     height: 100px;
     width: 100px;
     object-fit: cover;
   }
 
-  
+
   .value-button {
     display: inline-block;
     color: $red;
   }
-  
+
   .value-button:hover {
     cursor: pointer;
   }
-  
+
   .counter #decrease {
     margin-left: 15px;
-    
-  }
-  
 
-  
+  }
+
+
+
   .counter #input-wrap {
     margin: 0px;
     padding: 0px;
