@@ -1159,3 +1159,97 @@
   margin: auto;
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
+.checkout{
+
+
+  .page{
+    margin: 44px 0;
+    padding-left: 0;
+    font-family: $font-bold;
+    font-size: 30px;
+  }
+
+  &-container{
+    background: $white;
+    box-shadow: $shadow;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checkout-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  p,span{
+    color: $red;
+    font-family: $font-bold;
+  }
+  .counter{
+    display: flex;
+    width: 40%;
+    color: $red;
+    align-items: center;
+    font-family: $font-bold;
+    font-size: 12px;
+    text-align: center;
+      span{
+        text-transform: uppercase;
+      }
+
+  }
+  .delete{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover{
+     background-color: $white-second;
+     border-radius: 50%;
+    }
+
+  }
+  input{
+    width: 100%;
+    border: none;
+    text-align: center;
+    color: $red;
+  }
+  h1{
+    font-size: 16px;
+    font-family: $font-bold;
+    padding-left: 50px;
+  }
+  .product-img{
+    padding-left: 10px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+
+  
+  .value-button {
+    display: inline-block;
+    color: $red;
+  }
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  .counter #decrease {
+    margin-left: 15px;
+    
+  }
+  
+
+  
+  .counter #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+}

@@ -100,9 +100,11 @@
       margin: 15px 0 10px 0px;
 
       a{
-        transition: 200ms;
-        &:hover{
-          color: $red;
+       
+        &:hover span{
+          
+          background-color: $red;
+          color: $white;
         }
       }
 
@@ -112,6 +114,7 @@
         color: $red;
         padding: 3px 8px;
         margin: 0 10px;
+        transition: all 100ms ease-in;
       }
     }
   }
