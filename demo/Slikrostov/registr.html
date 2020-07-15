@@ -71,18 +71,15 @@
             <div class="menu-content">
               <ul class="header-menu__user">
                 <li>
-                  <a href="#">Сергей</a>
+                  <a href="#">Вход</a>
                 </li>
+
                 <li>|</li>
-                <li>
-                  <a href="#">ред. профиль</a>
-                </li>
-                <li>|</li>
-                <li><a href="#">выход</a></li>
+                <li><a href="#">регистрация</a></li>
               </ul>
-              <ul class="menu-content__basket">
-                <li><a href="#"><span>3</span>Корзина</a></li>
-                <li><a href="#"><span>2</span>МОИ ЗАКАЗЫ</a></li>
+              <ul class="menu-content__basket registr">
+                
+                <li class="basket-item"><a href="#"><img src="./img/icons/basket.svg" alt=""> Корзина</a></li>
               </ul>
             </div>
           </div>
@@ -95,393 +92,117 @@
   </header>
   <!-- Main -->
   <main class="container-fluid">
-    <section class="filter">
-      <div class="container ">
-        <div class="row filter-container">
-          <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 filter-background">
-            <div class="filter-title">
-              <div class="filter-title__img">
-                <img src="img/2.png" alt="">
-              </div>
-              <h1>Подобрать <br> диски</h1>
-            </div>
-          </div>
-          <div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 select-containers">
 
-            <div class="filter-select">
-              <label for="Height">Ширина</label>
-              <div class="select-container">
-
-                <input type="text" readonly class="input-select " value="">
-                <div class="select-container__options ">
-                  <div>225</div>
-                  <div>227</div>
-                  <div>229</div>
+    <section class="user-profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <h1>Регистрация</h1>
                 </div>
-                <div class="input-arrow">
-                  <img src="./img/icons/arrow-down.svg" alt="">
-                </div>
-              </div>
             </div>
-            <div class="filter-select">
-              <label for="Height">Высота</label>
-              <div class="select-container">
 
-                <input type="text" readonly class="input-select " value="">
-                <div class="select-container__options ">
-                  <div>75</div>
-                  <div>95</div>
-                  <div>65</div>
-                </div>
-                <div class="input-arrow">
-                  <img src="./img/icons/arrow-down.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="filter-select">
-              <label for="Height">Диаметр</label>
-              <div class="select-container">
+            <div class="user-profile__container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 user-profile__container-content">
 
-                <input type="text" readonly class="input-select " value="">
-                <div class="select-container__options ">
-                  <div>21</div>
-                  <div>15</div>
-                  <div>18</div>
-                </div>
-                <div class="input-arrow">
-                  <img src="./img/icons/arrow-down.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="filter-select">
-              <label for="Height">Сезонность</label>
-              <div class="select-container">
+                        <div class="filter-select">
+                            <label for="">Логин:</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Электронная почта:</label>
+                            <input type="email">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Телефон:</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Имя:</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Фамилия:</label>
+                            <input type="text" class="">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Отчество:</label>
+                            <input type="text" class="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 user-profile__container-content">
+                        <div class="date-birth">
+                            <label>Дата рождения:</label>
+                            <div class="date-birth__inputs">
+                                <div class="select-container d-flex align-items-center">
+                                    <div class="position-relative">
+                                      <div class="input-arrow">
+                                        <img src="img/icons/arrow-down.svg" alt="">
+                                      </div>
+                                      <input type="text" readonly class="input-select " value="День">
+                                      <div class="select-container__options ">
+                                        <div>31</div>
+                                        <div>30</div>
+                                        <div>29</div>
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <div class="select-container d-flex align-items-center">
+                                    <div class="position-relative">
+                                      <div class="input-arrow">
+                                        <img src="img/icons/arrow-down.svg" alt="">
+                                      </div>
+                                      <input type="text" readonly class="input-select " value="Месяц">
+                                      <div class="select-container__options ">
+                                        <div>31</div>
+                                        <div>30</div>
+                                        <div>29</div>
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <div class="select-container d-flex align-items-center">
+                                    <div class="position-relative">
+                                      <div class="input-arrow">
+                                        <img src="img/icons/arrow-down.svg" alt="">
+                                      </div>
+                                      <input type="text" readonly class="input-select " value="Год">
+                                      <div class="select-container__options ">
+                                        <div>1999</div>
+                                        <div>1998</div>
+                                        <div>1997</div>
+                                      </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Страна:</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Область:</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">город:</label>
+                            <input type="text">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Пароль:</label>
+                            <input type="password">
+                        </div>
+                        <div class="filter-select">
+                            <label for="">Повторить пароль:</label>
+                            <input type="password" class="">
+                        </div>
+                    </div>
 
-                <input type="text" readonly class="input-select " value="">
-                <div class="select-container__options ">
-                  <div>Летняя</div>
-                  <div>Всесезонная</div>
-                  <div>Зимняя</div>
                 </div>
-                <div class="input-arrow">
-                  <img src="./img/icons/arrow-down.svg" alt="">
-                </div>
-              </div>
             </div>
-            <button class="btn button">Искать</button>
-          </div>
         </div>
-
-      </div>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 search select-modifaction">
-            <h2 class="search-result">Результаты поиска (8)</h2>
-            <div class="select-container d-flex align-items-center">
-              <span>Сортировка: </span>
-              <div class="position-relative">
-                <div class="input-arrow">
-                  <img src="img/icons/arrow-down.svg" alt="">
-                </div>
-                <input type="text" readonly class="input-select " value="По популярности">
-                <div class="select-container__options ">
-                  <div>По популярности</div>
-                  <div>Название от А до Я</div>
-                  <div>По цене</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="catalog">
-          <div class="row">
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 card-col">
-              <div class="card">
-
-                <img src="img/product.png" alt="">
-
-                <div class="card-content">
-                  <div class="card-content__title">
-                    <a href="#">Кованые диски. Модель L-918 в цвете ТITAN.</a>
-                  </div>
-                  <p class="card-content__price">5 640 руб.</p>
-                  <p class="card-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-content__buttons">
-                    <button class="btn">Купить сразу</button>
-                    <button class="btn">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="slider">
-      <div class="container">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./img/slider.png" alt="">
-              <div class="slider-text">
-                <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="img/icons/icons.svg#logo" />
-                  </svg>Slik</h1>
-                <p>L-918 Темный хром </p>
 
-              </div>
-              <div class="slider-button">
-                <button class="btn">Подробнее</button>
-              </div>
-            </div>
-
-            <div class="swiper-slide"><img src="./img/slider.png" alt="">
-              <div class="slider-text">
-                <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="img/icons/icons.svg#logo" />
-                  </svg>Slik</h1>
-                <p>L-918 Темный хром </p>
-
-              </div>
-              <div class="slider-button">
-                <button class="btn">Подробнее</button>
-              </div>
-            </div>
-            <div class="swiper-slide"><img src="./img/slider.png" alt="">
-              <div class="slider-text">
-                <h1><svg xmlns="http://www.w3.org/2000/svg" class="icon">
-                    <use xlink:href="img/icons/icons.svg#logo" />
-                  </svg>Slik</h1>
-                <p>L-918 Темный хром </p>
-
-              </div>
-              <div class="slider-button">
-                <button class="btn">Подробнее</button>
-              </div>
-            </div>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination">
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section сlass="article">
-      <div class="container ">
-        <div class="row article-container">
-          <div class="col-xl-7 col-lg-8 col-md-7 col-sm-12">
-            <div class="article-text">
-              <h2>Кованые диски Slick</h3>
-                <p>Название марки Michelin - это настоящий синоним слова "инновация". За всю свою более чем столетнюю
-                  историю эта компания не переставала удивлять мир новинками. Список изобретений, сделанных данной
-                  фирмой,
-                  поистине огромен. Именно они придумали съемные велосипединые шины и шины низкого давления для
-                  автомобилей.
-                  Резина Michelin (Мишлен) популярна во всех странах мира и в наши дни - в первую очередь, за свое
-                  превосходное качество и высокую надежность. Существуют разные виды продукции этого бренда - летние
-                  шины,
-                  зимние, грузовые, для легковых автомобилей и многие другие. Купить шины Мишлен (Michelin) по выгодной
-                  цене
-                  и почитать отзывы от других водителей можно на страницах нашего интернет-магазина.</p>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-4 col-md-5 col-sm-12 article-container-img">
-            <div class="article-img">
-              <img src="img/Rectangle 33.png" alt="Кованые диски Slick">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
   <!-- Footer -->
   <footer class="footer">

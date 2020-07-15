@@ -1377,6 +1377,21 @@ html {
         color: #ed1c24;
         padding: 3px 8px;
         margin: 0 10px; }
+  .header .registr {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .header .basket-item a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header .basket-item img {
+    width: 20px;
+    height: 17px;
+    margin-right: 12px; }
 
 .footer {
   background-color: #000;
@@ -2260,6 +2275,43 @@ html {
         font-size: 12px; }
         .about-brand .product-cards .product-card__item .button button {
           padding: 13px 26px; }
+
+.user-profile__container {
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  padding: 57px 121px; }
+  .user-profile__container .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .user-profile__container-content:first-child {
+    padding-right: 48px; }
+  .user-profile__container-content:last-child {
+    padding-left: 48px; }
+.user-profile .date-birth__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+.user-profile input {
+  background-color: #f5f7ff;
+  width: 100%; }
+.user-profile label {
+  color: #5a5a5a;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block; }
+.user-profile .select-container__options {
+  top: 29.9px; }
+.user-profile .select-container {
+  margin-right: 13px; }
+  .user-profile .select-container input {
+    color: #5a5a5a;
+    border: 1px solid #ffffff;
+    background-color: #f5f7ff;
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
 
 @media screen and (max-width: 1024px) {
   .filter-title h1 {

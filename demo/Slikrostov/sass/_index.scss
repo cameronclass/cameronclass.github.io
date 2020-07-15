@@ -1023,3 +1023,50 @@
     }
   }
 }
+.user-profile{
+  &__container{
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: 3px;
+    padding: 57px 121px;
+    .row{
+      justify-content: space-between;
+    }
+    &-content:first-child{
+      padding-right: 48px;
+    }
+    &-content:last-child{
+      padding-left: 48px;
+    }
+    
+  }
+  .date-birth__inputs{
+    display: flex;
+   
+  }
+  input{
+    background-color: $white-second;
+    width: 100%;
+  }
+  label{
+    color: $grey;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+   
+  }
+  .select-container__options{
+    top: 29.9px;
+
+  }
+  .select-container{
+    margin-right: 13px;
+
+    input{
+      color: $grey;
+      border: 1px solid $white;
+      background-color: $white-second;
+      box-shadow: $shadow;
+    }
+  }
+}
