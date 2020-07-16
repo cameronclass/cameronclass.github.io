@@ -686,6 +686,7 @@ hr {
 }
 
 // breadcrumb
+
 .breadcrumbs {
   padding: 10px 0 30px;
   display: flex;
@@ -714,6 +715,7 @@ hr {
 
       a {
         color: #999999;
+        font-size: 14px;
         &:hover {
           color: black;
         }
@@ -732,6 +734,7 @@ hr {
 
     a {
       color: #999999;
+      font-size: 14px;
       &:hover {
         color: black;
       }
