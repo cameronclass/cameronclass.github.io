@@ -98,9 +98,36 @@ $(document).ready(function () {
 
         });
     })
-
-
-
 });
 
 
+$('.checkout-container').each(function(){
+    
+    $(this).find('.delete').click(function () {
+        console.log($(this).parent().parent().parent().fadeOut( "slow", function() {
+            $(this).remove()
+          }))
+    })
+})
+
+function increaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+  }
+  
+  function decreaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if(value <= 1){
+        value == 1
+    }else{
+        value--;
+    }
+    
+    document.getElementById('number').value = value;
+  }
+
+$('#decrease').click(decreaseValue)
+$('#increase').click(increaseValue)

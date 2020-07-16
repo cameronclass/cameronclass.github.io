@@ -73,11 +73,12 @@
                                 <li>
                                     <a href="#">Сергей</a>
                                 </li>
-
                                 <li>|</li>
-                                <li><a href="#">ред.профиль</a></li>
+                                <li>
+                                    <a href="#">ред. профиль</a>
+                                </li>
                                 <li>|</li>
-                                <li>выход</li>
+                                <li><a href="#">выход</a></li>
                             </ul>
                             <ul class="menu-content__basket">
                                 <li><a href="#"><span>3</span>Корзина</a></li>
@@ -94,123 +95,82 @@
     </header>
     <!-- Main -->
     <main class="container-fluid">
-
-        <section class="user-profile">
+        <section class="user-orders">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <h1>Редактирование профиля</h1>
-                    </div>
-                </div>
-
-                <div class="user-profile__container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 user-profile__container-content">
-
-                            <div class="filter-select">
-                                <label for="">Логин:</label>
-                                <input type="text" value="Sergey">
+                    <h1>Мои заказы</h1>
+                    <div class="user-orders__order order col-xl-12 ">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                                <h2>Заказ # 007764565</h2>
                             </div>
-                            <div class="filter-select">
-                                <label for="">Электронная почта:</label>
-                                <input type="email">
-                            </div>
-                            <div class="filter-select">
-                                <label for="">Телефон:</label>
-                                <input type="text">
-                            </div>
-                            <div class="filter-select">
-                                <label for="">Имя:</label>
-                                <input type="text">
-                            </div>
-                            <div class="filter-select">
-                                <label for="">Фамилия:</label>
-                                <input type="text" class="">
-                            </div>
-                            <div class="filter-select">
-                                <label for="">Отчество:</label>
-                                <input type="text" class="">
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 user-profile__container-content">
-                            <div class="date-birth">
-                                <label>Дата рождения:</label>
-                                <div class="date-birth__inputs">
-                                    <div class="select-container d-flex align-items-center">
-                                        <div class="position-relative">
-                                            <div class="input-arrow">
-                                                <img src="img/icons/arrow-down.svg" alt="">
-                                            </div>
-                                            <input type="text" readonly class="input-select " value="День">
-                                            <div class="select-container__options ">
-                                                <div>31</div>
-                                                <div>30</div>
-                                                <div>29</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="select-container d-flex align-items-center">
-                                        <div class="position-relative">
-                                            <div class="input-arrow">
-                                                <img src="img/icons/arrow-down.svg" alt="">
-                                            </div>
-                                            <input type="text" readonly class="input-select " value="Месяц">
-                                            <div class="select-container__options ">
-                                                <div>31</div>
-                                                <div>30</div>
-                                                <div>29</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="select-container d-flex align-items-center">
-                                        <div class="position-relative">
-                                            <div class="input-arrow">
-                                                <img src="img/icons/arrow-down.svg" alt="">
-                                            </div>
-                                            <input type="text" readonly class="input-select " value="Год">
-                                            <div class="select-container__options ">
-                                                <div>1999</div>
-                                                <div>1998</div>
-                                                <div>1997</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                                <div class="order-info">
+                                    <span>Дата создания:</span>
+                                    <p>16. 06. 2020</p>
                                 </div>
                             </div>
-                            <div class="filter-select">
-                                <label for="">Страна:</label>
-                                <input type="text">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                                <div class="order-info">
+                                    <span>Сумма:</span>
+                                    <p>3 762.85 руб.</p>
+                                </div>
                             </div>
-                            <div class="filter-select">
-                                <label for="">Область:</label>
-                                <input type="text">
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12  d-flex align-items-center justify-content-between">
+                                <div class="order-info">
+                                    <span>Статус заказа:</span>
+                                    <p>В работе</p>
+                                </div>
+                                <img src="./img/icons/arrow-right.svg" class="mob-show" alt="">
                             </div>
-                            <div class="filter-select">
-                                <label for="">город:</label>
-                                <input type="text">
+                            <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12">
+                                <img src="./img/icons/arrow-right.svg" class="mob-d-none" alt="">
                             </div>
-                            <div class="filter-select">
-                                <label for="">Пароль:</label>
-                                <input type="password">
-                            </div>
-                            <div class="filter-select">
-                                <label for="">Повторить пароль:</label>
-                                <input type="password" class="">
-                            </div>
+
                         </div>
                     </div>
-                    <div class="privacy-policy justify-content-end">
-
-
-                        <button class="btn">Сохранить изменения</button>
-
-
-                    </div>
+                    <div class="user-orders__products">
+                        <div class="product">
+                            <h3>Зимние шины Michelin X-Ice 3 185/65 R15 92T XL</h3>
+                            <p>4шт</p>
+                            <p>3 762.85 руб.</p>
+                        </div>
+                        <div class="product">
+                            <h3>Зимние шины Michelin X-Ice 3 185/65 R15 92T XL</h3>
+                            <p>4шт</p>
+                            <p>3 762.85 руб.</p>
+                        </div>
+                        <div class="product">
+                            <h3>Зимние шины Michelin X-Ice 3 185/65 R15 92T XL</h3>
+                            <p>4шт</p>
+                            <p>3 762.85 руб.</p>
+                        </div>
+                        <div class="product">
+                            <h3>Зимние шины Michelin X-Ice 3 185/65 R15 92T XL</h3>
+                            <p>4шт</p>
+                            <p>3 762.85 руб.</p>
+                        </div>
+                        <hr>
+                        <div class="delivery">
+                            <div class="order-info col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <span>Доставка:</span>
+                                <p class="place">Россия, г.Ростов-на-Дону,
+                                    ул. Казахская 78/3, кв. 36</p>
+                            </div>
+                            <div class="order-info col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <span>Оплата:</span>
+                                <p>При получении</p>
+                            </div>
+                            <div class="order-info col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <span>Покупатель:</span>
+                                <p>Ларин
+                                    Сергей</p>
+                            </div>
+                        </div>
+                    </div>                 
                 </div>
             </div>
         </section>
-
-
     </main>
     <!-- Footer -->
     <footer class="footer">

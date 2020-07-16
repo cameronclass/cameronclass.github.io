@@ -73,6 +73,22 @@
         width: 50px;
     }
 
+    .checkout .product-img {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .user-orders__products {
+        padding: 35px 50px;
+
+        .product {}
+    }
+
+    .user-orders .delivery .place {
+        width: 80%;
+    }
+
 
 
 }
@@ -86,6 +102,42 @@
             table {
                 margin-right: 0;
                 margin-bottom: 30px;
+            }
+        }
+    }
+
+    .delivery {
+        .order-info span {
+            font-size: 8px;
+
+        }
+
+        .order-info p {
+            font-size: 10px;
+        }
+    }
+
+    .user-orders__order {
+
+        h2,
+        p {
+            font-size: 12px;
+        }
+
+        .order-info span {
+            font-size: 9px;
+
+        }
+    }
+
+    .user-orders__products {
+        padding: 35px 50px;
+
+        .product {
+
+            h3,
+            p {
+                font-size: 12px;
             }
         }
     }
@@ -210,24 +262,34 @@
 
         }
     }
+
     .user-profile .select-container__options {
         top: 28.9px;
     }
+
     .user-profile__container-content:first-child {
         padding-right: 0;
     }
+
     .user-profile__container-content:last-child {
         padding-left: 0;
     }
-    .date-birth{
+
+    .date-birth {
         margin-top: 25px;
     }
-    .date-birth__inputs{
-     
-            .select-container:last-child{
 
-                margin-right: 0;
-            }
+    .date-birth__inputs {
+
+        .select-container:last-child {
+
+            margin-right: 0;
+        }
+    }
+
+
+    .checkout-item {
+        margin-bottom: 10px;
     }
 
 
@@ -237,22 +299,137 @@
 }
 
 @media screen and (max-width: 520px) {
+
+
+    .user-orders {
+        .order-info {
+            margin: 10px 0;
+        }
+
+        &__products {
+            justify-content: space-between;
+
+
+            padding: 35px 20px;
+
+            .product {
+
+                h3 {
+                    margin-right: 50px;
+                    width: 41%;
+                }
+
+                p {
+                    margin-right: 0;
+
+                    &:last-child {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+        &__order {
+            padding: 20px;
+
+
+            .row {
+
+
+                &>div {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+
+    .user-orders .delivery {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .finish {
+        justify-content: space-between !important;
+
+        .checkout-continue {
+            margin: 0;
+        }
+
+        .amount-container {
+            margin: 0;
+        }
+    }
+
+    .mob-show {
+        display: block;
+    }
+
+    .checkout-buttons {
+        display: flex;
+        width: 100%;
+        padding: 10px 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        .counter {
+            width: 100%;
+        }
+
+        .checkout-item {
+            display: block;
+            margin: auto;
+
+
+            &:first-child {
+                margin-left: 30px;
+            }
+
+            .delete {
+                margin: auto;
+            }
+        }
+    }
+
+    .checkout-item {
+        h1 {
+            padding: 0 20px;
+        }
+
+        &-price {
+            order: 1;
+            padding: 0 20px 15px;
+        }
+
+        &-counter {
+            display: inline-block !important;
+        }
+
+        &-delete {
+            display: inline-block !important;
+
+        }
+    }
+
     .user-profile .privacy-policy .checkbox span {
         padding-left: 20px;
     }
-    .user-profile__container{
+
+    .user-profile__container {
         padding: 40px 17px;
     }
 
-    .about-brand__content h1{
+    .about-brand__content h1 {
         width: 100%;
         font-size: 25px;
         margin-top: 0;
     }
-    .about-brand__content p{
-    margin: 0;        
+
+    .about-brand__content p {
+        margin: 0;
         padding: 20px 25px;
     }
+
     .seasons {
         .seasons-item:last-child {
             justify-content: start;
@@ -290,7 +467,8 @@
                 justify-content: flex-start;
                 padding: 0 25px;
             }
-            .button{
+
+            .button {
                 flex: 0 0 50%;
                 max-width: 50%;
                 margin-bottom: 20px;
@@ -585,23 +763,33 @@
 }
 
 @media screen and (max-width: 320px) {
-    .user-profile .privacy-policy{
+    .user-orders__products .product h3 {
+        margin-right: 10px;
+
+    }
+
+    .user-profile .privacy-policy {
         flex-direction: column;
-        button{
+
+        button {
             margin-top: 20px;
         }
     }
+
     .user-profile .date-birth__inputs {
 
         flex-direction: column;
-        input{
+
+        input {
             width: 100%;
         }
     }
+
     .user-profile .select-container {
         margin-right: 0;
     }
-    .select-container > .position-relative{
+
+    .select-container>.position-relative {
         width: 100%;
     }
 

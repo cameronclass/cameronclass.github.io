@@ -596,6 +596,12 @@ html {
 .justify-content-center{
   justify-content: center;
 }
+.justify-content-between{
+  justify-content: space-between !important;
+}
 .justify-content-end{
   justify-content: flex-end !important;
+}
+.order-1{
+  order: 1;
 }

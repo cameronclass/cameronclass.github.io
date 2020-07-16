@@ -1055,7 +1055,8 @@
     }
 
   }
-  h1{
+
+  h1 {
     margin: 44px 0;
     font-family: $font-bold;
     font-size: 30px;
@@ -1104,15 +1105,17 @@
     font-size: 12px;
     margin-top: 59px;
 
-    .checkbox{
+    .checkbox {
       display: flex;
-      span{
+
+      span {
         padding-left: 30px;
       }
-      }
-    
+    }
+
   }
-  button{
+
+  button {
     padding: 13px 24px;
   }
 }
@@ -1143,6 +1146,9 @@
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
+.mob-show {
+  display: none;
+}
 
 .check_box input[type="checkbox"]:checked~label::after {
   content: '';
@@ -1158,4 +1164,244 @@
   display: block;
   margin: auto;
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 12px;
+    color: $grey;
+
+  }
+
+  p {
+    color: $red;
+    font-family: $font-bold;
+    font-size: 16px;
+  }
+}
+
+.checkout {
+
+  &-continue {
+    font-size: 12px;
+    padding: 15px 20px;
+    margin-right: 30px;
+
+  }
+
+  .finish {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 57px;
+  }
+
+  .amount-container {
+
+    margin-right: 116px;
+
+    span {
+      color: $grey;
+      font-size: 12px;
+      font-family: $font;
+    }
+  }
+
+  .page {
+    margin: 44px 0;
+    padding-left: 0;
+    font-family: $font-bold;
+    font-size: 30px;
+  }
+
+  &-container {
+    background: $white;
+    box-shadow: $shadow;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .checkout-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  p,
+  span {
+    color: $red;
+    font-family: $font-bold;
+  }
+
+  .counter {
+    display: flex;
+    width: 40%;
+    color: $red;
+    align-items: center;
+    font-family: $font-bold;
+    font-size: 12px;
+    text-align: center;
+
+    span {
+      text-transform: uppercase;
+    }
+
+  }
+
+  .delete {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    transition: 200ms;
+
+    &:hover {
+      background-color: $white-second;
+      border-radius: 50%;
+    }
+
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    text-align: center;
+    color: $red;
+  }
+
+  h1 {
+    font-size: 16px;
+    font-family: $font-bold;
+    padding-left: 50px;
+  }
+
+  .product-img {
+    padding-left: 10px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+
+
+  .value-button {
+    display: inline-block;
+    color: $red;
+  }
+
+  .value-button:hover {
+    cursor: pointer;
+  }
+
+  .counter #decrease {
+    margin-left: 15px;
+
+  }
+
+
+
+  .counter #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+}
+
+.user-orders {
+
+  h1 {
+    font-size: 30px;
+    font-family: $font-bold;
+  }
+
+  &__order {
+    box-shadow: $shadow;
+    background-color: $white;
+    margin-bottom: 11px;
+    padding: 22px 0;
+
+    h2 {
+      font-family: $font-bold;
+      font-size: 16px;
+    }
+
+
+    .row {
+      align-items: center;
+
+      &>div {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .order {
+    margin-bottom: 0;
+  }
+
+  &__products {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: $shadow;
+    padding: 35px 121px;
+    width: 100%;
+    background-color: $white;
+  }
+
+  .product {
+    display: flex;
+    margin-bottom: 27px;
+
+    h3,
+    p {
+      font-family: $font-bold;
+      font-size: 16px;
+    }
+
+    h3 {
+
+      margin-right: 67px;
+    }
+
+    p {
+      color: $red;
+      margin-right: 53px;
+    }
+  }
+
+  .delivery {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+
+    .place {
+      width: 70%;
+    }
+  }
+}
+
+.order-register {
+  .product {
+    justify-content: space-between;
+
+    p,
+    h3 {
+      margin-right: 0;
+    }
+  }
+
+  input {
+    background-color: #f5f7ff;
+    width: 100%;
+    padding-left: 27px;
+  }
 }
