@@ -1,4 +1,36 @@
+@media screen and (max-width: 1366px){
+    .summa{
+        flex-direction: column;
+
+        p{
+            margin: 10px 0;
+        }
+    }
+    .product-container{
+        flex-direction: column;
+
+        padding: 0 54px;
+    }
+    .modal.buy-fast .order-price{
+        padding: 0;
+    }
+    
+}
+@media screen and (max-width: 1700px){
+    .summa{
+        flex-direction: column;
+
+        p{
+            margin: 10px 0;
+        }
+    }
+    
+}
 @media screen and (max-width: 1024px) {
+    .product-container {
+
+        padding: 0;
+    }
 
     .filter-title h1 {
         font-size: 20px;
@@ -89,11 +121,90 @@
         width: 80%;
     }
 
+    .order-register .delivery {
+        padding: 21px 50px;
+    }
+
+    .product-container {
+        flex-direction: column;
 
 
+    }
+
+    .modal .counter {
+        background-color: #f5f7ff;
+        width: 100%;
+        float: right;
+    }
+
+    .modal.buy-fast .product-img {
+
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .modal.buy-fast .order-price {
+        margin-right: 0;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .modal .modal-title {
+        padding: 30px 28px;
+
+    }
+
+    .modal.buy-fast {
+        height: 80vh;
+        overflow: scroll;
+
+    }
+
+    .modal.register {
+        width: 35%;
+        height: auto;
+    }
+
+    .modal-container {
+        padding: 42px 28px;
+    }
+    .modal.success,
+    .modal.attention{
+        width: 36%;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
+    .modal.success,
+    .modal.attention{
+        width: 45%;
+    }
+
+    .modal.register {
+        width: 45%;
+    }
+
+    .modal.buy-fast {
+        width: 70%;
+    }
+
+    .order-register .delivery {
+        padding: 21px 50px;
+    }
+
+    .order-register .delivery button {
+        padding: 15px 20px;
+        margin-left: 0;
+        font-size: 12px;
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
     .one-product {
 
         .product-options {
@@ -299,7 +410,57 @@
 }
 
 @media screen and (max-width: 520px) {
+    .modal {
+        width: 86% !important;
+    }
 
+    .modal h3 {
+        font-size: 16px !important;
+        margin-left: 15px;
+    }
+
+    .modal.buy-fast h3 {
+
+        margin-left: 0;
+    }
+
+    .summa {
+        flex-direction: column;
+
+        p {
+            margin: 15px 0;
+            justify-content: center;
+        }
+    }
+
+    .modal.buy-fast .product-title {
+
+        width: 75%;
+
+    }
+
+    .modal-container {
+        margin-left: 0;
+    }
+
+    .modal .modal-title {
+        padding: 30px 17px;
+    }
+
+    .modal.buy-fast .order-price .summa p {
+
+        font-size: 15px;
+
+    }
+
+    .modal.buy-fast .order-price {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .order-register .delivery {
+        padding: 21px 20px;
+    }
 
     .user-orders {
         .order-info {
@@ -524,10 +685,18 @@
         h2 {
             font-size: 22px;
         }
+        .buy-product{
+            margin-top: 10px;
+            p{
+                margin-top: 10px;
+            }
+
+        }
 
         .buy-product__buttons {
             button {
                 margin: 0;
+                margin-top: 10px;
             }
         }
     }

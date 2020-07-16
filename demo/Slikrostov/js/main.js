@@ -72,7 +72,7 @@ $(document).ready(function () {
                 input.removeClass('input-active')
                 $(this).find('.select-container__options').removeClass('active')
                 $(this).find('.input-arrow').removeClass('input-arrow-active')
-               
+
                 return true;
             }
 
@@ -88,11 +88,11 @@ $(document).ready(function () {
 
     $(this).find('.select-container__options div').each(function (e) {
         $(this).click(function (e) {
-            const  filterContainer = $(this).parent().parent().parent().parent().parent().hasClass('filter-container')
-     /*       if(filterContainer){
-            $(this).parent().parent().find('.input-arrow').removeClass('input-arrow').removeClass('input-arrow-active')
-           } */
-            
+            const filterContainer = $(this).parent().parent().parent().parent().parent().hasClass('filter-container')
+            /*       if(filterContainer){
+                   $(this).parent().parent().find('.input-arrow').removeClass('input-arrow').removeClass('input-arrow-active')
+                  } */
+
 
             $(this).parent().parent().find('input').val($(this).text());
 
@@ -101,33 +101,70 @@ $(document).ready(function () {
 });
 
 
-$('.checkout-container').each(function(){
-    
+$('.checkout-container').each(function () {
+
     $(this).find('.delete').click(function () {
-        console.log($(this).parent().parent().parent().fadeOut( "slow", function() {
+        console.log($(this).parent().parent().parent().fadeOut("slow", function () {
             $(this).remove()
-          }))
+        }))
     })
 })
 
 function increaseValue() {
     var value = parseInt(document.getElementById('number').value, 10);
     value = isNaN(value) ? 0 : value;
+
+
     value++;
-    document.getElementById('number').value = value;
-  }
-  
-  function decreaseValue() {
+
+
+
+
+
+
+
+
+
+
+    $('#number').val(value)
+
+}
+
+function decreaseValue() {
     var value = parseInt(document.getElementById('number').value, 10);
     value = isNaN(value) ? 0 : value;
-    if(value <= 1){
+    if (value <= 1) {
         value == 1
-    }else{
-        value--;
+    } else {
+
+        value--
+
+
+
+
+
     }
-    
-    document.getElementById('number').value = value;
-  }
+
+
+
+    $('#number').val(value)
+}
 
 $('#decrease').click(decreaseValue)
 $('#increase').click(increaseValue)
+
+$('.catalog').find('.card').each(function(){
+
+    
+
+    $(this).find('.buy-now').click(function(e){
+        e.preventDefault()
+        $('.buy-fast').fadeIn('slow')
+        $('.overlay').fadeIn('slow')
+    })
+})
+$('.overlay').click(function (params) {
+    $(this).fadeOut()
+    $('.buy-fast').fadeOut()
+
+})
