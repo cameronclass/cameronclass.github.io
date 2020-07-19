@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="<?php bloginfo('description'); ?>"> <!-- Описания Сайта -->
+    <meta name="keywords" content="  "><!-- Ключевые Слова Сайта -->
+    <meta name="revisit-after" content="2 days">
+    <meta name="google-site-verification" content=""/>
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="sitelinkssearchbox" />
+    <meta name="google" content="translate" /> 
+
+    <title><!-- Всегда изменяещяя для каждого страницы --></title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Jua|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+<body>
+
+	<!-- Menu -->
+      <header>
+              <!-- Large modal -->
+
+              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content p-1">
+                    <div class="input-group m-0">
+                      <input type="text" class="form-control border border-primary ubuntu" placeholder="Search..." aria-label="Search..." aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <a class="btn-search btn-primary" href="#"><i class="material-icons">search</i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+       <div class="container-fluid fixed-top bg-menu">
+           <div class="container">
+
+               <div class="row">
+
+                   <div class="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-right align-items-sm-center">
+                       <a href="index.html" class="logo">Logo Text</a>
+                   </div>
+
+                   <div class="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center">
+
+                          <ul>
+
+                             <li><a href="index.html">
+                                  <i class="fas fa-play-circle fa-lg"></i>
+                                  <p>Watch</p>
+                              </a></li>
+                              <li><a href="wallpaper.html">
+                                  <i class="far fa-image fa-lg"></i>
+                                  <p>Wallpaper</p>
+                              </a></li>
+                              <li><a href="music.html" class="music-link">
+                                  <i class="fas fa-headphones fa-lg"></i>
+                                  <p>Music</p>
+                              </a></li>
+                              <li><a href="notes.html" class="notes-link">
+                                  <i class="fab fa-itunes-note fa-lg"></i>
+                                  <p>Notes</p>
+                              </a></li>
+                              <li><a href="#" class="search-link"  data-toggle="modal" data-target=".bd-example-modal-lg">
+                                  <i class="material-icons">search</i>
+                                  <p>Search</p>
+                              </a>
+                              </li>
+                          </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </header>
+
+  <!-- Main Photo -->
+
+    <section>
+       <div id="parallax-panel-music">
+		<div id="parallax-image-music" data-parallax data-speed="0.50" data-direction="up" style="background-image:url('images/wallpaper.jpg');"></div>
+	</div>
+   </section>
+   
+   <!-- Content -->
+
+   <main class="container pt-3 position bg-primary">
+
+   		<div class="row">
+   			<div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+   			<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+   				<div class="text d-flex justify-content-center align-items-center category-text">
+                   <p class="text-light">Name</p>
+                 </div>
+   			</div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+        </div>    
+  <div class="container">
+      <div class="row">
+
+          <!-- List1 -->
+   			<div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3">
+          
+          <!-- Category Name -->
+   				<div class="clip-text text-center mb-3 ubuntu">
+   				    <p>List 1</p>
+   				</div>
+          <!-- Category Name End -->
+   				
+         <!-- Musics One Start -->    
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="music-name">Song Name</p>
+            </div>
+            <div class="col-md-8 col-sm-8 col-8 pr-0">
+                  <audio preload="auto" controls>
+                        <source src="files/player/example.mp3">
+                  </audio>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 px-0">
+              <a href="#" class="music-lyrics ubuntu" data-toggle="modal" data-target="#exampleModalCenter"><span>lyrics</span></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 pl-0">
+              <a href="#" class="download-music"><i class="far fa-arrow-alt-circle-down"></i></a>
+            </div>
+            <hr class="hr">
+          </div>
+        <!-- Music One End -->
+
+        <!-- Musics One Start -->    
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="music-name">Song Name</p>
+            </div>
+            <div class="col-md-8 col-sm-8 col-8 pr-0">
+                  <audio preload="auto" controls>
+                        <source src="files/player/example.mp3">
+                  </audio>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 px-0">
+              <a href="#" class="music-lyrics ubuntu" data-toggle="modal" data-target="#exampleModalCenter"><span>lyrics</span></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 pl-0">
+              <a href="#" class="download-music"><i class="far fa-arrow-alt-circle-down"></i></a>
+            </div>
+            <hr class="hr">
+          </div>
+        <!-- Music One End -->
+        
+   			</div>
+
+        <!-- List1 End -->
+
+        <!-- List 2 Start -->
+   			<div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3">
+
+        <!-- Category Name -->
+   				<div class="clip-text text-center mb-3 ubuntu">
+   				    <p>List 2</p>
+   				</div>
+          <!-- Category Name End -->
+          
+          <!-- Musics One Start -->    
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="music-name">Song Name</p>
+            </div>
+            <div class="col-md-8 col-sm-8 col-8 pr-0">
+                  <audio preload="auto" controls>
+                        <source src="files/player/example.mp3">
+                  </audio>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 px-0">
+              <a href="#" class="music-lyrics ubuntu" data-toggle="modal" data-target="#exampleModalCenter"><span>lyrics</span></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 pl-0">
+              <a href="#" class="download-music"><i class="far fa-arrow-alt-circle-down"></i></a>
+            </div>
+            <hr class="hr">
+          </div>
+        <!-- Music One End -->
+
+        <!-- Musics One Start -->    
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="music-name">Song Name</p>
+            </div>
+            <div class="col-md-8 col-sm-8 col-8 pr-0">
+                  <audio preload="auto" controls>
+                        <source src="files/player/example.mp3">
+                  </audio>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 px-0">
+              <a href="#" class="music-lyrics ubuntu" data-toggle="modal" data-target="#exampleModalCenter"><span>lyrics</span></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 pl-0">
+              <a href="#" class="download-music"><i class="far fa-arrow-alt-circle-down"></i></a>
+            </div>
+            <hr class="hr">
+          </div>
+        <!-- Music One End -->
+                     
+        </div>
+  
+        <!-- List 2 End -->
+
+        <!-- List3 Start -->
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3">
+
+        <!-- Category Name -->
+   				<div class="clip-text text-center mb-3 ubuntu">
+   				    <p>Others</p>
+   				</div>
+          <!-- Category Name End -->
+          
+          <!-- Musics One Start -->    
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="music-name">Song Name</p>
+            </div>
+            <div class="col-md-8 col-sm-8 col-8 pr-0">
+                  <audio preload="auto" controls>
+                        <source src="files/player/example.mp3">
+                  </audio>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 px-0">
+              <a href="#" class="music-lyrics ubuntu" data-toggle="modal" data-target="#exampleModalCenter"><span>lyrics</span></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 pl-0">
+              <a href="#" class="download-music"><i class="far fa-arrow-alt-circle-down"></i></a>
+            </div>
+            <hr class="hr">
+          </div>
+        <!-- Music One End -->
+
+      <!-- Musics One Start -->    
+          <div class="row ">
+            <div class="col-md-12 col-sm-12 col-12">
+              <p class="music-name">Song Name</p>
+            </div>
+            <div class="col-md-8 col-sm-8 col-8 pr-0">
+                  <audio preload="auto" controls>
+                        <source src="files/player/example.mp3">
+                  </audio>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 px-0">
+              <a href="#" class="music-lyrics ubuntu" data-toggle="modal" data-target="#exampleModalCenter"><span>lyrics</span></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-2 pl-0">
+              <a href="#" class="download-music"><i class="far fa-arrow-alt-circle-down"></i></a>
+            </div>
+            <hr class="hr">
+          </div>
+        <!-- Music One End -->
+        
+        </div>
+  
+        <!-- List3 End <-->
+        
+            </div> 
+            
+            
+            
+            
+            
+            
+            <!-- Lyrics Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-light">
+        <h5 class="modal-title righteous" id="exampleModalLongTitle">Name of Music</h5>
+        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center ubuntu">
+      <!-- Here will be Reklam Adsense Google -->
+       <pre class="ubuntu">
+How can I repay you, brother mine?
+How can I expect you to forgive?
+Clinging to the past, I shed our blood.
+And shattered your chance to live.
+
+Though I knew the laws, I payed no heed.
+How can I return your wasted breath?
+What I did not know has cost you dear,
+For there is no cure for death.
+
+Beautiful mother, soft and sweet,
+Once you were gone we were not complete.
+Back through the years we reached for you,
+Alas 'twas not meant to be.
+
+And how can I make amends?
+For all that I took from you?
+I led you with hopeless dreams,
+My brother, I was a fool.
+
+Don't cry for the past now, brother mine.
+Neither you nor I are free from blame.
+Nothing can erase the things we did,
+For the path we took was the same.
+
+Beautiful mother, soft and sweet,
+Once you were gone we were not complete.
+Back through the years we reached for you,
+Alas 'twas not meant to be.
+
+My dreams made me blind and mute.
+I long to return to that time.
+I followed without a word,
+My brother the fault is mine.
+
+So where do we go from here?
+And how to forget and forgive?
+What's gone is forever lost.
+Now all we can do is live.
+       </pre>
+       
+       <a href="#" class="btn btn-primary mb-3">Copy Text <i class="fas fa-1x ml-1 fa-link"></i></a>
+       
+       <a href="#">
+           <img src="images/place-your-ad-here.jpg" class="thubnail rounded img-fluid" alt="">
+       </a>
+      </div>
+      <div class="modal-footer bg-primary">
+        <!-- Here will be Reklam Adsense Google -->
+            <div class="col-12">
+                <div class="sub_title-tags d-flex flex-wrap ubuntu justify-content-center">
+                    <a href="#"><i class="fas fa-tags"></i> Nature</a>
+                    <a href="#"><i class="fas fa-tags"></i> Cars</a>
+                    <a href="#"><i class="fas fa-tags"></i> Nature</a>
+                    <a href="#"><i class="fas fa-tags"></i> Cars</a>
+                    <a href="#"><i class="fas fa-tags"></i> Nature</a>
+                </div>
+               
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+           
+           
+           
+            
+   		</div>
+   		
+   		<!-- HR -->
+      <div class="row">
+         <hr class="footer-hr ">
+      </div> 
+      
+
+   </main>
+
+
+
+<!--Footer-->
+        <footer>
+            <div class="container footer-image footer-position">
+              <div class="row p-5">
+                <hr>
+                <div class="col-md-12 d-flex align-items-center justify-content-center">
+                  <h2 class="hot">Hot Tags</h2>
+                </div>
+                <div class="col-md-12 d-flex flex-wrap align-items-center justify-content-center">
+                  <a href="#" class="hot-tag">Nature</a>
+                  <a href="#" class="hot-tag">Space</a>
+                  <a href="#" class="hot-tag">3D</a>
+                  <a href="#" class="hot-tag">Lorem ipsum.</a>
+                  <a href="#" class="hot-tag">Justify</a>
+                  <a href="#" class="hot-tag">Nature</a>
+                  <a href="#" class="hot-tag">Space</a>
+                  <a href="#" class="hot-tag">3D</a>
+                  <a href="#" class="hot-tag">3D</a>
+                  <a href="#" class="hot-tag">Lorem ipsum.</a>
+                  <a href="#" class="hot-tag">Justify</a>
+                  <a href="#" class="hot-tag">Nature</a>
+                  <a href="#" class="hot-tag">Space</a>
+                  <a href="#" class="hot-tag">Lorem ipsum.</a>
+                  <a href="#" class="hot-tag">Justify</a>
+                  <a href="#" class="hot-tag">Nature</a>
+                  <a href="#" class="hot-tag">Space</a>
+                  <a href="#" class="hot-tag">3D</a>
+                  <a href="#" class="hot-tag">Lorem ipsum.</a>
+                  <a href="#" class="hot-tag">Lorem ipsum dolor sit amet.</a>
+                </div>
+              </div>
+
+                <div class="footer-copyright bg-primary">
+                  <p>© 2018 Copyright: ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </footer>
+  <!-- Footer End -->
+
+<!-- Modal -->
+        <div id="msg_pop">   
+            <a href="#" class="close-button" onclick="document.getElementById('msg_pop').style.display='none'; return false;">
+               <i class="fas fa-times-circle fa-1x"></i> 
+            </a>
+            <h6 class="h6-pop py-2">Follow me on Instagram</h6>
+            <a href="#" class="px-2 rounded">
+                <img src="images/InstaFollowers_hero_ART.png" width="300" height="120" alt="">
+            </a>
+           <div class="py-2">
+                <a href="#" class="follow-pop btn btn-success">Join to Creative Command</a>
+           </div>  
+        </div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!-- Scripts -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="assets/js/index.js"></script>
+  
+</body>
+</html>
