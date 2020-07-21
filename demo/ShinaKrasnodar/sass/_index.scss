@@ -1,0 +1,232 @@
+.active {
+    display: block;
+}
+
+.filter-section {
+
+    margin-top: 50px;
+
+    &__container {
+        background-color: $white;
+        border-radius: $radius;
+        justify-content: space-between;
+    }
+
+    .filter-content {
+        display: flex;
+        align-items: center;
+
+
+        h1 {
+            color: $grey;
+            padding-left: 16px;
+            padding-top: 9px;
+        }
+
+        &__img img {
+
+            height: 180px;
+            object-fit: cover;
+        }
+    }
+
+    .background-container {
+        background: linear-gradient(90deg, $light-green 25%, rgba(255, 0, 0, 0) 25%);
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        padding-left: 0;
+        width: 40%;
+    }
+
+    .select-items-container {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 15px;
+
+
+        .drop-down-container {
+            margin-right: 15px;
+        }
+
+        button {
+            text-transform: uppercase;
+            margin-right: 44px;
+            margin-left: 43px;
+            padding: 9px 44px;
+            box-shadow: $shadow;
+
+
+        }
+
+
+
+
+    }
+}
+
+
+.result {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .sort {
+        width: 20%;
+    }
+}
+
+
+
+.card {
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    width: 23%;
+
+    margin: 23px 10px 0;
+
+
+    a {
+        display: block;
+        font-family: $font-bold;
+        font-size: 16px;
+        width: 75%;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    img {
+
+        height: 210px;
+        object-fit: cover;
+    }
+
+    &-text {
+        padding: 13px 15px;
+        width: 100%;
+    }
+
+    .cost {
+        color: $green;
+        font-family: $font-bold;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    .buttons-buy {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    button {
+        text-transform: uppercase;
+        padding: 9px 16px;
+
+
+    }
+
+    .delivery {
+        @include text-link($grey)
+    }
+}
+
+.cards-container__wrapper {
+    margin: 30px -27px 0 -11px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.slider {
+    margin-top: 50px;
+
+    .slider-overlay {
+        display: block;
+        background: linear-gradient(90deg, #27509B 37.39%, rgba(196, 196, 196, 0) 100%);
+        background-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 9;
+        opacity: .8;
+    }
+
+
+
+
+    .slider-text {
+        position: absolute;
+        top: 96px;
+        left: 93px;
+        color: $white;
+        z-index: 10;
+
+        p {
+            font-size: 36px;
+        }
+    }
+
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px;
+    }
+
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .swiper-slide {
+        overflow: hidden;
+
+    }
+
+    &-button {
+        position: absolute;
+        bottom: 15%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 10;
+
+        button {
+            width: auto;
+            padding: 10px 25px;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 15px !important;
+
+        span {
+            height: 11px;
+            width: 11px;
+            border: 1px solid $white;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $green !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: none;
+            opacity: 1;
+        }
+    }
+
+}
+.article-toyo{
+    &-container{
+        justify-content: space-between;
+    }
+}

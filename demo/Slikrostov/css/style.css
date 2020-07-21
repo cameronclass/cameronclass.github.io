@@ -2621,21 +2621,6 @@ html {
   top: 33px; }
 .order-register .payment_method {
   margin-top: 41px; }
-.order-register .col-xl-4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 36.333333%;
-          flex: 0 0 36.333333%;
-  max-width: 36.333333%; }
-.order-register .col-lg-6 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
-  max-width: 40%; }
-.order-register .col-md-12 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%; }
 
 .brands-wrapper {
   display: -webkit-box;

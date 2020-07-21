@@ -165,6 +165,11 @@ $('.catalog').find('.card').each(function(){
 })
 $('.overlay').click(function (params) {
     $(this).fadeOut()
-    $('.buy-fast').fadeOut()
+    $('.modal').fadeOut()
 
+})
+$('.checkout-btn').click(function (params) {
+
+    $('.modal.success').fadeIn('slow')
+    $('.overlay').fadeIn('slow')
 })
