@@ -1,0 +1,13 @@
+.i-telegram {
+  @include icon(url(../img/icons/telegram.jpg), 30px, 30px);
+}
+.i-whatsapp {
+  @include icon(url(../img/icons/whatsapp.jpg), 30px, 30px);
+}
+.i-viber {
+  @include icon(url(../img/icons/vider.jpg), 30px, 30px);
+}
+
+/* .i-header-tel{
+  @include icon(url(../img/icons/))
+} */

@@ -1,27 +1,128 @@
-
 // Colors
-$color1: #62a2f6;
-$color2: #ff2a00;
-$color3: #d1d1d1;
-$color4: #1e905d;
+$blue: #2992d9;
+$dark-blue: #34495e;
+$green: #3ab503;
+$border: #d8d8d8;
+$light-grey: #b0b0a8;
+$grey: #555555;
+$black: #282828;
+$red: #e52929;
 
+$font-exo: "Exo 2", Helvetica, Arial, sans-serif;
+$font-roboto: "Roboto", Helvetica, Arial, sans-serif;
 
-$font: 'Liberation Sans';
-$font-bold: 'Liberation Sans Bold';
+$br: 2px;
+$bs: 0px 3px 4px 0px #616161;
 
-// Mixins
-@mixin icon($content,  $weight) {
-  font-family: "Font Awesome 5 Free";
-  content: $content;
-  font-weight: $weight;
+/* Типография */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-exo;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  line-height: 1.2;
+}
+div,
+span,
+p {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 26px;
 }
 
-// Font Family
-@font-face {
-    font-family: 'Liberation Sans Bold';
-    src: url('../fonts/LiberationSans-Bold.woff2') format('woff2'),
-        url('../fonts/LiberationSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+html,
+body,
+p,
+a,
+button {
+  font-family: $font-roboto;
+}
+
+/* Базовые стили */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+
+.btn-border {
+  display: block;
+  font-size: 14px;
+  color: $dark-blue;
+  border: 1px solid;
+  border-radius: $br;
+  padding: 10px 25px;
+  background-color: transparent;
+}
+
+.btn-border-red {
+  color: $red;
+}
+
+/* Bootstap Classes */
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 1366px;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* Used fragments */
+.advantages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  li {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 82px;
+      height: 82px;
+    }
+
+    div{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title{
+      font-weight: bold;
+    }
+    .text{}
+  }
 }
