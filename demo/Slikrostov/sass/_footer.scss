@@ -1,10 +1,11 @@
-.footer {
-    background-color: $black;
+.footer-kransodar {
+    background-color: $grey;
     color: $white;
     padding: 45px 0 35px;
     margin-top: 55px;
-    border-top: 2px solid $red;
+    border-top: 2px solid $green;
     height: 100%;
+
    
 
     a {
@@ -12,7 +13,7 @@
         transition: color .2s ease-in;
 
         &:hover {
-            color: $red;
+            color: $green-hover;
         }
     }
 
@@ -45,13 +46,23 @@
         }
     }
 
-    .footer-items li {
+    .footer-kransodar-items li {
 
         margin-bottom: 10px;
     }
+    .copyright{
+        margin-top: 18px;
 
-    p {
-        font-size: 12px;
-        margin-top: 29px;
+        p {
+            font-size: 12px;
+            border-bottom: 1px solid $white;
+            display: inline;
+            transition: color .2s ease-in;
+
+
+                
+        }
     }
+
+
 }

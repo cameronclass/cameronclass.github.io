@@ -1,58 +1,69 @@
-@media screen and (max-width: 1366px){
-    .summa{
+@media screen and (max-width: 1366px) {
+    .summa {
         flex-direction: column;
 
-        p{
+        p {
             margin: 10px 0;
         }
     }
-    .product-container{
+
+    .product-container {
         flex-direction: column;
 
         padding: 0 54px;
     }
-    .modal.buy-fast .order-price{
+
+    .modal.buy-fast .order-price {
         padding: 0;
     }
-    
+
 }
-@media screen and (max-width: 1700px){
-    .summa{
+
+@media screen and (max-width: 1700px) {
+    .summa {
         flex-direction: column;
 
-        p{
+        p {
             margin: 10px 0;
         }
     }
-    
+
 }
+
 @media screen and (max-width: 1024px) {
+    .logo img {
+        width: 220px;
+    }
     .product-container {
 
         padding: 0;
     }
 
-    .filter-title h1 {
-        font-size: 20px;
+    .filter-krasnodar-title h1 {
+        font-size: 24px;
 
     }
+    .filter-krasnodar .select-containers{
+        padding-left: 15px;
+    }
 
-    .header-menu {
-        .menu-content {
+    .header-krasnodar-menu {
+        .menu-krasnodar-content {
             margin-right: 0;
         }
 
         .logo {
             display: flex;
 
-            .header-menu {
+            .header-krasnodar-menu {
                 font-size: 12px !important;
             }
         }
     }
 
-    .filter-background {
-        background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
+
+    .filter-krasnodar-background {
+        background: linear-gradient(90deg, $green 17%, rgba(255, 0, 0, 0) 17%);
     }
 
     .menu-content {
@@ -60,11 +71,11 @@
     }
 
     .select-containers {
-        padding-left: 15px;
+
         margin: 30px 0;
     }
 
-    .filter .button {
+    .filter-krasnodar .button {
         margin: 15px 20px 0 10px;
     }
 
@@ -171,16 +182,18 @@
     .modal-container {
         padding: 42px 28px;
     }
+
     .modal.success,
-    .modal.attention{
+    .modal.attention {
         width: 36%;
     }
 }
 
 @media screen and (max-width: 768px) {
 
+
     .modal.success,
-    .modal.attention{
+    .modal.attention {
         width: 45%;
     }
 
@@ -279,8 +292,8 @@
         }
     }
 
-    .filter-background {
-        background: linear-gradient(90deg, #ED1C24 17%, rgba(255, 0, 0, 0) 17%);
+    .filter-krasnodar-background {
+        background: linear-gradient(90deg, $green 17%, rgba(255, 0, 0, 0) 17%);
     }
 
     .menu-content {
@@ -288,11 +301,11 @@
     }
 
     .select-containers {
-        padding-left: 15px;
+
         margin: 30px 0;
     }
 
-    .filter .button {
+    .filter-krasnodar .button {
         margin: 15px 20px 0 10px;
     }
 
@@ -340,7 +353,7 @@
         }
     }
 
-    .header {
+    .header-krasnodar {
         height: auto;
 
 
@@ -410,6 +423,78 @@
 }
 
 @media screen and (max-width: 520px) {
+    .container {
+        padding: 0;
+    }
+
+    .catalog {
+
+        .row {
+            margin-left: -7.5px;
+            margin-right: -7.5px;
+
+        }
+
+        .card {
+
+            &-content {
+                padding: 10px 9px 0;
+            }
+
+            img {
+                height: auto;
+            }
+
+            &-content__title {
+                font-size: 14px;
+                height: 66px;
+
+            }
+            &-content__price{
+                font-size: 18px;
+            }
+            &-content-in__stock{
+                font-size: 10px;
+            }
+            &-content__buttons{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            button{
+                width: fit-content;
+            }
+            .card-content__price {
+                margin: 0px 0 8px;
+            }
+            .btn-to-cart{
+                margin-top: 9px;
+            }
+        }
+
+    }
+
+    .header-krasnodar-menu .menu-krasnodar-content {
+        flex-direction: row;
+        font-size: 10px;
+        width: 100%;
+        align-items: center;
+        padding-top: 0;
+
+    }
+
+    .header-krasnodar .menu-krasnodar-content__basket {
+        width: 90%;
+
+        span {
+            margin-right: 5px;
+            padding: 5px 8px;
+        }
+    }
+
+    .filter-krasnodar-title__img img {
+        height: auto;
+    }
+
     .modal {
         width: 86% !important;
     }
@@ -642,18 +727,19 @@
 
 
     .select-container {
-        margin-top: 10px;
-
-        span {
-            display: none;
-
+        
+        flex-direction: column;
+        span{
+            margin-bottom: 6px;
         }
+
+   
     }
 
-    .header-menu__phone li img {
-        width: 10px;
-        height: 10px;
-        margin-right: 0;
+    .header-krasnodar-menu__phone li img {
+        width: auto;
+        height: 27px;
+
     }
 
 
@@ -685,9 +771,11 @@
         h2 {
             font-size: 22px;
         }
-        .buy-product{
+
+        .buy-product {
             margin-top: 10px;
-            p{
+
+            p {
                 margin-top: 10px;
             }
 
@@ -719,16 +807,14 @@
         margin-right: 0;
     }
 
-    .header {
-        .menu-content__basket>li:first-child {
-            span {
-                margin-left: 0;
-            }
-        }
+    .header-krasnodar .menu-krasnodar-content__basket li a {
+        display: flex;
+        align-items: center;
     }
 
-    .header-menu__user {
-        margin-bottom: 10px;
+    .header-krasnodar-menu__user {
+
+        width: 100%;
     }
 
     .logo {
@@ -744,7 +830,7 @@
         }
 
 
-        .header-menu__phone {
+        .header-krasnodar-menu__phone {
             display: flex;
             justify-content: flex-end;
 
@@ -759,16 +845,21 @@
         margin-top: 10px !important;
     }
 
-    .header-menu {
-        margin-top: 10px;
+    .header-krasnodar-menu {
+        margin-top: 0;
 
     }
 
     .search {
         align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 30px;
+        margin-bottom: 20px;
 
         h2 {
             font-size: 18px;
+            width: 50%;
+            line-height: 28px;
         }
 
         .select {
@@ -782,24 +873,41 @@
         }
     }
 
-    .filter {
+    .logo img {
+        width: 249px;
+    }
+
+    .filter-krasnodar {
         &-select {
             margin-bottom: 10px;
             font-size: 12px;
         }
 
         &-background {
-            background: linear-gradient(90deg, #ED1C24 31%, rgba(255, 0, 0, 0) 20%);
+            background: linear-gradient(90deg, $green 31%, rgba(255, 0, 0, 0) 20%);
         }
 
         .select-containers {
-            flex-direction: column;
-            padding-left: 10px;
             margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 29px;
+
+            .filter-krasnodar-select {
+                margin-right: 0;
+                width: 37%;
+                padding: 0 0 0 0;
+
+
+            }
+
         }
 
         .button {
-            margin: 10px 0 10px 0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
     }
 
@@ -812,11 +920,6 @@
         }
     }
 
-    .filter .select-containers .filter-select {
-        margin-right: 0;
-        width: 100%;
-        padding: 0 15px;
-    }
 
     .select-container__options {
         font-size: 12px;
@@ -837,53 +940,85 @@
         }
 
         .input-arrow {
-
+            top: 13%;
             padding: 4px;
         }
+        .input-arrow-active {
+            transform: rotate(-180deg);
+            transition: all 0.2s ease-in-out;
+            top: 9px;
+        }
+    }
+    .filter-krasnodar .select-containers .input-arrow {
+        top: 4px;
+    }
+    .filter-krasnodar .select-containers .input-arrow-active {
+        top: 9px;
+    }
+
+
+    .swiper-slide img{
+        height: 150px;
     }
 
 
 
 
 
-    .footer {
+    .footer-kransodar {
+        padding-left: 44px;
         &-socials {
-            justify-content: center;
-            margin-top: 20px;
+            
+            margin-top: 28px;
 
             li:last-child {
                 margin-right: 0;
             }
         }
-
-        p {
-            text-align: center;
+        &-contacts{
+            margin-top: 28px;
+        }
+        .copyright{
+            margin-top: 16px;
         }
 
+
+
         &-items {
-            text-align: center;
+            
 
             li {
-                display: block;
+       
                 margin: auto;
+                &:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
 
     }
+    .footer-kransodar-contacts li svg{
+        margin-right: 4px;
+    }
+
 
     .slider {
+        .row{
+            margin: 0 -15px;
+        }
         &-text {
+            top: 32%;
+            left: 5%;
             h1 {
                 font-size: 18px;
-
-                svg {
-                    width: 15px;
-                    height: 15px;
+                img{
+                    height: 18px;
+                    width: auto;
                 }
             }
 
             p {
-                font-size: 13px;
+                font-size: 18px;
             }
         }
 
@@ -901,20 +1036,21 @@
 
 
         .swiper-pagination {
-            position: static;
+            position: absolute;
+            bottom: 10px !important;
 
             span {
-                border: 1px solid rgba(0, 0, 0, 0.3);
+                border: 1px solid $white;
             }
         }
 
         .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-            margin: 0px 4px;
+            margin: 0px 14px;
         }
     }
 
     .article-container h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .article-container p {
@@ -932,6 +1068,10 @@
 }
 
 @media screen and (max-width: 320px) {
+    .slider-text h1 img {
+        height: 10px;
+        width: auto;
+    }
     .user-orders__products .product h3 {
         margin-right: 10px;
 
@@ -962,7 +1102,7 @@
         width: 100%;
     }
 
-    .header-menu__phone {
+    .header-krasnodar-menu__phone {
         li>a>span {
             font-size: 10px !important;
         }
@@ -985,7 +1125,7 @@
         margin-right: 0;
     }
 
-    .header-menu {
+    .header-krasnodar-menu {
         margin-top: 10px;
     }
 
@@ -1008,7 +1148,7 @@
     }
 
 
-    .header-menu {
+    .header-krasnodar-menu {
         font-size: 10px;
     }
 
