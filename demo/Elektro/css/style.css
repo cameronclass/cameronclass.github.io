@@ -66,22 +66,22 @@ h6 {
   font-family: "Exo 2", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  line-height: 1.2; }
+  margin-top: 0.8em;
+  line-height: 1.5; }
 
-div,
 span,
+li,
 p {
-  line-height: 1.4; }
+  line-height: 1.5; }
 
 h1 {
-  font-size: 36px; }
-
-h2 {
   font-size: 32px; }
 
+h2 {
+  font-size: 28px; }
+
 h3 {
-  font-size: 26px; }
+  font-size: 24px; }
 
 html,
 body,
@@ -97,7 +97,9 @@ a {
 img {
   width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .text-white {
   color: #fff; }
@@ -127,8 +129,46 @@ img {
   margin: 0 auto;
   padding: 0 20px; }
 
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .w-100 {
   width: 100%; }
+
+.w-70 {
+  width: 70%; }
+
+.w-60 {
+  width: 60%; }
+
+.w-50 {
+  width: 50%; }
+
+.w-40 {
+  width: 40%; }
+
+.w-30 {
+  width: 30%; }
+
+.p-1 {
+  padding: 10px; }
+
+.pr-3 {
+  padding-right: 30px; }
+
+.px-3 {
+  padding: 0 30px; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.border-radius {
+  border-radius: 4px; }
 
 /* Used fragments */
 .advantages {
@@ -158,9 +198,34 @@ img {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      margin-left: 24px; }
     .advantages li .title {
       font-weight: bold; }
+    .advantages li .text {
+      color: #555555; }
+
+.text {
+  padding: 30px 0; }
+  .text ul {
+    list-style-type: circle;
+    margin-left: 17px; }
+    .text ul li {
+      margin: 15px 0; }
+  .text p {
+    margin: 15px 0; }
+  .text img {
+    margin: 0 20px; }
+
+.list-5 li {
+  width: 20%; }
+  .list-5 li a img {
+    width: 140px; }
+
+.list-8 li {
+  width: 12.5%; }
+  .list-8 li a img {
+    width: 120px; }
 
 #page-preloader {
   position: fixed;
@@ -375,7 +440,6 @@ img {
 /* text-overflow: ellipsis; */
 .home-slider {
   margin-top: 15px;
-  margin-bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -429,22 +493,98 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px; }
-  .home-slider__text_title {
-    width: 50%; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec; }
   .home-slider__text_advantages {
-    width: 50%;
+    width: 48%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px; }
+    .home-slider__text_advantages li {
+      width: 45%; }
+      .home-slider__text_advantages li img {
+        width: 82px;
+        height: 82px; }
+
+/* Каталог */
+.catalog {
+  margin-top: 15px;
+  margin-bottom: 50px; }
+  .catalog__title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-    .home-slider__text_advantages li {
-      width: 50%; }
-      .home-slider__text_advantages li img {
-        width: 82px;
-        height: 82px; }
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .catalog__title a {
+      font-size: 14px;
+      color: #b0b0a8;
+      text-transform: uppercase;
+      width: 100px;
+      -webkit-transition: 200ms;
+      -o-transition: 200ms;
+      transition: 200ms; }
+      .catalog__title a:hover {
+        color: #34495e; }
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px; }
+  .catalog__list li {
+    margin: 0 0 -1px -1px;
+    border: 1px solid #ececec;
+    -webkit-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .catalog__list li:hover {
+      border-color: #f2f2f2;
+      -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+              box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
+    .catalog__list li a {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      padding: 30px 20px;
+      color: #555555; }
+      .catalog__list li a img {
+        margin: 0 auto; }
+      .catalog__list li a span {
+        display: block;
+        margin-top: 20px; }
+
+.brands {
+  padding: 30px 0;
+  margin: 30px auto;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  position: relative; }
+  .brands .swiper-container {
+    padding: 0 30px; }
+  .brands .swiper-wrapper {
+    /* width: 80%; */ }
+  .brands .swiper-button-prev {
+    left: 0; }
+  .brands .swiper-button-next {
+    right: 0; }
+  .brands img {
+    width: 150px; }
 
 .i-telegram {
   background-image: url(../img/icons/telegram.jpg);
