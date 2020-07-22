@@ -1,39 +1,31 @@
+@media screen and (max-width: 1640px) {
+    .modal.buy-fast {
+        width: 51.89%;
+
+    }
+}
+
 @media screen and (max-width: 1366px) {
-    .summa {
-        margin: 0;
+    .modal.buy-fast {
+        width: 60%;
 
-        p {
-            margin: 10px 0;
-        }
     }
-
-    .product-container {
-        flex-direction: column;
-
-        padding: 0 54px;
-    }
-
-    .modal.buy-fast .order-price {
-        padding: 0;
-    }
-
 }
 
-@media screen and (max-width: 1700px) {
-    .summa {
-        margin: 0;
+@media screen and (max-width: 1200px) {
+    .modal.buy-fast {
+        width: 65%;
 
-        p {
-            margin: 10px 0;
-        }
     }
-
 }
+
+
 
 @media screen and (max-width: 1024px) {
     .logo img {
         width: 220px;
     }
+
     .product-container {
 
         padding: 0;
@@ -43,7 +35,8 @@
         font-size: 24px;
 
     }
-    .filter-krasnodar .select-containers{
+
+    .filter-krasnodar .select-containers {
         padding-left: 15px;
     }
 
@@ -79,7 +72,7 @@
         margin: 15px 20px 0 10px;
     }
 
-    .slider {
+    .slider-krasnodar {
         &-text {
             h1 {
                 font-size: 45px;
@@ -111,10 +104,7 @@
         font-size: 55px;
     }
 
-    .about-brand__logo img {
-        height: 50px;
-        width: 50px;
-    }
+
 
     .checkout .product-img {
         height: auto;
@@ -137,14 +127,14 @@
     }
 
     .product-container {
-        flex-direction: column;
+
         margin-top: 0;
 
 
     }
 
     .modal .counter {
-        background-color:$white-second;
+        background-color: $white-second;
         width: 100%;
         float: right;
     }
@@ -170,8 +160,10 @@
     }
 
     .modal.buy-fast {
-        height: 85vh;
-        overflow: hidden;
+        margin-top: 50px;
+        height: auto;
+        overflow: scroll;
+        width: 54.89%;
 
     }
 
@@ -187,6 +179,39 @@
     .modal.success,
     .modal.attention {
         width: 36%;
+    }
+}
+
+@media screen and(max-width: 992px) {
+    .about-brand__content {
+        padding: 0 20px;
+
+        h1 {
+            width: 100%;
+        }
+    }
+
+    .about-brand__logo {
+        margin-top: 50px;
+    }
+}
+
+@media screen and(max-width: 930px) {
+    .modal {
+        &.buy-fast {
+            .product-container {
+                flex-direction: column;
+
+                .product-img {
+
+                    top: 0;
+                }
+            }
+
+            .checkout-item {
+                margin-bottom: 0;
+            }
+        }
     }
 }
 
@@ -267,7 +292,7 @@
         }
     }
 
-    .slider {
+    .slider-krasnodar {
         &-text {
             top: 15%;
 
@@ -310,8 +335,8 @@
         margin: 15px 20px 0 10px;
     }
 
-    .article-container {
-        .article-text {
+    .article-krasnodar-container {
+        .article-krasnodar-text {
             margin-left: 0;
         }
 
@@ -368,23 +393,36 @@
         }
     }
 
-    .seasons {
-        .seasons-item:last-child {
-            justify-content: center;
+    .about-brand .seasons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap ;
+        justify-content: start;
+
+        .seasons-item {
+            width: 50%;
+            margin: 5px 0;
+
+            &:last-child {
+                justify-content: start;
+            }
         }
+
     }
 
-    .product-card__item {
-        &-title h2 {
-            width: 100%;
-            text-align: center;
-            height: auto !important;
-        }
+    .about-brand .product-cards {
+        .product-card__item {
+            &-title h2 {
+                width: 100%;
+                text-align: center;
+                height: auto !important;
+            }
 
-        &-seasons {
-            margin: 20px 0;
-            padding-left: 10px;
+            &-seasons {
+                margin: 20px 0;
+                padding-left: 10px;
 
+            }
         }
     }
 
@@ -428,7 +466,15 @@
         padding: 0;
     }
 
-    .catalog {
+    .search-car-by {
+        flex-direction: column;
+
+        .filter-krasnodar-select {
+            width: 100% !important;
+        }
+    }
+
+    .catalog-krasnodar {
 
         .row {
             margin-left: -7.5px;
@@ -436,7 +482,7 @@
 
         }
 
-        .card {
+        .card-krasnodar {
 
             &-content {
                 padding: 10px 9px 0;
@@ -451,23 +497,29 @@
                 height: 66px;
 
             }
-            &-content__price{
+
+            &-content__price {
                 font-size: 18px;
             }
-            &-content-in__stock{
+
+            &-content-in__stock {
                 font-size: 10px;
             }
-            &-content__buttons{
+
+            &-content__buttons {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            button{
+
+            button {
                 width: fit-content;
             }
-            .card-content__price {
+
+            &-content__price {
                 margin: 0px 0 8px;
             }
-            .btn-to-cart{
+
+            .btn-to-cart {
                 margin-top: 9px;
             }
         }
@@ -498,11 +550,16 @@
 
     .modal {
         width: 86% !important;
+
+        .modal.buy-fast .person-data {
+            width: 100%;
+            padding-bottom: 0;
+        }
     }
 
     .modal h3 {
-        font-size: 16px !important;
-        margin-left: 15px;
+        font-size: 18px !important;
+
     }
 
     .modal.buy-fast h3 {
@@ -511,11 +568,9 @@
     }
 
     .summa {
-  
-
         p {
-                margin:0;
-            justify-content: center;
+            margin: 0;
+
         }
     }
 
@@ -527,6 +582,7 @@
 
     .modal-container {
         margin-left: 0;
+        padding: 17px;
     }
 
     .modal .modal-title {
@@ -535,7 +591,7 @@
 
     .modal.buy-fast .order-price .summa p {
 
-        font-size: 15px;
+        font-size: 18px;
 
     }
 
@@ -666,15 +722,24 @@
         padding: 40px 17px;
     }
 
-    .about-brand__content h1 {
-        width: 100%;
-        font-size: 25px;
-        margin-top: 0;
-    }
 
-    .about-brand__content p {
-        margin: 0;
-        padding: 20px 25px;
+    .about-brand__content{
+        h1 {
+            width: 100%;
+            font-size: 25px;
+            margin-top: 0;
+            text-align: left;
+            padding-left: 16px;
+        }
+
+        p {
+            margin: 0;
+            padding: 20px 0 28px;
+        }
+
+    }
+    .about-brand__logo{
+        margin: 100px 0 80px;
     }
 
     .seasons {
@@ -703,23 +768,24 @@
 
             &-seasons {
                 margin: 20px 0;
-                padding: 10px 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+
 
             }
 
             &-logo {
-                flex: 0 0 50%;
-                max-width: 50%;
-                margin-bottom: 20px;
-                justify-content: flex-start;
+
                 padding: 0 25px;
+                margin-bottom: 30px;
             }
 
             .button {
-                flex: 0 0 50%;
-                max-width: 50%;
-                margin-bottom: 20px;
-                justify-content: flex-start;
+
+                margin-bottom: 30px;
+
 
             }
         }
@@ -728,13 +794,14 @@
 
 
     .select-container {
-        
+
         flex-direction: column;
-        span{
+
+        span {
             margin-bottom: 6px;
         }
 
-   
+
     }
 
     .header-krasnodar-menu__phone li img {
@@ -851,7 +918,7 @@
 
     }
 
-    .search {
+    .search-krasnodar {
         align-items: center;
         flex-wrap: nowrap;
         margin-top: 30px;
@@ -859,8 +926,9 @@
 
         h2 {
             font-size: 18px;
-            width: 50%;
+            width: 46%;
             line-height: 28px;
+
         }
 
         .select {
@@ -896,8 +964,13 @@
 
             .filter-krasnodar-select {
                 margin-right: 0;
-                width: 37%;
-                padding: 0 0 0 0;
+                width: 38%;
+                padding: 0;
+
+                label {
+                    width: 78%;
+                    line-height: 22px;
+                }
 
 
             }
@@ -944,21 +1017,24 @@
             top: 13%;
             padding: 4px;
         }
+
         .input-arrow-active {
             transform: rotate(-180deg);
             transition: all 0.2s ease-in-out;
             top: 9px;
         }
     }
+
     .filter-krasnodar .select-containers .input-arrow {
         top: 4px;
     }
+
     .filter-krasnodar .select-containers .input-arrow-active {
         top: 9px;
     }
 
 
-    .swiper-slide img{
+    .swiper-slide img {
         height: 150px;
     }
 
@@ -968,51 +1044,59 @@
 
     .footer-kransodar {
         padding-left: 44px;
+
         &-socials {
-            
+
             margin-top: 28px;
 
             li:last-child {
                 margin-right: 0;
             }
         }
-        &-contacts{
+
+        &-contacts {
             margin-top: 28px;
         }
-        .copyright{
+
+        .copyright {
             margin-top: 16px;
         }
 
 
 
         &-items {
-            
+
 
             li {
-       
+
                 margin: auto;
-                &:last-child{
+
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
         }
 
     }
-    .footer-kransodar-contacts li svg{
+
+    .footer-kransodar-contacts li svg {
         margin-right: 4px;
     }
 
 
-    .slider {
-        .row{
+    .slider-krasnodar {
+        .row {
             margin: 0 -15px;
         }
+
         &-text {
             top: 32%;
             left: 5%;
+
             h1 {
                 font-size: 18px;
-                img{
+
+                img {
                     height: 18px;
                     width: auto;
                 }
@@ -1023,7 +1107,7 @@
             }
         }
 
-        .slider-button {
+        .slider-krasnodar-button {
 
             bottom: 10%;
 
@@ -1050,15 +1134,15 @@
         }
     }
 
-    .article-container h2 {
+    .article-krasnodar-container h2 {
         font-size: 24px;
     }
 
-    .article-container p {
+    .article-krasnodar-container p {
         font-size: 12px;
     }
 
-    .card img {
+    .card-krasnodar img {
         height: 239px;
     }
 
@@ -1069,10 +1153,11 @@
 }
 
 @media screen and (max-width: 320px) {
-    .slider-text h1 img {
+    .slider-krasnodar-text h1 img {
         height: 10px;
         width: auto;
     }
+
     .user-orders__products .product h3 {
         margin-right: 10px;
 
@@ -1130,7 +1215,7 @@
         margin-top: 10px;
     }
 
-    .search {
+    .search-krasnodar {
         align-items: center;
 
         h2 {
@@ -1153,7 +1238,7 @@
         font-size: 10px;
     }
 
-    .slider-button {
+    .slider-krasnodar-button {
         display: none;
     }
 

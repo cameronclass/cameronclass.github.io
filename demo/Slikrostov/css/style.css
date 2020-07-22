@@ -7,7 +7,7 @@
           box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans Regular";
+  font-family: "Noto Sans Regular";
   color: #333333;
   background-color: #F6F6F6; }
 
@@ -49,8 +49,8 @@ button {
   font-style: normal;
   font-display: swap; }
 @font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Noto Sans Regular";
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
@@ -58,18 +58,6 @@ button {
   font-family: "Noto Sans Bold";
   src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Open Sans SemiBold";
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
   font-style: normal;
   font-display: swap; }
 .icon-fill-none {
@@ -1407,6 +1395,10 @@ html {
 .w-100 {
   width: 100%; }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
 .logo a {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
@@ -1509,7 +1501,7 @@ html {
           -ms-flex-pack: justify;
               justify-content: space-between;
       text-transform: uppercase;
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       margin: 15px 0 10px 0px; }
       .header-krasnodar .menu-krasnodar-content__basket p {
         display: inline; }
@@ -1595,7 +1587,7 @@ html {
 
 .btn {
   display: inline-block;
-  font-family: "Open Sans SemiBold";
+  font-family: "Noto Sans Bold";
   color: #ffffff;
   text-align: center;
   cursor: pointer;
@@ -1615,7 +1607,7 @@ html {
   margin-right: auto !important;
   margin-top: auto; }
 
-.search {
+.search-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1625,7 +1617,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 50px 0 34px; }
-  .search-result {
+  .search-krasnodar-result {
     font-size: 24px;
     font-family: "Noto Sans Bold"; }
 
@@ -1710,24 +1702,24 @@ html {
 .desk-d-none {
   display: none; }
 
-.catalog .row {
+.catalog-krasnodar .row {
   margin-left: -15px;
   margin-right: -15px; }
-.catalog .krasnodar-col-xl-3,
-.catalog .krasnodar-col-lg-4,
-.catalog .krasnodar-col-md-6,
-.catalog .krasnodar-col-sm-6 {
+.catalog-krasnodar .krasnodar-col-xl-3,
+.catalog-krasnodar .krasnodar-col-lg-4,
+.catalog-krasnodar .krasnodar-col-md-6,
+.catalog-krasnodar .krasnodar-col-sm-6 {
   padding-right: 15px;
   padding-left: 15px; }
-.catalog .krasnodar-col-xs-6 {
+.catalog-krasnodar .krasnodar-col-xs-6 {
   padding-right: 7.5px;
   padding-left: 7.5px; }
-.catalog .card-col {
+.catalog-krasnodar .card-col {
   margin-bottom: 23px; }
 
-.card {
+.card-krasnodar {
   background: #ffffff;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
@@ -1737,29 +1729,29 @@ html {
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   height: 100%; }
-  .card:hover {
+  .card-krasnodar:hover {
     -webkit-transform: translateY(3px);
             transform: translateY(3px); }
-  .card img {
+  .card-krasnodar img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 194px; }
-  .card-content {
+  .card-krasnodar-content {
     padding: 10px 15px 0; }
-    .card-content__title {
+    .card-krasnodar-content__title {
       width: 80%;
       font-size: 16px;
       height: 55px;
       overflow: hidden; }
-    .card-content__price {
+    .card-krasnodar-content__price {
       color: #8CC63F;
       font-size: 20px;
       margin: 10px 0 8px; }
-    .card-content-in__stock {
-      font-family: "Open Sans Regular";
+    .card-krasnodar-content-in__stock {
+      font-family: "Noto Sans Regular";
       color: #5a5a5a;
       font-size: 12px; }
-    .card-content__buttons {
+    .card-krasnodar-content__buttons {
       font-size: 12px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1768,7 +1760,7 @@ html {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-top: 10px; }
-      .card-content__buttons button {
+      .card-krasnodar-content__buttons button {
         padding: 12px 20px; }
 
 .active {
@@ -1914,6 +1906,8 @@ html {
     font-size: 12px;
     margin: 8px 0;
     display: block; }
+    .filter-krasnodar-select label.search-input-bold {
+      font-family: "Noto Sans Bold"; }
     .filter-krasnodar-select label span {
       color: rgba(90, 90, 90, 0.5); }
   .filter-krasnodar-select .search-filter-container {
@@ -1923,13 +1917,14 @@ html {
   .filter-krasnodar-select input {
     -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
             box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
-    background: transparent;
+    background: #F6F6F6;
     border: 1px solid #ffffff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 5px;
     padding: 8px;
-    color: #5a5a5a; }
+    color: #5a5a5a;
+    height: 35px; }
   .filter-krasnodar-select .search-active {
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2005,7 +2000,7 @@ html {
   .filter-krasnodar-title h1 {
     font-size: 30px;
     margin: auto 16px;
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     line-height: 1.1;
     color: #5a5a5a; }
   .filter-krasnodar-title__img {
@@ -2015,11 +2010,11 @@ html {
       -o-object-fit: cover;
          object-fit: cover; }
 
-.article-text {
+.article-krasnodar-text {
   padding-left: 0;
   margin: 20px 0;
   margin-left: 35px; }
-.article-container {
+.article-krasnodar-container {
   -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -2028,33 +2023,33 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .article-container h2 {
+  .article-krasnodar-container h2 {
     margin-bottom: 27px;
     font-size: 30px;
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     color: #5a5a5a; }
-  .article-container p {
+  .article-krasnodar-container p {
     color: #5a5a5a;
     font-size: 12px;
     padding: 0 50px 0 0;
     margin: auto;
     text-align: left; }
-  .article-container-img {
+  .article-krasnodar-container-img {
     padding-right: 0;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px; }
-.article-img img {
+.article-krasnodar-img img {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px; }
 
-.slider {
+.slider-krasnodar {
   margin-top: 50px; }
-  .slider-text {
+  .slider-krasnodar-text {
     position: absolute;
     top: 34%;
     left: 7%;
     color: #ffffff; }
-    .slider-text h1 {
+    .slider-krasnodar-text h1 {
       font-family: "Times New Roman", Times, serif;
       font-size: 100px;
       display: -webkit-box;
@@ -2065,20 +2060,20 @@ html {
               align-items: center;
       padding: 0;
       margin: 0; }
-    .slider-text p {
+    .slider-krasnodar-text p {
       font-size: 30px;
-      font-family: "Open Sans SemiBold"; }
-    .slider-text svg {
+      font-family: "Noto Sans Bold"; }
+    .slider-krasnodar-text svg {
       width: 78px;
       height: 78px; }
-  .slider .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  .slider-krasnodar .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 10px; }
-  .slider .swiper-container {
+  .slider-krasnodar .swiper-container {
     width: 100%;
     height: 100%; }
-  .slider .swiper-slide {
+  .slider-krasnodar .swiper-slide {
     overflow: hidden; }
-  .slider-button {
+  .slider-krasnodar-button {
     position: absolute;
     bottom: 15%;
     display: -webkit-box;
@@ -2088,18 +2083,18 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%; }
-    .slider-button button {
+    .slider-krasnodar-button button {
       width: auto;
       padding: 10px 25px; }
-  .slider .swiper-pagination {
+  .slider-krasnodar .swiper-pagination {
     bottom: 15px !important; }
-    .slider .swiper-pagination span {
+    .slider-krasnodar .swiper-pagination span {
       height: 11px;
       width: 11px;
       border: 1px solid #ffffff; }
-    .slider .swiper-pagination .swiper-pagination-bullet-active {
+    .slider-krasnodar .swiper-pagination .swiper-pagination-bullet-active {
       background-color: #8CC63F !important; }
-    .slider .swiper-pagination .swiper-pagination-bullet {
+    .slider-krasnodar .swiper-pagination .swiper-pagination-bullet {
       background: none;
       opacity: 1; }
 
@@ -2124,7 +2119,7 @@ html {
     border-radius: 3px; }
     .one-product-container h2 {
       margin: 40px 0 14px;
-      font-family: "Open Sans Bold"; }
+      font-family: "Noto Sans Bold"; }
   .one-product table {
     max-width: 100%;
     margin-right: 65px;
@@ -2196,7 +2191,7 @@ html {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .one-product .buy-product p {
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       color: #8CC63F; }
     .one-product .buy-product__buttons {
       font-size: 12px; }
@@ -2225,10 +2220,10 @@ html {
   .model-content {
     margin-left: 27px; }
     .model-content h3 {
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       font-size: 24px; }
     .model-content p {
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       color: #8CC63F;
       margin: 14px 0;
       font-size: 24px; }
@@ -2282,7 +2277,8 @@ html {
     margin-bottom: 0;
     font-size: 30px;
     text-align: center;
-    font-family: "Open Sans Bold"; }
+    font-family: "Noto Sans Bold";
+    color: #5a5a5a; }
   .about-brand__content p {
     line-height: 16px;
     margin: 26px 65px 50px 0;
@@ -2301,9 +2297,6 @@ html {
     font-family: "Times New Roman Bold"; }
     .about-brand__logo h1 {
       font-size: 86px; }
-    .about-brand__logo img {
-      height: 65px;
-      width: 65px; }
   .about-brand .seasons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2326,17 +2319,24 @@ html {
               align-items: center;
       text-transform: uppercase;
       letter-spacing: 0.02em;
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       font-size: 12px;
       line-height: 28px;
-      color: #8CC63F; }
+      color: #309B27; }
       .about-brand .seasons-item:last-child {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
-      .about-brand .seasons-item .winter {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .about-brand .seasons-item .active {
         line-height: 18px;
-        border-bottom: 2px solid #8CC63F; }
+        border-bottom: 2px solid #8CC63F;
+        color: #8CC63F; }
+      .about-brand .seasons-item .icon {
+        stroke: #309B27;
+        margin-right: 5px; }
+      .about-brand .seasons-item .icon-active {
+        fill: #8CC63F;
+        stroke: #8CC63F; }
       .about-brand .seasons-item img {
         width: 25px;
         height: 25px;
@@ -2387,11 +2387,10 @@ html {
                 justify-content: center;
         font-size: 36px; }
         .about-brand .product-cards .product-card__item-logo img {
-          width: 25px;
-          height: 25px; }
+          width: 180px; }
       .about-brand .product-cards .product-card__item-title h2 {
-        width: 50%;
-        font-family: "Open Sans Bold";
+        width: 58%;
+        font-family: "Noto Sans Bold";
         font-size: 16px;
         line-height: 20px;
         height: 60px;
@@ -2459,7 +2458,7 @@ html {
     padding-left: 48px; }
 .user-profile h1 {
   margin: 44px 0;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   font-size: 30px; }
 .user-profile .date-birth__inputs {
   display: -webkit-box;
@@ -2566,7 +2565,7 @@ html {
     color: #5a5a5a; }
   .order-info p {
     color: #8CC63F;
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     font-size: 16px; }
 
 .checkout-continue {
@@ -2589,11 +2588,11 @@ html {
   .checkout .amount-container span {
     color: #5a5a5a;
     font-size: 12px;
-    font-family: "Open Sans Regular"; }
+    font-family: "Noto Sans Regular"; }
 .checkout .page {
   margin: 44px 0;
   padding-left: 0;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   font-size: 30px; }
 .checkout-container {
   background: #ffffff;
@@ -2616,7 +2615,7 @@ html {
 .checkout p,
 .checkout span {
   color: #8CC63F;
-  font-family: "Open Sans Bold"; }
+  font-family: "Noto Sans Bold"; }
 .checkout .counter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2626,7 +2625,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   font-size: 12px;
   text-align: center;
   background-color: #F6F6F6;
@@ -2649,7 +2648,7 @@ html {
   color: #8CC63F; }
 .checkout h1 {
   font-size: 16px;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   padding-left: 50px; }
 .checkout .product-img {
   padding-left: 10px;
@@ -2671,7 +2670,7 @@ html {
 .user-orders h1 {
   margin: 44px 0;
   font-size: 30px;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   letter-spacing: 0.02em; }
 .user-orders__order {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2680,7 +2679,7 @@ html {
   margin-bottom: 11px;
   padding: 22px 0; }
   .user-orders__order h2 {
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     font-size: 16px; }
   .user-orders__order .row {
     -webkit-box-align: center;
@@ -2713,7 +2712,7 @@ html {
   margin-bottom: 27px; }
   .user-orders .product h3,
   .user-orders .product p {
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     font-size: 16px; }
   .user-orders .product h3 {
     margin-right: 67px; }
@@ -2844,8 +2843,8 @@ html {
     display: none; }
     .modal.buy-fast .product-title {
       font-size: 24px;
-      font-family: "Open Sans Bold";
-      width: 64%; }
+      font-family: "Noto Sans Bold";
+      width: 80%; }
     .modal.buy-fast .product-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2853,7 +2852,6 @@ html {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-top: 20px;
       position: relative; }
     .modal.buy-fast .person-data {
       width: 100%;
@@ -2861,7 +2859,10 @@ html {
       .modal.buy-fast .person-data input {
         width: 100%; }
     .modal.buy-fast .product-img {
-      position: relative; }
+      position: relative;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      top: 14px; }
       .modal.buy-fast .product-img button {
         position: absolute;
         bottom: 38px;
@@ -2872,7 +2873,9 @@ html {
         width: 374px;
         -o-object-fit: cover;
            object-fit: cover; }
-    .modal.buy-fast .counter button, .modal.buy-fast .counter input, .modal.buy-fast .counter span {
+    .modal.buy-fast .counter button,
+    .modal.buy-fast .counter input,
+    .modal.buy-fast .counter span {
       color: #309B27; }
     .modal.buy-fast .order-price {
       display: -webkit-box;
@@ -2899,7 +2902,7 @@ html {
         color: #309B27; }
         .modal.buy-fast .order-price .summa p {
           font-size: 20px;
-          font-family: "Open Sans Bold";
+          font-family: "Noto Sans Bold";
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2927,7 +2930,21 @@ html {
     float: right; }
   .modal.register {
     width: 30%;
+    padding-bottom: 46px;
     display: none; }
+    .modal.register .modal-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .modal.register .modal-title img {
+        width: 25px;
+        height: 25px; }
   .modal button {
     text-transform: uppercase; }
   .modal.attention {
@@ -2943,7 +2960,7 @@ html {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      background-color: #5a5a5a;
+      background-color: #CE1348;
       padding: 21px 95px; }
       .modal.attention .modal-title img {
         width: 31px;
@@ -2973,6 +2990,8 @@ html {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         margin-top: 43px; }
+        .modal.attention .modal-container .buttons .btn-cancel {
+          background-color: #CE1348; }
         .modal.attention .modal-container .buttons button {
           width: 100%;
           margin-right: 10px; }
@@ -3024,7 +3043,7 @@ html {
     padding: 46px 51px 46px 57px;
     color: #ffffff;
     font-size: 24px;
-    font-family: "Open Sans Bold"; }
+    font-family: "Noto Sans Bold"; }
   .modal #number {
     background-color: #F6F6F6; }
   .modal .button button {
@@ -3060,26 +3079,15 @@ html {
       .modal .register_or_forget a:hover {
         text-decoration: none; }
 
+@media screen and (max-width: 1640px) {
+  .modal.buy-fast {
+    width: 51.89%; } }
 @media screen and (max-width: 1366px) {
-  .summa {
-    margin: 0; }
-    .summa p {
-      margin: 10px 0; }
-
-  .product-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0 54px; }
-
-  .modal.buy-fast .order-price {
-    padding: 0; } }
-@media screen and (max-width: 1700px) {
-  .summa {
-    margin: 0; }
-    .summa p {
-      margin: 10px 0; } }
+  .modal.buy-fast {
+    width: 60%; } }
+@media screen and (max-width: 1200px) {
+  .modal.buy-fast {
+    width: 65%; } }
 @media screen and (max-width: 1024px) {
   .logo img {
     width: 220px; }
@@ -3115,14 +3123,14 @@ html {
   .filter-krasnodar .button {
     margin: 15px 20px 0 10px; }
 
-  .slider-text h1 {
+  .slider-krasnodar-text h1 {
     font-size: 45px; }
-    .slider-text h1 svg {
+    .slider-krasnodar-text h1 svg {
       width: 40px;
       height: 40px; }
-  .slider-text p {
+  .slider-krasnodar-text p {
     font-size: 20px; }
-  .slider-button {
+  .slider-krasnodar-button {
     bottom: 20%; }
 
   .one-product .attention-price .icon-attenition {
@@ -3130,10 +3138,6 @@ html {
 
   .about-brand__logo h1 {
     font-size: 55px; }
-
-  .about-brand__logo img {
-    height: 50px;
-    width: 50px; }
 
   .checkout .product-img {
     height: auto;
@@ -3149,10 +3153,6 @@ html {
     padding: 21px 50px; }
 
   .product-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 0; }
 
   .modal .counter {
@@ -3173,8 +3173,10 @@ html {
     padding: 30px 28px; }
 
   .modal.buy-fast {
-    height: 85vh;
-    overflow: hidden; }
+    margin-top: 50px;
+    height: auto;
+    overflow: scroll;
+    width: 54.89%; }
 
   .modal.register {
     width: 35%;
@@ -3186,6 +3188,24 @@ html {
   .modal.success,
   .modal.attention {
     width: 36%; } }
+@media screen and (max-width: 992px) {
+  .about-brand__content {
+    padding: 0 20px; }
+    .about-brand__content h1 {
+      width: 100%; }
+
+  .about-brand__logo {
+    margin-top: 50px; } }
+@media screen and (max-width: 930px) {
+  .modal.buy-fast .product-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .modal.buy-fast .product-container .product-img {
+      top: 0; }
+  .modal.buy-fast .checkout-item {
+    margin-bottom: 0; } }
 @media screen and (max-width: 768px) {
   .modal.success,
   .modal.attention {
@@ -3234,16 +3254,16 @@ html {
     .user-orders__products .product p {
       font-size: 12px; }
 
-  .slider-text {
+  .slider-krasnodar-text {
     top: 15%; }
-    .slider-text h1 {
+    .slider-krasnodar-text h1 {
       font-size: 45px; }
-      .slider-text h1 svg {
+      .slider-krasnodar-text h1 svg {
         width: 40px;
         height: 40px; }
-    .slider-text p {
+    .slider-krasnodar-text p {
       font-size: 20px; }
-  .slider-button button {
+  .slider-krasnodar-button button {
     font-size: 10px;
     padding: 8px 22px; }
 
@@ -3260,19 +3280,19 @@ html {
   .filter-krasnodar .button {
     margin: 15px 20px 0 10px; }
 
-  .article-container .article-text {
+  .article-krasnodar-container .article-krasnodar-text {
     margin-left: 0; }
-  .article-container h2,
-  .article-container p {
+  .article-krasnodar-container h2,
+  .article-krasnodar-container p {
     padding: 20px; }
-  .article-container h2 {
+  .article-krasnodar-container h2 {
     padding-bottom: 0;
     margin-bottom: 0; }
-  .article-container p {
+  .article-krasnodar-container p {
     margin-bottom: 20px; }
-  .article-container-img {
+  .article-krasnodar-container-img {
     padding: 0; }
-    .article-container-img img {
+    .article-krasnodar-container-img img {
       border-bottom-right-radius: 3px;
       border-top-right-radius: 0;
       border-bottom-left-radius: 3px; }
@@ -3293,16 +3313,32 @@ html {
     .header-krasnodar-menu {
       margin-bottom: 10px; }
 
-  .seasons .seasons-item:last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+  .about-brand .seasons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+    .about-brand .seasons .seasons-item {
+      width: 50%;
+      margin: 5px 0; }
+      .about-brand .seasons .seasons-item:last-child {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start; }
 
-  .product-card__item-title h2 {
+  .about-brand .product-cards .product-card__item-title h2 {
     width: 100%;
     text-align: center;
     height: auto !important; }
-  .product-card__item-seasons {
+  .about-brand .product-cards .product-card__item-seasons {
     margin: 20px 0;
     padding-left: 10px; }
 
@@ -3327,33 +3363,41 @@ html {
   .container {
     padding: 0; }
 
-  .catalog .row {
+  .search-car-by {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .search-car-by .filter-krasnodar-select {
+      width: 100% !important; }
+
+  .catalog-krasnodar .row {
     margin-left: -7.5px;
     margin-right: -7.5px; }
-  .catalog .card-content {
+  .catalog-krasnodar .card-krasnodar-content {
     padding: 10px 9px 0; }
-  .catalog .card img {
+  .catalog-krasnodar .card-krasnodar img {
     height: auto; }
-  .catalog .card-content__title {
+  .catalog-krasnodar .card-krasnodar-content__title {
     font-size: 14px;
     height: 66px; }
-  .catalog .card-content__price {
+  .catalog-krasnodar .card-krasnodar-content__price {
     font-size: 18px; }
-  .catalog .card-content-in__stock {
+  .catalog-krasnodar .card-krasnodar-content-in__stock {
     font-size: 10px; }
-  .catalog .card-content__buttons {
+  .catalog-krasnodar .card-krasnodar-content__buttons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .catalog .card button {
+  .catalog-krasnodar .card-krasnodar button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
-  .catalog .card .card-content__price {
+  .catalog-krasnodar .card-krasnodar-content__price {
     margin: 0px 0 8px; }
-  .catalog .card .btn-to-cart {
+  .catalog-krasnodar .card-krasnodar .btn-to-cart {
     margin-top: 9px; }
 
   .header-krasnodar-menu .menu-krasnodar-content {
@@ -3379,31 +3423,31 @@ html {
 
   .modal {
     width: 86% !important; }
+    .modal .modal.buy-fast .person-data {
+      width: 100%;
+      padding-bottom: 0; }
 
   .modal h3 {
-    font-size: 16px !important;
-    margin-left: 15px; }
+    font-size: 18px !important; }
 
   .modal.buy-fast h3 {
     margin-left: 0; }
 
   .summa p {
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    margin: 0; }
 
   .modal.buy-fast .product-title {
     width: 75%; }
 
   .modal-container {
-    margin-left: 0; }
+    margin-left: 0;
+    padding: 17px; }
 
   .modal .modal-title {
     padding: 30px 17px; }
 
   .modal.buy-fast .order-price .summa p {
-    font-size: 15px; }
+    font-size: 18px; }
 
   .modal.buy-fast .order-price {
     padding-left: 17px;
@@ -3500,11 +3544,15 @@ html {
   .about-brand__content h1 {
     width: 100%;
     font-size: 25px;
-    margin-top: 0; }
-
+    margin-top: 0;
+    text-align: left;
+    padding-left: 16px; }
   .about-brand__content p {
     margin: 0;
-    padding: 20px 25px; }
+    padding: 20px 0 28px; }
+
+  .about-brand__logo {
+    margin: 100px 0 80px; }
 
   .seasons .seasons-item:last-child {
     -webkit-box-pack: start;
@@ -3524,26 +3572,21 @@ html {
     height: auto !important; }
   .about-brand .product-cards .product-card__item-seasons {
     margin: 20px 0;
-    padding: 10px 25px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .about-brand .product-cards .product-card__item-logo {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 20px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 0 25px; }
+    padding: 0 25px;
+    margin-bottom: 30px; }
   .about-brand .product-cards .product-card__item .button {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 20px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    margin-bottom: 30px; }
 
   .select-container {
     -webkit-box-orient: vertical;
@@ -3637,7 +3680,7 @@ html {
   .header-krasnodar-menu {
     margin-top: 0; }
 
-  .search {
+  .search-krasnodar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3645,15 +3688,15 @@ html {
         flex-wrap: nowrap;
     margin-top: 30px;
     margin-bottom: 20px; }
-    .search h2 {
+    .search-krasnodar h2 {
       font-size: 18px;
-      width: 50%;
+      width: 46%;
       line-height: 28px; }
-    .search .select {
+    .search-krasnodar .select {
       width: 65%;
       height: 36px;
       font-size: 13px; }
-      .search .select-styled::after {
+      .search-krasnodar .select-styled::after {
         padding: 4px; }
 
   .logo img {
@@ -3675,8 +3718,11 @@ html {
     padding: 0 29px; }
     .filter-krasnodar .select-containers .filter-krasnodar-select {
       margin-right: 0;
-      width: 37%;
-      padding: 0 0 0 0; }
+      width: 38%;
+      padding: 0; }
+      .filter-krasnodar .select-containers .filter-krasnodar-select label {
+        width: 78%;
+        line-height: 22px; }
   .filter-krasnodar .button {
     margin-left: auto;
     margin-right: auto;
@@ -3735,41 +3781,41 @@ html {
   .footer-kransodar-contacts li svg {
     margin-right: 4px; }
 
-  .slider .row {
+  .slider-krasnodar .row {
     margin: 0 -15px; }
-  .slider-text {
+  .slider-krasnodar-text {
     top: 32%;
     left: 5%; }
-    .slider-text h1 {
+    .slider-krasnodar-text h1 {
       font-size: 18px; }
-      .slider-text h1 img {
+      .slider-krasnodar-text h1 img {
         height: 18px;
         width: auto; }
-    .slider-text p {
+    .slider-krasnodar-text p {
       font-size: 18px; }
-  .slider .slider-button {
+  .slider-krasnodar .slider-krasnodar-button {
     bottom: 10%; }
-    .slider .slider-button button {
+    .slider-krasnodar .slider-krasnodar-button button {
       font-size: 9px;
       padding: 8px 20px; }
-  .slider .swiper-pagination {
+  .slider-krasnodar .swiper-pagination {
     position: absolute;
     bottom: 10px !important; }
-    .slider .swiper-pagination span {
+    .slider-krasnodar .swiper-pagination span {
       border: 1px solid #ffffff; }
-  .slider .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  .slider-krasnodar .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 14px; }
 
-  .article-container h2 {
+  .article-krasnodar-container h2 {
     font-size: 24px; }
 
-  .article-container p {
+  .article-krasnodar-container p {
     font-size: 12px; }
 
-  .card img {
+  .card-krasnodar img {
     height: 239px; } }
 @media screen and (max-width: 320px) {
-  .slider-text h1 img {
+  .slider-krasnodar-text h1 img {
     height: 10px;
     width: auto; }
 
@@ -3818,22 +3864,23 @@ html {
   .header-krasnodar-menu {
     margin-top: 10px; }
 
-  .search {
+  .search-krasnodar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .search h2 {
+    .search-krasnodar h2 {
       font-size: 18px; }
-    .search .select {
+    .search-krasnodar .select {
       width: 100%;
       height: 33px;
       font-size: 12px; }
-      .search .select-styled::after {
+      .search-krasnodar .select-styled::after {
         border: none; }
 
   .header-krasnodar-menu {
     font-size: 10px; }
 
-  .slider-button {
+  .slider-krasnodar-button {
     display: none; } }
+
 /*# sourceMappingURL=style.css.map */
