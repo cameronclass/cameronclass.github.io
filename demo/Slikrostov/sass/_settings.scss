@@ -1,10 +1,10 @@
 // Colors
-$red: #ed1c24;
-$red-hover: #ca1118;
-$black: #000;
+$green: #8CC63F;
+$green-hover: #309B27;
+$black: #333333;
 $grey: #5a5a5a;
 $white: #ffffff;
-$white-second: #f5f7ff;
+$white-second: #F6F6F6;
 $font: "Open Sans Regular";
 $font-bold: "Open Sans Bold";
 $font-semi-bold: "Open Sans SemiBold";
@@ -100,5 +100,8 @@ button{
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+}
+.icon-fill-none{
+  fill: none !important;
 }
 

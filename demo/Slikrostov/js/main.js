@@ -5,9 +5,9 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-        autoplay: {
-            delay: 2500
-        },
+        // autoplay: {
+        //     delay: 2500
+        // },
     });
     const dates = [
         { year: '2014' },

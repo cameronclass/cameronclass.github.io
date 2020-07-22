@@ -1,11 +1,11 @@
 .icon {
   height: 20px;
   width: 20px;
-  fill: $red;
+  fill: $green;
   transition: fill 0.3s ease;
 
   &:hover {
-    fill: $red-hover;
+    fill: $green-hover;
   }
 }
 
@@ -16,13 +16,13 @@
   text-align: center;
   cursor: pointer;
   user-select: none;
-  background-color: $red;
+  background-color: $green;
   padding: 10px 8px;
   border-radius: 0.25rem;
   transition: background 0.2s ease-in-out;
 
   &:hover {
-    background: $red-hover;
+    background: $green-hover;
   }
 }
 
@@ -62,10 +62,10 @@
     display: inline-block;
     position: relative;
     font-size: 16px;
-    color: $red;
+    color: $green-hover;
     width: $select-width;
     height: $select-height;
-    border: 1px solid $red;
+    border: 1px solid $green-hover;
     border-radius: 5px;
   }
 
@@ -83,7 +83,7 @@
 
     &:after {
       content: "";
-      border: 1px solid $red;
+      border: 1px solid $green;
       border-width: 0 3px 3px 0;
       display: inline-block;
       padding: 6px;
@@ -113,7 +113,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    border: 1px solid $red;
+    border: 1px solid $green;
     background-color: $white;
 
     li {
@@ -142,20 +142,30 @@
 .ml-2 {
   margin-left: 20px;
 }
+.desk-d-none{
+  display: none;
+}
 
 .catalog {
+
   .row {
     margin-left: -15px;
     margin-right: -15px;
+
   }
 
-  .col-xl-3,
-  .col-lg-4,
-  .col-md-6,
-  .col-sm-6 {
+  .krasnodar-col-xl-3,
+  .krasnodar-col-lg-4,
+  .krasnodar-col-md-6,
+  .krasnodar-col-sm-6 {
 
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .krasnodar-col-xs-6 {
+
+    padding-right: 7.5px;
+    padding-left: 7.5px;
   }
 
   .card-col {
@@ -187,14 +197,14 @@
     padding: 10px 15px 0;
 
     &__title {
-      width: 85%;
+      width: 80%;
       font-size: 16px;
       height: 55px;
       overflow: hidden;
     }
 
     &__price {
-      color: $red;
+      color: $green;
       font-size: 20px;
       margin: 10px 0 8px;
     }
@@ -234,11 +244,11 @@
 
   input {
     border-radius: 5px;
-    border: 1px solid $red;
+    border: 1px solid $green-hover;
     padding: 7px 9px;
     background: none;
     font-size: 12px;
-    color: $red;
+    color: $green-hover;
     width: 100%;
     cursor: pointer;
 
@@ -289,7 +299,7 @@
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
     z-index: 0;
     color: $grey;
-    top: 31px;
+    top: 30px;
     font-size: 12px;
 
     div {
@@ -331,7 +341,7 @@
   animation-duration: 0.2s;
 }
 
-.filter {
+.filter-krasnodar {
   &-container {
     background: $white;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -485,7 +495,7 @@
   }
 
   &-background {
-    background: linear-gradient(90deg, #ed1c24 25%, rgba(255, 0, 0, 0) 25%);
+    background: linear-gradient(90deg, $green 25%, rgba(255, 0, 0, 0) 25%);
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 
@@ -504,6 +514,7 @@
       margin: auto 16px;
       font-family: $font-bold;
       line-height: 1.1;
+      color: $grey;
     }
 
     &__img {
@@ -536,6 +547,7 @@
       margin-bottom: 27px;
       font-size: 30px;
       font-family: $font-bold;
+      color: $grey;
     }
 
     p {
@@ -567,8 +579,8 @@
   &-text {
     position: absolute;
 
-    top: 20%;
-    left: 6%;
+    top: 34%;
+    left: 7%;
     color: $white;
 
     h1 {
@@ -627,7 +639,7 @@
     }
 
     .swiper-pagination-bullet-active {
-      background-color: $red !important;
+      background-color: $green !important;
     }
 
     .swiper-pagination-bullet {
@@ -756,7 +768,7 @@
 
     p {
       font-family: $font-bold;
-      color: $red;
+      color: $green;
     }
 
     &__buttons {
@@ -800,7 +812,7 @@
 
     p {
       font-family: $font-bold;
-      color: $red;
+      color: $green;
       margin: 14px 0;
       font-size: 24px;
     }
@@ -911,7 +923,7 @@
       font-family: $font-bold;
       font-size: 12px;
       line-height: 28px;
-      color: $red;
+      color: $green;
 
       &:last-child {
         justify-content: flex-end;
@@ -920,7 +932,7 @@
 
       .winter {
         line-height: 18px;
-        border-bottom: 2px solid $red;
+        border-bottom: 2px solid $green;
       }
 
       img {
@@ -1161,7 +1173,7 @@
 .check_box input[type="checkbox"]:checked~label::after {
   content: '';
   border-radius: 50%;
-  background: $red;
+  background: $green;
   height: 10px;
   width: 10px;
   position: absolute;
@@ -1185,7 +1197,7 @@
   }
 
   p {
-    color: $red;
+    color: $green;
     font-family: $font-bold;
     font-size: 16px;
   }
@@ -1241,14 +1253,14 @@
 
   p,
   span {
-    color: $red;
+    color: $green;
     font-family: $font-bold;
   }
 
   .counter {
     display: flex;
     width: 40%;
-    color: $red;
+    color: $green;
     align-items: center;
     font-family: $font-bold;
     font-size: 12px;
@@ -1277,7 +1289,7 @@
     width: 100%;
     border: none;
     text-align: center;
-    color: $red;
+    color: $green;
   }
 
   h1 {
@@ -1296,7 +1308,7 @@
 
   .value-button {
     display: inline-block;
-    color: $red;
+    color: $green;
   }
 
   .value-button:hover {
@@ -1383,7 +1395,7 @@
     }
 
     p {
-      color: $red;
+      color: $green;
       margin-right: 53px;
     }
   }
@@ -1530,8 +1542,7 @@
       font-size: 24px;
       font-family: $font-bold;
       width: 64%;
-      margin-top: 28px;
-
+   
     }
 
 
@@ -1571,6 +1582,9 @@
       }
     }
 
+    .counter button,.counter input,.counter span{
+      color: $green-hover;
+    }
     .order-price {
       display: flex;
       flex-direction: column;
@@ -1583,10 +1597,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        color: $green-hover;
   
 
         p {
-          color: $red;
+         
           font-size: 20px;
           font-family: $font-bold;
           display: flex;
@@ -1600,7 +1615,7 @@
     padding-left: 51px;
     padding-right: 51px;
     padding-top: 42px;
-    padding-bottom: 46px;
+    
 
   }
 
@@ -1727,7 +1742,7 @@
 }
 
 .modal-title {
-  background-color: $red;
+  background-color: $green;
   padding: 46px 51px 46px 57px;
   color: $white;
   font-size: 24px;
