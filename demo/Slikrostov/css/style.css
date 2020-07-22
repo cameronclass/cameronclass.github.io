@@ -737,130 +737,6 @@ html {
   position: relative;
   width: 100%; }
 
-@media (max-width: 576px) {
-  .krasnodar-col-xs {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    -webkit-box-flex: 1;
-            flex-grow: 1;
-    min-width: 0;
-    max-width: 100%; }
-
-  .row-cols-sm-1 > * {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-            flex: 0 0 100%;
-    max-width: 100%; }
-
-  .row-cols-sm-2 > * {
-    -ms-flex: 0 0 50%;
-    -webkit-box-flex: 0;
-            flex: 0 0 50%;
-    max-width: 50%; }
-
-  .row-cols-sm-3 > * {
-    -ms-flex: 0 0 33.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 33.333333%;
-    max-width: 33.333333%; }
-
-  .row-cols-sm-4 > * {
-    -ms-flex: 0 0 25%;
-    -webkit-box-flex: 0;
-            flex: 0 0 25%;
-    max-width: 25%; }
-
-  .row-cols-sm-5 > * {
-    -ms-flex: 0 0 20%;
-    -webkit-box-flex: 0;
-            flex: 0 0 20%;
-    max-width: 20%; }
-
-  .row-cols-sm-6 > * {
-    -ms-flex: 0 0 16.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 16.666667%;
-    max-width: 16.666667%; }
-
-  .krasnodar-col-sm-auto {
-    -ms-flex: 0 0 auto;
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
-    width: auto;
-    max-width: 100%; }
-
-  .krasnodar-col-xs-1 {
-    -ms-flex: 0 0 8.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 8.333333%;
-    max-width: 8.333333%; }
-
-  .krasnodar-col-xs-2 {
-    -ms-flex: 0 0 16.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 16.666667%;
-    max-width: 16.666667%; }
-
-  .krasnodar-col-xs-3 {
-    -ms-flex: 0 0 25%;
-    -webkit-box-flex: 0;
-            flex: 0 0 25%;
-    max-width: 25%; }
-
-  .krasnodar-col-xs-4 {
-    -ms-flex: 0 0 33.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 33.333333%;
-    max-width: 33.333333%; }
-
-  .krasnodar-col-sm-5 {
-    -ms-flex: 0 0 41.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 41.666667%;
-    max-width: 41.666667%; }
-
-  .krasnodar-col-xs-6 {
-    -ms-flex: 0 0 50%;
-    -webkit-box-flex: 0;
-            flex: 0 0 50%;
-    max-width: 50%; }
-
-  .krasnodar-col-xs-7 {
-    -ms-flex: 0 0 58.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 58.333333%;
-    max-width: 58.333333%; }
-
-  .krasnodar-col-xs-8 {
-    -ms-flex: 0 0 66.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 66.666667%;
-    max-width: 66.666667%; }
-
-  .krasnodar-col-xs-9 {
-    -ms-flex: 0 0 75%;
-    -webkit-box-flex: 0;
-            flex: 0 0 75%;
-    max-width: 75%; }
-
-  .krasnodar-col-xs-10 {
-    -ms-flex: 0 0 83.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 83.333333%;
-    max-width: 83.333333%; }
-
-  .krasnodar-col-xs-11 {
-    -ms-flex: 0 0 91.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 91.666667%;
-    max-width: 91.666667%; }
-
-  .krasnodar-col-xs-12 {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-            flex: 0 0 100%;
-    max-width: 100%; } }
 @media (min-width: 576px) {
   .krasnodar-col-sm {
     -ms-flex-preferred-size: 0;
@@ -1357,6 +1233,130 @@ html {
     -webkit-box-flex: 0;
             flex: 0 0 100%;
     max-width: 100%; } }
+@media (max-width: 576px) {
+  .krasnodar-col-xs {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    min-width: 0;
+    max-width: 100%; }
+
+  .row-cols-sm-1 > * {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; }
+
+  .row-cols-sm-2 > * {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+  .row-cols-sm-3 > * {
+    -ms-flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+
+  .row-cols-sm-4 > * {
+    -ms-flex: 0 0 25%;
+    -webkit-box-flex: 0;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+  .row-cols-sm-5 > * {
+    -ms-flex: 0 0 20%;
+    -webkit-box-flex: 0;
+            flex: 0 0 20%;
+    max-width: 20%; }
+
+  .row-cols-sm-6 > * {
+    -ms-flex: 0 0 16.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+
+  .krasnodar-col-sm-auto {
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    width: auto;
+    max-width: 100%; }
+
+  .krasnodar-col-xs-1 {
+    -ms-flex: 0 0 8.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+
+  .krasnodar-col-xs-2 {
+    -ms-flex: 0 0 16.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+
+  .krasnodar-col-xs-3 {
+    -ms-flex: 0 0 25%;
+    -webkit-box-flex: 0;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+  .krasnodar-col-xs-4 {
+    -ms-flex: 0 0 33.333333% !important;
+    -webkit-box-flex: 0 !important;
+            flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important; }
+
+  .krasnodar-col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
+
+  .krasnodar-col-xs-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+  .krasnodar-col-xs-7 {
+    -ms-flex: 0 0 58.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+
+  .krasnodar-col-xs-8 {
+    -ms-flex: 0 0 66.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+
+  .krasnodar-col-xs-9 {
+    -ms-flex: 0 0 75%;
+    -webkit-box-flex: 0;
+            flex: 0 0 75%;
+    max-width: 75%; }
+
+  .krasnodar-col-xs-10 {
+    -ms-flex: 0 0 83.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+
+  .krasnodar-col-xs-11 {
+    -ms-flex: 0 0 91.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+
+  .krasnodar-col-xs-12 {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; } }
 .p-0 {
   padding: 0; }
 
@@ -1516,10 +1516,6 @@ html {
         margin: 0 10px 0 3px;
         -webkit-transition: all 100ms ease-in;
         transition: all 100ms ease-in; }
-  .header-krasnodar .registr {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .header-krasnodar .basket-item a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1527,6 +1523,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .header-krasnodar .basket-item a span {
+      padding: 5px 2px 0px 4px; }
   .header-krasnodar .basket-item img {
     width: 20px;
     height: 17px;
@@ -2568,33 +2566,32 @@ html {
     font-family: "Noto Sans Bold";
     font-size: 16px; }
 
-.checkout-continue {
+.checkout-krasnodar-continue {
   font-size: 12px;
   padding: 15px 20px;
   margin-right: 30px; }
-.checkout .finish {
+.checkout-krasnodar .finish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 57px; }
-.checkout .amount-container {
+.checkout-krasnodar .amount-container {
   margin-right: 116px; }
-  .checkout .amount-container span {
+  .checkout-krasnodar .amount-container span {
     color: #5a5a5a;
     font-size: 12px;
     font-family: "Noto Sans Regular"; }
-.checkout .page {
+  .checkout-krasnodar .amount-container p {
+    font-size: 20px; }
+.checkout-krasnodar .page {
   margin: 44px 0;
   padding-left: 0;
   font-family: "Noto Sans Bold";
   font-size: 30px; }
-.checkout-container {
+.checkout-krasnodar-container {
   background: #ffffff;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2602,7 +2599,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px; }
-.checkout .checkout-item {
+.checkout-krasnodar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2611,16 +2608,17 @@ html {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-.checkout p,
-.checkout span {
+          align-items: center;
+  margin-bottom: 10px; }
+.checkout-krasnodar p,
+.checkout-krasnodar span {
   color: #8CC63F;
   font-family: "Noto Sans Bold"; }
-.checkout .counter {
+.checkout-krasnodar .counter-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
+  width: 60%;
   color: #8CC63F;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -2629,42 +2627,48 @@ html {
   font-size: 12px;
   text-align: center;
   background-color: #F6F6F6;
-  border-radius: 5px; }
-  .checkout .counter span {
+  border-radius: 5px;
+  height: 30px; }
+  .checkout-krasnodar .counter-krasnodar span {
     text-transform: uppercase; }
-.checkout .delete {
+.checkout-krasnodar .delete {
   height: 25px;
   width: 25px;
   cursor: pointer;
   -webkit-transition: 200ms;
   transition: 200ms; }
-  .checkout .delete:hover {
+  .checkout-krasnodar .delete:hover {
     background-color: #F6F6F6;
     border-radius: 50%; }
-.checkout input {
+.checkout-krasnodar input {
   width: 100%;
   border: none;
   text-align: center;
-  color: #8CC63F; }
-.checkout h1 {
+  color: #8CC63F;
+  background-color: #F6F6F6; }
+.checkout-krasnodar h1 {
   font-size: 16px;
   font-family: "Noto Sans Bold";
   padding-left: 50px; }
-.checkout .product-img {
+.checkout-krasnodar .product-img {
   padding-left: 10px;
   height: 100px;
   width: 100px;
   -o-object-fit: cover;
      object-fit: cover; }
-.checkout .value-button {
+.checkout-krasnodar .value-button {
   display: inline-block;
   color: #8CC63F; }
-.checkout .value-button:hover {
+.checkout-krasnodar .value-button:hover {
   cursor: pointer; }
-.checkout .counter #decrease {
-  margin-left: 15px; }
-.checkout .counter #input-wrap {
-  margin: 0px;
+.checkout-krasnodar .counter-krasnodar #decrease {
+  margin-left: 15px;
+  margin-right: 15px; }
+.checkout-krasnodar .counter-krasnodar #increase {
+  margin-left: 15px;
+  margin-right: 15px; }
+.checkout-krasnodar .counter-krasnodar #input-wrap {
+  margin: 0;
   padding: 0px; }
 
 .user-orders h1 {
@@ -3411,12 +3415,11 @@ html {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 0; }
-
-  .header-krasnodar .menu-krasnodar-content__basket {
-    width: 90%; }
-    .header-krasnodar .menu-krasnodar-content__basket span {
-      margin-right: 5px;
-      padding: 5px 8px; }
+    .header-krasnodar-menu .menu-krasnodar-content__basket {
+      width: 90%; }
+      .header-krasnodar-menu .menu-krasnodar-content__basket span {
+        margin-right: 5px;
+        padding: 5px 8px; }
 
   .filter-krasnodar-title__img img {
     height: auto; }
@@ -3426,32 +3429,23 @@ html {
     .modal .modal.buy-fast .person-data {
       width: 100%;
       padding-bottom: 0; }
-
-  .modal h3 {
-    font-size: 18px !important; }
-
-  .modal.buy-fast h3 {
-    margin-left: 0; }
-
-  .summa p {
-    margin: 0; }
-
-  .modal.buy-fast .product-title {
-    width: 75%; }
-
-  .modal-container {
-    margin-left: 0;
-    padding: 17px; }
-
-  .modal .modal-title {
-    padding: 30px 17px; }
-
-  .modal.buy-fast .order-price .summa p {
-    font-size: 18px; }
-
-  .modal.buy-fast .order-price {
-    padding-left: 17px;
-    padding-right: 17px; }
+    .modal .modal.buy-fast h3 {
+      margin-left: 0; }
+    .modal .modal.buy-fast .product-title {
+      width: 75%; }
+    .modal .modal.buy-fast .order-price {
+      padding-left: 17px;
+      padding-right: 17px; }
+      .modal .modal.buy-fast .order-price .summa p {
+        margin: 0;
+        font-size: 18px; }
+    .modal h3 {
+      font-size: 18px !important; }
+    .modal-container {
+      margin-left: 0;
+      padding: 17px; }
+    .modal-title {
+      padding: 30px 17px; }
 
   .order-register .delivery {
     padding: 21px 20px; }
@@ -3479,7 +3473,6 @@ html {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
-
   .user-orders .delivery {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -3501,46 +3494,20 @@ html {
   .mob-show {
     display: block; }
 
-  .checkout-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 10px 15px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .checkout-buttons .counter {
-      width: 100%; }
-    .checkout-buttons .checkout-item {
-      display: block;
-      margin: auto; }
-      .checkout-buttons .checkout-item:first-child {
-        margin-left: 30px; }
-      .checkout-buttons .checkout-item .delete {
-        margin: auto; }
-
-  .checkout-item h1 {
-    padding: 0 20px; }
-  .checkout-item-price {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    padding: 0 20px 15px; }
-  .checkout-item-counter {
-    display: inline-block !important; }
-  .checkout-item-delete {
-    display: inline-block !important; }
-
-  .user-profile .privacy-policy .checkbox span {
-    padding-left: 20px; }
+  .checkout-krasnodar-item {
+    font-size: 14px; }
+    .checkout-krasnodar-item h1 {
+      padding: 0 20px; }
+    .checkout-krasnodar-item .counter-krasnodar {
+      width: 70%; }
 
   .user-profile__container {
     padding: 40px 17px; }
+  .user-profile .privacy-policy .checkbox span {
+    padding-left: 20px; }
 
+  .about-brand__logo {
+    margin: 100px 0 80px; }
   .about-brand__content h1 {
     width: 100%;
     font-size: 25px;
@@ -3550,15 +3517,6 @@ html {
   .about-brand__content p {
     margin: 0;
     padding: 20px 0 28px; }
-
-  .about-brand__logo {
-    margin: 100px 0 80px; }
-
-  .seasons-krasnodar-item:last-child {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start; }
-
   .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img img {
     height: auto;
     width: 100%;
@@ -3587,6 +3545,11 @@ html {
     margin-bottom: 30px; }
   .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button {
     margin-bottom: 30px; }
+
+  .seasons-krasnodar-item:last-child {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
 
   .select-container {
     -webkit-box-orient: vertical;
@@ -3648,9 +3611,6 @@ html {
         -ms-flex-align: center;
             align-items: center; }
 
-  .header-krasnodar-menu__user {
-    width: 100%; }
-
   .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3664,6 +3624,8 @@ html {
     margin-top: 10px; }
     .logo a > span {
       font-size: 19px; }
+    .logo .header-krasnodar-menu__user {
+      width: 100%; }
     .logo .header-krasnodar-menu__phone {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3756,7 +3718,6 @@ html {
 
   .filter-krasnodar .select-containers .input-arrow {
     top: 4px; }
-
   .filter-krasnodar .select-containers .input-arrow-active {
     top: 9px; }
 
@@ -3771,15 +3732,14 @@ html {
         margin-right: 0; }
     .footer-kransodar-contacts {
       margin-top: 28px; }
+      .footer-kransodar-contacts li svg {
+        margin-right: 4px; }
     .footer-kransodar .copyright {
       margin-top: 16px; }
     .footer-kransodar-items li {
       margin: auto; }
       .footer-kransodar-items li:last-child {
         margin-bottom: 0; }
-
-  .footer-kransodar-contacts li svg {
-    margin-right: 4px; }
 
   .slider-krasnodar .row {
     margin: 0 -15px; }
@@ -3806,11 +3766,10 @@ html {
   .slider-krasnodar .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 14px; }
 
-  .article-krasnodar-container h2 {
-    font-size: 24px; }
-
   .article-krasnodar-container p {
     font-size: 12px; }
+  .article-krasnodar-container h2 {
+    font-size: 24px; }
 
   .card-krasnodar img {
     height: 239px; } }

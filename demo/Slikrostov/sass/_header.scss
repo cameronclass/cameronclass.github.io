@@ -124,13 +124,14 @@
       }
     }
   }
-  .registr{
-    justify-content: center;
-  }
+
   .basket-item{
     a{
       display: flex;
       align-items: center;
+      span{
+        padding: 5px 2px 0px 4px;
+      }
     }
     img{
       width: 20px;

@@ -1223,7 +1223,7 @@
   }
 }
 
-.checkout {
+.checkout-krasnodar {
 
   &-continue {
     font-size: 12px;
@@ -1234,7 +1234,7 @@
 
   .finish {
     display: flex;
-    align-items: center;
+ 
     justify-content: flex-end;
     margin-top: 57px;
   }
@@ -1247,6 +1247,9 @@
       color: $grey;
       font-size: 12px;
       font-family: $font;
+    }
+    p{
+      font-size: 20px;
     }
   }
 
@@ -1264,10 +1267,11 @@
     margin-bottom: 10px;
   }
 
-  .checkout-item {
+  &-item {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 
   }
 
@@ -1277,9 +1281,9 @@
     font-family: $font-bold;
   }
 
-  .counter {
+  .counter-krasnodar {
     display: flex;
-    width: 40%;
+    width: 60%;
     color: $green;
     align-items: center;
     font-family: $font-bold;
@@ -1287,6 +1291,8 @@
     text-align: center;
     background-color: $white-second;
     border-radius: 5px;
+    height: 30px;
+
 
     span {
       text-transform: uppercase;
@@ -1312,6 +1318,7 @@
     border: none;
     text-align: center;
     color: $green;
+    background-color: $white-second;
   }
 
   h1 {
@@ -1337,15 +1344,21 @@
     cursor: pointer;
   }
 
-  .counter #decrease {
+  .counter-krasnodar #decrease {
     margin-left: 15px;
+    margin-right: 15px;
+
+  }
+  .counter-krasnodar #increase {
+    margin-left: 15px;
+    margin-right: 15px;
 
   }
 
 
 
-  .counter #input-wrap {
-    margin: 0px;
+  .counter-krasnodar #input-wrap {
+    margin: 0;
     padding: 0px;
   }
 
