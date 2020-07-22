@@ -2297,7 +2297,7 @@ html {
     font-family: "Times New Roman Bold"; }
     .about-brand__logo h1 {
       font-size: 86px; }
-  .about-brand .seasons {
+  .about-brand .seasons-krasnodar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2310,7 +2310,7 @@ html {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 24px; }
-    .about-brand .seasons-item {
+    .about-brand .seasons-krasnodar-item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2323,27 +2323,27 @@ html {
       font-size: 12px;
       line-height: 28px;
       color: #309B27; }
-      .about-brand .seasons-item:last-child {
+      .about-brand .seasons-krasnodar-item:last-child {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-      .about-brand .seasons-item .active {
+      .about-brand .seasons-krasnodar-item .active {
         line-height: 18px;
         border-bottom: 2px solid #8CC63F;
         color: #8CC63F; }
-      .about-brand .seasons-item .icon {
+      .about-brand .seasons-krasnodar-item .icon {
         stroke: #309B27;
         margin-right: 5px; }
-      .about-brand .seasons-item .icon-active {
+      .about-brand .seasons-krasnodar-item .icon-active {
         fill: #8CC63F;
         stroke: #8CC63F; }
-      .about-brand .seasons-item img {
+      .about-brand .seasons-krasnodar-item img {
         width: 25px;
         height: 25px;
         margin-right: 10px; }
-  .about-brand .product-cards {
+  .about-brand .product-cards-krasnodar {
     width: 100%; }
-    .about-brand .product-cards .product-card__item {
+    .about-brand .product-cards-krasnodar .product-krasnodar-card__item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2359,7 +2359,7 @@ html {
       border-radius: 3px;
       background-color: #ffffff;
       margin-bottom: 17px; }
-      .about-brand .product-cards .product-card__item-img {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2369,12 +2369,12 @@ html {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start; }
-        .about-brand .product-cards .product-card__item-img img {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img img {
           width: 161px;
           height: 122px;
           -o-object-fit: cover;
              object-fit: cover; }
-      .about-brand .product-cards .product-card__item-logo {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-logo {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2386,30 +2386,30 @@ html {
             -ms-flex-pack: center;
                 justify-content: center;
         font-size: 36px; }
-        .about-brand .product-cards .product-card__item-logo img {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-logo img {
           width: 180px; }
-      .about-brand .product-cards .product-card__item-title h2 {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-title h2 {
         width: 58%;
         font-family: "Noto Sans Bold";
         font-size: 16px;
         line-height: 20px;
         height: 60px;
         overflow: hidden; }
-      .about-brand .product-cards .product-card__item-seasons {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons {
         color: #5a5a5a;
         font-size: 12px; }
-        .about-brand .product-cards .product-card__item-seasons img {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons img {
           width: 20px;
           height: 20px;
           padding-right: 5px; }
-        .about-brand .product-cards .product-card__item-seasons .item-seasons {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .item-seasons {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; }
-          .about-brand .product-cards .product-card__item-seasons .item-seasons li {
+          .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .item-seasons li {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -2417,16 +2417,16 @@ html {
                 -ms-flex-align: center;
                     align-items: center;
             margin-right: 10px; }
-        .about-brand .product-cards .product-card__item-seasons .radius {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .radius {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           margin-top: 7px; }
-          .about-brand .product-cards .product-card__item-seasons .radius li {
+          .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .radius li {
             margin-right: 8px; }
-            .about-brand .product-cards .product-card__item-seasons .radius li:last-child {
+            .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .radius li:last-child {
               margin-right: 0; }
-      .about-brand .product-cards .product-card__item .button {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2437,7 +2437,7 @@ html {
             -ms-flex-align: center;
                 align-items: center;
         font-size: 12px; }
-        .about-brand .product-cards .product-card__item .button button {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button button {
           padding: 13px 26px; }
 
 .user-profile__container {
@@ -3313,7 +3313,7 @@ html {
     .header-krasnodar-menu {
       margin-bottom: 10px; }
 
-  .about-brand .seasons {
+  .about-brand .seasons-krasnodar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3326,19 +3326,19 @@ html {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start; }
-    .about-brand .seasons .seasons-item {
+    .about-brand .seasons-krasnodar-item {
       width: 50%;
       margin: 5px 0; }
-      .about-brand .seasons .seasons-item:last-child {
+      .about-brand .seasons-krasnodar-item:last-child {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: start; }
 
-  .about-brand .product-cards .product-card__item-title h2 {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-title h2 {
     width: 100%;
     text-align: center;
     height: auto !important; }
-  .about-brand .product-cards .product-card__item-seasons {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons {
     margin: 20px 0;
     padding-left: 10px; }
 
@@ -3554,23 +3554,23 @@ html {
   .about-brand__logo {
     margin: 100px 0 80px; }
 
-  .seasons .seasons-item:last-child {
+  .seasons-krasnodar-item:last-child {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start; }
 
-  .about-brand .product-cards .product-card__item-img img {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img img {
     height: auto;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .about-brand .product-cards .product-card__item-title h2 {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-title h2 {
     text-align: left;
     width: 100%;
     padding: 10px 25px;
     height: auto !important; }
-  .about-brand .product-cards .product-card__item-seasons {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons {
     margin: 20px 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3582,10 +3582,10 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .about-brand .product-cards .product-card__item-logo {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-logo {
     padding: 0 25px;
     margin-bottom: 30px; }
-  .about-brand .product-cards .product-card__item .button {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button {
     margin-bottom: 30px; }
 
   .select-container {

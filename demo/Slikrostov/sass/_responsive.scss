@@ -393,13 +393,13 @@
         }
     }
 
-    .about-brand .seasons {
+    .about-brand .seasons-krasnodar {
         display: flex;
         flex-direction: row;
         flex-wrap:wrap ;
         justify-content: start;
 
-        .seasons-item {
+        &-item {
             width: 50%;
             margin: 5px 0;
 
@@ -410,8 +410,8 @@
 
     }
 
-    .about-brand .product-cards {
-        .product-card__item {
+    .about-brand .product-cards-krasnodar {
+        .product-krasnodar-card__item {
             &-title h2 {
                 width: 100%;
                 text-align: center;
@@ -742,14 +742,14 @@
         margin: 100px 0 80px;
     }
 
-    .seasons {
-        .seasons-item:last-child {
+    .seasons-krasnodar {
+        &-item:last-child {
             justify-content: start;
         }
     }
 
-    .about-brand .product-cards {
-        .product-card__item {
+    .about-brand .product-cards-krasnodar {
+        .product-krasnodar-card__item {
 
 
             &-img img {
