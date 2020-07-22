@@ -1455,9 +1455,13 @@
   }
 }
 
-.order-register {
+.order-register-krasnodar {
+  .order-krasnodar-info {
 
-  .delivery {
+    margin: 0;
+  }
+
+  .delivery-krasnodar {
     box-shadow: $shadow;
     background-color: $white;
     border-radius: 3px;
@@ -1474,17 +1478,18 @@
     }
   }
 
-  .product {
+  .product-krasnodar {
     justify-content: space-between;
 
     p,
     h3 {
-      margin-right: 0;
+      margin: 0;
     }
+
   }
 
   input {
-    background-color: #f5f7ff;
+    background-color: $white-second;
     width: 100%;
     padding-left: 27px;
   }

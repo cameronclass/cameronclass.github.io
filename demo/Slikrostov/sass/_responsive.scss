@@ -122,9 +122,10 @@
         width: 80%;
     }
 
-    .order-register .delivery-krasnodar {
+    .order-register-krasnodar .delivery-krasnodar {
         padding: 21px 50px;
     }
+
 
     .product-container {
 
@@ -243,11 +244,11 @@
         width: 70%;
     }
 
-    .order-register .delivery {
+    .order-register-krasnodar .delivery {
         padding: 21px 50px;
     }
 
-    .order-register .delivery button {
+    .order-register .delivery-krasnodar button {
         padding: 15px 20px;
         margin-left: 0;
         font-size: 12px;
@@ -624,8 +625,20 @@
 
 
 
-    .order-register .delivery {
+    .order-register .delivery-krasnodar {
         padding: 21px 20px;
+    }
+    .order-register-krasnodar .delivery-krasnodar button{
+        margin-left: 0;
+    }
+    .order-register-krasnodar .select-container{
+        .input-arrow{
+            top: 15px;
+
+            &-active{
+                top: 25px;
+            }
+        }
     }
 
     .user-orders-krasnodar {

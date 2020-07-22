@@ -2740,7 +2740,9 @@ html {
   .user-orders-krasnodar .delivery-krasnodar .place {
     width: 70%; }
 
-.order-register .delivery {
+.order-register-krasnodar .order-krasnodar-info {
+  margin: 0; }
+.order-register-krasnodar .delivery-krasnodar {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -2749,29 +2751,29 @@ html {
   border-top-right-radius: 0;
   padding: 21px 121px;
   margin-top: 0; }
-  .order-register .delivery button {
+  .order-register-krasnodar .delivery-krasnodar button {
     padding: 15px 20px;
     margin-left: 74px;
     font-size: 12px; }
-.order-register .product {
+.order-register-krasnodar .product-krasnodar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .order-register .product p,
-  .order-register .product h3 {
-    margin-right: 0; }
-.order-register input {
-  background-color: #f5f7ff;
+  .order-register-krasnodar .product-krasnodar p,
+  .order-register-krasnodar .product-krasnodar h3 {
+    margin: 0; }
+.order-register-krasnodar input {
+  background-color: #F6F6F6;
   width: 100%;
   padding-left: 27px; }
-.order-register .select-container__options {
+.order-register-krasnodar .select-container__options {
   top: 60px; }
-.order-register .select-container .input-arrow {
+.order-register-krasnodar .select-container .input-arrow {
   top: 25px;
   bottom: 0; }
-.order-register .select-container .input-arrow-active {
+.order-register-krasnodar .select-container .input-arrow-active {
   top: 33px; }
-.order-register .payment_method {
+.order-register-krasnodar .payment_method {
   margin-top: 41px; }
 
 .brands-wrapper {
@@ -3159,7 +3161,7 @@ html {
   .user-orders-krasnodar .delivery-krasnodar .place {
     width: 80%; }
 
-  .order-register .delivery-krasnodar {
+  .order-register-krasnodar .delivery-krasnodar {
     padding: 21px 50px; }
 
   .product-container {
@@ -3237,10 +3239,10 @@ html {
   .modal.buy-fast {
     width: 70%; }
 
-  .order-register .delivery {
+  .order-register-krasnodar .delivery {
     padding: 21px 50px; }
 
-  .order-register .delivery button {
+  .order-register .delivery-krasnodar button {
     padding: 15px 20px;
     margin-left: 0;
     font-size: 12px;
@@ -3474,8 +3476,16 @@ html {
     .modal-title {
       padding: 30px 17px; }
 
-  .order-register .delivery {
+  .order-register .delivery-krasnodar {
     padding: 21px 20px; }
+
+  .order-register-krasnodar .delivery-krasnodar button {
+    margin-left: 0; }
+
+  .order-register-krasnodar .select-container .input-arrow {
+    top: 15px; }
+    .order-register-krasnodar .select-container .input-arrow-active {
+      top: 25px; }
 
   .user-orders-krasnodar .order-krasnodar-info {
     margin: 10px 0; }
@@ -3875,5 +3885,4 @@ html {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
-
 /*# sourceMappingURL=style.css.map */
