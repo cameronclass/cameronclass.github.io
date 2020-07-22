@@ -168,6 +168,11 @@ $('.overlay').click(function (params) {
     $('.modal').fadeOut()
 
 })
+$('.close-modal').click(function (params) {
+    $('.overlay').fadeOut()
+    $('.modal').fadeOut()
+
+})
 $('.checkout-btn').click(function (params) {
 
     $('.modal.success').fadeIn('slow')

@@ -138,6 +138,7 @@
 
     .product-container {
         flex-direction: column;
+        margin-top: 0;
 
 
     }
@@ -169,8 +170,8 @@
     }
 
     .modal.buy-fast {
-        height: 80vh;
-        overflow: scroll;
+        height: 85vh;
+        overflow: hidden;
 
     }
 
@@ -180,7 +181,7 @@
     }
 
     .modal-container {
-        padding: 42px 28px;
+        padding: 42px 28px 0;
     }
 
     .modal.success,
@@ -510,10 +511,10 @@
     }
 
     .summa {
-        flex-direction: column;
+        
 
         p {
-            margin: 15px 0;
+            margin: 0;
             justify-content: center;
         }
     }
