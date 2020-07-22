@@ -112,17 +112,17 @@
 
     }
 
-    .user-orders__products {
+    .user-orders-krasnodar__products {
         padding: 35px 50px;
 
 
     }
 
-    .user-orders .delivery .place {
+    .user-orders-krasnodar .delivery-krasnodar .place {
         width: 80%;
     }
 
-    .order-register .delivery {
+    .order-register .delivery-krasnodar {
         padding: 21px 50px;
     }
 
@@ -279,23 +279,23 @@
         }
     }
 
-    .user-orders__order {
+    .user-orders-krasnodar__order {
 
         h2,
         p {
             font-size: 12px;
         }
 
-        .order-info span {
+        .order-krasnodar-info span {
             font-size: 9px;
 
         }
     }
 
-    .user-orders__products {
+    .user-orders-krasnodar__products {
         padding: 35px 50px;
 
-        .product {
+        .product-krasnodar {
 
             h3,
             p {
@@ -628,8 +628,8 @@
         padding: 21px 20px;
     }
 
-    .user-orders {
-        .order-info {
+    .user-orders-krasnodar {
+        .order-krasnodar-info {
             margin: 10px 0;
         }
 
@@ -639,7 +639,7 @@
 
             padding: 35px 20px;
 
-            .product {
+            .product-krasnodar {
 
                 h3 {
                     margin-right: 50px;
@@ -670,7 +670,7 @@
             }
         }
 
-        .delivery {
+        .delivery-krasnodar {
             align-items: flex-start;
             flex-direction: column;
         }
@@ -1179,7 +1179,7 @@
         width: auto;
     }
 
-    .user-orders__products .product h3 {
+    .user-orders-krasnodar__products .product-krasnodar h3 {
         margin-right: 10px;
 
     }

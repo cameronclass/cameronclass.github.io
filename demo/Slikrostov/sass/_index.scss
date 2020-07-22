@@ -1211,13 +1211,15 @@
   box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
 }
 
-.order-info {
+.order-krasnodar-info {
   display: flex;
   flex-direction: column;
+  margin: 5px;
 
   span {
     font-size: 12px;
     color: $grey;
+    padding-bottom: 5px;
 
   }
 
@@ -1370,7 +1372,7 @@
 
 }
 
-.user-orders {
+.user-orders-krasnodar {
 
   h1 {
     margin: 44px 0;
@@ -1406,7 +1408,7 @@
     }
   }
 
-  .order {
+  .order-krasnodar {
     margin-bottom: 0;
   }
 
@@ -1419,7 +1421,7 @@
     background-color: $white;
   }
 
-  .product {
+  .product-krasnodar {
     display: flex;
     margin-bottom: 27px;
 
@@ -1427,6 +1429,8 @@
     p {
       font-family: $font-bold;
       font-size: 16px;
+      text-align: center;
+      margin: auto;
     }
 
     h3 {
@@ -1440,7 +1444,7 @@
     }
   }
 
-  .delivery {
+  .delivery-krasnodar {
     display: flex;
     align-items: center;
     margin-top: 17px;

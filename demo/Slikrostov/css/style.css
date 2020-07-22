@@ -2552,18 +2552,20 @@ html {
   -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
           box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2); }
 
-.order-info {
+.order-krasnodar-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-  .order-info span {
+          flex-direction: column;
+  margin: 5px; }
+  .order-krasnodar-info span {
     font-size: 12px;
-    color: #5a5a5a; }
-  .order-info p {
+    color: #5a5a5a;
+    padding-bottom: 5px; }
+  .order-krasnodar-info p {
     color: #8CC63F;
     font-family: "Noto Sans Bold";
     font-size: 16px; }
@@ -2673,37 +2675,37 @@ html {
   margin: 0;
   padding: 0px; }
 
-.user-orders h1 {
+.user-orders-krasnodar h1 {
   margin: 44px 0;
   font-size: 30px;
   font-family: "Noto Sans Bold";
   letter-spacing: 0.02em; }
-.user-orders__order {
+.user-orders-krasnodar__order {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   margin-bottom: 11px;
   padding: 22px 0; }
-  .user-orders__order h2 {
+  .user-orders-krasnodar__order h2 {
     font-family: "Noto Sans Bold";
     font-size: 16px; }
-  .user-orders__order .row {
+  .user-orders-krasnodar__order .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .user-orders__order .row > div {
+    .user-orders-krasnodar__order .row > div {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-  .user-orders__order img {
+  .user-orders-krasnodar__order img {
     width: 25px;
     height: 25px; }
-.user-orders .order {
+.user-orders-krasnodar .order-krasnodar {
   margin-bottom: 0; }
-.user-orders__products {
+.user-orders-krasnodar__products {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2711,21 +2713,23 @@ html {
   padding: 35px 121px;
   width: 100%;
   background-color: #ffffff; }
-.user-orders .product {
+.user-orders-krasnodar .product-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 27px; }
-  .user-orders .product h3,
-  .user-orders .product p {
+  .user-orders-krasnodar .product-krasnodar h3,
+  .user-orders-krasnodar .product-krasnodar p {
     font-family: "Noto Sans Bold";
-    font-size: 16px; }
-  .user-orders .product h3 {
+    font-size: 16px;
+    text-align: center;
+    margin: auto; }
+  .user-orders-krasnodar .product-krasnodar h3 {
     margin-right: 67px; }
-  .user-orders .product p {
+  .user-orders-krasnodar .product-krasnodar p {
     color: #8CC63F;
     margin-right: 53px; }
-.user-orders .delivery {
+.user-orders-krasnodar .delivery-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2733,7 +2737,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 17px; }
-  .user-orders .delivery .place {
+  .user-orders-krasnodar .delivery-krasnodar .place {
     width: 70%; }
 
 .order-register .delivery {
@@ -3149,13 +3153,13 @@ html {
     height: auto;
     width: 100%; }
 
-  .user-orders__products {
+  .user-orders-krasnodar__products {
     padding: 35px 50px; }
 
-  .user-orders .delivery .place {
+  .user-orders-krasnodar .delivery-krasnodar .place {
     width: 80%; }
 
-  .order-register .delivery {
+  .order-register .delivery-krasnodar {
     padding: 21px 50px; }
 
   .product-container {
@@ -3258,16 +3262,16 @@ html {
   .delivery .order-info p {
     font-size: 10px; }
 
-  .user-orders__order h2,
-  .user-orders__order p {
+  .user-orders-krasnodar__order h2,
+  .user-orders-krasnodar__order p {
     font-size: 12px; }
-  .user-orders__order .order-info span {
+  .user-orders-krasnodar__order .order-krasnodar-info span {
     font-size: 9px; }
 
-  .user-orders__products {
+  .user-orders-krasnodar__products {
     padding: 35px 50px; }
-    .user-orders__products .product h3,
-    .user-orders__products .product p {
+    .user-orders-krasnodar__products .product-krasnodar h3,
+    .user-orders-krasnodar__products .product-krasnodar p {
       font-size: 12px; }
 
   .slider-krasnodar-text {
@@ -3473,30 +3477,30 @@ html {
   .order-register .delivery {
     padding: 21px 20px; }
 
-  .user-orders .order-info {
+  .user-orders-krasnodar .order-krasnodar-info {
     margin: 10px 0; }
-  .user-orders__products {
+  .user-orders-krasnodar__products {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 35px 20px; }
-    .user-orders__products .product h3 {
+    .user-orders-krasnodar__products .product-krasnodar h3 {
       margin-right: 50px;
       width: 41%; }
-    .user-orders__products .product p {
+    .user-orders-krasnodar__products .product-krasnodar p {
       margin-right: 0; }
-      .user-orders__products .product p:last-child {
+      .user-orders-krasnodar__products .product-krasnodar p:last-child {
         margin-left: 30px; }
-  .user-orders__order {
+  .user-orders-krasnodar__order {
     padding: 20px; }
-    .user-orders__order .row > div {
+    .user-orders-krasnodar__order .row > div {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
-  .user-orders .delivery {
+  .user-orders-krasnodar .delivery-krasnodar {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -3801,7 +3805,7 @@ html {
     height: 10px;
     width: auto; }
 
-  .user-orders__products .product h3 {
+  .user-orders-krasnodar__products .product-krasnodar h3 {
     margin-right: 10px; }
 
   .user-profile .privacy-policy {
