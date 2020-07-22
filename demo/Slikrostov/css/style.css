@@ -1547,7 +1547,7 @@ html {
       color: #309B27; }
   .footer-kransodar-menu > li > a {
     text-transform: uppercase;
-    font-family: "Open Sans SemiBold";
+    font-family: "Noto Sans Bold";
     font-size: 12px; }
   .footer-kransodar-contacts li {
     display: -webkit-box;
@@ -2780,7 +2780,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .brands-wrapper .brand-card {
+  .brands-wrapper .brand-card-krasnodar {
     margin-top: 0;
     margin-right: 10px;
     margin-left: 10px;
@@ -2802,7 +2802,7 @@ html {
     width: 128px;
     height: 128px;
     border-radius: 3px; }
-    .brands-wrapper .brand-card img {
+    .brands-wrapper .brand-card-krasnodar img {
       height: auto;
       width: 100%;
       display: block; }
