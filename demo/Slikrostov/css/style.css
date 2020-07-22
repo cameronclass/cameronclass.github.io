@@ -2198,9 +2198,9 @@ html {
         text-transform: uppercase;
         padding: 14px 27px; }
 
-.model {
+.model-krasnodar {
   margin-top: 50px; }
-  .model-container {
+  .model-krasnodar-container {
     background-color: #ffffff;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2208,45 +2208,45 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0; }
-  .model-img img {
+    margin: 0 -15px; }
+  .model-krasnodar-img img {
     width: 186px;
     height: 190px;
     -o-object-fit: cover;
        object-fit: cover;
     margin: 5px 0 0 15px; }
-  .model-content {
+  .model-krasnodar-content {
     margin-left: 27px; }
-    .model-content h3 {
+    .model-krasnodar-content h3 {
       font-family: "Noto Sans Bold";
       font-size: 24px; }
-    .model-content p {
+    .model-krasnodar-content p {
       font-family: "Noto Sans Bold";
       color: #8CC63F;
       margin: 14px 0;
       font-size: 24px; }
-    .model-content ul {
+    .model-krasnodar-content ul {
       color: #5a5a5a;
       font-size: 12px;
       margin-bottom: 4px; }
-      .model-content ul li {
+      .model-krasnodar-content ul li {
         padding-bottom: 5px; }
-    .model-content__radius {
+    .model-krasnodar-content__radius {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-      .model-content__radius li {
+      .model-krasnodar-content__radius li {
         padding-right: 5px; }
-  .model-items {
+  .model-krasnodar-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .model-brend__logo {
+  .model-krasnodar-brend__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2256,9 +2256,11 @@ html {
     font-family: "Times New Roman Bold";
     font-size: 100px;
     font-weight: bold; }
-    .model-brend__logo img {
-      height: 79px;
-      width: 79px; }
+    .model-krasnodar-brend__logo img {
+      width: 300px; }
+
+.products .row {
+  margin: 0 -15px; }
 
 .about-brand {
   margin-top: 50px; }
@@ -3199,7 +3201,12 @@ html {
       width: 100%; }
 
   .about-brand__logo {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .model-krasnodar-brend__logo {
+    margin-right: 20px; }
+    .model-krasnodar-brend__logo img {
+      width: 100%; } }
 @media screen and (max-width: 930px) {
   .modal.buy-fast .product-container {
     -webkit-box-orient: vertical;
@@ -3211,6 +3218,11 @@ html {
   .modal.buy-fast .checkout-item {
     margin-bottom: 0; } }
 @media screen and (max-width: 768px) {
+  .model-krasnodar-brend__logo {
+    margin-bottom: 20px; }
+    .model-krasnodar-brend__logo img {
+      width: 61%; }
+
   .modal.success,
   .modal.attention {
     width: 45%; }
@@ -3301,12 +3313,12 @@ html {
       border-top-right-radius: 0;
       border-bottom-left-radius: 3px; }
 
-  .model-brend__logo {
+  .model-krasnodar-brend__logo {
     font-size: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .model-brend__logo svg {
+    .model-krasnodar-brend__logo svg {
       height: 50px;
       width: 50px; }
 
@@ -3364,6 +3376,17 @@ html {
   .checkout-item {
     margin-bottom: 10px; } }
 @media screen and (max-width: 520px) {
+  .model-krasnodar-container {
+    margin: 0;
+    padding-bottom: 10px; }
+    .model-krasnodar-container .model-krasnodar-items {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+
+  .products .row {
+    margin: 0; }
+
   .container {
     padding: 0; }
 
@@ -3416,7 +3439,7 @@ html {
             align-items: center;
     padding-top: 0; }
     .header-krasnodar-menu .menu-krasnodar-content__basket {
-      width: 90%; }
+      width: 45%; }
       .header-krasnodar-menu .menu-krasnodar-content__basket span {
         margin-right: 5px;
         padding: 5px 8px; }
@@ -3563,20 +3586,20 @@ html {
     width: auto;
     height: 27px; }
 
-  .model-content {
+  .model-krasnodar-content {
     padding-left: 10px; }
-  .model-items {
+  .model-krasnodar-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .model-brend__logo {
+  .model-krasnodar-brend__logo {
     font-size: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 10px 0; }
-    .model-brend__logo svg {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 10px 0 20px 37px; }
+    .model-krasnodar-brend__logo svg {
       height: 30px;
       width: 30px; }
 
@@ -3840,6 +3863,13 @@ html {
     font-size: 10px; }
 
   .slider-krasnodar-button {
-    display: none; } }
+    display: none; }
+
+  .header-krasnodar-menu .menu-krasnodar-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 /*# sourceMappingURL=style.css.map */
