@@ -1,6 +1,6 @@
 @media screen and (max-width: 1366px) {
     .summa {
-        flex-direction: column;
+        margin: 0;
 
         p {
             margin: 10px 0;
@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 1700px) {
     .summa {
-        flex-direction: column;
+        margin: 0;
 
         p {
             margin: 10px 0;
@@ -144,7 +144,7 @@
     }
 
     .modal .counter {
-        background-color: #f5f7ff;
+        background-color:$white-second;
         width: 100%;
         float: right;
     }
@@ -511,10 +511,10 @@
     }
 
     .summa {
-        flex-direction: column;
+  
 
         p {
-            margin: 0;
+                margin:0;
             justify-content: center;
         }
     }
