@@ -8,6 +8,17 @@
   @include icon(url(../img/icons/vider.jpg), 30px, 30px);
 }
 
+.i-star-rated {
+  @include icon(url(../img/icons/star-rated.svg), 15px, 15px);
+}
+.i-star {
+  @include icon(url(../img/icons/star.svg), 15px, 15px);
+}
+
+.i-confirm {
+  @include icon(url(../img/icons/confirm.svg), 14px, 12px);
+}
+
 /* .i-header-tel{
   @include icon(url(../img/icons/))
 } */

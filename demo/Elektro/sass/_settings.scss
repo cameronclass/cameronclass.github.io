@@ -23,9 +23,13 @@ h5,
 h6 {
   font-family: $font-exo;
   font-weight: bold;
-  margin-bottom: 0.5em;
-  margin-top: 0.8em;
   line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 span,
 li,
@@ -54,6 +58,14 @@ button {
 
 a {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 img {
@@ -68,6 +80,16 @@ img {
 }
 .text-black {
   color: #000;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+.bg-green {
+  background-color: $green;
+}
+.bg-red {
+  background-color: $red;
 }
 
 .btn-border {
@@ -201,6 +223,11 @@ img {
     }
   }
 }
+.list-6 {
+  li {
+    width: 16.666%;
+  }
+}
 .list-8 {
   li {
     width: 12.5%;
@@ -210,5 +237,74 @@ img {
         width: 120px;
       }
     }
+  }
+}
+
+/* Карточка */
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 30px;
+
+  img {
+    width: 100%;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      margin: 20px auto;
+      width: auto;
+      height: 170px;
+    }
+
+    .card__image_tags {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        padding: 4px 10px;
+        border-radius: 3px;
+        color: white;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    
+
+    &_name {
+      font-size: 14px;
+      height: 45px;
+      overflow: hidden;
+    }
+  }
+}
+/* Звездочка */
+.stars{
+  display: flex;
+  justify-content: center;
+
+  span{
+    margin-right: 2px;
+  }
+}
+.count{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+  &__text{
+    font-size: 13px;
+    margin-left: 5px;
   }
 }
