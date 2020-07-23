@@ -93,8 +93,8 @@
         }
     }
 
-    .one-product {
-        .attention-price .icon-attenition {
+    .one-product-krasnodar {
+        .attention-price-krasnodar .icon-attenition {
 
             margin-left: 18px;
         }
@@ -257,9 +257,9 @@
         margin-top: 15px;
     }
 
-    .one-product {
+    .one-product-krasnodar {
 
-        .product-options {
+        .krasnodar-product-options {
             flex-direction: column;
 
             table {
@@ -269,13 +269,13 @@
         }
     }
 
-    .delivery {
-        .order-info span {
+    .delivery-krasnodar {
+        .order-krasnodar-info span {
             font-size: 8px;
 
         }
 
-        .order-info p {
+        .order-krasnodar-info p {
             font-size: 10px;
         }
     }
@@ -469,7 +469,21 @@
     }
 
 
+    .one-product-krasnodar__img{
+        height: auto;
+    }
+    .one-product-krasnodar .krasnodar-product-options table{
+        min-width: 100%;
+    }
+    .one-product-krasnodar-container__mobile{
+        padding: 0 12px 0 27px;
+        .manufacturer{
+            padding-top: 57px;
+            justify-content: space-between;
+            padding-right: 15px;
+        }
 
+    }
 
 
 }
@@ -856,29 +870,48 @@
         }
     }
 
-    .one-product-container {
+    .one-product-krasnodar-container {
+        
 
+        &__mobile{
+            padding: 0 12px 0 27px;
+            .manufacturer{
+                padding-top: 57px;
+                justify-content: space-between;
+                padding-right: 15px;
+            }
+
+        }
 
         h2 {
             font-size: 22px;
         }
 
-        .buy-product {
+        .one-product-krasnodar__buy-product {
             margin-top: 10px;
-
+            flex-direction: column;
             p {
-                margin-top: 10px;
+                margin-top: 20px;
             }
 
-        }
-
-        .buy-product__buttons {
-            button {
-                margin: 0;
-                margin-top: 10px;
+            .one-product-krasnodar-buy-product__buttons {
+                margin-top: 40px;
+                margin-bottom: 30px;
+                margin-right: 15px;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    margin: 0;
+                    padding: 15px 30px;
+                    
+                    
+                }
             }
         }
+
+        
     }
+
 
     .icon-attenition {
         margin-left: 0 !important;
@@ -886,7 +919,7 @@
 
     }
 
-    .attention-price>div {
+    .attention-price-krasnodar>div {
         padding-left: 0;
     }
 
@@ -1280,7 +1313,12 @@
         flex-wrap: wrap;
     }
 
-
+.one-product-krasnodar-buy-product__buttons{
+    flex-direction: column;
+    button{
+        margin-top: 10px !important;
+    }
+}
 
 
 
