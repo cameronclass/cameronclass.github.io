@@ -657,7 +657,9 @@ html {
   display: -webkit-box;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
 
 .no-gutters > .col,
 .no-gutters > [class*="col-"] {
@@ -1243,49 +1245,6 @@ html {
     min-width: 0;
     max-width: 100%; }
 
-  .row-cols-sm-1 > * {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-            flex: 0 0 100%;
-    max-width: 100%; }
-
-  .row-cols-sm-2 > * {
-    -ms-flex: 0 0 50%;
-    -webkit-box-flex: 0;
-            flex: 0 0 50%;
-    max-width: 50%; }
-
-  .row-cols-sm-3 > * {
-    -ms-flex: 0 0 33.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 33.333333%;
-    max-width: 33.333333%; }
-
-  .row-cols-sm-4 > * {
-    -ms-flex: 0 0 25%;
-    -webkit-box-flex: 0;
-            flex: 0 0 25%;
-    max-width: 25%; }
-
-  .row-cols-sm-5 > * {
-    -ms-flex: 0 0 20%;
-    -webkit-box-flex: 0;
-            flex: 0 0 20%;
-    max-width: 20%; }
-
-  .row-cols-sm-6 > * {
-    -ms-flex: 0 0 16.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 16.666667%;
-    max-width: 16.666667%; }
-
-  .krasnodar-col-sm-auto {
-    -ms-flex: 0 0 auto;
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
-    width: auto;
-    max-width: 100%; }
-
   .krasnodar-col-xs-1 {
     -ms-flex: 0 0 8.333333%;
     -webkit-box-flex: 0;
@@ -1416,7 +1375,8 @@ html {
   display: none; }
 .logo img {
   height: 50px;
-  width: 350px; }
+  width: 350px;
+  margin-left: -23px; }
 
 .header-krasnodar {
   background-color: #ffffff;
@@ -1704,20 +1664,20 @@ html {
 .desk-d-none {
   display: none; }
 
-.catalog-krasnodar .row {
-  margin-left: -15px;
-  margin-right: -15px; }
-.catalog-krasnodar .krasnodar-col-xl-3,
-.catalog-krasnodar .krasnodar-col-lg-4,
-.catalog-krasnodar .krasnodar-col-md-6,
-.catalog-krasnodar .krasnodar-col-sm-6 {
-  padding-right: 15px;
-  padding-left: 15px; }
-.catalog-krasnodar .krasnodar-col-xs-6 {
-  padding-right: 7.5px;
-  padding-left: 7.5px; }
-.catalog-krasnodar .card-col {
-  margin-bottom: 23px; }
+.catalog-krasnodar {
+  margin-right: -7.5px;
+  margin-left: -7.5px; }
+  .catalog-krasnodar .krasnodar-col-xl-3,
+  .catalog-krasnodar .krasnodar-col-lg-4,
+  .catalog-krasnodar .krasnodar-col-md-6,
+  .catalog-krasnodar .krasnodar-col-sm-6 {
+    padding-right: 15px;
+    padding-left: 15px; }
+  .catalog-krasnodar .krasnodar-col-xs-6 {
+    padding-right: 7.5px;
+    padding-left: 7.5px; }
+  .catalog-krasnodar .card-col {
+    margin-bottom: 23px; }
 
 .card-krasnodar {
   background: #ffffff;
@@ -1797,7 +1757,8 @@ html {
             align-items: center;
     right: 8px;
     top: 18%;
-    position: absolute; }
+    position: absolute;
+    cursor: pointer; }
   .select-container .input-active {
     border: 1px solid #ffffff;
     border-bottom-right-radius: 0;
@@ -2022,7 +1983,7 @@ html {
           box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   border-radius: 3px;
-  margin: 50px 0;
+  margin-top: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -2173,7 +2134,8 @@ html {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer span, .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer .krasnodar-product-options__logo {
+        .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer span,
+        .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer .krasnodar-product-options__logo {
           font-family: "Times New Roman Bold";
           font-weight: bold;
           font-size: 22px;
@@ -2355,7 +2317,6 @@ html {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 100%;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
@@ -2586,6 +2547,68 @@ html {
     font-family: "Noto Sans Bold";
     font-size: 16px; }
 
+.checkout-krasnodar .krasnodar-col-xl-1,
+.checkout-krasnodar .krasnodar-col-xl-2,
+.checkout-krasnodar .krasnodar-col-xl-3,
+.checkout-krasnodar .krasnodar-col-xl-4,
+.checkout-krasnodar .krasnodar-col-xl-5,
+.checkout-krasnodar .krasnodar-col-xl-6,
+.checkout-krasnodar .krasnodar-col-xl-7,
+.checkout-krasnodar .krasnodar-col-xl-8,
+.checkout-krasnodar .krasnodar-col-xl-9,
+.checkout-krasnodar .krasnodar-col-xl-10,
+.checkout-krasnodar .krasnodar-col-xl-11,
+.checkout-krasnodar .krasnodar-col-xl-12,
+.checkout-krasnodar .krasnodar-col-lg-1,
+.checkout-krasnodar .krasnodar-col-lg-2,
+.checkout-krasnodar .krasnodar-col-lg-3,
+.checkout-krasnodar .krasnodar-col-lg-4,
+.checkout-krasnodar .krasnodar-col-lg-5,
+.checkout-krasnodar .krasnodar-col-lg-6,
+.checkout-krasnodar .krasnodar-col-lg-7,
+.checkout-krasnodar .krasnodar-col-lg-8,
+.checkout-krasnodar .krasnodar-col-lg-9,
+.checkout-krasnodar .krasnodar-col-lg-10,
+.checkout-krasnodar .krasnodar-col-lg-11,
+.checkout-krasnodar .krasnodar-col-lg-12,
+.checkout-krasnodar .krasnodar-col-md-1,
+.checkout-krasnodar .krasnodar-col-md-2,
+.checkout-krasnodar .krasnodar-col-md-3,
+.checkout-krasnodar .krasnodar-col-md-4,
+.checkout-krasnodar .krasnodar-col-md-5,
+.checkout-krasnodar .krasnodar-col-md-6,
+.checkout-krasnodar .krasnodar-col-md-7,
+.checkout-krasnodar .krasnodar-col-md-8,
+.checkout-krasnodar .krasnodar-col-md-9,
+.checkout-krasnodar .krasnodar-col-md-10,
+.checkout-krasnodar .krasnodar-col-md-11,
+.checkout-krasnodar .krasnodar-col-md-12,
+.checkout-krasnodar .krasnodar-col-sm-1,
+.checkout-krasnodar .krasnodar-col-sm-2,
+.checkout-krasnodar .krasnodar-col-sm-3,
+.checkout-krasnodar .krasnodar-col-sm-4,
+.checkout-krasnodar .krasnodar-col-sm-5,
+.checkout-krasnodar .krasnodar-col-sm-6,
+.checkout-krasnodar .krasnodar-col-sm-7,
+.checkout-krasnodar .krasnodar-col-sm-8,
+.checkout-krasnodar .krasnodar-col-sm-9,
+.checkout-krasnodar .krasnodar-col-sm-10,
+.checkout-krasnodar .krasnodar-col-sm-11,
+.checkout-krasnodar .krasnodar-col-sm-12,
+.checkout-krasnodar .krasnodar-col-xs-1,
+.checkout-krasnodar .krasnodar-col-xs-2,
+.checkout-krasnodar .krasnodar-col-xs-3,
+.checkout-krasnodar .krasnodar-col-xs-4,
+.checkout-krasnodar .krasnodar-col-xs-5,
+.checkout-krasnodar .krasnodar-col-xs-6,
+.checkout-krasnodar .krasnodar-col-xs-7,
+.checkout-krasnodar .krasnodar-col-xs-8,
+.checkout-krasnodar .krasnodar-col-xs-9,
+.checkout-krasnodar .krasnodar-col-xs-10,
+.checkout-krasnodar .krasnodar-col-xs-11,
+.checkout-krasnodar .krasnodar-col-xs-12 {
+  padding-left: 10px;
+  padding-right: 15px; }
 .checkout-krasnodar-continue {
   font-size: 12px;
   padding: 15px 20px;
@@ -3118,7 +3141,8 @@ html {
     width: 65%; } }
 @media screen and (max-width: 1024px) {
   .logo img {
-    width: 220px; }
+    width: 220px;
+    margin-left: 0; }
 
   .product-container {
     padding: 0; }
@@ -3414,6 +3438,10 @@ html {
               justify-content: space-between;
       padding-right: 15px; } }
 @media screen and (max-width: 520px) {
+  .catalog-krasnodar, .slider-krasnodar {
+    margin-right: -15px;
+    margin-left: -15px; }
+
   .model-krasnodar-container {
     margin: 0;
     padding-bottom: 10px; }
@@ -3425,8 +3453,8 @@ html {
   .products .row {
     margin: 0; }
 
-  .container {
-    padding: 0; }
+  .header-krasnodar .row {
+    margin: 0; }
 
   .search-car-by {
     -webkit-box-orient: vertical;
@@ -3575,8 +3603,11 @@ html {
   .user-profile-krasnodar .privacy-policy .checkbox span {
     padding-left: 20px; }
 
+  .brands-wrapper .brand-card-krasnodar {
+    width: 120px; }
+
   .about-brand__logo {
-    margin: 100px 0 80px; }
+    margin: 100px 40px 80px; }
   .about-brand__content h1 {
     width: 100%;
     font-size: 25px;
@@ -3723,7 +3754,8 @@ html {
       display: flex;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: flex-end; }
+              justify-content: flex-end;
+      padding-bottom: 10px; }
       .logo .header-krasnodar-menu__phone li > a > span {
         font-size: 12px; }
 
@@ -3948,6 +3980,17 @@ html {
         -ms-flex-direction: column;
             flex-direction: column; }
     .one-product-krasnodar-buy-product__buttons button {
-      margin-top: 10px !important; } }
+      margin-top: 10px !important; }
 
+  .logo img {
+    width: 220px; }
+
+  .logo .header-krasnodar-menu__phone {
+    padding-bottom: 5px; }
+
+  .header-krasnodar-menu .menu-krasnodar-content__basket {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; } }
 /*# sourceMappingURL=style.css.map */

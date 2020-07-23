@@ -2,7 +2,7 @@
   height: 20px;
   width: 20px;
   fill: $green;
-  
+
   transition: fill 0.3s ease;
 
   &:hover {
@@ -150,11 +150,10 @@
 
 .catalog-krasnodar {
 
-  .row {
-    margin-left: -15px;
-    margin-right: -15px;
+  margin-right: -7.5px;
+  margin-left: -7.5px;
 
-  }
+
 
   .krasnodar-col-xl-3,
   .krasnodar-col-lg-4,
@@ -267,6 +266,7 @@
     right: 8px;
     top: 18%;
     position: absolute;
+    cursor: pointer;
   }
 
   .input-active {
@@ -351,6 +351,7 @@
     border-radius: 3px;
     box-sizing: border-box;
     margin-top: 50px;
+
   }
 
   .select-containers {
@@ -394,13 +395,14 @@
       font-size: 12px;
       margin: 8px 0;
       display: block;
-      &.search-input-bold{
+
+      &.search-input-bold {
         font-family: $font-bold;
       }
-      
+
       span {
         color: rgba(90, 90, 90, 0.5);
-        
+
       }
     }
 
@@ -411,7 +413,7 @@
     }
 
     input {
-      box-shadow:inset 1px 1px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
       background: $white-second;
       border: 1px solid #ffffff;
       box-sizing: border-box;
@@ -549,7 +551,7 @@
     background-color: $white;
     border-radius: 3px;
 
-    margin: 50px 0;
+    margin-top: 50px;
     align-items: center;
 
     h2 {
@@ -584,6 +586,8 @@
 
 .slider-krasnodar {
   margin-top: 50px;
+
+  .row {}
 
   &-text {
     position: absolute;
@@ -734,7 +738,8 @@
     margin: 26px 0 53px;
     flex-wrap: wrap;
     position: relative;
-    &__logo{
+
+    &__logo {
       width: 140px;
     }
 
@@ -754,7 +759,8 @@
           display: flex;
           align-items: center;
 
-          span,.krasnodar-product-options__logo {
+          span,
+          .krasnodar-product-options__logo {
             font-family: $font-times-bold;
             font-weight: bold;
             font-size: 22px;
@@ -785,17 +791,18 @@
     }
 
 
+  }
+
+  .one-product-krasnodar-buy-product__buttons {
+    font-size: 12px;
+    margin-right: 10px;
+
+    button {
+      margin-left: 23px;
+      text-transform: uppercase;
+      padding: 14px 27px;
+
     }
-    .one-product-krasnodar-buy-product__buttons{
-      font-size: 12px;
-      margin-right: 10px;
-
-      button {
-        margin-left: 23px;
-        text-transform: uppercase;
-        padding: 14px 27px;
-
-      }
   }
 }
 
@@ -866,13 +873,14 @@
     font-weight: bold;
 
     img {
-     
+
       width: 300px;
     }
   }
 }
-.products{
-  .row{
+
+.products {
+  .row {
     margin: 0 -15px;
   }
 }
@@ -951,17 +959,19 @@
       .active {
         line-height: 18px;
         border-bottom: 2px solid $green;
-        color:$green;
+        color: $green;
       }
-      .icon{
+
+      .icon {
         stroke: $green-hover;
         margin-right: 5px;
       }
 
-      .icon-active{
+      .icon-active {
         fill: $green;
         stroke: $green;
       }
+
       img {
         width: 25px;
         height: 25px;
@@ -978,7 +988,6 @@
 
     .product-krasnodar-card__item {
       display: flex;
-      width: 100%;
       justify-content: space-between;
       align-items: center;
       box-shadow: $shadow;
@@ -1009,7 +1018,7 @@
 
         img {
           width: 180px;
-         
+
         }
       }
 
@@ -1137,7 +1146,7 @@
 
   }
 
-  
+
   .select-container {
     margin-right: 13px;
 
@@ -1149,12 +1158,15 @@
       box-shadow: $shadow;
       height: 35px;
     }
-    .input-arrow{
+
+    .input-arrow {
       top: 19%;
+
       &-active {
 
         top: 11px;
-    }
+      }
+
       &-close {
         top: 8px;
       }
@@ -1252,6 +1264,73 @@
 
 .checkout-krasnodar {
 
+  .krasnodar-col-xl-1,
+  .krasnodar-col-xl-2,
+  .krasnodar-col-xl-3,
+  .krasnodar-col-xl-4,
+  .krasnodar-col-xl-5,
+  .krasnodar-col-xl-6,
+  .krasnodar-col-xl-7,
+  .krasnodar-col-xl-8,
+  .krasnodar-col-xl-9,
+  .krasnodar-col-xl-10,
+  .krasnodar-col-xl-11,
+  .krasnodar-col-xl-12,
+
+  .krasnodar-col-lg-1,
+  .krasnodar-col-lg-2,
+  .krasnodar-col-lg-3,
+  .krasnodar-col-lg-4,
+  .krasnodar-col-lg-5,
+  .krasnodar-col-lg-6,
+  .krasnodar-col-lg-7,
+  .krasnodar-col-lg-8,
+  .krasnodar-col-lg-9,
+  .krasnodar-col-lg-10,
+  .krasnodar-col-lg-11,
+  .krasnodar-col-lg-12,
+
+  .krasnodar-col-md-1,
+  .krasnodar-col-md-2,
+  .krasnodar-col-md-3,
+  .krasnodar-col-md-4,
+  .krasnodar-col-md-5,
+  .krasnodar-col-md-6,
+  .krasnodar-col-md-7,
+  .krasnodar-col-md-8,
+  .krasnodar-col-md-9,
+  .krasnodar-col-md-10,
+  .krasnodar-col-md-11,
+  .krasnodar-col-md-12,
+
+  .krasnodar-col-sm-1,
+  .krasnodar-col-sm-2,
+  .krasnodar-col-sm-3,
+  .krasnodar-col-sm-4,
+  .krasnodar-col-sm-5,
+  .krasnodar-col-sm-6,
+  .krasnodar-col-sm-7,
+  .krasnodar-col-sm-8,
+  .krasnodar-col-sm-9,
+  .krasnodar-col-sm-10,
+  .krasnodar-col-sm-11,
+  .krasnodar-col-sm-12,
+
+  .krasnodar-col-xs-1,
+  .krasnodar-col-xs-2,
+  .krasnodar-col-xs-3,
+  .krasnodar-col-xs-4,
+  .krasnodar-col-xs-5,
+  .krasnodar-col-xs-6,
+  .krasnodar-col-xs-7,
+  .krasnodar-col-xs-8,
+  .krasnodar-col-xs-9,
+  .krasnodar-col-xs-10,
+  .krasnodar-col-xs-11,
+  .krasnodar-col-xs-12{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   &-continue {
     font-size: 12px;
     padding: 15px 20px;
@@ -1261,7 +1340,7 @@
 
   .finish {
     display: flex;
- 
+
     justify-content: flex-end;
     margin-top: 57px;
   }
@@ -1275,7 +1354,8 @@
       font-size: 12px;
       font-family: $font;
     }
-    p{
+
+    p {
       font-size: 20px;
     }
   }
@@ -1376,6 +1456,7 @@
     margin-right: 15px;
 
   }
+
   .counter-krasnodar #increase {
     margin-left: 15px;
     margin-right: 15px;
@@ -1624,7 +1705,7 @@
     .product-container {
       display: flex;
       justify-content: space-between;
-  
+
       position: relative;
 
     }
@@ -1722,7 +1803,7 @@
     width: 30%;
     padding-bottom: 46px;
     display: none;
-    
+
     .modal-title {
       display: flex;
       align-items: center;
@@ -1733,7 +1814,7 @@
         height: 25px;
       }
     }
-    
+
   }
 
   button {
@@ -1777,10 +1858,11 @@
         justify-content: space-between;
         margin-top: 43px;
 
-        .btn-cancel{
-      background-color: #CE1348;
+        .btn-cancel {
+          background-color: #CE1348;
 
         }
+
         button {
           width: 100%;
           margin-right: 10px;
