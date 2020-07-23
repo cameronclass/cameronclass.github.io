@@ -7,7 +7,7 @@
           box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans Regular";
+  font-family: "Noto Sans Regular";
   color: #333333;
   background-color: #F6F6F6; }
 
@@ -49,8 +49,8 @@ button {
   font-style: normal;
   font-display: swap; }
 @font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-family: "Noto Sans Regular";
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
@@ -58,18 +58,6 @@ button {
   font-family: "Noto Sans Bold";
   src: url("../fonts/NotoSans-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "Open Sans SemiBold";
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
   font-style: normal;
   font-display: swap; }
 .icon-fill-none {
@@ -749,130 +737,6 @@ html {
   position: relative;
   width: 100%; }
 
-@media (max-width: 576px) {
-  .krasnodar-col-xs {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    -webkit-box-flex: 1;
-            flex-grow: 1;
-    min-width: 0;
-    max-width: 100%; }
-
-  .row-cols-sm-1 > * {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-            flex: 0 0 100%;
-    max-width: 100%; }
-
-  .row-cols-sm-2 > * {
-    -ms-flex: 0 0 50%;
-    -webkit-box-flex: 0;
-            flex: 0 0 50%;
-    max-width: 50%; }
-
-  .row-cols-sm-3 > * {
-    -ms-flex: 0 0 33.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 33.333333%;
-    max-width: 33.333333%; }
-
-  .row-cols-sm-4 > * {
-    -ms-flex: 0 0 25%;
-    -webkit-box-flex: 0;
-            flex: 0 0 25%;
-    max-width: 25%; }
-
-  .row-cols-sm-5 > * {
-    -ms-flex: 0 0 20%;
-    -webkit-box-flex: 0;
-            flex: 0 0 20%;
-    max-width: 20%; }
-
-  .row-cols-sm-6 > * {
-    -ms-flex: 0 0 16.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 16.666667%;
-    max-width: 16.666667%; }
-
-  .krasnodar-col-sm-auto {
-    -ms-flex: 0 0 auto;
-    -webkit-box-flex: 0;
-            flex: 0 0 auto;
-    width: auto;
-    max-width: 100%; }
-
-  .krasnodar-col-xs-1 {
-    -ms-flex: 0 0 8.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 8.333333%;
-    max-width: 8.333333%; }
-
-  .krasnodar-col-xs-2 {
-    -ms-flex: 0 0 16.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 16.666667%;
-    max-width: 16.666667%; }
-
-  .krasnodar-col-xs-3 {
-    -ms-flex: 0 0 25%;
-    -webkit-box-flex: 0;
-            flex: 0 0 25%;
-    max-width: 25%; }
-
-  .krasnodar-col-xs-4 {
-    -ms-flex: 0 0 33.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 33.333333%;
-    max-width: 33.333333%; }
-
-  .krasnodar-col-sm-5 {
-    -ms-flex: 0 0 41.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 41.666667%;
-    max-width: 41.666667%; }
-
-  .krasnodar-col-xs-6 {
-    -ms-flex: 0 0 50%;
-    -webkit-box-flex: 0;
-            flex: 0 0 50%;
-    max-width: 50%; }
-
-  .krasnodar-col-xs-7 {
-    -ms-flex: 0 0 58.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 58.333333%;
-    max-width: 58.333333%; }
-
-  .krasnodar-col-xs-8 {
-    -ms-flex: 0 0 66.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 66.666667%;
-    max-width: 66.666667%; }
-
-  .krasnodar-col-xs-9 {
-    -ms-flex: 0 0 75%;
-    -webkit-box-flex: 0;
-            flex: 0 0 75%;
-    max-width: 75%; }
-
-  .krasnodar-col-xs-10 {
-    -ms-flex: 0 0 83.333333%;
-    -webkit-box-flex: 0;
-            flex: 0 0 83.333333%;
-    max-width: 83.333333%; }
-
-  .krasnodar-col-xs-11 {
-    -ms-flex: 0 0 91.666667%;
-    -webkit-box-flex: 0;
-            flex: 0 0 91.666667%;
-    max-width: 91.666667%; }
-
-  .krasnodar-col-xs-12 {
-    -ms-flex: 0 0 100%;
-    -webkit-box-flex: 0;
-            flex: 0 0 100%;
-    max-width: 100%; } }
 @media (min-width: 576px) {
   .krasnodar-col-sm {
     -ms-flex-preferred-size: 0;
@@ -1369,6 +1233,130 @@ html {
     -webkit-box-flex: 0;
             flex: 0 0 100%;
     max-width: 100%; } }
+@media (max-width: 576px) {
+  .krasnodar-col-xs {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    min-width: 0;
+    max-width: 100%; }
+
+  .row-cols-sm-1 > * {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; }
+
+  .row-cols-sm-2 > * {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+  .row-cols-sm-3 > * {
+    -ms-flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+
+  .row-cols-sm-4 > * {
+    -ms-flex: 0 0 25%;
+    -webkit-box-flex: 0;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+  .row-cols-sm-5 > * {
+    -ms-flex: 0 0 20%;
+    -webkit-box-flex: 0;
+            flex: 0 0 20%;
+    max-width: 20%; }
+
+  .row-cols-sm-6 > * {
+    -ms-flex: 0 0 16.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+
+  .krasnodar-col-sm-auto {
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+            flex: 0 0 auto;
+    width: auto;
+    max-width: 100%; }
+
+  .krasnodar-col-xs-1 {
+    -ms-flex: 0 0 8.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+
+  .krasnodar-col-xs-2 {
+    -ms-flex: 0 0 16.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+
+  .krasnodar-col-xs-3 {
+    -ms-flex: 0 0 25%;
+    -webkit-box-flex: 0;
+            flex: 0 0 25%;
+    max-width: 25%; }
+
+  .krasnodar-col-xs-4 {
+    -ms-flex: 0 0 33.333333% !important;
+    -webkit-box-flex: 0 !important;
+            flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important; }
+
+  .krasnodar-col-sm-5 {
+    -ms-flex: 0 0 41.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
+
+  .krasnodar-col-xs-6 {
+    -ms-flex: 0 0 50%;
+    -webkit-box-flex: 0;
+            flex: 0 0 50%;
+    max-width: 50%; }
+
+  .krasnodar-col-xs-7 {
+    -ms-flex: 0 0 58.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+
+  .krasnodar-col-xs-8 {
+    -ms-flex: 0 0 66.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+
+  .krasnodar-col-xs-9 {
+    -ms-flex: 0 0 75%;
+    -webkit-box-flex: 0;
+            flex: 0 0 75%;
+    max-width: 75%; }
+
+  .krasnodar-col-xs-10 {
+    -ms-flex: 0 0 83.333333%;
+    -webkit-box-flex: 0;
+            flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+
+  .krasnodar-col-xs-11 {
+    -ms-flex: 0 0 91.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+
+  .krasnodar-col-xs-12 {
+    -ms-flex: 0 0 100%;
+    -webkit-box-flex: 0;
+            flex: 0 0 100%;
+    max-width: 100%; } }
 .p-0 {
   padding: 0; }
 
@@ -1406,6 +1394,10 @@ html {
 
 .w-100 {
   width: 100%; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
 
 .logo a {
   font-family: "Times New Roman", Times, serif;
@@ -1509,7 +1501,7 @@ html {
           -ms-flex-pack: justify;
               justify-content: space-between;
       text-transform: uppercase;
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       margin: 15px 0 10px 0px; }
       .header-krasnodar .menu-krasnodar-content__basket p {
         display: inline; }
@@ -1524,10 +1516,6 @@ html {
         margin: 0 10px 0 3px;
         -webkit-transition: all 100ms ease-in;
         transition: all 100ms ease-in; }
-  .header-krasnodar .registr {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .header-krasnodar .basket-item a {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1535,6 +1523,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .header-krasnodar .basket-item a span {
+      padding: 5px 2px 0px 4px; }
   .header-krasnodar .basket-item img {
     width: 20px;
     height: 17px;
@@ -1555,7 +1545,7 @@ html {
       color: #309B27; }
   .footer-kransodar-menu > li > a {
     text-transform: uppercase;
-    font-family: "Open Sans SemiBold";
+    font-family: "Noto Sans Bold";
     font-size: 12px; }
   .footer-kransodar-contacts li {
     display: -webkit-box;
@@ -1595,7 +1585,7 @@ html {
 
 .btn {
   display: inline-block;
-  font-family: "Open Sans SemiBold";
+  font-family: "Noto Sans Bold";
   color: #ffffff;
   text-align: center;
   cursor: pointer;
@@ -1615,7 +1605,7 @@ html {
   margin-right: auto !important;
   margin-top: auto; }
 
-.search {
+.search-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1625,7 +1615,7 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 50px 0 34px; }
-  .search-result {
+  .search-krasnodar-result {
     font-size: 24px;
     font-family: "Noto Sans Bold"; }
 
@@ -1710,24 +1700,24 @@ html {
 .desk-d-none {
   display: none; }
 
-.catalog .row {
+.catalog-krasnodar .row {
   margin-left: -15px;
   margin-right: -15px; }
-.catalog .krasnodar-col-xl-3,
-.catalog .krasnodar-col-lg-4,
-.catalog .krasnodar-col-md-6,
-.catalog .krasnodar-col-sm-6 {
+.catalog-krasnodar .krasnodar-col-xl-3,
+.catalog-krasnodar .krasnodar-col-lg-4,
+.catalog-krasnodar .krasnodar-col-md-6,
+.catalog-krasnodar .krasnodar-col-sm-6 {
   padding-right: 15px;
   padding-left: 15px; }
-.catalog .krasnodar-col-xs-6 {
+.catalog-krasnodar .krasnodar-col-xs-6 {
   padding-right: 7.5px;
   padding-left: 7.5px; }
-.catalog .card-col {
+.catalog-krasnodar .card-col {
   margin-bottom: 23px; }
 
-.card {
+.card-krasnodar {
   background: #ffffff;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
@@ -1737,29 +1727,29 @@ html {
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   height: 100%; }
-  .card:hover {
+  .card-krasnodar:hover {
     -webkit-transform: translateY(3px);
             transform: translateY(3px); }
-  .card img {
+  .card-krasnodar img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 194px; }
-  .card-content {
+  .card-krasnodar-content {
     padding: 10px 15px 0; }
-    .card-content__title {
+    .card-krasnodar-content__title {
       width: 80%;
       font-size: 16px;
       height: 55px;
       overflow: hidden; }
-    .card-content__price {
+    .card-krasnodar-content__price {
       color: #8CC63F;
       font-size: 20px;
       margin: 10px 0 8px; }
-    .card-content-in__stock {
-      font-family: "Open Sans Regular";
+    .card-krasnodar-content-in__stock {
+      font-family: "Noto Sans Regular";
       color: #5a5a5a;
       font-size: 12px; }
-    .card-content__buttons {
+    .card-krasnodar-content__buttons {
       font-size: 12px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1768,7 +1758,7 @@ html {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-top: 10px; }
-      .card-content__buttons button {
+      .card-krasnodar-content__buttons button {
         padding: 12px 20px; }
 
 .active {
@@ -1914,6 +1904,8 @@ html {
     font-size: 12px;
     margin: 8px 0;
     display: block; }
+    .filter-krasnodar-select label.search-input-bold {
+      font-family: "Noto Sans Bold"; }
     .filter-krasnodar-select label span {
       color: rgba(90, 90, 90, 0.5); }
   .filter-krasnodar-select .search-filter-container {
@@ -1923,13 +1915,14 @@ html {
   .filter-krasnodar-select input {
     -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
             box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
-    background: transparent;
+    background: #F6F6F6;
     border: 1px solid #ffffff;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 5px;
     padding: 8px;
-    color: #5a5a5a; }
+    color: #5a5a5a;
+    height: 35px; }
   .filter-krasnodar-select .search-active {
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2005,7 +1998,7 @@ html {
   .filter-krasnodar-title h1 {
     font-size: 30px;
     margin: auto 16px;
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     line-height: 1.1;
     color: #5a5a5a; }
   .filter-krasnodar-title__img {
@@ -2015,11 +2008,11 @@ html {
       -o-object-fit: cover;
          object-fit: cover; }
 
-.article-text {
+.article-krasnodar-text {
   padding-left: 0;
   margin: 20px 0;
   margin-left: 35px; }
-.article-container {
+.article-krasnodar-container {
   -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -2028,33 +2021,33 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .article-container h2 {
+  .article-krasnodar-container h2 {
     margin-bottom: 27px;
     font-size: 30px;
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     color: #5a5a5a; }
-  .article-container p {
+  .article-krasnodar-container p {
     color: #5a5a5a;
     font-size: 12px;
     padding: 0 50px 0 0;
     margin: auto;
     text-align: left; }
-  .article-container-img {
+  .article-krasnodar-container-img {
     padding-right: 0;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px; }
-.article-img img {
+.article-krasnodar-img img {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px; }
 
-.slider {
+.slider-krasnodar {
   margin-top: 50px; }
-  .slider-text {
+  .slider-krasnodar-text {
     position: absolute;
     top: 34%;
     left: 7%;
     color: #ffffff; }
-    .slider-text h1 {
+    .slider-krasnodar-text h1 {
       font-family: "Times New Roman", Times, serif;
       font-size: 100px;
       display: -webkit-box;
@@ -2065,20 +2058,20 @@ html {
               align-items: center;
       padding: 0;
       margin: 0; }
-    .slider-text p {
+    .slider-krasnodar-text p {
       font-size: 30px;
-      font-family: "Open Sans SemiBold"; }
-    .slider-text svg {
+      font-family: "Noto Sans Bold"; }
+    .slider-krasnodar-text svg {
       width: 78px;
       height: 78px; }
-  .slider .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  .slider-krasnodar .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 10px; }
-  .slider .swiper-container {
+  .slider-krasnodar .swiper-container {
     width: 100%;
     height: 100%; }
-  .slider .swiper-slide {
+  .slider-krasnodar .swiper-slide {
     overflow: hidden; }
-  .slider-button {
+  .slider-krasnodar-button {
     position: absolute;
     bottom: 15%;
     display: -webkit-box;
@@ -2088,18 +2081,18 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%; }
-    .slider-button button {
+    .slider-krasnodar-button button {
       width: auto;
       padding: 10px 25px; }
-  .slider .swiper-pagination {
+  .slider-krasnodar .swiper-pagination {
     bottom: 15px !important; }
-    .slider .swiper-pagination span {
+    .slider-krasnodar .swiper-pagination span {
       height: 11px;
       width: 11px;
       border: 1px solid #ffffff; }
-    .slider .swiper-pagination .swiper-pagination-bullet-active {
+    .slider-krasnodar .swiper-pagination .swiper-pagination-bullet-active {
       background-color: #8CC63F !important; }
-    .slider .swiper-pagination .swiper-pagination-bullet {
+    .slider-krasnodar .swiper-pagination .swiper-pagination-bullet {
       background: none;
       opacity: 1; }
 
@@ -2124,7 +2117,7 @@ html {
     border-radius: 3px; }
     .one-product-container h2 {
       margin: 40px 0 14px;
-      font-family: "Open Sans Bold"; }
+      font-family: "Noto Sans Bold"; }
   .one-product table {
     max-width: 100%;
     margin-right: 65px;
@@ -2196,7 +2189,7 @@ html {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .one-product .buy-product p {
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       color: #8CC63F; }
     .one-product .buy-product__buttons {
       font-size: 12px; }
@@ -2205,9 +2198,9 @@ html {
         text-transform: uppercase;
         padding: 14px 27px; }
 
-.model {
+.model-krasnodar {
   margin-top: 50px; }
-  .model-container {
+  .model-krasnodar-container {
     background-color: #ffffff;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2215,45 +2208,45 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0; }
-  .model-img img {
+    margin: 0 -15px; }
+  .model-krasnodar-img img {
     width: 186px;
     height: 190px;
     -o-object-fit: cover;
        object-fit: cover;
     margin: 5px 0 0 15px; }
-  .model-content {
+  .model-krasnodar-content {
     margin-left: 27px; }
-    .model-content h3 {
-      font-family: "Open Sans Bold";
+    .model-krasnodar-content h3 {
+      font-family: "Noto Sans Bold";
       font-size: 24px; }
-    .model-content p {
-      font-family: "Open Sans Bold";
+    .model-krasnodar-content p {
+      font-family: "Noto Sans Bold";
       color: #8CC63F;
       margin: 14px 0;
       font-size: 24px; }
-    .model-content ul {
+    .model-krasnodar-content ul {
       color: #5a5a5a;
       font-size: 12px;
       margin-bottom: 4px; }
-      .model-content ul li {
+      .model-krasnodar-content ul li {
         padding-bottom: 5px; }
-    .model-content__radius {
+    .model-krasnodar-content__radius {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-      .model-content__radius li {
+      .model-krasnodar-content__radius li {
         padding-right: 5px; }
-  .model-items {
+  .model-krasnodar-items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .model-brend__logo {
+  .model-krasnodar-brend__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2263,9 +2256,11 @@ html {
     font-family: "Times New Roman Bold";
     font-size: 100px;
     font-weight: bold; }
-    .model-brend__logo img {
-      height: 79px;
-      width: 79px; }
+    .model-krasnodar-brend__logo img {
+      width: 300px; }
+
+.products .row {
+  margin: 0 -15px; }
 
 .about-brand {
   margin-top: 50px; }
@@ -2282,7 +2277,8 @@ html {
     margin-bottom: 0;
     font-size: 30px;
     text-align: center;
-    font-family: "Open Sans Bold"; }
+    font-family: "Noto Sans Bold";
+    color: #5a5a5a; }
   .about-brand__content p {
     line-height: 16px;
     margin: 26px 65px 50px 0;
@@ -2301,10 +2297,7 @@ html {
     font-family: "Times New Roman Bold"; }
     .about-brand__logo h1 {
       font-size: 86px; }
-    .about-brand__logo img {
-      height: 65px;
-      width: 65px; }
-  .about-brand .seasons {
+  .about-brand .seasons-krasnodar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2317,7 +2310,7 @@ html {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 24px; }
-    .about-brand .seasons-item {
+    .about-brand .seasons-krasnodar-item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2326,24 +2319,31 @@ html {
               align-items: center;
       text-transform: uppercase;
       letter-spacing: 0.02em;
-      font-family: "Open Sans Bold";
+      font-family: "Noto Sans Bold";
       font-size: 12px;
       line-height: 28px;
-      color: #8CC63F; }
-      .about-brand .seasons-item:last-child {
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
-      .about-brand .seasons-item .winter {
+      color: #309B27; }
+      .about-brand .seasons-krasnodar-item:last-child {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      .about-brand .seasons-krasnodar-item .active {
         line-height: 18px;
-        border-bottom: 2px solid #8CC63F; }
-      .about-brand .seasons-item img {
+        border-bottom: 2px solid #8CC63F;
+        color: #8CC63F; }
+      .about-brand .seasons-krasnodar-item .icon {
+        stroke: #309B27;
+        margin-right: 5px; }
+      .about-brand .seasons-krasnodar-item .icon-active {
+        fill: #8CC63F;
+        stroke: #8CC63F; }
+      .about-brand .seasons-krasnodar-item img {
         width: 25px;
         height: 25px;
         margin-right: 10px; }
-  .about-brand .product-cards {
+  .about-brand .product-cards-krasnodar {
     width: 100%; }
-    .about-brand .product-cards .product-card__item {
+    .about-brand .product-cards-krasnodar .product-krasnodar-card__item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2359,7 +2359,7 @@ html {
       border-radius: 3px;
       background-color: #ffffff;
       margin-bottom: 17px; }
-      .about-brand .product-cards .product-card__item-img {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2369,12 +2369,12 @@ html {
         -webkit-box-pack: start;
             -ms-flex-pack: start;
                 justify-content: flex-start; }
-        .about-brand .product-cards .product-card__item-img img {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img img {
           width: 161px;
           height: 122px;
           -o-object-fit: cover;
              object-fit: cover; }
-      .about-brand .product-cards .product-card__item-logo {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-logo {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2386,31 +2386,30 @@ html {
             -ms-flex-pack: center;
                 justify-content: center;
         font-size: 36px; }
-        .about-brand .product-cards .product-card__item-logo img {
-          width: 25px;
-          height: 25px; }
-      .about-brand .product-cards .product-card__item-title h2 {
-        width: 50%;
-        font-family: "Open Sans Bold";
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-logo img {
+          width: 180px; }
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-title h2 {
+        width: 58%;
+        font-family: "Noto Sans Bold";
         font-size: 16px;
         line-height: 20px;
         height: 60px;
         overflow: hidden; }
-      .about-brand .product-cards .product-card__item-seasons {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons {
         color: #5a5a5a;
         font-size: 12px; }
-        .about-brand .product-cards .product-card__item-seasons img {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons img {
           width: 20px;
           height: 20px;
           padding-right: 5px; }
-        .about-brand .product-cards .product-card__item-seasons .item-seasons {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .item-seasons {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; }
-          .about-brand .product-cards .product-card__item-seasons .item-seasons li {
+          .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .item-seasons li {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -2418,16 +2417,16 @@ html {
                 -ms-flex-align: center;
                     align-items: center;
             margin-right: 10px; }
-        .about-brand .product-cards .product-card__item-seasons .radius {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .radius {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           margin-top: 7px; }
-          .about-brand .product-cards .product-card__item-seasons .radius li {
+          .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .radius li {
             margin-right: 8px; }
-            .about-brand .product-cards .product-card__item-seasons .radius li:last-child {
+            .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons .radius li:last-child {
               margin-right: 0; }
-      .about-brand .product-cards .product-card__item .button {
+      .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2438,7 +2437,7 @@ html {
             -ms-flex-align: center;
                 align-items: center;
         font-size: 12px; }
-        .about-brand .product-cards .product-card__item .button button {
+        .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button button {
           padding: 13px 26px; }
 
 .user-profile__container {
@@ -2459,7 +2458,7 @@ html {
     padding-left: 48px; }
 .user-profile h1 {
   margin: 44px 0;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   font-size: 30px; }
 .user-profile .date-birth__inputs {
   display: -webkit-box;
@@ -2553,49 +2552,50 @@ html {
   -webkit-box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2);
           box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.2); }
 
-.order-info {
+.order-krasnodar-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-  .order-info span {
+          flex-direction: column;
+  margin: 5px; }
+  .order-krasnodar-info span {
     font-size: 12px;
-    color: #5a5a5a; }
-  .order-info p {
+    color: #5a5a5a;
+    padding-bottom: 5px; }
+  .order-krasnodar-info p {
     color: #8CC63F;
-    font-family: "Open Sans Bold";
+    font-family: "Noto Sans Bold";
     font-size: 16px; }
 
-.checkout-continue {
+.checkout-krasnodar-continue {
   font-size: 12px;
   padding: 15px 20px;
   margin-right: 30px; }
-.checkout .finish {
+.checkout-krasnodar .finish {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 57px; }
-.checkout .amount-container {
+.checkout-krasnodar .amount-container {
   margin-right: 116px; }
-  .checkout .amount-container span {
+  .checkout-krasnodar .amount-container span {
     color: #5a5a5a;
     font-size: 12px;
-    font-family: "Open Sans Regular"; }
-.checkout .page {
+    font-family: "Noto Sans Regular"; }
+  .checkout-krasnodar .amount-container p {
+    font-size: 20px; }
+.checkout-krasnodar .page {
   margin: 44px 0;
   padding-left: 0;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   font-size: 30px; }
-.checkout-container {
+.checkout-krasnodar-container {
   background: #ffffff;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2603,7 +2603,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px; }
-.checkout .checkout-item {
+.checkout-krasnodar-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2612,93 +2612,100 @@ html {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-.checkout p,
-.checkout span {
+          align-items: center;
+  margin-bottom: 10px; }
+.checkout-krasnodar p,
+.checkout-krasnodar span {
   color: #8CC63F;
-  font-family: "Open Sans Bold"; }
-.checkout .counter {
+  font-family: "Noto Sans Bold"; }
+.checkout-krasnodar .counter-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
+  width: 60%;
   color: #8CC63F;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   font-size: 12px;
   text-align: center;
   background-color: #F6F6F6;
-  border-radius: 5px; }
-  .checkout .counter span {
+  border-radius: 5px;
+  height: 30px; }
+  .checkout-krasnodar .counter-krasnodar span {
     text-transform: uppercase; }
-.checkout .delete {
+.checkout-krasnodar .delete {
   height: 25px;
   width: 25px;
   cursor: pointer;
   -webkit-transition: 200ms;
   transition: 200ms; }
-  .checkout .delete:hover {
+  .checkout-krasnodar .delete:hover {
     background-color: #F6F6F6;
     border-radius: 50%; }
-.checkout input {
+.checkout-krasnodar input {
   width: 100%;
   border: none;
   text-align: center;
-  color: #8CC63F; }
-.checkout h1 {
+  color: #8CC63F;
+  background-color: #F6F6F6; }
+.checkout-krasnodar h1 {
   font-size: 16px;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   padding-left: 50px; }
-.checkout .product-img {
+.checkout-krasnodar .product-img {
   padding-left: 10px;
   height: 100px;
   width: 100px;
   -o-object-fit: cover;
      object-fit: cover; }
-.checkout .value-button {
+.checkout-krasnodar .value-button {
   display: inline-block;
   color: #8CC63F; }
-.checkout .value-button:hover {
+.checkout-krasnodar .value-button:hover {
   cursor: pointer; }
-.checkout .counter #decrease {
-  margin-left: 15px; }
-.checkout .counter #input-wrap {
-  margin: 0px;
+.checkout-krasnodar .counter-krasnodar #decrease {
+  margin-left: 15px;
+  margin-right: 15px; }
+.checkout-krasnodar .counter-krasnodar #increase {
+  margin-left: 15px;
+  margin-right: 15px; }
+.checkout-krasnodar .counter-krasnodar #input-wrap {
+  margin: 0;
   padding: 0px; }
 
-.user-orders h1 {
+.user-orders-krasnodar h1 {
   margin: 44px 0;
   font-size: 30px;
-  font-family: "Open Sans Bold";
+  font-family: "Noto Sans Bold";
   letter-spacing: 0.02em; }
-.user-orders__order {
+.user-orders-krasnodar__order {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
   margin-bottom: 11px;
   padding: 22px 0; }
-  .user-orders__order h2 {
-    font-family: "Open Sans Bold";
+  .user-orders-krasnodar__order h2 {
+    font-family: "Noto Sans Bold";
     font-size: 16px; }
-  .user-orders__order .row {
+  .user-orders-krasnodar__order .row {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .user-orders__order .row > div {
+    .user-orders-krasnodar__order .row > div {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-  .user-orders__order img {
+  .user-orders-krasnodar__order img {
     width: 25px;
     height: 25px; }
-.user-orders .order {
+.user-orders-krasnodar .order-krasnodar {
   margin-bottom: 0; }
-.user-orders__products {
+.user-orders-krasnodar__products {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
@@ -2706,21 +2713,23 @@ html {
   padding: 35px 121px;
   width: 100%;
   background-color: #ffffff; }
-.user-orders .product {
+.user-orders-krasnodar .product-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 27px; }
-  .user-orders .product h3,
-  .user-orders .product p {
-    font-family: "Open Sans Bold";
-    font-size: 16px; }
-  .user-orders .product h3 {
+  .user-orders-krasnodar .product-krasnodar h3,
+  .user-orders-krasnodar .product-krasnodar p {
+    font-family: "Noto Sans Bold";
+    font-size: 16px;
+    text-align: center;
+    margin: auto; }
+  .user-orders-krasnodar .product-krasnodar h3 {
     margin-right: 67px; }
-  .user-orders .product p {
+  .user-orders-krasnodar .product-krasnodar p {
     color: #8CC63F;
     margin-right: 53px; }
-.user-orders .delivery {
+.user-orders-krasnodar .delivery-krasnodar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2728,10 +2737,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 17px; }
-  .user-orders .delivery .place {
+  .user-orders-krasnodar .delivery-krasnodar .place {
     width: 70%; }
 
-.order-register .delivery {
+.order-register-krasnodar .order-krasnodar-info {
+  margin: 0; }
+.order-register-krasnodar .delivery-krasnodar {
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -2740,29 +2751,29 @@ html {
   border-top-right-radius: 0;
   padding: 21px 121px;
   margin-top: 0; }
-  .order-register .delivery button {
+  .order-register-krasnodar .delivery-krasnodar button {
     padding: 15px 20px;
     margin-left: 74px;
     font-size: 12px; }
-.order-register .product {
+.order-register-krasnodar .product-krasnodar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .order-register .product p,
-  .order-register .product h3 {
-    margin-right: 0; }
-.order-register input {
-  background-color: #f5f7ff;
+  .order-register-krasnodar .product-krasnodar p,
+  .order-register-krasnodar .product-krasnodar h3 {
+    margin: 0; }
+.order-register-krasnodar input {
+  background-color: #F6F6F6;
   width: 100%;
   padding-left: 27px; }
-.order-register .select-container__options {
+.order-register-krasnodar .select-container__options {
   top: 60px; }
-.order-register .select-container .input-arrow {
+.order-register-krasnodar .select-container .input-arrow {
   top: 25px;
   bottom: 0; }
-.order-register .select-container .input-arrow-active {
+.order-register-krasnodar .select-container .input-arrow-active {
   top: 33px; }
-.order-register .payment_method {
+.order-register-krasnodar .payment_method {
   margin-top: 41px; }
 
 .brands-wrapper {
@@ -2781,7 +2792,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .brands-wrapper .brand-card {
+  .brands-wrapper .brand-card-krasnodar {
     margin-top: 0;
     margin-right: 10px;
     margin-left: 10px;
@@ -2803,7 +2814,7 @@ html {
     width: 128px;
     height: 128px;
     border-radius: 3px; }
-    .brands-wrapper .brand-card img {
+    .brands-wrapper .brand-card-krasnodar img {
       height: auto;
       width: 100%;
       display: block; }
@@ -2844,8 +2855,8 @@ html {
     display: none; }
     .modal.buy-fast .product-title {
       font-size: 24px;
-      font-family: "Open Sans Bold";
-      width: 64%; }
+      font-family: "Noto Sans Bold";
+      width: 80%; }
     .modal.buy-fast .product-container {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2853,7 +2864,6 @@ html {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-top: 20px;
       position: relative; }
     .modal.buy-fast .person-data {
       width: 100%;
@@ -2861,7 +2871,10 @@ html {
       .modal.buy-fast .person-data input {
         width: 100%; }
     .modal.buy-fast .product-img {
-      position: relative; }
+      position: relative;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      top: 14px; }
       .modal.buy-fast .product-img button {
         position: absolute;
         bottom: 38px;
@@ -2872,7 +2885,9 @@ html {
         width: 374px;
         -o-object-fit: cover;
            object-fit: cover; }
-    .modal.buy-fast .counter button, .modal.buy-fast .counter input, .modal.buy-fast .counter span {
+    .modal.buy-fast .counter button,
+    .modal.buy-fast .counter input,
+    .modal.buy-fast .counter span {
       color: #309B27; }
     .modal.buy-fast .order-price {
       display: -webkit-box;
@@ -2899,7 +2914,7 @@ html {
         color: #309B27; }
         .modal.buy-fast .order-price .summa p {
           font-size: 20px;
-          font-family: "Open Sans Bold";
+          font-family: "Noto Sans Bold";
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2927,7 +2942,21 @@ html {
     float: right; }
   .modal.register {
     width: 30%;
+    padding-bottom: 46px;
     display: none; }
+    .modal.register .modal-title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .modal.register .modal-title img {
+        width: 25px;
+        height: 25px; }
   .modal button {
     text-transform: uppercase; }
   .modal.attention {
@@ -2943,7 +2972,7 @@ html {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      background-color: #5a5a5a;
+      background-color: #CE1348;
       padding: 21px 95px; }
       .modal.attention .modal-title img {
         width: 31px;
@@ -2973,6 +3002,8 @@ html {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         margin-top: 43px; }
+        .modal.attention .modal-container .buttons .btn-cancel {
+          background-color: #CE1348; }
         .modal.attention .modal-container .buttons button {
           width: 100%;
           margin-right: 10px; }
@@ -3024,7 +3055,7 @@ html {
     padding: 46px 51px 46px 57px;
     color: #ffffff;
     font-size: 24px;
-    font-family: "Open Sans Bold"; }
+    font-family: "Noto Sans Bold"; }
   .modal #number {
     background-color: #F6F6F6; }
   .modal .button button {
@@ -3060,26 +3091,15 @@ html {
       .modal .register_or_forget a:hover {
         text-decoration: none; }
 
+@media screen and (max-width: 1640px) {
+  .modal.buy-fast {
+    width: 51.89%; } }
 @media screen and (max-width: 1366px) {
-  .summa {
-    margin: 0; }
-    .summa p {
-      margin: 10px 0; }
-
-  .product-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0 54px; }
-
-  .modal.buy-fast .order-price {
-    padding: 0; } }
-@media screen and (max-width: 1700px) {
-  .summa {
-    margin: 0; }
-    .summa p {
-      margin: 10px 0; } }
+  .modal.buy-fast {
+    width: 60%; } }
+@media screen and (max-width: 1200px) {
+  .modal.buy-fast {
+    width: 65%; } }
 @media screen and (max-width: 1024px) {
   .logo img {
     width: 220px; }
@@ -3115,14 +3135,14 @@ html {
   .filter-krasnodar .button {
     margin: 15px 20px 0 10px; }
 
-  .slider-text h1 {
+  .slider-krasnodar-text h1 {
     font-size: 45px; }
-    .slider-text h1 svg {
+    .slider-krasnodar-text h1 svg {
       width: 40px;
       height: 40px; }
-  .slider-text p {
+  .slider-krasnodar-text p {
     font-size: 20px; }
-  .slider-button {
+  .slider-krasnodar-button {
     bottom: 20%; }
 
   .one-product .attention-price .icon-attenition {
@@ -3131,28 +3151,20 @@ html {
   .about-brand__logo h1 {
     font-size: 55px; }
 
-  .about-brand__logo img {
-    height: 50px;
-    width: 50px; }
-
   .checkout .product-img {
     height: auto;
     width: 100%; }
 
-  .user-orders__products {
+  .user-orders-krasnodar__products {
     padding: 35px 50px; }
 
-  .user-orders .delivery .place {
+  .user-orders-krasnodar .delivery-krasnodar .place {
     width: 80%; }
 
-  .order-register .delivery {
+  .order-register-krasnodar .delivery-krasnodar {
     padding: 21px 50px; }
 
   .product-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 0; }
 
   .modal .counter {
@@ -3173,8 +3185,10 @@ html {
     padding: 30px 28px; }
 
   .modal.buy-fast {
-    height: 85vh;
-    overflow: hidden; }
+    margin-top: 50px;
+    height: auto;
+    overflow: scroll;
+    width: 54.89%; }
 
   .modal.register {
     width: 35%;
@@ -3186,7 +3200,35 @@ html {
   .modal.success,
   .modal.attention {
     width: 36%; } }
+@media screen and (max-width: 992px) {
+  .about-brand__content {
+    padding: 0 20px; }
+    .about-brand__content h1 {
+      width: 100%; }
+
+  .about-brand__logo {
+    margin-top: 50px; }
+
+  .model-krasnodar-brend__logo {
+    margin-right: 20px; }
+    .model-krasnodar-brend__logo img {
+      width: 100%; } }
+@media screen and (max-width: 930px) {
+  .modal.buy-fast .product-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .modal.buy-fast .product-container .product-img {
+      top: 0; }
+  .modal.buy-fast .checkout-item {
+    margin-bottom: 0; } }
 @media screen and (max-width: 768px) {
+  .model-krasnodar-brend__logo {
+    margin-bottom: 20px; }
+    .model-krasnodar-brend__logo img {
+      width: 61%; }
+
   .modal.success,
   .modal.attention {
     width: 45%; }
@@ -3197,10 +3239,10 @@ html {
   .modal.buy-fast {
     width: 70%; }
 
-  .order-register .delivery {
+  .order-register-krasnodar .delivery {
     padding: 21px 50px; }
 
-  .order-register .delivery button {
+  .order-register .delivery-krasnodar button {
     padding: 15px 20px;
     margin-left: 0;
     font-size: 12px;
@@ -3222,28 +3264,28 @@ html {
   .delivery .order-info p {
     font-size: 10px; }
 
-  .user-orders__order h2,
-  .user-orders__order p {
+  .user-orders-krasnodar__order h2,
+  .user-orders-krasnodar__order p {
     font-size: 12px; }
-  .user-orders__order .order-info span {
+  .user-orders-krasnodar__order .order-krasnodar-info span {
     font-size: 9px; }
 
-  .user-orders__products {
+  .user-orders-krasnodar__products {
     padding: 35px 50px; }
-    .user-orders__products .product h3,
-    .user-orders__products .product p {
+    .user-orders-krasnodar__products .product-krasnodar h3,
+    .user-orders-krasnodar__products .product-krasnodar p {
       font-size: 12px; }
 
-  .slider-text {
+  .slider-krasnodar-text {
     top: 15%; }
-    .slider-text h1 {
+    .slider-krasnodar-text h1 {
       font-size: 45px; }
-      .slider-text h1 svg {
+      .slider-krasnodar-text h1 svg {
         width: 40px;
         height: 40px; }
-    .slider-text p {
+    .slider-krasnodar-text p {
       font-size: 20px; }
-  .slider-button button {
+  .slider-krasnodar-button button {
     font-size: 10px;
     padding: 8px 22px; }
 
@@ -3260,29 +3302,29 @@ html {
   .filter-krasnodar .button {
     margin: 15px 20px 0 10px; }
 
-  .article-container .article-text {
+  .article-krasnodar-container .article-krasnodar-text {
     margin-left: 0; }
-  .article-container h2,
-  .article-container p {
+  .article-krasnodar-container h2,
+  .article-krasnodar-container p {
     padding: 20px; }
-  .article-container h2 {
+  .article-krasnodar-container h2 {
     padding-bottom: 0;
     margin-bottom: 0; }
-  .article-container p {
+  .article-krasnodar-container p {
     margin-bottom: 20px; }
-  .article-container-img {
+  .article-krasnodar-container-img {
     padding: 0; }
-    .article-container-img img {
+    .article-krasnodar-container-img img {
       border-bottom-right-radius: 3px;
       border-top-right-radius: 0;
       border-bottom-left-radius: 3px; }
 
-  .model-brend__logo {
+  .model-krasnodar-brend__logo {
     font-size: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .model-brend__logo svg {
+    .model-krasnodar-brend__logo svg {
       height: 50px;
       width: 50px; }
 
@@ -3293,16 +3335,32 @@ html {
     .header-krasnodar-menu {
       margin-bottom: 10px; }
 
-  .seasons .seasons-item:last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+  .about-brand .seasons-krasnodar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+    .about-brand .seasons-krasnodar-item {
+      width: 50%;
+      margin: 5px 0; }
+      .about-brand .seasons-krasnodar-item:last-child {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: start; }
 
-  .product-card__item-title h2 {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-title h2 {
     width: 100%;
     text-align: center;
     height: auto !important; }
-  .product-card__item-seasons {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons {
     margin: 20px 0;
     padding-left: 10px; }
 
@@ -3324,36 +3382,55 @@ html {
   .checkout-item {
     margin-bottom: 10px; } }
 @media screen and (max-width: 520px) {
+  .model-krasnodar-container {
+    margin: 0;
+    padding-bottom: 10px; }
+    .model-krasnodar-container .model-krasnodar-items {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+
+  .products .row {
+    margin: 0; }
+
   .container {
     padding: 0; }
 
-  .catalog .row {
+  .search-car-by {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .search-car-by .filter-krasnodar-select {
+      width: 100% !important; }
+
+  .catalog-krasnodar .row {
     margin-left: -7.5px;
     margin-right: -7.5px; }
-  .catalog .card-content {
+  .catalog-krasnodar .card-krasnodar-content {
     padding: 10px 9px 0; }
-  .catalog .card img {
+  .catalog-krasnodar .card-krasnodar img {
     height: auto; }
-  .catalog .card-content__title {
+  .catalog-krasnodar .card-krasnodar-content__title {
     font-size: 14px;
     height: 66px; }
-  .catalog .card-content__price {
+  .catalog-krasnodar .card-krasnodar-content__price {
     font-size: 18px; }
-  .catalog .card-content-in__stock {
+  .catalog-krasnodar .card-krasnodar-content-in__stock {
     font-size: 10px; }
-  .catalog .card-content__buttons {
+  .catalog-krasnodar .card-krasnodar-content__buttons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .catalog .card button {
+  .catalog-krasnodar .card-krasnodar button {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
-  .catalog .card .card-content__price {
+  .catalog-krasnodar .card-krasnodar-content__price {
     margin: 0px 0 8px; }
-  .catalog .card .btn-to-cart {
+  .catalog-krasnodar .card-krasnodar .btn-to-cart {
     margin-top: 9px; }
 
   .header-krasnodar-menu .menu-krasnodar-content {
@@ -3367,76 +3444,73 @@ html {
         -ms-flex-align: center;
             align-items: center;
     padding-top: 0; }
-
-  .header-krasnodar .menu-krasnodar-content__basket {
-    width: 90%; }
-    .header-krasnodar .menu-krasnodar-content__basket span {
-      margin-right: 5px;
-      padding: 5px 8px; }
+    .header-krasnodar-menu .menu-krasnodar-content__basket {
+      width: 45%; }
+      .header-krasnodar-menu .menu-krasnodar-content__basket span {
+        margin-right: 5px;
+        padding: 5px 8px; }
 
   .filter-krasnodar-title__img img {
     height: auto; }
 
   .modal {
     width: 86% !important; }
+    .modal .modal.buy-fast .person-data {
+      width: 100%;
+      padding-bottom: 0; }
+    .modal .modal.buy-fast h3 {
+      margin-left: 0; }
+    .modal .modal.buy-fast .product-title {
+      width: 75%; }
+    .modal .modal.buy-fast .order-price {
+      padding-left: 17px;
+      padding-right: 17px; }
+      .modal .modal.buy-fast .order-price .summa p {
+        margin: 0;
+        font-size: 18px; }
+    .modal h3 {
+      font-size: 18px !important; }
+    .modal-container {
+      margin-left: 0;
+      padding: 17px; }
+    .modal-title {
+      padding: 30px 17px; }
 
-  .modal h3 {
-    font-size: 16px !important;
-    margin-left: 15px; }
-
-  .modal.buy-fast h3 {
-    margin-left: 0; }
-
-  .summa p {
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-
-  .modal.buy-fast .product-title {
-    width: 75%; }
-
-  .modal-container {
-    margin-left: 0; }
-
-  .modal .modal-title {
-    padding: 30px 17px; }
-
-  .modal.buy-fast .order-price .summa p {
-    font-size: 15px; }
-
-  .modal.buy-fast .order-price {
-    padding-left: 17px;
-    padding-right: 17px; }
-
-  .order-register .delivery {
+  .order-register .delivery-krasnodar {
     padding: 21px 20px; }
 
-  .user-orders .order-info {
+  .order-register-krasnodar .delivery-krasnodar button {
+    margin-left: 0; }
+
+  .order-register-krasnodar .select-container .input-arrow {
+    top: 15px; }
+    .order-register-krasnodar .select-container .input-arrow-active {
+      top: 25px; }
+
+  .user-orders-krasnodar .order-krasnodar-info {
     margin: 10px 0; }
-  .user-orders__products {
+  .user-orders-krasnodar__products {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 35px 20px; }
-    .user-orders__products .product h3 {
+    .user-orders-krasnodar__products .product-krasnodar h3 {
       margin-right: 50px;
       width: 41%; }
-    .user-orders__products .product p {
+    .user-orders-krasnodar__products .product-krasnodar p {
       margin-right: 0; }
-      .user-orders__products .product p:last-child {
+      .user-orders-krasnodar__products .product-krasnodar p:last-child {
         margin-left: 30px; }
-  .user-orders__order {
+  .user-orders-krasnodar__order {
     padding: 20px; }
-    .user-orders__order .row > div {
+    .user-orders-krasnodar__order .row > div {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
-
-  .user-orders .delivery {
+  .user-orders-krasnodar .delivery-krasnodar {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -3457,93 +3531,62 @@ html {
   .mob-show {
     display: block; }
 
-  .checkout-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 10px 15px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .checkout-buttons .counter {
-      width: 100%; }
-    .checkout-buttons .checkout-item {
-      display: block;
-      margin: auto; }
-      .checkout-buttons .checkout-item:first-child {
-        margin-left: 30px; }
-      .checkout-buttons .checkout-item .delete {
-        margin: auto; }
-
-  .checkout-item h1 {
-    padding: 0 20px; }
-  .checkout-item-price {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    padding: 0 20px 15px; }
-  .checkout-item-counter {
-    display: inline-block !important; }
-  .checkout-item-delete {
-    display: inline-block !important; }
-
-  .user-profile .privacy-policy .checkbox span {
-    padding-left: 20px; }
+  .checkout-krasnodar-item {
+    font-size: 14px; }
+    .checkout-krasnodar-item h1 {
+      padding: 0 20px; }
+    .checkout-krasnodar-item .counter-krasnodar {
+      width: 70%; }
 
   .user-profile__container {
     padding: 40px 17px; }
+  .user-profile .privacy-policy .checkbox span {
+    padding-left: 20px; }
 
+  .about-brand__logo {
+    margin: 100px 0 80px; }
   .about-brand__content h1 {
     width: 100%;
     font-size: 25px;
-    margin-top: 0; }
-
+    margin-top: 0;
+    text-align: left;
+    padding-left: 16px; }
   .about-brand__content p {
     margin: 0;
-    padding: 20px 25px; }
-
-  .seasons .seasons-item:last-child {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start; }
-
-  .about-brand .product-cards .product-card__item-img img {
+    padding: 20px 0 28px; }
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-img img {
     height: auto;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .about-brand .product-cards .product-card__item-title h2 {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-title h2 {
     text-align: left;
     width: 100%;
     padding: 10px 25px;
     height: auto !important; }
-  .about-brand .product-cards .product-card__item-seasons {
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-seasons {
     margin: 20px 0;
-    padding: 10px 25px; }
-  .about-brand .product-cards .product-card__item-logo {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item-logo {
+    padding: 0 25px;
+    margin-bottom: 30px; }
+  .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button {
+    margin-bottom: 30px; }
+
+  .seasons-krasnodar-item:last-child {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 0 25px; }
-  .about-brand .product-cards .product-card__item .button {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 20px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: start; }
 
   .select-container {
     -webkit-box-orient: vertical;
@@ -3557,20 +3600,20 @@ html {
     width: auto;
     height: 27px; }
 
-  .model-content {
+  .model-krasnodar-content {
     padding-left: 10px; }
-  .model-items {
+  .model-krasnodar-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .model-brend__logo {
+  .model-krasnodar-brend__logo {
     font-size: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 10px 0; }
-    .model-brend__logo svg {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 10px 0 20px 37px; }
+    .model-krasnodar-brend__logo svg {
       height: 30px;
       width: 30px; }
 
@@ -3605,9 +3648,6 @@ html {
         -ms-flex-align: center;
             align-items: center; }
 
-  .header-krasnodar-menu__user {
-    width: 100%; }
-
   .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3621,6 +3661,8 @@ html {
     margin-top: 10px; }
     .logo a > span {
       font-size: 19px; }
+    .logo .header-krasnodar-menu__user {
+      width: 100%; }
     .logo .header-krasnodar-menu__phone {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3637,7 +3679,7 @@ html {
   .header-krasnodar-menu {
     margin-top: 0; }
 
-  .search {
+  .search-krasnodar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3645,15 +3687,15 @@ html {
         flex-wrap: nowrap;
     margin-top: 30px;
     margin-bottom: 20px; }
-    .search h2 {
+    .search-krasnodar h2 {
       font-size: 18px;
-      width: 50%;
+      width: 46%;
       line-height: 28px; }
-    .search .select {
+    .search-krasnodar .select {
       width: 65%;
       height: 36px;
       font-size: 13px; }
-      .search .select-styled::after {
+      .search-krasnodar .select-styled::after {
         padding: 4px; }
 
   .logo img {
@@ -3675,8 +3717,11 @@ html {
     padding: 0 29px; }
     .filter-krasnodar .select-containers .filter-krasnodar-select {
       margin-right: 0;
-      width: 37%;
-      padding: 0 0 0 0; }
+      width: 38%;
+      padding: 0; }
+      .filter-krasnodar .select-containers .filter-krasnodar-select label {
+        width: 78%;
+        line-height: 22px; }
   .filter-krasnodar .button {
     margin-left: auto;
     margin-right: auto;
@@ -3710,7 +3755,6 @@ html {
 
   .filter-krasnodar .select-containers .input-arrow {
     top: 4px; }
-
   .filter-krasnodar .select-containers .input-arrow-active {
     top: 9px; }
 
@@ -3725,6 +3769,8 @@ html {
         margin-right: 0; }
     .footer-kransodar-contacts {
       margin-top: 28px; }
+      .footer-kransodar-contacts li svg {
+        margin-right: 4px; }
     .footer-kransodar .copyright {
       margin-top: 16px; }
     .footer-kransodar-items li {
@@ -3732,48 +3778,44 @@ html {
       .footer-kransodar-items li:last-child {
         margin-bottom: 0; }
 
-  .footer-kransodar-contacts li svg {
-    margin-right: 4px; }
-
-  .slider .row {
+  .slider-krasnodar .row {
     margin: 0 -15px; }
-  .slider-text {
+  .slider-krasnodar-text {
     top: 32%;
     left: 5%; }
-    .slider-text h1 {
+    .slider-krasnodar-text h1 {
       font-size: 18px; }
-      .slider-text h1 img {
+      .slider-krasnodar-text h1 img {
         height: 18px;
         width: auto; }
-    .slider-text p {
+    .slider-krasnodar-text p {
       font-size: 18px; }
-  .slider .slider-button {
+  .slider-krasnodar .slider-krasnodar-button {
     bottom: 10%; }
-    .slider .slider-button button {
+    .slider-krasnodar .slider-krasnodar-button button {
       font-size: 9px;
       padding: 8px 20px; }
-  .slider .swiper-pagination {
+  .slider-krasnodar .swiper-pagination {
     position: absolute;
     bottom: 10px !important; }
-    .slider .swiper-pagination span {
+    .slider-krasnodar .swiper-pagination span {
       border: 1px solid #ffffff; }
-  .slider .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  .slider-krasnodar .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0px 14px; }
 
-  .article-container h2 {
+  .article-krasnodar-container p {
+    font-size: 12px; }
+  .article-krasnodar-container h2 {
     font-size: 24px; }
 
-  .article-container p {
-    font-size: 12px; }
-
-  .card img {
+  .card-krasnodar img {
     height: 239px; } }
 @media screen and (max-width: 320px) {
-  .slider-text h1 img {
+  .slider-krasnodar-text h1 img {
     height: 10px;
     width: auto; }
 
-  .user-orders__products .product h3 {
+  .user-orders-krasnodar__products .product-krasnodar h3 {
     margin-right: 10px; }
 
   .user-profile .privacy-policy {
@@ -3818,22 +3860,29 @@ html {
   .header-krasnodar-menu {
     margin-top: 10px; }
 
-  .search {
+  .search-krasnodar {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .search h2 {
+    .search-krasnodar h2 {
       font-size: 18px; }
-    .search .select {
+    .search-krasnodar .select {
       width: 100%;
       height: 33px;
       font-size: 12px; }
-      .search .select-styled::after {
+      .search-krasnodar .select-styled::after {
         border: none; }
 
   .header-krasnodar-menu {
     font-size: 10px; }
 
-  .slider-button {
-    display: none; } }
+  .slider-krasnodar-button {
+    display: none; }
+
+  .header-krasnodar-menu .menu-krasnodar-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 /*# sourceMappingURL=style.css.map */

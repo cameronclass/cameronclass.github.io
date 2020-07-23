@@ -153,7 +153,7 @@ function decreaseValue() {
 $('#decrease').click(decreaseValue)
 $('#increase').click(increaseValue)
 
-$('.catalog').find('.card').each(function(){
+$('.catalog-krasnodar').find('.card-krasnodar').each(function(){
 
     
 
@@ -161,11 +161,13 @@ $('.catalog').find('.card').each(function(){
         e.preventDefault()
         $('.buy-fast').fadeIn('slow')
         $('.overlay').fadeIn('slow')
+        $('body').css('overflow-y', 'hidden')
     })
 })
 $('.overlay').click(function (params) {
     $(this).fadeOut()
     $('.modal').fadeOut()
+    $('body').css('overflow-y', 'scroll')
 
 })
 $('.close-modal').click(function (params) {
