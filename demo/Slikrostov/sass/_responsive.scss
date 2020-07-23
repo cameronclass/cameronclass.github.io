@@ -1243,7 +1243,9 @@
     .user-profile-krasnodar .date-birth__inputs {
 
         flex-direction: column;
-
+        .select-container{
+            margin-bottom: 15px;
+        }
         input {
             width: 100%;
         }
