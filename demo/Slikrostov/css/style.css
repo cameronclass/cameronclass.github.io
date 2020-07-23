@@ -2443,51 +2443,58 @@ html {
         .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button button {
           padding: 13px 26px; }
 
-.user-profile__container {
+.user-profile-krasnodar__container {
   background-color: #ffffff;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding: 57px 121px; }
-  .user-profile__container .row {
+  .user-profile-krasnodar__container .row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .user-profile__container-content:first-child {
+  .user-profile-krasnodar__container-content:first-child {
     padding-right: 48px; }
-    .user-profile__container-content:first-child .filter-krasnodar-select:first-child label {
+    .user-profile-krasnodar__container-content:first-child .filter-krasnodar-select:first-child label {
       margin: 0px 0 8px; }
-  .user-profile__container-content:last-child {
+  .user-profile-krasnodar__container-content:last-child {
     padding-left: 48px; }
-.user-profile h1 {
+.user-profile-krasnodar h1 {
   margin: 44px 0;
   font-family: "Noto Sans Bold";
   font-size: 30px; }
-.user-profile .date-birth__inputs {
+.user-profile-krasnodar .date-birth__inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-.user-profile input {
+.user-profile-krasnodar input {
   background-color: #F6F6F6;
   width: 100%;
   padding-left: 27px; }
-.user-profile label {
+.user-profile-krasnodar label {
   color: #5a5a5a;
   font-size: 12px;
   margin-bottom: 5px;
   display: block; }
-.user-profile .select-container__options {
+.user-profile-krasnodar .select-container__options {
   top: 29.9px; }
-.user-profile .select-container {
+.user-profile-krasnodar .select-container {
   margin-right: 13px; }
-  .user-profile .select-container input {
+  .user-profile-krasnodar .select-container input {
     color: #5a5a5a;
     border: 1px solid #ffffff;
     background-color: #F6F6F6;
     padding-left: 9px;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
-.user-profile .privacy-policy {
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    height: 35px; }
+  .user-profile-krasnodar .select-container .input-arrow {
+    top: 19%; }
+    .user-profile-krasnodar .select-container .input-arrow-active {
+      top: 11px; }
+    .user-profile-krasnodar .select-container .input-arrow-close {
+      top: 8px; }
+.user-profile-krasnodar .privacy-policy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2499,14 +2506,15 @@ html {
           align-items: center;
   font-size: 12px;
   margin-top: 59px; }
-  .user-profile .privacy-policy .checkbox {
+  .user-profile-krasnodar .privacy-policy .checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .user-profile .privacy-policy .checkbox span {
+    .user-profile-krasnodar .privacy-policy .checkbox span {
       padding-left: 30px; }
-.user-profile button {
-  padding: 13px 24px; }
+.user-profile-krasnodar button {
+  padding: 13px 24px;
+  text-transform: uppercase; }
 
 /* CSS regarding the Checkbox starts from here */
 .check_box {
@@ -3215,7 +3223,14 @@ html {
   .model-krasnodar-brend__logo {
     margin-right: 20px; }
     .model-krasnodar-brend__logo img {
-      width: 100%; } }
+      width: 100%; }
+
+  .user-profile-krasnodar__container-content:first-child {
+    padding-right: 0; }
+
+  .user-profile-krasnodar__container-content:last-child {
+    padding-left: 0;
+    margin-top: 10px; } }
 @media screen and (max-width: 930px) {
   .modal.buy-fast .product-container {
     -webkit-box-orient: vertical;
@@ -3367,14 +3382,8 @@ html {
     margin: 20px 0;
     padding-left: 10px; }
 
-  .user-profile .select-container__options {
+  .user-profile-krasnodar .select-container__options {
     top: 28.9px; }
-
-  .user-profile__container-content:first-child {
-    padding-right: 0; }
-
-  .user-profile__container-content:last-child {
-    padding-left: 0; }
 
   .date-birth {
     margin-top: 25px; }
@@ -3556,9 +3565,9 @@ html {
     .checkout-krasnodar-item .counter-krasnodar {
       width: 70%; }
 
-  .user-profile__container {
+  .user-profile-krasnodar__container {
     padding: 40px 17px; }
-  .user-profile .privacy-policy .checkbox span {
+  .user-profile-krasnodar .privacy-policy .checkbox span {
     padding-left: 20px; }
 
   .about-brand__logo {
@@ -3858,23 +3867,23 @@ html {
   .user-orders-krasnodar__products .product-krasnodar h3 {
     margin-right: 10px; }
 
-  .user-profile .privacy-policy {
+  .user-profile-krasnodar .privacy-policy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .user-profile .privacy-policy button {
+    .user-profile-krasnodar .privacy-policy button {
       margin-top: 20px; }
 
-  .user-profile .date-birth__inputs {
+  .user-profile-krasnodar .date-birth__inputs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .user-profile .date-birth__inputs input {
+    .user-profile-krasnodar .date-birth__inputs input {
       width: 100%; }
 
-  .user-profile .select-container {
+  .user-profile-krasnodar .select-container {
     margin-right: 0; }
 
   .select-container > .position-relative {
@@ -3933,4 +3942,5 @@ html {
             flex-direction: column; }
     .one-product-krasnodar-buy-product__buttons button {
       margin-top: 10px !important; } }
+
 /*# sourceMappingURL=style.css.map */

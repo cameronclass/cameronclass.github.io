@@ -201,6 +201,14 @@
             width: 100%;
         }
     }
+    .user-profile-krasnodar__container-content:first-child {
+        padding-right: 0;
+    }
+
+    .user-profile-krasnodar__container-content:last-child{
+        padding-left: 0;
+        margin-top: 10px;
+    }
 }
 
 @media screen and(max-width: 930px) {
@@ -439,17 +447,11 @@
         }
     }
 
-    .user-profile .select-container__options {
+    .user-profile-krasnodar .select-container__options {
         top: 28.9px;
     }
 
-    .user-profile__container-content:first-child {
-        padding-right: 0;
-    }
 
-    .user-profile__container-content:last-child {
-        padding-left: 0;
-    }
 
     .date-birth {
         margin-top: 25px;
@@ -738,7 +740,7 @@
         }
     }
 
-    .user-profile {
+    .user-profile-krasnodar {
 
         &__container {
             padding: 40px 17px;
@@ -1230,7 +1232,7 @@
 
     }
 
-    .user-profile .privacy-policy {
+    .user-profile-krasnodar .privacy-policy {
         flex-direction: column;
 
         button {
@@ -1238,7 +1240,7 @@
         }
     }
 
-    .user-profile .date-birth__inputs {
+    .user-profile-krasnodar .date-birth__inputs {
 
         flex-direction: column;
 
@@ -1247,7 +1249,7 @@
         }
     }
 
-    .user-profile .select-container {
+    .user-profile-krasnodar .select-container {
         margin-right: 0;
     }
 

@@ -1073,7 +1073,7 @@
   }
 }
 
-.user-profile {
+.user-profile-krasnodar {
   &__container {
     background-color: $white;
     box-shadow: $shadow;
@@ -1136,6 +1136,7 @@
 
   }
 
+  
   .select-container {
     margin-right: 13px;
 
@@ -1145,7 +1146,19 @@
       background-color: $white-second;
       padding-left: 9px;
       box-shadow: $shadow;
+      height: 35px;
     }
+    .input-arrow{
+      top: 19%;
+      &-active {
+
+        top: 11px;
+    }
+      &-close {
+        top: 8px;
+      }
+    }
+
   }
 
   .privacy-policy {
@@ -1167,6 +1180,7 @@
 
   button {
     padding: 13px 24px;
+    text-transform: uppercase;
   }
 }
 
