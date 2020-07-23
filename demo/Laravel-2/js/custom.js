@@ -275,16 +275,7 @@ jQuery(document).ready(function () {
 
         /*----------  Elevate Zoom  ----------*/
 
-        //initiate the plugin and pass the id of the div containing gallery images
-        $("#zoom_03").elevateZoom({ gallery: 'product-view-gallery', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true });
-
-        //pass the images to Fancybox
-        $("#zoom_03").bind("click", function (e) {
-            var ez = $('#zoom_03').data('elevateZoom');
-            // $.fancybox(ez.getGalleryList());
-            return false;
-        });
-
+     
 
         /*----------  Quantity  ----------*/
         $('.count-btn').on('click', function () {
@@ -318,12 +309,12 @@ jQuery(document).ready(function () {
 
         $('.add-to-cart').on('click', function (e) {
             e.preventDefault();
-
+/* 
             if ($(this).hasClass('added')) {
                 $(this).removeClass('added').find('i').removeClass('ti-check').addClass('ti-shopping-cart').siblings('span').text('add to cart');
             } else {
                 $(this).addClass('added').find('i').addClass('ti-check').removeClass('ti-shopping-cart').siblings('span').text('added');
-            }
+            } */
         });
 
 

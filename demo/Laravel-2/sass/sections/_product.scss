@@ -16,6 +16,8 @@
     .content {
         position: relative;
         overflow: hidden;
+        padding-left: 10px;
+        padding-right: 10px;
         h3 {
             color: #1a1f2b;
             font-size: 15px;
@@ -139,7 +141,7 @@
                 padding-bottom: 0px;
             }
             @include tablet {
-                width: 260px;
+                width: 50%;
             }
             img {
                 width: 100%;

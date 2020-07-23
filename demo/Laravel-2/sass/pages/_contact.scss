@@ -1,24 +1,6 @@
 /* Contact Page */
 
-#googleMap {
-    height: 550px;
-    width: 100%;
-}
 
-.ct-single-side {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 40px;
-    padding-left: 40px;
-    @include desktops {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    @include large-desktops {
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-}
 
 .ct-description {
     color: #666;

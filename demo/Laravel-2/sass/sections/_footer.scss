@@ -1,155 +1,166 @@
 /* Footer Section */
 
 .site-footer {
-    padding-top: 60px;
-    color: #a7a7a7;
-    background: $black-color-2;
-    .footer-title {
-        color: #fff;
-        display: inline-block;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 500;
+  padding-top: 60px;
+  color: #a7a7a7;
+  background: $black-color-2;
+  .footer-title {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    img {
+      width: 160px;
+      height: auto;
+    }
+  }
+  a {
+    color: inherit;
+  }
+  .single-footer {
+    padding-bottom: 60px;
+    &.contact-block {
+      p {
         margin-bottom: 20px;
-    }
-    a {
-        color: inherit;
-    }
-    .single-footer {
-        padding-bottom: 60px;
-        &.contact-block {
-            p {
-                margin-bottom: 20px;
-                padding-right: 30px;
-                line-height: 1.45;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+        padding-right: 30px;
+        line-height: 1.45;
+        &:last-child {
+          margin-bottom: 0;
         }
+      }
     }
+  }
 }
 
 .footer-block-2 {
-    padding: 60px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.13);
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 .social-icons {
-    a {
-        font-size: 24px;
-        line-height: inherit;
-        &:hover {
-            color: $primary-color;
-        }
-        margin-right: 15px;
+  a {
+    font-size: 24px;
+    line-height: inherit;
+    &:hover {
+      color: $primary-color;
     }
+    margin-right: 15px;
+  }
 }
 
 .footer-list {
-    color: #a7a7a7;
+  color: #a7a7a7;
+  li {
+    a {
+      display: flex;
+      color: inherit;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    margin-bottom: 15px;
+    line-height: 1.25;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.list-inline {
+    display: flex;
+    flex-wrap: wrap;
+    // margin-bottom: 10px;
     li {
+      margin-bottom: 10px;
+      a {
+        padding-right: 10px;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          background: #a7a7a7;
+          right: 5px;
+          width: 1px;
+          top: 2px;
+          bottom: 2px;
+        }
+      }
+      &:last-child {
         a {
-            color: inherit;
-            &:hover {
-                color: $primary-color;
-            }
+          &:after {
+            width: 0;
+          }
         }
-        margin-bottom: 15px;
-        line-height: 1.25;
-        &:last-child {
-            margin-bottom: 0;
-        }
+      }
     }
-    &.list-inline {
-        display: flex;
-        flex-wrap: wrap;
-        // margin-bottom: 10px;
-        li {
-            margin-bottom: 10px;
-            a {
-                padding-right: 10px;
-                position: relative;
-                &:after {
-                    position: absolute;
-                    content: "";
-                    background: #a7a7a7;
-                    right: 5px;
-                    width: 1px;
-                    top: 2px;
-                    bottom: 2px;
-                }
-            }
-            &:last-child {
-                a {
-                    &:after {
-                        width: 0;
-                    }
-                }
-            }
-        }
-    }
-   
+  }
 }
 
 .footer-copyright {
-    text-align: center;
-    background: $black-color-3;
-    padding: 20px 0;
-    p {
-        margin-bottom: 0
+  text-align: center;
+  background: $black-color-3;
+  padding: 20px 0;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: $primary-color;
+    &:hover {
+      text-decoration: underline;
     }
-    a {
-        color: $primary-color;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  }
 }
 
 .input-box-with-icon {
-    background: #202530;
-    border: 1px solid #3a3a3b;
+  background: #202530;
+  border: 1px solid #3a3a3b;
+  position: relative;
+  input {
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    display: block;
+    font-size: 0.929em;
+    height: 48px;
+    line-height: 46px;
+    max-width: 100%;
+    padding: 0 20px;
     position: relative;
-    input {
-        background: none;
-        border: none;
-        color: #f1f1f1;
-        display: block;
-        font-size: .929em;
-        height: 48px;
-        line-height: 46px;
-        max-width: 100%;
-        padding: 0 20px;
-        position: relative;
-        text-align: left;
-        white-space: nowrap;
-        width: 100%;
-        padding-right: 46px;
-        &:focus {
-            box-shadow: none;
-            outline: none;
-        }
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    padding-right: 46px;
+    &:focus {
+      box-shadow: none;
+      outline: none;
     }
-    button {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 18px;
-        height: 46px;
-        line-height: 46px;
-        max-width: 100%;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 0;
-        width: 46px;
-        transition: all .3s ease;
-        &:hover {
-            color: $primary-color;
-        }
-        i {
-            color: inherit;
-        }
+  }
+  button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 46px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $primary-color;
     }
+    i {
+      color: inherit;
+    }
+  }
+}
+
+.footer-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
 }

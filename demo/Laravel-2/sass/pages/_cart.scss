@@ -51,7 +51,7 @@
             font-weight: 500;
             & tr {
                 transition: .4s;
-                &:not(:last-child) {
+                & {
                     &:hover {
                         background: #f6f6f6;
                     }
