@@ -107,7 +107,6 @@ button {
   display: flex;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-box-sizing: content-box;
@@ -131,7 +130,6 @@ button {
 
 .swiper-container-free-mode > .swiper-wrapper {
   -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   margin: 0 auto; }
 
@@ -143,7 +141,6 @@ button {
   position: relative;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  -o-transition-property: transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform; }
 
@@ -159,7 +156,6 @@ button {
           align-items: flex-start;
   -webkit-transition-property: height,-webkit-transform;
   transition-property: height,-webkit-transform;
-  -o-transition-property: transform,height;
   transition-property: transform,height;
   transition-property: transform,height,-webkit-transform; }
 
@@ -182,26 +178,18 @@ button {
 
 .swiper-container-3d .swiper-slide-shadow-left {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-3d .swiper-slide-shadow-top {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
 
 .swiper-container-css-mode > .swiper-wrapper {
@@ -288,7 +276,6 @@ button {
   position: absolute;
   text-align: center;
   -webkit-transition: .3s opacity;
-  -o-transition: .3s opacity;
   transition: .3s opacity;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -308,38 +295,31 @@ button {
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transform: scale(0.33);
-      -ms-transform: scale(0.33);
           transform: scale(0.33);
   position: relative; }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
           transform: scale(1); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
   -webkit-transform: scale(0.66);
-      -ms-transform: scale(0.66);
           transform: scale(0.66); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
   -webkit-transform: scale(0.33);
-      -ms-transform: scale(0.33);
           transform: scale(0.33); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
   -webkit-transform: scale(0.66);
-      -ms-transform: scale(0.66);
           transform: scale(0.66); }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
   -webkit-transform: scale(0.33);
-      -ms-transform: scale(0.33);
           transform: scale(0.33); }
 
 .swiper-pagination-bullet {
@@ -380,14 +360,12 @@ button.swiper-pagination-bullet {
 .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 8px; }
 
 .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   display: inline-block;
   -webkit-transition: .2s transform,.2s top;
-  -o-transition: .2s transform,.2s top;
   transition: .2s transform,.2s top; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -396,18 +374,15 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   white-space: nowrap; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: .2s transform,.2s left;
-  -o-transition: .2s transform,.2s left;
   transition: .2s transform,.2s left; }
 
 .swiper-container-horizontal.swiper-container-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   -webkit-transition: .2s transform,.2s right;
-  -o-transition: .2s transform,.2s right;
   transition: .2s transform,.2s right; }
 
 .swiper-pagination-progressbar {
@@ -422,15 +397,12 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
           transform: scale(0);
   -webkit-transform-origin: left top;
-      -ms-transform-origin: left top;
           transform-origin: left top; }
 
 .swiper-container-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   -webkit-transform-origin: right top;
-      -ms-transform-origin: right top;
           transform-origin: right top; }
 
 .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
@@ -524,7 +496,6 @@ button.swiper-pagination-bullet {
   margin-top: -21px;
   z-index: 10;
   -webkit-transform-origin: 50%;
-      -ms-transform-origin: 50%;
           transform-origin: 50%;
   -webkit-animation: swiper-preloader-spin 1s infinite linear;
           animation: swiper-preloader-spin 1s infinite linear;
@@ -559,13 +530,11 @@ button.swiper-pagination-bullet {
 
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
   -webkit-transition-timing-function: ease-out;
-       -o-transition-timing-function: ease-out;
           transition-timing-function: ease-out; }
 
 .swiper-container-fade .swiper-slide {
   pointer-events: none;
   -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
   transition-property: opacity; }
 
 .swiper-container-fade .swiper-slide .swiper-slide {
@@ -584,7 +553,6 @@ button.swiper-pagination-bullet {
   z-index: 1;
   visibility: hidden;
   -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   width: 100%;
   height: 100%; }
@@ -594,7 +562,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube.swiper-container-rtl .swiper-slide {
   -webkit-transform-origin: 100% 0;
-      -ms-transform-origin: 100% 0;
           transform-origin: 100% 0; }
 
 .swiper-container-cube .swiper-slide-active, .swiper-container-cube .swiper-slide-active .swiper-slide-active {
@@ -1512,7 +1479,6 @@ html {
       .header-krasnodar-menu__user li a {
         border-bottom: 1px solid #000;
         -webkit-transition: 300ms;
-        -o-transition: 300ms;
         transition: 300ms; }
         .header-krasnodar-menu__user li a:hover {
           border: none; }
@@ -1549,7 +1515,6 @@ html {
         padding: 3px 8px;
         margin: 0 10px 0 3px;
         -webkit-transition: all 100ms ease-in;
-        -o-transition: all 100ms ease-in;
         transition: all 100ms ease-in; }
   .header-krasnodar .basket-item a {
     display: -webkit-box;
@@ -1579,7 +1544,6 @@ html {
   .footer-kransodar a {
     color: #ffffff;
     -webkit-transition: color .2s ease-in;
-    -o-transition: color .2s ease-in;
     transition: color .2s ease-in; }
     .footer-kransodar a:hover {
       color: #309B27; }
@@ -1612,7 +1576,6 @@ html {
       border-bottom: 1px solid #ffffff;
       display: inline;
       -webkit-transition: color .2s ease-in;
-      -o-transition: color .2s ease-in;
       transition: color .2s ease-in; }
 
 .icon {
@@ -1620,7 +1583,6 @@ html {
   width: 20px;
   fill: #8CC63F;
   -webkit-transition: fill 0.3s ease;
-  -o-transition: fill 0.3s ease;
   transition: fill 0.3s ease; }
   .icon:hover {
     fill: #309B27; }
@@ -1639,7 +1601,6 @@ html {
   padding: 10px 8px;
   border-radius: 0.25rem;
   -webkit-transition: background 0.2s ease-in-out;
-  -o-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out; }
   .btn:hover {
     background: #309B27; }
@@ -1690,7 +1651,6 @@ html {
   background: initial;
   padding: 8px 15px;
   -webkit-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   white-space: nowrap;
   overflow: hidden; }
@@ -1704,14 +1664,11 @@ html {
     top: 9px;
     right: 18px;
     -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
   .select-modifaction .select-styled:active::after, .select-modifaction .select-styled.active::after {
     -webkit-transform: rotate(-135deg) translateX(-45%);
-        -ms-transform: rotate(-135deg) translateX(-45%);
             transform: rotate(-135deg) translateX(-45%);
     -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     top: 9px; }
 .select-modifaction .select-options {
@@ -1732,7 +1689,6 @@ html {
     text-indent: 15px;
     border-top: 1px solid #962d22;
     -webkit-transition: all 0.15s ease-in;
-    -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in; }
     .select-modifaction .select-options li:nth-child(2) {
       border-top: none; }
@@ -1772,13 +1728,11 @@ html {
   margin-top: 20px;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   transition: -webkit-transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   height: 100%; }
   .card-krasnodar:hover {
     -webkit-transform: translateY(3px);
-        -ms-transform: translateY(3px);
             transform: translateY(3px); }
   .card-krasnodar img {
     -o-object-fit: cover;
@@ -1852,18 +1806,14 @@ html {
     border-bottom-left-radius: 0; }
   .select-container .input-arrow-active {
     -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
             transform: rotate(-180deg);
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     top: 9px; }
   .select-container .input-arrow-close {
     -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
             transform: rotate(0);
     -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     top: 6px; }
   .select-container__options {
@@ -2006,7 +1956,6 @@ html {
       padding-bottom: 8px;
       border-top: 2px solid #ffffff;
       -webkit-transition: all 0.1s ease-in;
-      -o-transition: all 0.1s ease-in;
       transition: all 0.1s ease-in;
       cursor: pointer; }
       .filter-krasnodar-select .suggestions div:first-child {
@@ -2041,8 +1990,6 @@ html {
   font-size: 12px; }
 .filter-krasnodar-background {
   background: -webkit-gradient(linear, left top, right top, color-stop(25%, #8CC63F), color-stop(25%, rgba(255, 0, 0, 0)));
-  background: -webkit-linear-gradient(left, #8CC63F 25%, rgba(255, 0, 0, 0) 25%);
-  background: -o-linear-gradient(left, #8CC63F 25%, rgba(255, 0, 0, 0) 25%);
   background: linear-gradient(90deg, #8CC63F 25%, rgba(255, 0, 0, 0) 25%);
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -2162,47 +2109,47 @@ html {
 .ml-1 {
   margin-left: 1re; }
 
-.one-product {
+.one-product-krasnodar {
   margin-top: 40px; }
-  .one-product .product_img {
+  .one-product-krasnodar__img {
     height: 327px;
     -o-object-fit: cover;
        object-fit: cover; }
-  .one-product-container {
+  .one-product-krasnodar-container {
     background-color: #ffffff;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
     border-radius: 3px; }
-    .one-product-container h2 {
+    .one-product-krasnodar-container h2 {
       margin: 40px 0 14px;
       font-family: "Noto Sans Bold"; }
-  .one-product table {
+  .one-product-krasnodar table {
     max-width: 100%;
     margin-right: 65px;
     min-width: 30%; }
-    .one-product table tr {
+    .one-product-krasnodar table tr {
       width: 100%; }
-    .one-product table .option {
+    .one-product-krasnodar table .option {
       padding-left: 5px; }
-    .one-product table tbody > tr > td > .dots {
+    .one-product-krasnodar table tbody > tr > td > .dots {
       background: url("./../img/icons/dash.svg");
       background-repeat: repeat-x;
       padding-bottom: 5px;
       background-position-y: -1px; }
-      .one-product table tbody > tr > td > .dots span {
+      .one-product-krasnodar table tbody > tr > td > .dots span {
         background-color: #ffffff;
         padding-right: 10px; }
-  .one-product .attention-price {
+  .one-product-krasnodar .attention-price-krasnodar {
     margin: 50px 0;
     font-size: 12px; }
-    .one-product .attention-price .icon-attenition {
+    .one-product-krasnodar .attention-price-krasnodar .icon-attenition {
       fill: none;
       margin-right: 16px;
       margin-top: 5px;
       margin-left: 37px; }
-  .one-product .table-wrapper {
+  .one-product-krasnodar .table-wrapper {
     overflow: auto; }
-  .one-product .product-options {
+  .one-product-krasnodar .krasnodar-product-options {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2211,20 +2158,22 @@ html {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     position: relative; }
-    .one-product .product-options__option .model {
+    .one-product-krasnodar .krasnodar-product-options__logo {
+      width: 140px; }
+    .one-product-krasnodar .krasnodar-product-options__option .model {
       margin-top: 13px; }
-      .one-product .product-options__option .model li:nth-child(2) {
+      .one-product-krasnodar .krasnodar-product-options__option .model li:nth-child(2) {
         margin: 10px 0; }
-        .one-product .product-options__option .model li:nth-child(2) span {
+        .one-product-krasnodar .krasnodar-product-options__option .model li:nth-child(2) span {
           padding-left: 65px; }
-      .one-product .product-options__option .model .manufacturer {
+      .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        .one-product .product-options__option .model .manufacturer span {
+        .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer span, .one-product-krasnodar .krasnodar-product-options__option .model .manufacturer .krasnodar-product-options__logo {
           font-family: "Times New Roman Bold";
           font-weight: bold;
           font-size: 22px;
@@ -2235,26 +2184,27 @@ html {
               -ms-flex-align: center;
                   align-items: center;
           padding-left: 20px; }
-  .one-product .attention-img {
+  .one-product-krasnodar .attention-img {
     width: 22px;
     height: 22px;
     margin-right: 15px; }
-  .one-product .buy-product {
+  .one-product-krasnodar__buy-product {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .one-product .buy-product p {
+    .one-product-krasnodar__buy-product p {
       font-family: "Noto Sans Bold";
       color: #8CC63F; }
-    .one-product .buy-product__buttons {
-      font-size: 12px; }
-      .one-product .buy-product__buttons button {
-        margin-left: 23px;
-        text-transform: uppercase;
-        padding: 14px 27px; }
+  .one-product-krasnodar .one-product-krasnodar-buy-product__buttons {
+    font-size: 12px;
+    margin-right: 10px; }
+    .one-product-krasnodar .one-product-krasnodar-buy-product__buttons button {
+      margin-left: 23px;
+      text-transform: uppercase;
+      padding: 14px 27px; }
 
 .model-krasnodar {
   margin-top: 50px; }
@@ -2498,51 +2448,58 @@ html {
         .about-brand .product-cards-krasnodar .product-krasnodar-card__item .button button {
           padding: 13px 26px; }
 
-.user-profile__container {
+.user-profile-krasnodar__container {
   background-color: #ffffff;
   -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding: 57px 121px; }
-  .user-profile__container .row {
+  .user-profile-krasnodar__container .row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .user-profile__container-content:first-child {
+  .user-profile-krasnodar__container-content:first-child {
     padding-right: 48px; }
-    .user-profile__container-content:first-child .filter-krasnodar-select:first-child label {
+    .user-profile-krasnodar__container-content:first-child .filter-krasnodar-select:first-child label {
       margin: 0px 0 8px; }
-  .user-profile__container-content:last-child {
+  .user-profile-krasnodar__container-content:last-child {
     padding-left: 48px; }
-.user-profile h1 {
+.user-profile-krasnodar h1 {
   margin: 44px 0;
   font-family: "Noto Sans Bold";
   font-size: 30px; }
-.user-profile .date-birth__inputs {
+.user-profile-krasnodar .date-birth__inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-.user-profile input {
+.user-profile-krasnodar input {
   background-color: #F6F6F6;
   width: 100%;
   padding-left: 27px; }
-.user-profile label {
+.user-profile-krasnodar label {
   color: #5a5a5a;
   font-size: 12px;
   margin-bottom: 5px;
   display: block; }
-.user-profile .select-container__options {
+.user-profile-krasnodar .select-container__options {
   top: 29.9px; }
-.user-profile .select-container {
+.user-profile-krasnodar .select-container {
   margin-right: 13px; }
-  .user-profile .select-container input {
+  .user-profile-krasnodar .select-container input {
     color: #5a5a5a;
     border: 1px solid #ffffff;
     background-color: #F6F6F6;
     padding-left: 9px;
     -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25); }
-.user-profile .privacy-policy {
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    height: 35px; }
+  .user-profile-krasnodar .select-container .input-arrow {
+    top: 19%; }
+    .user-profile-krasnodar .select-container .input-arrow-active {
+      top: 11px; }
+    .user-profile-krasnodar .select-container .input-arrow-close {
+      top: 8px; }
+.user-profile-krasnodar .privacy-policy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2554,14 +2511,15 @@ html {
           align-items: center;
   font-size: 12px;
   margin-top: 59px; }
-  .user-profile .privacy-policy .checkbox {
+  .user-profile-krasnodar .privacy-policy .checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .user-profile .privacy-policy .checkbox span {
+    .user-profile-krasnodar .privacy-policy .checkbox span {
       padding-left: 30px; }
-.user-profile button {
-  padding: 13px 24px; }
+.user-profile-krasnodar button {
+  padding: 13px 24px;
+  text-transform: uppercase; }
 
 /* CSS regarding the Checkbox starts from here */
 .check_box {
@@ -2584,7 +2542,6 @@ html {
   width: 15px;
   height: 15px;
   -webkit-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
   transition: all 0.1s ease;
   z-index: 2;
   display: block;
@@ -2699,7 +2656,6 @@ html {
   width: 25px;
   cursor: pointer;
   -webkit-transition: 200ms;
-  -o-transition: 200ms;
   transition: 200ms; }
   .checkout-krasnodar .delete:hover {
     background-color: #F6F6F6;
@@ -3146,7 +3102,6 @@ html {
       color: #5a5a5a;
       text-decoration: underline;
       -webkit-transition: 300ms;
-      -o-transition: 300ms;
       transition: 300ms;
       display: block; }
       .modal .register_or_forget a:hover {
@@ -3185,8 +3140,6 @@ html {
 
   .filter-krasnodar-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #8CC63F), color-stop(17%, rgba(255, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, #8CC63F 17%, rgba(255, 0, 0, 0) 17%);
-    background: -o-linear-gradient(left, #8CC63F 17%, rgba(255, 0, 0, 0) 17%);
     background: linear-gradient(90deg, #8CC63F 17%, rgba(255, 0, 0, 0) 17%); }
 
   .menu-content {
@@ -3208,7 +3161,7 @@ html {
   .slider-krasnodar-button {
     bottom: 20%; }
 
-  .one-product .attention-price .icon-attenition {
+  .one-product-krasnodar .attention-price-krasnodar .icon-attenition {
     margin-left: 18px; }
 
   .about-brand__logo h1 {
@@ -3275,7 +3228,14 @@ html {
   .model-krasnodar-brend__logo {
     margin-right: 20px; }
     .model-krasnodar-brend__logo img {
-      width: 100%; } }
+      width: 100%; }
+
+  .user-profile-krasnodar__container-content:first-child {
+    padding-right: 0; }
+
+  .user-profile-krasnodar__container-content:last-child {
+    padding-left: 0;
+    margin-top: 10px; } }
 @media screen and (max-width: 930px) {
   .modal.buy-fast .product-container {
     -webkit-box-orient: vertical;
@@ -3313,18 +3273,18 @@ html {
     margin: auto;
     margin-top: 15px; }
 
-  .one-product .product-options {
+  .one-product-krasnodar .krasnodar-product-options {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .one-product .product-options table {
+    .one-product-krasnodar .krasnodar-product-options table {
       margin-right: 0;
       margin-bottom: 30px; }
 
-  .delivery .order-info span {
+  .delivery-krasnodar .order-krasnodar-info span {
     font-size: 8px; }
-  .delivery .order-info p {
+  .delivery-krasnodar .order-krasnodar-info p {
     font-size: 10px; }
 
   .user-orders-krasnodar__order h2,
@@ -3354,8 +3314,6 @@ html {
 
   .filter-krasnodar-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(17%, #8CC63F), color-stop(17%, rgba(255, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, #8CC63F 17%, rgba(255, 0, 0, 0) 17%);
-    background: -o-linear-gradient(left, #8CC63F 17%, rgba(255, 0, 0, 0) 17%);
     background: linear-gradient(90deg, #8CC63F 17%, rgba(255, 0, 0, 0) 17%); }
 
   .menu-content {
@@ -3429,14 +3387,8 @@ html {
     margin: 20px 0;
     padding-left: 10px; }
 
-  .user-profile .select-container__options {
+  .user-profile-krasnodar .select-container__options {
     top: 28.9px; }
-
-  .user-profile__container-content:first-child {
-    padding-right: 0; }
-
-  .user-profile__container-content:last-child {
-    padding-left: 0; }
 
   .date-birth {
     margin-top: 25px; }
@@ -3445,7 +3397,22 @@ html {
     margin-right: 0; }
 
   .checkout-item {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+
+  .one-product-krasnodar__img {
+    height: auto; }
+
+  .one-product-krasnodar .krasnodar-product-options table {
+    min-width: 100%; }
+
+  .one-product-krasnodar-container__mobile {
+    padding: 0 12px 0 27px; }
+    .one-product-krasnodar-container__mobile .manufacturer {
+      padding-top: 57px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-right: 15px; } }
 @media screen and (max-width: 520px) {
   .model-krasnodar-container {
     margin: 0;
@@ -3603,9 +3570,9 @@ html {
     .checkout-krasnodar-item .counter-krasnodar {
       width: 70%; }
 
-  .user-profile__container {
+  .user-profile-krasnodar__container {
     padding: 40px 17px; }
-  .user-profile .privacy-policy .checkbox span {
+  .user-profile-krasnodar .privacy-policy .checkbox span {
     padding-left: 20px; }
 
   .about-brand__logo {
@@ -3682,21 +3649,43 @@ html {
       height: 30px;
       width: 30px; }
 
-  .one-product-container h2 {
+  .one-product-krasnodar-container__mobile {
+    padding: 0 12px 0 27px; }
+    .one-product-krasnodar-container__mobile .manufacturer {
+      padding-top: 57px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-right: 15px; }
+  .one-product-krasnodar-container h2 {
     font-size: 22px; }
-  .one-product-container .buy-product {
-    margin-top: 10px; }
-    .one-product-container .buy-product p {
-      margin-top: 10px; }
-  .one-product-container .buy-product__buttons button {
-    margin: 0;
-    margin-top: 10px; }
+  .one-product-krasnodar-container .one-product-krasnodar__buy-product {
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .one-product-krasnodar-container .one-product-krasnodar__buy-product p {
+      margin-top: 20px; }
+    .one-product-krasnodar-container .one-product-krasnodar__buy-product .one-product-krasnodar-buy-product__buttons {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      margin-right: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .one-product-krasnodar-container .one-product-krasnodar__buy-product .one-product-krasnodar-buy-product__buttons button {
+        margin: 0;
+        padding: 15px 30px; }
 
   .icon-attenition {
     margin-left: 0 !important;
     width: 60px; }
 
-  .attention-price > div {
+  .attention-price-krasnodar > div {
     padding-left: 0; }
 
   .mob-d-none {
@@ -3771,8 +3760,6 @@ html {
     font-size: 12px; }
   .filter-krasnodar-background {
     background: -webkit-gradient(linear, left top, right top, color-stop(31%, #8CC63F), color-stop(20%, rgba(255, 0, 0, 0)));
-    background: -webkit-linear-gradient(left, #8CC63F 31%, rgba(255, 0, 0, 0) 20%);
-    background: -o-linear-gradient(left, #8CC63F 31%, rgba(255, 0, 0, 0) 20%);
     background: linear-gradient(90deg, #8CC63F 31%, rgba(255, 0, 0, 0) 20%); }
   .filter-krasnodar .select-containers {
     margin-top: 15px;
@@ -3815,10 +3802,8 @@ html {
       padding: 4px; }
     .select-container .input-arrow-active {
       -webkit-transform: rotate(-180deg);
-          -ms-transform: rotate(-180deg);
               transform: rotate(-180deg);
       -webkit-transition: all 0.2s ease-in-out;
-      -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
       top: 9px; }
 
@@ -3887,23 +3872,25 @@ html {
   .user-orders-krasnodar__products .product-krasnodar h3 {
     margin-right: 10px; }
 
-  .user-profile .privacy-policy {
+  .user-profile-krasnodar .privacy-policy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .user-profile .privacy-policy button {
+    .user-profile-krasnodar .privacy-policy button {
       margin-top: 20px; }
 
-  .user-profile .date-birth__inputs {
+  .user-profile-krasnodar .date-birth__inputs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .user-profile .date-birth__inputs input {
+    .user-profile-krasnodar .date-birth__inputs .select-container {
+      margin-bottom: 15px; }
+    .user-profile-krasnodar .date-birth__inputs input {
       width: 100%; }
 
-  .user-profile .select-container {
+  .user-profile-krasnodar .select-container {
     margin-right: 0; }
 
   .select-container > .position-relative {
@@ -3953,4 +3940,14 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+        flex-wrap: wrap; }
+
+  .one-product-krasnodar-buy-product__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .one-product-krasnodar-buy-product__buttons button {
+      margin-top: 10px !important; } }
+
+/*# sourceMappingURL=style.css.map */
