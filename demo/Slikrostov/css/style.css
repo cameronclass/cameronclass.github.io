@@ -1523,8 +1523,12 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .header-krasnodar .basket-item a:hover span {
+      background: #F6F6F6; }
     .header-krasnodar .basket-item a span {
       padding: 5px 2px 0px 4px; }
+      .header-krasnodar .basket-item a span:hover svg {
+        fill: #8CC63F !important; }
   .header-krasnodar .basket-item img {
     width: 20px;
     height: 17px;
@@ -1885,7 +1889,8 @@ html {
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     background-color: #F6F6F6;
-    padding-right: 30px; }
+    padding-right: 30px;
+    height: 30px; }
   .filter-krasnodar .select-containers .input-arrow {
     top: 6px; }
     .filter-krasnodar .select-containers .input-arrow-active {

@@ -129,8 +129,18 @@
     a{
       display: flex;
       align-items: center;
+      &:hover span{
+        background: $white-second;
+
+      }
       span{
         padding: 5px 2px 0px 4px;
+        &:hover{
+
+          svg{
+            fill: $green !important;
+          }
+        }
       }
     }
     img{
