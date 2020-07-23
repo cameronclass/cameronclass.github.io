@@ -665,10 +665,10 @@
   margin-left: 1re;
 }
 
-.one-product {
+.one-product-krasnodar {
   margin-top: 40px;
 
-  .product_img {
+  &__img {
 
     height: 327px;
     object-fit: cover;
@@ -711,7 +711,7 @@
     }
   }
 
-  .attention-price {
+  .attention-price-krasnodar {
     margin: 50px 0;
     font-size: 12px;
 
@@ -727,12 +727,15 @@
     overflow: auto;
   }
 
-  .product-options {
+  .krasnodar-product-options {
     display: flex;
     font-size: 12px;
     margin: 26px 0 53px;
     flex-wrap: wrap;
     position: relative;
+    &__logo{
+      width: 140px;
+    }
 
     &__option {
       .model {
@@ -750,7 +753,7 @@
           display: flex;
           align-items: center;
 
-          span {
+          span,.krasnodar-product-options__logo {
             font-family: $font-times-bold;
             font-weight: bold;
             font-size: 22px;
@@ -771,7 +774,7 @@
     margin-right: 15px;
   }
 
-  .buy-product {
+  &__buy-product {
     display: flex;
     justify-content: space-between;
 
@@ -780,8 +783,11 @@
       color: $green;
     }
 
-    &__buttons {
+
+    }
+    .one-product-krasnodar-buy-product__buttons{
       font-size: 12px;
+      margin-right: 10px;
 
       button {
         margin-left: 23px;
@@ -789,7 +795,6 @@
         padding: 14px 27px;
 
       }
-    }
   }
 }
 
@@ -1068,7 +1073,7 @@
   }
 }
 
-.user-profile {
+.user-profile-krasnodar {
   &__container {
     background-color: $white;
     box-shadow: $shadow;
@@ -1131,6 +1136,7 @@
 
   }
 
+  
   .select-container {
     margin-right: 13px;
 
@@ -1140,7 +1146,19 @@
       background-color: $white-second;
       padding-left: 9px;
       box-shadow: $shadow;
+      height: 35px;
     }
+    .input-arrow{
+      top: 19%;
+      &-active {
+
+        top: 11px;
+    }
+      &-close {
+        top: 8px;
+      }
+    }
+
   }
 
   .privacy-policy {
@@ -1162,6 +1180,7 @@
 
   button {
     padding: 13px 24px;
+    text-transform: uppercase;
   }
 }
 
