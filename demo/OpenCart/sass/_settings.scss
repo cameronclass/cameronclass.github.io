@@ -1,0 +1,27 @@
+
+// Colors
+$color1: #62a2f6;
+$color2: #ff2a00;
+$color3: #d1d1d1;
+$color4: #1e905d;
+
+
+$font: 'Liberation Sans';
+$font-bold: 'Liberation Sans Bold';
+
+// Mixins
+@mixin icon($content,  $weight) {
+  font-family: "Font Awesome 5 Free";
+  content: $content;
+  font-weight: $weight;
+}
+
+// Font Family
+@font-face {
+    font-family: 'Liberation Sans Bold';
+    src: url('../fonts/LiberationSans-Bold.woff2') format('woff2'),
+        url('../fonts/LiberationSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
