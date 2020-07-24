@@ -1,3 +1,78 @@
+
+
+
+$('.checkout-krasnodar-container').each(function () {
+
+    $(this).find('.delete').click(function () {
+        console.log($(this).parent().parent().parent().fadeOut("slow", function () {
+            $(this).remove()
+        }))
+    })
+})
+
+function increaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+
+
+    value++;
+
+    $('#number').val(value)
+
+}
+
+function decreaseValue() {
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    if (value <= 1) {
+        value == 1
+    } else {
+
+        value--
+
+
+
+
+
+    }
+
+
+
+    $('#number').val(value)
+}
+
+$('#decrease').click(decreaseValue)
+$('#increase').click(increaseValue)
+
+$('.catalog-krasnodar').find('.card-krasnodar').each(function(){
+
+    
+
+    $(this).find('.buy-now').click(function(e){
+        e.preventDefault()
+        $('.buy-fast').fadeIn('slow')
+        $('.overlay').fadeIn('slow')
+        $('body').css('overflow-y', 'hidden')
+    })
+})
+$('.overlay').click(function (params) {
+    $(this).fadeOut()
+    $('.modal').fadeOut()
+    $('body').css('overflow-y', 'scroll')
+
+})
+$('.close-modal').click(function (params) {
+    $('.overlay').fadeOut()
+    $('.modal').fadeOut()
+    $('body').css('overflow-y', 'scroll')
+
+
+})
+$('.checkout-btn').click(function (params) {
+
+    $('.modal.success').fadeIn('slow')
+    $('.overlay').fadeIn('slow')
+})
 $(document).ready(function () {
 
     var swiper = new Swiper('.swiper-container', {
@@ -5,9 +80,9 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-        // autoplay: {
-        //     delay: 2500
-        // },
+        autoplay: {
+            delay: 2500
+        },
     });
     const dates = [
         { year: '2014' },
@@ -99,84 +174,3 @@ $(document).ready(function () {
         });
     })
 });
-
-
-$('.checkout-container').each(function () {
-
-    $(this).find('.delete').click(function () {
-        console.log($(this).parent().parent().parent().fadeOut("slow", function () {
-            $(this).remove()
-        }))
-    })
-})
-
-function increaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-
-
-    value++;
-
-
-
-
-
-
-
-
-
-
-    $('#number').val(value)
-
-}
-
-function decreaseValue() {
-    var value = parseInt(document.getElementById('number').value, 10);
-    value = isNaN(value) ? 0 : value;
-    if (value <= 1) {
-        value == 1
-    } else {
-
-        value--
-
-
-
-
-
-    }
-
-
-
-    $('#number').val(value)
-}
-
-$('#decrease').click(decreaseValue)
-$('#increase').click(increaseValue)
-
-$('.catalog-krasnodar').find('.card-krasnodar').each(function(){
-
-    
-
-    $(this).find('.buy-now').click(function(e){
-        e.preventDefault()
-        $('.buy-fast').fadeIn('slow')
-        $('.overlay').fadeIn('slow')
-        $('body').css('overflow-y', 'hidden')
-    })
-})
-$('.overlay').click(function (params) {
-    $(this).fadeOut()
-    $('.modal').fadeOut()
-    $('body').css('overflow-y', 'scroll')
-
-})
-$('.close-modal').click(function (params) {
-    $('.overlay').fadeOut()
-    $('.modal').fadeOut()
-
-})
-$('.checkout-btn').click(function (params) {
-
-    $('.modal.success').fadeIn('slow')
-    $('.overlay').fadeIn('slow')
-})
