@@ -55,7 +55,7 @@ img {
   filter: invert(1);
 }
 
-.btn{
+.btn {
   padding: 10px 20px;
   font-size: 20px;
   color: white;
@@ -64,11 +64,19 @@ img {
   border-radius: 5px;
   transition: 200ms;
 
-  &:hover{
+  &:hover {
     background-color: darken($dark-yellow, 5%);
   }
 }
 
-.pt--70{
+.pt--70 {
   padding-top: 70px;
+}
+
+.title {
+  text-align: center;
+  p {
+    font-size: 22px;
+    font-weight: 500;
+  }
 }
