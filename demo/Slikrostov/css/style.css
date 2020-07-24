@@ -3925,9 +3925,16 @@ html {
       top: 9px; }
 
   .filter-krasnodar .select-containers .input-arrow {
-    top: 4px; }
+    top: 0; }
   .filter-krasnodar .select-containers .input-arrow-active {
-    top: 9px; }
+    top: 5px; }
+
+  .user-profile-krasnodar .select-container .input-arrow {
+    top: 4px; }
+    .user-profile-krasnodar .select-container .input-arrow-active {
+      top: 8px; }
+    .user-profile-krasnodar .select-container .input-arrow-close {
+      top: 4px; }
 
   .swiper-slide img {
     height: 150px; }

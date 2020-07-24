@@ -1123,11 +1123,25 @@
 
     .filter-krasnodar .select-containers {
         .input-arrow {
-            top: 4px;
+            top: 0;
         }
 
         .input-arrow-active {
-            top: 9px;
+            top: 5px;
+        }
+    }
+
+    .user-profile-krasnodar .select-container{
+
+        .input-arrow{
+            top: 4px;
+
+            &-active {
+                top: 8px;
+            }
+            &-close {
+                top: 4px;
+            }
         }
     }
 
