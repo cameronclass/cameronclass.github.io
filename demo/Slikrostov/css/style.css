@@ -2881,6 +2881,8 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 57px; }
+  .checkout-krasnodar .finish .checkout-continue {
+    text-transform: uppercase; }
 .checkout-krasnodar .amount-container {
   margin-right: 116px; }
   .checkout-krasnodar .amount-container span {
