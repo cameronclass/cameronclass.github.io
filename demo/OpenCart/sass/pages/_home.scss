@@ -87,16 +87,19 @@
 
   ul{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 60px;
 
     li{
-      margin-right: 60px;
+      margin-right: 48px;
+      margin-bottom: 60px;
     }
 
     img{
       width: auto;
-      height: 43px;
+      height: 39px;
     }
   }
 }
