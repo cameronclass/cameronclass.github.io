@@ -1,59 +1,252 @@
 <!doctype html>
 <html lang="ru">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow">
-    <!-- MetaTags -->
-    <meta name="description" content="Description of the page less than 150 characters">
-    <meta name="keywords" content="KeyWords">
-    <!-- OG tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:title" content="Content Title">
-    <meta property="og:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
-    <meta property="og:description" content="Description Here">
-    <meta property="og:site_name" content="Site Name">
-    <meta property="og:locale" content="ru_RU">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Site Name">
-    <meta name="twitter:description" content="Description Here">
-    <meta name="twitter:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
-    <!-- Favivon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="https://example.com/favicon.png">
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/custom-icon.png">
-    <!-- Styles CSS -->
-    <link rel="stylesheet" href="css/libs.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Fonts and Icons-->
-    <title>Opencart</title>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <!-- MetaTags -->
+  <meta name="description" content="Description of the page less than 150 characters">
+  <meta name="keywords" content="KeyWords">
+  <!-- OG tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:title" content="Content Title">
+  <meta property="og:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
+  <meta property="og:description" content="Description Here">
+  <meta property="og:site_name" content="Site Name">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Site Name">
+  <meta name="twitter:description" content="Description Here">
+  <meta name="twitter:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
+  <!-- Favivon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="/custom-icon.png">
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts and Icons-->
+  <!-- <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css"> -->
+  <title>Opencart</title>
+</head>
 
-  <body>
-    <!-- Preloader -->
-    <!-- <div id="page-preloader">
+<body>
+  <!-- Preloader -->
+  <!-- <div id="page-preloader">
       <div class="cssload-wraper">
         <div class="cssload-dots"></div>
       </div>
     </div> -->
-    <!-- Header -->
-    <header>
-    </header>
-    <!-- Main -->
-    <main>
-      <section>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer></footer>
-    <!-- Scripts -->
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- Header -->
+  <header class="container-fluid header">
+    <div class="header__menu">
+      <a href="#">
+        <img src="img/fontawesome/svgs/solid/list-ul.svg" class="icon" alt="Иконка">
+      </a>
+    </div>
+    <div class="header__number">
+      <a href="tel:+7 (800) ххх-хх-Хх">+7 (800) ххх-хх-Хх</a>
+      <a href="tel:+7 (812) 945-24-85">+7 (812) 945-24-85</a>
+    </div>
+    <div class="header__mail">
+      <a href="mailto:info@bathstudio.ru">
+        <img src="img/icons/mail.svg" class="icon" alt="Mail Icon">
+        <span>info@bathstudio.ru</span>
+      </a>
+    </div>
+    <ul class="header__social">
+      <li><a href="#"><img src="img/fontawesome/svgs/brands/instagram.svg" class="icon" alt="Иконка"></a></li>
+      <li><a href="#"><img src="img/fontawesome/svgs/brands/vk.svg" class="icon" alt="Иконка"></a></li>
+      <li><a href="#"><img src="img/fontawesome/svgs/brands/youtube.svg" class="icon" alt="Иконка"></a></li>
+      <li><a href="#"><img src="img/fontawesome/svgs/brands/facebook-square.svg" class="icon" alt="Иконка"></a></li>
+    </ul>
+    <form class="header__search" method="POST">
+      <input type="text" class="input">
+      <button type="submit">
+        <img src="img/icons/search.svg" class="icon" alt="Поиск">
+      </button>
+    </form>
+    <div class="header__control">
+      <a href="#">
+        <span>Корзина</span>
+        <img src="img/fontawesome/svgs/solid/shopping-cart.svg" class="icon" alt="Корзина">
+      </a>
+      <a href="#">
+        <span>Вход</span>
+        <img src="img/fontawesome/svgs/solid/user.svg" class="icon" alt="Личный Кабинет">
+      </a>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="pt--70">
+    <section class="container-fluid logo">
+      <div class="container">
+        <div class="logo__title">Философия стиля</div>
+        <div class="logo__image">
+          <a href="#">
+            <img src="img/logo.png" alt="Логотип">
+          </a>
+        </div>
+        <div class="logo__title">Премиальное качество</div>
+      </div>
+    </section>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Бренды</a></li>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">По стилям</a></li>
+        <li><a href="#">Сотрудничество</a></li>
+        <li><a href="#">индивидуальные решения</a></li>
+        <li><a href="#">Сервис</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Sales</a></li>
+      </ul>
+    </nav>
+    <section class="container-fluid px-0 home-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(img/bg-header.jpg);">
+            <div class="container d-flex justify-content-end">
+              <div class="home-slider__block mr-5">
+                <div class="home-slider__span">Интересно:</div>
+                <div class="home-slider__title">Информация
+                  об объекте
+                  на баннере
+                </div>
+                <div class="home-slider__button">
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide"
+            style="background-image: url(https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg);">
+            <div class="container d-flex justify-content-end">
+              <div class="home-slider__block mr-5">
+                <div class="home-slider__span">Интересно:</div>
+                <div class="home-slider__title">Информация
+                  об объекте
+                  на баннере
+                </div>
+                <div class="home-slider__button">
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(img/bg-header.jpg);">
+            <div class="container d-flex justify-content-end">
+              <div class="home-slider__block mr-5">
+                <div class="home-slider__span">Интересно:</div>
+                <div class="home-slider__title">Информация
+                  об объекте
+                  на баннере
+                </div>
+                <div class="home-slider__button">
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="container catalog">
+      <h2>каталог товаров</h2>
+      <p>Большой ассортимент сантехники и мебели для ванных комнат бизнес и премиум класса</p>
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Акриловые ванны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Отдельностоящие
+              ванны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Прямоугольные
+            душевые поддоны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Акриловые ванны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Акриловые ванны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Акриловые ванны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Акриловые ванны</span>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+          <a href="#" class="catalog__item">
+            <img src="img/catalog/1.jpg" alt="">
+            <span>Акриловые ванны</span>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="#" class="btn">Весь каталог</a>
+      </div>
+    </section>
+    <section class="container-fluid brands">
+      <div class="container">
+        <h2>бренды</h2>
+        <p>Только лучшие бренды Европы и России</p>
+
+        <ul>
+          <li><img src="img/brands/1.png" alt=""></li>
+          <li><img src="img/brands/2.png" alt=""></li>
+          <li><img src="img/brands/3.png" alt=""></li>
+          <li><img src="img/brands/4.png" alt=""></li>
+          <li><img src="img/brands/5.png" alt=""></li>
+          <li><img src="img/brands/6.png" alt=""></li>
+          <li><img src="img/brands/7.png" alt=""></li>
+          <li><img src="img/brands/8.png" alt=""></li>
+          <li><img src="img/brands/9.png" alt=""></li>
+          <li><img src="img/brands/10.png" alt=""></li>
+          <li><img src="img/brands/11.png" alt=""></li>
+          <li><img src="img/brands/12.png" alt=""></li>
+          <li><img src="img/brands/13.png" alt=""></li>
+          <li><img src="img/brands/14.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer></footer>
+  <!-- Scripts -->
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
 </html>

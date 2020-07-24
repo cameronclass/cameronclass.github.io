@@ -1,0 +1,158 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: $dark-grey;
+  position: fixed;
+  z-index: 999;
+
+  a {
+    color: white;
+    font-size: 18px;
+  }
+
+  &__menu {
+    img {
+      width: 22px;
+    }
+  }
+
+  &__number {
+    border-right: 1px solid $border;
+    padding: 5px 0;
+    a {
+      margin-right: 50px;
+    }
+  }
+
+  &__mail {
+    a {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 19px;
+      margin-right: 15px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 30px;
+      border-right: 1px solid $border;
+
+      &:last-child {
+        border: none;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    input {
+      padding-right: 40px;
+    }
+
+    button {
+      position: absolute;
+      right: 5px;
+      img {
+        width: 18px;
+        height: 19px;
+      }
+    }
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      padding-left: 15px;
+      height: 30px;
+      border-right: 1px solid $border;
+
+      span {
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.logo {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 246px;
+  }
+
+  width: 100%;
+  height: 246px;
+  background-image: url(../img/bg-header-top.jpg);
+  background-size: cover;
+
+  &__title {
+    font-family: $font-second;
+    font-size: 26px;
+    color: white;
+  }
+
+  &__image {
+    width: 422px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      a {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        padding: 20px 20px;
+        color: black;
+        font-family: $font-main;
+        transition: 200ms;
+
+        &:hover {
+          background-color: $dark-yellow;
+          color: white;
+        }
+      }
+    }
+  }
+}

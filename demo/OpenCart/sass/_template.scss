@@ -1,0 +1,74 @@
+html,
+body {
+  font-family: $font-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-h;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input {
+  background-color: $input;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 15px;
+  color: white;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}
+
+.icon {
+  filter: invert(1);
+}
+
+.btn{
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: $dark-yellow;
+  border-radius: 5px;
+  transition: 200ms;
+
+  &:hover{
+    background-color: darken($dark-yellow, 5%);
+  }
+}
+
+.pt--70{
+  padding-top: 70px;
+}
