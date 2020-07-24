@@ -221,3 +221,22 @@
     }
   }
 }
+
+
+.hit{
+  padding: 30px 0;
+  position: relative;
+
+  .swiper-container{
+    width: 100%;
+    padding: 20px 0 100px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $dark-grey;
+  }
+
+  .swiper-pagination-bullet {
+    border: 1px solid $dark-grey;
+  }
+}
