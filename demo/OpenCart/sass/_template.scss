@@ -10,12 +10,34 @@ h4,
 h5,
 h6 {
   font-family: $font-h;
+  line-height: 1.5;
+  &::selection {
+    background-color: $grey;
+    color: white;
+  }
+}
+
+h2{
+  @include lg-1200{
+    font-size: 22px;
+  }
+}
+
+
+p,
+span {
+  line-height: 1.5;
+  &::selection {
+    background-color: $grey;
+    color: white;
+  }
 }
 
 a {
   text-decoration: none;
 }
-button {
+button,
+div, span {
   &:focus {
     outline: none;
   }
@@ -35,6 +57,61 @@ img {
   &:focus {
     outline: none;
   }
+}
+
+/* Container */
+@media screen and (max-width: 2000px) {
+  .container {
+    width: 1250px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 980px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hr {
+  width: 100%;
+  height: 2px;
+  background-color: $dark-grey;
+  margin: 80px 0 40px;
+}
+
+.pt--70 {
+  padding-top: 70px;
 }
 
 .input {
@@ -63,14 +140,11 @@ img {
   background-color: $dark-yellow;
   border-radius: 5px;
   transition: 200ms;
+  display: inline-block;
 
   &:hover {
     background-color: darken($dark-yellow, 5%);
   }
-}
-
-.pt--70 {
-  padding-top: 70px;
 }
 
 .title {
@@ -78,20 +152,94 @@ img {
   p {
     font-size: 22px;
     font-weight: 500;
+
+    @include lg-1200{
+      font-size: 20px;
+    }
   }
 }
 
-
-.card{
-  display: flex;
-  flex-direction: column;
-
-  img{
+.card {
+  img {
     width: 240px;
     height: 240px;
     object-fit: cover;
     border-radius: 12px;
     overflow: hidden;
     margin: 0 auto;
+
+    @include lg-1200{
+      width: 230px;
+      height: 230px;
+    }
+
+    @include lg-1100{
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    h4 {
+      font-family: $font-main;
+      font-weight: normal;
+      font-size: 20px;
+      margin: 15px 0;
+
+      @include lg-1100{
+        font-size: 16px;
+      }
+    }
+
+    span {
+      display: block;
+      font-weight: bold;
+      font-size: 24px;
+      @include lg-1100{
+        font-size: 20px;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 18px;
+    display: inline-block;
+
+    @include lg-1100{
+      font-size: 16px;
+    }
+  }
+}
+
+.blog-card {
+  &__text {
+    text-align: left;
+    padding: 20px 0 0;
+    p {
+      font-size: 18px;
+      font-weight: normal;
+      height: 60px;
+      overflow: hidden;
+    }
+
+    span {
+      font-style: italic;
+      font-size: 17px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  .btn {
+    font-size: 18px;
+    display: inline-block;
+    float: left;
   }
 }

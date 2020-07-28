@@ -31,7 +31,6 @@
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts and Icons-->
-  <!-- <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css"> -->
   <title>Opencart</title>
 </head>
 
@@ -54,18 +53,16 @@
     </div>
     <div class="header__number">
       <a href="tel:+7 (800) ххх-хх-Хх">+7 (800) ххх-хх-Хх</a>
-      <a href="tel:+7 (812) 945-24-85">+7 (812) 945-24-85</a>
-    </div>
-    <div class="header__mail">
-      <a href="mailto:info@bathstudio.ru">
+      <a href="tel:+7 (812) 945-24-85" class="border">+7 (812) 945-24-85</a>
+      <a href="mailto:info@bathstudio.ru" class="mail">
         <img src="img/icons/mail.svg" class="icon" alt="Mail Icon">
         <span>info@bathstudio.ru</span>
       </a>
     </div>
     <ul class="header__social">
       <li><a href="#"><img src="img/fontawesome/svgs/brands/instagram.svg" class="icon" alt="Иконка"></a></li>
-      <li><a href="#"><img src="img/fontawesome/svgs/brands/vk.svg" class="icon" alt="Иконка"></a></li>
-      <li><a href="#"><img src="img/fontawesome/svgs/brands/youtube.svg" class="icon" alt="Иконка"></a></li>
+      <!-- <li><a href="#"><img src="img/fontawesome/svgs/brands/vk.svg" class="icon" alt="Иконка"></a></li>
+      <li><a href="#"><img src="img/fontawesome/svgs/brands/youtube.svg" class="icon" alt="Иконка"></a></li> -->
       <li><a href="#"><img src="img/fontawesome/svgs/brands/facebook-square.svg" class="icon" alt="Иконка"></a></li>
     </ul>
     <form class="header__search" method="POST">
@@ -78,6 +75,10 @@
       <a href="#">
         <span>Корзина</span>
         <img src="img/fontawesome/svgs/solid/shopping-cart.svg" class="icon" alt="Корзина">
+      </a>
+      <a href="#">
+        <span>Избранное</span>
+        <img src="img/fontawesome/svgs/solid/heart.svg" class="icon" alt="Корзина">
       </a>
       <a href="#">
         <span>Вход</span>
@@ -384,34 +385,34 @@
     </section>
     <section class="container-fluid blog title">
       <h2>Реализованные проекты</h2>
-      <div class="row">
+      <div class="row mt-5 mx-4">
         <div class="col-lg-4">
           <div class="blog-card">
-            <img src="img/products/1.jpg" alt="">
+            <img src="img/blog.jpg" alt="">
             <div class="blog-card__text">
               <span>01. 02. 2020</span>
               <p>Небольшой текст с информацией, продолжение
                 которой на другой странице. Текст текст текст
-                текс текст текст ...</p>
+                текс текст текст Lorem ipsum dolor sit amet.</p>
             </div>
             <a href="#" class="btn">Читать далее</a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="blog-card">
-            <img src="img/products/1.jpg" alt="">
+            <img src="img/blog.jpg" alt="">
             <div class="blog-card__text">
               <span>01. 02. 2020</span>
               <p>Небольшой текст с информацией, продолжение
                 которой на другой странице. Текст текст текст
-                текс текст текст ...</p>
+                текс текст текст ... Lorem ipsum dolor sit amet.</p>
             </div>
             <a href="#" class="btn">Читать далее</a>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="blog-card">
-            <img src="img/products/1.jpg" alt="">
+            <img src="img/blog.jpg" alt="">
             <div class="blog-card__text">
               <span>01. 02. 2020</span>
               <p>Небольшой текст с информацией, продолжение
@@ -423,9 +424,327 @@
         </div>
       </div>
     </section>
+    <section class="container-fluid partnership title">
+      <div class="container">
+        <h2>Сотрудничество</h2>
+        <div class="row">
+          <div class="col-lg-4 d-flex">
+            <div class="partnership__card">
+              <div class="partnership__card_image">
+                <img src="img/icons/partner-2.png" alt="">
+              </div>
+              <h4>Архитекторам и Дизайнерам</h4>
+              <ul>
+                <li>Индивидуальные условия сотрудничества</li>
+                <li>Комплексные решения для проектов любой сложности</li>
+                <li>Профессиональная поддержка на всех этапах</li>
+                <li>Актуальные коллекции и новинки</li>
+                <li>Коллаборации и совместное продвижение</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <div class="partnership__card">
+              <div class="partnership__card_image">
+                <img src="img/icons/partner-1.png" alt="">
+              </div>
+              <h4>Девелоперам</h4>
+              <ul>
+                <li>Комплектация общественных пространств ванных комнат и спа- зон по ключ</li>
+                <li>Нестандартные проекты</li>
+                <li>Выгодные условия сотрудничества</li>
+                <li>Воплощение концепта в разных бюджетах без потери качества</li>
+                <li>Программа хранения</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex">
+            <div class="partnership__card">
+              <div class="partnership__card_image partnership__card_image-last">
+                <img src="img/icons/partner-3.png" alt="">
+              </div>
+              <h4>Корпоративным клиентам</h4>
+              <ul>
+                <li>Гибкая система скидок</li>
+                <li>Комплексные решения для проектов любой сложности</li>
+                <li>Экспертная поддержка на всех этапах</li>
+                <li>Экономия времени в подборе ассортимента лучших производителей</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn d-inline-block mt-5">Подробнее</a>
+      </div>
+    </section>
+    <section class="container-fluid consultation">
+      <div class="container title">
+        <h2>планировка и дизайн</h2>
+        <div class="consultation__span">
+          <span>Персональный менеджер</span>
+        </div>
+        <p>Нужна помощь в оформлении и комплектации ванной комнаты? <br> К вашим услугам профессиональные консультанты с
+          большим опытом
+          работы.</p>
+        <a href="#" class="btn">Заказать консультацию</a>
+      </div>
+    </section>
+    <section class="container-fluid individual title">
+      <div class="container">
+        <h2>Индивидуальные решения</h2>
+        <span class="individual__span"></span>
+        <!-- Продукт таб -->
+        <ul class="individual-tab__link">
+          <li><a class="btn" href="#tab-unstandart">Нестандартные решения</a></li>
+          <li><a class="btn" href="#tab-tech-count">Технический расчет</a></li>
+          <li><a class="btn" href="#tab-potreb">Учет потребностей</a></li>
+        </ul>
+        <!-- Продукты -->
+        <div id="tab-unstandart" class="individual-tab__tabs js-individual-content">
+          <p>Мы готовы предложить Вам свой опыт в сфере сантехники,
+            в сочетании с интерьерными талантами наших дизайнеров.
+            Вы сможете создать не только современный и красивый
+            интерьер, но и безопасный – при создании будут учитываться
+            все технологические нормативы и требования, такие как
+            размеры помещения, количество членов семьи,
+            предполагаемую нагрузка на водоснабжение
+            и водоотведение, а также, разумеется, ваши пожелания.
+          </p>
+          <p>Работаем 18 лет.</p>
+          <p>При необходимости составим для вас индивидуальный
+            дизайн-проект вашей ванной комнаты, предоставим 3
+            альтернативных варианта планировки и поможем подобрать
+            сантехническое оборудование.</p>
+        </div>
+        <div id="tab-potreb" class="individual-tab__tabs js-individual-content">
+          <p>Специалисты Bath Studio помогут вам сформулировать все ваши потребности и учесть в разработке проекта и
+            комплектации
+            ванной комнаты.
+          </p>
+          <p>
+            Квартира или загородный дом? Какой стиль интерьера больше подходит вам?
+            Какие бренды и коллекции Вас вдохновляют?
+            Какой бюджет вы готовы потратить ? 
+          </p>
+          <p>
+            И, конечно:
+          </p>
+          <p>Кто будет пользоваться ванной комнатой: один человек, пара, семья с детьми или пожилые люди?
+          Сколько человек будут пользоваться санузлами одновременно? Вы хотите иметь туалет отдельно (раздельный санузел)? Как часто Вы будете пользоваться ванной комнатой?
+          </p>
+          <p>Эти и другие особенности и потребности именно вашей семьи будут учтены в подборе оптимального решения для
+          ванной
+          комнаты.</p>
+        </div>
+        <div id="tab-tech-count" class="individual-tab__tabs js-individual-content">
+          <p>Маленькие помещения ванных и туалетных комнат городских жилых зданий или большие пространства в загородных
+            домах – все
+            они часто требуют тщательных технических расчетов.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container about-service">
+      <div class="row">
+        <div class="col-lg-4 d-flex">
+          <div class="about-service__card">
+            <div class="about-service__card_img about-service__card_img_1">
+              <img src="img/icons/about-service1.jpg" alt="">
+            </div>
+            <h3>Доставка</h3>
+            <ul>
+              <li>Доставка по России осуществляется курьерскими и
+                транспортными компаниями - партнерами.
+                Мы предложим Вам оптимальные варианты.
+              </li>
+              <li>Доставка по Санкт- Петербургу и Ленинградской области,
+                Москве и Московской области осуществляется собственным транспортом, а также компаниями- партнерами.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex">
+          <div class="about-service__card">
+            <div class="about-service__card_img">
+              <img src="img/icons/about-service2.jpg" alt="">
+            </div>
+            <h3>Оплата</h3>
+            <ul>
+              <li>Безналичная и наличная форма оплаты.</li>
+              <li>Безопасная онлайн оплата на сайте банковской картой Visa или MasterCard.</li>
+              <li>Безналичная оплата для физических и юридических лиц.</li>
+              <li>Оформление полного комплекта документов.</li>
+              <li class="mb-0">Предоплата на заказной товар от</li>
+              <li class="percent">75%</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex">
+          <div class="about-service__card">
+            <div class="about-service__card_img">
+              <img src="img/icons/about-service3.jpg" alt="">
+            </div>
+            <h3>Гарантия</h3>
+            <ul>
+              <li>Все товары, представленные на сайте, изготовлены только на официальных заводах производителей.</li>
+              <li>Каждый производитель имеет сертификат соответствия российским стандартам ГОСТ Р.</li>
+              <li class="months"><span>1 до 25 лет </span>
+                гарантия на товары.</li>
+              <li class="months months-last"><span>12</span>
+                месяцев</li>
+              <li> гарантия на работы, выполненные нашими специалистами.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center"><a href="#" class="btn">Подробнее</a></div>
+    </section>
+    <section class="container-fluid instagram title">
+      <h2>InstaShopping</h2>
+      <p>Найти товары из постов в Instagram стало проще. <br>
+        Нажмите на нужный пост и добавляйте товары в корзину.</p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="instagram__item">
+              <img src="img/icons/photo.jpg" alt="Изображения">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="instagram__item">
+              <img src="img/icons/photo.jpg" alt="Изображения">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="instagram__item">
+              <img src="img/icons/photo.jpg" alt="Изображения">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="instagram__item">
+              <img src="img/icons/photo.jpg" alt="Изображения">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="instagram__item">
+              <img src="img/icons/photo.jpg" alt="Изображения">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="instagram__item">
+              <img src="img/icons/photo.jpg" alt="Изображения">
+            </a>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="container about-company title">
+      <h2>О компании</h2>
+      <img src="img/icons/arrow-down-black.svg" alt="">
+      <p>Bath Studio с 1998 года занимается комплектацией сантехникой, мебелью, аксессуарами от лучших европейских
+        брендов
+        премиум и бизнес класса. <br>
+        Создаете ли вы интерьер ванной комнаты или зоны отдыха в квартире, спа- комплекс в загородном доме или отеле,
+        работаете
+        над воплощением концепта общественных пространств и объектов – Bath Studio поможет вам. <br>
+        Онлайн Бутик приглашает вас в путешествие по миру уникальных идей, безупречного вкуса и актуальных стилевых
+        решений в
+        создании интерьеров ванных комнат. <br>
+        Роскошные и лаконичные, ультрамодные и выдержанные в ретро стиле, коллекции сантехники, мебели, аксессуаров
+        способны
+        поменять ваше представление о возможностях пространства вашей ванной комнаты. <br>
+        А высочайшее качество материалов, используемых производителями в своих коллекция, вы почувствуете с первого
+        взгляда и
+        прикосновения к настоящему совершенству. <br>
+        Вдохновляйтесь лучшими дизайнерскими идеями, современными трендами и создавайте свой идеальный интерьер.
+        А большой опыт и профессиональная экспертиза команды Bath Studio поможет воплотить в реальность проекты любой
+        сложности.
+      </p>
+    </section>
+    <div class="hr"></div>
   </main>
   <!-- Footer -->
-  <footer></footer>
+  <footer class="container-fluid footer">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <div class="footer__logo_img">
+          <img src="img/logo.png" alt="">
+        </div>
+        <nav class="footer__logo_nav">
+          <ul>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Бренды</a></li>
+            <li><a href="#">По стилям</a></li>
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Sales</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__contact">
+        <div class="number">
+          <a href="tel:+ 7 (812) 945-24-85">+ 7 (812) 945-24-85</a>
+          <span>Пн-пт с 10.00 до 20.00</span>
+        </div>
+        <div class="number">
+          <a href="tel:+ 7 (812) 945-24-85">+ 7 (812) 945-24-85</a>
+          <span>Пн-пт с 10.00 до 20.00</span>
+        </div>
+        <div class="mail">
+          <img src="img/icons/mail.svg" class="icon" alt="Mail Icon">
+          <a href="mailto:info@bathstudio.ru">info@bathstudio.ru</a>
+        </div>
+        <div class="social">
+          <a href="#"><img src="img/fontawesome/svgs/brands/instagram.svg" class="icon" alt="Иконка"></a>
+          <!-- <a href="#"><img src="img/fontawesome/svgs/brands/vk.svg" class="icon" alt="Иконка"></a>
+          <a href="#"><img src="img/fontawesome/svgs/brands/youtube.svg" class="icon" alt="Иконка"></a> -->
+          <a href="#"><img src="img/fontawesome/svgs/brands/facebook-square.svg" class="icon" alt="Иконка"></a>
+        </div>
+      </div>
+      <div class="w-70">
+        <div class="footer__links">
+          <div class="left">
+            <h3>О компании </h3>
+            <ul>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Сотрудничество</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <h3>КЛИЕНТСКИЙ СЕРВИС</h3>
+            <ul>
+              <li><a href="#">Индивидуальные решение</a></li>
+              <li><a href="#">Сервис</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Обмен и возврат</a></li>
+              <li><a href="#">Служба поддержки</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Публичная оферта</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__mail">
+          <h3>Подпишитесь на рассылку</h3>
+          <form action="index.html" method="POST">
+            <input type="text" class="input" placeholder="Введите еmail">
+            <button type="submit">
+              <img src="img/icons/arrow-down-black.svg" alt="Поиск">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <img src="img/icons/payment.png" alt="">
+      <p>© 2008 - 2020 Онлайн бутик Bath Studio <span>Представленная на сайте информация не является публичной офертой и
+          носит ознакомительный характер.</span></p>
+    </div>
+  </footer>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

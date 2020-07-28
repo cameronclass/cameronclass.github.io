@@ -22,6 +22,23 @@ $(document).ready(function () {
     $(activeTab).fadeIn();
     return false;
   });
+
+
+  /* Продукты Табы */
+  $(".individual-tab__link li:first-child").addClass("active");
+  $(".js-individual-content").hide();
+  $(".js-individual-content:first").show();
+
+  // Click function
+  $(".individual-tab__link li").click(function () {
+    $(".individual-tab__link li").removeClass("active");
+    $(this).addClass("active");
+    $(".js-individual-content").hide();
+
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).fadeIn();
+    return false;
+  });
 });
 
 
@@ -60,5 +77,15 @@ var swiper = new Swiper(".hit .swiper-container", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".instagram .swiper-container", {
+  slidesPerView: 7,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

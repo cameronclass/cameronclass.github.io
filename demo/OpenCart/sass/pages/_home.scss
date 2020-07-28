@@ -7,12 +7,13 @@
   }
 
   &__block {
-    width: 280px;
+    width: 350px;
     height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
+
   }
 
   &__span {
@@ -36,11 +37,6 @@
   padding: 30px 0 60px;
   text-align: center;
 
-  p {
-    font-size: 22px;
-    font-weight: 500;
-  }
-
   &__item {
     display: flex;
     flex-direction: column;
@@ -48,6 +44,11 @@
     font-size: 20px;
     text-align: center;
     padding: 20px 40px;
+
+    @include lg-1200{
+      padding: 15px 20px;
+      font-size: 18px;
+    }
 
     span {
       display: block;
@@ -63,6 +64,11 @@
       object-fit: cover;
       margin: 0 auto;
       transition: 200ms;
+
+      @include lg-1100{
+        width: 180px;
+        height: 180px;
+      }
     }
 
     &:hover {
@@ -181,53 +187,53 @@
 }
 
 .choose-type {
-
-  &__link{
+  &__link {
     display: flex;
     justify-content: center;
 
-    li{
+    li {
       margin-right: 15px;
       margin-left: 15px;
 
-      a{
+      a {
         display: block;
         background-color: #fff;
         border: 2px solid $dark-grey;
         color: $dark-grey;
+        font-weight: 500;
 
-        &:hover{
-          border-color: darken($dark-yellow, 5%);
+        &:hover {
+          border-color: darken($dark-grey, 5%);
           color: white;
+          background-color: $dark-grey;
         }
       }
 
-      &.active{
-        a{
-          background-color: $dark-yellow;
-          border: 2px solid $dark-yellow;
+      &.active {
+        a {
+          background-color: $dark-grey;
+          border: 2px solid $dark-grey;
           color: white;
         }
       }
     }
   }
 
-  &__tabs{
+  &__tabs {
     margin: 30px 0;
 
-    img{
+    img {
       height: 230px;
       object-fit: cover;
     }
   }
 }
 
-
-.hit{
+.hit {
   padding: 30px 0;
   position: relative;
 
-  .swiper-container{
+  .swiper-container {
     width: 100%;
     padding: 20px 0 100px;
   }
@@ -238,5 +244,317 @@
 
   .swiper-pagination-bullet {
     border: 1px solid $dark-grey;
+  }
+
+  .swiper-button-prev {
+    left: -30px;
+
+    @include lg-1300{
+      left: -20px;
+    }
+  }
+  .swiper-button-next {
+    right: -30px;
+    @include lg-1300{
+      right: -20px;
+    }
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.blog {
+  padding: 30px 0 60px;
+}
+
+.partnership {
+  padding: 40px 0;
+
+  background-color: $bg-white;
+
+  &__card {
+    padding: 25px 35px;
+    border: 2px solid $dark-grey;
+    border-radius: 9px;
+    text-align: left;
+    margin-top: 30px;
+
+    img {
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    h4 {
+      font-family: $font-main;
+      font-size: 24px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    ul {
+      margin: 0 0 0 30px;
+      padding: 0;
+
+      li {
+        margin-bottom: 25px;
+        font-size: 18px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: -30px;
+          top: 5px;
+          @include icon(url(../../img/fontawesome/svgs/regular/circle.svg), 12px, 12px);
+        }
+      }
+    }
+
+    &_image {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 45px;
+    }
+
+    &_image-last {
+      img {
+        width: 120px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.consultation {
+  padding: 50px 0 60px;
+
+  background-image: url(../../img/bg-consultation.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+  &__span {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    margin-top: 50px;
+    position: relative;
+
+    span {
+      display: block;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-top: 25px;
+      width: 50px;
+      height: 6px;
+      border-radius: 4px;
+      background-color: $dark-yellow;
+    }
+  }
+
+  p {
+    font-size: 23px;
+    padding: 20px 0 20px;
+    font-weight: normal;
+    text-align: left;
+    width: 60%;
+    height: 170px;
+    overflow: hidden;
+  }
+}
+
+.individual {
+  background-image: url(../../img/bg-resheniye.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 88% 90%;
+  background-color: $bg-white;
+  padding: 40px 0;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  &__span {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-top: 0px;
+      width: 50px;
+      height: 6px;
+      border-radius: 4px;
+      background-color: $dark-yellow;
+    }
+  }
+
+  &-tab__link {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-left: 15px;
+      margin-right: 15px;
+
+      a {
+        color: $dark-grey;
+        background-color: $bg-white;
+        border: 2px solid $dark-grey;
+        font-weight: 500;
+
+        &:hover {
+          background-color: $dark-grey;
+          color: white;
+        }
+      }
+
+      &.active {
+        a {
+          background-color: $dark-grey;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &-tab__tabs {
+    width: 60%;
+    text-align: left;
+    padding: 40px 0 30px;
+    height: 440px;
+    overflow: hidden;
+    p {
+      text-align: left;
+      font-weight: normal;
+      font-size: 18px;
+
+      @include lg-1300{
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.about-service {
+  padding: 80px 0 50px;
+
+  &__card {
+    padding: 25px 35px;
+    border: 2px solid $dark-yellow;
+    border-radius: 9px;
+    text-align: left;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+
+    &_img {
+      position: absolute;
+      width: 100px;
+      left: 50%;
+      top: -60px;
+      transform: translateX(-50%);
+
+      img {
+        object-fit: contain;
+        background-color: #fff;
+      }
+    }
+
+    &_img_1 {
+      width: 150px;
+      img {
+        padding: 0 15px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      margin: 45px 0 30px;
+    }
+    ul {
+      li {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 25px;
+
+        &.percent {
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+
+        &.mb-0{
+          margin-bottom: 0;
+        }
+
+        &.months {
+          display: flex;
+          flex-direction: column;
+          font-size: 20px;
+          margin-bottom: 40px;
+          span {
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1;
+          }
+        }
+        &.months-last {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.instagram {
+  padding: 40px 30px;
+
+  &__item {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .swiper-container{
+    padding: 20px 0 80px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $dark-grey;
+  }
+
+  .swiper-pagination-bullet {
+    border: 1px solid $dark-grey;
+  }
+}
+
+.about-company{
+  img{
+    width: 30px;
+    margin: 0 auto;
+    transform: rotate(180deg);
+  }
+  p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 40px;
   }
 }

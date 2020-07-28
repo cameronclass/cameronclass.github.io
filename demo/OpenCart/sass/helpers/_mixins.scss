@@ -119,3 +119,15 @@
   content: $content;
   font-weight: $weight;
 }
+
+@mixin icon($image, $width, $height) {
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    size: contain;
+  }
+
+  display: inline-block;
+  width: $width;
+  height: $height;
+}

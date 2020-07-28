@@ -143,15 +143,15 @@
   cursor: auto;
   pointer-events: none;
 }
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  text-transform: none;
-  font-variant: initial;
-  line-height: 1;
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background-image: url("../img/icons/arrow-down-black.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-size: contain;
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
@@ -160,7 +160,9 @@
 }
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-  content: "prev";
+  -webkit-transform: rotateZ(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotateZ(90deg);
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
@@ -169,7 +171,9 @@
 }
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-  content: "next";
+  -webkit-transform: rotateZ(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotateZ(-90deg);
 }
 .swiper-button-next.swiper-button-white,
 .swiper-button-prev.swiper-button-white {
