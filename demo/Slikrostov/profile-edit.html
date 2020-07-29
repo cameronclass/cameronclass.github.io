@@ -42,57 +42,74 @@
 
     <!-- Header -->
     <header class="container-fluid header-krasnodar">
-        <div class="container h-80">
-          <div class="row align-items-center">
-            <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-4 krasnodar-col-sm-12 ">
-              <div class="logo">
-                <a href="/">
-                  <img src="img/logo-header.svg" alt="">
-                </a>
-                <ul class="header-krasnodar-menu__phone ">
-                  <li>
-                    <a href="tel:+7-863-303-28-25"><img src="img/icons/phone.svg" alt=""></a>
-                  </li>
-                </ul>
-              </div>
+      <div class="container h-80">
+        <div class="row align-items-center">
+          <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-4 krasnodar-col-sm-12 pl-0">
+            <div class="logo">
+              <a href="/">
+                <img src="img/logo-header.svg" alt="">
+              </a>
+              <ul class="header-krasnodar-menu__phone ">
+                <li>
+                  
+                  <a href="tel:+7-863-303-28-25"><img src="img/icons/phone.svg" alt=""></a>
+                </li>
+              </ul>
             </div>
-            <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-8 krasnodar-col-sm-12">
-                
-              <div class="header-krasnodar-menu">
-                <ul class="header-krasnodar-menu__phone mob-d-none">
+          </div>
+          <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-8 krasnodar-col-sm-12">
+           
+            <div class="header-krasnodar-menu">
+              <ul class="header-krasnodar-menu__phone mob-d-none">
+                <li>
+                  <img src="img/icons/phone.svg" alt="">
+                 <a href="tel:+7-863-303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+                </li>
+              </ul>
+              <div class="menu-krasnodar-content">
+                <ul class="header-krasnodar-menu__user">
+                  <li class="mob-d-none"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-fill-none">
+                      <use xlink:href="img/icons/icons.svg#person" />
+                    </svg></li>
                   <li>
-                    <img src="img/icons/phone.svg" alt="">
-                                   <a href="tel:+7-863-303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+                    <a href="#">Сергей</a>
                   </li>
+                  <li>|</li>
+                  <li>
+                    <a href="/profile-edit.html">ред. профиль</a>
+                  </li>
+                  <li>|</li>
+                  <li><a href="#">выход</a></li>
                 </ul>
-                <div class="menu-krasnodar-content">
-                  <ul class="header-krasnodar-menu__user">
-                    <li class="mob-d-none"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-fill-none">
-                        <use xlink:href="img/icons/icons.svg#person" />
-                      </svg></li>
-                    <li>
-                      <a href="#">Сергей</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                      <a href="#">ред. профиль</a>
-                    </li>
-                    <li>|</li>
-                    <li><a href="#">выход</a></li>
-                  </ul>
-                  <ul class="menu-krasnodar-content__basket">
-                    <li><a href="#"><span>3</span>Корзина</a></li>
-                    <li><a href="#"><span>2</span><p class="mob-d-none">МОИ</p> ЗАКАЗЫ</a></li>
-                  </ul>
-                </div>
+                <ul class="menu-krasnodar-content__basket">
+                  <li><a href="/checkout-auth.html"><span>3</span>Корзина</a></li>
+                  <li><a href="/orders.html"><span>2</span><p class="mob-d-none">МОИ</p> ЗАКАЗЫ</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-    
-    
-    
-      </header>
+      </div>
+  
+  
+  
+    </header>
+    <div class="container-fluid nav-container">
+      <div class="container ">
+        <div class="row">
+          <div class="krasnodar-col-lg-12 mob-nav pl-0">
+            <nav>
+              <ul class="navigation">
+                <li><a href="#">Автошины</a></li>
+                <li><a href="#">Диски</a></li>
+                <li><a href="#">АКБ</a></li>
+                <li><a href="#">Масла</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Main -->
     <main class="container-fluid">
 

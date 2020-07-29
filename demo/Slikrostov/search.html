@@ -44,25 +44,26 @@
   <header class="container-fluid header-krasnodar">
     <div class="container h-80">
       <div class="row align-items-center">
-        <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-4 krasnodar-col-sm-12 ">
+        <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-4 krasnodar-col-sm-12 pl-0">
           <div class="logo">
             <a href="/">
               <img src="img/logo-header.svg" alt="">
             </a>
             <ul class="header-krasnodar-menu__phone ">
               <li>
+                
                 <a href="tel:+7-863-303-28-25"><img src="img/icons/phone.svg" alt=""></a>
               </li>
             </ul>
           </div>
         </div>
         <div class="krasnodar-col-xl-6 krasnodar-col-lg-6 krasnodar-col-md-8 krasnodar-col-sm-12">
-           
+         
           <div class="header-krasnodar-menu">
             <ul class="header-krasnodar-menu__phone mob-d-none">
               <li>
                 <img src="img/icons/phone.svg" alt="">
-                               <a href="tel:+7-863-303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
+               <a href="tel:+7-863-303-28-25"><span>+7 (863) <b>303-28-25</b></span></a>
               </li>
             </ul>
             <div class="menu-krasnodar-content">
@@ -75,14 +76,14 @@
                 </li>
                 <li>|</li>
                 <li>
-                  <a href="#">ред. профиль</a>
+                  <a href="/profile-edit.html">ред. профиль</a>
                 </li>
                 <li>|</li>
                 <li><a href="#">выход</a></li>
               </ul>
               <ul class="menu-krasnodar-content__basket">
-                <li><a href="#"><span>3</span>Корзина</a></li>
-                <li><a href="#"><span>2</span><p class="mob-d-none">МОИ</p> ЗАКАЗЫ</a></li>
+                <li><a href="/checkout-auth.html"><span>3</span>Корзина</a></li>
+                <li><a href="/orders.html"><span>2</span><p class="mob-d-none">МОИ</p> ЗАКАЗЫ</a></li>
               </ul>
             </div>
           </div>
@@ -93,8 +94,37 @@
 
 
   </header>
+  <div class="container-fluid nav-container">
+    <div class="container ">
+      <div class="row">
+        <div class="krasnodar-col-lg-12 mob-nav pl-0">
+          <nav>
+            <ul class="navigation">
+              <li><a href="#">Автошины</a></li>
+              <li><a href="#">Диски</a></li>
+              <li><a href="#">АКБ</a></li>
+              <li><a href="#">Масла</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Main -->
   <main class="container-fluid">
+    <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="d-none">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" title="Главная" itemprop="item">
+              <span itemprop="name">Главная</span>
+              <meta itemprop="position" content="0">
+          </a></li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/search/" title="Раздел" itemprop="item">
+              <span itemprop="name">Поиск</span>
+              <meta itemprop="position" content="1">
+          </a></li>
+
+  </ul>
     <section class="filter-krasnodar">
       <div class="container ">
         <div class="row filter-krasnodar-container">
@@ -201,16 +231,17 @@
         <div class="catalog-krasnodar">
           <div class="row">
 
+
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -220,15 +251,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -238,15 +269,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -256,15 +287,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -274,15 +305,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -292,15 +323,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -310,15 +341,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -328,15 +359,15 @@
               </div>
             </div>
             <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
+              <div class="card-krasnodar" itemscope="" itemtype="http://schema.org/Product">
 
-                <img src="img/product.png" alt="">
+                <img src="img/product.png" alt="Product">
 
-                <div class="card-krasnodar-content">
+                <div class="card-krasnodar-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
                   <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
+                    <a href="/product.html"  itemprop="url" itemprop="name">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
                   </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
+                  <p class="card-krasnodar-content__price" itemprop="price">5 640 руб.</p>
                   <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
                   <div class="card-krasnodar-content__buttons">
                     <button class="btn buy-now">Купить сразу</button>
@@ -345,24 +376,7 @@
                 </div>
               </div>
             </div>
-            <div class="krasnodar-col-xl-3 krasnodar-col-lg-4 krasnodar-col-md-6 krasnodar-col-sm-6 krasnodar-col-xs-6 card-col">
-              <div class="card-krasnodar">
 
-                <img src="img/product.png" alt="">
-
-                <div class="card-krasnodar-content">
-                  <div class="card-krasnodar-content__title">
-                    <a href="#">Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL</a>
-                  </div>
-                  <p class="card-krasnodar-content__price">5 640 руб.</p>
-                  <p class="card-krasnodar-content-in__stock">в наличии | ул. Доватора 157.</p>
-                  <div class="card-krasnodar-content__buttons">
-                    <button class="btn buy-now">Купить сразу</button>
-                    <button class="btn btn-to-cart">В корзину</button>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
