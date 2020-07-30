@@ -149,7 +149,6 @@
             height: auto;
         }
     }
-
     .modal.buy-fast .order-price {
         margin-right: 0;
         padding-left: 28px;
@@ -163,15 +162,15 @@
 
     .modal.buy-fast {
         margin-top: 50px;
-        height: auto;
-        overflow: scroll;
+        height: 82vh;
+        overflow-y: scroll;
         width: 54.89%;
 
     }
 
     .modal.register {
         width: 35%;
-        height: auto;
+        height: 82vh;
     }
 
     .modal-container {
@@ -233,6 +232,8 @@
 
 @media screen and (max-width: 768px) {
 
+
+
     .model-krasnodar-brend__logo{
         margin-bottom: 20px;
         img {
@@ -247,10 +248,13 @@
 
     .modal.register {
         width: 45%;
+        overflow-y: scroll;
+        height: auto;
     }
 
     .modal.buy-fast {
         width: 70%;
+        height: 82vh;
     }
 
     .order-register-krasnodar .delivery {
@@ -492,6 +496,27 @@
 }
 
 @media screen and (max-width: 520px) {
+    .mob-nav{
+        display: flex;
+        justify-content: center;
+    }
+    .user-profile-krasnodar h1{
+        padding: 0;
+    }
+    .navigation{
+        padding: 0;
+
+    }
+    .nav-container .row{
+        justify-content: center;
+    }
+    .modal{
+        margin-top: 40px;
+    }
+    .modal.register {
+
+        height: 85vh;
+    }
     .catalog-krasnodar,.slider-krasnodar {
         margin-right: -15px;
         margin-left: -15px;
@@ -582,7 +607,7 @@
         
 
         &__basket {
-            width: 45%;
+            width: auto;
 
             span {
                 margin-right: 5px;
@@ -1380,6 +1405,6 @@
 }
 .header-krasnodar-menu .menu-krasnodar-content__basket{
     justify-content: center;
-    width: 100%;
+    width: 100% ;
 }
 }

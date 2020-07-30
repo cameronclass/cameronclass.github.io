@@ -13,6 +13,7 @@
   margin-top: 90px;
   background-color: $white;
 
+
   h3 {
     letter-spacing: 0.02em;
   }
@@ -22,6 +23,8 @@
 
     width: 42.89%;
     display: none;
+    height: auto;
+
 
     .product-title {
       font-size: 24px;
@@ -533,6 +536,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 50px 0 34px;
+  padding: 0;
 
   &-result {
     font-size: 24px;
@@ -892,7 +896,7 @@
       text-align: left;
     }
 
-    &-img {
+   .article-container-img {
       padding-right: 0;
       border-bottom-right-radius: 3px;
       border-top-right-radius: 3px;
@@ -1589,73 +1593,6 @@
 
 .checkout-krasnodar {
 
-  .krasnodar-col-xl-1,
-  .krasnodar-col-xl-2,
-  .krasnodar-col-xl-3,
-  .krasnodar-col-xl-4,
-  .krasnodar-col-xl-5,
-  .krasnodar-col-xl-6,
-  .krasnodar-col-xl-7,
-  .krasnodar-col-xl-8,
-  .krasnodar-col-xl-9,
-  .krasnodar-col-xl-10,
-  .krasnodar-col-xl-11,
-  .krasnodar-col-xl-12,
-
-  .krasnodar-col-lg-1,
-  .krasnodar-col-lg-2,
-  .krasnodar-col-lg-3,
-  .krasnodar-col-lg-4,
-  .krasnodar-col-lg-5,
-  .krasnodar-col-lg-6,
-  .krasnodar-col-lg-7,
-  .krasnodar-col-lg-8,
-  .krasnodar-col-lg-9,
-  .krasnodar-col-lg-10,
-  .krasnodar-col-lg-11,
-  .krasnodar-col-lg-12,
-
-  .krasnodar-col-md-1,
-  .krasnodar-col-md-2,
-  .krasnodar-col-md-3,
-  .krasnodar-col-md-4,
-  .krasnodar-col-md-5,
-  .krasnodar-col-md-6,
-  .krasnodar-col-md-7,
-  .krasnodar-col-md-8,
-  .krasnodar-col-md-9,
-  .krasnodar-col-md-10,
-  .krasnodar-col-md-11,
-  .krasnodar-col-md-12,
-
-  .krasnodar-col-sm-1,
-  .krasnodar-col-sm-2,
-  .krasnodar-col-sm-3,
-  .krasnodar-col-sm-4,
-  .krasnodar-col-sm-5,
-  .krasnodar-col-sm-6,
-  .krasnodar-col-sm-7,
-  .krasnodar-col-sm-8,
-  .krasnodar-col-sm-9,
-  .krasnodar-col-sm-10,
-  .krasnodar-col-sm-11,
-  .krasnodar-col-sm-12,
-
-  .krasnodar-col-xs-1,
-  .krasnodar-col-xs-2,
-  .krasnodar-col-xs-3,
-  .krasnodar-col-xs-4,
-  .krasnodar-col-xs-5,
-  .krasnodar-col-xs-6,
-  .krasnodar-col-xs-7,
-  .krasnodar-col-xs-8,
-  .krasnodar-col-xs-9,
-  .krasnodar-col-xs-10,
-  .krasnodar-col-xs-11,
-  .krasnodar-col-xs-12{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
   &-continue {
     font-size: 12px;
     padding: 15px 20px;
@@ -1700,6 +1637,8 @@
     box-shadow: $shadow;
     align-items: center;
     margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &-item {
@@ -1718,7 +1657,7 @@
 
   .counter-krasnodar {
     display: flex;
-    width: 60%;
+    width: 76%;
     color: $green;
     align-items: center;
     font-family: $font-bold;
@@ -1727,6 +1666,7 @@
     background-color: $white-second;
     border-radius: 5px;
     height: 30px;
+
 
 
     span {
@@ -1759,7 +1699,7 @@
   h1 {
     font-size: 16px;
     font-family: $font-bold;
-    padding-left: 50px;
+
   }
 
   .product-img {
@@ -1802,73 +1742,7 @@
 }
 
 .user-orders-krasnodar {
-  .krasnodar-col-xl-1,
-  .krasnodar-col-xl-2,
-  .krasnodar-col-xl-3,
-  .krasnodar-col-xl-4,
-  .krasnodar-col-xl-5,
-  .krasnodar-col-xl-6,
-  .krasnodar-col-xl-7,
-  .krasnodar-col-xl-8,
-  .krasnodar-col-xl-9,
-  .krasnodar-col-xl-10,
-  .krasnodar-col-xl-11,
-  .krasnodar-col-xl-12,
 
-  .krasnodar-col-lg-1,
-  .krasnodar-col-lg-2,
-  .krasnodar-col-lg-3,
-  .krasnodar-col-lg-4,
-  .krasnodar-col-lg-5,
-  .krasnodar-col-lg-6,
-  .krasnodar-col-lg-7,
-  .krasnodar-col-lg-8,
-  .krasnodar-col-lg-9,
-  .krasnodar-col-lg-10,
-  .krasnodar-col-lg-11,
-  .krasnodar-col-lg-12,
-
-  .krasnodar-col-md-1,
-  .krasnodar-col-md-2,
-  .krasnodar-col-md-3,
-  .krasnodar-col-md-4,
-  .krasnodar-col-md-5,
-  .krasnodar-col-md-6,
-  .krasnodar-col-md-7,
-  .krasnodar-col-md-8,
-  .krasnodar-col-md-9,
-  .krasnodar-col-md-10,
-  .krasnodar-col-md-11,
-  .krasnodar-col-md-12,
-
-  .krasnodar-col-sm-1,
-  .krasnodar-col-sm-2,
-  .krasnodar-col-sm-3,
-  .krasnodar-col-sm-4,
-  .krasnodar-col-sm-5,
-  .krasnodar-col-sm-6,
-  .krasnodar-col-sm-7,
-  .krasnodar-col-sm-8,
-  .krasnodar-col-sm-9,
-  .krasnodar-col-sm-10,
-  .krasnodar-col-sm-11,
-  .krasnodar-col-sm-12,
-
-  .krasnodar-col-xs-1,
-  .krasnodar-col-xs-2,
-  .krasnodar-col-xs-3,
-  .krasnodar-col-xs-4,
-  .krasnodar-col-xs-5,
-  .krasnodar-col-xs-6,
-  .krasnodar-col-xs-7,
-  .krasnodar-col-xs-8,
-  .krasnodar-col-xs-9,
-  .krasnodar-col-xs-10,
-  .krasnodar-col-xs-11,
-  .krasnodar-col-xs-12{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 
   h1 {
     margin: 44px 0;
@@ -1882,21 +1756,15 @@
     background-color: $white;
     margin-bottom: 11px;
     padding: 22px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     h2 {
       font-family: $font-bold;
       font-size: 16px;
     }
 
-
-    .row {
-      align-items: center;
-
-      &>div {
-        display: flex;
-        justify-content: center;
-      }
-    }
 
     img {
       width: 25px;
@@ -2065,3 +1933,32 @@
   width: 100%;
 }
 
+.nav-container{
+  background-color: $green;
+  padding: 0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+  .navigation{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: 2px;
+    li{
+      padding-right: 20px;
+    }
+  }
+  
+  a{
+    color: $white;
+    font-family: $font;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3ms ease-in ;
+    font-size: 12px;
+
+    &:hover{
+      border-bottom: 1px solid $white;
+    }
+  }
+
+}
