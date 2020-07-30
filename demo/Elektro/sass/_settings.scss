@@ -1,5 +1,5 @@
 // Colors
-$blue: #2992d9;
+$blue: #1773cf; /* #2992d9 */
 $dark-blue: #34495e;
 $green: #3ab503;
 $border: #ececec;
@@ -75,6 +75,17 @@ img {
   box-sizing: border-box;
 }
 
+.input{
+  padding: 10px 15px;
+  border: 1px solid $light-grey;
+  border-radius: 2px;
+  font-size: 15px;
+
+  &:focus{
+    border-color: $black;
+  }
+}
+
 .text-white {
   color: #fff;
 }
@@ -93,17 +104,39 @@ img {
 }
 
 .btn-border {
-  display: block;
   font-size: 14px;
+  text-align: center;
   color: $dark-blue;
   border: 1px solid;
   border-radius: $br;
   padding: 10px 25px;
+  display: inline-block;
   background-color: transparent;
+  transition: 200ms;
+  box-sizing: border-box;
 }
 
 .btn-border-red {
   color: $red;
+}
+
+.btn-mail{
+  background-color: $green;
+  border-color: $green;
+  color: white;
+
+  &:hover{
+    background-color: darken($green, 6%);
+  }
+}
+
+.btn-more{
+  padding: 15px;
+  border-color: $border;
+
+  &:hover{
+    background-color: $border;
+  }
 }
 
 /* Bootstap Classes */
@@ -244,7 +277,28 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 10px 15px 30px;
+  position: relative;
+
+  box-sizing: border-box;
+  height: 381px;
+
+  &__inner {
+    &:hover{
+      position: relative;
+      z-index: 999;
+    }
+
+    &_block {
+      padding: 10px 15px 30px;
+      border: 1px solid #ececec;
+      transition: 200ms;
+      background-color: #fff;
+
+      &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
 
   img {
     width: 100%;
@@ -279,31 +333,145 @@ img {
 
   &__title {
     text-align: center;
-    
 
     &_name {
       font-size: 14px;
       height: 45px;
       overflow: hidden;
     }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  &__footer {
+    display: none;
+
+    .size {
+      margin-top: 10px;
+      text-align: center;
+      span {
+        font-size: 13px;
+        color: $grey;
+        display: block;
+        margin-bottom: 8px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+          margin: 0 5px 5px;
+
+          button {
+            outline: none;
+            color: $grey;
+            border: 1px solid;
+            font-weight: 400;
+            border-radius: 3px;
+            font-size: 13px;
+            padding: 6px 9px;
+            background: none;
+            box-sizing: border-box;
+
+            &:hover {
+              color: $blue;
+            }
+
+            &.active {
+              background-color: $blue;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .number {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__controls {
+        display: flex;
+        box-sizing: border-box;
+        margin-right: 8px;
+        background-color: $border;
+        border-radius: 3px;
+        overflow: hidden;
+
+        input {
+          width: 30px;
+          border: none;
+          text-align: center;
+          padding: 8px 2px;
+          font-size: 14px;
+          background-color: $border;
+        }
+
+        button {
+          width: 25px;
+          text-align: center;
+          border: none;
+          padding: 8px 5px;
+          background-color: $border;
+        }
+      }
+
+      &__add {
+        button {
+          color: white;
+          background-color: $blue;
+          padding: 9px 8px;
+          outline: none;
+          border: none;
+          font-weight: 400;
+          font-size: 14px;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .last-price {
+      text-align: center;
+      font-size: 13px;
+      color: $grey;
+      margin-top: 20px;
+
+      &__span {
+        font-weight: bold;
+        padding-left: 3px;
+        color: $black;
+      }
+    }
+  }
+
+  &:hover {
+    .card__footer {
+      display: block;
+    }
   }
 }
 /* Звездочка */
-.stars{
+.stars {
   display: flex;
   justify-content: center;
 
-  span{
+  span {
     margin-right: 2px;
   }
 }
-.count{
+.count {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px 0;
 
-  &__text{
+  &__text {
     font-size: 13px;
     margin-left: 5px;
   }

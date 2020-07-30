@@ -1,0 +1,60 @@
+.footer{
+  background-color: $dark-blue;
+
+  padding: 40px 0;
+  color: white;
+
+  a{
+    color: $light-grey;
+  }
+
+  h5{
+    margin-bottom: 15px;
+  }
+
+  &__nav{
+    width: 20%;
+    ul{
+      margin-top: 15px;
+
+      li{
+        margin-bottom: 5px;
+        a{ 
+          transition: 200ms;
+          &:hover{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  &__social{
+    width: 25%;
+
+    form{
+      margin-bottom: 15px;
+    }
+
+    ul{
+      display: flex;
+
+      li{
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__contact{
+    width: 15%;
+
+    &_block{
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      a{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

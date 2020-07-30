@@ -114,7 +114,7 @@
 
   margin-top: 15px;
 
-  li {
+  > li {
     margin: 0 0 -1px -1px;
     border: 1px solid $border;
     transition: 250ms;
@@ -169,6 +169,7 @@
 
 /* Продукты */
 .product {
+  margin-top: 40px;
   &__link {
     display: flex;
 
@@ -193,9 +194,215 @@
   }
 
   &__cards {
-    margin: 30px 0;
+    margin: 15px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    li {
+      border: none;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/* Рассылка */
+.news-letter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+  &::before {
+    content: "";
+    background-image: url(../img/mail-pattern.png);
+    width: 100%;
+    height: 8px;
+  }
+  &::after {
+    content: "";
+    background-image: url(../img/mail-pattern.png);
+    width: 100%;
+    height: 8px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+
+    .letter_img{
+      width: 180px;
+    }
+  }
+
+  &__text{
+    display: flex;
+    align-items: center;
+
+    .letter-text{
+      width: 55%;
+      padding-right: 20px;
+      box-sizing: border-box;
+
+      span{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+    }
+
+    .letter-mail{
+      width: 45%;
+      display: flex;
+
+      input{
+        width: 50%;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.reviews{
+  margin-bottom: 40px;
+
+  &__title{
+    display: flex;
+    justify-content: flex-end;
+    h2{
+      width: 70%;
+    }
+  }
+
+  &__list{
+    padding: 0 0 20px;
+    ul{
+      display: flex;
+      flex-direction: column;
+
+      li{
+        display: flex;
+        border-bottom: 1px solid $border;
+        padding: 18px 0;
+      }
+    }
+  }
+
+  &__name{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  &__rating{
+    display: flex;
+    align-items: center;
+    line-height: 10px;
+    margin-bottom: 8px;
+
+    &_text{
+      margin-left: 10px;
+      font-size: 14px;
+      color: $grey;
+    }
+  }
+
+  &__time{
+    font-size: 15px;
+    color: $grey;
+  }
+
+  &__product{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    span{
+      color: $grey;
+      font-weight: normal;
+    }
+  }
+
+  &__text{}
+
+  &__more{
+    display: flex;
+    justify-content: flex-end;
+    .btn-more{
+      width: 70%;
+    }
+  }
+}
+
+/* Баннер */
+.banner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  a{
+    width: 32.5%;
+    
+    img{
+      height: 160px;
+      object-fit: cover;
+    }
+  }
+}
+
+.watched-before{
+  background-color: #f6f6f7;
+  padding: 40px 0;
+  position: relative;
+
+  &__title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 20px;
+
+    .watched__title{
+      font-size: 18px;
+    }
+  }
+
+  &__card{
+    display: flex;
+    align-items: center;
+
+    color: $black;
+    border: 1px solid $border;
+    border-radius: 2px;
+
+    &_img{
+      width: 43%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    &_text{
+      width: 57%;
+      text-align: left;
+      padding-right: 10px;
+
+      .title{
+        font-size: 15px;
+        overflow: hidden;
+        height: 45px;
+        margin-bottom: 8px;
+      }
+
+      .price{
+        font-weight: bold;
+      }
+    }
   }
 }
