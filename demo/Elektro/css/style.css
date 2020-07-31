@@ -310,7 +310,8 @@ img {
     .advantages li .title {
       font-weight: bold; }
     .advantages li .text {
-      color: #555555; }
+      color: #555555;
+      padding: 0; }
 
 .text {
   padding: 30px 0; }
