@@ -374,6 +374,29 @@
     }
   }
 
+  &__control{
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
+    div{
+      position: relative;
+      background-color: #fff;
+      border: 1px solid $light-grey;
+      padding: 5px 8px;
+      border-radius: 2px;
+      height: 20px;
+      opacity: 0.5;
+    }
+
+    .swiper-button-next{
+      right: 1px;
+    }
+
+    .swiper-button-prev{
+      left: 0;
+    }
+  }
+
   &__card{
     display: flex;
     align-items: center;

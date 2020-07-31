@@ -48,62 +48,134 @@
     <div class="header-top w-100">
       <div class="container header-top__block">
         <div class="header-top__adress">
-          <p><span>Иконка</span> Москва, Улица Ангарская Дом 23 Строение 1</p>
+          <p><span class="i-location"></span> Москва, Улица Ангарская Дом 23 Строение 1</p>
         </div>
         <ul class="header-top__service">
           <li>
-            <span>Иконка</span> <b>Бесплатная доставка</b> Пример текста
+            <span class="i-shipping"></span> <b>Бесплатная доставка</b> от 10.000 руб.
           </li>
           <li>
-            <span>Иконка</span> <b>Бесплатная доставка</b> Пример текста
+            <span class="i-tags"></span> <b>12.000 позиций</b> товара в наличии
           </li>
           <li>
-            <span>Иконка</span> <b>Бесплатная доставка</b> Пример текста
+            <span class="i-like"></span> <b>Гарантии на товар</b> 3 года
           </li>
         </ul>
         <div class="header-top__mail">
-          <a href="mailto:shop@mail.com"><span>Иконка</span>shop@mail.com</a>
+          <a href="mailto:shop@mail.com"><span class="i-mail"></span>shop@mail.com</a>
         </div>
       </div>
     </div>
-    <div class="header-bottom container">
-      <div class="header-bottom__logo">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Логотип">
-        </a>
-      </div>
-      <div class="header-bottom__action">
-        <a href="#" class="btn-border">Написать сообщения</a>
-      </div>
-      <form class="header-bottom__search" action="index.html" method="POST">
-        <input type="text" name="poisk">
-        <button type="submit"><span class="i-search"></span></button>
-      </form>
-      <div class="header-bottom__social">
-        <a href="#"><span class="i-telegram"></span></a>
-        <a href="#"><span class="i-viber"></span></a>
-        <a href="#"><span class="i-whatsapp"></span></a>
-      </div>
-      <div class="header-bottom__number">
-        <a href="tel:+75556661234"><span class="i-header-tel"></span> +75556661234</a>
-        <span>Пн. - Пт.: с 9:00 до 18:00</span>
-      </div>
-      <div class="header-bottom__call">
-        <a href="#" class="btn-border btn-border-red">Заказать звонок</a>
+    <div class="header-bottom container-fluid">
+      <div class="container header-bottom__block">
+        <div class="header-bottom__logo">
+          <button><span class="i-hamburger"></span></button>
+          <a href="index.html">
+            <img src="img/logo.png" alt="Логотип">
+          </a>
+        </div>
+        <div class="header-bottom__action">
+          <a href="#" class="btn-border">Написать сообщения</a>
+        </div>
+        <form class="header-bottom__search" action="index.html" method="POST">
+          <input type="text" class="input input-search" placeholder="Поиск Товаров" name="poisk">
+          <button type="submit"><span class="i-search"></span></button>
+        </form>
+        <div class="header-bottom__social">
+          <a href="#"><span class="i-telegram"></span></a>
+          <a href="#"><span class="i-viber"></span></a>
+          <a href="#"><span class="i-whatsapp"></span></a>
+        </div>
+        <div class="header-bottom__number">
+          <a href="tel:+75556661234"><span class="i-header-tel"></span> +7 (555) 666-12-34</a>
+          <span class="header-bottom__number_time">Пн. - Пт.: с 9:00 до 18:00</span>
+        </div>
+        <div class="header-bottom__call">
+          <a href="#" class="btn-border btn-border-red">Заказать звонок</a>
+        </div>
+        <div class="header-bottom__fixed-menu">
+          <ul class="fixed-menu__list">
+            <li>
+              <a href="#" class="fixed-menu__login">
+                <span class="i-lock m-0 fixed-icon"></span>
+                <span class="fixed-menu__login_block">
+                  <span class="fixed-menu__login_title">Войти</span>
+                  <span class="fixed-menu__login_span">Мой Кабинет</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="i-progress m-0 fixed-icon"></span>
+                <span class="number">5</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="i-heart m-0 fixed-icon fixed-icon-heart"></span>
+                <span class="number">5</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="fixed-menu__basket">
+                <span class="fixed-menu__basket_icon">
+                  <span class="i-basket m-0 fixed-icon"></span>
+                  <span class="number">5</span>
+                </span>
+                <span class="fixed-menu__basket_text">
+                  <span class="fixed-menu__basket_title">Корзина</span>
+                  <span class="fixed-menu__basket_price">2 540 руб</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <nav class="header-nav w-100">
       <div class="container">
         <ul class="header-nav__block">
-          <li><a href="#">Каталог электротоваров</a></li>
-          <li><a href="#">Распродажа </a></li>
+          <li>
+            <a href="#"><span class="i-hamburger"></span> Каталог электротоваров <span class="i-down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Компания <span class="i-down"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+              <li><a href="#">Привет</a></li>
+            </ul>
+          </li>
           <li><a href="#">Как купить</a></li>
           <li><a href="#">Вакансии</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="#">Привет</a></li>
-          <li><a href="#">Привет</a></li>
-          <li><a href="#">Привет</a></li>
-          <li><a href="#">Привет</a></li>
+          <li>
+            <a href="#">
+              <span class="i-lock m-0"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="i-progress m-0"></span>
+              <span class="number">5</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="i-heart m-0"></span>
+              <span class="number">5</span>
+            </a>
+          </li>
+          <li><a href="#"><span class="i-basket m-0"></span><span class="number">5</span></a></li>
         </ul>
       </div>
     </nav>
@@ -2887,8 +2959,8 @@
           <div class="watched__title">Ранее вы смотрели</div>
           <div class="watched-before__control">
             <!-- Add Arrows -->
-            <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
         <div class="swiper-container">
@@ -2989,25 +3061,26 @@
       </div>
       <div class="footer__social">
         <h5>Будьте всегда в курсе</h5>
-        <form action="#">
-          <input type="text" value="Ваш e-mail">
-          <button>икон</button>
+        <form action="#" class="form-input">
+          <input type="text" class="input" placeholder="Ваш e-mail">
+          <button><span class="i-arrow-right"></span></button>
         </form>
         <h5>Будьте всегда в курсе</h5>
         <ul>
-          <li><a href="#">Icon</a></li>
-          <li><a href="#">Icon</a></li>
-          <li><a href="#">Icon</a></li>
-          <li><a href="#">Icon</a></li>
-          <li><a href="#">Icon</a></li>
+          <li><a href="#"><img src="img/icons/vk.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/icons/twitter.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/icons/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/icons/odnoklassniki.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/icons/vk.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/icons/facebook.svg" alt=""></a></li>
         </ul>
       </div>
       <div class="footer__contact">
         <h5>Наши Контакты</h5>
         <div class="footer__contact_block">
-          <a href="#">+7 828 123 12 12</a>
-          <a href="#">+7 828 123 12 12</a>
-          <a href="#">+7 828 123 12 12</a>
+          <a href="tel:+7 828 123 12 12"><span class="i-phone-white"></span>+7 828 123 12 12</a>
+          <a href="mailto:mail@mail.com"><span class="i-mail-white"></span>mail@mail.com</a>
+          <a href="#"><span class="i-location-white"></span>Lorem ipsum dolor sit amet.</a>
         </div>
       </div>
     </div>

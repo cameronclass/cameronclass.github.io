@@ -46,12 +46,22 @@ h3 {
   font-size: 24px;
 }
 
+b {
+  font-weight: bold;
+}
+
 html,
 body,
 p,
 a,
 button {
   font-family: $font-roboto;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
 }
 
 /* Базовые стили */
@@ -75,15 +85,55 @@ img {
   box-sizing: border-box;
 }
 
-.input{
+.input {
   padding: 10px 15px;
   border: 1px solid $light-grey;
   border-radius: 2px;
   font-size: 15px;
 
-  &:focus{
+  &:focus {
     border-color: $black;
   }
+}
+
+.form-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 2px;
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: $green;
+    }
+  }
+  button {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+    padding: 10px;
+    transition: 200ms;
+
+    span {
+      filter: invert(1);
+    }
+
+    &:hover {
+      background-color: darken($green, 5%);
+    }
+  }
+}
+
+.input-search {
+  width: 330px;
+  padding: 9px 15px;
 }
 
 .text-white {
@@ -114,27 +164,38 @@ img {
   background-color: transparent;
   transition: 200ms;
   box-sizing: border-box;
+
+  &:hover{
+    background-color: $dark-blue;
+    color: white;
+    border-color: $dark-blue;
+  }
 }
 
 .btn-border-red {
   color: $red;
+
+  &:hover{
+    background-color: $red;
+    border-color: $red;
+  }
 }
 
-.btn-mail{
+.btn-mail {
   background-color: $green;
   border-color: $green;
   color: white;
 
-  &:hover{
+  &:hover {
     background-color: darken($green, 6%);
   }
 }
 
-.btn-more{
+.btn-more {
   padding: 15px;
   border-color: $border;
 
-  &:hover{
+  &:hover {
     background-color: $border;
   }
 }
@@ -150,6 +211,8 @@ img {
   display: block;
   margin: 0 auto;
   padding: 0 20px;
+
+  
 }
 
 .d-flex {
@@ -173,6 +236,10 @@ img {
 }
 .w-30 {
   width: 30%;
+}
+
+.m-0 {
+  margin: 0 !important;
 }
 
 .p-1 {
@@ -283,7 +350,7 @@ img {
   height: 381px;
 
   &__inner {
-    &:hover{
+    &:hover {
       position: relative;
       z-index: 999;
     }

@@ -8,6 +8,15 @@ $(function () {
 
 /* Jquery */
 $(document).ready(function () {
+  /* Fixed Menu */
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $(".header-bottom").addClass("fixed-menu");
+    } else {
+      $(".header-bottom").removeClass("fixed-menu");
+    }
+  });
+
   /* Продукты Табы */
   $(".product__link li:first-child").addClass("active");
   $(".js-product-content").hide();
@@ -31,27 +40,22 @@ $(document).ready(function () {
 
   /* Insrese Value */
 
-  $('.js-increase').on('click', function () {
-    var $qty = $(this).closest('.number__controls').find('.js-counter-value');
+  $(".js-increase").on("click", function () {
+    var $qty = $(this).closest(".number__controls").find(".js-counter-value");
     var currentVal = parseInt($qty.val());
     if (!isNaN(currentVal)) {
       $qty.val(currentVal + 1);
     }
   });
 
-  $('.js-decrease').on('click', function () {
-    var $qty = $(this).closest('.number__controls').find('.js-counter-value');
+  $(".js-decrease").on("click", function () {
+    var $qty = $(this).closest(".number__controls").find(".js-counter-value");
     var currentVal = parseInt($qty.val());
     if (!isNaN(currentVal) && currentVal > 1) {
       $qty.val(currentVal - 1);
     }
   });
 });
-
-
-
-
-
 
 /* Swiper JS */
 var swiper = new Swiper(".home-slider .swiper-container", {

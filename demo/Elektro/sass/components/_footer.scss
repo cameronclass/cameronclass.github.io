@@ -30,23 +30,47 @@
   }
 
   &__social{
-    width: 25%;
+    width: 22%;
 
     form{
       margin-bottom: 15px;
+
+      margin-right: 50px;
     }
 
     ul{
       display: flex;
+      flex-wrap: wrap;
 
       li{
         margin-right: 5px;
+        margin-bottom: 5px;
+
+        a{
+          background-color: $green;
+          width: 16px;
+          height: 16px;
+          padding: 10px;
+          border-radius: 2px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 200ms;
+
+          img{
+            filter: invert(1);
+          }
+
+          &:hover{
+            background-color: darken($green, 5%);
+          }
+        }
       }
     }
   }
 
   &__contact{
-    width: 15%;
+    width: 18%;
 
     &_block{
       display: flex;
@@ -54,6 +78,19 @@
       margin-top: 15px;
       a{
         margin-bottom: 20px;
+        color: white;
+        transition: 200ms;
+        display: flex;
+        align-items: center;
+        height: 30px;
+
+        span{
+          margin-right: 14px;
+        }
+
+        &:hover{
+          color: $green;
+        }
       }
     }
   }
