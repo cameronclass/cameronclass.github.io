@@ -20,26 +20,38 @@
   }
 }
 
-@mixin sm {
-  @media screen and (max-width: 575px) {
+@mixin lg-400 {
+  @media screen and (max-width: 400px) {
     @content;
   }
 }
 
-@mixin md {
-  @media screen and (max-width: 767px) {
+@mixin lg-450 {
+  @media screen and (max-width: 450px) {
     @content;
   }
 }
 
-@mixin mlg {
-  @media screen and (max-width: 991px) {
+@mixin lg-500 {
+  @media screen and (max-width: 500px) {
     @content;
   }
 }
 
-@mixin mlg {
-  @media screen and (max-width: 991px) {
+@mixin lg-700 {
+  @media screen and (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin lg-770 {
+  @media screen and (max-width: 770px) {
+    @content;
+  }
+}
+
+@mixin lg-900 {
+  @media screen and (max-width: 900px) {
     @content;
   }
 }
@@ -67,14 +79,14 @@
   }
 }
 
-@mixin lg-1400 {
-  @media screen and (max-width: 1400px) {
+@mixin lg-1366 {
+  @media screen and (max-width: 1366px) {
     @content;
   }
 }
 
-@mixin large-desktops {
-  @media screen and (max-width: 1500px) {
+@mixin lg-1400 {
+  @media screen and (max-width: 1400px) {
     @content;
   }
 }

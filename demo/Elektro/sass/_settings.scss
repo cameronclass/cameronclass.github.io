@@ -134,6 +134,19 @@ img {
 .input-search {
   width: 330px;
   padding: 9px 15px;
+
+  @include lg-1366 {
+    width: 300px;
+  }
+  @include lg-1200 {
+    width: 250px;
+  }
+  @include lg-900 {
+    width: 200px;
+
+    padding: 7px 12px;
+    font-size: 14px;
+  }
 }
 
 .text-white {
@@ -165,7 +178,7 @@ img {
   transition: 200ms;
   box-sizing: border-box;
 
-  &:hover{
+  &:hover {
     background-color: $dark-blue;
     color: white;
     border-color: $dark-blue;
@@ -175,7 +188,7 @@ img {
 .btn-border-red {
   color: $red;
 
-  &:hover{
+  &:hover {
     background-color: $red;
     border-color: $red;
   }
@@ -212,7 +225,10 @@ img {
   margin: 0 auto;
   padding: 0 20px;
 
-
+  @include lg-1400 {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .d-flex {
@@ -236,6 +252,12 @@ img {
 }
 .w-30 {
   width: 30%;
+}
+
+.w-sm-100 {
+  @include lg-1000 {
+    width: 100%;
+  }
 }
 
 .m-0 {
@@ -336,6 +358,34 @@ img {
     a {
       img {
         width: 120px;
+      }
+    }
+  }
+}
+
+.list-sm-5{
+  @include lg-770{
+    li {
+      width: 20%;
+
+      a {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+.list-sm-4 {
+  @include lg-1000 {
+    li {
+      width: 25%;
+
+      a {
+        img {
+          width: 110px;
+        }
       }
     }
   }

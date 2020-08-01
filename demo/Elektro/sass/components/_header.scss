@@ -8,9 +8,14 @@
   &__block {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-top: 8px;
     padding-bottom: 8px;
     font-size: 12px;
+
+    @include lg-1100 {
+      display: none;
+    }
   }
 
   &__adress,
@@ -35,19 +40,23 @@
   }
 
   &__adress {
-    width: 30%;
+    /* width: 30%; */
   }
 
   &__service {
-    width: 50%;
+    /* width: 50%; */
 
-    li{
+    @include lg-1200 {
+      display: none;
+    }
+
+    li {
       margin-right: 20px;
     }
   }
 
   &__mail {
-    width: 20%;
+    /* width: 20%; */
     justify-content: flex-end;
 
     a {
@@ -70,6 +79,11 @@
   transform: translateX(-50%);
   transition: 100ms ease;
 
+  @include lg-1400 {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
   &__block {
     display: flex;
     align-items: center;
@@ -83,9 +97,23 @@
     display: flex;
     align-items: center;
 
+    @include lg-1366 {
+      width: 24%;
+    }
+
+    @include lg-770 {
+      width: 200px;
+    }
+    /* @include lg-700 {
+      width: 40%;
+    } */
+
     button {
       display: none;
       margin-right: 20px;
+      @include lg-770 {
+        margin-right: 12px;
+      }
       span {
         filter: invert(1);
         width: 22px;
@@ -94,10 +122,20 @@
     }
   }
 
+  &__action {
+    @include lg-1366 {
+      display: none;
+    }
+  }
+
   &__search {
     display: flex;
     align-items: center;
     position: relative;
+
+    @include lg-700 {
+      display: none;
+    }
 
     button {
       position: absolute;
@@ -110,22 +148,52 @@
   &__social {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @include lg-770 {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__number {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      font-size: 16px;
-      color: $black;
-      font-weight: bold;
-      margin-bottom: 3px;
+    @include lg-1100 {
+      display: none;
     }
-    &_time {
-      font-size: 12px;
-      color: $light-grey;
-      padding-left: 18px;
+
+    &_desktop {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        font-size: 16px;
+        color: $black;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      &_time {
+        font-size: 12px;
+        color: $light-grey;
+        padding-left: 18px;
+        line-height: 1;
+      }
+    }
+
+    &_mobile {
+      display: none;
+
+      @include lg-1100 {
+        display: block;
+
+        a {
+          display: flex;
+          align-items: center;
+        }
+      }
     }
   }
 
@@ -172,13 +240,13 @@
         margin-right: 25px;
         position: relative;
 
-        .fixed-icon{
+        .fixed-icon {
           width: 23px;
           height: 23px;
           filter: invert(1);
         }
 
-        .fixed-icon-heart{
+        .fixed-icon-heart {
           width: 25px;
         }
 
@@ -199,16 +267,54 @@
           padding: 4px;
         }
       }
+
+      &.mobile-phone {
+        display: none;
+
+        @include lg-1100 {
+          display: flex;
+        }
+      }
+
+      &.mobile-search {
+        display: none;
+
+        @include lg-700 {
+          display: flex;
+        }
+      }
+
+      &.mobile-compare {
+        @include lg-500 {
+          display: none;
+        }
+      }
+
+      &.mobile-login {
+        @include lg-450 {
+          display: none;
+        }
+      }
+
+      &.mobile-favourite{
+        @include lg-400{
+          display: none;
+        }
+      }
     }
   }
 
   &__login {
-    margin-right: 30px;
+    /* margin-right: 30px; */
 
     &_block {
       display: flex;
       flex-direction: column;
       margin-left: 10px;
+
+      @include lg-1100 {
+        display: none;
+      }
     }
 
     &_title {
@@ -224,29 +330,33 @@
     }
   }
 
-  &__basket{
+  &__basket {
     color: $black;
     margin-right: 0 !important;
 
-    &_icon{
+    &_icon {
       display: flex;
       align-items: center;
       position: relative;
     }
 
-    &_text{
+    &_text {
       display: flex;
       flex-direction: column;
       margin-left: 20px;
+
+      @include lg-1100 {
+        display: none;
+      }
     }
 
-    &_title{
+    &_title {
       font-size: 14px;
       font-weight: bold;
       line-height: 1;
     }
 
-    &_price{
+    &_price {
       color: $light-grey;
       font-size: 12px;
     }
@@ -256,6 +366,10 @@
 /* Header Nav */
 .header-nav {
   background-color: $dark-blue;
+
+  @include lg-1100 {
+    display: none;
+  }
 
   &__block {
     display: grid;

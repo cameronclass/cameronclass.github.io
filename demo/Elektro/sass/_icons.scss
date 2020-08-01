@@ -40,6 +40,14 @@
   @include icon(url(../img/icons/phone.svg), 12px, 12px);
 }
 
+.i-mobile-tel{
+  @include icon(url(../img/icons/mobile-phone.svg), 23px, 23px);
+}
+
+.i-mobile-search{
+  @include icon(url(../img/icons/search-mobile.svg), 22px, 22px);
+}
+
 .i-star-rated {
   @include icon(url(../img/icons/star-rated.svg), 15px, 15px);
 }

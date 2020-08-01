@@ -9,11 +9,23 @@ $(function () {
 /* Jquery */
 $(document).ready(function () {
   /* Fixed Menu */
+  $(window)
+    .resize(function () {
+      if ($(window).width() < 1100) {
+        $(".header-bottom").addClass("fixed-menu");
+      } else {
+        $(".header-bottom").removeClass("fixed-menu");
+      }
+    })
+    .resize();
+
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
-      $(".header-bottom").addClass("fixed-menu");
-    } else {
-      $(".header-bottom").removeClass("fixed-menu");
+    if ($(window).width() > 1100) {
+      if ($(document).scrollTop() > 200) {
+        $(".header-bottom").addClass("fixed-menu");
+      } else {
+        $(".header-bottom").removeClass("fixed-menu");
+      }
     }
   });
 
@@ -75,6 +87,28 @@ var swiper = new Swiper(".brands .swiper-container", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1100: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+    1000: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    600: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
   },
 });
 

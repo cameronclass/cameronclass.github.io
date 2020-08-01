@@ -52,13 +52,16 @@
         </div>
         <ul class="header-top__service">
           <li>
-            <span class="i-shipping"></span> <b>Бесплатная доставка</b> от 10.000 руб.
+            <span class="i-shipping"></span> 
+            <div><b>Бесплатная доставка</b> от 10.000 руб.</div>
           </li>
           <li>
-            <span class="i-tags"></span> <b>12.000 позиций</b> товара в наличии
+            <span class="i-tags"></span>
+            <div><b>12.000 позиций</b> товара в наличии</div>
           </li>
           <li>
-            <span class="i-like"></span> <b>Гарантии на товар</b> 3 года
+            <span class="i-like"></span>
+            <div><b>Гарантии на товар</b> 3 года</div> 
           </li>
         </ul>
         <div class="header-top__mail">
@@ -87,15 +90,23 @@
           <a href="#"><span class="i-whatsapp"></span></a>
         </div>
         <div class="header-bottom__number">
-          <a href="tel:+75556661234"><span class="i-header-tel"></span> +7 (555) 666-12-34</a>
-          <span class="header-bottom__number_time">Пн. - Пт.: с 9:00 до 18:00</span>
+          <div class="header-bottom__number_desktop">
+            <a href="tel:+75556661234"><span class="i-header-tel"></span> +7 (555) 666-12-34</a>
+            <span class="header-bottom__number_desktop_time">Пн. - Пт.: с 9:00 до 18:00</span>
+          </div>
         </div>
         <div class="header-bottom__call">
           <a href="#" class="btn-border btn-border-red">Заказать звонок</a>
         </div>
         <div class="header-bottom__fixed-menu">
           <ul class="fixed-menu__list">
-            <li>
+            <li class="mobile-search">
+              <a href="tel:+75556661234"><span class="i-mobile-search"></span></a>
+            </li>
+            <li class="mobile-phone">
+              <a href="tel:+75556661234"><span class="i-mobile-tel"></span></a>
+            </li>
+            <li class="mobile-login">
               <a href="#" class="fixed-menu__login">
                 <span class="i-lock m-0 fixed-icon"></span>
                 <span class="fixed-menu__login_block">
@@ -104,13 +115,13 @@
                 </span>
               </a>
             </li>
-            <li>
+            <li class="mobile-compare">
               <a href="#">
                 <span class="i-progress m-0 fixed-icon"></span>
                 <span class="number">5</span>
               </a>
             </li>
-            <li>
+            <li class="mobile-favourite">
               <a href="#">
                 <span class="i-heart m-0 fixed-icon fixed-icon-heart"></span>
                 <span class="number">5</span>
@@ -211,7 +222,7 @@
         </a>
       </div>
       <div class="home-slider__text">
-        <div class="w-50">
+        <div class="w-50 w-sm-100">
           <h2>Срочный вызов сантехники</h2>
           <p>С учётом сложившейся международной обстановки, укрепление и развитие внутренней структуры однозначно
             определяет каждого
@@ -242,7 +253,7 @@
         <h2>Каталог электротоваров</h2>
         <a href="#">Весь каталог</a>
       </div>
-      <ul class="catalog__list list-5">
+      <ul class="catalog__list list-5 list-sm-4">
         <li>
           <a href="#">
             <img src="img/catalog/1.png" alt="">
@@ -339,7 +350,7 @@
       <div class="catalog__title">
         <h2>Каталог электротоваров</h2>
       </div>
-      <ul class="catalog__list list-8">
+      <ul class="catalog__list list-8 list-lg-7 list-md-6 list-sm-5">
         <li>
           <a href="#">
             <img src="img/catalog/1.png" alt="">
@@ -546,7 +557,7 @@
       </ul>
       <!-- Продукты -->
       <div id="hit" class="product__cards js-product-content">
-        <ul class="catalog__list list-6">
+        <ul class="catalog__list list-6 list-sm-4">
           <li>
             <div class="card">
               <div class="card__inner">
