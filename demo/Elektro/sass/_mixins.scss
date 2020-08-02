@@ -73,6 +73,12 @@
   }
 }
 
+@mixin lg-1250 {
+  @media screen and (max-width: 1250px) {
+    @content;
+  }
+}
+
 @mixin lg-1300 {
   @media screen and (max-width: 1300px) {
     @content;

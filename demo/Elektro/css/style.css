@@ -983,6 +983,9 @@ img {
           -ms-flex-direction: column;
               flex-direction: column;
       margin-left: 10px; }
+      @media screen and (max-width: 1250px) {
+        .fixed-menu__login_block {
+          display: none; } }
       @media screen and (max-width: 1100px) {
         .fixed-menu__login_block {
           display: none; } }
@@ -1014,7 +1017,7 @@ img {
           -ms-flex-direction: column;
               flex-direction: column;
       margin-left: 20px; }
-      @media screen and (max-width: 1100px) {
+      @media screen and (max-width: 1250px) {
         .fixed-menu__basket_text {
           display: none; } }
     .fixed-menu__basket_title {

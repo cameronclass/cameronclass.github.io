@@ -312,6 +312,10 @@
       flex-direction: column;
       margin-left: 10px;
 
+      @include lg-1250 {
+        display: none;
+      }
+
       @include lg-1100 {
         display: none;
       }
@@ -345,7 +349,7 @@
       flex-direction: column;
       margin-left: 20px;
 
-      @include lg-1100 {
+      @include lg-1250 {
         display: none;
       }
     }
