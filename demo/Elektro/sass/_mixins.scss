@@ -79,21 +79,61 @@
   }
 }
 
-@mixin lg-1300 {
-  @media screen and (max-width: 1300px) {
-    @content;
-  }
-}
 
-@mixin lg-1366 {
-  @media screen and (max-width: 1366px) {
-    @content;
-  }
-}
 
 @mixin lg-1400 {
   @media screen and (max-width: 1400px) {
     @content;
   }
 }
+
+/* Template media */
+@mixin lg-1366 {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin lg-1300 {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin lg-1025 {
+  @media screen and (max-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin lg-990 {
+  @media screen and (max-width: 990px) {
+    @content;
+  }
+}
+
+@mixin lg-850 {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
+
+@mixin lg-720 {
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin lg-600 {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin lg-460 {
+  @media screen and (max-width: 460px) {
+    @content;
+  }
+}
+
 

@@ -41,6 +41,14 @@ h1 {
 }
 h2 {
   font-size: 28px;
+
+  @include lg-1200 {
+    font-size: 26px;
+  }
+
+  @include lg-770 {
+    font-size: 24px;
+  }
 }
 h3 {
   font-size: 24px;
@@ -234,6 +242,10 @@ img {
 .d-flex {
   display: flex;
 }
+.d-flex-ac {
+  display: flex;
+  align-items: center;
+}
 
 .w-100 {
   width: 100%;
@@ -334,6 +346,56 @@ img {
   img {
     margin: 0 20px;
   }
+
+  &__image {
+    @include lg-720 {
+      display: none;
+    }
+  }
+
+  &__content {
+    @include lg-720 {
+      width: 100%;
+    }
+  }
+}
+
+/* Catalog List Style */
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 15px;
+
+  > li {
+    margin: 0 0 -1px -1px;
+    border: 1px solid $border;
+    transition: 250ms;
+    box-sizing: border-box;
+
+    &:hover {
+      border-color: #f2f2f2;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      font-size: 13px;
+      padding: 30px 20px;
+      color: $grey;
+
+      img {
+        margin: 0 auto;
+      }
+
+      span {
+        display: block;
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
 .list-5 {
@@ -362,9 +424,22 @@ img {
     }
   }
 }
+.list-lg-7 {
+  @include lg-1300 {
+    li {
+      width: 14.366%;
 
-.list-sm-5{
-  @include lg-770{
+      a {
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+}
+
+.list-md-6 {
+  @include lg-1025 {
     li {
       width: 20%;
 
@@ -377,7 +452,7 @@ img {
   }
 }
 
-.list-sm-4 {
+.list-md-4 {
   @include lg-1000 {
     li {
       width: 25%;
@@ -387,6 +462,69 @@ img {
           width: 110px;
         }
       }
+    }
+  }
+}
+
+.list-sm-5 {
+  @include lg-770 {
+    li {
+      width: 20%;
+
+      a {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+/* .list-sm-4{
+  @include lg-770 {
+    li {
+      width: 25%;
+
+      a {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+} */
+
+.list-sm-3 {
+  @include lg-770 {
+    li {
+      width: 33.333%;
+
+      a {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+.list-xs-2 {
+  @include lg-600 {
+    li {
+      width: 50%;
+
+      a {
+        img {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+.list-category-mobile {
+  @include lg-500 {
+    li {
+      width: 100%;
     }
   }
 }

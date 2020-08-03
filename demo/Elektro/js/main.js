@@ -89,25 +89,21 @@ var swiper = new Swiper(".brands .swiper-container", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    1100: {
+    1300: {
+      slidesPerView: 6,
+      spaceBetween: 60,
+    },
+    1025: {
       slidesPerView: 5,
-      spaceBetween: 20,
+      spaceBetween: 60,
     },
-    1000: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    800: {
+    850: {
       slidesPerView: 3,
       spaceBetween: 20,
     },
     600: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    320: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
   },
 });
