@@ -242,7 +242,9 @@ img {
   padding: 15px;
   border-color: #ececec; }
   .btn-more:hover {
-    background-color: #ececec; }
+    background-color: #ececec;
+    border-color: #ececec;
+    color: black; }
 
 .icon-invert {
   -webkit-filter: invert(1);

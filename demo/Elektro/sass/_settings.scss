@@ -222,6 +222,8 @@ img {
 
   &:hover {
     background-color: $border;
+    border-color: $border;
+    color: black;
   }
 }
 
