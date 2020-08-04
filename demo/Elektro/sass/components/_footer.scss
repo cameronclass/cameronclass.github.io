@@ -1,27 +1,31 @@
-.footer{
+.footer {
   background-color: $dark-blue;
 
   padding: 40px 0;
   color: white;
 
-  a{
+  a {
     color: $light-grey;
   }
 
-  h5{
+  h5 {
     margin-bottom: 15px;
   }
 
-  &__nav{
+  &__nav {
     width: 20%;
-    ul{
+
+    @include lg-850 {
+      width: 100%;
+    }
+    ul {
       margin-top: 15px;
 
-      li{
+      li {
         margin-bottom: 5px;
-        a{ 
+        a {
           transition: 200ms;
-          &:hover{
+          &:hover {
             color: white;
           }
         }
@@ -29,24 +33,24 @@
     }
   }
 
-  &__social{
+  &__social {
     width: 22%;
 
-    form{
+    form {
       margin-bottom: 15px;
 
       margin-right: 50px;
     }
 
-    ul{
+    ul {
       display: flex;
       flex-wrap: wrap;
 
-      li{
+      li {
         margin-right: 5px;
         margin-bottom: 5px;
 
-        a{
+        a {
           background-color: $green;
           width: 16px;
           height: 16px;
@@ -57,11 +61,11 @@
           justify-content: center;
           transition: 200ms;
 
-          img{
+          img {
             filter: invert(1);
           }
 
-          &:hover{
+          &:hover {
             background-color: darken($green, 5%);
           }
         }
@@ -69,14 +73,14 @@
     }
   }
 
-  &__contact{
+  &__contact {
     width: 18%;
 
-    &_block{
+    &_block {
       display: flex;
       flex-direction: column;
       margin-top: 15px;
-      a{
+      a {
         margin-bottom: 20px;
         color: white;
         transition: 200ms;
@@ -84,11 +88,11 @@
         align-items: center;
         height: 30px;
 
-        span{
+        span {
           margin-right: 14px;
         }
 
-        &:hover{
+        &:hover {
           color: $green;
         }
       }

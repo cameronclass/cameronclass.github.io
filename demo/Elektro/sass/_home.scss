@@ -288,14 +288,14 @@
   .swiper-button-prev {
     left: 0px;
 
-    @include lg-1025{
+    @include lg-1025 {
       left: 20px;
     }
   }
   .swiper-button-next {
     right: 0px;
 
-    @include lg-1025{
+    @include lg-1025 {
       right: 20px;
     }
   }
@@ -348,6 +348,27 @@
   }
 }
 
+.catalog__cards {
+  li {
+    width: 16.666%;
+
+    @include lg-1300 {
+      width: 20%;
+    }
+
+    @include lg-1025 {
+      width: 25%;
+    }
+
+    @include lg-850 {
+      width: 33.333%;
+    }
+    @include lg-600 {
+      width: 50%;
+    }
+  }
+}
+
 /* Рассылка */
 .news-letter {
   display: flex;
@@ -372,11 +393,20 @@
     display: flex;
     align-items: center;
     padding: 25px 0;
+
+    @include lg-850 {
+      flex-wrap: wrap;
+    }
   }
 
   &__img {
     display: flex;
     justify-content: center;
+
+    @include lg-850 {
+      width: 100%;
+      display: none;
+    }
 
     .letter_img {
       width: 180px;
@@ -387,10 +417,19 @@
     display: flex;
     align-items: center;
 
+    @include lg-850 {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
     .letter-text {
       width: 55%;
       padding-right: 20px;
       box-sizing: border-box;
+
+      @include lg-850 {
+        width: 100%;
+      }
 
       span {
         font-size: 20px;
@@ -403,6 +442,11 @@
     .letter-mail {
       width: 45%;
       display: flex;
+
+      @include lg-850 {
+        width: 100%;
+        margin-top: 20px;
+      }
 
       input {
         width: 50%;
@@ -420,6 +464,10 @@
     justify-content: flex-end;
     h2 {
       width: 70%;
+
+      @include lg-850 {
+        width: 100%;
+      }
     }
   }
 
@@ -433,6 +481,14 @@
         display: flex;
         border-bottom: 1px solid $border;
         padding: 18px 0;
+
+        @include lg-850 {
+          flex-wrap: wrap;
+
+          > div {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -464,6 +520,10 @@
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 5px;
+
+    @include lg-850 {
+      margin-top: 5px;
+    }
     span {
       color: $grey;
       font-weight: normal;
@@ -471,6 +531,9 @@
   }
 
   &__text {
+    @include lg-850 {
+      margin-top: 5px;
+    }
   }
 
   &__more {
@@ -478,6 +541,10 @@
     justify-content: flex-end;
     .btn-more {
       width: 70%;
+
+      @include lg-850 {
+        width: 100%;
+      }
     }
   }
 }
@@ -487,6 +554,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+
+  @include lg-850 {
+    display: none;
+  }
 
   a {
     width: 32.5%;

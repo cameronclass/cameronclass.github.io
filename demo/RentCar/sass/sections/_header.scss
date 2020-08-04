@@ -1,0 +1,13 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 3px solid #e60000;
+  background-color: white;
+  position: relative;
+  height: 80px;
+
+  &__logo{
+    width: 150px;
+    position: absolute;
+    top: 20px;
+  }
+}

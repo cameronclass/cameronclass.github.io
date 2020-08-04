@@ -1,3 +1,28 @@
-html{
-    font-family: ;
-}
+/*Font Families*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.container-fluid {
+  width: 100%;
+  padding: 0 20px; }
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.header {
+  padding: 15px 0;
+  border-bottom: 3px solid #e60000;
+  background-color: white;
+  position: relative;
+  height: 80px; }
+  .header__logo {
+    width: 150px;
+    position: absolute;
+    top: 20px; }
