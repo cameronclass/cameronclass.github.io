@@ -136,4 +136,10 @@
   }
 }
 
+@mixin lg-350 {
+  @media screen and (max-width: 350px) {
+    @content;
+  }
+}
+
 

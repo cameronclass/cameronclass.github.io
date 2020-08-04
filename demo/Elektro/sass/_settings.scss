@@ -99,6 +99,10 @@ img {
   border-radius: 2px;
   font-size: 15px;
 
+  @include lg-600 {
+    font-size: 14px;
+  }
+
   &:focus {
     border-color: $black;
   }
@@ -221,6 +225,10 @@ img {
   }
 }
 
+.icon-invert {
+  filter: invert(1);
+}
+
 /* Bootstap Classes */
 
 .container-fluid {
@@ -250,6 +258,17 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.d-block {
+  display: block !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.lock {
+  overflow: hidden;
+}
 
 .w-100 {
   width: 100%;
@@ -278,6 +297,14 @@ img {
 
 .m-0 {
   margin: 0 !important;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mr-2 {
+  margin-right: 15px;
 }
 
 .p-1 {
@@ -423,6 +450,10 @@ img {
       transition: 200ms;
       background-color: #fff;
 
+      @include lg-600 {
+        padding: 10px 10px 20px;
+      }
+
       &:hover {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
       }
@@ -455,6 +486,7 @@ img {
 
       span {
         padding: 4px 10px;
+        margin-bottom: 5px;
         border-radius: 3px;
         color: white;
         font-size: 10px;
@@ -476,6 +508,10 @@ img {
     .price {
       font-size: 20px;
       font-weight: bold;
+
+      @include lg-600 {
+        font-size: 16px;
+      }
     }
   }
 
@@ -497,6 +533,7 @@ img {
         justify-content: center;
 
         li {
+          width: auto;
           margin: 0 5px 5px;
 
           button {
@@ -509,6 +546,10 @@ img {
             padding: 6px 9px;
             background: none;
             box-sizing: border-box;
+
+            @include lg-600 {
+              padding: 4px 6px;
+            }
 
             &:hover {
               color: $blue;
@@ -536,6 +577,7 @@ img {
         background-color: $border;
         border-radius: 3px;
         overflow: hidden;
+        width: 50%;
 
         input {
           width: 30px;
@@ -556,6 +598,7 @@ img {
       }
 
       &__add {
+        width: 50%;
         button {
           color: white;
           background-color: $blue;
@@ -565,6 +608,11 @@ img {
           font-weight: 400;
           font-size: 14px;
           border-radius: 3px;
+
+          @include lg-600 {
+            padding: 9px 4px;
+            font-size: 13px;
+          }
         }
       }
     }
@@ -574,6 +622,12 @@ img {
       font-size: 13px;
       color: $grey;
       margin-top: 20px;
+
+      @include lg-600 {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+      }
 
       &__span {
         font-weight: bold;
@@ -607,5 +661,40 @@ img {
   &__text {
     font-size: 13px;
     margin-left: 5px;
+
+    @include lg-600 {
+      font-size: 11px;
+    }
+  }
+}
+
+/* Социальная сеть */
+ul.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin-right: 5px;
+    margin-bottom: 5px;
+
+    a {
+      background-color: $green;
+      width: 16px;
+      height: 16px;
+      padding: 10px;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 200ms;
+
+      img {
+        filter: invert(1);
+      }
+
+      &:hover {
+        background-color: darken($green, 5%);
+      }
+    }
   }
 }
