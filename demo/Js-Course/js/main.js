@@ -3,4 +3,7 @@
 
 var fullName;
 
+fullName = "Cameron";
+
 console.log(fullName);
+
