@@ -4,6 +4,6 @@
 var fullName;
 
 fullName = "Cameron";
+fullName = "Class";
 
 console.log(fullName);
-
