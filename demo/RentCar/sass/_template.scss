@@ -2,10 +2,26 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: $font;
+}
+
 img{
   width: 100%;
   height: auto;
 }
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Universal Classes */
 
 .container-fluid{
   width: 100%;
@@ -16,4 +32,89 @@ img{
   width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.justify-content-end{
+  justify-content: flex-end;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.px-0{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+.invert{
+  filter: invert(1);
+}
+
+
+/* Template */
+
+.btn{
+  /* padding: 8px 18px; */
+  background-color: $blue;
+  /* border-radius: 2px; */
+  color: white !important;
+  font-size: 13px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+
+  &:hover{
+    box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+    background-color: darken($color:  $blue, $amount: 10%);
+  }
+
+  &:focus{
+    background-color: $blue;
+  }
+}
+
+.btn-reservation{
+  padding: 5px 18px;
+}
+
+.btn-price{
+  padding: 7px 18px;
+  background-color: $green;
+
+  &:hover{
+    background-color: darken($color: $green, $amount: 8%);
+  }
+
+  &:focus{
+    background-color: $green;
+  }
+}
+
+.btn-language{
+  color: black !important;
+  padding: 2px 8px;
+  background-color: white;
+  box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+
+  &:hover{
+    background-color: white;
+  }
+
+  &:focus{
+    background-color: white;
+  }
 }

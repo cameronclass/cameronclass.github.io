@@ -37,6 +37,8 @@
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts and Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Rent Car</title>
 </head>
 
@@ -49,19 +51,90 @@
   </div> -->
   <!-- Header -->
   <header class="container-fluid header">
-    <div class="container">
+    <div class="container d-flex justify-content-end position-relative">
       <div class="header__logo">
         <img src="img/logo.png" alt="">
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Araçlar</a></li>
+          <li><a href="#">S.S.S</a></li>
+          <li><a href="#">Kurumsal</a></li>
+          <li><a href="#">İletişim</a></li>
+          <li>
+            <a href="#modal-resevation" class="waves-effect waves-light btn btn-reservation modal-trigger">
+              <span class="i-search icon invert"></span>
+              <span>Rezervasyon Ara</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="waves-effect waves-light btn btn-price">
+              <span class="i-lira icon invert"></span>
+              <span>TRY</span>
+            </a>
+            <ul class="header__menu_dropdown">
+              <li><a href="#" class="btn btn-price">
+                  <span class="i-dolar icon invert"></span>
+                  <span>USD</span>
+                </a></li>
+              <li><a href="#" class="btn btn-price">
+                  <span class="i-euro icon invert"></span>
+                  <span>EUR</span>
+                </a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="waves-effect waves-light btn btn-language">
+              <span class="i-turkey icon"></span>
+              <span>TR</span>
+            </a>
+            <ul class="header__menu_dropdown header__menu_dropdown_language">
+              <li><a href="#" class="btn btn-language">
+                  <span class="i-german icon"></span>
+                  <span>DE</span>
+                </a></li>
+              <li><a href="#" class="btn btn-language">
+                  <span class="i-english icon"></span>
+                  <span>EN</span>
+                </a></li>
+              <li><a href="#" class="btn btn-language">
+                  <span class="i-russian icon"></span>
+                  <span>RU</span>
+                </a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </header>
   <!-- Main -->
-  <main>
-    <section>
+  <main class="container-fluid px-0">
+    <section class="container-fluid form-section">
+      <div class="container">
+        <form action="index.html">
+          <div class="input-field col s12">
+            <i class="material-icons">location_on</i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Autocomplete</label>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <!-- Footer -->
   <footer></footer>
+
+  <!-- Modals -->
+  <div id="modal-resevation" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

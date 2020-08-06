@@ -1,13 +1,73 @@
 .header {
-  padding: 15px 0;
   border-bottom: 3px solid #e60000;
   background-color: white;
   position: relative;
-  height: 80px;
 
-  &__logo{
-    width: 150px;
+  &__logo {
+    width: 130px;
     position: absolute;
-    top: 20px;
+    top: 5px;
+    left: 0;
+  }
+
+  &__menu {
+    padding: 15px 0;
+
+    > ul {
+      display: flex;
+      align-items: center;
+
+      > li {
+        margin-left: 20px;
+        position: relative;
+
+        > a {
+          font-size: 15px;
+          font-weight: 500;
+          color: black;
+
+          span {
+            line-height: 1;
+          }
+        }
+
+        &:hover {
+          .header__menu_dropdown {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    &_dropdown {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background-color: $green;
+      border-radius: 0 0 2px 2px;
+      top: 35px;
+      box-shadow: $box-shadow;
+
+      a {
+        width: 88.92px;
+        box-shadow: none;
+
+        &:hover {
+          box-shadow: none;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    &_dropdown_language {
+      background-color: white;
+
+      a {
+        width: 67.56px;
+      }
+    }
   }
 }

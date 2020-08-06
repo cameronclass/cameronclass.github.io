@@ -1,0 +1,27 @@
+.i-search{
+  @include icon(url(../../img/icons/searcher.svg), 22px, 22px)
+}
+
+.i-lira{
+  @include icon(url(../../img/icons/turkish-lira.svg), 18px, 18px)
+}
+.i-dolar{
+  @include icon(url(../../img/icons/dollar.svg), 18px, 18px)
+}
+.i-euro{
+  @include icon(url(../../img/icons/euro.svg), 15px, 15px)
+}
+
+
+.i-turkey{
+  @include icon(url(../../img/icons/turkey.svg), 25px, 25px)
+}
+.i-german{
+  @include icon(url(../../img/icons/germany.svg), 25px, 25px)
+}
+.i-russian{
+  @include icon(url(../../img/icons/russia.svg), 25px, 25px)
+}
+.i-english{
+  @include icon(url(../../img/icons/uk.svg), 25px, 25px)
+}
