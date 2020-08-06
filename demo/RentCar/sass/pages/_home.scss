@@ -1,3 +1,8 @@
 .form-section{
-  background-color: red;
+  background-color: darken($color: $blue, $amount: 10%);
+  padding: 150px 0;
+
+  .container{
+
+  }
 }

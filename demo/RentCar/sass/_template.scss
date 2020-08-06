@@ -1,34 +1,38 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-html{
+html {
   font-family: $font;
 }
 
-img{
+img {
   width: 100%;
   height: auto;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+input{
+  box-sizing: border-box;
+}
+
 /* Universal Classes */
 
-.container-fluid{
+.container-fluid {
   width: 100%;
   padding: 0 20px;
 }
 
-.container{
+.container {
   width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
@@ -38,35 +42,57 @@ ul{
   display: flex;
 }
 
-.justify-content-between{
+.justify-content-between {
   justify-content: space-between;
 }
 
-.justify-content-end{
+.justify-content-end {
   justify-content: flex-end;
 }
 
-.position-relative{
+.position-relative {
   position: relative;
 }
 
-.px-0{
+.px-0 {
   padding-left: 0;
   padding-right: 0;
 }
 
-.icon{
+.icon {
   margin-right: 10px;
 }
 
-.invert{
+.invert {
   filter: invert(1);
 }
 
 
+
+input.input-text:not([type]),
+input.input-text[type="text"]:not(.browser-default),
+input.input-text[type="password"]:not(.browser-default),
+input.input-text[type="email"]:not(.browser-default),
+input.input-text[type="url"]:not(.browser-default),
+input.input-text[type="time"]:not(.browser-default),
+input.input-text[type="date"]:not(.browser-default),
+input.input-text[type="dateline"]:not(.browser-default),
+input.input-text[type="datetime-local"]:not(.browser-default),
+input.input-text[type="tel"]:not(.browser-default),
+input.input-text[type="number"]:not(.browser-default),
+input.input-text[type="search"]:not(.browser-default),
+textarea.input-text.materialize-textarea {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  height: auto;
+  box-sizing: border-box;
+}
+
 /* Template */
 
-.btn{
+.btn {
   /* padding: 8px 18px; */
   background-color: $blue;
   /* border-radius: 2px; */
@@ -77,44 +103,44 @@ ul{
   justify-content: space-between;
   box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
 
-  &:hover{
+  &:hover {
     box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
-    background-color: darken($color:  $blue, $amount: 10%);
+    background-color: darken($color: $blue, $amount: 10%);
   }
 
-  &:focus{
+  &:focus {
     background-color: $blue;
   }
 }
 
-.btn-reservation{
+.btn-reservation {
   padding: 5px 18px;
 }
 
-.btn-price{
+.btn-price {
   padding: 7px 18px;
   background-color: $green;
 
-  &:hover{
+  &:hover {
     background-color: darken($color: $green, $amount: 8%);
   }
 
-  &:focus{
+  &:focus {
     background-color: $green;
   }
 }
 
-.btn-language{
+.btn-language {
   color: black !important;
   padding: 2px 8px;
   background-color: white;
   box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
 
-  &:hover{
+  &:hover {
     background-color: white;
   }
 
-  &:focus{
+  &:focus {
     background-color: white;
   }
 }

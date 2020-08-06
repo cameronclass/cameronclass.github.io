@@ -37,7 +37,6 @@
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts and Icons-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Rent Car</title>
 </head>
@@ -113,11 +112,45 @@
     <section class="container-fluid form-section">
       <div class="container">
         <form action="index.html">
-          <div class="input-field col s12">
-            <i class="material-icons">location_on</i>
-            <input type="text" id="autocomplete-input" class="autocomplete">
-            <label for="autocomplete-input">Autocomplete</label>
+
+          <div class="row">
+            <div class="col s3">
+              <ul class="tabs">
+                <li class="tab col s12"><a class="active" href="#gunluk">Günlük Kiralama</a></li>
+              </ul>
+            </div>
+
+            <!-- Gunluk -->
+            <div id="gunluk" class="col s12">
+              <div class="row">
+                <div class="col s6">
+                  <div class="input-field">
+                    <input type="text" class="autocomplete input-text" placeholder="Nereden Alacaksınız?">
+                  </div>
+                </div>
+                <div class="col s4">
+                  <div class="row">
+                    <div class="col s6">
+                      <div class="input-field">
+                        <input id="start" type="text" class="datepicker input-text">
+                      </div>
+                    </div>
+                    <div class="col s6">
+                      <div class="input-field">
+                        <input type="text" class="timepicker input-text">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s2">
+                  <div class="input-field">
+                    <input id="start" type="text" class="datepicker input-text">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </form>
       </div>
     </section>

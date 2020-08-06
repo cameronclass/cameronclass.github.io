@@ -81,6 +81,10 @@ ul {
   margin: 0;
   padding: 0; }
 
+input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 /* Universal Classes */
 .container-fluid {
   width: 100%;
@@ -119,6 +123,27 @@ ul {
 .invert {
   -webkit-filter: invert(1);
           filter: invert(1); }
+
+input.input-text:not([type]),
+input.input-text[type="text"]:not(.browser-default),
+input.input-text[type="password"]:not(.browser-default),
+input.input-text[type="email"]:not(.browser-default),
+input.input-text[type="url"]:not(.browser-default),
+input.input-text[type="time"]:not(.browser-default),
+input.input-text[type="date"]:not(.browser-default),
+input.input-text[type="dateline"]:not(.browser-default),
+input.input-text[type="datetime-local"]:not(.browser-default),
+input.input-text[type="tel"]:not(.browser-default),
+input.input-text[type="number"]:not(.browser-default),
+input.input-text[type="search"]:not(.browser-default),
+textarea.input-text.materialize-textarea {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /* Template */
 .btn {
@@ -229,4 +254,5 @@ ul {
         width: 67.56px; }
 
 .form-section {
-  background-color: red; }
+  background-color: #3676e8;
+  padding: 150px 0; }
