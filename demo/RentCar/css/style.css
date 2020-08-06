@@ -1,5 +1,5 @@
 .i-search {
-  background-image: url(../../img/icons/searcher.svg);
+  background-image: url(../img/icons/searcher.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -7,7 +7,7 @@
   height: 22px; }
 
 .i-lira {
-  background-image: url(../../img/icons/turkish-lira.svg);
+  background-image: url(../img/icons/turkish-lira.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -15,7 +15,7 @@
   height: 18px; }
 
 .i-dolar {
-  background-image: url(../../img/icons/dollar.svg);
+  background-image: url(../img/icons/dollar.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -23,7 +23,7 @@
   height: 18px; }
 
 .i-euro {
-  background-image: url(../../img/icons/euro.svg);
+  background-image: url(../img/icons/euro.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -31,7 +31,7 @@
   height: 15px; }
 
 .i-turkey {
-  background-image: url(../../img/icons/turkey.svg);
+  background-image: url(../img/icons/turkey.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -39,7 +39,7 @@
   height: 25px; }
 
 .i-german {
-  background-image: url(../../img/icons/germany.svg);
+  background-image: url(../img/icons/germany.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -47,7 +47,7 @@
   height: 25px; }
 
 .i-russian {
-  background-image: url(../../img/icons/russia.svg);
+  background-image: url(../img/icons/russia.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -55,7 +55,7 @@
   height: 25px; }
 
 .i-english {
-  background-image: url(../../img/icons/uk.svg);
+  background-image: url(../img/icons/uk.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
