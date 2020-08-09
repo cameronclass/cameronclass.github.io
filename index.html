@@ -80,6 +80,26 @@
         <hr>
         <div class="profile__title"> SAY HELLO </div>
         <hr>
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <form
+          action="https://formspree.io/xvowygjz"
+          method="POST"
+              class="form"
+        >
+          <label>
+            Your email:
+            <input class="form-control" type="text" name="_replyto">
+          </label>
+          <label>
+            Your message:
+            <textarea class="form-control" name="message"></textarea>
+          </label>
+
+          <!-- your other form fields go here -->
+
+          <button type="submit">Send</button>
+        </form>
         <form class="form" action="mail.php" method="post">
           <input class="form-control" type="email" placeholder="Email" name="user_email" value="">
           <input class="form-control" type="text" placeholder="Subject" name="subject" value="">
