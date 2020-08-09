@@ -71,7 +71,8 @@ html {
 
 img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
 
 a {
   text-decoration: none; }
@@ -124,27 +125,6 @@ input {
   -webkit-filter: invert(1);
           filter: invert(1); }
 
-input.input-text:not([type]),
-input.input-text[type="text"]:not(.browser-default),
-input.input-text[type="password"]:not(.browser-default),
-input.input-text[type="email"]:not(.browser-default),
-input.input-text[type="url"]:not(.browser-default),
-input.input-text[type="time"]:not(.browser-default),
-input.input-text[type="date"]:not(.browser-default),
-input.input-text[type="dateline"]:not(.browser-default),
-input.input-text[type="datetime-local"]:not(.browser-default),
-input.input-text[type="tel"]:not(.browser-default),
-input.input-text[type="number"]:not(.browser-default),
-input.input-text[type="search"]:not(.browser-default),
-textarea.input-text.materialize-textarea {
-  border: 1px solid #ccc;
-  background-color: white;
-  border-radius: 2px;
-  padding: 10px;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
 /* Template */
 .btn {
   /* padding: 8px 18px; */
@@ -191,6 +171,32 @@ textarea.input-text.materialize-textarea {
     background-color: white; }
   .btn-language:focus {
     background-color: white; }
+
+/* Materialize Custimization */
+input.input-text:not([type]),
+input.input-text[type="text"]:not(.browser-default),
+input.input-text[type="password"]:not(.browser-default),
+input.input-text[type="email"]:not(.browser-default),
+input.input-text[type="url"]:not(.browser-default),
+input.input-text[type="time"]:not(.browser-default),
+input.input-text[type="date"]:not(.browser-default),
+input.input-text[type="dateline"]:not(.browser-default),
+input.input-text[type="datetime-local"]:not(.browser-default),
+input.input-text[type="tel"]:not(.browser-default),
+input.input-text[type="number"]:not(.browser-default),
+input.input-text[type="search"]:not(.browser-default),
+textarea.input-text.materialize-textarea {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* Card */
+.cars__card {
+  padding: 0; }
 
 .header {
   border-bottom: 3px solid #e60000;
@@ -256,3 +262,10 @@ textarea.input-text.materialize-textarea {
 .form-section {
   background-color: #3676e8;
   padding: 150px 0; }
+
+/* Cars */
+.cars__card {
+  width: 100%;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1); }

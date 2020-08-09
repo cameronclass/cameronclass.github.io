@@ -9,6 +9,7 @@ html {
 img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 a {
@@ -21,7 +22,7 @@ ul {
   padding: 0;
 }
 
-input{
+input {
   box-sizing: border-box;
 }
 
@@ -65,29 +66,6 @@ input{
 
 .invert {
   filter: invert(1);
-}
-
-
-
-input.input-text:not([type]),
-input.input-text[type="text"]:not(.browser-default),
-input.input-text[type="password"]:not(.browser-default),
-input.input-text[type="email"]:not(.browser-default),
-input.input-text[type="url"]:not(.browser-default),
-input.input-text[type="time"]:not(.browser-default),
-input.input-text[type="date"]:not(.browser-default),
-input.input-text[type="dateline"]:not(.browser-default),
-input.input-text[type="datetime-local"]:not(.browser-default),
-input.input-text[type="tel"]:not(.browser-default),
-input.input-text[type="number"]:not(.browser-default),
-input.input-text[type="search"]:not(.browser-default),
-textarea.input-text.materialize-textarea {
-  border: 1px solid #ccc;
-  background-color: white;
-  border-radius: 2px;
-  padding: 10px;
-  height: auto;
-  box-sizing: border-box;
 }
 
 /* Template */
@@ -142,5 +120,51 @@ textarea.input-text.materialize-textarea {
 
   &:focus {
     background-color: white;
+  }
+}
+
+/* Materialize Custimization */
+
+input.input-text:not([type]),
+input.input-text[type="text"]:not(.browser-default),
+input.input-text[type="password"]:not(.browser-default),
+input.input-text[type="email"]:not(.browser-default),
+input.input-text[type="url"]:not(.browser-default),
+input.input-text[type="time"]:not(.browser-default),
+input.input-text[type="date"]:not(.browser-default),
+input.input-text[type="dateline"]:not(.browser-default),
+input.input-text[type="datetime-local"]:not(.browser-default),
+input.input-text[type="tel"]:not(.browser-default),
+input.input-text[type="number"]:not(.browser-default),
+input.input-text[type="search"]:not(.browser-default),
+textarea.input-text.materialize-textarea {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 2px;
+  padding: 10px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Card */
+
+.cars__card {
+  padding: 0;
+  &_title {
+
+  }
+
+  &_main {
+    .card-main {
+      &__img {
+      }
+      &__img_options {
+      }
+      &__options {
+      }
+    }
+  }
+
+  &_footer {
   }
 }

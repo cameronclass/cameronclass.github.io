@@ -1,0 +1,295 @@
+.inner-content {
+  width: 100%;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+}
+
+.h2 {
+  font-size: 34px;
+  color: $text-body;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+.h3 {
+}
+
+.h5 {
+  font-size: 20px;
+  color: $text-body;
+  margin: 25px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  padding-bottom: 0;
+
+  &-item {
+    margin-right: 20px;
+
+    a {
+      color: $text-muted;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    &::after {
+      content: ">>";
+      display: inline-block;
+      margin-left: 20px;
+      color: $text-muted;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+
+  .active {
+    color: $text-primary;
+  }
+}
+
+.dostavka-text {
+  p {
+    color: $text-body;
+    margin-bottom: 15px;
+  }
+}
+
+/* Table */
+
+.table-about{
+  margin: 25px 0;
+
+  p{
+    font-weight: 500;
+    color: $text-body;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    width: 20px;
+    color: $text-primary;
+    display: inline-block;
+  }
+}
+
+.table-main {
+  width: 100%;
+
+  .table-img__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  thead {
+    tr {
+      background-color: #fcfcfc;
+      color: $text-muted;
+      font-size: 14px;
+
+      th {
+        font-weight: normal;
+        padding: 25px;
+      }
+    }
+  }
+
+  span {
+    color: $text-primary;
+  }
+
+  tbody {
+    background-color: $bg-muted;
+
+    tr {
+      td {
+        width: 25%;
+        padding: 20px 25px;
+        color: $text-body;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 18px;
+      margin-top: 15px;
+
+      li {
+        font-size: 14px;
+        margin-bottom: 5px;
+        &::before {
+          content: "\2022";
+          color: $text-primary;
+          font-weight: bold;
+          display: inline-block;
+          width: 15px;
+          margin-left: -1em;
+        }
+      }
+    }
+
+    img {
+      width: 45%;
+      margin: 0 auto;
+    }
+
+    .table-list {
+      &__title {
+        span {
+          color: $text-primary;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .table-cell {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+
+.partners{
+  background-color: $bg-muted;
+
+
+  p{
+    margin-bottom: 15px;
+    color: $text-body;
+    width: 90%;
+    line-height: 1.4;
+  }
+
+  &__card{
+
+    margin-top: 20px;
+
+    
+    &_block{
+      background-color: white;
+      margin-bottom: 5px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_title{
+      font-size: 14px;
+      color: $text-body;
+      margin-bottom: 7px;
+    }
+
+    &_percent{
+      color: $text-primary;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    &_text{
+      color: $text-primary;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    img{
+      height: 95px;
+      object-fit: contain;
+    }
+
+    &_img{
+      padding: 30px;
+    }
+
+    .span-width{
+      width: 25px;
+      height: 3px;
+      display: block;
+      background-color: $text-primary;
+    }
+
+    .span-height{
+      height: 24px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
+/* self-shipping */
+
+.self-shipping__wrapper{
+  background-color: $bg-muted;
+  padding: 5px 40px 40px;
+  margin-bottom: 12px;
+}
+
+.self-shipping{
+  color: $text-body;
+
+  p{
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  ol{
+    margin-left: 18px;
+    li{
+      margin-bottom: 8px;
+    }
+  }
+
+  &__block{
+    display: flex;
+  }
+
+  &__icon{
+    width: 15%;
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+
+    span{
+      font-size: 14px;
+      width: 80%;
+    }
+
+    a{
+      color: $text-primary;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 7px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}

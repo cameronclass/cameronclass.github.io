@@ -6,3 +6,16 @@
 
   }
 }
+
+
+/* Cars */
+.cars{
+
+
+  &__card{
+    width: 100%;
+    border-radius: 2px;
+
+    box-shadow: $box-shadow;
+  }
+}
