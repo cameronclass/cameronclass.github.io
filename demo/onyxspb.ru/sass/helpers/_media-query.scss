@@ -1,43 +1,25 @@
 /*=== MEDIA QUERY ===*/
 
 @mixin mobile-xs {
-  @media(min-width: 320px) {
+  @media screen and (max-width: 320px) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media(min-width: 480px) {
-    @content;
-  }
-}
-
-@mixin mobile-lg {
-  @media(min-width: 576px) {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media(min-width: 768px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin desktops {
-  @media(min-width: 992px) {
-    @content;
-  }
-}
-
-@mixin large-desktops {
-  @media(min-width: 1200px) {
-    @content;
-  }
-}
-
-@mixin extra-large-desktops {
-  @media(min-width: 1500px) {
+@mixin desktop {
+  @media screen and (max-width: 992px) {
     @content;
   }
 }
