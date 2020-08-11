@@ -1,10 +1,18 @@
 .block-spacing {
   width: 100%;
-  padding: 40px 32px 0;
+  padding: 40px 32px;
   box-sizing: border-box;
+
+  @include tablet {
+    padding: 20px;
+  }
 }
 
-.overflox-x{
+.block-spacing + .block-spacing {
+  padding-top: 0;
+}
+
+.overflox-x {
   overflow-x: scroll;
 }
 
@@ -55,9 +63,14 @@
   display: block;
 }
 
+.bg-fc{
+  background-color: $fc;
+}
+
 .breadcrumb {
   list-style: none;
   display: flex;
+  padding-bottom: 20px;
 
   @include mobile {
     display: none;
@@ -93,10 +106,19 @@
   padding-top: 25px;
   h2 {
     margin-top: 0;
+
+    @include tablet{
+      margin-top: 20px;
+    }
   }
 }
 
 .dostavka-text {
+  padding: 18px 38px;
+
+  @include tablet {
+    padding: 20px;
+  }
   p {
     color: $text-body;
     margin-bottom: 15px;
@@ -160,19 +182,20 @@
 
     ul {
       list-style: none;
-      margin-left: 18px;
+      margin-left: 8px;
       margin-top: 15px;
 
       li {
         font-size: 14px;
         margin-bottom: 5px;
         &::before {
-          content: "\2022";
-          color: $text-primary;
-          font-weight: bold;
+          content: "";
+          background-color: $text-primary;
           display: inline-block;
-          width: 15px;
-          margin-left: -1em;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          margin-right: 10px ;
         }
       }
     }
@@ -195,6 +218,10 @@
   .table-cell {
     text-align: center;
     font-size: 14px;
+
+    span {
+      font-weight: bold;
+    }
   }
 }
 
@@ -208,14 +235,15 @@
   }
 
   p {
+    letter-spacing: 0.4px;
     margin-bottom: 15px;
     color: $text-body;
     width: 90%;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   &__card {
-    margin-top: 20px;
+    margin-top: 14px;
 
     &_block {
       background-color: white;
@@ -224,6 +252,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      line-height: 1.1;
     }
 
     &_title {
@@ -242,6 +271,7 @@
       color: $text-primary;
       font-size: 18px;
       font-weight: bold;
+      text-align: center;
     }
 
     img {
@@ -261,7 +291,7 @@
     }
 
     .span-height {
-      height: 24px;
+      height: 19px;
       display: flex;
       align-items: center;
     }
@@ -283,15 +313,26 @@
 .self-shipping {
   color: $text-body;
 
+  @include tablet{
+    h5{
+      margin-top: 0;
+    }
+  }
+
   p {
     width: 80%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   ol {
     margin-left: 18px;
     li {
       margin-bottom: 8px;
+      width: 95%;
     }
   }
 
@@ -300,8 +341,8 @@
   }
 
   &__icon {
-    width: 13%;
-    padding: 10px;
+    width: 10%;
+    padding: 10px 10px 10px 0;
     box-sizing: border-box;
 
     @include mobile {
@@ -310,7 +351,7 @@
   }
 
   &__text {
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -1257,7 +1298,7 @@
 
   span {
     display: inline-block;
-    width: 30%;
+    width: 35%;
     height: 1px;
     background-color: $text-body;
 
@@ -1280,10 +1321,9 @@
 }
 
 .table-scroll * {
-
   @include mobile {
     white-space: nowrap;
-    overflow-x: scroll !important;
+    font-size: 13px;
   }
 }
 
