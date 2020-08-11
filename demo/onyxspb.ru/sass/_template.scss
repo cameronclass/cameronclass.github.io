@@ -28,6 +28,7 @@
   color: $text-body;
   margin: 25px 0;
   font-weight: bold;
+  letter-spacing: 0.8px;
 }
 
 .h3 {
@@ -303,15 +304,18 @@
 .self-shipping__wrapper {
   background-color: $bg-muted;
   padding: 5px 40px 40px;
-  margin-bottom: 12px;
+  margin-top: 12px;
 
   @include mobile {
-    padding: 5px 20px 20px;
+    padding: 25px 20px;
   }
 }
 
 .self-shipping {
   color: $text-body;
+  @include tablet{
+    padding-bottom: 0;
+  }
 
   @include tablet{
     h5{
@@ -377,6 +381,7 @@
 }
 
 .flansy-banner {
+  margin-top: 12px;
   @include mobile {
     padding: 0 15px;
   }
@@ -392,7 +397,7 @@
     h2 {
       color: white;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     p {
@@ -422,6 +427,7 @@
 .catalog-filter {
   h4 {
     margin-top: 0;
+    margin-bottom: 10px;
   }
 
   .btn-main {
@@ -888,16 +894,27 @@
   margin-top: 20px;
 
   @include mobile {
-    display: table;
+    display: flex;
+  }
+
+  tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   tr {
     display: flex;
     flex-direction: column;
-    margin-bottom: 45px;
     font-size: 14px;
+    padding: 10px 0;
+
+    &:nth-child(odd){
+      background-color: $fc;
+    }
 
     td {
       margin-bottom: 8px;
+      display: flex;
     }
   }
 
@@ -913,6 +930,7 @@
 
   &__basket {
     display: block;
+    position: relative;
 
     &_text {
       margin-right: 10px;
@@ -924,13 +942,14 @@
     a {
       position: absolute;
       right: 15px;
+      bottom: 5px;
       display: flex;
       align-items: center;
       text-decoration: none;
 
-      .i-basket {
-        width: 30px;
-        height: 30px;
+      .i-basket-hover {
+        width: 25px;
+        height: 25px;
       }
     }
   }
@@ -938,6 +957,10 @@
 
 .i-basket {
   @include icon(url(../img/icon-basket.svg), 18px, 18px);
+}
+
+.i-basket-hover{
+  @include icon(url(../img/icon-basket-hover.svg), 18px, 18px);
 }
 
 .btn-main {
