@@ -1015,11 +1015,10 @@
     .swiper-button-prev:focus {
       outline: none; } }
 
-.table-scroll * {
-  overflow: scroll !important; }
-  @media screen and (max-width: 768px) {
-    .table-scroll * {
-      white-space: nowrap; } }
+@media screen and (max-width: 480px) {
+  .table-scroll * {
+    white-space: nowrap;
+    overflow: scroll !important; } }
 
 .catalog-filter-types__card {
   background-color: #fcfcfc;

@@ -1276,10 +1276,10 @@
 }
 
 .table-scroll * {
-  overflow: scroll !important;
 
-  @include tablet {
+  @include mobile {
     white-space: nowrap;
+    overflow: scroll !important;
   }
 }
 
