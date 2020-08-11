@@ -884,7 +884,6 @@
 }
 
 .flancy-slider {
-  
   @include mobile {
     padding-bottom: 30px !important;
   }
@@ -892,25 +891,25 @@
   .swiper-slide {
     img {
       width: 100%;
-      height: 200px;
+      /* height: 200px; */
       object-fit: cover;
 
-      @include mobile {
+      /* @include mobile {
         height: 170px;
-      }
+      } */
     }
   }
 }
 
-.flancy-slider-2{
+.flancy-slider-2 {
   background-color: $fc;
   padding: 40px !important;
 
-  @include mobile{
+  @include mobile {
     padding: 20px !important;
   }
 
-  .swiper-container{
+  .swiper-container {
     margin-top: 40px;
   }
 }
@@ -918,12 +917,13 @@
 .i-next {
   @include icon(url(../img/icon-next.svg), 25px, 25px);
 }
+
 .i-prev {
   @include icon(url(../img/icon-next.svg), 25px, 25px);
   transform: rotate(180deg);
 }
 
-.i-next-btn{
+.i-next-btn {
   width: 16px;
   height: 16px;
   margin-left: 10px;
@@ -1204,39 +1204,38 @@
     box-sizing: border-box;
     margin-bottom: 25px;
 
-    @include mobile{
+    @include mobile {
       margin-bottom: 15px;
     }
 
-    h5{
+    h5 {
       margin-top: 0;
     }
 
-    *{
+    * {
       position: relative;
       z-index: 1;
     }
 
-    ul{
+    ul {
       list-style: none;
       margin: 0;
       display: flex;
       flex-wrap: wrap;
-      
 
-      li{
+      li {
         width: 50%;
         margin-bottom: 10px;
 
-        @include tablet{
+        @include tablet {
           width: 100%;
         }
 
-        a{
+        a {
           color: $text-primary;
           cursor: pointer;
 
-          &:hover{
+          &:hover {
             text-decoration: none;
             cursor: pointer;
           }
@@ -1262,15 +1261,67 @@
   }
 }
 
+.contact-info__wrapper{
+  padding: 20px;
+}
 
-.contact-info{
+.contact-info {
   position: relative;
 
-  &__block{
+  &__block {
     position: absolute;
-    top: 40px;
-    left: 50px;
+    top: 25px;
+    left: 43px;
     background-color: $fc;
-    padding: 40px;
+    padding: 35px;
+
+    &_tabs {
+      margin-bottom: 20px;
+      a {
+        text-decoration: none;
+        background-color: $bg-muted;
+        padding: 10px 30px;
+        color: $text-body;
+        display: inline-block;
+      }
+    }
+
+    &_text{
+      display: flex;
+      color: $text-body;
+      margin-bottom: 10px;
+      font-size: 15px;
+      img{
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+        margin-right: 12px;
+      }
+    }
+
+    hr{
+      width: 100%;
+      max-width: 100%;
+      height: 1px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #e7e7e7;
+    }
+  }
+
+  .map-download{
+    color: $text-primary;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+.bg-muted{
+  background-color: $bg-muted;
+}
+
+.universal-text-2{
+  h5{
+    margin-top: 0;
   }
 }
