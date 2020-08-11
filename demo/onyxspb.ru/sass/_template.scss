@@ -1174,6 +1174,10 @@
     width: 30%;
     height: 1px;
     background-color: $text-body;
+
+    @include mobile{
+      background-color: transparent;
+    }
   }
 }
 
@@ -1263,10 +1267,24 @@
 
 .contact-info__wrapper{
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-info {
   position: relative;
+
+  @include mobile{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  iframe{
+    height: 534px;
+
+    @include mobile{
+      height: 300px;
+    }
+  }
 
   &__block {
     position: absolute;
@@ -1274,6 +1292,15 @@
     left: 43px;
     background-color: $fc;
     padding: 35px;
+
+    @include mobile{
+      position: static;
+      top: 0;
+      left: 0;
+      margin-top: 20px;
+
+      padding: 0px;
+    }
 
     &_tabs {
       margin-bottom: 20px;
@@ -1323,5 +1350,9 @@
 .universal-text-2{
   h5{
     margin-top: 0;
+  }
+
+  .inner-content{
+    padding: 30px 20px;
   }
 }
