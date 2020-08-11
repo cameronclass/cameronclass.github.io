@@ -11116,7 +11116,8 @@ section.dir-block .in .text p.subtitle {
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
   width: 45px;
   height: 45px;
-  background-color: #153953; }
+  background-color: #153953;
+  outline: none; }
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
     background-color: #0a89e5; }

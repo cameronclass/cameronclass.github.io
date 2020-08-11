@@ -12,6 +12,12 @@
   padding-top: 0;
 }
 
+.block-spacing-mobile-0 {
+  @include tablet {
+    padding: 0px;
+  }
+}
+
 .overflox-x {
   overflow-x: scroll;
 }
@@ -21,37 +27,30 @@
 .h4,
 .h5,
 .h6 {
-}
-
-.h2 {
-  font-size: 34px;
+  display: block;
   color: $text-body;
   margin: 25px 0;
   font-weight: bold;
   letter-spacing: 0.8px;
 }
 
+.h2 {
+  font-size: 34px;
+}
 .h3 {
 }
 .h4 {
   font-size: 24px;
-  color: $text-body;
-  margin: 25px 0;
 
   @include mobile {
     font-size: 22px;
   }
 }
-
 .h5 {
   font-size: 20px;
-  color: $text-body;
-  margin: 25px 0;
 }
 .h6 {
   font-size: 18px;
-  color: $text-body;
-  margin: 20px 0;
 }
 
 .text-center {
@@ -64,7 +63,7 @@
   display: block;
 }
 
-.bg-fc{
+.bg-fc {
   background-color: $fc;
 }
 
@@ -108,7 +107,7 @@
   h2 {
     margin-top: 0;
 
-    @include tablet{
+    @include tablet {
       margin-top: 20px;
     }
   }
@@ -196,7 +195,7 @@
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          margin-right: 10px ;
+          margin-right: 10px;
         }
       }
     }
@@ -313,12 +312,12 @@
 
 .self-shipping {
   color: $text-body;
-  @include tablet{
+  @include tablet {
     padding-bottom: 0;
   }
 
-  @include tablet{
-    h5{
+  @include tablet {
+    h5 {
       margin-top: 0;
     }
   }
@@ -428,6 +427,10 @@
   h4 {
     margin-top: 0;
     margin-bottom: 10px;
+
+    @include tablet {
+      padding: 0 20px;
+    }
   }
 
   .btn-main {
@@ -440,6 +443,7 @@
     }
   }
 }
+
 .d-flex-center {
   display: flex;
   justify-content: center;
@@ -566,6 +570,7 @@
     @include mobile {
       flex-direction: column-reverse;
       margin-top: 10px;
+      margin-bottom: 0;
     }
   }
 
@@ -897,7 +902,7 @@
     display: flex;
   }
 
-  tbody{
+  tbody {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -908,7 +913,11 @@
     font-size: 14px;
     padding: 10px 0;
 
-    &:nth-child(odd){
+    @include tablet {
+      padding: 10px 20px;
+    }
+
+    &:nth-child(odd) {
       background-color: $fc;
     }
 
@@ -959,7 +968,7 @@
   @include icon(url(../img/icon-basket.svg), 18px, 18px);
 }
 
-.i-basket-hover{
+.i-basket-hover {
   @include icon(url(../img/icon-basket-hover.svg), 18px, 18px);
 }
 
@@ -973,6 +982,7 @@
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   @include mobile {
     font-size: 16px;
@@ -1027,9 +1037,16 @@
     color: $text-body;
     margin-bottom: 15px;
   }
+
+  h5 {
+    margin-top: 0;
+  }
 }
 
 .flancy-slider {
+  h5 {
+    margin-top: 0;
+  }
   @include mobile {
     padding-bottom: 30px !important;
   }
@@ -1048,9 +1065,6 @@
 }
 
 .flancy-slider-2 {
-  background-color: $fc;
-  padding: 40px !important;
-
   @include mobile {
     padding: 20px !important;
   }
@@ -1062,11 +1076,21 @@
 
 .i-next {
   @include icon(url(../img/icon-next.svg), 25px, 25px);
+
+  @include mobile {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .i-prev {
   @include icon(url(../img/icon-next.svg), 25px, 25px);
   transform: rotate(180deg);
+
+  @include mobile {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .i-next-btn {
@@ -1114,6 +1138,10 @@
   background-color: $bg-muted;
   padding-bottom: 50px;
 
+  @include mobile {
+    background-color: $fc;
+  }
+
   h4 {
     text-align: center;
 
@@ -1123,8 +1151,8 @@
   }
 
   .px-form {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
     box-sizing: border-box;
 
     @include mobile {
@@ -1233,6 +1261,8 @@
     color: $text-primary;
     background-color: transparent;
     border: 1px solid $text-primary;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .inputfile-1:focus + label,
@@ -1334,8 +1364,9 @@
 .swiper-button-next,
 .swiper-button-prev {
   @include mobile {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    top: 53%;
 
     &:focus {
       outline: none;
@@ -1415,7 +1446,7 @@
 }
 
 .contact-info__wrapper {
-  padding: 20px;
+  padding: 25px 25px 0;
   margin-bottom: 20px;
 }
 
@@ -1428,7 +1459,7 @@
   }
 
   iframe {
-    height: 534px;
+    height: 535px;
 
     @include mobile {
       height: 300px;
@@ -1439,16 +1470,25 @@
     position: absolute;
     top: 25px;
     left: 43px;
-    background-color: $fc;
+    background-color: white;
     padding: 35px;
+    width: 40%;
+
+    @include tablet {
+      width: 60%;
+    }
 
     @include mobile {
       position: static;
       top: 0;
       left: 0;
       margin-top: 20px;
-
+      width: 100%;
       padding: 0px;
+    }
+
+    h5 {
+      margin-bottom: 18px;
     }
 
     &_tabs {
@@ -1502,7 +1542,8 @@
   }
 
   @include mobile {
-    .inner-content {
+    padding: 30px 20px !important;
+    .block-spacing {
       padding: 30px 20px;
     }
   }
@@ -1512,6 +1553,11 @@
   @include mobile {
     display: block;
     margin-bottom: 20px !important;
+    padding: 0;
+
+    h5{
+      padding: 0 20px;
+    }
   }
   thead {
     tr {
@@ -1522,12 +1568,17 @@
         color: #657482;
         font-weight: normal;
         @include mobile {
-          padding: 10px 8px;
+          padding: 10px 14px;
           text-align: left;
         }
 
         &:first-child {
           padding-left: 8px;
+
+          @include mobile{
+            padding-left: 14px;
+            font-size: 14px;
+          }
         }
       }
     }
@@ -1542,6 +1593,7 @@
         color: $text-body;
         @include mobile {
           padding: 14px 8px;
+          font-size: 15px;
         }
 
         &:first-child {
@@ -1560,12 +1612,17 @@
       justify-content: space-between;
       background-color: #e9e9e9;
 
+      color: $text-body;
+      font-weight: bold;
+      font-size: 18px;
+
       @include mobile {
-        padding: 8px;
+        padding: 8px 14px;
+        font-size: 16px;
       }
 
       td {
-        width: 33.333%;
+        width: 31.333%;
         text-align: center;
 
         @include mobile {
@@ -1644,6 +1701,20 @@
         font-size: 14px;
         color: $text-primary;
       }
+    }
+  }
+}
+
+.map-without-contact {
+  iframe {
+    height: 350px;
+  }
+}
+
+.table-white {
+  tbody {
+    tr {
+      background-color: white;
     }
   }
 }
