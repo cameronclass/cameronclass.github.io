@@ -1,7 +1,11 @@
-.inner-content {
+.block-spacing {
   width: 100%;
-  padding: 40px 32px;
+  padding: 40px 32px 0;
   box-sizing: border-box;
+}
+
+.overflox-x{
+  overflow-x: scroll;
 }
 
 .h2,
@@ -60,7 +64,7 @@
   }
 
   &-item {
-    margin-right: 20px;
+    margin-right: 12px;
 
     a {
       color: $text-muted;
@@ -71,7 +75,7 @@
     &::after {
       content: ">>";
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 12px;
       color: $text-muted;
     }
 
@@ -86,6 +90,7 @@
 }
 
 .ship__about {
+  padding-top: 25px;
   h2 {
     margin-top: 0;
   }
@@ -104,9 +109,8 @@
   margin: 25px 0;
 
   p {
-    font-weight: 500;
     color: $text-body;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   span {
@@ -174,7 +178,7 @@
     }
 
     img {
-      width: 45%;
+      width: 45% !important;
       margin: 0 auto;
     }
 
@@ -1279,7 +1283,7 @@
 
   @include mobile {
     white-space: nowrap;
-    overflow: scroll !important;
+    overflow-x: scroll !important;
   }
 }
 

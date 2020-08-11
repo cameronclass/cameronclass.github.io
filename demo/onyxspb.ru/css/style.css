@@ -1,10 +1,13 @@
 /*Font Families*/
 /*=== MEDIA QUERY ===*/
-.inner-content {
+.block-spacing {
   width: 100%;
-  padding: 40px 32px;
+  padding: 40px 32px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+.overflox-x {
+  overflow-x: scroll; }
 
 .h2 {
   font-size: 34px;
@@ -47,7 +50,7 @@
     .breadcrumb {
       display: none; } }
   .breadcrumb-item {
-    margin-right: 20px; }
+    margin-right: 12px; }
     .breadcrumb-item a {
       color: #8c8c8c;
       text-decoration: none;
@@ -55,15 +58,17 @@
     .breadcrumb-item::after {
       content: ">>";
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 12px;
       color: #8c8c8c; }
     .breadcrumb-item:last-child::after {
       display: none; }
   .breadcrumb .active {
     color: #2291e7; }
 
-.ship__about h2 {
-  margin-top: 0; }
+.ship__about {
+  padding-top: 25px; }
+  .ship__about h2 {
+    margin-top: 0; }
 
 .dostavka-text p {
   color: #153953;
@@ -73,9 +78,8 @@
 .table-about {
   margin: 25px 0; }
   .table-about p {
-    font-weight: 500;
     color: #153953;
-    margin-bottom: 10px; }
+    margin-bottom: 7px; }
   .table-about span {
     width: 20px;
     color: #2291e7;
@@ -118,7 +122,7 @@
           width: 15px;
           margin-left: -1em; }
     .table-main tbody img {
-      width: 45%;
+      width: 45% !important;
       margin: 0 auto; }
     .table-main tbody .table-list__title span {
       color: #2291e7;
@@ -1018,7 +1022,7 @@
 @media screen and (max-width: 480px) {
   .table-scroll * {
     white-space: nowrap;
-    overflow: scroll !important; } }
+    overflow-x: scroll !important; } }
 
 .catalog-filter-types__card {
   background-color: #fcfcfc;
