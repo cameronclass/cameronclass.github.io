@@ -65,7 +65,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
     position: absolute;
     left: 15px;
     z-index: 2;
-    @include icon(url(../../img/icons/calendar.svg), 18px, 20px);
+    @include icon(url(../img/icons/calendar.svg), 18px, 20px);
   }
 }
 

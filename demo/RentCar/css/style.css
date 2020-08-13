@@ -74,7 +74,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
     position: absolute;
     left: 15px;
     z-index: 2;
-    background-image: url(../../img/icons/calendar.svg);
+    background-image: url(../img/icons/calendar.svg);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
