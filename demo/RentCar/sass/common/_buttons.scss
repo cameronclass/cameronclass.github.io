@@ -1,0 +1,99 @@
+.btn {
+  padding: 7px 18px;
+  background-color: $blue;
+  color: white !important;
+  font-size: 13px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+
+  &:hover {
+    box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+    background-color: darken($color: $blue, $amount: 10%);
+  }
+
+  &:focus {
+    background-color: $blue;
+  }
+}
+
+.btn-green {
+  background-color: $green;
+
+  &:hover {
+    background-color: darken($color: $green, $amount: 8%);
+  }
+
+  &:focus {
+    background-color: $green;
+  }
+}
+
+.btn-yellow {
+  background-color: darken($color: $yellow, $amount: 8%);
+
+  &:hover {
+    background-color: darken($color: $yellow, $amount: 14%);
+  }
+
+  &:focus {
+    background-color: $yellow;
+  }
+}
+
+.btn-dark-blue {
+  background-color: darken($color: $blue, $amount: 40%);
+
+  &:hover {
+    background-color: darken($color: $blue, $amount: 50%);
+  }
+
+  &:focus {
+    background-color: $dark-blue;
+  }
+}
+
+.btn-cars-more{
+  font-weight: 500;
+  padding: 18px;
+}
+
+.btn-find{
+  height: 100%;
+  font-weight: 600;
+  border-radius: 4px;
+
+  &::after{
+    content: ">";
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.box-shadow{
+  box-shadow: $box-shadow;
+}
+
+
+
+/* Specific Button */
+
+.btn-reservation {
+  padding: 5px 18px;
+}
+
+.btn-language {
+  color: black !important;
+  padding: 2px 8px;
+  background-color: white;
+  box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
+
+  &:hover {
+    background-color: white;
+  }
+
+  &:focus {
+    background-color: white;
+  }
+}

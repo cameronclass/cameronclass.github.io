@@ -2,6 +2,8 @@
   border-bottom: 3px solid #e60000;
   background-color: white;
   position: relative;
+  position: fixed;
+  z-index: 5;
 
   &__logo {
     width: 130px;
@@ -70,4 +72,8 @@
       }
     }
   }
+}
+
+.main-header-padding{
+  padding-top: 50px;
 }

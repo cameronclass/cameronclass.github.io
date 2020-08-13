@@ -1,18 +1,36 @@
-.form-section{
-  background-color: darken($color: $blue, $amount: 10%);
+.form-section {
+  /* background-color: darken($color: $blue, $amount: 30%); */
+  background: rgb(19, 71, 165);
+  background: linear-gradient(180deg, rgba(19, 71, 165, 1) 0%, rgba(23, 54, 111, 1) 100%);
   padding: 150px 0;
 
-  .container{
+  .input-field {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 14px;
+      background-color: $yellow;
+      border-radius: 4px;
+      color: white;
+      position: relative;
+      text-align: center;
+      top: 3px;
+      font-size: 15px;
+    }
   }
 }
 
-
 /* Cars */
-.cars{
+.cars {
+  margin-top: 50px;
 
-
-  &__card{
+  &__card {
     width: 100%;
     border-radius: 2px;
 

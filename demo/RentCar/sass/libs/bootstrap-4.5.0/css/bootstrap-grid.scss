@@ -4,16 +4,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 .container {
   width: 100%;
@@ -43,7 +33,7 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 }
 
@@ -75,7 +65,7 @@ html {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 }
 

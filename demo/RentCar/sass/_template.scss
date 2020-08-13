@@ -1,6 +1,22 @@
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p{
+  line-height: 1.4;
+  margin: 8px 0;
+}
+
+.h2 {
+  margin: 20px 0;
+}
 
 html {
   font-family: $font;
@@ -33,24 +49,6 @@ input {
   padding: 0 20px;
 }
 
-.container {
-  width: 1300px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.justify-content-end {
-  justify-content: flex-end;
-}
-
 .position-relative {
   position: relative;
 }
@@ -64,107 +62,136 @@ input {
   margin-right: 10px;
 }
 
+.icon-input{
+  position: absolute;
+  left: 15px;
+}
+
+.icon-grey-white{
+  filter: brightness(3);
+}
+
+.input-text-icon{
+  padding-left: 40px !important;
+}
+
 .invert {
   filter: invert(1);
 }
 
-/* Template */
-
-.btn {
-  /* padding: 8px 18px; */
-  background-color: $blue;
-  /* border-radius: 2px; */
-  color: white !important;
-  font-size: 13px !important;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
-
-  &:hover {
-    box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
-    background-color: darken($color: $blue, $amount: 10%);
-  }
-
-  &:focus {
-    background-color: $blue;
-  }
+.input-top-left-radius{
+  border-top-left-radius: 0 !important;
 }
 
-.btn-reservation {
-  padding: 5px 18px;
+.d-none{
+  display: none !important;
 }
 
-.btn-price {
-  padding: 7px 18px;
-  background-color: $green;
-
-  &:hover {
-    background-color: darken($color: $green, $amount: 8%);
-  }
-
-  &:focus {
-    background-color: $green;
-  }
+.border-bottom{
+  border-bottom: 1px solid $muted;
 }
 
-.btn-language {
-  color: black !important;
-  padding: 2px 8px;
-  background-color: white;
-  box-shadow: 0 1px 5px 1px rgba($color: #000000, $alpha: 0.1);
 
-  &:hover {
-    background-color: white;
-  }
-
-  &:focus {
-    background-color: white;
-  }
-}
-
-/* Materialize Custimization */
-
-input.input-text:not([type]),
-input.input-text[type="text"]:not(.browser-default),
-input.input-text[type="password"]:not(.browser-default),
-input.input-text[type="email"]:not(.browser-default),
-input.input-text[type="url"]:not(.browser-default),
-input.input-text[type="time"]:not(.browser-default),
-input.input-text[type="date"]:not(.browser-default),
-input.input-text[type="dateline"]:not(.browser-default),
-input.input-text[type="datetime-local"]:not(.browser-default),
-input.input-text[type="tel"]:not(.browser-default),
-input.input-text[type="number"]:not(.browser-default),
-input.input-text[type="search"]:not(.browser-default),
-textarea.input-text.materialize-textarea {
-  border: 1px solid #ccc;
-  background-color: white;
-  border-radius: 2px;
-  padding: 10px;
-  height: auto;
-  box-sizing: border-box;
-}
 
 /* Card */
 
 .cars__card {
-  padding: 0;
+  padding: 0 !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
   &_title {
-
+    h3 {
+      padding: 12px 15px;
+    }
+    border-bottom: 1px solid #ccc;
   }
 
   &_main {
+    padding: 20px 20px 0;
     .card-main {
       &__img {
       }
       &__img_options {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-top: 25px;
+          li {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 14px;
+            color: $muted;
+            margin-right: 12px;
+
+            .icon {
+              margin-right: 7px;
+            }
+          }
+        }
       }
       &__options {
+        ul {
+          li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          }
+        }
       }
     }
   }
 
   &_footer {
+    display: flex;
+    background-color: #ecf9ff;
+
+    .card-footer {
+      &__price {
+        font-size: 15px;
+        font-weight: 600;
+        color: $muted;
+        text-align: right;
+        width: 50%;
+        padding: 8px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        line-height: 1;
+
+        &_wrapper{
+          display: flex;
+          flex-direction: column;
+          font-weight: bold;
+          letter-spacing: 0.6px;
+
+          .old-price{
+            text-decoration: line-through;
+            color: $red;
+            font-size: 13px;
+          }
+          .new-price{
+            font-size: 18px;
+            margin-top: 5px;
+            color: $dark-blue;
+          }
+        }
+      }
+
+      &__btn {
+        width: 50%;
+        a{
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          justify-content: center;
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+    }
   }
 }

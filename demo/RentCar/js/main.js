@@ -12,24 +12,28 @@ $(document).ready(function () {
   /* Modal */
   $('.modal').modal();
 
+  /* Dropdown */
+  $('.dropdown-trigger').dropdown();
+
+  /* Select */
+  $('select').formSelect();
 
   /* Searchbar */
   $('input.autocomplete').autocomplete({
     data: {
-      "Apple": null,
-      "Microsoft": null,
-      "Google": null,
+      "Antalya Havalimanı": null,
+      "Antalya Merkez": null,
+      "Antalya Otogar": null,
+      "Lara": null,
+      "Konyaalti": null,
+      "Ofis": null,
     },
   });
-
 
   /* Tabs */
   $('.tabs').tabs();
 
-
-
   /* Datapicker */
-
   $(".datepicker").datepicker({
     autoClose: true,
     // internationalization
@@ -73,27 +77,11 @@ $(document).ready(function () {
     },
   });
 
-  /* $("#start").datepicker({
-    autoClose: true,
-    minDate: today,
-  });
-
-  $("#end").datepicker({
-    autoClose: true,
-  }); */
-
-
-
-
-
   /* Timepicker */
   $('.timepicker').timepicker({
     autoClose: true,
+    defaultTime: 'now',
+    twelveHour: false,
   });
 
-
-
-
-
 });
-
