@@ -969,6 +969,41 @@ p {
   font-weight: bold;
 }
 
+.accordion {}
+
+.accordion dl{}
+
+.accordion dt a {
+  padding: 15px;
+  background-color: whitesmoke;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: block;
+  color: black;
+}
+
+.accordion dd{
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.about-text{
+  line-height: 1.5;
+  font-size: 17px;
+}
+.contact-adres *{
+  color: black !important;
+}
+.contact-adres *::before{
+  filter: invert(1);
+}
+.contact-adres button{
+  color: white !important;
+}
+
 
 
 @media screen and (max-width: 1200px) {
