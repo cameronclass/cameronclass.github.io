@@ -4,9 +4,14 @@
   background: linear-gradient(180deg, rgba(19, 71, 165, 1) 0%, rgba(23, 54, 111, 1) 100%);
   padding: 150px 0;
 
+  @include mobile{
+    padding: 80px 0;
+  }
+
   .input-field {
     margin-top: 0;
     margin-bottom: 0;
+    height: 100%;
   }
 
   &__list {
@@ -22,8 +27,15 @@
       text-align: center;
       top: 3px;
       font-size: 15px;
+
+      @include mobile{
+        font-size: 13px;
+      }
     }
   }
+}
+.form-choose{
+  padding: 100px 0 50px;
 }
 
 /* Cars */

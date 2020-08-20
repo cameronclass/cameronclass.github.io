@@ -70,19 +70,21 @@
         <img src="img/logo.png" alt="">
       </div>
       <div class="header__menu">
-        <ul>
+        <ul class="header__menu_navigation">
           <li><a href="#">Anasayfa</a></li>
           <li><a href="#">Araçlar</a></li>
           <li><a href="#">S.S.S</a></li>
           <li><a href="#">Kurumsal</a></li>
           <li><a href="#">İletişim</a></li>
-          <li>
+        </ul>
+        <ul class="header__menu_control">
+          <li class="header__menu_control_id">
             <a href="#modal-resevation" class="waves-effect waves-light btn btn-reservation modal-trigger">
               <span class="i-search icon invert"></span>
               <span>Rezervasyon Ara</span>
             </a>
           </li>
-          <li>
+          <li class="header__menu_control_currency">
             <a href="#" class="waves-effect waves-light btn btn-green">
               <span class="i-lira icon invert"></span>
               <span>TRY</span>
@@ -98,16 +100,16 @@
                 </a></li>
             </ul>
           </li>
-          <li>
+          <li class="header__menu_control_lang">
             <a href="#" class="waves-effect waves-light btn btn-language">
               <span class="i-turkey icon"></span>
               <span>TR</span>
             </a>
             <ul class="header__menu_dropdown header__menu_dropdown_language">
-              <li><a href="#" class="btn btn-language waves-effect waves-light">
+              <!-- <li><a href="#" class="btn btn-language waves-effect waves-light">
                   <span class="i-german icon"></span>
                   <span>DE</span>
-                </a></li>
+                </a></li> -->
               <li><a href="#" class="btn btn-language waves-effect waves-light">
                   <span class="i-english icon"></span>
                   <span>EN</span>
@@ -118,10 +120,32 @@
                 </a></li>
             </ul>
           </li>
+          <li class="js-menu-open">
+            <span class="i-hamburger icon"></span>
+          </li>
         </ul>
       </div>
+      <div class="header__mobile-menu">
+        <ul class="header__mobile-menu_navigation">
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Araçlar</a></li>
+          <li><a href="#">S.S.S</a></li>
+          <li><a href="#">Kurumsal</a></li>
+          <li><a href="#">İletişim</a></li>
+          <li class="header__menu_control_id">
+            <a href="#modal-resevation" class="waves-effect waves-light btn btn-reservation modal-trigger">
+              <span class="i-search icon invert"></span>
+              <span>Rezervasyon Ara</span>
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+      
     </div>
+    <div class="header__mobile-menu_overlay"></div>
   </header>
+ 
   <!-- Main -->
   <main class="container-fluid px-0 main-header-padding">
     <!-- Form Section -->
@@ -130,9 +154,9 @@
         <form action="index.html">
 
           <div class="row">
-            <div class="col-sm-2">
+            <div class="col-xl-2 col-lg-3 col-sm-6 col-8">
               <ul class="form-section__list">
-                <li class="d-flex justify-content-center">
+                <li class="d-flex justify-content-center align-items-center">
                   <span class="i-date icon icon-grey-white"></span>
                   <span>Günlük Kiralama</span>
                 </li>
@@ -142,31 +166,31 @@
             <!-- Gunluk -->
             <div id="gunluk" class="col-sm-12">
               <div class="row">
-                <div class="col-sm-4">
+                <div class="col-xl-4 col-lg-5 col-md-12 mb-4">
                   <div class="input-field d-flex align-items-center position-relative">
                     <span class="i-location icon icon-input"></span>
                     <input type="text" class="autocomplete input-text input-text-icon input-top-left-radius"
                       placeholder="Nereden Alacaksınız?">
                   </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xl-4 col-lg-5 col-md-8 mb-4">
                   <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-sm-7 mb-sm-0 mb-2">
                       <div class="input-field d-flex align-items-center position-relative">
                         <span class="i-date icon icon-input"></span>
                         <input id="start" type="text" class="datepicker input-text input-text-icon"
                           placeholder="Alış Tarihi">
                       </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-sm-5">
                       <div class="input-field d-flex align-items-center position-relative">
                         <span class="i-date icon icon-input"></span>
-                        <input type="text" class="timepicker input-text input-text-icon" placeholder="Alış Saati">
+                        <input type="text" readonly class="timepicker input-text input-text-icon" placeholder="Alış Saati">
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 mb-4">
                   <div class="input-field day-picker">
                     <select class="position-relative">
                       <option value="" disabled selected><span class="i-date icon icon-input"></span>Gün</option>
@@ -203,7 +227,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-xl-2 col-lg-3 col-md-4 mb-4">
                   <a href="#" class="btn btn-yellow btn-find waves-effect waves-light">En iyi fiyata bul</a>
                 </div>
               </div>
@@ -224,7 +248,7 @@
                 <h3>Car Name</h3>
               </div>
               <div class="cars__card_main card-main row">
-                <div class="card-main__img col l6">
+                <div class="card-main__img col-lg-6 col-md-6 col-12">
                   <img src="img/cars/1.png" alt="Araba">
                   <div class="card-main__img_options">
                     <ul>
@@ -251,7 +275,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="card-main__options col l6">
+                <div class="card-main__options col-lg-6 col-md-6 col-12">
                   <ul>
                     <li>
                       <span class="i-confirm icon"></span>
@@ -522,7 +546,7 @@
   <footer class="footer container-fluid">
     <div class="container footer-container">
       <div class="row border-bottom">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-4">
           <ul class="list-destination">
             <li><a href="#">Kemer Araç Kirama</a></li>
             <li><a href="#">Kemer Araç Kirama</a></li>
@@ -531,7 +555,7 @@
             <li><a href="#">Kemer Araç Kirama</a></li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-4">
           <ul class="list-destination">
             <li><a href="#">Kemer Araç Kirama</a></li>
             <li><a href="#">Kemer Araç Kirama</a></li>
@@ -540,7 +564,7 @@
             <li><a href="#">Kemer Araç Kirama</a></li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-4">
           <ul class="list-destination">
             <li><a href="#">Kemer Araç Kirama</a></li>
             <li><a href="#">Kemer Araç Kirama</a></li>
@@ -549,7 +573,7 @@
             <li><a href="#">Kemer Araç Kirama</a></li>
           </ul>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-4">
           <ul class="list-destination">
             <li><a href="#">Kemer Araç Kirama</a></li>
             <li><a href="#">Kemer Araç Kirama</a></li>

@@ -16,6 +16,11 @@
   &:focus {
     background-color: $blue;
   }
+
+  @include mobile{
+    padding: 6px 10px;
+    font-size: 12px !important;
+  }
 }
 
 .btn-green {

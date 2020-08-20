@@ -107,12 +107,24 @@
     justify-content: center;
     border-top: 1px solid $muted;
     padding: 20px 0;
+
+    
     li{
       margin: 0 15px;
 
       a{
         color: $muted;
         font-size: 14px;
+      }
+    }
+
+    @include mobile{
+      flex-wrap: wrap;
+
+      padding: 8px 0;
+
+      li{
+        margin: 0 10px 8px;
       }
     }
   }

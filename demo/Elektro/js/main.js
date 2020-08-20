@@ -87,10 +87,8 @@ $(document).ready(function () {
   $(function () {
     $(".js-calatog-readmore").readmore({
       speed: 500,
-      lessLink:
-        '<div class="js-calatog-readmore-btn"><a href="#">Скрыть</a></div>',
-      moreLink:
-        '<div class="js-calatog-readmore-btn"><a href="#">Еще</a></div>',
+      lessLink: '<div class="js-calatog-readmore-btn"><a href="#">Скрыть</a></div>',
+      moreLink: '<div class="js-calatog-readmore-btn"><a href="#">Еще</a></div>',
       collapsedHeight: 76,
     });
   });
@@ -120,6 +118,10 @@ $(document).ready(function () {
       .parents()
       .find(".header-mobile__menu_detail")
       .removeClass("menu-expand");
+  });
+
+  $(".swiper-button-next").click( function(e){
+    e.preventDefault();
   });
 });
 
@@ -194,6 +196,39 @@ var swiper = new Swiper(".watched-before .swiper-container", {
     },
     720: {
       slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+  },
+});
+
+var swiper = new Swiper(".catalog-category-slider .swiper-container", {
+  slidesPerView: 8,
+  spaceBetween: 15,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1300: {
+      slidesPerView: 8,
+      spaceBetween: 15,
+    },
+    990: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+    850: {
+      slidesPerView: 5,
+      spaceBetween: 15,
+    },
+    720: {
+      slidesPerView: 4,
       spaceBetween: 15,
     },
     320: {

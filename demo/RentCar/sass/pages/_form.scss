@@ -1,0 +1,41 @@
+.steps {
+  padding: 60px 0 60px;
+  background-color: #eaeaea;
+
+  &__block {
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    &_number {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $muted;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-weight: bold;
+      text-shadow: 1px 1px 0px #000;
+    }
+    .active {
+      background-color: $yellow;
+    }
+  }
+}
+
+.label {
+  font-size: 13px;
+  color: #484848;
+  margin-bottom: 10px;
+  display: inline-block;
+}

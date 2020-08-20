@@ -46,7 +46,11 @@ input {
 
 .container-fluid {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 15px;
+
+  @include mobile{
+    padding: 0;
+  }
 }
 
 .position-relative {
@@ -60,6 +64,10 @@ input {
 
 .icon {
   margin-right: 10px;
+
+  @include mobile{
+    margin-right: 7px;
+  }
 }
 
 .icon-input{
@@ -126,6 +134,10 @@ input {
             color: $muted;
             margin-right: 12px;
 
+            @include mobile{
+              font-size: 12px;
+            }
+
             .icon {
               margin-right: 7px;
             }
@@ -133,12 +145,23 @@ input {
         }
       }
       &__options {
+        
         ul {
           li {
             margin-bottom: 10px;
             font-size: 14px;
             display: flex;
             align-items: center;
+          }
+        }
+
+        @include mobile{
+          margin-top: 15px;
+          margin-bottom: 15px;
+          ul{
+            li{
+              font-size: 13px;
+            }
           }
         }
       }
@@ -148,6 +171,7 @@ input {
   &_footer {
     display: flex;
     background-color: #ecf9ff;
+   
 
     .card-footer {
       &__price {
@@ -161,6 +185,12 @@ input {
         justify-content: space-between;
         align-items: flex-end;
         line-height: 1;
+
+        @include mobile{
+          text-align: right;
+          font-size: 12px;
+          align-items: center;
+        }
 
         &_wrapper{
           display: flex;
@@ -178,6 +208,16 @@ input {
             margin-top: 5px;
             color: $dark-blue;
           }
+
+          /* @include mobile{
+            .old-price{
+              font-size: 13px;
+            }
+            .new-price{
+              font-size: 18px;
+            }
+            
+          } */
         }
       }
 
@@ -191,6 +231,14 @@ input {
           font-weight: 600;
           font-size: 18px;
         }
+      }
+    }
+
+     @include mobile{
+      flex-direction: column;
+
+      .card-footer__price, .card-footer__btn{
+        width: 100%;
       }
     }
   }

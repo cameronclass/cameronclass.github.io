@@ -19,6 +19,7 @@ textarea.input-text.materialize-textarea,
   color: #888;
   border-radius: 4px;
   padding: 18px 15px;
+  line-height: 1;
   font-size: 15px;
   height: 100%;
   box-sizing: border-box;
@@ -28,6 +29,9 @@ textarea.input-text.materialize-textarea,
 
 .input-text::placeholder {
   color: #888;
+}
+input::-webkit-input-placeholder {
+  line-height: normal !important;
 }
 
 input:not([type]):focus:not([readonly]),
@@ -43,7 +47,6 @@ input[type="tel"]:not(.browser-default):focus:not([readonly]),
 input[type="number"]:not(.browser-default):focus:not([readonly]),
 input[type="search"]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-
   color: $dark-blue;
   box-shadow: 0 0 0 transparent;
 }
@@ -60,6 +63,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   position: relative;
   display: flex;
   align-items: center;
+  height: 100%;
   &::before {
     content: "";
     position: absolute;
@@ -100,7 +104,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   color: $blue-2;
 }
 
-.datepicker-table td.is-today{
+.datepicker-table td.is-today {
   background-color: #e2e2e2;
   color: black;
 }
@@ -123,6 +127,14 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: $blue-2;
 }
 
+.datepicker-date-display .date-text {
+  font-size: 30px;
+}
+
+.datepicker-controls .select-month input {
+  width: 90px;
+}
+
 /* TimePicher */
 .timepicker-tick.active,
 .timepicker-tick:hover {
@@ -138,3 +150,92 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .timepicker-canvas line {
   stroke: $blue-2;
 }
+
+/* Checkbox */
+
+[type="checkbox"] + span:not(.lever) {
+  height: 21px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+[type="checkbox"].filled-in:not(:checked) + span:not(.lever):after {
+  border-color: #b7b7b7;
+}
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid darken($color: $yellow, $amount: 10%);
+  background-color: darken($color: $yellow, $amount: 10%);
+}
+
+input:not([type]),
+input[type="text"]:not(.browser-default),
+input[type="password"]:not(.browser-default),
+input[type="email"]:not(.browser-default),
+input[type="url"]:not(.browser-default),
+input[type="time"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
+input[type="datetime"]:not(.browser-default),
+input[type="datetime-local"]:not(.browser-default),
+input[type="tel"]:not(.browser-default),
+input[type="number"]:not(.browser-default),
+input[type="search"]:not(.browser-default),
+textarea.materialize-textarea,
+.browser-default {
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  padding: 10px 15px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.input-field > label {
+  top: -10px;
+  color: #484848;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border: 1px solid darken($color: $blue, $amount: 20%);
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="number"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="search"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: darken($color: $blue, $amount: 20%);
+}
+
+.browser-default{
+  -webkit-appearance: none;
+}
+
+select:focus{
+  outline: none;
+}
+
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
+  color: #484848;
+}
+

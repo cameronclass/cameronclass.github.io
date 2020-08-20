@@ -8,43 +8,43 @@
   @include icon(url(../img/icons/vider.jpg), 30px, 30px);
 }
 
-.i-search{
+.i-search {
   @include icon(url(../img/icons/search.svg), 15px, 15px);
 }
 
-.i-hamburger{
+.i-hamburger {
   @include icon(url(../img/icons/hamburger.svg), 17px, 17px);
 }
 
-.i-down{
+.i-down {
   @include icon(url(../img/icons/arrow-down.svg), 13px, 13px);
 }
 
-.i-lock{
-  @include icon(url(../img/icons/lock.svg), 20px, 20px)
+.i-lock {
+  @include icon(url(../img/icons/lock.svg), 20px, 20px);
 }
 
-.i-progress{
-  @include icon(url(../img/icons/progress.svg), 20px, 20px)
+.i-progress {
+  @include icon(url(../img/icons/progress.svg), 20px, 20px);
 }
 
-.i-heart{
-  @include icon(url(../img/icons/heart.svg), 20px, 18px)
+.i-heart {
+  @include icon(url(../img/icons/heart.svg), 20px, 18px);
 }
 
-.i-basket{
-  @include icon(url(../img/icons/basket.svg), 20px, 20px)
+.i-basket {
+  @include icon(url(../img/icons/basket.svg), 20px, 20px);
 }
 
-.i-header-tel{
+.i-header-tel {
   @include icon(url(../img/icons/phone.svg), 12px, 12px);
 }
 
-.i-mobile-tel{
+.i-mobile-tel {
   @include icon(url(../img/icons/mobile-phone.svg), 23px, 23px);
 }
 
-.i-mobile-search{
+.i-mobile-search {
   @include icon(url(../img/icons/search-mobile.svg), 22px, 22px);
 }
 
@@ -59,37 +59,54 @@
   @include icon(url(../img/icons/confirm.svg), 14px, 12px);
 }
 
-.i-location{
+.i-location {
   @include icon(url(../img/icons/location.svg), 16px, 16px);
 }
 
-.i-shipping{
+.i-shipping {
   @include icon(url(../img/icons/sheeping.svg), 16px, 16px);
 }
 
-.i-tags{
+.i-tags {
   @include icon(url(../img/icons/tag.svg), 16px, 16px);
 }
 
-.i-like{
+.i-like {
   @include icon(url(../img/icons/like.svg), 16px, 16px);
 }
 
-.i-mail{
-  @include icon(url(../img/icons/mail.svg), 16px, 16px)
+.i-mail {
+  @include icon(url(../img/icons/mail.svg), 16px, 16px);
 }
 
-.i-arrow-right{
-  @include icon(url(../img/icons/arrow-right.svg), 20px, 20px)
+.i-arrow-right {
+  @include icon(url(../img/icons/arrow-right.svg), 20px, 20px);
 }
 
 /* Footer */
-.i-phone-white{
-  @include icon(url(../img/icons/phone-white.svg), 18px, 18px)
+.i-phone-white {
+  @include icon(url(../img/icons/phone-white.svg), 18px, 18px);
 }
-.i-mail-white{
-  @include icon(url(../img/icons/mail-white.svg), 18px, 18px)
+.i-mail-white {
+  @include icon(url(../img/icons/mail-white.svg), 18px, 18px);
 }
-.i-location-white{
-  @include icon(url(../img/icons/location-white.svg), 18px, 18px)
+.i-location-white {
+  @include icon(url(../img/icons/location-white.svg), 18px, 18px);
+}
+
+/* Catalog */
+.i-catalog-grid {
+  @include icon(url(../img/icons/grid.svg), 14px, 14px);
+}
+
+.i-catalog-list {
+  @include icon(url(../img/icons/list.svg), 17px, 17px);
+}
+
+.i-catalog-list-text {
+  @include icon(url(../img/icons/list-text.svg), 17px, 17px);
+}
+
+.i-refresh-green{
+  @include icon(url(../img/icons/refresh.svg), 15px, 15px);
 }

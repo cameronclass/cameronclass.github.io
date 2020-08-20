@@ -7,6 +7,7 @@ $light-grey: #b0b0a8;
 $grey: #555555;
 $black: #282828;
 $red: #e52929;
+$bg-white: #f9f9f9;
 
 $font-exo: "Exo 2", Helvetica, Arial, sans-serif;
 $font-roboto: "Roboto", Helvetica, Arial, sans-serif;
@@ -217,13 +218,36 @@ img {
 }
 
 .btn-more {
+  width: 100%;
   padding: 15px;
   border-color: $border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: $border;
     border-color: $border;
     color: black;
+  }
+}
+
+.sort-button {
+  font-size: 14px;
+  color: $light-grey;
+  &::after {
+    content: "";
+    @include icon(url(../img/icons/arrow-down-black.svg), 10px, 10px);
+    margin-left: 8px;
+    opacity: 0.5;
+  }
+
+  &__active {
+    color: $grey;
+
+    &::after {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -255,6 +279,10 @@ img {
 .d-flex-ac {
   display: flex;
   align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
 }
 
 .flex-wrap {
@@ -332,6 +360,14 @@ img {
   border-radius: 4px;
 }
 
+.border-bottom{
+  border-bottom: 1px solid $border;
+}
+
+.icon-margin{
+  margin: 0 7px;
+}
+
 /* Used fragments */
 .advantages {
   display: flex;
@@ -355,10 +391,12 @@ img {
 
     .title {
       font-weight: bold;
+      font-size: 15px;
     }
     .text {
       color: $grey;
       padding: 0;
+      font-size: 15px;
     }
   }
 }
@@ -443,7 +481,7 @@ img {
   &__inner {
     &:hover {
       position: relative;
-      z-index: 999;
+      z-index: 5;
     }
 
     &_block {
@@ -574,6 +612,7 @@ img {
 
       &__controls {
         display: flex;
+        justify-content: center;
         box-sizing: border-box;
         margin-right: 8px;
         background-color: $border;
@@ -582,7 +621,7 @@ img {
         width: 50%;
 
         input {
-          width: 30px;
+          width: 40%;
           border: none;
           text-align: center;
           padding: 8px 2px;
@@ -591,7 +630,7 @@ img {
         }
 
         button {
-          width: 25px;
+          width: 30%;
           text-align: center;
           border: none;
           padding: 8px 5px;
@@ -603,6 +642,7 @@ img {
         width: 50%;
         button {
           color: white;
+          width: 100%;
           background-color: $blue;
           padding: 9px 8px;
           outline: none;
@@ -610,6 +650,11 @@ img {
           font-weight: 400;
           font-size: 14px;
           border-radius: 3px;
+          transition: 200ms ease;
+
+          &:hover {
+            background-color: darken($color: $blue, $amount: 7%);
+          }
 
           @include lg-600 {
             padding: 9px 4px;
@@ -699,4 +744,88 @@ ul.social {
       }
     }
   }
+}
+
+/* BreadCrumb */
+.breadcrumb {
+  background-color: $bg-white;
+
+  h1 {
+    margin: 0;
+    padding-top: 20px;
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    padding-bottom: 20px;
+    li {
+      margin-right: 5px;
+      color: $light-grey;
+      font-size: 14px;
+
+      a {
+        color: $light-grey;
+        cursor: pointer;
+
+        &:hover {
+          border-bottom: 1px solid;
+        }
+      }
+
+      &::after {
+        content: "-";
+        display: inline-block;
+        margin-left: 5px;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Pagination */
+.catalog-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  li {
+    margin: 0 3px;
+
+    a {
+      padding: 5px 12px;
+      font-weight: bold;
+      color: $black;
+      border-radius: 2px;
+      cursor: pointer;
+
+      &:hover, &.active {
+        background-color: $green;
+        color: white;
+
+        .i-down{
+           filter: none;
+        }
+      }
+    }
+
+    .i-down{
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+/* Our advantages */
+.our-advantages{
+  margin: 20px 0;
+
+  li{
+    width: 23%;
+  }
+
+  ul{
+    padding: 15px 0;
+  }
+  
 }
