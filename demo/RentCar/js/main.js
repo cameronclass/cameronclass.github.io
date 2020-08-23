@@ -6,6 +6,7 @@ $(function () {
   $preloader.delay(350).fadeOut("slow");
 });
 
+
 $(document).ready(function () {
   /* Menu Open */
   $(".js-menu-open").click(function () {
@@ -14,7 +15,7 @@ $(document).ready(function () {
       "header__mobile-menu_navigation_active"
     );
   });
-  $(".header__mobile-menu_overlay").click(function(){
+  $(".header__mobile-menu_overlay").click(function () {
     $(this).removeClass("d-block");
     $(".header__mobile-menu_navigation").removeClass(
       "header__mobile-menu_navigation_active"
@@ -25,22 +26,29 @@ $(document).ready(function () {
   $(".modal").modal();
 
   /* Dropdown */
-  $(".dropdown-trigger").dropdown();
+  $(".dropdown-trigger").dropdown(
+
+  );
+
 
   /* Select */
   $("select").formSelect();
 
   /* Searchbar */
-  $("input.autocomplete").autocomplete({
-    data: {
-      "Antalya Havalimanı": null,
-      "Antalya Merkez": null,
-      "Antalya Otogar": null,
-      Lara: null,
-      Konyaalti: null,
-      Ofis: null,
-    },
-  });
+  /* $("input.autocomplete").autocomplete(
+
+    {
+      data: {
+        "Antalya Havalimanı": null,
+        "Antalya Merkez": null,
+        "Antalya Otogar": null,
+        Lara: null,
+        Konyaalti: null,
+        Ofis: null,
+      },
+    }
+
+  ); */
 
   /* Tabs */
   $(".tabs").tabs();
@@ -107,4 +115,29 @@ $(document).ready(function () {
 
   /* Mask Input */
   $("#date-birth").mask("99 / 99 / 9999");
+
+
+  /* Accordion */
+
+  var allPanels = $('.accordion > dd').hide();
+
+  $('.accordion > dt > a').click(function () {
+    $this = $(this);
+    $target = $this.parent().next();
+
+    if (!$target.hasClass('active')) {
+      allPanels.removeClass('active').slideUp().delay(50);
+      $target.addClass('active').slideDown().delay(50);
+    }
+
+    return false;
+  });
+
+
+  /* Tooltip */
+
+  $('.tooltipped').tooltip();
+
+
+
 });

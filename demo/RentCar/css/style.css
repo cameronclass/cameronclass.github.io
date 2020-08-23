@@ -360,6 +360,27 @@ textarea.materialize-textarea:focus:not([readonly]) {
     width: 18px;
     height: 20px; }
 
+.location-picker .select-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%; }
+  .location-picker .select-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+    background-image: url(../img/icons/location.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 18px;
+    height: 20px; }
+
 .select-dropdown {
   max-height: 180px; }
 
@@ -437,27 +458,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
 [type="checkbox"].filled-in:checked + span:not(.lever):after {
   border: 2px solid #e58500;
   background-color: #e58500; }
-
-input:not([type]),
-input[type="text"]:not(.browser-default),
-input[type="password"]:not(.browser-default),
-input[type="email"]:not(.browser-default),
-input[type="url"]:not(.browser-default),
-input[type="time"]:not(.browser-default),
-input[type="date"]:not(.browser-default),
-input[type="datetime"]:not(.browser-default),
-input[type="datetime-local"]:not(.browser-default),
-input[type="tel"]:not(.browser-default),
-input[type="number"]:not(.browser-default),
-input[type="search"]:not(.browser-default),
-textarea.materialize-textarea,
-.browser-default {
-  border-radius: 4px;
-  border: 1px solid #eaeaea;
-  padding: 10px 15px;
-  height: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
 
 .input-field > label {
   top: -10px;
@@ -767,6 +767,22 @@ select:focus {
   height: 20px;
   -webkit-filter: contrast(0.5);
           filter: contrast(0.5); }
+
+.i-car-yellow {
+  background-image: url(../img/icons/car-yellow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 44px;
+  height: 44px; }
+
+.i-car-blue {
+  background-image: url(../img/icons/car-blue.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 44px;
+  height: 44px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1282,6 +1298,38 @@ input {
     -webkit-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
             box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1); }
 
+.autocomplete:focus {
+  border: 1px solid white !important; }
+
+.accordion dt a {
+  padding: 15px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+  border-radius: 3px;
+  margin-bottom: 20px;
+  display: block;
+  color: black;
+  font-weight: 500; }
+.accordion dd {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.17);
+  padding: 15px;
+  border-radius: 3px; }
+
+.about-card {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold; }
+  .about-card img {
+    width: 50%;
+    height: 250px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 auto; }
+
 .filter-block {
   -webkit-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
@@ -1364,3 +1412,153 @@ input {
   color: #484848;
   margin-bottom: 10px;
   display: inline-block; }
+
+.form input:not([type]),
+.form input[type="text"]:not(.browser-default),
+.form input[type="password"]:not(.browser-default),
+.form input[type="email"]:not(.browser-default),
+.form input[type="url"]:not(.browser-default),
+.form input[type="time"]:not(.browser-default),
+.form input[type="date"]:not(.browser-default),
+.form input[type="datetime"]:not(.browser-default),
+.form input[type="datetime-local"]:not(.browser-default),
+.form input[type="tel"]:not(.browser-default),
+.form input[type="number"]:not(.browser-default),
+.form input[type="search"]:not(.browser-default),
+.form textarea.materialize-textarea,
+.form .browser-default {
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  padding: 10px 15px;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+.form__country {
+  margin-top: 6px; }
+.form__confirm span {
+  font-size: 13px !important; }
+
+.info-card__all-price {
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .info-card__all-price .all-price__text {
+    color: #758493;
+    font-weight: bold;
+    font-size: 14px; }
+  .info-card__all-price .all-price__value {
+    font-size: 20px;
+    font-weight: 600; }
+.info-card__day-price {
+  padding: 0px 20px;
+  color: #4c9c32;
+  font-size: 13px; }
+  .info-card__day-price .day-price {
+    font-weight: 600; }
+  .info-card__day-price .i-lira {
+    width: 15px;
+    height: 15px; }
+.info-card__footer {
+  padding: 15px; }
+.info-card__location {
+  padding: 5px 10px 10px;
+  margin: 20px;
+  border-radius: 4px;
+  background-color: #f5f6f7; }
+  .info-card__location_text {
+    font-size: 15px;
+    margin-left: 15px;
+    color: #ef8b00; }
+  .info-card__location_place {
+    font-size: 13px;
+    line-height: 1;
+    color: #758493;
+    font-weight: 600; }
+  .info-card__location_time {
+    font-weight: 600;
+    line-height: 1;
+    color: #ef8b00; }
+  .info-card__location .text-blue {
+    color: #6495ed; }
+.info-card__name {
+  font-size: 18px !important; }
+.info-card__new-price {
+  padding: 8px 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .info-card__new-price .i-lira {
+    margin-left: 10px; }
+.info-card__old-price {
+  padding: 0px 20px;
+  font-size: 13px;
+  color: #758493; }
+  .info-card__old-price .old-price {
+    font-size: 16px;
+    color: #da1a20;
+    font-weight: 600;
+    text-decoration: line-through;
+    padding-left: 7px; }
+  .info-card__old-price .i-lira {
+    width: 15px;
+    height: 15px; }
+.info-card__text {
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #758493; }
+.info-card img {
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto; }
+
+/* Rent Rules Section */
+.rent-rule {
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px; }
+  .rent-rule__title {
+    font-size: 13px;
+    color: #758493;
+    margin-bottom: 15px; }
+  .rent-rule__value {
+    color: #0e3477;
+    font-size: 14px;
+    font-weight: 600; }
+  .rent-rule a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .rent-rule a img {
+      width: 50%;
+      margin-bottom: 15px;
+      opacity: 0.4; }
+  .rent-rule__option {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .rent-rule__option::before {
+      content: "\26AC";
+      margin-right: 10px; }

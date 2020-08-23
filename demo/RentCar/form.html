@@ -167,11 +167,55 @@
       </div>
     </section>
     <!-- Cars Section -->
-    <section class="container-fluid cars">
+    <section class="container-fluid cars form">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
+            <div class="row mb-5">
+              <div class="col-12 mb-4">
+                <h4>Kiralama Şartları</h4>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mb-3">
+                <div class="rent-rule">
+                  <a class="tooltipped" data-position="top" data-tooltip="Rezervasyon tutarınızın toplam olarak kapsadığı KM sınırıdır. KM sınırı aşımı halinde ödeyeceğiniz ekstra tutar bilgilerini kiralama koşulları içerisinde bulabilirsiniz.">
+                    <img src="img/icons/kilometers.svg" alt="Image">
+                    <span class="rent-rule__title">Günlük km sınırı</span>
+                    <span class="rent-rule__value">200 km</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mb-3">
+                <div class="rent-rule">
+                  <a class="tooltipped" data-position="top"
+                    data-tooltip="Seçtiğiniz aracı kiralayabilmek için talep edilen ehliyet sürenizdir. Teslimat noktalarında genellikle en az bir yıllık ehliyet sahibi olan sürücülere araç teslimi yapmaktadır.">
+                    <img src="img/icons/driver-license.svg" alt="Image">
+                    <span class="rent-rule__title">Min. Ehliyet Süresi</span>
+                    <span class="rent-rule__value">1</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mb-3">
+                <div class="rent-rule">
+                  <a class="tooltipped" data-position="top"
+                    data-tooltip="Seçtiğiniz aracı kiralamak için belirlenen minimum sürücü yaşıdır. Eğer bu yaş sınırının altındaysanız, rezervasyonunuz yapılsa bile kiraladığınız aracı teslim almanız ne yazık ki mümkün olmayacaktır.">
+                    <img src="img/icons/driver-age.svg" alt="Image">
+                    <span class="rent-rule__title">Min. Sürücü Yaşı</span>
+                    <span class="rent-rule__value">21</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="rent-rule__option">
+                  Aracı teslim alabilmeniz için yanınızda kimliğiniz, sürücü ehliyetiniz ve kendi adınıza düzenlenmiş bir kredi kartı
+                  bulunması gerekmektedir.
+                </div>
+              </div>
+            </div>
+            <hr class="my-4">
             <div class="row">
+              <div class="col-12 mb-4">
+                <h4>Sürücü Bilgileri</h4>
+              </div>
               <div class="col-lg-6 mb-2">
                 <div class="input-field">
                   <input placeholder="Ad" id="first_name" type="text" class="validate">
@@ -203,9 +247,9 @@
                   <label for="date-birth">Sürücü Doğum Günü </label>
                 </div>
               </div>
-              <div class="col-lg-6 mb-2">
+              <div class="col-lg-6 mb-2 form__country">
 
-                <label class="label">Browser Select</label>
+                <label class="label">Ülke</label>
                 <select class="browser-default">
                   <option value="AF">Afganistan</option>
                   <option value="AX">Aland Adaları</option>
@@ -478,12 +522,77 @@
                   <input placeholder="ID" id="last_name" type="text" class="validate">
                 </div>
               </div>
+              <div class="col-lg-12 form__confirm">
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+
+                  <span>
+                    <div><a href="/tr/gizlilik-cerez-politikasi/" target="_blank">Gizlilik sözleşmesi ve çerez
+                        politikası</a>
+                      ve
+                      <a target="_blank" href="/tr/uyelik-aydinlatma-formu/">Kişisel verilerin korunması</a>
+                      hakkında
+                      aydınlatma formunu
+                      okudum ve kabul ediyorum</div>
+                  </span>
+                </label>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="filter-block">
+            <div class="filter-block info-card">
+              <h3 class="info-card__name">Renault Clio</h3>
+              <div class="row">
+                <div class="col-7">
+                  <div class="info-card__old-price">
+                    <span>2 Günlük Fiyat:</span>
+                    <span class="old-price">709,05</span>
+                    <span class="i-lira"></span>
+                  </div>
+                  <div class="info-card__new-price">
+                    <span>390,00</span>
+                    <span class="i-lira"></span>
+                  </div>
+                  <div class="info-card__day-price">
+                    <span>Günlük Fiyat:</span>
+                    <span class="day-price">195,00</span>
+                    <span class="i-lira"></span>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <img src="img/cars/1.png" alt="">
+                </div>
+              </div>
+              <p class="info-card__text">Tüm Vergiler, Yasal Değişiklikler FİYATA DAHİL</p>
+              <div class="info-card__location">
+                <div class="d-flex align-items-center">
+                  <span class="i-car-yellow"></span>
+                  <span class="info-card__location_text">Alış Tarihi</span>
 
-
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="info-card__location_place">Antalya-Antalya Havali</span>
+                  <span class="info-card__location_time">21.08.2020 - 19:00</span>
+                </div>
+              </div>
+              <div class="info-card__location">
+                <div class="d-flex align-items-center">
+                  <span class="i-car-blue"></span>
+                  <span class="info-card__location_text text-blue">Bırakış Tarihi</span>
+              
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span class="info-card__location_place">Antalya-Antalya Havali</span>
+                  <span class="info-card__location_time text-blue">21.08.2020 - 19:00</span>
+                </div>
+              </div>
+              <div class="info-card__all-price">
+                <span class="all-price__text">Toplam Tutar:</span>
+                <span class="all-price__value">390,00 <span class="i-lira"></span></span>
+              </div>
+              <div class="info-card__footer">
+                <a href="#" class="btn btn-green waves-effect waves-light">Siparisi tamamla</a>
+              </div>
             </div>
           </div>
         </div>

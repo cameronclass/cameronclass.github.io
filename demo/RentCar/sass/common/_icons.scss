@@ -108,3 +108,13 @@
 
   filter: contrast(0.5);
 }
+
+
+
+.i-car-yellow {
+  @include icon(url(../img/icons/car-yellow.svg), 44px, 44px);
+}
+
+.i-car-blue {
+  @include icon(url(../img/icons/car-blue.svg), 44px, 44px);
+}

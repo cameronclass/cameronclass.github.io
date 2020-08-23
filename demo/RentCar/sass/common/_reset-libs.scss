@@ -72,6 +72,19 @@ textarea.materialize-textarea:focus:not([readonly]) {
     @include icon(url(../img/icons/calendar.svg), 18px, 20px);
   }
 }
+.location-picker .select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+    @include icon(url(../img/icons/location.svg), 18px, 20px);
+  }
+}
 
 .select-dropdown {
   max-height: 180px;
@@ -169,26 +182,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   background-color: darken($color: $yellow, $amount: 10%);
 }
 
-input:not([type]),
-input[type="text"]:not(.browser-default),
-input[type="password"]:not(.browser-default),
-input[type="email"]:not(.browser-default),
-input[type="url"]:not(.browser-default),
-input[type="time"]:not(.browser-default),
-input[type="date"]:not(.browser-default),
-input[type="datetime"]:not(.browser-default),
-input[type="datetime-local"]:not(.browser-default),
-input[type="tel"]:not(.browser-default),
-input[type="number"]:not(.browser-default),
-input[type="search"]:not(.browser-default),
-textarea.materialize-textarea,
-.browser-default {
-  border-radius: 4px;
-  border: 1px solid #eaeaea;
-  padding: 10px 15px;
-  height: auto;
-  box-sizing: border-box;
-}
+
 
 .input-field > label {
   top: -10px;
@@ -238,4 +232,6 @@ select:focus{
 [type="radio"]:not(:checked)+span, [type="radio"]:checked+span{
   color: #484848;
 }
+
+
 
