@@ -7,12 +7,20 @@
     float: right;
     display: flex;
     justify-content: space-between;
+
+    @include mobile{
+      width: 100%;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
     font-weight: 500;
+    width: 33%;
+    @include mobile {
+      font-size: 14px;
+    }
 
     &_number {
       width: 30px;
@@ -26,6 +34,10 @@
       margin-right: 10px;
       font-weight: bold;
       text-shadow: 1px 1px 0px #000;
+      @include mobile {
+        width: 25px;
+        height: 25px;
+      }
     }
     .active {
       background-color: $yellow;
@@ -69,6 +81,9 @@
   &__confirm {
     span {
       font-size: 13px !important;
+      @include mobile{
+        font-size: 11px;
+      }
     }
   }
 }
@@ -80,14 +95,14 @@
     justify-content: space-between;
     align-items: center;
 
-    .all-price{
-      &__text{
+    .all-price {
+      &__text {
         color: $muted;
         font-weight: bold;
         font-size: 14px;
       }
 
-      &__value{
+      &__value {
         font-size: 20px;
         font-weight: 600;
       }
@@ -98,16 +113,20 @@
     color: $green;
     font-size: 13px;
 
-    .day-price{
+    .day-price {
       font-weight: 600;
     }
-    .i-lira{
+    .i-lira {
       width: 15px;
       height: 15px;
     }
   }
   &__footer {
     padding: 15px;
+
+    .btn {
+      font-weight: bold;
+    }
   }
   &__location {
     padding: 5px 10px 10px;
@@ -116,29 +135,29 @@
 
     background-color: #f5f6f7;
 
-    &_text{
+    &_text {
       font-size: 15px;
       margin-left: 15px;
       color: darken($color: $yellow, $amount: 8%);
     }
 
-    &_place{
+    &_place {
       font-size: 13px;
       line-height: 1;
       color: $muted;
       font-weight: 600;
     }
 
-    &_time{
+    &_time {
       font-weight: 600;
       line-height: 1;
       color: darken($color: $yellow, $amount: 8%);
     }
-    .text-blue{
+    .text-blue {
       color: $blue;
     }
   }
-  
+
   &__name {
     font-size: 18px !important;
   }
@@ -150,7 +169,7 @@
     display: flex;
     align-items: center;
 
-    .i-lira{
+    .i-lira {
       margin-left: 10px;
     }
   }
@@ -159,14 +178,14 @@
     font-size: 13px;
     color: $muted;
 
-    .old-price{
+    .old-price {
       font-size: 16px;
       color: $red;
       font-weight: 600;
       text-decoration: line-through;
       padding-left: 7px;
     }
-    .i-lira{
+    .i-lira {
       width: 15px;
       height: 15px;
     }
@@ -177,51 +196,97 @@
     color: $muted;
   }
 
-  img{
+  img {
     width: 90%;
     object-fit: contain;
     margin: 0 auto;
   }
 }
 
-
 /* Rent Rules Section */
 
-.rent-rule{
+.rent-rule {
   padding: 20px;
   box-shadow: $box-shadow;
   border-radius: 4px;
 
-  &__title{
+  &__title {
     font-size: 13px;
     color: $muted;
     margin-bottom: 15px;
   }
 
-  &__value{
+  &__value {
     color: darken($color: $blue, $amount: 40%);
     font-size: 14px;
     font-weight: 600;
   }
-  a{
+  a {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    img{
+    img {
       width: 50%;
       margin-bottom: 15px;
       opacity: 0.4;
     }
   }
 
-  &__option{
+  &__option {
     margin-top: 20px;
-    display: flex;
+    display: block;
+    color: $muted;
+    font-size: 15px;
+    line-height: 1.5;
 
-    &::before{
+    span{
+      color: $blue;
+      margin: 0 4px;
+      font-weight: 600;
+    }
+
+    &::before {
       content: "\26AC";
       margin-right: 10px;
+    }
+  }
+}
+
+
+.material-tooltip{
+  @include mobile{
+    max-width: calc(95% - 4px);
+  }
+}
+
+
+.rent-exstra{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img{
+    width: 60%;
+    margin-bottom: 15px;
+  }
+
+  &__price{
+    font-weight: 600;
+
+    .rent-exstra-icon{
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__options{
+    label{
+      span{
+        padding-left: 25px !important;
+        margin: 0 7px;
+        font-size: 14px !important;
+      }
     }
   }
 }

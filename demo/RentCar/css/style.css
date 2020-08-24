@@ -1378,6 +1378,9 @@ input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media screen and (max-width: 576px) {
+      .steps__block {
+        width: 100%; } }
   .steps__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1385,7 +1388,11 @@ input {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-weight: 500; }
+    font-weight: 500;
+    width: 33%; }
+    @media screen and (max-width: 576px) {
+      .steps__item {
+        font-size: 14px; } }
     .steps__item_number {
       width: 30px;
       height: 30px;
@@ -1404,6 +1411,10 @@ input {
       margin-right: 10px;
       font-weight: bold;
       text-shadow: 1px 1px 0px #000; }
+      @media screen and (max-width: 576px) {
+        .steps__item_number {
+          width: 25px;
+          height: 25px; } }
     .steps__item .active {
       background-color: #ff9f19; }
 
@@ -1437,6 +1448,9 @@ input {
   margin-top: 6px; }
 .form__confirm span {
   font-size: 13px !important; }
+  @media screen and (max-width: 576px) {
+    .form__confirm span {
+      font-size: 11px; } }
 
 .info-card__all-price {
   padding: 5px 20px;
@@ -1467,6 +1481,8 @@ input {
     height: 15px; }
 .info-card__footer {
   padding: 15px; }
+  .info-card__footer .btn {
+    font-weight: bold; }
 .info-card__location {
   padding: 5px 10px 10px;
   margin: 20px;
@@ -1556,9 +1572,42 @@ input {
       opacity: 0.4; }
   .rent-rule__option {
     margin-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    display: block;
+    color: #758493;
+    font-size: 15px;
+    line-height: 1.5; }
+    .rent-rule__option span {
+      color: #6495ed;
+      margin: 0 4px;
+      font-weight: 600; }
     .rent-rule__option::before {
       content: "\26AC";
       margin-right: 10px; }
+
+@media screen and (max-width: 576px) {
+  .material-tooltip {
+    max-width: calc(95% - 4px); } }
+
+.rent-exstra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .rent-exstra img {
+    width: 60%;
+    margin-bottom: 15px; }
+  .rent-exstra__price {
+    font-weight: 600; }
+    .rent-exstra__price .rent-exstra-icon {
+      width: 15px;
+      height: 15px; }
+  .rent-exstra__options label span {
+    padding-left: 25px !important;
+    margin: 0 7px;
+    font-size: 14px !important; }

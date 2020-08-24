@@ -170,14 +170,15 @@
     <section class="container-fluid cars form">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-8 mb-5">
             <div class="row mb-5">
               <div class="col-12 mb-4">
                 <h4>Kiralama Şartları</h4>
               </div>
               <div class="col-lg-3 col-md-6 col-6 mb-3">
                 <div class="rent-rule">
-                  <a class="tooltipped" data-position="top" data-tooltip="Rezervasyon tutarınızın toplam olarak kapsadığı KM sınırıdır. KM sınırı aşımı halinde ödeyeceğiniz ekstra tutar bilgilerini kiralama koşulları içerisinde bulabilirsiniz.">
+                  <a class="tooltipped" data-position="top"
+                    data-tooltip="Rezervasyon tutarınızın toplam olarak kapsadığı KM sınırıdır. KM sınırı aşımı halinde ödeyeceğiniz ekstra tutar bilgilerini kiralama koşulları içerisinde bulabilirsiniz.">
                     <img src="img/icons/kilometers.svg" alt="Image">
                     <span class="rent-rule__title">Günlük km sınırı</span>
                     <span class="rent-rule__value">200 km</span>
@@ -206,48 +207,127 @@
               </div>
               <div class="col-12">
                 <div class="rent-rule__option">
-                  Aracı teslim alabilmeniz için yanınızda kimliğiniz, sürücü ehliyetiniz ve kendi adınıza düzenlenmiş bir kredi kartı
+                  Aracı teslim alabilmeniz için yanınızda <span>kimliğiniz</span> ve <span>sürücü ehliyetiniz</span>
                   bulunması gerekmektedir.
                 </div>
               </div>
             </div>
             <hr class="my-4">
-            <div class="row">
+            <div class="row mb-5">
               <div class="col-12 mb-4">
+                <h4>Ekstra Ürünler</h4>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mb-3">
+                <div class="rent-rule">
+                  <div class="rent-exstra">
+                    <img src="img/icons/baby-car-seat.svg" alt="Image">
+                    <span class="rent-rule__title">Bebek Koltuğu</span>
+                    <span class="rent-exstra__price">
+                      <span data-child-seat-price="60">00.00</span>
+                      <span class="i-lira rent-exstra-icon"></span>
+                    </span>
+                    <form class="rent-rule__value rent-exstra__options mt-3 d-flex justify-content-between">
+                      <span data-old-count-seat="0"></span>
+                      <label>
+                        <input class="with-gap" name="group1" data-child-seat-count="0" type="radio" checked="checked">
+                        <span>Hayır</span>
+                      </label>
+                      <label>
+                        <input class="with-gap" name="group1" data-child-seat-count="1" type="radio">
+                        <span>1</span>
+                      </label>
+                      <label>
+                        <input class="with-gap" data-child-seat-count="2" name="group1" type="radio">
+                        <span>2</span>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mb-3">
+                <div class="rent-rule">
+                  <div class="rent-exstra">
+                    <img src="img/icons/car-gps.svg" alt="Image">
+                    <span class="rent-rule__title">Gps Navigasyon</span>
+                    <span class="rent-exstra__price">
+                      <span>50.00</span>
+                      <span class="i-lira rent-exstra-icon"></span>
+                    </span>
+                    <div class="switch mt-3">
+                      <label>
+                        Hayır
+                        <input type="checkbox" class="js-baby-seat" data-navigation="50">
+
+                        <span class="lever"></span>
+                        Evet
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-6 mb-3">
+                <div class="rent-rule">
+                  <div class="rent-exstra">
+                    <img src="img/icons/add-driver.svg" alt="Image">
+                    <span class="rent-rule__title">İlave Sürücü</span>
+                    <span class="rent-exstra__price">
+                      <span data-exstra-driver-price="60">00.00</span>
+                      <span class="i-lira rent-exstra-icon"></span>
+                    </span>
+                    <form class="rent-rule__value rent-exstra__options mt-3 d-flex justify-content-between">
+                      <span data-old-exstra-price="0"></span>
+                      <label>
+                        <input class="with-gap" name="group1" data-exstra-driver-count="0" type="radio" checked="checked">
+                        <span>1</span>
+                      </label>
+                      <label>
+                        <input class="with-gap" name="group1" data-exstra-driver-count="1" type="radio">
+                        <span data-old-exstra-price="1">2</span>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <hr class="my-4">
+            <div class="row">
+              <div class="col-12 mb-5">
                 <h4>Sürücü Bilgileri</h4>
               </div>
-              <div class="col-lg-6 mb-2">
+              <div class="col-lg-6 mb-3">
                 <div class="input-field">
                   <input placeholder="Ad" id="first_name" type="text" class="validate">
                   <label for="first_name">Ad</label>
                 </div>
               </div>
-              <div class="col-lg-6 mb-2">
+              <div class="col-lg-6 mb-3">
                 <div class="input-field">
                   <input placeholder="Soyad" id="last_name" type="text" class="validate">
                   <label for="last_name">Soyad</label>
                 </div>
               </div>
-              <div class="col-lg-4 mb-2">
+              <div class="col-lg-6 mb-3">
                 <div class="input-field">
-                  <input placeholder="Telefon Numarası" id="number" type="number" class="validate">
+                  <input placeholder="Telefon Numarası" id="number" type="tel" class="validate">
                   <label for="number">Telefon Numarası</label>
                 </div>
               </div>
-              <div class="col-lg-5">
+              <div class="col-lg-6">
                 <div class="input-field">
                   <input placeholder="E-Posta" id="number" type="email" class="validate">
                   <label for="number">E-Posta</label>
                   <span class="helper-text" data-error="Lütfen geçerli bir e-posta adresi giriniz."></span>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-6">
                 <div class="input-field">
                   <input placeholder="Örn: 30/12/1995" id="date-birth" type="text" class="validate">
                   <label for="date-birth">Sürücü Doğum Günü </label>
                 </div>
               </div>
-              <div class="col-lg-6 mb-2 form__country">
+              <div class="col-6"></div>
+              <div class="col-lg-6 mb-3 form__country">
 
                 <label class="label">Ülke</label>
                 <select class="browser-default">
@@ -503,7 +583,7 @@
                 </select>
 
               </div>
-              <div class="col-lg-6 mb-2">
+              <div class="col-lg-6 mb-4">
                 <div class="input-field mt-0">
                   <div class="row mb-2">
                     <div class="col-6">
@@ -519,10 +599,10 @@
                       </label>
                     </div>
                   </div>
-                  <input placeholder="ID" id="last_name" type="text" class="validate">
+                  <input placeholder="ID" id="personal_id" type="text" class="validate">
                 </div>
               </div>
-              <div class="col-lg-12 form__confirm">
+              <div class="col-lg-12 form__confirm mb-4">
                 <label>
                   <input type="checkbox" class="filled-in" checked="checked" />
 
@@ -538,6 +618,18 @@
                 </label>
               </div>
             </div>
+            <hr class="my-4">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <h4>Alınacak yer</h4>
+              </div>
+              <div class="col-12">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.7080258181777!2d30.632289815655586!3d36.873406979933534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3919d9e87d9f9%3A0xdb3ad038accc7889!2sCLK%20GROUP%20CAR%20RENTALS%20VIP%20TRANSFER%20ANTALYA!5e0!3m2!1sen!2str!4v1598290244807!5m2!1sen!2str"
+                  width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+              </div>
+            </div>
           </div>
           <div class="col-lg-4">
             <div class="filter-block info-card">
@@ -550,7 +642,7 @@
                     <span class="i-lira"></span>
                   </div>
                   <div class="info-card__new-price">
-                    <span>390,00</span>
+                    <span data-all-price="390,00">,00</span>
                     <span class="i-lira"></span>
                   </div>
                   <div class="info-card__day-price">
@@ -579,7 +671,7 @@
                 <div class="d-flex align-items-center">
                   <span class="i-car-blue"></span>
                   <span class="info-card__location_text text-blue">Bırakış Tarihi</span>
-              
+
                 </div>
                 <div class="d-flex align-items-center justify-content-between">
                   <span class="info-card__location_place">Antalya-Antalya Havali</span>
@@ -588,10 +680,11 @@
               </div>
               <div class="info-card__all-price">
                 <span class="all-price__text">Toplam Tutar:</span>
-                <span class="all-price__value">390,00 <span class="i-lira"></span></span>
+                <span class="all-price__value"><span data-all-price="390,00">00,0</span><span
+                    class="i-lira"></span></span>
               </div>
               <div class="info-card__footer">
-                <a href="#" class="btn btn-green waves-effect waves-light">Siparisi tamamla</a>
+                <a href="#" class="btn btn-green waves-effect waves-light">Siparişi tamamla</a>
               </div>
             </div>
           </div>
