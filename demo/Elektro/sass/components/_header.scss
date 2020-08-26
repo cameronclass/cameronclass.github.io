@@ -5,6 +5,16 @@
   position: relative;
   z-index: 11;
 
+  @include lg-1025{
+    margin-bottom: 61px;
+  }
+
+  @include lg-720{
+    margin-bottom: 49px;
+  }
+
+
+
   &__block {
     display: flex;
     align-items: center;
@@ -13,7 +23,7 @@
     padding-bottom: 8px;
     font-size: 12px;
 
-    @include lg-1100 {
+    @include lg-1025 {
       display: none;
     }
   }
@@ -320,7 +330,7 @@
         display: none;
       }
 
-      @include lg-1100 {
+      @include lg-1025 {
         display: none;
       }
     }
@@ -375,7 +385,7 @@
 .header-nav {
   background-color: $dark-blue;
 
-  @include lg-1100 {
+  @include lg-1025 {
     display: none;
   }
 

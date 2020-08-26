@@ -39,6 +39,23 @@ p {
 }
 h1 {
   font-size: 32px;
+
+  @include lg-1200 {
+    font-size: 28px;
+  }
+
+  @include lg-1025 {
+    font-size: 24px;
+  }
+
+  @include lg-770 {
+    font-size: 22px;
+  }
+
+  /* @include lg-460 {
+    font-size: 20px;
+    line-height: 1.3;
+  } */
 }
 h2 {
   font-size: 28px;
@@ -49,6 +66,11 @@ h2 {
 
   @include lg-770 {
     font-size: 24px;
+  }
+  
+  @include lg-460 {
+    font-size: 20px;
+    line-height: 1.3;
   }
 }
 h3 {
@@ -360,11 +382,11 @@ img {
   border-radius: 4px;
 }
 
-.border-bottom{
+.border-bottom {
   border-bottom: 1px solid $border;
 }
 
-.icon-margin{
+.icon-margin {
   margin: 0 7px;
 }
 
@@ -478,7 +500,12 @@ img {
   box-sizing: border-box;
   height: 381px;
 
+  @include lg-1025 {
+    height: auto;
+  }
+
   &__inner {
+    display: flex;
     &:hover {
       position: relative;
       z-index: 5;
@@ -486,16 +513,24 @@ img {
 
     &_block {
       padding: 10px 15px 30px;
-      border: 1px solid #ececec;
+      border: 1px solid $border;
       transition: 200ms;
       background-color: #fff;
 
-      @include lg-600 {
-        padding: 10px 10px 20px;
-      }
-
       &:hover {
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+      }
+
+      @include lg-1025 {
+        border-color: transparent;
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+
+      @include lg-600 {
+        padding: 10px 10px 20px;
       }
     }
   }
@@ -523,6 +558,10 @@ img {
       left: 10px;
       display: flex;
       flex-wrap: wrap;
+
+      @include lg-460 {
+        display: none;
+      }
 
       span {
         padding: 4px 10px;
@@ -553,14 +592,28 @@ img {
         font-size: 16px;
       }
     }
+
+    .stars {
+      @include lg-460 {
+        display: none;
+      }
+    }
   }
 
   &__footer {
     display: none;
 
+    @include lg-1025 {
+      display: block;
+    }
+
     .size {
       margin-top: 10px;
       text-align: center;
+
+      @include lg-1025 {
+        display: none;
+      }
       span {
         font-size: 13px;
         color: $grey;
@@ -620,6 +673,10 @@ img {
         overflow: hidden;
         width: 50%;
 
+        @include lg-460 {
+          display: none;
+        }
+
         input {
           width: 40%;
           border: none;
@@ -640,6 +697,10 @@ img {
 
       &__add {
         width: 50%;
+
+        @include lg-460{
+          width: 80%;
+        }
         button {
           color: white;
           width: 100%;
@@ -674,6 +735,10 @@ img {
         display: flex;
         flex-direction: column;
         font-size: 12px;
+      }
+
+      @include lg-460 {
+        display: none;
       }
 
       &__span {
@@ -754,10 +819,15 @@ ul.social {
     margin: 0;
     padding-top: 20px;
     display: block;
+
+    @include lg-460{
+      margin-bottom: 10px;
+    }
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 20px;
     li {
       margin-right: 5px;
@@ -800,32 +870,36 @@ ul.social {
       border-radius: 2px;
       cursor: pointer;
 
-      &:hover, &.active {
+      &:hover,
+      &.active {
         background-color: $green;
         color: white;
 
-        .i-down{
-           filter: none;
+        .i-down {
+          filter: none;
         }
       }
     }
 
-    .i-down{
+    .i-down {
       transform: rotate(-90deg);
     }
   }
 }
 
 /* Our advantages */
-.our-advantages{
+.our-advantages {
   margin: 20px 0;
 
-  li{
+  @include lg-990 {
+    display: none;
+  }
+
+  li {
     width: 23%;
   }
 
-  ul{
+  ul {
     padding: 15px 0;
   }
-  
 }

@@ -11,7 +11,7 @@ $(document).ready(function () {
   /* Fixed Menu */
   $(window)
     .resize(function () {
-      if ($(window).width() < 1100) {
+      if ($(window).width() < 1025) {
         $(".header-bottom").addClass("fixed-menu");
       } else {
         $(".header-bottom").removeClass("fixed-menu");
@@ -20,7 +20,7 @@ $(document).ready(function () {
     .resize();
 
   $(window).scroll(function () {
-    if ($(window).width() > 1100) {
+    if ($(window).width() > 1025) {
       if ($(document).scrollTop() > 200) {
         $(".header-bottom").addClass("fixed-menu");
       } else {
@@ -165,7 +165,7 @@ var swiper = new Swiper(".brands .swiper-container", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    320: {
+    300: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
@@ -182,24 +182,28 @@ var swiper = new Swiper(".watched-before .swiper-container", {
   },
 
   breakpoints: {
-    1300: {
+   /*  1025: {
+      slidesPerView: 5,
+      spaceBetween: 15,
+    }, */
+    990: {
       slidesPerView: 5,
       spaceBetween: 15,
     },
-    990: {
+    850: {
       slidesPerView: 4,
       spaceBetween: 15,
     },
-    850: {
+    720: {
       slidesPerView: 3,
       spaceBetween: 15,
     },
-    720: {
+    460: {
       slidesPerView: 2,
-      spaceBetween: 15,
+      spaceBetween: 5,
     },
-    320: {
-      slidesPerView: 2,
+    300: {
+      slidesPerView: 1,
       spaceBetween: 5,
     },
   },
@@ -215,7 +219,7 @@ var swiper = new Swiper(".catalog-category-slider .swiper-container", {
   },
 
   breakpoints: {
-    1300: {
+    1200: {
       slidesPerView: 8,
       spaceBetween: 15,
     },
@@ -231,7 +235,11 @@ var swiper = new Swiper(".catalog-category-slider .swiper-container", {
       slidesPerView: 4,
       spaceBetween: 15,
     },
-    320: {
+    460: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    300: {
       slidesPerView: 2,
       spaceBetween: 5,
     },

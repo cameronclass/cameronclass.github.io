@@ -3,6 +3,11 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include lg-1100{
+    margin-top: 75px;
+  }
+
 }
 
 .home-slider__block {
@@ -349,6 +354,10 @@
     li {
       border: none;
 
+      @include lg-1025{
+        border: 1px solid $border;
+      }
+
       &:hover {
         box-shadow: none;
       }
@@ -384,19 +393,12 @@
   li {
     width: 25%;
 
-    @include lg-1300 {
-      width: 33.333%;
-    }
 
     @include lg-1025 {
-      width: 50%;
-    }
-
-    @include lg-850 {
-      /* width: 33.333%; */
+      width: 33.333%;
     }
     @include lg-600 {
-      /* width: 50%; */
+      width: 50%;
     }
     @include lg-350{
       width: 100%;
