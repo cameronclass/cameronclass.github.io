@@ -110,3 +110,7 @@
 .i-refresh-green{
   @include icon(url(../img/icons/refresh.svg), 15px, 15px);
 }
+
+.i-filter{
+  @include icon(url(../img/icons/filter.svg), 15px, 15px);
+}

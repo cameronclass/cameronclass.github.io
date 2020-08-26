@@ -4,10 +4,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @include lg-1100{
+  @include lg-1100 {
     margin-top: 75px;
   }
-
 }
 
 .home-slider__block {
@@ -324,7 +323,7 @@
     li {
       margin-right: 30px;
 
-      @include lg-350{
+      @include lg-350 {
         margin-right: 1.2em;
       }
 
@@ -354,7 +353,7 @@
     li {
       border: none;
 
-      @include lg-1025{
+      @include lg-1025 {
         border: 1px solid $border;
       }
 
@@ -383,24 +382,32 @@
     @include lg-600 {
       width: 50%;
     }
-    @include lg-350{
+    @include lg-350 {
       width: 100%;
     }
   }
 }
 
-.catalog-page__cards{
+.catalog-page__cards {
   li {
     width: 25%;
-
 
     @include lg-1025 {
       width: 33.333%;
     }
+
+    @include lg-850 {
+      width: 50%;
+    }
+
+    @include lg-720 {
+      width: 33.333%;
+    }
+
     @include lg-600 {
       width: 50%;
     }
-    @include lg-350{
+    @include lg-350 {
       width: 100%;
     }
   }
@@ -485,7 +492,7 @@
         margin-top: 20px;
       }
 
-      @include lg-350{
+      @include lg-350 {
         flex-wrap: wrap;
       }
 
@@ -493,7 +500,7 @@
         width: 50%;
         margin-right: 10px;
 
-        @include lg-350{
+        @include lg-350 {
           width: 100%;
           margin-bottom: 10px;
         }
@@ -666,11 +673,11 @@
       padding: 20px;
       box-sizing: border-box;
 
-      @include lg-450{
+      @include lg-450 {
         width: 35%;
         padding: 5px;
 
-        img{
+        img {
           height: 60px;
           object-fit: contain;
         }
@@ -683,18 +690,17 @@
       padding: 10px 10px 10px 5px;
       box-sizing: border-box;
 
-       @include lg-450{
-         width: 65%;
-       }
+      @include lg-450 {
+        width: 65%;
+      }
 
       .title {
         font-size: 15px;
         overflow: hidden;
         height: 45px;
         margin-bottom: 8px;
-        
 
-        @include lg-450{
+        @include lg-450 {
           height: 44px;
           font-size: 14px;
         }
@@ -703,7 +709,7 @@
       .price {
         font-weight: bold;
 
-        @include lg-450{
+        @include lg-450 {
           font-size: 13px;
         }
       }

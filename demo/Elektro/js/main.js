@@ -105,6 +105,22 @@ $(document).ready(function () {
     $("body").removeClass("lock");
   });
 
+  /* Filter Mobile */
+
+  $(".sort-button-mobile").click(function () {
+    $(".catalog-page__filter").addClass("catalog-page__filter_active");
+    $(".catalog-page__filter_bitrix").addClass("catalog-page__filter_bitrix_active");
+    $(".catalog-page__filter_overlay").addClass("catalog-page__filter_overlay_active");
+    $("body").addClass("lock");
+  });
+
+  $(".catalog-page__filter_overlay").click(function () {
+    $(".catalog-page__filter").removeClass("catalog-page__filter_active");
+    $(".catalog-page__filter_bitrix").removeClass("catalog-page__filter_bitrix_active");
+    $(".catalog-page__filter_overlay").removeClass("catalog-page__filter_overlay_active");
+    $("body").removeClass("lock");
+  });
+
   $(".js-menu-expand").click(function (e) {
     e.preventDefault();
     $(this)

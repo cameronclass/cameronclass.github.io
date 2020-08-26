@@ -2053,6 +2053,12 @@ ul.social {
   @media screen and (max-width: 1024px) {
     .catalog-page__cards li {
       width: 33.333%; } }
+  @media screen and (max-width: 850px) {
+    .catalog-page__cards li {
+      width: 50%; } }
+  @media screen and (max-width: 720px) {
+    .catalog-page__cards li {
+      width: 33.333%; } }
   @media screen and (max-width: 600px) {
     .catalog-page__cards li {
       width: 50%; } }
@@ -2467,16 +2473,24 @@ ul.social {
           -ms-flex-align: center;
               align-items: center;
       margin-right: 20px; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 720px) {
         .catalog-page__sort_action .sort-button {
           display: none; } }
     .catalog-page__sort_action .sort-button-mobile {
       display: none; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 720px) {
         .catalog-page__sort_action .sort-button-mobile {
           display: -webkit-box;
           display: -ms-flexbox;
-          display: flex; } }
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          background-color: #ececec;
+          border-radius: 2px;
+          font-size: 14px;
+          padding: 5px 10px 5px 3px;
+          font-weight: 300; } }
   .catalog-page__sort_view {
     width: 25%;
     display: -webkit-box;
@@ -2488,7 +2502,7 @@ ul.social {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 720px) {
       .catalog-page__sort_view {
         width: 50%; } }
     .catalog-page__sort_view .sort-view__btn {
@@ -2510,6 +2524,11 @@ ul.social {
       -o-transition: 100ms ease;
       transition: 100ms ease;
       cursor: pointer; }
+      .catalog-page__sort_view .sort-view__btn_active {
+        background-color: #3ab503; }
+        .catalog-page__sort_view .sort-view__btn_active span {
+          -webkit-filter: invert(1);
+                  filter: invert(1); }
       .catalog-page__sort_view .sort-view__btn:hover {
         background-color: #3ab503; }
         .catalog-page__sort_view .sort-view__btn:hover span {
@@ -2520,7 +2539,7 @@ ul.social {
   margin-top: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 720px) {
     .catalog-page__products {
       width: 100%; } }
   .catalog-page__products ul {
@@ -2531,13 +2550,53 @@ ul.social {
       line-height: 1; }
 .catalog-page__filter {
   width: 22.4%; }
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 720px) {
     .catalog-page__filter {
-      display: none; } }
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      -webkit-transition: 300ms ease-in-out;
+      -o-transition: 300ms ease-in-out;
+      transition: 300ms ease-in-out; }
+      .catalog-page__filter_active {
+        visibility: visible; } }
+  .catalog-page__filter_overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); }
+    .catalog-page__filter_overlay_active {
+      display: block; }
+  @media screen and (max-width: 720px) {
+    .catalog-page__filter_bitrix {
+      display: block;
+      width: 80%;
+      height: 100vh;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      -webkit-transition: 400ms ease;
+      -o-transition: 400ms ease;
+      transition: 400ms ease;
+      z-index: 1000;
+      overflow-y: scroll;
+      padding: 10px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; } }
+  .catalog-page__filter_bitrix_active {
+    left: 0; }
 
 /* Bitrix */
 .bx_filter {
   border-top: 1px solid #ececec; }
+  @media screen and (max-width: 720px) {
+    .bx_filter {
+      border-top: none; } }
   .bx_filter .title .bx_filter_parameters_box_title {
     font-size: 19px;
     font-weight: bold;
@@ -2792,6 +2851,14 @@ ul.social {
 
 .i-refresh-green {
   background-image: url(../img/icons/refresh.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 15px;
+  height: 15px; }
+
+.i-filter {
+  background-image: url(../img/icons/filter.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;

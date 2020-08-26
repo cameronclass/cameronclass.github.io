@@ -138,14 +138,20 @@
         display: flex;
         align-items: center;
         margin-right: 20px;
-        @include lg-600 {
+        @include lg-720 {
           display: none;
         }
       }
       .sort-button-mobile {
         display: none;
-        @include lg-600 {
+        @include lg-720 {
           display: flex;
+          align-items: center;
+          background-color: $border;
+          border-radius: 2px;
+          font-size: 14px;
+          padding: 5px 10px 5px 3px;
+          font-weight: 300;
         }
       }
     }
@@ -156,7 +162,7 @@
       align-items: center;
       justify-content: flex-end;
 
-      @include lg-600 {
+      @include lg-720 {
         width: 50%;
       }
 
@@ -171,6 +177,13 @@
         border-radius: 2px;
         transition: 100ms ease;
         cursor: pointer;
+
+        &_active {
+          background-color: $green;
+          span {
+            filter: invert(1);
+          }
+        }
 
         &:hover {
           background-color: $green;
@@ -187,7 +200,7 @@
     width: 76%;
     margin-top: 0;
 
-    @include lg-850 {
+    @include lg-720 {
       width: 100%;
     }
 
@@ -209,8 +222,56 @@
   &__filter {
     width: 22.4%;
 
-    @include lg-850 {
+    @include lg-720 {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+
+      transition: 300ms ease-in-out;
+
+      &_active {
+        visibility: visible;
+      }
+    }
+
+    &_overlay {
       display: none;
+
+      width: 100%;
+      height: 100vh;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+
+      &_active {
+        display: block;
+      }
+    }
+
+    &_bitrix {
+      @include lg-720 {
+        display: block;
+        width: 80%;
+        height: 100vh;
+        background-color: white;
+
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 400ms ease;
+        z-index: 1000;
+
+        overflow-y: scroll;
+
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      &_active {
+        left: 0;
+      }
     }
   }
 }
@@ -218,6 +279,10 @@
 /* Bitrix */
 .bx_filter {
   border-top: 1px solid $border;
+
+  @include lg-720 {
+    border-top: none;
+  }
 
   .title {
     .bx_filter_parameters_box_title {
