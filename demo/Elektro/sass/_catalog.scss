@@ -226,6 +226,7 @@
 
   &__filter {
     width: 22.4%;
+    margin-bottom: 15px;
 
     @include lg-720 {
       width: 100%;
@@ -356,7 +357,7 @@
         width: 35%;
       }
 
-      @include lg-460{
+      @include lg-460 {
         width: 43%;
       }
 
@@ -377,7 +378,7 @@
         width: 63%;
       }
 
-      @include lg-460{
+      @include lg-460 {
         width: 55%;
       }
 
@@ -413,7 +414,7 @@
         .articul {
           margin-bottom: 8px;
 
-          @include lg-460{
+          @include lg-460 {
             font-size: 13px;
           }
         }
@@ -430,7 +431,7 @@
           font-size: 16px;
         }
 
-        @include lg-460{
+        @include lg-460 {
           font-size: 15px;
         }
       }
@@ -484,6 +485,222 @@
       height: 80px;
       overflow: hidden;
       display: block;
+    }
+  }
+}
+
+/* catalog-page__cards_small_list */
+
+.catalog-page__cards_small_list {
+  .card {
+    height: auto;
+    &__inner {
+      &_block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+
+        /* @include lg-1025 {
+          padding: 15px;
+        } */
+      }
+    }
+
+    &__image {
+      width: 6%;
+
+      @include lg-1025 {
+        width: 10%;
+      }
+
+      @include lg-460 {
+        width: 22%;
+      }
+
+      /* @include lg-600 {
+        width: 35%;
+      }
+
+      @include lg-460 {
+        width: 43%;
+      } */
+
+      img {
+        width: 100%;
+        height: 60px;
+        object-fit: contain;
+      }
+    }
+
+    &__title {
+      width: 93%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: left;
+
+      @include lg-1025 {
+        width: 89%;
+      }
+
+      @include lg-700 {
+        width: 86%;
+      }
+
+      @include lg-460 {
+        width: 76%;
+      }
+
+      /* @include lg-460 {
+        width: 55%;
+      } */
+
+      &_wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        /* @include lg-1100 {
+          width: 55%;
+        } */
+
+        @include lg-1025 {
+          width: 49%;
+          border-bottom: none;
+        }
+        @include lg-990 {
+          width: 64%;
+        }
+        @include lg-770 {
+          width: 50%;
+        }
+        @include lg-720 {
+          width: 55%;
+        }
+        @include lg-460 {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+
+      &_block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .stars,
+        .count {
+          margin: 0;
+          margin-right: 15px;
+          margin-bottom: 8px;
+          color: $grey;
+        }
+        .articul {
+          margin-bottom: 8px;
+
+          @include lg-1025 {
+            display: none;
+          }
+        }
+      }
+
+      &_name {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        height: auto;
+        margin-bottom: 10px;
+
+        @include lg-1025 {
+          font-size: 16px;
+        }
+
+        @include lg-700 {
+          font-size: 14px;
+        }
+
+        /*  @include lg-460 {
+          font-size: 15px;
+        } */
+      }
+
+      .stars {
+        display: flex;
+      }
+    }
+
+    &__footer {
+      width: 49%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .number {
+        margin-top: 0;
+        width: 58%;
+        margin-left: 15px;
+      }
+
+      .price {
+        width: 42%;
+      }
+
+      @include lg-1025 {
+        .number {
+          width: 58%;
+
+          &__add {
+            button {
+              font-size: 13px;
+            }
+          }
+        }
+        .price {
+          font-size: 17px;
+          width: 42%;
+        }
+      }
+
+      @include lg-990 {
+        width: 35%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        .number,
+        .price {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+      @include lg-770 {
+        width: 50%;
+      }
+      @include lg-720 {
+        width: 43%;
+      }
+      @include lg-460 {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+
+        .price{
+          font-size: 15px;
+        }
+
+        .number{
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    &:hover {
+      .card__footer {
+        display: flex;
+      }
     }
   }
 }

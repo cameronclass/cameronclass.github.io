@@ -1,0 +1,127 @@
+.card-70 {
+  width: 68%;
+}
+.card-30 {
+  width: 30.4%;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px auto;
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid $border;
+    &_image {
+      width: 40%;
+
+      .product__gallery {
+        display: flex;
+        padding: 20px 0;
+      }
+
+      .gallery-thumbs .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 15px;
+
+        .swiper-slide {
+          margin-bottom: 10px;
+          height: 55px;
+
+          img {
+            object-fit: contain;
+            height: 53px;
+          }
+        }
+      }
+      .gallery-top .swiper-wrapper {
+        width: 100%;
+
+        .swiper-slide {
+          height: 260px;
+
+          img {
+            object-fit: contain;
+            height: 270px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+    &_about {
+      width: 55%;
+    }
+  }
+
+  .gallery-top {
+    height: 80%;
+    width: 100%;
+  }
+
+  .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    height: 100%;
+    border: 2px solid transparent;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    border: 2px solid $blue;
+  }
+
+  .product {
+    &__about {
+      &_rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $border;
+        padding: 20px 0;
+
+        .i-star,
+        .i-star-rated {
+          width: 22px;
+          height: 22px;
+        }
+        .articul {
+          font-size: 14px;
+          color: $grey;
+        }
+        .card-brand {
+          height: 25px;
+        }
+      }
+
+      &_checkout {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .number {
+          margin-top: 0;
+        }
+      }
+
+      &_share {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  /* Table */
+  &__table {
+
+  }
+}

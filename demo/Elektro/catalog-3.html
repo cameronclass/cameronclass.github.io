@@ -540,15 +540,17 @@
           </div>
 
           <div class="catalog-page__sort_view">
-            <a class="sort-view__btn sort-view__btn_active" href="#"><span class="i-catalog-grid"></span></a>
+            <a class="sort-view__btn" href="catalog-1.html"><span class="i-catalog-grid"></span></a>
             <a class="sort-view__btn" href="catalog-2.html"><span class="i-catalog-list"></span></a>
-            <a class="sort-view__btn" href="#"><span class="i-catalog-list-text"></span></a>
+            <a class="sort-view__btn sort-view__btn_active" href="catalog-3.html"><span
+                class="i-catalog-list-text"></span></a>
           </div>
         </div>
       </div>
       <div class="container d-flex justify-content-between">
-        <div class="catalog-page__products product__cards">
-          <ul class="catalog__list catalog__cards catalog-page__cards">
+        <div class="catalog-page__products catalog-page__products_list product__cards">
+          <ul
+            class="catalog__list catalog__cards catalog-page__cards catalog-page__cards_list catalog-page__cards_small_list">
 
             <li>
               <div class="card">
@@ -556,43 +558,49 @@
                   <div class="card__inner_block">
                     <div class="card__image">
                       <img src="img/product/1.webp" alt="">
-                      <div class="card__image_tags">
-                        <span class="bg-blue">Хит</span>
-                        <span class="bg-green">Новинка</span>
-                        <span class="bg-red">-10%</span>
-                      </div>
                     </div>
                     <div class="card__title">
-                      <h4 class="card__title_name">Футболка для мальчиков Nike Just Do It Camo</h4>
-                      <div class="stars">
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star"></span>
-                      </div>
-                      <div class="count">
-                        <span class="i-confirm"></span>
-                        <span class="count__text">Много</span>
-                      </div>
-                      <div class="price">3 500 руб./шт</div>
-                    </div>
-                    <div class="card__footer">
-                      <div class="number">
-                        <div class="number__controls">
-                          <button class="js-decrease">-</button>
-                          <input type="text" class="js-counter-value" value="1">
-                          <button class="js-increase">+</button>
-                        </div>
-                        <div class="number__add">
-                          <button>В корзину</button>
+                      <div class="card__title_wrapper">
+                        <h4 class="card__title_name">Футболка для мальчиков</h4>
+                        <div class="card__title_block">
+                          <div class="stars">
+                            <span class="i-star-rated"></span>
+                            <span class="i-star-rated"></span>
+                            <span class="i-star-rated"></span>
+                            <span class="i-star-rated"></span>
+                            <span class="i-star"></span>
+                          </div>
+                          <div class="count">
+                            <span class="i-confirm"></span>
+                            <span class="count__text">Много</span>
+                          </div>
+                          <div class="articul">
+                            <span>Артикул:</span>
+                            <span> F4HJK5678</span>
+                          </div>
                         </div>
                       </div>
-                      <div class="last-price">
-                        <span>Общая Стоимость:</span>
-                        <span class="last-price__span">38 400 руб.</span>
+                      <div class="card__footer">
+                        <div class="price">3 500 руб./шт</div>
+                        <div class="number">
+                          <div class="number__controls">
+                            <button class="js-decrease">-</button>
+                            <input type="text" class="js-counter-value" value="1">
+                            <button class="js-increase">+</button>
+                          </div>
+                          <div class="number__add js-add-to-checkout">
+                            <button>В корзину</button>
+                          </div>
+                        </div>
+                        <!-- <div class="last-price">
+                          <span>Общая Стоимость:</span>
+                          <span class="last-price__span">38 400 руб.</span>
+                        </div> -->
                       </div>
+
+
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -603,188 +611,54 @@
                   <div class="card__inner_block">
                     <div class="card__image">
                       <img src="img/product/1.webp" alt="">
-                      <div class="card__image_tags">
-                        <span class="bg-blue">Хит</span>
-                        <span class="bg-green">Новинка</span>
-                        <span class="bg-red">-10%</span>
-                      </div>
                     </div>
                     <div class="card__title">
-                      <h4 class="card__title_name">Футболка для мальчиков Nike Just Do It Camo</h4>
-                      <div class="stars">
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star"></span>
-                      </div>
-                      <div class="count">
-                        <span class="i-confirm"></span>
-                        <span class="count__text">Много</span>
-                      </div>
-                      <div class="price">3 500 руб./шт</div>
-                    </div>
-                    <div class="card__footer">
-                      <div class="number">
-                        <div class="number__controls">
-                          <button class="js-decrease">-</button>
-                          <input type="text" class="js-counter-value" value="1">
-                          <button class="js-increase">+</button>
-                        </div>
-                        <div class="number__add">
-                          <button>В корзину</button>
+                      <div class="card__title_wrapper">
+                        <h4 class="card__title_name">Футболка для мальчиков</h4>
+                        <div class="card__title_block">
+                          <div class="stars">
+                            <span class="i-star-rated"></span>
+                            <span class="i-star-rated"></span>
+                            <span class="i-star-rated"></span>
+                            <span class="i-star-rated"></span>
+                            <span class="i-star"></span>
+                          </div>
+                          <div class="count">
+                            <span class="i-confirm"></span>
+                            <span class="count__text">Много</span>
+                          </div>
+                          <div class="articul">
+                            <span>Артикул:</span>
+                            <span> F4HJK5678</span>
+                          </div>
                         </div>
                       </div>
-                      <div class="last-price">
-                        <span>Общая Стоимость:</span>
-                        <span class="last-price__span">38 400 руб.</span>
+                      <div class="card__footer">
+                        <div class="price">3 500 руб./шт</div>
+                        <div class="number">
+                          <div class="number__controls">
+                            <button class="js-decrease">-</button>
+                            <input type="text" class="js-counter-value" value="1">
+                            <button class="js-increase">+</button>
+                          </div>
+                          <div class="number__add js-add-to-checkout">
+                            <button>В корзину</button>
+                          </div>
+                        </div>
+                        <!-- <div class="last-price">
+                                      <span>Общая Стоимость:</span>
+                                      <span class="last-price__span">38 400 руб.</span>
+                                    </div> -->
                       </div>
+
+
                     </div>
+
                   </div>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="card">
-                <div class="card__inner">
-                  <div class="card__inner_block">
-                    <div class="card__image">
-                      <img src="img/product/1.webp" alt="">
-                      <div class="card__image_tags image-tags">
-                        <span class="bg-blue">Хит</span>
-                        <span class="bg-green">Новинка</span>
-                        <span class="bg-red">-10%</span>
-                      </div>
-                    </div>
-                    <div class="card__title">
-                      <h4 class="card__title_name">Футболка для мальчиков Nike Just Do It Camo</h4>
-                      <div class="stars">
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star"></span>
-                      </div>
-                      <div class="count">
-                        <span class="i-confirm"></span>
-                        <span class="count__text">Много</span>
-                      </div>
-                      <div class="price">3 500 руб./шт</div>
-                    </div>
-                    <div class="card__footer">
-                      <div class="number">
-                        <div class="number__controls">
-                          <button class="js-decrease">-</button>
-                          <input type="text" class="js-counter-value" value="1">
-                          <button class="js-increase">+</button>
-                        </div>
-                        <div class="number__add">
-                          <button>В корзину</button>
-                        </div>
-                      </div>
-                      <div class="last-price">
-                        <span>Общая Стоимость:</span>
-                        <span class="last-price__span">38 400 руб.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <div class="card__inner">
-                  <div class="card__inner_block">
-                    <div class="card__image">
-                      <img src="img/product/1.webp" alt="">
-                      <div class="card__image_tags">
-                        <span class="bg-blue">Хит</span>
-                        <span class="bg-green">Новинка</span>
-                        <span class="bg-red">-10%</span>
-                      </div>
-                    </div>
-                    <div class="card__title">
-                      <h4 class="card__title_name">Футболка для мальчиков Nike Just Do It Camo</h4>
-                      <div class="stars">
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star"></span>
-                      </div>
-                      <div class="count">
-                        <span class="i-confirm"></span>
-                        <span class="count__text">Много</span>
-                      </div>
-                      <div class="price">3 500 руб./шт</div>
-                    </div>
-                    <div class="card__footer">
-                      <div class="number">
-                        <div class="number__controls">
-                          <button class="js-decrease">-</button>
-                          <input type="text" class="js-counter-value" value="1">
-                          <button class="js-increase">+</button>
-                        </div>
-                        <div class="number__add">
-                          <button>В корзину</button>
-                        </div>
-                      </div>
-                      <div class="last-price">
-                        <span>Общая Стоимость:</span>
-                        <span class="last-price__span">38 400 руб.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="card">
-                <div class="card__inner">
-                  <div class="card__inner_block">
-                    <div class="card__image">
-                      <img src="img/product/1.webp" alt="">
-                      <div class="card__image_tags">
-                        <span class="bg-blue">Хит</span>
-                        <span class="bg-green">Новинка</span>
-                        <span class="bg-red">-10%</span>
-                      </div>
-                    </div>
-                    <div class="card__title">
-                      <h4 class="card__title_name">Футболка для мальчиков Nike Just Do It Camo</h4>
-                      <div class="stars">
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star-rated"></span>
-                        <span class="i-star"></span>
-                      </div>
-                      <div class="count">
-                        <span class="i-confirm"></span>
-                        <span class="count__text">Много</span>
-                      </div>
-                      <div class="price">3 500 руб./шт</div>
-                    </div>
-                    <div class="card__footer">
-                      <div class="number">
-                        <div class="number__controls">
-                          <button class="js-decrease">-</button>
-                          <input type="text" class="js-counter-value" value="1">
-                          <button class="js-increase">+</button>
-                        </div>
-                        <div class="number__add">
-                          <button>В корзину</button>
-                        </div>
-                      </div>
-                      <div class="last-price">
-                        <span>Общая Стоимость:</span>
-                        <span class="last-price__span">38 400 руб.</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
+
           </ul>
           <a href="#" class="btn-border btn-more">
             <span class="i-refresh-green icon-margin"></span>

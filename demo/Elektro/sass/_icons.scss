@@ -114,3 +114,7 @@
 .i-filter{
   @include icon(url(../img/icons/filter.svg), 15px, 15px);
 }
+
+.i-share{
+  @include icon(url(../img/icons/share.svg), 17px, 17px);
+}

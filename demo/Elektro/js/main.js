@@ -159,7 +159,18 @@ $(document).ready(function () {
       .addClass("d-none");
     $(this).addClass("added-to-checkout");
     $(this).children().text("В корзине");
-    
+
+  });
+
+  /* js-product-share */
+
+  $(".js-product-share").click(function (e) {
+    /* e.preventDefault(); */
+    $(this)
+      .parent()
+      .find(".social")
+      .toggleClass("d-flex");
+
   });
 });
 
@@ -282,4 +293,24 @@ var swiper = new Swiper(".catalog-category-slider .swiper-container", {
       spaceBetween: 5,
     },
   },
+});
+
+
+/* Product card gallery */
+var galleryThumbs = new Swiper('.product__gallery .gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.product__gallery .gallery-top', {
+  spaceBetween: 10,
+  /*  navigation: {
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',
+   }, */
+  thumbs: {
+    swiper: galleryThumbs
+  }
 });
