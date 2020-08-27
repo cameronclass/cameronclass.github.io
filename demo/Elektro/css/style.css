@@ -3199,7 +3199,8 @@ ul.social {
         margin-right: 15px; }
         .product-info__card_image .gallery-thumbs .swiper-wrapper .swiper-slide {
           margin-bottom: 10px;
-          height: 55px; }
+          height: 55px;
+          width: 53px !important; }
           .product-info__card_image .gallery-thumbs .swiper-wrapper .swiper-slide img {
             -o-object-fit: contain;
                object-fit: contain;
