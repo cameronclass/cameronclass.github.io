@@ -217,6 +217,11 @@
         line-height: 1;
       }
     }
+
+    &_list {
+      flex-direction: column;
+      justify-content: stretch;
+    }
   }
 
   &__filter {
@@ -318,6 +323,167 @@
           box-sizing: border-box;
         }
       }
+    }
+  }
+}
+
+/* Catalog Cards List */
+.catalog-page__cards_list {
+  li {
+    width: 100%;
+  }
+
+  .card {
+    height: auto;
+    &__inner {
+      &_block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px;
+
+        @include lg-1025 {
+          padding: 15px;
+        }
+      }
+    }
+
+    &__image {
+      width: 20%;
+
+      @include lg-600 {
+        width: 35%;
+      }
+
+      @include lg-460{
+        width: 43%;
+      }
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__title {
+      width: 78%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: left;
+
+      @include lg-600 {
+        width: 63%;
+      }
+
+      @include lg-460{
+        width: 55%;
+      }
+
+      &_wrapper {
+        width: 70%;
+
+        @include lg-1100 {
+          width: 55%;
+        }
+
+        @include lg-990 {
+          width: 49%;
+          border-bottom: 1px solid $border;
+        }
+        @include lg-600 {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+
+      &_block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .stars,
+        .count {
+          margin: 0;
+          margin-right: 15px;
+          margin-bottom: 8px;
+          color: $grey;
+        }
+        .articul {
+          margin-bottom: 8px;
+
+          @include lg-460{
+            font-size: 13px;
+          }
+        }
+      }
+
+      &_name {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        height: auto;
+        margin-bottom: 10px;
+
+        @include lg-1100 {
+          font-size: 16px;
+        }
+
+        @include lg-460{
+          font-size: 15px;
+        }
+      }
+
+      &_table {
+        width: 100%;
+
+        @include lg-460 {
+          display: none;
+        }
+      }
+
+      .table-product__more_active {
+        &::after {
+          transform: rotateX(180deg);
+        }
+      }
+    }
+
+    &__footer {
+      width: 28%;
+      display: block;
+
+      @include lg-1100 {
+        width: 40%;
+      }
+      @include lg-990 {
+        width: 48%;
+      }
+      @include lg-600 {
+        width: 100%;
+      }
+
+      @include lg-460 {
+        .number {
+          justify-content: flex-start;
+        }
+      }
+    }
+
+    .table-product__value {
+      padding-right: 20px;
+
+      @include lg-600 {
+        padding-right: 0;
+        width: 40%;
+      }
+    }
+
+    .table-product tbody {
+      height: 80px;
+      overflow: hidden;
+      display: block;
     }
   }
 }

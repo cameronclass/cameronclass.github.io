@@ -136,8 +136,30 @@ $(document).ready(function () {
       .removeClass("menu-expand");
   });
 
-  $(".swiper-button-next").click( function(e){
+  $(".swiper-button-next").click(function (e) {
     e.preventDefault();
+  });
+
+  /* Table Product More js-table-product-more*/
+  $(".js-table-product-more").click(function (e) {
+    e.preventDefault();
+    $(this)
+      .parent()
+      .find(".table-product tbody")
+      .toggleClass("h-auto");
+    $(this).toggleClass("table-product__more_active")
+  });
+
+  /* js-add-to-checkout */
+  $(".js-add-to-checkout").click(function (e) {
+    /* e.preventDefault(); */
+    $(this)
+      .parent()
+      .find(".number__controls")
+      .addClass("d-none");
+    $(this).addClass("added-to-checkout");
+    $(this).children().text("В корзине");
+    
   });
 });
 
@@ -198,10 +220,10 @@ var swiper = new Swiper(".watched-before .swiper-container", {
   },
 
   breakpoints: {
-   /*  1025: {
-      slidesPerView: 5,
-      spaceBetween: 15,
-    }, */
+    /*  1025: {
+       slidesPerView: 5,
+       spaceBetween: 15,
+     }, */
     990: {
       slidesPerView: 5,
       spaceBetween: 15,

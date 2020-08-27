@@ -136,14 +136,14 @@
 .catalog__products {
   li {
     width: 20%;
-    a {
+    .catalog__list_item {
       img {
         width: 140px;
       }
     }
 
     @include lg-1300 {
-      a {
+      .catalog__list_item {
         padding: 25px 15px;
         img {
           width: 110px;
@@ -161,7 +161,7 @@
 
     @include lg-720 {
       width: 33.333%;
-      a {
+      .catalog__list_item {
         padding: 20px 10px;
         img {
           width: 90px;
@@ -172,7 +172,7 @@
     @include lg-600 {
       width: 100%;
 
-      a {
+      .catalog__list_item {
         display: flex;
         align-items: center;
         position: relative;
@@ -211,7 +211,7 @@
   li {
     width: 12.5%;
 
-    a {
+    .catalog__list_item {
       padding: 20px 15px;
 
       img {
@@ -221,7 +221,7 @@
 
     @include lg-1300 {
       width: 14.366%;
-      a {
+      .catalog__list_item {
         font-size: 12px;
         padding: 20px 15px;
         img {
@@ -242,7 +242,7 @@
     }
     @include lg-600 {
       width: 50%;
-      a {
+      .catalog__list_item {
         display: flex;
         align-items: center;
         position: relative;
