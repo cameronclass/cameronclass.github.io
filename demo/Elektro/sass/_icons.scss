@@ -118,3 +118,7 @@
 .i-share{
   @include icon(url(../img/icons/share.svg), 17px, 17px);
 }
+
+.i-wallet{
+  @include icon(url(../img/icons/wallet.svg), 15px, 15px);
+}

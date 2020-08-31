@@ -673,6 +673,14 @@
       padding: 20px;
       box-sizing: border-box;
 
+      @include lg-1025{
+        width: 35%;
+        padding: 10px;
+        img{
+          
+        }
+      }
+
       @include lg-450 {
         width: 35%;
         padding: 5px;
@@ -689,6 +697,10 @@
       text-align: left;
       padding: 10px 10px 10px 5px;
       box-sizing: border-box;
+
+      @include lg-1025{
+        width: 65%;
+      }
 
       @include lg-450 {
         width: 65%;
@@ -708,6 +720,10 @@
 
       .price {
         font-weight: bold;
+
+        @include lg-1025{
+          font-size: 15px;
+        }
 
         @include lg-450 {
           font-size: 13px;

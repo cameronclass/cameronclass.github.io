@@ -514,16 +514,18 @@
         <div class="product-info__card_about">
           <div class="product__about">
             <div class="product__about_rating">
-              <div class="stars">
-                <span class="i-star-rated"></span>
-                <span class="i-star-rated"></span>
-                <span class="i-star-rated"></span>
-                <span class="i-star-rated"></span>
-                <span class="i-star"></span>
-              </div>
-              <div class="articul">
-                <span>Артикул:</span>
-                <span> F4HJK5678</span>
+              <div class="product__about_rating_block">
+                <div class="stars">
+                  <span class="i-star-rated"></span>
+                  <span class="i-star-rated"></span>
+                  <span class="i-star-rated"></span>
+                  <span class="i-star-rated"></span>
+                  <span class="i-star"></span>
+                </div>
+                <div class="articul">
+                  <span>Артикул:</span>
+                  <span> F4HJK5678</span>
+                </div>
               </div>
               <div class="card-brand">
                 <a href="#">
@@ -533,18 +535,18 @@
             </div>
             <div class="product__about_wrapper">
               <div class="product__about_price">
-                <span>Цена</span>
-                <span>39 900 руб./шт</span>
+                <span>Цена:</span>
+                <span class="product-price">39 900 руб./шт</span>
               </div>
               <div class="product__about_available">
-                <div>
-                  <span>icon</span>
+                <div class="available d-flex-ac">
+                  <span class="i-confirm icon-margin-right"></span>
                   <span>В наличии</span>
                 </div>
-                <div>
+                <div class="cheeper">
                   <a href="#" class="find-cheaper">
-                    <span>icon</span>
-                    <span>Нашли дешевле?</span>
+                    <span class="i-wallet find-cheaper__icon icon-margin-right"></span>
+                    <span class="find-cheaper__text">Нашли дешевле?</span>
                   </a>
                 </div>
               </div>
@@ -587,237 +589,318 @@
         </div>
       </div>
       <div class="product-info__table card-30">
-        <h3>Характеристики</h3>
+        <h3 class="product-info__table_title">Характеристики</h3>
         <div class="card__title_table">
-          <table class="table-product">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="table-product__dots">
-                    <span> Модель процессора </span>
-                  </div>
-                </td>
-                <td class="table-product__value">
-                  <div class="table-product__dots">
-                    <span> Core i3 9100 </span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <a href="#" class="btn-border btn-more js-table-product-more">
-            <span class="i-refresh-green icon-margin"></span>
-            <span>Показать еще</span>
-          </a>
+          <div class="card__title_table_block js-product-detail-more">
+            <table class="table-product ">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="table-product__dots">
+                      <span> Модель процессора </span>
+                    </div>
+                  </td>
+                  <td class="table-product__value">
+                    <div class="table-product__dots">
+                      <span> Core i3 9100 </span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <a href="#" class="btn-border btn-more ">
+              <span class="i-refresh-green icon-margin"></span>
+              <span>Показать еще</span>
+            </a> -->
+          </div>
+
         </div>
       </div>
     </section>
 
-
-    <!-- Отзывы -->
-    <section class="container reviews">
-      <div class="reviews__title">
-        <h2>Отзывы покупателей</h2>
-      </div>
-      <div class="reviews__list">
-        <ul>
-          <li>
-            <div class="w-30">
-              <div class="reviews__name">
-                Максим А.
-              </div>
-              <div class="reviews__rating">
-                <div class="stars">
-                  <span class="i-star-rated"></span>
-                  <span class="i-star-rated"></span>
-                  <span class="i-star-rated"></span>
-                  <span class="i-star-rated"></span>
-                  <span class="i-star"></span>
+    <!-- Текст и Баннер -->
+    <section class="container product-others">
+      <div class="card-70">
+        <div class="d-flex text">
+          <div class="text__content">
+            <h2>Вызов сантехника на дом недорого</h2>
+            <p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации
+              модели
+              развития. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации
+              дальнейших
+              направлений развития. С другой стороны дальнейшее развитие различных форм деятельности требуют определения
+              и
+              уточнения
+              систем массового участия.</p>
+            <img src="img/text-img.png" class="w-30 float-right border-radius" alt="Изображения">
+            <ul>
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis laboriosam temporibus exercitationem
+                recusandae facere quisquam.</li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis praesentium voluptates
+                nihil
+                ipsum odio, in voluptatem. Dolorum dignissimos excepturi aut, corporis repellendus non voluptates?</li>
+            </ul>
+            <h2>Срочный вызов сантехника</h2>
+            <p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации
+              модели
+              развития. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации
+              дальнейших
+              направлений развития.</p>
+          </div>
+        </div>
+        <!-- Отзывы -->
+        <div class="reviews">
+          <div class="reviews__title">
+            <h2>Отзывы покупателей</h2>
+            <a href="#" class="btn btn-border">Заказать звонок</a>
+          </div>
+          <div class="reviews__list">
+            <ul>
+              <li>
+              
+                <div class="w-100">
+                  <div class="d-flex flex-wrap">
+                    <div class="reviews__name">
+                      Максим А.
+                    </div>
+                    <div class="reviews__rating">
+                      <div class="stars">
+                        <span class="i-star-rated"></span>
+                        <span class="i-star-rated"></span>
+                        <span class="i-star-rated"></span>
+                        <span class="i-star-rated"></span>
+                        <span class="i-star"></span>
+                      </div>
+                      <div class="reviews__rating_text">
+                        Отличный магазин
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt doloribus mollitia impedit officia.
+                    Voluptatum vitae mollitia et, a animi voluptatibus!
+                  </div>
+                  <div class="reviews__time">
+                    5 июня 2020 год
+                  </div>
                 </div>
-                <div class="reviews__rating_text">
-                  Отличный магазин
+              </li>
+              <li>
+              
+                <div class="w-100">
+                  <div class="d-flex flex-wrap">
+                    <div class="reviews__name">
+                      Максим А.
+                    </div>
+                    <div class="reviews__rating">
+                      <div class="stars">
+                        <span class="i-star-rated"></span>
+                        <span class="i-star-rated"></span>
+                        <span class="i-star-rated"></span>
+                        <span class="i-star-rated"></span>
+                        <span class="i-star"></span>
+                      </div>
+                      <div class="reviews__rating_text">
+                        Отличный магазин
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt doloribus mollitia impedit officia.
+                    Voluptatum vitae mollitia et, a animi voluptatibus!
+                  </div>
+                  <div class="reviews__time">
+                    5 июня 2020 год
+                  </div>
                 </div>
-              </div>
-              <div class="reviews__time">
-                5 июня 2020 год
-              </div>
-            </div>
-            <div class="w-70">
-              <div class="reviews__product">
-                <p><span>Отзыв про:</span> Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt doloribus mollitia impedit officia.
-                Voluptatum vitae mollitia et, a animi voluptatibus!
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="w-30">
-              <div class="reviews__name">
-                Максим А.
-              </div>
-              <div class="reviews__rating">
-                <div class="stars">
-                  <span class="i-star-rated"></span>
-                  <span class="i-star-rated"></span>
-                  <span class="i-star-rated"></span>
-                  <span class="i-star-rated"></span>
-                  <span class="i-star"></span>
-                </div>
-                <div class="reviews__rating_text">
-                  Отличный магазин
-                </div>
-              </div>
-              <div class="reviews__time">
-                5 июня 2020 год
-              </div>
-            </div>
-            <div class="w-70">
-              <div class="reviews__product">
-                <p><span>Отзыв про:</span> Lorem ipsum dolor sit amet consectetur.</p>
-              </div>
-              <div class="reviews__text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem qui nemo perferendis ab sunt eveniet modi
-                quisquam corrupti, quam, incidunt a, quaerat suscipit hic. Vero nisi neque recusandae minima pariatur
-                magni voluptatem dolore ipsum eius praesentium maxime in, quos voluptatum fugiat et placeat officiis
-                autem aliquam! Facilis atque facere ex.
-              </div>
-            </div>
-          </li>
-        </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="reviews__more">
+            <a href="#" class="btn-border btn-more">
+              <span class="i-refresh-green icon-margin"></span>
+              <span>Показать еще</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="reviews__more">
-        <a href="#" class="btn-border btn-more">
-          <span class="i-refresh-green icon-margin"></span>
-          <span>Показать еще</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- Text Section -->
-    <section class="container d-flex text">
-      <div class="w-30 d-flex-ac text__image">
-        <img src="img/text-section.png" class="px-3" alt="Изображения">
-      </div>
-      <div class="w-70 px-3 text__content">
-        <h2>Вызов сантехника на дом недорого</h2>
-        <p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации
-          модели
-          развития. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации
-          дальнейших
-          направлений развития. С другой стороны дальнейшее развитие различных форм деятельности требуют определения и
-          уточнения
-          систем массового участия.</p>
-        <img src="img/text-img.png" class="w-30 float-right border-radius" alt="Изображения">
-        <ul>
-          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis laboriosam temporibus exercitationem
-            recusandae facere quisquam.</li>
-          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis praesentium voluptates nihil
-            ipsum odio, in voluptatem. Dolorum dignissimos excepturi aut, corporis repellendus non voluptates?</li>
-        </ul>
-        <h2>Срочный вызов сантехника</h2>
-        <p>Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации
-          модели
-          развития. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации
-          дальнейших
-          направлений развития.</p>
+      <div class="card-30">
+        <div class="product-others__banners">
+          <a href="#" class="product-others__banners_item">
+            <img src="img/brands/banner-1.jpg" alt="">
+          </a>
+          <a href="#" class="product-others__banners_item">
+            <img src="img/brands/banner-1.jpg" alt="">
+          </a>
+          <a href="#" class="product-others__banners_item">
+            <img src="img/brands/banner-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="product-others__recommend lg-1200-none">
+          <h3>Рекомендуем</h3>
+          <a href="#" class="product-others__recommend_card">
+            <div class="recommend_card__img"><img src="img/product/1.webp" alt=""></div>
+            <div class="recommend_card__block">
+              <div class="recommend_card__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <div class="stars">
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star"></span>
+              </div>
+              <div class="recommend_card__price">213 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-others__recommend_card">
+            <div class="recommend_card__img"><img src="img/product/1.webp" alt=""></div>
+            <div class="recommend_card__block">
+              <div class="recommend_card__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <div class="stars">
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star"></span>
+              </div>
+              <div class="recommend_card__price">213 руб.</div>
+            </div>
+          </a>
+          <a href="#" class="product-others__recommend_card">
+            <div class="recommend_card__img"><img src="img/product/1.webp" alt=""></div>
+            <div class="recommend_card__block">
+              <div class="recommend_card__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <div class="stars">
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star-rated"></span>
+                <span class="i-star"></span>
+              </div>
+              <div class="recommend_card__price">213 руб.</div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 

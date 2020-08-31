@@ -172,6 +172,25 @@ $(document).ready(function () {
       .toggleClass("d-flex");
 
   });
+
+  /* Readmore */
+  $(function () {
+    $('.js-product-detail-more').readmore({
+      speed: 500,
+      lessLink: '<a href="#" class="btn-border btn-more"><span class="i-refresh-green icon-margin"></span><span>Свернуть</span></a>',
+      moreLink: '<a href="#" class="btn-border btn-more"><span class="i-refresh-green icon-margin"></span><span>Показать еще</span></a>',
+      collapsedHeight: 270,
+    });
+  });
+
+  $(function () {
+    $('.js-category-readmore').readmore({
+      speed: 500,
+      lessLink: '<div class="js-category-readmore-btn close"><a href="#">Свернуть</a></div>',
+      moreLink: '<div class="js-category-readmore-btn"><a href="#">Показать еще</a></div>',
+      collapsedHeight: 115,
+    });
+  });
 });
 
 /* Swiper JS */
@@ -306,6 +325,7 @@ var galleryThumbs = new Swiper('.product__gallery .gallery-thumbs', {
 });
 var galleryTop = new Swiper('.product__gallery .gallery-top', {
   spaceBetween: 10,
+  /* effect: 'fade', */
   /*  navigation: {
      nextEl: '.swiper-button-next',
      prevEl: '.swiper-button-prev',
