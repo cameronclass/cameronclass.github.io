@@ -122,3 +122,7 @@
 .i-wallet{
   @include icon(url(../img/icons/wallet.svg), 15px, 15px);
 }
+
+.i-close{
+  @include icon(url(../img/icons/close.svg), 15px, 15px);
+}

@@ -78,7 +78,7 @@
           </a>
         </div>
         <div class="header-bottom__action">
-          <a href="#" class="btn-border">Написать сообщения</a>
+          <a href="#" id="modal-text" class="btn-border">Написать сообщения</a>
         </div>
         <form class="header-bottom__search" action="index.html" method="POST">
           <input type="text" class="input input-search" placeholder="Поиск Товаров" name="poisk">
@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="header-bottom__call">
-          <a href="#" class="btn-border btn-border-red">Заказать звонок</a>
+          <a href="#" id="modal-call" class="btn-border btn-border-red">Заказать звонок</a>
         </div>
         <div class="header-bottom__fixed-menu">
           <ul class="fixed-menu__list">
@@ -3161,9 +3161,99 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="js-modal-phone-call">
+    <div class="modal__block">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <div class="modal__content_title">
+          <div>Заказать звонок</div>
+          <div class="close">
+            <span class="i-close"></span>
+          </div>
+        </div>
+        <form action="#" class="modal-form">
+          <div class="form-block">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Телефон</span>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Потвердите что вы не робот</span>
+            </label>
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+          </div>
+          <div class="form-block">
+            <div class="modal-input-wrap">
+              <input class="modal-input" type="checkbox" id="personal-data" name="checkbox">
+              <label class="modal-input-label" for="personal-data">Я согласен на обработку <a href="#">персональных данных</a></label>
+            </div>
+          </div>
+          <button type="submit" class="btn-border btn-mail btn-modal-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="js-modal-text">
+    <div class="modal__block">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <div class="modal__content_title">
+          <div>Написать сообщения</div>
+          <div class="close">
+            <span class="i-close"></span>
+          </div>
+        </div>
+        <form action="#" class="modal-form">
+          <div class="form-block">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Телефон</span>
+              <input type="tel">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Телефон</span>
+              <textarea class="input-modal" name="" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Потвердите что вы не робот</span>
+            </label>
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+          </div>
+          <div class="form-block">
+            <div class="modal-input-wrap">
+              <input class="modal-input" type="checkbox" id="personal-data-2" name="checkbox">
+              <label class="modal-input-label" for="personal-data-2">Я согласен на обработку <a href="#">персональных
+                  данных</a></label>
+            </div>
+          </div>
+          <button type="submit" class="btn-border btn-mail btn-modal-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
+  
 </body>
 
 </html>

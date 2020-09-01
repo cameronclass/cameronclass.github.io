@@ -345,7 +345,7 @@
   }
 
   &__cards {
-    margin: 15px 0;
+    margin: 15px 0 30px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -410,6 +410,102 @@
     @include lg-350 {
       width: 100%;
     }
+  }
+}
+
+.catalog-page-info {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    > li {
+      width: 33.333%;
+      margin: 0 0 -1px -1px;
+
+      @include lg-1025{
+        width: 50%;
+      }
+      @include lg-720{
+        width: 100%;
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid $border;
+    transition: 100ms ease;
+
+    &:hover{
+      box-shadow: $bs-card;
+    }
+
+    @include lg-460{
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    display: flex;
+  }
+
+  &__img {
+    width: 35%;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+    }
+  }
+
+  &__links {
+    width: 65%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+
+    &_title{
+      font-family: $font-exo;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 10px 0;
+
+      @include lg-460{
+        font-size: 16px;
+      }
+    }
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+
+      li{
+        margin-right: 15px;
+
+        a{
+          display: flex;
+          font-size: 14px;
+          color: $grey;
+
+          
+        }
+      }
+    }
+
+    &_number{
+      margin-left: 4px;
+      color: $black;
+    }
+  }
+
+  &__text{
+    font-size: 14px;
+    color: $grey;
+    margin-top: 20px;
   }
 }
 
@@ -509,6 +605,7 @@
   }
 }
 
+/* Отзывы */
 .reviews {
   margin-bottom: 40px;
 
@@ -673,20 +770,18 @@
       padding: 20px;
       box-sizing: border-box;
 
-      @include lg-1025{
+      @include lg-1025 {
         width: 35%;
         padding: 10px;
-        img{
-          
+        img {
         }
       }
 
       @include lg-450 {
-        width: 35%;
-        padding: 5px;
+        width: 30%;
 
         img {
-          height: 60px;
+          height: 80px;
           object-fit: contain;
         }
       }
@@ -698,7 +793,7 @@
       padding: 10px 10px 10px 5px;
       box-sizing: border-box;
 
-      @include lg-1025{
+      @include lg-1025 {
         width: 65%;
       }
 
@@ -721,12 +816,12 @@
       .price {
         font-weight: bold;
 
-        @include lg-1025{
+        @include lg-1025 {
           font-size: 15px;
         }
 
         @include lg-450 {
-          font-size: 13px;
+          font-size: 14px;
         }
       }
     }
