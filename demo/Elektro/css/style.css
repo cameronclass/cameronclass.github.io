@@ -2967,6 +2967,9 @@ ul.social {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     position: relative; }
+    @media screen and (max-width: 350px) {
+      .catalog-category-slider .container {
+        padding: 0 28px; } }
   .catalog-category-slider img {
     width: 100%;
     height: 100px;
@@ -3222,7 +3225,14 @@ ul.social {
       border-top: none; } }
   .bx_filter .title {
     padding-bottom: 0;
-    border-color: transparent; }
+    border-color: transparent;
+    background-color: #fff;
+    z-index: 2; }
+    @media screen and (max-width: 720px) {
+      .bx_filter .title {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0; } }
     .bx_filter .title .bx_filter_parameters_box_title {
       font-size: 18px;
       font-weight: bold;
@@ -3263,8 +3273,8 @@ ul.social {
       .bx_filter_parameters_box {
         padding: 15px 20px;
         /*  &:last-child{
-           padding-bottom: 85px;
-         } */ }
+          padding-bottom: 85px;
+        } */ }
         .bx_filter_parameters_box_title {
           margin-top: 0;
           font-size: 14px; } }
@@ -3347,7 +3357,8 @@ ul.social {
         border: 1px solid #ccc; }
       .bx_filter .bx-my-checkbox label .bx_filter_param_text {
         line-height: 1.6; }
-  .bx_filter .bx_filter_search_reset {
+  .bx_filter .bx_filter_search_reset,
+  .bx_filter .bx_filter_search_button {
     margin: 15px 0;
     padding: 10px 20px;
     border-radius: 3px;
@@ -3355,8 +3366,17 @@ ul.social {
     color: #555555;
     font-size: 14px;
     cursor: pointer; }
-    .bx_filter .bx_filter_search_reset:hover {
+    .bx_filter .bx_filter_search_reset:hover,
+    .bx_filter .bx_filter_search_button:hover {
       background-color: #ececec; }
+  .bx_filter .bx_filter_search_button {
+    color: white;
+    background-color: #3ab503;
+    border-color: #3ab503;
+    padding: 10px 40px;
+    margin-right: 8px; }
+    .bx_filter .bx_filter_search_button:hover {
+      background-color: #3ab503; }
   @media screen and (max-width: 720px) {
     .bx_filter .bx_filter_button_box {
       position: -webkit-sticky;

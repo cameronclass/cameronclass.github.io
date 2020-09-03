@@ -100,6 +100,10 @@
     padding: 0 50px;
     box-sizing: border-box;
     position: relative;
+
+    @include lg-350 {
+      padding: 0 28px;
+    }
   }
 
   img {
@@ -376,6 +380,13 @@
   .title {
     padding-bottom: 0;
     border-color: transparent;
+    background-color: #fff;
+    z-index: 2;
+
+    @include lg-720 {
+      position: sticky;
+      top: 0;
+    }
     .bx_filter_parameters_box_title {
       font-size: 18px;
       font-weight: bold;
@@ -388,11 +399,11 @@
         align-items: center;
         font-size: 16px;
 
-        .i-filter{
+        .i-filter {
           margin-right: 7px;
         }
 
-        &::after{
+        &::after {
           content: "";
           display: inline-block;
           background-image: url(../img/icons/close.svg);
@@ -404,7 +415,7 @@
         }
       }
     }
-    @include lg-720{
+    @include lg-720 {
       border-color: $border;
     }
   }
@@ -421,12 +432,12 @@
     @include lg-720 {
       padding: 15px 20px;
 
-      &_title{
+      &_title {
         margin-top: 0;
         font-size: 14px;
       }
 
-     /*  &:last-child{
+      /*  &:last-child{
         padding-bottom: 85px;
       } */
     }
@@ -519,7 +530,8 @@
     }
   }
 
-  .bx_filter_search_reset {
+  .bx_filter_search_reset,
+  .bx_filter_search_button {
     margin: 15px 0;
     padding: 10px 20px;
     border-radius: 3px;
@@ -530,6 +542,18 @@
 
     &:hover {
       background-color: $border;
+    }
+  }
+
+  .bx_filter_search_button {
+    color: white;
+    background-color: $green;
+    border-color: $green;
+    padding: 10px 40px;
+    margin-right: 8px;
+
+    &:hover{
+      background-color: $green;
     }
   }
 
