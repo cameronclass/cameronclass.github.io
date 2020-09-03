@@ -122,6 +122,7 @@
 /* catalog-page  */
 .catalog-page {
   &__sort {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -171,8 +172,8 @@
         align-items: center;
         justify-content: center;
         margin-left: 10px;
-        height: 30px;
-        width: 30px;
+        height: 36px;
+        width: 36px;
         background-color: $border;
         border-radius: 2px;
         transition: 100ms ease;
@@ -259,7 +260,7 @@
     &_bitrix {
       @include lg-720 {
         display: block;
-        width: 80%;
+        width: 320px;
         height: 100vh;
         background-color: white;
 
@@ -271,7 +272,6 @@
 
         overflow-y: scroll;
 
-        padding: 10px;
         box-sizing: border-box;
       }
 
@@ -280,29 +280,155 @@
       }
     }
   }
+
+  &__category {
+    padding: 20px 0;
+
+    &_block {
+      margin-bottom: 20px;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          margin-bottom: 5px;
+          a {
+            display: flex;
+            justify-content: space-between;
+            color: $black;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 100ms ease;
+
+            &:hover {
+              color: $green;
+
+              .catalog-page__category_number {
+                color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_return {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border;
+      a {
+        display: flex;
+        align-items: center;
+        color: $grey;
+        border: 1px solid $border;
+        border-radius: 3px;
+        cursor: pointer;
+
+        .i-down {
+          width: 12px;
+          height: 12px;
+          filter: invert(1);
+          transform: rotate(90deg);
+          opacity: 0.7;
+        }
+
+        .icon {
+          height: 100%;
+          padding: 11px;
+          width: 10%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-right: 1px solid $border;
+        }
+      }
+      &_text {
+        width: 90%;
+        text-align: center;
+        padding: 6px;
+        font-size: 14px;
+      }
+    }
+
+    &_title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    &_number {
+      color: $grey;
+    }
+  }
 }
 
 /* Bitrix */
 .bx_filter {
   border-top: 1px solid $border;
 
+  &_section {
+  }
+
   @include lg-720 {
     border-top: none;
   }
 
   .title {
+    padding-bottom: 0;
+    border-color: transparent;
     .bx_filter_parameters_box_title {
-      font-size: 19px;
+      font-size: 18px;
       font-weight: bold;
-      margin: 25px 0;
+      margin: 25px 0 5px;
+
+      @include lg-720 {
+        margin: 0;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+
+        .i-filter{
+          margin-right: 7px;
+        }
+
+        &::after{
+          content: "";
+          display: inline-block;
+          background-image: url(../img/icons/close.svg);
+          width: 15px;
+          height: 15px;
+          background-size: 100% 100%;
+          position: absolute;
+          right: 15px;
+        }
+      }
+    }
+    @include lg-720{
+      border-color: $border;
     }
   }
 
   &_parameters_box {
+    border-bottom: 1px solid $border;
+    padding-bottom: 15px;
     &_title {
       font-size: 16px;
       font-weight: bold;
       margin: 20px 0;
+    }
+
+    @include lg-720 {
+      padding: 15px 20px;
+
+      &_title{
+        margin-top: 0;
+        font-size: 14px;
+      }
+
+     /*  &:last-child{
+        padding-bottom: 85px;
+      } */
     }
   }
 
@@ -316,14 +442,107 @@
     justify-content: space-between;
     .bx_filter_parameters_box_container_block {
       width: 45%;
+      display: flex;
 
       .bx_filter_input_container {
+        width: 100%;
         input {
           padding: 10px;
           width: 100%;
           box-sizing: border-box;
+          border: 1px solid $border;
+          font-size: 14px;
         }
       }
+      &_hr {
+        display: flex;
+        align-items: center;
+
+        hr {
+          width: 15px;
+          height: 1px;
+          background-color: #9a9a9a;
+          border-width: 0;
+        }
+      }
+    }
+
+    .divider {
+      display: none;
+    }
+  }
+
+  .wrapp_slider {
+    padding: 20px 0 5px;
+  }
+
+  .bx-my-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+
+    input {
+      display: none;
+
+      &:checked {
+        ~ label::after {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 2px;
+          border: 1px solid $green;
+          background-color: $green;
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: 14px;
+      &::before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+      }
+
+      .bx_filter_param_text {
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .bx_filter_search_reset {
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color: $grey;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $border;
+    }
+  }
+
+  .bx_filter_button_box {
+    @include lg-720 {
+      position: sticky;
+      width: 320px;
+      left: 0;
+      bottom: 0;
+      border-top: 1px solid $border;
+      background-color: #fff;
+      padding-left: 20px;
+      box-sizing: border-box;
     }
   }
 }
@@ -687,11 +906,11 @@
         flex-direction: row;
         align-items: center;
 
-        .price{
+        .price {
           font-size: 15px;
         }
 
-        .number{
+        .number {
           justify-content: flex-end;
         }
       }
@@ -702,5 +921,46 @@
         display: flex;
       }
     }
+  }
+}
+
+/* brands-info */
+
+.brands-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px auto;
+
+  &__text {
+    width: 76%;
+    padding: 0;
+  }
+
+  &__img {
+    width: 22.4%;
+
+    .brands-card {
+      margin-top: 15px;
+    }
+  }
+
+  @include lg-720 {
+    flex-direction: column-reverse;
+
+    &__text,
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+.js-category-catalog-more {
+  overflow: hidden;
+
+  &-btn {
+    margin: 10px 0;
+    font-size: 15px;
+    color: $blue;
   }
 }

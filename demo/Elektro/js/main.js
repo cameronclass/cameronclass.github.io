@@ -120,6 +120,12 @@ $(document).ready(function () {
     $(".catalog-page__filter_overlay").removeClass("catalog-page__filter_overlay_active");
     $("body").removeClass("lock");
   });
+  $(".bx_filter_parameters_box_title").after().click(function () {
+    $(".catalog-page__filter").removeClass("catalog-page__filter_active");
+    $(".catalog-page__filter_bitrix").removeClass("catalog-page__filter_bitrix_active");
+    $(".catalog-page__filter_overlay").removeClass("catalog-page__filter_overlay_active");
+    $("body").removeClass("lock");
+  });
 
   $(".js-menu-expand").click(function (e) {
     e.preventDefault();
@@ -192,6 +198,16 @@ $(document).ready(function () {
     });
   });
 
+  $(function () {
+    $('.js-category-catalog-more').readmore({
+      speed: 500,
+      lessLink: '<div class="js-category-catalog-more-btn close"><a href="#">Свернуть</a></div>',
+      moreLink: '<div class="js-category-catalog-more-btn"><a href="#">Показать все</a></div>',
+      collapsedHeight: 247,
+    });
+  });
+  /* js-category-catalog-more */
+
   /* Modal js-modal-phone-call js-modal-text*/
   $("#modal-call").click(function (e) {
     e.preventDefault();
@@ -215,6 +231,10 @@ $(document).ready(function () {
     $(".modal").fadeOut("fast");
     $("body").removeClass("lock")
   });
+
+
+  /* ionRangeSlider */
+   $(".js-range-slider").ionRangeSlider();
 
 });
 

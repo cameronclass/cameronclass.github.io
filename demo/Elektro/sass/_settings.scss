@@ -81,7 +81,7 @@ h3 {
   font-size: 24px;
 }
 
-h4{
+h4 {
   font-size: 22px;
 }
 
@@ -89,14 +89,14 @@ b {
   font-weight: bold;
 }
 
-blockquote{
+blockquote {
   border-left: 2px solid $blue;
   padding: 5px 0 5px 30px;
   line-height: 1.5;
   margin: 25px 0;
 }
 
-em{
+em {
   font-style: italic;
 }
 
@@ -362,6 +362,10 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
+
+.align-items-start{
+  align-items: flex-start;
+}
 .d-block {
   display: block !important;
 }
@@ -392,12 +396,12 @@ img {
 .w-30 {
   width: 30%;
 
-  @include lg-460{
+  @include lg-460 {
     width: 45%;
   }
 }
 
-.position-sticky{
+.position-sticky {
   position: sticky;
   top: 65px;
 }
@@ -1184,7 +1188,6 @@ ul.social {
   height: 100vh;
   z-index: 9999;
   display: none;
-  
 
   &__block {
     display: flex;
@@ -1209,7 +1212,7 @@ ul.social {
     z-index: 9999;
     background-color: #fff;
 
-    @include lg-460{
+    @include lg-460 {
       width: 100%;
       margin: 100px 0;
     }
@@ -1248,15 +1251,15 @@ ul.social {
     font-size: 12px;
     color: $grey;
 
-    a{
+    a {
       color: $green;
     }
   }
 
-  .btn-modal-button{
+  .btn-modal-button {
     margin-top: 10px;
 
-    &:hover{
+    &:hover {
       border-color: $green;
     }
   }
@@ -1321,8 +1324,34 @@ ul.social {
   }
 }
 
-.input-modal{
+.input-modal {
   padding: 10px;
   border: 1px solid $border;
   background-color: $bg-white;
+}
+
+.brands-card {
+  display: flex;
+  align-items: center;
+  height: 165px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  border: 1px solid $border;
+  transition: 200ms ease;
+
+  @include lg-720 {
+    padding: 0 30px;
+    height: 130px;
+  }
+
+  img {
+    width: 65%;
+    height: 50px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    box-shadow: $bs-card;
+  }
 }
