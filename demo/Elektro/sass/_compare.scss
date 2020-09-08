@@ -8,8 +8,16 @@
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+
+    @include lg-720 {
+      flex-direction: column;
+      border-bottom: 1px solid transparent;
+    }
     &_links {
       display: flex;
+      @include lg-720 {
+        margin-bottom: 20px;
+      }
       a {
         padding: 20px 25px;
         border: 1px solid $border;
@@ -17,6 +25,11 @@
         margin: 0 0 -1px -1px;
         color: $black;
         font-weight: 600;
+
+        @include lg-720 {
+          padding: 15px 10px;
+          font-size: 14px;
+        }
 
         &:hover {
           color: $green;
@@ -36,54 +49,105 @@
     }
 
     &_reset {
+      @include lg-720 {
+        margin-bottom: 20px;
+      }
     }
   }
 
   &__bottom {
     display: flex;
-     padding: 40px 0 20px ;
+    padding: 40px 0 20px;
   }
 
   &__spec {
     width: 20%;
     display: flex;
     align-items: flex-end;
+    text-align: left;
+    font-weight: 600;
+
+    @include lg-720 {
+      width: 33%;
+    }
   }
+
   &__products {
     width: 80%;
-   
+
+    @include lg-720 {
+      width: 68%;
+    }
 
     &_list {
       box-sizing: border-box;
       width: 100%;
 
-      .swiper-slide{
-        width: 200px;
+      .swiper-slide {
+        width: 230px;
         font-size: 16px;
-      }
 
-     /*  &::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        background-color: #f5f5f5;
+        @include lg-720 {
+          width: 200px;
+        }
       }
-
-      &::-webkit-scrollbar {
-        width: 12px;
-        background-color: #f5f5f5;
-        position: absolute;
-        bottom: 50px;
-      }
-      &::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        background-color: #555;
-        
-      } */
     }
 
     &_item {
-      width: 200px;
+      width: 230px;
+      text-align: left;
+      @include lg-720 {
+        width: 200px;
+      }
     }
+  }
+  .swiper-container-horizontal > .swiper-scrollbar {
+    width: 90%;
+    top: 54.6%;
+    left: 49.5%;
+    transform: translate(-50%);
+    overflow: hidden;
+
+    @include lg-460 {
+      width: 70%;
+    }
+  }
+  .swiper-scrollbar-drag {
+    background-color: $green;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 58%;
+  }
+}
+
+.compare__card {
+  margin-bottom: 80px;
+  &_img {
+    img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+    }
+  }
+
+  &_title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 50px;
+    overflow: hidden;
+  }
+
+  &_price {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px 5px;
+    box-sizing: border-box;
+  }
+
+  &_table {
   }
 }

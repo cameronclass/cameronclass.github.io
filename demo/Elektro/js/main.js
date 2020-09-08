@@ -330,8 +330,8 @@ var swiper = new Swiper(".watched-before .swiper-container", {
   spaceBetween: 15,
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".watched-before-next",
+    prevEl: ".watched-before-prev",
   },
 
   breakpoints: {
@@ -426,8 +426,8 @@ var swiper = new Swiper('.compare__bottom .swiper-container', {
   slidesPerView: 'auto',
   freeMode: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.next-compare',
+    prevEl: '.prev-compare',
   },
   scrollbar: {
     el: '.swiper-scrollbar',

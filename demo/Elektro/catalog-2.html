@@ -78,7 +78,7 @@
           </a>
         </div>
         <div class="header-bottom__action">
-          <a href="#" class="btn-border">Написать сообщения</a>
+          <a href="#" id="modal-text" class="btn-border">Написать сообщения</a>
         </div>
         <form class="header-bottom__search" action="index.html" method="POST">
           <input type="text" class="input input-search" placeholder="Поиск Товаров" name="poisk">
@@ -96,12 +96,24 @@
           </div>
         </div>
         <div class="header-bottom__call">
-          <a href="#" class="btn-border btn-border-red">Заказать звонок</a>
+          <a href="#" id="modal-call" class="btn-border btn-border-red">Заказать звонок</a>
         </div>
         <div class="header-bottom__fixed-menu">
           <ul class="fixed-menu__list">
             <li class="mobile-search">
-              <a href="tel:+75556661234"><span class="i-mobile-search"></span></a>
+              <a class="js-mobile-search-open"><span class="i-mobile-search"></span></a>
+              <div class="mobile-search__wrapper">
+                <div class="mobile-search__overlay"></div>
+                <form class="mobile-search__block">
+                  <div class="mobile-search__input"><input type="text" id="js-focus" placeholder="Поиск"></div>
+                  <div class="mobile-search__btn">
+                    <button type="submit" class="btn-border btn-mobile-search">Найти</button>
+                    <button type="button" class="mobile-search-close js-mobile-search-close">
+                      <span class="i-close"></span>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </li>
             <li class="mobile-phone">
               <a href="tel:+75556661234"><span class="i-mobile-tel"></span></a>
@@ -541,7 +553,8 @@
 
           <div class="catalog-page__sort_view">
             <a class="sort-view__btn" href="catalog-1.html"><span class="i-catalog-grid"></span></a>
-            <a class="sort-view__btn sort-view__btn_active" href="catalog-2.html"><span class="i-catalog-list"></span></a>
+            <a class="sort-view__btn sort-view__btn_active" href="catalog-2.html"><span
+                class="i-catalog-list"></span></a>
             <a class="sort-view__btn" href="#"><span class="i-catalog-list-text"></span></a>
           </div>
         </div>
@@ -715,9 +728,9 @@
                         </table>
                         <a href="#" class="table-product__more js-table-product-more">Все характеристики</a>
                       </div>
-                      
+
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -887,14 +900,14 @@
                         </table>
                         <a href="#" class="table-product__more js-table-product-more">Все характеристики</a>
                       </div>
-            
+
                     </div>
-            
+
                   </div>
                 </div>
               </div>
             </li>
-            
+
           </ul>
           <a href="#" class="btn-border btn-more">
             <span class="i-refresh-green icon-margin"></span>
@@ -918,7 +931,7 @@
           <div class="catalog-page__filter_block">
             <div class="catalog-page__filter_overlay"></div>
             <div class="catalog-page__filter_bitrix">
-          
+
               <div class="bx_filter bx_filter_vertical swipeignore">
                 <div class="bx_filter_section">
                   <form name="_form" action="#" method="get" class="smartfilter" id="smartfilter">
@@ -928,7 +941,7 @@
                         <span>Фильтр по параметрам</span>
                       </div>
                     </div>
-          
+
                     <div class="bx_filter_parameters">
                       <div class="bx_filter_parameters_box bx-filter-selection">
                         <div class="bx_filter_parameters_box_title icons_fa">Сортировка</div>
@@ -1006,7 +1019,7 @@
                                   <span class="bx_filter_param_text" title="Electrolux">Electrolux</span>
                                 </span>
                               </label>
-          
+
                             </div>
                             <div class="bx-my-checkbox">
                               <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_1536423042"
@@ -1021,8 +1034,8 @@
                             <div class="bx-my-checkbox">
                               <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_349332037"
                                 id="NEXT_SMART_FILTER_518_349332037">
-                              <label data-role="label_NEXT_SMART_FILTER_518_349332037" class="bx_filter_param_label  last "
-                                for="NEXT_SMART_FILTER_518_349332037">
+                              <label data-role="label_NEXT_SMART_FILTER_518_349332037"
+                                class="bx_filter_param_label  last " for="NEXT_SMART_FILTER_518_349332037">
                                 <span class="bx_filter_input_checkbox">
                                   <span class="bx_filter_param_text" title="Атлант">Атлант</span>
                                 </span>
@@ -1047,7 +1060,8 @@
                           <div class="bx_filter_parameters_box_container ">
                             <div class="bx-my-checkbox">
                               <input type="checkbox" value="Y" id="vvg">
-                              <label data-role="label_NEXT_SMART_FILTER_518_4083830594" class="bx_filter_param_label" for="vvg">
+                              <label data-role="label_NEXT_SMART_FILTER_518_4083830594" class="bx_filter_param_label"
+                                for="vvg">
                                 <span class="bx_filter_input_checkbox">
                                   <span class="bx_filter_param_text" title="Beko">ВВГ</span>
                                 </span>
@@ -1055,12 +1069,13 @@
                             </div>
                             <div class="bx-my-checkbox">
                               <input type="checkbox" value="Y" name="puv" id="puv">
-                              <label data-role="label_NEXT_SMART_FILTER_518_2221768660" class="bx_filter_param_label" for="puv">
+                              <label data-role="label_NEXT_SMART_FILTER_518_2221768660" class="bx_filter_param_label"
+                                for="puv">
                                 <span class="bx_filter_input_checkbox">
                                   <span class="bx_filter_param_text" title="Electrolux">ПУВ</span>
                                 </span>
                               </label>
-          
+
                             </div>
                           </div>
                           <div class="clb"></div>
@@ -1175,7 +1190,7 @@
                                 </span>
                               </label>
                             </div>
-          
+
                           </div>
                           <div class="clb"></div>
                         </div>
@@ -1202,7 +1217,7 @@
                                 </span>
                               </label>
                             </div>
-          
+
                           </div>
                           <div class="clb"></div>
                         </div>
@@ -1213,8 +1228,9 @@
                         <div class="bx_filter_parameters_box_container">
                           <button class="bx_filter_search_button" type="button" id="set_filter" name="set_filter">
                             Показать </button>
-          
-                          <button class="bx_filter_search_reset" type="reset" id="del_filter" name="del_filter" data-href="">
+
+                          <button class="bx_filter_search_reset" type="reset" id="del_filter" name="del_filter"
+                            data-href="">
                             Сбросить </button>
                         </div>
                       </div>
@@ -1450,6 +1466,11 @@
         </div>
       </div>
     </section>
+
+    <!-- js-to-top -->
+    <button class="js-to-top">
+      <span class="i-down"></span>
+    </button>
   </main>
   <!-- Footer -->
   <footer class="container-fluid footer">
@@ -1510,6 +1531,96 @@
       </div>
     </div>
   </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="js-modal-phone-call">
+    <div class="modal__block">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <div class="modal__content_title">
+          <div>Заказать звонок</div>
+          <div class="close">
+            <span class="i-close"></span>
+          </div>
+        </div>
+        <form action="#" class="modal-form">
+          <div class="form-block">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Телефон</span>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Потвердите что вы не робот</span>
+            </label>
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+          </div>
+          <div class="form-block">
+            <div class="modal-input-wrap">
+              <input class="modal-input" type="checkbox" id="personal-data" name="checkbox">
+              <label class="modal-input-label" for="personal-data">Я согласен на обработку <a href="#">персональных
+                  данных</a></label>
+            </div>
+          </div>
+          <button type="submit" class="btn-border btn-mail btn-modal-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="js-modal-text">
+    <div class="modal__block">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <div class="modal__content_title">
+          <div>Написать сообщения</div>
+          <div class="close">
+            <span class="i-close"></span>
+          </div>
+        </div>
+        <form action="#" class="modal-form">
+          <div class="form-block">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Телефон</span>
+              <input type="tel">
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Телефон</span>
+              <textarea class="input-modal" name="" id="" cols="30" rows="10"></textarea>
+            </label>
+          </div>
+          <div class="form-block">
+            <label>
+              <span>Потвердите что вы не робот</span>
+            </label>
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="YOUR SITE KEY"></div>
+          </div>
+          <div class="form-block">
+            <div class="modal-input-wrap">
+              <input class="modal-input" type="checkbox" id="personal-data-2" name="checkbox">
+              <label class="modal-input-label" for="personal-data-2">Я согласен на обработку <a href="#">персональных
+                  данных</a></label>
+            </div>
+          </div>
+          <button type="submit" class="btn-border btn-mail btn-modal-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

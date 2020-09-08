@@ -1424,7 +1424,12 @@ table{
       
       th{
         width: 100%;
-        padding: 10px;
+        padding: 14px 20px;
+        font-size: 14px;
+
+        @include lg-720{
+          padding: 12px 14px;
+        }
       }
     }
   }
