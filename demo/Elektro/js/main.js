@@ -410,7 +410,7 @@ var galleryThumbs = new Swiper('.product__gallery .gallery-thumbs', {
 });
 var galleryTop = new Swiper('.product__gallery .gallery-top', {
   spaceBetween: 10,
-  /* effect: 'fade', */
+  effect: 'fade',
   /*  navigation: {
      nextEl: '.swiper-button-next',
      prevEl: '.swiper-button-prev',

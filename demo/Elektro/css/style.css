@@ -4528,6 +4528,12 @@ table {
         -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
                 box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
 
+.play-button {
+  padding: 10px; }
+
+.play-button-img {
+  padding: 50px !important; }
+
 .block-30 {
   width: 30%; }
   @media screen and (max-width: 1024px) {
