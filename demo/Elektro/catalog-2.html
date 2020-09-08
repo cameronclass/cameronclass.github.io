@@ -546,7 +546,7 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex justify-content-between">
+      <div class="container d-flex justify-content-between align-items-start">
         <div class="catalog-page__products catalog-page__products_list product__cards">
           <ul class="catalog__list catalog__cards catalog-page__cards catalog-page__cards_list">
 
@@ -915,511 +915,316 @@
           </ol>
         </div>
         <div class="catalog-page__filter">
-          <div class="catalog-page__filter_overlay"></div>
-          <div class="catalog-page__filter_bitrix">
-            <div class="bx_filter bx_filter_vertical swipeignore">
-              <div class="bx_filter_section">
-                <form name="_form" action="/catalog/bytovaya_tekhnika/" method="get" class="smartfilter"
-                  id="smartfilter">
-                  <div class="bx_filter_parameters_box active title">
-                    <div class="bx_filter_parameters_box_title">Фильтр по параметрам</div>
-                  </div>
-                  <div class="bx_filter_parameters">
-                    <input type="hidden" name="del_url" id="del_url" value="/catalog/bytovaya_tekhnika/">
-                    <div class="bx_filter_parameters_box bx_sort_filter active" data-expanded="Y"
-                      data-prop_code="aspro_filter_sort" data-property_id="ASPRO_FILTER_SORT">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>Сортировка</div>
+          <div class="catalog-page__filter_block">
+            <div class="catalog-page__filter_overlay"></div>
+            <div class="catalog-page__filter_bitrix">
+          
+              <div class="bx_filter bx_filter_vertical swipeignore">
+                <div class="bx_filter_section">
+                  <form name="_form" action="#" method="get" class="smartfilter" id="smartfilter">
+                    <div class="bx_filter_parameters_box active title">
+                      <div class="bx_filter_parameters_box_title">
+                        <span class="i-filter"></span>
+                        <span>Фильтр по параметрам</span>
                       </div>
-                      <div class="bx_filter_block limited_block">
-                        <div class="bx_filter_parameters_box_container ">
-                          <div class="bx_filter_select_container">
-                            <div class="bx_filter_select_block"
-                              onclick="smartFilter.showDropDownPopup(this, 'ASPRO_FILTER_SORT')">
-                              <div class="bx_filter_select_text" data-role="currentOption">
-                                По популярности (возрастание) </div>
-                              <div class="bx_filter_select_arrow"></div>
-                              <div class="bx_filter_select_popup" data-role="dropdownContent" style="display: none;">
-                                <ul>
-                                  <li><a href="/catalog/bytovaya_tekhnika/?sort=SHOWS&amp;order=asc"
-                                      class="sort_btn current asc SHOWS" rel="nofollow"><span>По популярности
-                                        (возрастание)</span></a></li>
-                                  <li><a href="/catalog/bytovaya_tekhnika/?sort=SHOWS&amp;order=desc"
-                                      class="sort_btn  desc SHOWS" rel="nofollow"><span>По популярности
-                                        (убывание)</span></a></li>
-                                  <li><a href="/catalog/bytovaya_tekhnika/?sort=NAME&amp;order=asc"
-                                      class="sort_btn  asc NAME" rel="nofollow"><span>По алфавиту
-                                        (возрастание)</span></a>
-                                  </li>
-                                  <li><a href="/catalog/bytovaya_tekhnika/?sort=NAME&amp;order=desc"
-                                      class="sort_btn  desc NAME" rel="nofollow"><span>По алфавиту (убывание)</span></a>
-                                  </li>
-                                  <li><a href="/catalog/bytovaya_tekhnika/?sort=PRICE&amp;order=asc"
-                                      class="sort_btn  asc PRICE" rel="nofollow"><span>По цене (возрастание)</span></a>
-                                  </li>
-                                  <li><a href="/catalog/bytovaya_tekhnika/?sort=PRICE&amp;order=desc"
-                                      class="sort_btn  desc PRICE" rel="nofollow"><span>По цене (убывание)</span></a>
-                                  </li>
-                                </ul>
+                    </div>
+          
+                    <div class="bx_filter_parameters">
+                      <div class="bx_filter_parameters_box bx-filter-selection">
+                        <div class="bx_filter_parameters_box_title icons_fa">Сортировка</div>
+                        <div class="bx_filter_block">
+                          <div class="bx-filter-selection-wrapper">
+                            <select name="">
+                              <option>По популярности (возрастание)</option>
+                              <option>По популярности (убывание)</option>
+                              <option>По алфавиту (возрастание)</option>
+                              <option>По алфавиту (убывание)</option>
+                              <option>По цене (возрастание)</option>
+                              <option>По цене (убывание)</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bx_filter_parameters_box">
+                        <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
+                          class="bx_filter_container_modef"></span>
+                        <div class="bx_filter_parameters_box_title icons_fa">Цена</div>
+                        <div class="bx_filter_block">
+                          <div class="bx_filter_parameters_box_container numbers">
+                            <div class="wrapp_all_inputs wrap_md">
+                              <div class="wrapp_change_inputs iblock">
+                                <div class="bx_filter_parameters_box_container_block">
+                                  <div class="bx_filter_input_container form-control bg">
+                                    <input class="min-price" type="text" value="" size="5" placeholder="2 160">
+                                  </div>
+                                </div>
+                                <div class="bx_filter_parameters_box_container_block_hr">
+                                  <hr>
+                                </div>
+                                <div class="bx_filter_parameters_box_container_block">
+                                  <div class="bx_filter_input_container form-control bg">
+                                    <input class="max-price" type="text" placeholder="21 598.80">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="wrapp_slider iblock">
+                                <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                                  data-min="2160" data-max="21598" data-from="2160" data-to="21598" />
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="clb"></div>
+                      </div>
+                      <div class="bx_filter_parameters_box">
+                        <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
+                          class="bx_filter_container_modef"></span>
+                        <div class="bx_filter_parameters_box_title icons_fa">
+                          <div>
+                            Бренд <div class="char_name">
+                              <div class="props_list">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bx_filter_block limited_block">
+                          <div class="bx_filter_parameters_box_container ">
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" id="NEXT_SMART_FILTER_518_4083830594">
+                              <label data-role="label_NEXT_SMART_FILTER_518_4083830594" class="bx_filter_param_label   "
+                                for="NEXT_SMART_FILTER_518_4083830594">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Beko</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_2221768660"
+                                id="NEXT_SMART_FILTER_518_2221768660">
+                              <label data-role="label_NEXT_SMART_FILTER_518_2221768660" class="bx_filter_param_label   "
+                                for="NEXT_SMART_FILTER_518_2221768660">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Electrolux">Electrolux</span>
+                                </span>
+                              </label>
+          
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_1536423042"
+                                id="NEXT_SMART_FILTER_518_1536423042">
+                              <label data-role="label_NEXT_SMART_FILTER_518_1536423042" class="bx_filter_param_label   "
+                                for="NEXT_SMART_FILTER_518_1536423042">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Thermex">Thermex</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_349332037"
+                                id="NEXT_SMART_FILTER_518_349332037">
+                              <label data-role="label_NEXT_SMART_FILTER_518_349332037" class="bx_filter_param_label  last "
+                                for="NEXT_SMART_FILTER_518_349332037">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Атлант">Атлант</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="clb"></div>
+                        </div>
+                      </div>
+                      <div class="bx_filter_parameters_box">
+                        <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
+                          class="bx_filter_container_modef"></span>
+                        <div class="bx_filter_parameters_box_title icons_fa">
+                          <div>
+                            Тип <div class="char_name">
+                              <div class="props_list">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bx_filter_block limited_block">
+                          <div class="bx_filter_parameters_box_container ">
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" id="vvg">
+                              <label data-role="label_NEXT_SMART_FILTER_518_4083830594" class="bx_filter_param_label" for="vvg">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">ВВГ</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" name="puv" id="puv">
+                              <label data-role="label_NEXT_SMART_FILTER_518_2221768660" class="bx_filter_param_label" for="puv">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Electrolux">ПУВ</span>
+                                </span>
+                              </label>
+          
+                            </div>
+                          </div>
+                          <div class="clb"></div>
+                        </div>
+                      </div>
+                      <div class="bx_filter_parameters_box">
+                        <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
+                          class="bx_filter_container_modef"></span>
+                        <div class="bx_filter_parameters_box_title icons_fa">
+                          <div>
+                            Цвет <div class="char_name">
+                              <div class="props_list">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bx_filter_block limited_block">
+                          <div class="bx_filter_parameters_box_container js-category-catalog-more">
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a1">
+                              <label class="bx_filter_param_label" for="a1">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Серый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a2">
+                              <label class="bx_filter_param_label" for="a2">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Белый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a3">
+                              <label class="bx_filter_param_label" for="a3">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Синий</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a4">
+                              <label class="bx_filter_param_label" for="a4">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Зеленный</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a5">
+                              <label class="bx_filter_param_label" for="a5">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a6">
+                              <label class="bx_filter_param_label" for="a6">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a7">
+                              <label class="bx_filter_param_label" for="a7">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a8">
+                              <label class="bx_filter_param_label" for="a8">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a9">
+                              <label class="bx_filter_param_label" for="a9">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a10">
+                              <label class="bx_filter_param_label" for="a10">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a11">
+                              <label class="bx_filter_param_label" for="a11">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" id="a12">
+                              <label class="bx_filter_param_label" for="a12">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Оранжевый</span>
+                                </span>
+                              </label>
+                            </div>
+          
+                          </div>
+                          <div class="clb"></div>
+                        </div>
+                      </div>
+                      <div class="bx_filter_parameters_box">
+                        <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
+                          class="bx_filter_container_modef"></span>
+                        <div class="bx_filter_parameters_box_title icons_fa">
+                          <div>
+                            Материал <div class="char_name">
+                              <div class="props_list">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bx_filter_block limited_block">
+                          <div class="bx_filter_parameters_box_container ">
+                            <div class="bx-my-checkbox">
+                              <input type="checkbox" value="Y" id="med">
+                              <label data-role="label_NEXT_SMART_FILTER_518_4083830594" class="bx_filter_param_label   "
+                                for="med">
+                                <span class="bx_filter_input_checkbox">
+                                  <span class="bx_filter_param_text" title="Beko">Медь</span>
+                                </span>
+                              </label>
+                            </div>
+          
+                          </div>
+                          <div class="clb"></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="bx_filter_parameters_box active">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">Цена</div>
+                    <div class="bx_filter_button_box active">
                       <div class="bx_filter_block">
-                        <div class="bx_filter_parameters_box_container numbers">
-                          <div class="wrapp_all_inputs wrap_md">
-                            <div class="wrapp_change_inputs iblock">
-                              <div class="bx_filter_parameters_box_container_block">
-                                <div class="bx_filter_input_container form-control bg">
-                                  <input class="min-price" type="text" name="NEXT_SMART_FILTER_P3_MIN"
-                                    id="NEXT_SMART_FILTER_P3_MIN" value="" size="5" placeholder="2 160"
-                                    onkeyup="smartFilter.keyup(this)">
-                                </div>
-                              </div>
-                              <div class="bx_filter_parameters_box_container_block">
-                                <div class="bx_filter_input_container form-control bg">
-                                  <input class="max-price" type="text" name="NEXT_SMART_FILTER_P3_MAX"
-                                    id="NEXT_SMART_FILTER_P3_MAX" value="" size="5" placeholder="21 598.80"
-                                    onkeyup="smartFilter.keyup(this)">
-                                </div>
-                              </div>
-                              <span class="divider"></span>
-                              <div style="clear: both;"></div>
-                            </div>
-                            <div class="wrapp_slider iblock">
-                              <div class="bx_ui_slider_track" id="drag_track_eccbc87e4b5ce2fe28308fd9f2a7baf3">
-                                <div class="bx_ui_slider_part first p1"><span>2 160</span></div>
-                                <div class="bx_ui_slider_part p2"><span>7 020</span></div>
-                                <div class="bx_ui_slider_part p3"><span>11 879</span></div>
-                                <div class="bx_ui_slider_part p4"><span>16 739</span></div>
-                                <div class="bx_ui_slider_part last p5"><span>21 598.80</span></div>
-                                <div class="bx_ui_slider_pricebar_VD" style="left: 0;right: 0;"
-                                  id="colorUnavailableActive_eccbc87e4b5ce2fe28308fd9f2a7baf3"></div>
-                                <div class="bx_ui_slider_pricebar_VN" style="left: 0%; right: 0%;"
-                                  id="colorAvailableInactive_eccbc87e4b5ce2fe28308fd9f2a7baf3"></div>
-                                <div class="bx_ui_slider_pricebar_V" style="left: 0%; right: 0%;"
-                                  id="colorAvailableActive_eccbc87e4b5ce2fe28308fd9f2a7baf3"></div>
-                                <div class="bx_ui_slider_range" id="drag_tracker_eccbc87e4b5ce2fe28308fd9f2a7baf3"
-                                  style="left: 0%; right: 0%;">
-                                  <a class="bx_ui_slider_handle left" style="left:0;" href="javascript:void(0)"
-                                    id="left_slider_eccbc87e4b5ce2fe28308fd9f2a7baf3"></a>
-                                  <a class="bx_ui_slider_handle right" style="right:0;" href="javascript:void(0)"
-                                    id="right_slider_eccbc87e4b5ce2fe28308fd9f2a7baf3"></a>
-                                </div>
-                              </div>
-                              <div style="opacity: 0;height: 1px;"></div>
-                            </div>
-                          </div>
+                        <div class="bx_filter_parameters_box_container">
+                          <button class="bx_filter_search_button" type="button" id="set_filter" name="set_filter">
+                            Показать </button>
+          
+                          <button class="bx_filter_search_reset" type="reset" id="del_filter" name="del_filter" data-href="">
+                            Сбросить </button>
                         </div>
                       </div>
                     </div>
-                    <div class="bx_filter_parameters_box active" data-expanded="Y" data-prop_code="hit"
-                      data-property_id="517">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Наши предложения <div class="char_name">
-                            <div class="props_list">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block ">
-                        <div class="bx_filter_parameters_box_container ">
-                          <div class="bx_filter_select_container">
-                            <div class="bx_filter_select_block" onclick="smartFilter.showDropDownPopup(this, '517')">
-                              <div class="bx_filter_select_text" data-role="currentOption">
-                                Все </div>
-                              <div class="bx_filter_select_arrow"></div>
-                              <div class="input_wr_all">
-                                <input style="display: none" type="radio" name="NEXT_SMART_FILTER_517"
-                                  id="all_NEXT_SMART_FILTER_517_2520684170" value="" data-title="Все">
-                                <input style="display: none" type="radio" name="NEXT_SMART_FILTER_517"
-                                  id="NEXT_SMART_FILTER_517_2520684170" value="2520684170" data-title="Хит">
-                                <input style="display: none" type="radio" name="NEXT_SMART_FILTER_517"
-                                  id="NEXT_SMART_FILTER_517_1904655245" value="1904655245" data-title="Новинка">
-                                <input style="display: none" type="radio" name="NEXT_SMART_FILTER_517"
-                                  id="NEXT_SMART_FILTER_517_1192990190" value="1192990190" data-title="Акция">
-                              </div>
-                              <div class="bx_filter_select_popup" data-role="dropdownContent" style="display: none;">
-                                <ul>
-                                  <li>
-                                    <label for="all_NEXT_SMART_FILTER_517_2520684170" class="bx_filter_param_label"
-                                      data-role="all_label_all_NEXT_SMART_FILTER_517_2520684170"
-                                      onclick="smartFilter.selectDropDownItem(this, 'all_NEXT_SMART_FILTER_517_2520684170')">
-                                      Все </label>
-                                  </li>
-                                  <li>
-                                    <label for="NEXT_SMART_FILTER_517_2520684170" class="bx_filter_param_label"
-                                      data-role="label_NEXT_SMART_FILTER_517_2520684170"
-                                      onclick="smartFilter.selectDropDownItem(this, 'NEXT_SMART_FILTER_517_2520684170')">Хит</label>
-                                  </li>
-                                  <li>
-                                    <label for="NEXT_SMART_FILTER_517_1904655245" class="bx_filter_param_label"
-                                      data-role="label_NEXT_SMART_FILTER_517_1904655245"
-                                      onclick="smartFilter.selectDropDownItem(this, 'NEXT_SMART_FILTER_517_1904655245')">Новинка</label>
-                                  </li>
-                                  <li>
-                                    <label for="NEXT_SMART_FILTER_517_1192990190" class="bx_filter_param_label"
-                                      data-role="label_NEXT_SMART_FILTER_517_1192990190"
-                                      onclick="smartFilter.selectDropDownItem(this, 'NEXT_SMART_FILTER_517_1192990190')">Акция</label>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box active" data-expanded="Y" data-prop_code="brand"
-                      data-property_id="518">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Бренд <div class="char_name">
-                            <div class="props_list">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block limited_block">
-                        <div class="bx_filter_parameters_box_container ">
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_4083830594"
-                            id="NEXT_SMART_FILTER_518_4083830594" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_518_4083830594" class="bx_filter_param_label   "
-                            for="NEXT_SMART_FILTER_518_4083830594">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="Beko">Beko</span>
-                            </span>
-                          </label>
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_2221768660"
-                            id="NEXT_SMART_FILTER_518_2221768660" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_518_2221768660" class="bx_filter_param_label   "
-                            for="NEXT_SMART_FILTER_518_2221768660">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="Electrolux">Electrolux</span>
-                            </span>
-                          </label>
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_1536423042"
-                            id="NEXT_SMART_FILTER_518_1536423042" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_518_1536423042" class="bx_filter_param_label   "
-                            for="NEXT_SMART_FILTER_518_1536423042">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="Thermex">Thermex</span>
-                            </span>
-                          </label>
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_518_349332037"
-                            id="NEXT_SMART_FILTER_518_349332037" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_518_349332037" class="bx_filter_param_label  last "
-                            for="NEXT_SMART_FILTER_518_349332037">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="Атлант">Атлант</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box " data-expanded="N" data-prop_code="in_stock"
-                      data-property_id="597">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_block limited_block" style="display:block;">
-                        <div class="bx_filter_parameters_box_container ">
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_597_2184750849"
-                            id="NEXT_SMART_FILTER_597_2184750849" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_597_2184750849" class="bx_filter_param_label  last "
-                            for="NEXT_SMART_FILTER_597_2184750849">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="В наличии">В наличии</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box active" data-expanded="Y" data-prop_code="prop_2033"
-                      data-property_id="520">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Тип <div class="char_name">
-                            <div class="props_list">
-                              <div class="hint"><span class="icon"><i>?</i></span>
-                                <div class="tooltip" style="display: none;">Пример подсказки</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block limited_block">
-                        <div class="bx_filter_parameters_box_container ">
-                          <div class="filter label_block radio">
-                            <input type="radio" value="" name="NEXT_SMART_FILTER_520"
-                              id="all_NEXT_SMART_FILTER_520_1579660059" onclick="smartFilter.click(this)">
-                            <label class="bx_filter_param_label" for="all_NEXT_SMART_FILTER_520_1579660059">
-                              <span class="bx_filter_input_checkbox"><span>Все</span></span>
-                            </label>
-                          </div>
-                          <div class="filter label_block radio">
-                            <input type="radio" value="1579660059" name="NEXT_SMART_FILTER_520"
-                              id="NEXT_SMART_FILTER_520_1579660059" onclick="smartFilter.click(this)">
-                            <label data-role="label_NEXT_SMART_FILTER_520_1579660059" class="bx_filter_param_label "
-                              for="NEXT_SMART_FILTER_520_1579660059">
-                              <span class="bx_filter_input_checkbox">
-                                <span class="bx_filter_param_text1" title="накопительный">накопительный</span>
-                              </span>
-                            </label>
-                          </div>
-                          <div class="filter label_block radio">
-                            <input type="radio" value="4107885951" name="NEXT_SMART_FILTER_520"
-                              id="NEXT_SMART_FILTER_520_4107885951" onclick="smartFilter.click(this)">
-                            <label data-role="label_NEXT_SMART_FILTER_520_4107885951" class="bx_filter_param_label "
-                              for="NEXT_SMART_FILTER_520_4107885951">
-                              <span class="bx_filter_input_checkbox">
-                                <span class="bx_filter_param_text1" title="проточный">проточный</span>
-                              </span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box " data-expanded="N" data-prop_code="prop_159"
-                      data-property_id="539">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Вес, кг <div class="char_name">
-                            <div class="props_list">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block " style="display:none;">
-                        <div class="bx_filter_parameters_box_container ">
-                          <div class="wrapp_all_inputs wrap_md">
-                            <div class="wrapp_change_inputs iblock">
-                              <div class="bx_filter_parameters_box_container_block">
-                                <div class="bx_filter_input_container form-control bg">
-                                  <input class="min-price" type="text" name="NEXT_SMART_FILTER_539_MIN"
-                                    id="NEXT_SMART_FILTER_539_MIN" value="" size="5" placeholder="2"
-                                    onkeyup="smartFilter.keyup(this)">
-                                </div>
-                              </div>
-                              <div class="bx_filter_parameters_box_container_block">
-                                <div class="bx_filter_input_container form-control bg">
-                                  <input class="max-price" type="text" name="NEXT_SMART_FILTER_539_MAX"
-                                    id="NEXT_SMART_FILTER_539_MAX" value="" size="5" placeholder="54"
-                                    onkeyup="smartFilter.keyup(this)">
-                                </div>
-                              </div>
-                              <span class="divider"></span>
-                              <div style="clear: both;"></div>
-                            </div>
-                            <div class="wrapp_slider iblock">
-                              <div class="bx_ui_slider_track" id="drag_track_539">
-                                <div class="bx_ui_slider_part first p1"><span>2</span></div>
-                                <div class="bx_ui_slider_part p2"><span>15</span></div>
-                                <div class="bx_ui_slider_part p3"><span>28</span></div>
-                                <div class="bx_ui_slider_part p4"><span>41</span></div>
-                                <div class="bx_ui_slider_part last p5"><span>54</span></div>
-                                <div class="bx_ui_slider_pricebar_VD" style="left: 0;right: 0;"
-                                  id="colorUnavailableActive_539">
-                                </div>
-                                <div class="bx_ui_slider_pricebar_VN" style="left: 0%; right: 0%;"
-                                  id="colorAvailableInactive_539">
-                                </div>
-                                <div class="bx_ui_slider_pricebar_V" style="left: 0%; right: 0%;"
-                                  id="colorAvailableActive_539">
-                                </div>
-                                <div class="bx_ui_slider_range" id="drag_tracker_539" style="left: 0;right: 0;">
-                                  <a class="bx_ui_slider_handle left" style="left:0;" href="javascript:void(0)"
-                                    id="left_slider_539"></a>
-                                  <a class="bx_ui_slider_handle right" style="right:0;" href="javascript:void(0)"
-                                    id="right_slider_539"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box " data-expanded="N" data-prop_code="prop_2017"
-                      data-property_id="541">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Тип управления <div class="char_name">
-                            <div class="props_list">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block limited_block" style="display:none;">
-                        <div class="bx_filter_parameters_box_container ">
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_541_3114074007"
-                            id="NEXT_SMART_FILTER_541_3114074007" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_541_3114074007" class="bx_filter_param_label   "
-                            for="NEXT_SMART_FILTER_541_3114074007">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="механический">механический</span>
-                            </span>
-                          </label>
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_541_2119696936"
-                            id="NEXT_SMART_FILTER_541_2119696936" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_541_2119696936" class="bx_filter_param_label   "
-                            for="NEXT_SMART_FILTER_541_2119696936">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="программируемый">программируемый</span>
-                            </span>
-                          </label>
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_541_30553935"
-                            id="NEXT_SMART_FILTER_541_30553935" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_541_30553935" class="bx_filter_param_label  last "
-                            for="NEXT_SMART_FILTER_541_30553935">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="ручное">ручное</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box " data-expanded="N" data-prop_code="prop_2026"
-                      data-property_id="542">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Объем, л <div class="char_name">
-                            <div class="props_list">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block " style="display:none;">
-                        <div class="bx_filter_parameters_box_container ">
-                          <div class="wrapp_all_inputs wrap_md">
-                            <div class="wrapp_change_inputs iblock">
-                              <div class="bx_filter_parameters_box_container_block">
-                                <div class="bx_filter_input_container form-control bg">
-                                  <input class="min-price" type="text" name="NEXT_SMART_FILTER_542_MIN"
-                                    id="NEXT_SMART_FILTER_542_MIN" value="" size="5" placeholder="32"
-                                    onkeyup="smartFilter.keyup(this)">
-                                </div>
-                              </div>
-                              <div class="bx_filter_parameters_box_container_block">
-                                <div class="bx_filter_input_container form-control bg">
-                                  <input class="max-price" type="text" name="NEXT_SMART_FILTER_542_MAX"
-                                    id="NEXT_SMART_FILTER_542_MAX" value="" size="5" placeholder="120"
-                                    onkeyup="smartFilter.keyup(this)">
-                                </div>
-                              </div>
-                              <span class="divider"></span>
-                              <div style="clear: both;"></div>
-                            </div>
-                            <div class="wrapp_slider iblock">
-                              <div class="bx_ui_slider_track" id="drag_track_542">
-                                <div class="bx_ui_slider_part first p1"><span>32</span></div>
-                                <div class="bx_ui_slider_part p2"><span>54</span></div>
-                                <div class="bx_ui_slider_part p3"><span>76</span></div>
-                                <div class="bx_ui_slider_part p4"><span>98</span></div>
-                                <div class="bx_ui_slider_part last p5"><span>120</span></div>
-                                <div class="bx_ui_slider_pricebar_VD" style="left: 0;right: 0;"
-                                  id="colorUnavailableActive_542">
-                                </div>
-                                <div class="bx_ui_slider_pricebar_VN" style="left: 0%; right: 0%;"
-                                  id="colorAvailableInactive_542">
-                                </div>
-                                <div class="bx_ui_slider_pricebar_V" style="left: 0%; right: 0%;"
-                                  id="colorAvailableActive_542">
-                                </div>
-                                <div class="bx_ui_slider_range" id="drag_tracker_542" style="left: 0;right: 0;">
-                                  <a class="bx_ui_slider_handle left" style="left:0;" href="javascript:void(0)"
-                                    id="left_slider_542"></a>
-                                  <a class="bx_ui_slider_handle right" style="right:0;" href="javascript:void(0)"
-                                    id="right_slider_542"></a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                    <div class="bx_filter_parameters_box " data-expanded="N" data-prop_code="prop_2027"
-                      data-property_id="543">
-                      <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                        class="bx_filter_container_modef"></span>
-                      <div class="bx_filter_parameters_box_title icons_fa">
-                        <div>
-                          Гриль <div class="char_name">
-                            <div class="props_list">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bx_filter_block limited_block" style="display:none;">
-                        <div class="bx_filter_parameters_box_container ">
-                          <input type="checkbox" value="Y" name="NEXT_SMART_FILTER_543_2778574152"
-                            id="NEXT_SMART_FILTER_543_2778574152" onclick="smartFilter.click(this)">
-                          <label data-role="label_NEXT_SMART_FILTER_543_2778574152" class="bx_filter_param_label  last "
-                            for="NEXT_SMART_FILTER_543_2778574152">
-                            <span class="bx_filter_input_checkbox">
-                              <span class="bx_filter_param_text" title="тэновый">тэновый</span>
-                            </span>
-                          </label>
-                        </div>
-                        <div class="clb"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="clb"></div>
-                  <div class="bx_filter_button_box active">
-                    <div class="bx_filter_block">
-                      <div class="bx_filter_parameters_box_container">
-                        <div class="bx_filter_popup_result right" id="modef_mobile" style="display:none">
-                          Выбрано <span data-f="Показать" data-fi="товар" data-fr="товара" data-frm="товаров"
-                            id="modef_num_mobile">0</span> <a rel="nofollow"
-                            href="/catalog/bytovaya_tekhnika/filter/clear/apply/"
-                            class="btn btn-default white white-bg">Показать</a>
-                        </div>
-                        <div class="bx_filter_popup_result right" id="modef" style="display:none">
-                          Выбрано <span id="modef_num">0</span> <a rel="nofollow"
-                            href="/catalog/bytovaya_tekhnika/filter/clear/apply/"
-                            class="btn btn-default white white-bg">Показать</a>
-                        </div>
-                        <input class="bx_filter_search_button btn btn-default" type="button" id="set_filter"
-                          name="set_filter" data-href="" value="Показать">
-                        <button class="bx_filter_search_reset btn btn-default white grey" type="reset" id="del_filter"
-                          name="del_filter" data-href="">
-                          Сбросить </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-                <div style="clear: both;"></div>
+                  </form>
+                  <div style="clear: both;"></div>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

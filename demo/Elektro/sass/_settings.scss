@@ -38,7 +38,8 @@ h5 {
 }
 span,
 li,
-p {
+p,
+table {
   line-height: 1.5;
 }
 h1 {
@@ -298,6 +299,16 @@ img {
   }
 }
 
+.btn-mobile-search {
+  padding: 8px 13px;
+  background-color: $dark-blue;
+  color: white;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
 .sort-button {
   font-size: 14px;
   color: $light-grey;
@@ -363,7 +374,7 @@ img {
   flex-wrap: wrap;
 }
 
-.align-items-start{
+.align-items-start {
   align-items: flex-start;
 }
 .d-block {
@@ -453,6 +464,11 @@ img {
 
 .border-bottom {
   border-bottom: 1px solid $border;
+}
+
+.top-0 {
+  top: 0 !important;
+  visibility: visible !important;
 }
 
 .icon-margin {
@@ -1044,6 +1060,7 @@ ul.social {
   justify-content: center;
   li {
     margin: 0 3px;
+    border: none !important;
 
     a {
       padding: 5px 12px;
@@ -1051,6 +1068,7 @@ ul.social {
       color: $black;
       border-radius: 2px;
       cursor: pointer;
+      display: inline-block;
 
       &:hover,
       &.active {
@@ -1353,5 +1371,61 @@ ul.social {
 
   &:hover {
     box-shadow: $bs-card;
+  }
+}
+
+/* js-to-top */
+.js-to-top {
+  position: fixed;
+  z-index: 999;
+  right: 30px;
+  bottom: 30px;
+  width: 45px;
+  height: 45px;
+  background-color: $green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  
+
+  .i-down {
+    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+  }
+
+  @include lg-460{
+    display: none !important;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+
+    .i-down {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+
+table{
+  width: 100%;
+  tbody{
+    width: 100%;
+    
+    tr{
+      width: 100%;
+      border: 1px solid $border;
+      
+      
+      th{
+        width: 100%;
+        padding: 10px;
+      }
+    }
   }
 }

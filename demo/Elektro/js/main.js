@@ -29,6 +29,30 @@ $(document).ready(function () {
     }
   });
 
+  
+
+  /* Mobile Search Button mobile-search__overlay*/
+  $(".js-mobile-search-open").click(function (e) {
+    e.preventDefault();
+    $(".mobile-search__wrapper").addClass("top-0");
+    $(".mobile-search__block").addClass("top-0");
+    $("body").addClass("lock");
+    $("#js-focus").focus();
+  });
+
+  $(".js-mobile-search-close").click(function (e) {
+    e.preventDefault();
+    $(".mobile-search__wrapper").removeClass("top-0");
+    $(".mobile-search__block").removeClass("top-0");
+    $("body").removeClass("lock");
+  });
+  $(".mobile-search__overlay").click(function (e) {
+    e.preventDefault();
+    $(".mobile-search__wrapper").removeClass("top-0");
+    $(".mobile-search__block").removeClass("top-0");
+    $("body").removeClass("lock");
+  });
+
   /* Продукты Табы */
   $(".product__link li:first-child").addClass("active");
   $(".js-product-content").hide();
@@ -108,20 +132,20 @@ $(document).ready(function () {
   /* Filter Mobile */
 
   $(".sort-button-mobile").click(function () {
-    $(".catalog-page__filter").addClass("catalog-page__filter_active");
+    $(".catalog-page__filter_block").addClass("catalog-page__filter_block_active");
     $(".catalog-page__filter_bitrix").addClass("catalog-page__filter_bitrix_active");
     $(".catalog-page__filter_overlay").addClass("catalog-page__filter_overlay_active");
     $("body").addClass("lock");
   });
 
   $(".catalog-page__filter_overlay").click(function () {
-    $(".catalog-page__filter").removeClass("catalog-page__filter_active");
+    $(".catalog-page__filter_block").removeClass("catalog-page__filter_block_active");
     $(".catalog-page__filter_bitrix").removeClass("catalog-page__filter_bitrix_active");
     $(".catalog-page__filter_overlay").removeClass("catalog-page__filter_overlay_active");
     $("body").removeClass("lock");
   });
   $(".bx_filter_parameters_box_title").after().click(function () {
-    $(".catalog-page__filter").removeClass("catalog-page__filter_active");
+    $(".catalog-page__filter_block").removeClass("catalog-page__filter_block_active");
     $(".catalog-page__filter_bitrix").removeClass("catalog-page__filter_bitrix_active");
     $(".catalog-page__filter_overlay").removeClass("catalog-page__filter_overlay_active");
     $("body").removeClass("lock");
@@ -220,7 +244,7 @@ $(document).ready(function () {
     $("#js-modal-text").fadeIn("fast");
     $("body").addClass("lock")
   });
-  
+
   $(".modal__overlay").click(function (e) {
     e.preventDefault();
     $(".modal").fadeOut("fast");
@@ -234,7 +258,23 @@ $(document).ready(function () {
 
 
   /* ionRangeSlider */
-   $(".js-range-slider").ionRangeSlider();
+  $(".js-range-slider").ionRangeSlider();
+
+  /* Scroll to top */
+  $(".js-to-top").click(function (e) {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+  });
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 1000) {
+      $(".js-to-top").fadeIn();
+    } else {
+      $(".js-to-top").fadeOut();
+    }
+  });
+
+  /* Hover Open Catalog js-mobile-menu-open*/
 
 });
 
@@ -380,6 +420,20 @@ var galleryTop = new Swiper('.product__gallery .gallery-top', {
   }
 });
 
+/* Compare bottom */
+var swiper = new Swiper('.compare__bottom .swiper-container', {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  /* mousewheel: true, */
+});
 
 
 /* PLEASE DO NOT COPY AND PASTE THIS CODE. */

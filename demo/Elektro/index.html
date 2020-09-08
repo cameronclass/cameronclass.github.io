@@ -101,7 +101,19 @@
         <div class="header-bottom__fixed-menu">
           <ul class="fixed-menu__list">
             <li class="mobile-search">
-              <a href="tel:+75556661234"><span class="i-mobile-search"></span></a>
+              <a class="js-mobile-search-open"><span class="i-mobile-search"></span></a>
+              <div class="mobile-search__wrapper">
+                <div class="mobile-search__overlay"></div>
+                <form class="mobile-search__block">
+                  <div class="mobile-search__input"><input type="text" id="js-focus" placeholder="Поиск"></div>
+                  <div class="mobile-search__btn">
+                    <button type="submit" class="btn-border btn-mobile-search">Найти</button>
+                    <button type="button" class="mobile-search-close js-mobile-search-close">
+                      <span class="i-close"></span>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </li>
             <li class="mobile-phone">
               <a href="tel:+75556661234"><span class="i-mobile-tel"></span></a>
@@ -3101,6 +3113,10 @@
         </div>
       </div>
     </section>
+    <!-- js-to-top -->
+    <button class="js-to-top">
+      <span class="i-down"></span>
+    </button>
   </main>
   <!-- Footer -->
   <footer class="container-fluid footer">
@@ -3250,6 +3266,7 @@
       </div>
     </div>
   </div>
+  <!-- To Top button -->
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
