@@ -19,8 +19,8 @@
     }
   }
 
-  .card-30{
-    @include lg-1200{
+  .card-30 {
+    @include lg-1200 {
       margin-top: 15px;
     }
   }
@@ -34,6 +34,43 @@
     border: 1px solid $border;
     &_image {
       width: 40%;
+
+      .product__tags {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+      }
+      .product-info__compare {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        z-index: 2;
+
+        span {
+          filter: invert(1);
+        }
+
+        a {
+          width: 38px;
+          height: 38px;
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: $dark-blue;
+            border-radius: 50%;
+            opacity: 0.5;
+
+            span {
+              filter: invert(0);
+            }
+          }
+        }
+      }
 
       @include lg-500 {
         width: 100%;
@@ -49,7 +86,7 @@
           padding: 0;
         }
 
-        @include lg-500{
+        @include lg-500 {
           flex-direction: row;
         }
       }
@@ -83,7 +120,7 @@
           flex-direction: row;
         }
 
-        @include lg-500{
+        @include lg-500 {
           flex-direction: column;
         }
       }
@@ -140,11 +177,11 @@
         border-bottom: 1px solid $border;
         padding: 10px 0 18px;
 
-        &_block{
+        &_block {
           width: 70%;
           display: flex;
 
-          @include lg-720{
+          @include lg-720 {
             flex-direction: column;
           }
         }
@@ -158,7 +195,7 @@
         .articul {
           width: 50%;
 
-          @include lg-720{
+          @include lg-720 {
             width: 100%;
           }
         }
@@ -171,7 +208,7 @@
           font-size: 13px;
           color: $grey;
 
-          @include lg-720{
+          @include lg-720 {
             margin-top: 8px;
           }
         }
@@ -231,7 +268,7 @@
           &__controls {
             margin-right: 15px;
 
-            @include lg-460{
+            @include lg-460 {
               display: flex;
             }
           }
@@ -245,12 +282,10 @@
               padding: 11px 3px;
             }
 
-            @include lg-460{
+            @include lg-460 {
               width: 50%;
             }
           }
-
-          
         }
 
         .fast-buy {
@@ -375,7 +410,7 @@
 
     h2 {
       width: 50%;
-      @include lg-600{
+      @include lg-600 {
         width: 100%;
       }
     }
@@ -383,7 +418,7 @@
     .btn-border {
       color: $red;
 
-      @include lg-600{
+      @include lg-600 {
         display: none;
       }
 
@@ -400,7 +435,7 @@
   .reviews__name {
     margin-right: 15px;
 
-    @include lg-600{
+    @include lg-600 {
       width: 100%;
       margin-right: 0;
     }
@@ -431,7 +466,7 @@
       }
     }
 
-    @include lg-990{
+    @include lg-990 {
       display: none;
     }
   }
@@ -489,38 +524,33 @@
   }
 }
 
-
-
-
-
 /* Brands-page */
 
-.brands-page{
+.brands-page {
   margin: 30px 0;
-  p{
+  p {
     margin: 30px 0;
   }
 
-  &__block{
-    
+  &__block {
   }
 
-  &__list{
+  &__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
 
-    @include lg-1025{
+    @include lg-1025 {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @include lg-720{
+    @include lg-720 {
       grid-template-columns: 1fr 1fr;
       grid-gap: 15px;
     }
 
-    li{
-      a{
+    li {
+      a {
         display: flex;
         align-items: center;
         height: 165px;
@@ -529,20 +559,19 @@
         border: 1px solid $border;
         transition: 200ms ease;
 
-        @include lg-720{
+        @include lg-720 {
           padding: 0 20px;
           height: 130px;
         }
 
-
-        img{
+        img {
           width: 80%;
           height: 50px;
           object-fit: contain;
           margin: 0 auto;
         }
 
-        &:hover{
+        &:hover {
           box-shadow: $bs-card;
         }
       }

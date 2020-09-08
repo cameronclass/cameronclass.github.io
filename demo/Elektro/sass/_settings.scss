@@ -623,6 +623,38 @@ img {
     }
   }
 
+  &__compare {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 2;
+
+    span {
+      filter: invert(1);
+      width: 15px;
+      height: 15px;
+    }
+
+    a {
+      width: 32px;
+      height: 32px;
+       margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $dark-blue;
+        border-radius: 50%;
+
+        span {
+          filter: invert(0);
+        }
+      }
+    }
+  }
+
   img {
     width: 100%;
   }
@@ -1117,6 +1149,7 @@ ul.social {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 5px;
+    border: none;
 
     td {
       width: 100%;
@@ -1389,15 +1422,13 @@ ul.social {
   justify-content: center;
   display: none;
 
-  
-
   .i-down {
     transform: rotate(180deg);
     width: 20px;
     height: 20px;
   }
 
-  @include lg-460{
+  @include lg-460 {
     display: none !important;
     right: 20px;
     bottom: 20px;
@@ -1411,23 +1442,21 @@ ul.social {
   }
 }
 
-
-table{
+table {
   width: 100%;
-  tbody{
+  tbody {
     width: 100%;
-    
-    tr{
+
+    tr {
       width: 100%;
       border: 1px solid $border;
-      
-      
-      th{
+
+      th {
         width: 100%;
         padding: 14px 20px;
         font-size: 14px;
 
-        @include lg-720{
+        @include lg-720 {
           padding: 12px 14px;
         }
       }
