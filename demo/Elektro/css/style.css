@@ -2235,7 +2235,7 @@ table {
         .footer__nav h5::after {
           content: "";
           margin-left: 18px;
-          background-image: url(../../img/icons/arrow-down.svg);
+          background-image: url(../img/icons/arrow-down.svg);
           background-repeat: no-repeat;
           background-size: contain;
           display: inline-block;

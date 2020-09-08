@@ -27,7 +27,7 @@
         &::after {
           content: "";
           margin-left: 18px;
-          @include icon(url(../../img/icons/arrow-down.svg), 10px, 10px);
+          @include icon(url(../img/icons/arrow-down.svg), 10px, 10px);
         }
       }
     }
