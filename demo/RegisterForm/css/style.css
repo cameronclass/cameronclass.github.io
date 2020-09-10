@@ -167,8 +167,9 @@
         -ms-flex: 1;
             flex: 1;
     padding: 12px 10px;
-    color: #fff;
-    cursor: pointer; }
+    color: black;
+    cursor: pointer;
+    font-size: 20px; }
 
 .register-input {
   width: 100%;
