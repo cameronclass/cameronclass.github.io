@@ -15,7 +15,7 @@
   }
 
   &__wrapper {
-    width: 75%;
+    width: 1201px;
     height: auto;
     margin: 40px auto;
     background: rgb(26, 33, 119);
@@ -50,12 +50,12 @@
     flex-wrap: wrap;
   }
 
-  &__send{
+  &__send {
     width: 100%;
     margin: 30px 0 10px;
     display: block;
 
-    button{
+    button {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -71,22 +71,22 @@
       cursor: pointer;
       transition: 200ms ease;
 
-      &:hover{
+      &:hover {
         background-color: darken($color: #fc6568, $amount: 5%);
       }
     }
   }
 
-  &__close{
+  &__close {
     position: absolute;
     top: 30px;
     right: 30px;
     cursor: pointer;
 
-    span{
+    span {
       transform: rotate(45deg);
 
-      &:hover{
+      &:hover {
         opacity: 0.8;
       }
     }
@@ -167,7 +167,7 @@
       }
     }
 
-    .help-block{
+    .help-block {
       position: absolute;
       top: 35px;
     }
@@ -210,7 +210,7 @@
   box-sizing: border-box;
   margin-bottom: 25px;
   &__btn {
-    padding: 12px 10px;
+    padding: 12px 25px 12px 10px;
     cursor: pointer;
     position: relative;
     user-select: none;
@@ -244,33 +244,34 @@
     display: none;
   }
 
-  &-add, &-delete {
+  &-add,
+  &-delete {
     button {
       color: #fac04f;
       font-size: 18px;
       font-weight: bold;
       outline: none;
       border: none;
-      border-bottom: 1px dotted;
+      border-bottom: 1px dashed;
       background-color: transparent;
       cursor: pointer;
     }
   }
-  &-delete{
-    button{
+  &-delete {
+    button {
       float: right;
       font-size: 16px;
     }
   }
 }
 
-.help-block{
+.help-block {
   color: #fac04f;
   font-size: 14px;
   margin-top: 5px;
 }
 
-.has-error{
+.has-error {
   border-color: #fac04f !important;
 }
 
@@ -290,4 +291,57 @@
 
 .i-plus {
   @include icon(url(../img/icon-plus.png), 30px, 30px);
+}
+
+@media screen and (max-width: 1200px) {
+  .register-modal__wrapper {
+    width: 720px;
+  }
+
+  form > .column-6 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .register-modal .column-6 {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .register-modal__close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .register-modal__wrapper_title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .register-form__title {
+    font-size: 22px;
+  }
+
+  .register-toggle__btn_title {
+    font-size: 18px;
+  }
+
+  .register-toggle__btn_icon span {
+    width: 25px;
+    height: 25px;
+  }
+
+  .register-modal__wrapper {
+    width: 90%;
+  }
+
+  .register-modal__send button {
+    position: static;
+    transform: none;
+    left: 0;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+  }
 }
