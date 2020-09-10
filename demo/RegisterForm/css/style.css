@@ -167,9 +167,12 @@
         -ms-flex: 1;
             flex: 1;
     padding: 12px 10px;
-    color: black;
+    color: white;
     cursor: pointer;
     font-size: 20px; }
+    .register-form select option {
+      color: black;
+      padding: 10px; }
 
 .register-input {
   width: 100%;
