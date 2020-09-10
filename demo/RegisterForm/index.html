@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <!-- MetaTags -->
+  <meta name="description" content="Description of the page less than 150 characters">
+  <meta name="keywords" content="KeyWords">
+  <!-- OG tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:title" content="Content Title">
+  <meta property="og:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
+  <meta property="og:description" content="Description Here">
+  <meta property="og:site_name" content="Site Name">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Site Name">
+  <meta name="twitter:description" content="Description Here">
+  <meta name="twitter:image" content="https://www.developmentlogics.com/wp-content/uploads/2017/07/4.jpg">
+  <!-- Favivon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="https://example.com/favicon.png">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="/custom-icon.png">
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fonts and Icons-->
+  <title>New Project</title>
+</head>
+
+<body>
+  <button class="js-modal-open">Регистрация</button>
+  <div class="register-modal">
+    <div class="register-modal__overlay"></div>
+    <div class="register-modal__wrapper">
+      <h3 class="register-modal__wrapper_title">Регистрация</h3>
+      <form method="POST" action="index.html" class="register-modal__row">
+        <div class="column-6">
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">Названия Команды</div>
+              <div class="register-form__helper">Используйте кириллицу, цифры. Не более 10 знаков</div>
+              <div class="register-form__important">
+                <span class="i-important"></span>
+                <span>Пожалуйста заполните названия своей команды, так как в дальнейшем вам придется часто его
+                  использовать!</span>
+              </div>
+            </div>
+            <div class="column-6">
+              <input type="text" name="formCommand" class="register-input" placeholder="Введите названия команды">
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">Кодовое слово</div>
+              <div class="register-form__helper">Используйте кириллицу, цифры. Не более 10 знаков</div>
+              <div class="register-form__important">
+                <span class="i-important"></span>
+                <span>Пожалуйста, запомните кодовое слово, так как в дальнейшем вам придется часто его
+                  использовать!</span>
+              </div>
+            </div>
+            <div class="column-6">
+              <input type="text" name="formCode" class="register-input" placeholder="Введите кодовое слово">
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">ФИО капитана</div>
+              <div class="register-form__helper">Используйте кириллицу</div>
+            </div>
+            <div class="column-6">
+              <input type="text" name="formName" class="register-input" placeholder="Введите ФИО">
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">E-mail</div>
+            </div>
+            <div class="column-6">
+              <input type="email" name="formEmail" data-msg="Введите правильный E-mail!" class="register-input"
+                placeholder="Например: name@mail.com">
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">Телефон</div>
+            </div>
+            <div class="column-6">
+              <input type="tel" name="formNumber" data-msg="Введите правильный номер телефона!" class="register-input"
+                placeholder="Например: 81111111111">
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">Регион</div>
+            </div>
+            <div class="column-6">
+              <div class="register-select">
+                <select name="formRegion">
+                  <option selected disabled>Выберите регион</option>
+                  <option value="1">Регион 1</option>
+                  <option value="2">Регион 2</option>
+                  <option value="3">Регион 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">Возраст</div>
+            </div>
+            <div class="column-6">
+              <div class="register-select">
+                <select name="formYear">
+                  <option selected disabled>Выберите возраст</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="register-form register-modal__row">
+            <div class="column-6">
+              <div class="register-form__title">Откуда узнали о фестивале?</div>
+            </div>
+            <div class="column-6">
+              <div class="register-select">
+                <select name="formFrom">
+                  <option selected disabled>Выберите вариант</option>
+                  <option value="1">Вариант 1</option>
+                  <option value="2">Вариант 2</option>
+                  <option value="3">Вариант 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-6">
+          <div class="register-toggle-wrapper">
+            <div class="register-toggle">
+              <div class="register-toggle__btn">
+                <div class="register-toggle__btn_block">
+                  <div class="register-toggle__btn_title">
+                    Добавить члена команды
+                  </div>
+                  <div class="register-toggle__btn_helper">
+                    Введите информацию об участнике
+                  </div>
+                </div>
+                <div class="register-toggle__btn_icon">
+                  <span class="i-plus"></span>
+                </div>
+              </div>
+              <div class="register-toggle__content">
+                <div class="register-form register-modal__row margin-top-1">
+                  <div class="column-6">
+                    <div class="register-form__title">ФИО</div>
+                    <div class="register-form__helper">Используйте кириллицу</div>
+                  </div>
+                  <div class="column-6">
+                    <input type="text" class="register-input" placeholder="Введите ФИО">
+                  </div>
+                </div>
+                <div class="register-form register-modal__row">
+                  <div class="column-6">
+                    <div class="register-form__title">Регион</div>
+                  </div>
+                  <div class="column-6">
+                    <div class="register-select">
+                      <select>
+                        <option selected disabled>Выберите регион</option>
+                        <option value="1">Регион 1</option>
+                        <option value="2">Регион 2</option>
+                        <option value="3">Регион 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="register-form register-modal__row">
+                  <div class="column-6">
+                    <div class="register-form__title">Возраст</div>
+                  </div>
+                  <div class="column-6">
+                    <div class="register-select">
+                      <select>
+                        <option selected disabled>Выберите возраст</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="register-toggle">
+              <div class="register-toggle__btn">
+                <div class="register-toggle__btn_block">
+                  <div class="register-toggle__btn_title">
+                    Добавить члена команды
+                  </div>
+                  <div class="register-toggle__btn_helper">
+                    Введите информацию об участнике
+                  </div>
+                </div>
+                <div class="register-toggle__btn_icon">
+                  <span class="i-plus"></span>
+                </div>
+              </div>
+              <div class="register-toggle__content">
+                <div class="register-form register-modal__row margin-top-1">
+                  <div class="column-6">
+                    <div class="register-form__title">ФИО</div>
+                    <div class="register-form__helper">Используйте кириллицу</div>
+                  </div>
+                  <div class="column-6">
+                    <input type="text" class="register-input" placeholder="Введите ФИО">
+                  </div>
+                </div>
+                <div class="register-form register-modal__row">
+                  <div class="column-6">
+                    <div class="register-form__title">Регион</div>
+                  </div>
+                  <div class="column-6">
+                    <div class="register-select">
+                      <select>
+                        <option selected disabled>Выберите регион</option>
+                        <option value="1">Регион 1</option>
+                        <option value="2">Регион 2</option>
+                        <option value="3">Регион 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="register-form register-modal__row">
+                  <div class="column-6">
+                    <div class="register-form__title">Возраст</div>
+                  </div>
+                  <div class="column-6">
+                    <div class="register-select">
+                      <select>
+                        <option selected disabled>Выберите возраст</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="register-form register-modal__row">
+                  <div class="column-6">
+                  </div>
+                  <div class="column-6 register-toggle-delete">
+                    <button type="button">Удалить участника</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-toggle-add">
+            <button type="button">Добавить еще одного члена команды (не более 4)</button>
+          </div>
+        </div>
+
+        <div class="register-modal__send">
+          <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+        <!-- 
+        <input id="txtNumber" name="txtNumber" type="text" />
+        <br />
+        <input type="submit" name="submit" value="Submit"> -->
+      </form>
+      <div class="register-modal__close">
+        <span class="i-plus"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
