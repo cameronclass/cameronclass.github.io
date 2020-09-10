@@ -134,7 +134,7 @@ $(document).ready(function () {
       formName: {
         required: "Введите ФИО!"
       },
-      formName: {
+      formEmail: {
         required: "Введите Email!"
       },
       formNumber: {
