@@ -220,7 +220,8 @@
       font-size: 13px;
       -webkit-transition: 100ms ease;
       -o-transition: 100ms ease;
-      transition: 100ms ease; }
+      transition: 100ms ease;
+      text-transform: capitalize; }
     .register-toggle__btn_icon {
       position: absolute;
       right: 5px;
@@ -247,6 +248,8 @@
     border-bottom: 1px dashed;
     background-color: transparent;
     cursor: pointer; }
+  .register-toggle-add span, .register-toggle-delete span {
+    display: none; }
   .register-toggle-delete button {
     float: right;
     font-size: 16px; }
@@ -261,6 +264,12 @@
 
 .visibility-none {
   opacity: 0; }
+
+.display-block {
+  display: block !important; }
+
+.display-none {
+  display: none !important; }
 
 .margin-top-1 {
   margin-top: 10px; }

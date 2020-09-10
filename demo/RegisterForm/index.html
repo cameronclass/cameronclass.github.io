@@ -166,7 +166,7 @@
                     <div class="register-form__helper">Используйте кириллицу</div>
                   </div>
                   <div class="column-6">
-                    <input type="text" class="register-input" placeholder="Введите ФИО">
+                    <input type="text" class="register-input toggleName" placeholder="Введите ФИО">
                   </div>
                 </div>
                 <div class="register-form register-modal__row">
@@ -175,7 +175,7 @@
                   </div>
                   <div class="column-6">
                     <div class="register-select">
-                      <select>
+                      <select class="toggleSelect1">
                         <option selected disabled>Выберите регион</option>
                         <option value="1">Регион 1</option>
                         <option value="2">Регион 2</option>
@@ -190,7 +190,7 @@
                   </div>
                   <div class="column-6">
                     <div class="register-select">
-                      <select>
+                      <select class="toggleSelect2">
                         <option selected disabled>Выберите возраст</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -205,6 +205,7 @@
 
           <div class="register-toggle-add">
             <button type="button">Добавить еще одного члена команды (не более 4)</button>
+            <span>Вы достигли максимума членов команды!</span>
           </div>
         </div>
 
@@ -219,7 +220,7 @@
   </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"> -->
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"> -->
   </script>
   <script src="js/main.js"></script>
 </body>

@@ -224,6 +224,7 @@
     &_helper {
       font-size: 13px;
       transition: 100ms ease;
+      text-transform: capitalize;
     }
 
     &_icon {
@@ -256,6 +257,10 @@
       background-color: transparent;
       cursor: pointer;
     }
+
+    span{
+      display: none;
+    }
   }
   &-delete {
     button {
@@ -277,6 +282,14 @@
 
 .visibility-none {
   opacity: 0;
+}
+
+.display-block{
+  display: block !important;
+}
+
+.display-none{
+  display: none !important;
 }
 
 .margin-top-1 {
