@@ -161,7 +161,7 @@
       opacity: 0.5; }
     .register-form .register-select .help-block {
       position: absolute;
-      top: 35px; }
+      top: 40px; }
   .register-form select {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -169,7 +169,7 @@
     padding: 12px 10px;
     color: white;
     cursor: pointer;
-    font-size: 20px; }
+    font-size: 16px; }
     .register-form select option {
       color: black;
       padding: 10px; }
