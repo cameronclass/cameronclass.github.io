@@ -192,6 +192,9 @@ img {
   text-align: center; }
   .about-platform__title {
     margin-bottom: 50px; }
+  .about-platform__logo {
+    width: 355px;
+    margin: 0 auto 50px; }
   .about-platform__text {
     font-weight: 500;
     font-size: 23px;
