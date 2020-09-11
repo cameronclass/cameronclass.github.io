@@ -1,0 +1,25 @@
+.royal-butler {
+  padding: 150px 0;
+
+  &__title {
+    max-width: 810px;
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 1050px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 35px;
+
+    p{
+      line-height: 1.6;
+    }
+  }
+}

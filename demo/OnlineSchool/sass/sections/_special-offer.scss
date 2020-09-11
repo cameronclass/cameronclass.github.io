@@ -1,0 +1,48 @@
+.special-offer {
+  padding: 120px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    width: 92%;
+  }
+
+  &__img {
+    .image-block__img{
+      padding-left: 25px;
+      padding-top: 15px;
+    }
+
+    .image-block__quadrilateral_small{
+      bottom: 45px;
+      right: 45px;
+    }
+  }
+
+  &__logo {
+    width: 244px;
+  }
+
+  &__list {
+    margin-top: 70px;
+    &_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &_li {
+      color: white;
+      font-weight: 500;
+      font-size: 20.7904px;
+      padding: 0.6em 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  }
+
+  &__btn{
+    margin-top: 58px;
+    .btn{
+      background-color: #fff;
+    }
+  }
+}

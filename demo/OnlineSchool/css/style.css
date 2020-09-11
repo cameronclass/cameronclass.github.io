@@ -1,3 +1,215 @@
-html{
-    font-family: ;
-}
+/*Font Families*/
+html {
+  font-family: "Montserrat", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.2; }
+
+p,
+blockquote {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
+  margin: 1em 0; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.container__block {
+  margin: 0 120px; }
+
+.bg-red {
+  background-color: #B1293F; }
+
+.h2 {
+  font-size: 72px; }
+
+.h3 {
+  font-size: 31px;
+  margin: 0.8em 0; }
+
+.btn {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #000;
+  padding: 20px 50px;
+  border-radius: 50px;
+  cursor: pointer; }
+  .btn:hover {
+    text-decoration: none;
+    color: #000; }
+
+.color-white {
+  color: #ffffff; }
+
+.full-width-img {
+  width: 1204px;
+  margin: 0 auto; }
+
+.royal-butler {
+  padding: 150px 0; }
+  .royal-butler__title {
+    max-width: 810px;
+    text-align: center; }
+  .royal-butler__text {
+    max-width: 1050px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px; }
+  .royal-butler__description {
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 35px; }
+    .royal-butler__description p {
+      line-height: 1.6; }
+
+.image-block {
+  position: relative; }
+  .image-block__quadrilateral {
+    position: absolute;
+    border: 1.66796px solid #e45142; }
+    .image-block__quadrilateral_big {
+      top: 0px;
+      left: 0px;
+      width: 132px;
+      height: 120px; }
+    .image-block__quadrilateral_small {
+      bottom: 5px;
+      right: 5px;
+      width: 64px;
+      height: 58px; }
+    .image-block__quadrilateral_top {
+      z-index: 3; }
+    .image-block__quadrilateral_bottom {
+      z-index: 1; }
+  .image-block__img {
+    position: relative;
+    z-index: 2;
+    padding-left: 50px;
+    padding-top: 50px; }
+
+.quote {
+  background-color: #fff;
+  -webkit-box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
+          box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
+  padding: 120px 0;
+  margin-top: 130px;
+  margin-bottom: 60px;
+  position: relative; }
+  .quote__icon {
+    position: absolute;
+    width: 132px;
+    height: 120px;
+    top: -60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #ffffff;
+    border: 1.66796px solid #e45142;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
+            box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25); }
+  .quote__text {
+    max-width: 925px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center; }
+  .quote-red {
+    background-color: #B1293F;
+    color: white; }
+
+.i-quote {
+  background-image: url(../img/quote-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 52px;
+  height: 40px; }
+
+.school-etiquette {
+  padding: 110px 0;
+  background-color: #F5F5F5; }
+  .school-etiquette__title {
+    width: 75%; }
+  .school-etiquette__text {
+    font-weight: 500;
+    font-size: 40px;
+    width: 90%; }
+
+.special-offer {
+  padding: 120px 0; }
+  .special-offer__title {
+    margin-bottom: 50px;
+    width: 92%; }
+  .special-offer__img .image-block__img {
+    padding-left: 25px;
+    padding-top: 15px; }
+  .special-offer__img .image-block__quadrilateral_small {
+    bottom: 45px;
+    right: 45px; }
+  .special-offer__logo {
+    width: 244px; }
+  .special-offer__list {
+    margin-top: 70px; }
+    .special-offer__list_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .special-offer__list_li {
+      color: white;
+      font-weight: 500;
+      font-size: 20.7904px;
+      padding: 0.6em 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.25); }
+  .special-offer__btn {
+    margin-top: 58px; }
+    .special-offer__btn .btn {
+      background-color: #fff; }
+
+.about-platform {
+  padding: 120px 0;
+  text-align: center; }
+  .about-platform__title {
+    margin-bottom: 50px; }
+  .about-platform__text {
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 40px; }
+  .about-platform__card {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 24px 20px;
+    margin-top: 30px;
+    height: 205.04px; }
+    .about-platform__card_icon {
+      width: 68px;
+      margin: 0 auto 24px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+    .about-platform__card_text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase; }

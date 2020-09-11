@@ -1,0 +1,30 @@
+html {
+  font-family: $font-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-main;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p,
+blockquote {
+  font-family: $font-main;
+  line-height: 1.3;
+  margin: 1em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container__block {
+  margin: 0 120px;
+}

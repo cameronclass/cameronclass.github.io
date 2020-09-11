@@ -1,0 +1,39 @@
+.image-block {
+  position: relative;
+  &__quadrilateral {
+    position: absolute;
+
+    border: 1.66796px solid #e45142;
+
+    &_big {
+      top: 0px;
+      left: 0px;
+
+      width: 132px;
+      height: 120px;
+    }
+
+    &_small {
+      bottom: 5px;
+      right: 5px;
+
+      width: 64px;
+      height: 58px;
+    }
+
+    &_top {
+      z-index: 3;
+    }
+
+    &_bottom {
+      z-index: 1;
+    }
+  }
+
+  &__img {
+    position: relative;
+    z-index: 2;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+}

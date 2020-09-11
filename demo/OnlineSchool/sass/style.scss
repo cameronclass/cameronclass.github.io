@@ -1,8 +1,11 @@
 @import "helpers/mixins";
 @import "helpers/variables";
-@import "fonts";
 @import "template";
-@import "sections/header";
-@import "sections/footer";
-@import "pages/home";
+@import "universal";
+@import "sections/royal-butler";
+@import "sections/image";
+@import "sections/quote";
+@import "sections/school-etiquette";
+@import "sections/special-offer";
+@import "sections/about-platform";
 

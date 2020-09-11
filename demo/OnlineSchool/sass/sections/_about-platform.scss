@@ -1,0 +1,39 @@
+.about-platform {
+  padding: 120px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 24px 20px;
+    margin-top: 30px;
+    height: 205.04px;
+
+    &_icon {
+      width: 68px;
+      margin: 0 auto 24px;
+      box-sizing: border-box;
+    }
+
+    &_text {
+      font-family: $font-main;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  }
+}
