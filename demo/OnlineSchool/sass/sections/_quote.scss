@@ -1,10 +1,11 @@
 .quote {
   background-color: #fff;
   box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
-  padding: 120px 0;
+  padding: 102px 0 76px;
   margin-top: 130px;
-  margin-bottom: 60px;
+  margin-bottom: 53px;
   position: relative;
+
   &__icon {
     position: absolute;
     width: 132px;
@@ -21,6 +22,11 @@
     border: 1.66796px solid #e45142;
     box-sizing: border-box;
     box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
+
+    @include media-lg {
+      width: 100px;
+      height: 92px;
+    }
   }
 
   &__text {
@@ -29,15 +35,33 @@
     font-weight: 300;
     font-size: 34px;
     text-align: center;
+
+    padding: 0 58px;
   }
 
-  &-red{
+  &-red {
     background-color: $red;
     color: white;
   }
+
+  @include media-xxl {
+    padding: 100px 0;
+
+    &__text {
+      font-size: 28px;
+    }
+  }
+
+  @include media-lg{
+    padding: 50px 0;
+  }
 }
 
-
-.i-quote{
+.i-quote {
   @include icon(url(../img/quote-icon.svg), 52px, 40px);
+
+  @include media-lg{
+    width: 39px;
+    height: 31px;
+  }
 }

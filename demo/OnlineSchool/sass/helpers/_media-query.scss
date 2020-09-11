@@ -1,68 +1,37 @@
 /*=== MEDIA QUERY ===*/
 
-/*=== MEDIA QUERY with max width===*/
-
-@mixin mobile {
-  @media screen and (max-width: 479px) {
+@mixin media-sm {
+  @media screen and (max-width: 576px) {
     @content;
   }
 }
 
-@mixin lg-400 {
-  @media screen and (max-width: 400px) {
+@mixin media-md {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin lg-450 {
-  @media screen and (max-width: 450px) {
+@mixin media-lg {
+  @media screen and (max-width: 992px) {
     @content;
   }
 }
 
-@mixin lg-500 {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin lg-700 {
-  @media screen and (max-width: 700px) {
-    @content;
-  }
-}
-
-@mixin lg-770 {
-  @media screen and (max-width: 770px) {
-    @content;
-  }
-}
-
-@mixin lg-900 {
-  @media screen and (max-width: 900px) {
-    @content;
-  }
-}
-@mixin lg-1000 {
-  @media screen and (max-width: 1100px) {
-    @content;
-  }
-}
-
-@mixin lg-1100 {
-  @media screen and (max-width: 1100px) {
-    @content;
-  }
-}
-
-@mixin lg-1200 {
+@mixin media-xl {
   @media screen and (max-width: 1200px) {
     @content;
   }
 }
 
-@mixin lg-1250 {
-  @media screen and (max-width: 1250px) {
+@mixin media-xxl {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin media-xxxl {
+  @media screen and (max-width: 1600px) {
     @content;
   }
 }

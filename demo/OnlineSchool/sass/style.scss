@@ -1,7 +1,13 @@
+/* Helpers */
 @import "helpers/mixins";
+@import "helpers/media-query";
 @import "helpers/variables";
+
+/* Template settings */
 @import "template";
 @import "universal";
+
+/* Sections */
 @import "sections/royal-butler";
 @import "sections/image";
 @import "sections/quote";

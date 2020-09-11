@@ -6,16 +6,16 @@
     border: 1.66796px solid #e45142;
 
     &_big {
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
 
       width: 132px;
       height: 120px;
     }
 
     &_small {
-      bottom: 5px;
-      right: 5px;
+      bottom: 0;
+      right: 0;
 
       width: 64px;
       height: 58px;
@@ -33,7 +33,18 @@
   &__img {
     position: relative;
     z-index: 2;
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 70px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+
+    img {
+      box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
+    }
+
+    @include media-lg {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
   }
 }

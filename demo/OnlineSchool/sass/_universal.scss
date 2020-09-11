@@ -4,11 +4,27 @@
 
 .h2 {
   font-size: 72px;
+
+  @include media-xxxl {
+    font-size: 60px;
+  }
+
+  @include media-xxl {
+    font-size: 48px;
+  }
+
+  @include media-lg {
+    font-size: 42px;
+  }
 }
 
 .h3 {
   font-size: 31px;
   margin: 0.8em 0;
+
+  @include media-xxl {
+    font-size: 28px;
+  }
 }
 
 .btn {
@@ -21,7 +37,7 @@
   border-radius: 50px;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     text-decoration: none;
     color: #000;
   }
@@ -29,9 +45,4 @@
 
 .color-white {
   color: #ffffff;
-}
-
-.full-width-img {
-  width: 1204px;
-  margin: 0 auto;
 }

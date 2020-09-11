@@ -15,19 +15,53 @@
     font-weight: 500;
     font-size: 23px;
     margin-bottom: 40px;
+    margin-top: 60px;
   }
 
   &__card {
     background-color: #f0f0f0;
     border-radius: 5px;
-    padding: 24px 20px;
+    padding: 24px 14px;
     margin-top: 30px;
-    height: 205.04px;
+    height: 210px;
+
+    @include media-xl{
+      height: 240px;
+    }
+
+    @include media-lg{
+      margin-top: 10px;
+    }
+
+    @include media-sm{
+      height: auto;
+    }
 
     &_icon {
       width: 68px;
       margin: 0 auto 24px;
       box-sizing: border-box;
+
+      img{
+        height: 75px;
+        object-fit: contain;
+      }
+
+      &_3{
+        width: 74px;
+      }
+
+      &_4{
+        width: 56px;
+      }
+
+      &_5{
+        width: 116px;
+      }
+
+      &_6{
+        width: 108px;
+      }
     }
 
     &_text {
@@ -36,6 +70,10 @@
       font-size: 16px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+
+      @include media-sm{
+        font-size: 14px;
+      }
     }
   }
 }

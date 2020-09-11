@@ -1,18 +1,81 @@
 .school-etiquette {
-  padding: 110px 0;
+  padding: 120px 0 107px;
 
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
+
+  @include media-lg {
+    padding: 58px 0 0;
+  }
 
   &__title {
     width: 75%;
+    margin-top: 20px;
+
+    @include media-xxl {
+      width: 85%;
+    }
+
+    @include media-lg {
+      width: 50%;
+      .h2 {
+        font-size: 48px;
+      }
+    }
   }
 
   &__text {
     font-weight: 500;
     font-size: 40px;
-    width: 90%;
+    width: 93%;
+    margin-top: 58px;
+
+    @include media-xxl {
+      width: 95%;
+      font-size: 32px;
+    }
+
+    @include media-lg {
+      width: 80%;
+      font-size: 26px;
+      margin-top: 65px;
+    }
   }
 
   &__img {
+    .image-block__img {
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+
+    @include media-lg {
+      float: right;
+      width: 55%;
+
+      .image-block__img {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+
+      .image-block__quadrilateral_big {
+        width: 80px;
+        height: 73px;
+      }
+      .image-block__quadrilateral_small {
+        width: 39px;
+        height: 35px;
+        bottom: -17px;
+        right: -17px;
+      }
+    }
+  }
+
+  .quote {
+    margin-top: 105px;
+
+    @include media-lg{
+      margin-top: 50px;
+    }
   }
 }
