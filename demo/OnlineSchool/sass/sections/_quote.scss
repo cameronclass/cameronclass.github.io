@@ -1,7 +1,7 @@
 .quote {
   background-color: #fff;
   box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
-  padding: 102px 0 76px;
+  padding: 102px 0 65px;
   margin-top: 130px;
   margin-bottom: 53px;
   position: relative;
@@ -36,7 +36,9 @@
     font-size: 34px;
     text-align: center;
 
-    padding: 0 58px;
+    @include media-lg {
+      padding: 0 58px;
+    }
   }
 
   &-red {
@@ -52,7 +54,7 @@
     }
   }
 
-  @include media-lg{
+  @include media-lg {
     padding: 50px 0;
   }
 }
@@ -60,7 +62,7 @@
 .i-quote {
   @include icon(url(../img/quote-icon.svg), 52px, 40px);
 
-  @include media-lg{
+  @include media-lg {
     width: 39px;
     height: 31px;
   }

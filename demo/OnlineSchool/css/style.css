@@ -22,7 +22,7 @@ p {
 
 blockquote {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
+  line-height: 1.66;
   margin: 1em 0; }
 
 img {
@@ -157,9 +157,11 @@ img {
   .royal-butler__description {
     font-weight: 500;
     font-size: 26px;
-    margin-top: 24px; }
+    margin-top: 57px;
+    margin-left: 15px;
+    width: 90%; }
     .royal-butler__description p {
-      line-height: 1.6; }
+      line-height: 1.65; }
     @media screen and (max-width: 1400px) {
       .royal-butler__description {
         font-size: 22px; } }
@@ -214,7 +216,7 @@ img {
   background-color: #fff;
   -webkit-box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
           box-shadow: 11px 11px 30px rgba(20, 28, 102, 0.25);
-  padding: 102px 0 76px;
+  padding: 102px 0 65px;
   margin-top: 130px;
   margin-bottom: 53px;
   position: relative; }
@@ -251,8 +253,10 @@ img {
     font-style: italic;
     font-weight: 300;
     font-size: 34px;
-    text-align: center;
-    padding: 0 58px; }
+    text-align: center; }
+    @media screen and (max-width: 992px) {
+      .quote__text {
+        padding: 0 58px; } }
   .quote-red {
     background-color: #B1293F;
     color: white; }
@@ -278,13 +282,13 @@ img {
       height: 31px; } }
 
 .school-etiquette {
-  padding: 120px 0 107px;
+  padding: 120px 0 110px;
   background-color: #f5f5f5; }
   @media screen and (max-width: 992px) {
     .school-etiquette {
       padding: 58px 0 0; } }
   .school-etiquette__title {
-    width: 75%;
+    width: 65%;
     margin-top: 20px; }
     @media screen and (max-width: 1400px) {
       .school-etiquette__title {
@@ -299,6 +303,8 @@ img {
     font-size: 40px;
     width: 93%;
     margin-top: 58px; }
+    .school-etiquette__text p {
+      line-height: 1.5; }
     @media screen and (max-width: 1400px) {
       .school-etiquette__text {
         width: 95%;
@@ -329,34 +335,42 @@ img {
         bottom: -17px;
         right: -17px; } }
   .school-etiquette .quote {
-    margin-top: 105px; }
+    margin-top: 108px; }
     @media screen and (max-width: 992px) {
       .school-etiquette .quote {
         margin-top: 50px; } }
 
 .special-offer {
-  padding: 112px 0; }
+  padding: 115px 0 140px; }
   .special-offer__title {
     margin-bottom: 50px;
     margin-top: 20px; }
     .special-offer__title .h2 {
-      line-height: 1.05; }
-  .special-offer__img .image-block__img {
-    padding-left: 50px;
-    padding-top: 50px; }
-  .special-offer__img_title {
-    font-weight: 500;
-    font-size: 22px;
-    color: #fff;
-    line-height: 1.2;
-    padding: 0 20px;
-    margin-left: 32px;
-    position: relative;
-    top: -10px; }
+      line-height: 1.04; }
+  .special-offer__img {
+    padding-right: 48px; }
+    .special-offer__img .image-block__img {
+      padding-left: 50px;
+      padding-top: 50px; }
+    .special-offer__img .image-block__quadrilateral_small {
+      bottom: 10px;
+      right: -4px; }
+    .special-offer__img_title {
+      font-weight: 500;
+      font-size: 22px;
+      color: #fff;
+      line-height: 1.2;
+      padding: 0 20px;
+      margin-left: 32px;
+      position: relative;
+      top: -8px; }
   .special-offer__logo {
     width: 244px; }
   .special-offer__list {
-    margin-top: 70px; }
+    margin-top: 73px; }
+    .special-offer__list .h3 {
+      margin: 0.8em 0 0.6em;
+      line-height: 1.2; }
     .special-offer__list_first {
       width: 75%; }
     .special-offer__list_second {
@@ -369,10 +383,10 @@ img {
       color: white;
       font-weight: 500;
       font-size: 20.7904px;
-      padding: 0.2em 0;
+      line-height: 1.87;
       border-top: 1px solid rgba(255, 255, 255, 0.25); }
   .special-offer__btn {
-    margin-top: 58px; }
+    margin-top: 73px; }
     .special-offer__btn .btn {
       background-color: #fff; }
 
