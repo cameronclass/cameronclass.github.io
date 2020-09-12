@@ -1,22 +1,60 @@
 .special-offer {
   padding: 115px 0 140px;
 
+  @include media-lg {
+    padding: 46px 0 88px;
+  }
+
+  @include media-sm {
+    padding: 20px 0 47px;
+  }
+
   &__title {
     margin-bottom: 50px;
     margin-top: 20px;
     .h2 {
       line-height: 1.04;
     }
+
+    @include media-lg {
+      .h2 {
+        line-height: 1.15;
+      }
+    }
+
+    @include media-sm {
+      margin-top: 15px;
+      margin-bottom: 26px;
+      width: 90%;
+      .h2 {
+        line-height: 1.3;
+      }
+    }
+
+    &_logo {
+      display: none;
+
+      @include media-lg {
+        margin-top: 52px;
+        width: 244px;
+        display: block;
+      }
+
+      @include media-sm {
+        margin-top: 20px;
+      }
+    }
   }
 
   &__img {
     padding-right: 48px;
+
     .image-block__img {
       padding-left: 50px;
       padding-top: 50px;
     }
 
-    .image-block__quadrilateral_small{
+    .image-block__quadrilateral_small {
       bottom: 10px;
       right: -4px;
     }
@@ -31,26 +69,161 @@
       position: relative;
       top: -8px;
     }
+
+    @include media-lg {
+      padding-right: 0;
+
+      .image-block__img {
+        padding: 15px 0 0 10px;
+      }
+
+      .image-block__quadrilateral_big {
+        top: inherit;
+        bottom: -19px;
+        left: -72px;
+
+        width: 120px;
+        height: 109px;
+      }
+      .image-block__quadrilateral_small {
+        bottom: inherit;
+        top: -10px;
+        right: -27px;
+
+        width: 58px;
+        height: 53px;
+      }
+
+      &_title {
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 0;
+        width: 126%;
+        transform: translateX(-21%);
+        top: -18px;
+      }
+    }
+
+    @include media-md {
+      .image-block__img {
+        padding-left: 50px;
+        padding-top: 50px;
+      }
+
+      .image-block__quadrilateral_small {
+        bottom: -20px;
+        right: -20px;
+        top: inherit;
+      }
+
+      .image-block__quadrilateral_big {
+        top: 0;
+        left: 0;
+
+        bottom: inherit;
+
+        width: 120px;
+        height: 109px;
+      }
+
+      &_title {
+        margin-top: 50px;
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+        transform: none;
+        top: -18px;
+      }
+    }
+
+    @include media-sm {
+      width: 92%;
+      .image-block__img {
+        padding-left: 32px;
+        padding-top: 27px;
+      }
+
+      .image-block__quadrilateral_small {
+        width: 40px;
+        height: 33px;
+
+        bottom: -13px;
+        right: -20px;
+        top: inherit;
+      }
+
+      .image-block__quadrilateral_big {
+        top: 0;
+        left: 0;
+
+        bottom: inherit;
+
+        width: 79px;
+        height: 71px;
+      }
+
+      &_title {
+        font-size: 18px;
+        margin-top: 40px;
+        line-height: 1.3;
+      }
+    }
+
+    @include media-1200-1600 {
+      &_xxl {
+        max-width: 85%;
+        flex: 0 0 85%;
+      }
+    }
   }
 
   &__logo {
     width: 244px;
+
+    @include media-lg {
+      display: none;
+    }
   }
 
   &__list {
     margin-top: 73px;
 
-    .h3{
+    @include media-xl {
+      margin-top: 38px;
+      margin-bottom: 50px;
+    }
+
+    @include media-sm {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
+    .h3 {
       margin: 0.8em 0 0.6em;
       line-height: 1.2;
+
+      @include media-sm {
+        margin: 0.8em 0;
+      }
     }
 
     &_first {
       width: 75%;
+
+      @include media-xl {
+        width: 100%;
+      }
     }
 
     &_second {
       width: 85%;
+
+      @include media-xl {
+        width: 100%;
+      }
+      @include media-sm {
+        margin-bottom: 25px;
+      }
     }
 
     &_ul {
@@ -65,6 +238,16 @@
       font-size: 20.7904px;
       line-height: 1.87;
       border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+      @include media-md {
+        font-size: 17px;
+      }
+
+      @include media-sm {
+        padding: 0.55em 0;
+        font-size: 15px;
+        line-height: 1.3;
+      }
     }
   }
 
@@ -72,6 +255,16 @@
     margin-top: 73px;
     .btn {
       background-color: #fff;
+    }
+
+    @include media-lg {
+      margin-top: 55px;
+    }
+
+    @include media-sm {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
     }
   }
 }

@@ -6,6 +6,25 @@
   margin-bottom: 53px;
   position: relative;
 
+  @include media-xxl {
+    padding: 100px 0;
+  }
+
+  @include media-lg {
+    margin-top: 124px;
+    padding: 50px 0;
+    margin-bottom: 33px;
+  }
+
+  @include media-md{
+    margin-top: 74px;
+    padding: 28px 0;
+  }
+
+  @include media-sm{
+    margin-bottom: 24px;
+  }
+
   &__icon {
     position: absolute;
     width: 132px;
@@ -27,6 +46,11 @@
       width: 100px;
       height: 92px;
     }
+    @include media-md{
+      top: -24px;
+      width: 54px;
+      height: 48px;
+    }
   }
 
   &__text {
@@ -36,26 +60,23 @@
     font-size: 34px;
     text-align: center;
 
+    @include media-xxl {
+      font-size: 28px;
+    }
+
     @include media-lg {
-      padding: 0 58px;
+      padding: 0 60px;
+      font-weight: normal;
+    }
+    @include media-md{
+      font-size: 20px;
+      padding: 0 22px;
     }
   }
 
   &-red {
     background-color: $red;
     color: white;
-  }
-
-  @include media-xxl {
-    padding: 100px 0;
-
-    &__text {
-      font-size: 28px;
-    }
-  }
-
-  @include media-lg {
-    padding: 50px 0;
   }
 }
 
@@ -65,5 +86,10 @@
   @include media-lg {
     width: 39px;
     height: 31px;
+  }
+
+  @include media-md{
+    width: 21px;
+    height: 16px;
   }
 }

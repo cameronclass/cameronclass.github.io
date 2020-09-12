@@ -4,7 +4,11 @@
   background-color: #f5f5f5;
 
   @include media-lg {
-    padding: 58px 0 0;
+    padding: 58px 0 50px;
+  }
+
+  @include media-sm {
+    padding: 36px 0 50px;
   }
 
   &__title {
@@ -16,9 +20,24 @@
     }
 
     @include media-lg {
+      margin-top: 27px;
       width: 50%;
       .h2 {
         font-size: 48px;
+      }
+    }
+
+    @include media-md {
+      .h2 {
+        font-size: 32px;
+      }
+    }
+    @include media-sm {
+      width: 90%;
+      margin-top: 0;
+
+      .h2 {
+        font-size: 30px;
       }
     }
   }
@@ -29,7 +48,7 @@
     width: 93%;
     margin-top: 58px;
 
-    p{
+    p {
       line-height: 1.5;
     }
 
@@ -41,7 +60,21 @@
     @include media-lg {
       width: 80%;
       font-size: 26px;
-      margin-top: 65px;
+      margin-top: 52px;
+    }
+
+    @include media-md {
+      font-size: 20px;
+    }
+
+    @include media-sm {
+      width: 95%;
+      margin-top: 20px;
+      padding-bottom: 6px;
+
+      p {
+        line-height: 1.45;
+      }
     }
   }
 
@@ -53,13 +86,13 @@
 
     @include media-lg {
       float: right;
-      width: 55%;
+      width: 56%;
 
       .image-block__img {
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 0;
-        padding-bottom: 0;
+        padding-bottom: 5px;
       }
 
       .image-block__quadrilateral_big {
@@ -69,8 +102,30 @@
       .image-block__quadrilateral_small {
         width: 39px;
         height: 35px;
-        bottom: -17px;
+        bottom: -12px;
         right: -17px;
+      }
+    }
+    @include media-sm {
+      width: 95%;
+      float: inherit;
+
+      .image-block__img {
+        padding-top: 23px;
+        padding-left: 12px;
+        padding-right: 0;
+        padding-bottom: 5px;
+      }
+
+      .image-block__quadrilateral_big {
+        width: 59px;
+        height: 54px;
+      }
+      .image-block__quadrilateral_small {
+        width: 29px;
+        height: 25px;
+        bottom: -6px;
+        right: -14px;
       }
     }
   }
@@ -78,8 +133,14 @@
   .quote {
     margin-top: 108px;
 
-    @include media-lg{
-      margin-top: 50px;
+    @include media-lg {
+      padding: 40px 0 30px;
+      margin-top: 40px;
+    }
+
+    @include media-sm{
+      margin-top: 66px;
+      padding: 30px 0 13px;
     }
   }
 }

@@ -5,6 +5,10 @@
 
     border: 1.66796px solid #e45142;
 
+     @include media-sm{
+       border: 0.702455px solid #e45142;
+     }
+
     &_big {
       top: 0;
       left: 0;
