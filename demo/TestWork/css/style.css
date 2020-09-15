@@ -17,7 +17,7 @@ div {
 
 .page-preloader {
   position: fixed;
-  /*  display: none; */
+  display: none;
   left: 0;
   top: 0;
   right: 0;
@@ -176,9 +176,10 @@ div {
   to {
     opacity: 0; } }
 .header {
-  height: 700px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  height: auto;
+  overflow: hidden; }
   .header::after {
     content: "";
     height: 100%;
@@ -193,10 +194,11 @@ div {
     background-repeat: repeat-x;
     background-size: 12.5% 100%;
     background-color: #ebebeb; }
-  .header__menu {
-    padding: 30px 10px;
+  .header * {
     position: relative;
     z-index: 2; }
+  .header__menu {
+    padding: 30px 10px; }
     .header__menu_list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -241,3 +243,75 @@ div {
       .header__contact_link:hover {
         text-decoration: none;
         color: #3139f3; }
+  .header__offer {
+    padding: 100px 0 180px;
+    position: relative; }
+    .header__offer_title {
+      font-family: "Igra Sans", sans-serif;
+      line-height: 1.1;
+      font-size: 85px;
+      font-weight: normal; }
+      .header__offer_title_2 {
+        position: relative;
+        left: 240px;
+        color: #3139f3; }
+      .header__offer_title_3 {
+        position: relative;
+        left: 240px; }
+      .header__offer_title_4 {
+        position: relative;
+        left: 585px; }
+      .header__offer_title_5 {
+        position: relative;
+        left: 920px; }
+    .header__offer_btn {
+      position: absolute;
+      left: 600px;
+      top: 300px; }
+      .header__offer_btn a {
+        width: 255px;
+        height: 255px;
+        background-color: #3139f3;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        line-height: 1;
+        font-size: 22px;
+        color: white; }
+    .header__offer_description {
+      position: relative;
+      width: 304px; }
+      .header__offer_description_title {
+        font-family: "Igra Sans", sans-serif;
+        font-size: 25px;
+        margin-bottom: 25px; }
+      .header__offer_description_text {
+        font-size: 18px; }
+    .header__offer_list {
+      width: 100%;
+      position: absolute;
+      margin-top: 100px;
+      right: -500px; }
+      .header__offer_list ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        list-style: none; }
+        .header__offer_list ul li {
+          margin-right: 40px;
+          color: #3139f3;
+          white-space: nowrap;
+          font-size: 17px;
+          font-weight: bold; }

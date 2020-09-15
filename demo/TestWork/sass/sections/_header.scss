@@ -1,7 +1,8 @@
 .header {
-  height: 700px;
   position: relative;
   z-index: 1;
+  height: auto;
+  overflow: hidden;
 
   &::after {
     content: "";
@@ -17,10 +18,13 @@
     background-color: $bg-grey;
   }
 
-  &__menu {
-    padding: 30px 10px;
+  * {
     position: relative;
     z-index: 2;
+  }
+
+  &__menu {
+    padding: 30px 10px;
 
     &_list {
       display: flex;
@@ -40,31 +44,115 @@
     }
   }
 
-  &__contact{
+  &__contact {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
-    &_phone{
+    &_phone {
       display: block;
       color: #000;
       font-weight: bolder;
       font-size: 20px;
       line-height: 1;
 
-      &:hover{
+      &:hover {
         text-decoration: none;
         color: #121212;
       }
     }
-    &_link{
+    &_link {
       display: block;
       color: $blue;
       border-bottom: 1px solid;
 
-      &:hover{
+      &:hover {
         text-decoration: none;
         color: $blue;
+      }
+    }
+  }
+
+  &__offer {
+    padding: 100px 0 180px;
+    position: relative;
+    &_title {
+      font-family: $font-h;
+      line-height: 1.1;
+      font-size: 85px;
+      font-weight: normal;
+
+      &_1 {
+      }
+      &_2 {
+        position: relative;
+        left: 240px;
+        color: $blue;
+      }
+      &_3 {
+        position: relative;
+        left: 240px;
+      }
+      &_4 {
+        position: relative;
+        left: 585px;
+      }
+      &_5 {
+        position: relative;
+        left: 920px;
+      }
+    }
+
+    &_btn {
+      position: absolute;
+      left: 600px;
+      top: 300px;
+      a {
+        width: 255px;
+        height: 255px;
+        background-color: $blue;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 1;
+        font-size: 22px;
+        color: white;
+      }
+    }
+
+    &_description {
+      position: relative;
+      width: 304px;
+
+      &_title {
+        font-family: $font-h;
+        font-size: 25px;
+        margin-bottom: 25px;
+      }
+      &_text {
+        font-size: 18px;
+      }
+    }
+
+    &_list {
+      width: 100%;
+      position: absolute;
+      margin-top: 100px;
+      right: -500px;
+
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 40px;
+          color: $blue;
+          white-space: nowrap;
+          font-size: 17px;
+          font-weight: bold;
+        }
       }
     }
   }
