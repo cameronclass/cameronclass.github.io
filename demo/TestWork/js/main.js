@@ -18,6 +18,6 @@ $(document).ready(function () {
   }, 30);
 
   setTimeout(function () {
-    $(".page-preloader").fadeOut(300);
+    $(".page-preloader").fadeOut(500);
   }, 4500);
 });
