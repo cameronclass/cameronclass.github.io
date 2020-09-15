@@ -31,6 +31,7 @@
 
   &__menu {
     padding: 30px 10px;
+    z-index: 9;
 
     &_list {
       display: flex;
@@ -211,7 +212,7 @@
         padding-bottom: 40px;
         border-bottom: 1px solid #bcbcbc;
 
-        &::after{
+        &::after {
           content: "";
           display: inline-block;
           width: 70px;
@@ -223,7 +224,7 @@
         }
       }
 
-      &_icon{
+      &_icon {
         position: relative;
         top: 60px;
       }
@@ -261,7 +262,7 @@
         border-radius: 50%;
         background-color: #fff;
 
-        &.scale-up-hor-right{
+        &.scale-up-hor-right {
           animation-delay: 5.6s;
         }
       }
@@ -283,7 +284,7 @@
         border-radius: 50%;
         background-color: #fff;
 
-        &.scale-up-hor-left{
+        &.scale-up-hor-left {
           animation-delay: 5.6s;
         }
       }
