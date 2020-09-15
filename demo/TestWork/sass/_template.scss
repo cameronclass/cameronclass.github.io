@@ -1,0 +1,31 @@
+$blue: #3139f3;
+$blue-2: #cbbd00;
+$bg-grey: #ebebeb;
+
+$font-p: "Gotham Pro", sans-serif;
+$font-h: "Igra Sans", sans-serif;
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.eot");
+  src: url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/07a38bbad54db72a40b406bed1c72f53.svg#Gotham Pro") format("svg");
+}
+
+@font-face {
+  font-family: "Igra Sans";
+  src: url("../fonts/igra-sans/IgraSans.woff2") format("woff2"), url("../fonts/igra-sans/IgraSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+p,
+div {
+  font-family: $font-p;
+  letter-spacing: -0.02em;
+}
