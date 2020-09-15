@@ -21,3 +21,46 @@ $(document).ready(function () {
     $(".page-preloader").fadeOut(500);
   }, 4500);
 });
+
+
+var rellax = new Rellax('.rellax',{
+  horizontal: true
+});
+
+
+if ($(window).width() > 960) {
+  $('body').parallax({
+    'elements': [{
+      'selector': '.header__offer_btn a',
+      'properties': {
+        'x': {
+          'right': {
+            'initial': 0,
+            'multiplier': 0.04,
+            'unit': 'px',
+            'invert': false
+          }
+        },
+        'y': {
+          'top': {
+            'initial': 0,
+            'multiplier': 0.1,
+            'unit': 'px',
+            'invert': true
+          }
+        }
+      }
+    }]
+  });
+}
+
+$(window).scroll(function () {
+  $('.first-layout__title, .first-layout__text, .first-layout__figures_oval, .first-layout__figures_spider, .first-layout__figures_contact').each(function () {
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow + 550) {
+      $(this).addClass("swing-in-top-fwd");
+    }
+  });
+});

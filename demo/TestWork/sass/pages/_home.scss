@@ -1,0 +1,65 @@
+.first-layout {
+  padding: 110px 0;
+  background-color: #fff;
+  position: relative;
+
+  &__title {
+    font-size: 60px;
+    font-family: $font-h;
+    color: #121212;
+    line-height: 1.1;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 30px;
+    line-height: 40px;
+
+    &_link {
+      font-size: 18px;
+      color: $blue;
+      padding-right: 100px;
+      line-height: 22px;
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  &__figures{
+    &_oval{
+      position: absolute;
+      top: -150px;
+      right: 300px;
+    }
+
+    &_spider{
+      position: absolute;
+      right: 40px;
+      top: 70px;
+    }
+
+    &_contact{
+      position: absolute;
+      top: 70px;
+      left: 30px;
+
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 66px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $blue;
+
+        img{
+          position: relative;
+          top: -3px;
+          right: -3px;
+        }
+      }
+    }
+  }
+
+}
