@@ -36,20 +36,19 @@
 
 <body>
   <div class="container-quiz">
+    <ul id="quiz-count" class="quiz_counter"></ul>
     <div id="quiz">
       <div id="quiz-start-screen">
         <p><a href="#" id="quiz-start-btn" class="quiz-button">Начать Тест</a></p>
       </div>
+      <div id="results-screen"></div>
     </div>
+
   </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
   <script>
     $('#quiz').quiz({
-      //resultsScreen: '#results-screen',
-      //counter: false,
-      //homeButton: '#custom-home',
       counterFormat: 'Вопрос %current из %total',
       resultsFormat: "<img src=img/finish-quiz.png>Поздравляем! Вы заработали %score Баллов. <br> Следите за турнирной таблицей!",
       questions: [
@@ -106,7 +105,7 @@
       ],
       nextButtonText: "Следующий вопрос",
       finishButtonText: "Закончить",
-      restartButtonText: "Закрыть"
+      restartButtonText: "Закрыть",
     });
   </script>
 </body>

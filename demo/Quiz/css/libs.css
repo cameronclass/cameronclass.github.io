@@ -156,6 +156,10 @@ color: #000;
   object-fit: contain;
 }
 
+.quiz_counter li::before{
+  display: none;
+}
+
 @media screen and (max-width: 576px){
   #quiz-results{
     font-size: 26px;
