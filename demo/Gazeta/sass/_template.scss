@@ -1,0 +1,51 @@
+html,
+body,
+p,
+div {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+button{
+  outline: none;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.white{
+  color: white;
+}
+
+.red {
+  color: $red;
+}
+
+.next-section {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $red;
+  padding: 12px 6px 6px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  transition: 300ms ease;
+
+  &:hover{
+    background-color: darken($red, 10%);
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+.i-down {
+  @include icon(url(../img/down-arrow.svg), 30px, 30px);
+  filter: invert(1);
+}

@@ -1,7 +1,9 @@
+/* Helpers */
 @import "helpers/mixins";
-@import "helpers/variables";
-@import "fonts";
+@import "variables";
 @import "template";
+/* Styles */
+@import "common/sliders";
 @import "sections/header";
 @import "sections/footer";
 @import "pages/home";
