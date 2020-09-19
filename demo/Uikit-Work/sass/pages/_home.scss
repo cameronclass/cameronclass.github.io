@@ -1,0 +1,74 @@
+.technopark {
+  &-offer {
+    position: relative;
+    height: 380px;
+    &__img {
+      display: flex;
+
+      &_1 {
+        position: absolute;
+        width: 520px;
+        bottom: 20px;
+      }
+
+      &_2 {
+        position: absolute;
+        width: 329px;
+        bottom: 24px;
+        right: 250px;
+        z-index: 2;
+      }
+
+      &_3 {
+        position: absolute;
+        width: 720px;
+        bottom: 16px;
+        right: -70px;
+        z-index: 0;
+      }
+      &_4 {
+        position: absolute;
+        width: 100px;
+        bottom: 24px;
+        right: 100px;
+        z-index: 2;
+      }
+
+      &_num {
+        position: absolute;
+        width: 30px;
+        bottom: 153px;
+        left: 460px;
+        z-index: 1;
+      }
+       &_temp {
+        position: absolute;
+        width: 20px;
+        bottom: -15px;
+        right: 550px;
+        z-index: 2;
+        animation: rotate-90-ccw 2s infinite linear;
+        animation-direction: alternate;
+      }
+    }
+  }
+
+  &-title{
+    &__title{
+      font-size: 52px;
+      color: $cyan;
+
+      &_second{
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        opacity: 0.5;
+      }
+
+      &_text{
+        color: black;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "CoreSansMSC75ExtraBold";
+  src: url("../fonts/core-sans/CoreSansMSC75ExtraBold.woff2") format("woff2"),
+    url("../fonts/core-sans/CoreSansMSC75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: $font;
+  -webkit-font-smoothing: antialiased;
+}
+*::selection {
+  background-color: $main-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "CoreSansMSC75ExtraBold", sans-serif;
+}
+
+.uk-navbar-nav {
+  li {
+    a {
+      min-height: 50px;
+      color: white;
+      font-family: $font;
+      font-size: 12px;
+      padding: 0 9px;
+      font-weight: 600;
+      white-space: nowrap;
+      text-align: -webkit-match-parent;
+      -webkit-font-smoothing: antialiased;
+
+      &:hover {
+        color: $cyan;
+      }
+    }
+    &.uk-active {
+      a {
+        color: $green;
+      }
+    }
+  }
+}
+
+.main-offer {
+  background-color: $cyan;
+  height: 380px;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    width: 120%;
+    img {
+      width: 120%;
+      transform: translateX(-10%);
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    color: $green-2;
+    font-family: $font-h;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-top: 10px;
+    &_title {
+      color: white;
+    }
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    position: relative;
+    z-index: 3;
+    text-shadow: 3px 5px 0px rgba(0, 85, 102, 1);
+  }
+}
+
+.rotate-90-ccw {
+  animation: rotate-90-ccw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes rotate-90-ccw {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
