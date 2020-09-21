@@ -600,18 +600,18 @@ h5 {
     .masterskaya-offer__img_1 {
       position: absolute;
       width: 396px;
-      bottom: 20px;
+      bottom: 18px;
       left: 80px;
-      z-index: 1; }
+      z-index: 0; }
       @media screen and (max-width: 992px) {
         .masterskaya-offer__img_1 {
-          left: -150px;
-          z-index: 2; } }
+          width: 360px;
+          left: 0px;
+          bottom: 10px; } }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_1 {
-          right: 157px;
-          z-index: 2;
-          left: inherit; } }
+          width: 268px;
+          left: -30px; } }
     .masterskaya-offer__img_2 {
       position: absolute;
       width: 25px;
@@ -620,14 +620,12 @@ h5 {
       z-index: 2; }
       @media screen and (max-width: 992px) {
         .masterskaya-offer__img_2 {
-          width: 250px;
-          right: 100px;
-          bottom: 16px; } }
+          left: 115px;
+          bottom: 100px; } }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_2 {
-          width: 170px;
-          right: 0;
-          bottom: 16px; } }
+          left: 50px;
+          bottom: 65px; } }
     .masterskaya-offer__img_3 {
       position: absolute;
       width: 160px;
@@ -636,20 +634,22 @@ h5 {
       z-index: 0; }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_3 {
-          left: 6%; } }
+          display: none; } }
     .masterskaya-offer__img_4 {
       position: absolute;
       width: 508px;
-      bottom: 24px;
+      bottom: 20px;
       right: 30px;
       z-index: 2; }
       @media screen and (max-width: 992px) {
         .masterskaya-offer__img_4 {
-          right: 0; } }
+          width: 348px;
+          bottom: 14px;
+          right: -50px; } }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_4 {
-          width: 80px;
-          right: -50px;
+          width: 238px;
+          right: -90px;
           z-index: 1; } }
     .masterskaya-offer__img_5 {
       position: absolute;
@@ -663,10 +663,13 @@ h5 {
               animation-direction: alternate; }
       @media screen and (max-width: 992px) {
         .masterskaya-offer__img_5 {
-          left: 300px; } }
+          right: 40%;
+          bottom: 170px; } }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_5 {
-          left: 148px; } }
+          width: 130px;
+          right: 45%;
+          bottom: 190px; } }
     .masterskaya-offer__img_6 {
       position: absolute;
       width: 160px;
@@ -679,10 +682,13 @@ h5 {
               animation-direction: alternate-reverse; }
       @media screen and (max-width: 992px) {
         .masterskaya-offer__img_6 {
-          left: 300px; } }
+          right: 40%;
+          bottom: 150px; } }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_6 {
-          left: 148px; } }
+          width: 115px;
+          right: 45%;
+          bottom: 170px; } }
     .masterskaya-offer__img_num {
       position: absolute;
       width: 30px;
@@ -691,10 +697,12 @@ h5 {
       z-index: 1; }
       @media screen and (max-width: 992px) {
         .masterskaya-offer__img_num {
-          left: 275px; } }
+          left: 110px;
+          bottom: 168px; } }
       @media screen and (max-width: 576px) {
         .masterskaya-offer__img_num {
-          left: 128px; } }
+          left: 50px;
+          bottom: 138px; } }
 .masterskaya-title__title {
   font-size: 52px;
   color: #5accbe; }
@@ -747,15 +755,15 @@ h5 {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   100% {
-    -webkit-transform: translateX(140px);
-            transform: translateX(140px); } }
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px); } }
 @keyframes slide-right {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
   100% {
-    -webkit-transform: translateX(140px);
-            transform: translateX(140px); } }
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px); } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

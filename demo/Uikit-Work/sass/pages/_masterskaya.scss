@@ -8,19 +8,19 @@
       &_1 {
         position: absolute;
         width: 396px;
-        bottom: 20px;
+        bottom: 18px;
         left: 80px;
-        z-index: 1;
+        z-index: 0;
 
         @include netbook {
-          left: -150px;
-          z-index: 2;
+          width: 360px;
+          left: 0px;
+          bottom: 10px;
         }
 
         @include mobile {
-          right: 157px;
-          z-index: 2;
-          left: inherit;
+          width: 268px;
+          left: -30px;
         }
       }
 
@@ -32,15 +32,13 @@
         z-index: 2;
 
         @include netbook {
-          width: 250px;
-          right: 100px;
-          bottom: 16px;
+          left: 115px;
+          bottom: 100px;
         }
 
         @include mobile {
-          width: 170px;
-          right: 0;
-          bottom: 16px;
+          left: 50px;
+          bottom: 65px;
         }
       }
 
@@ -52,23 +50,25 @@
         z-index: 0;
 
         @include mobile {
-          left: 6%;
+          display: none;
         }
       }
       &_4 {
         position: absolute;
         width: 508px;
-        bottom: 24px;
+        bottom: 20px;
         right: 30px;
         z-index: 2;
 
         @include netbook {
-          right: 0;
+          width: 348px;
+          bottom: 14px;
+          right: -50px;
         }
 
         @include mobile {
-          width: 80px;
-          right: -50px;
+          width: 238px;
+          right: -90px;
           z-index: 1;
         }
       }
@@ -82,11 +82,14 @@
         animation-direction: alternate;
 
         @include netbook {
-          left: 300px;
+          right: 40%;
+          bottom: 170px;
         }
 
         @include mobile {
-          left: 148px;
+          width: 130px;
+          right: 45%;
+          bottom: 190px;
         }
       }
       &_6 {
@@ -100,11 +103,14 @@
 
 
         @include netbook {
-          left: 300px;
+          right: 40%;
+          bottom: 150px;
         }
 
         @include mobile {
-          left: 148px;
+          width: 115px;
+          right: 45%;
+          bottom: 170px;
         }
       }
 
@@ -116,11 +122,13 @@
         z-index: 1;
 
         @include netbook {
-          left: 275px;
+          left: 110px;
+          bottom: 168px;
         }
 
         @include mobile {
-          left: 128px;
+         left: 50px;
+         bottom: 138px;
         }
       }
     
