@@ -112,6 +112,39 @@ h5 {
   }
 }
 
+.main-title {
+  &__title {
+    font-size: 52px;
+    color: $cyan;
+
+    @include netbook {
+      font-size: 30px;
+    }
+
+    &_second {
+      font-size: 32px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      opacity: 0.5;
+      color: black;
+
+      @include netbook {
+        font-size: 22px;
+        margin: 40px 0;
+      }
+    }
+
+    &_text {
+      color: black;
+      font-size: 18px;
+
+      @include netbook {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
 .main-for {
   box-sizing: border-box;
   &__title {
@@ -134,7 +167,7 @@ h5 {
     color: #555;
     font-size: 18px;
     font-family: $font-h;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     height: 100%;
     display: flex;
@@ -169,6 +202,46 @@ h5 {
   }
 }
 
+.main-card-row {
+  &__card {
+    &_title {
+      h2 {
+        color: $main-color;
+        display: inline-block;
+        margin-top: 1.5em;
+        font-size: 24px;
+      }
+    }
+
+    &_img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &_text{
+      h3{
+        font-size: 18px;
+        color: $main-color;
+        display: inline-block;
+        margin: 0 0 10px;
+      }
+
+      p{
+        font-size: 13px;
+        color: black;
+        margin: 5px 0 15px;
+      }
+    }
+
+    &_border{
+      padding: 0 20px 50px;
+      border-bottom: 1px solid $main-color;
+    }
+  }
+}
+
 .modal-button {
   padding: 12px 30px;
   border-radius: 25px;
@@ -188,8 +261,12 @@ h5 {
 }
 
 .main-partners {
-  &__title{
+  &__title {
     color: $cyan;
+    font-size: 42px;
+    @include mobile{
+      font-size: 30px;
+    }
   }
   .uk-slider-items {
     li {

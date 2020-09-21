@@ -2,12 +2,25 @@
   animation: rotate-90-ccw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.slide-right {
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @keyframes rotate-90-ccw {
   0% {
     transform: rotate(-15deg);
   }
   100% {
     transform: rotate(15deg);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(140px);
   }
 }
 
@@ -98,7 +111,6 @@
   top: 16px;
   transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 
 .hamburger--elastic.is-active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(135deg);

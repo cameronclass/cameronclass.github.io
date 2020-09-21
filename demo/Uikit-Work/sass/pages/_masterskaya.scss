@@ -1,4 +1,4 @@
-.technopark {
+.masterskaya {
   &-offer {
     position: relative;
     height: 380px;
@@ -7,8 +7,10 @@
 
       &_1 {
         position: absolute;
-        width: 520px;
+        width: 396px;
         bottom: 20px;
+        left: 80px;
+        z-index: 1;
 
         @include netbook {
           left: -150px;
@@ -24,9 +26,9 @@
 
       &_2 {
         position: absolute;
-        width: 329px;
-        bottom: 24px;
-        right: 250px;
+        width: 25px;
+        bottom: 125px;
+        left: 209px;
         z-index: 2;
 
         @include netbook {
@@ -44,9 +46,9 @@
 
       &_3 {
         position: absolute;
-        width: 720px;
+        width: 160px;
         bottom: 16px;
-        right: -70px;
+        left: 430px;
         z-index: 0;
 
         @include mobile {
@@ -55,12 +57,12 @@
       }
       &_4 {
         position: absolute;
-        width: 100px;
+        width: 508px;
         bottom: 24px;
-        right: 100px;
+        right: 30px;
         z-index: 2;
 
-        @include netbook{
+        @include netbook {
           right: 0;
         }
 
@@ -70,12 +72,47 @@
           z-index: 1;
         }
       }
+      &_5 {
+        position: absolute;
+        width: 180px;
+        bottom: 290px;
+        right: 188px;
+        z-index: 2;
+        animation: slide-right 5.5s infinite linear;
+        animation-direction: alternate;
+
+        @include netbook {
+          left: 300px;
+        }
+
+        @include mobile {
+          left: 148px;
+        }
+      }
+      &_6 {
+        position: absolute;
+        width: 160px;
+        bottom: 270px;
+        right: 188px;
+        z-index: 1;
+        animation: slide-right 5.5s infinite linear;
+        animation-direction: alternate-reverse;
+
+
+        @include netbook {
+          left: 300px;
+        }
+
+        @include mobile {
+          left: 148px;
+        }
+      }
 
       &_num {
         position: absolute;
         width: 30px;
-        bottom: 153px;
-        left: 460px;
+        bottom: 193px;
+        left: 203px;
         z-index: 1;
 
         @include netbook {
@@ -86,43 +123,40 @@
           left: 128px;
         }
       }
-      &_title {
-        position: absolute;
-        width: 25px;
-        bottom: 88px;
-        left: 488px;
-        z-index: 1;
+    
+    }
+  }
+
+  &-title {
+    &__title {
+      font-size: 52px;
+      color: $cyan;
+
+      @include netbook {
+        font-size: 30px;
+      }
+
+      &_second {
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        opacity: 0.5;
+        color: black;
 
         @include netbook {
-          left: 300px;
-        }
-
-        @include mobile {
-          left: 148px;
+          font-size: 22px;
+          margin: 40px 0;
         }
       }
-      &_temp {
-        position: absolute;
-        width: 20px;
-        bottom: -15px;
-        right: 550px;
-        z-index: 2;
-        animation: rotate-90-ccw 2s infinite linear;
-        animation-direction: alternate;
+
+      &_text {
+        color: black;
+        font-size: 18px;
 
         @include netbook {
-          width: 15px;
-          right: 330px;
-        }
-
-        @include mobile {
-          width: 15px;
-          right: 150px;
-          bottom: -23px;
+          font-size: 15px;
         }
       }
     }
   }
-
-  
 }
