@@ -1,15 +1,15 @@
-/* Preloader */
-const {
-  $,
-  once,
-  remove,
-  transition,
-} = UIkit.util;
+$(function () {
+  /* Preloader */
+  var $preloader = $('#page-preloader'),
+    $spinner = $preloader.find('.cssload-loader-inner');
+  $spinner.fadeOut();
+  $preloader.delay(350).fadeOut('slow');
 
-window.onload = () => {
-  console.log('Window onload');
-  const loader = $('#page-preloader');
-
-  transition(loader, { opacity: 0 });
-  once(loader, 'transitionend', () => remove(loader));
-};
+  /* Hamburger */
+  /* $(".hamburger").click(function () {
+    $(this).addClass("is-active");
+  });
+  $(".uk-offcanvas-overlay").before().click(function () {
+    $(".hamburger").removeClass("is-active");
+  }); */
+});

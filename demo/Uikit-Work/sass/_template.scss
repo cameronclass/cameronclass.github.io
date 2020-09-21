@@ -11,6 +11,7 @@ html,
 body {
   font-family: $font;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 *::selection {
   background-color: $main-color;
@@ -21,6 +22,16 @@ h3,
 h4,
 h5 {
   font-family: "CoreSansMSC75ExtraBold", sans-serif;
+}
+
+.uk-container {
+  box-sizing: border-box;
+  max-width: 1250px;
+
+  @include mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .uk-navbar-nav {
@@ -61,6 +72,15 @@ h5 {
       width: 120%;
       transform: translateX(-10%);
     }
+
+    @include mobile {
+      width: 350%;
+
+      img {
+        width: 350%;
+        transform: translateX(-10%);
+      }
+    }
   }
 
   &__date {
@@ -74,6 +94,12 @@ h5 {
     &_title {
       color: white;
     }
+
+    @include mobile {
+      font-size: 15px;
+      text-align: center;
+      margin-top: 20px;
+    }
   }
 
   &__title {
@@ -86,15 +112,107 @@ h5 {
   }
 }
 
-.rotate-90-ccw {
-  animation: rotate-90-ccw 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.main-for {
+  box-sizing: border-box;
+  &__title {
+    background-color: $main-color;
+    color: $yellow;
+    font-size: 28px;
+    font-family: $font-h;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  &__content {
+    background-color: $bg-grey-2;
+    color: #555;
+    font-size: 18px;
+    font-family: $font-h;
+    padding: 10px 20px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include mobile {
+      background-color: $bg-grey;
+    }
+
+    &_text {
+      font-family: $font;
+      @include mobile {
+        background-color: $bg-grey-2;
+      }
+    }
+  }
 }
 
-@keyframes rotate-90-ccw {
-  0% {
-    transform: rotate(-15deg);
+.main-card {
+  &__card {
+    &_title {
+      color: $main-color;
+      display: inline-block;
+      margin-top: 1.5em;
+    }
+
+    &_video-preview {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
-  100% {
-    transform: rotate(15deg);
+}
+
+.modal-button {
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: $main-color;
+  color: $green-2;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 200ms;
+
+  &:hover {
+    background-color: $cyan;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.main-partners {
+  &__title{
+    color: $cyan;
+  }
+  .uk-slider-items {
+    li {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .uk-slidenav {
+    svg {
+      width: 30px;
+      height: 40px;
+      color: $main-color;
+
+      @include mobile {
+        width: 25px;
+        height: 25px;
+        color: white;
+        background-color: $main-color;
+        opacity: 0.5;
+        border-radius: 50%;
+        display: none;
+      }
+    }
   }
 }

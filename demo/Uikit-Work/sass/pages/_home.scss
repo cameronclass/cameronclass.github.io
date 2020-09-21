@@ -9,6 +9,17 @@
         position: absolute;
         width: 520px;
         bottom: 20px;
+
+        @include netbook {
+          left: -150px;
+          z-index: 2;
+        }
+
+        @include mobile {
+          right: 157px;
+          z-index: 2;
+          left: inherit;
+        }
       }
 
       &_2 {
@@ -17,6 +28,18 @@
         bottom: 24px;
         right: 250px;
         z-index: 2;
+
+        @include netbook {
+          width: 250px;
+          right: 100px;
+          bottom: 16px;
+        }
+
+        @include mobile {
+          width: 170px;
+          right: 0;
+          bottom: 16px;
+        }
       }
 
       &_3 {
@@ -25,6 +48,10 @@
         bottom: 16px;
         right: -70px;
         z-index: 0;
+
+        @include mobile {
+          left: 6%;
+        }
       }
       &_4 {
         position: absolute;
@@ -32,6 +59,16 @@
         bottom: 24px;
         right: 100px;
         z-index: 2;
+
+        @include netbook{
+          right: 0;
+        }
+
+        @include mobile {
+          width: 80px;
+          right: -50px;
+          z-index: 1;
+        }
       }
 
       &_num {
@@ -40,8 +77,31 @@
         bottom: 153px;
         left: 460px;
         z-index: 1;
+
+        @include netbook {
+          left: 275px;
+        }
+
+        @include mobile {
+          left: 128px;
+        }
       }
-       &_temp {
+      &_title {
+        position: absolute;
+        width: 25px;
+        bottom: 88px;
+        left: 488px;
+        z-index: 1;
+
+        @include netbook {
+          left: 300px;
+        }
+
+        @include mobile {
+          left: 148px;
+        }
+      }
+      &_temp {
         position: absolute;
         width: 20px;
         bottom: -15px;
@@ -49,25 +109,50 @@
         z-index: 2;
         animation: rotate-90-ccw 2s infinite linear;
         animation-direction: alternate;
+
+        @include netbook {
+          width: 15px;
+          right: 330px;
+        }
+
+        @include mobile {
+          width: 15px;
+          right: 150px;
+          bottom: -23px;
+        }
       }
     }
   }
 
-  &-title{
-    &__title{
+  &-title {
+    &__title {
       font-size: 52px;
       color: $cyan;
 
-      &_second{
-        font-size: 32px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 800;
-        opacity: 0.5;
+      @include netbook {
+        font-size: 30px;
       }
 
-      &_text{
+      &_second {
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        opacity: 0.5;
+        color: black;
+
+        @include netbook {
+          font-size: 22px;
+          margin: 40px 0;
+        }
+      }
+
+      &_text {
         color: black;
         font-size: 18px;
+
+        @include netbook {
+          font-size: 15px;
+        }
       }
     }
   }

@@ -1,0 +1,55 @@
+.header {
+  background-color: $main-color;
+  &__mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    display: none;
+
+    @include netbook {
+      display: flex;
+    }
+
+    &_title {
+      color: white;
+      font-family: $font-h;
+    }
+
+    &_menu {
+      position: relative;
+      top: -4px;
+      &_block {
+        @include netbook {
+          display: none;
+        }
+      }
+
+      &_canvas {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 40px 10px;
+        li {
+          margin-bottom: 10px;
+          a {
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+          }
+        }
+
+        .uk-active {
+          a {
+            color: $green-2;
+          }
+        }
+      }
+    }
+  }
+  .uk-offcanvas-bar {
+    background-color: $main-color;
+  }
+}
