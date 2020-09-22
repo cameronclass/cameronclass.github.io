@@ -134,37 +134,4 @@
     
     }
   }
-
-  &-title {
-    &__title {
-      font-size: 52px;
-      color: $cyan;
-
-      @include netbook {
-        font-size: 30px;
-      }
-
-      &_second {
-        font-size: 32px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bolder;
-        opacity: 0.5;
-        color: black;
-
-        @include netbook {
-          font-size: 22px;
-          margin: 40px 0;
-        }
-      }
-
-      &_text {
-        color: black;
-        font-size: 18px;
-
-        @include netbook {
-          font-size: 15px;
-        }
-      }
-    }
-  }
 }

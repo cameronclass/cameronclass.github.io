@@ -47,6 +47,15 @@ a {
   }
 }
 
+.ml16 {
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 /* Effect 12: circle */
 .cl-effect-12 a::before,
 .cl-effect-12 a::after {

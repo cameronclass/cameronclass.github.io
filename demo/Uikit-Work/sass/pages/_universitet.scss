@@ -1,0 +1,347 @@
+.universitet {
+  &-offer {
+    position: relative;
+    height: 380px;
+    &__img {
+      display: flex;
+
+      &_1 {
+        position: absolute;
+        width: 450px;
+        bottom: 15px;
+        left: 120px;
+        z-index: 1;
+
+        @include netbook {
+          width: 360px;
+          left: 0px;
+          bottom: 10px;
+        }
+
+        @include mobile {
+          width: 268px;
+          left: -30px;
+        }
+      }
+
+      &_2 {
+        position: absolute;
+        width: 90px;
+        bottom: 20px;
+        left: 50px;
+        z-index: 2;
+
+        @include netbook {
+          left: 115px;
+          bottom: 100px;
+        }
+
+        @include mobile {
+          left: 50px;
+          bottom: 65px;
+        }
+      }
+
+      &_3 {
+        position: absolute;
+        width: 160px;
+        bottom: 16px;
+        left: 530px;
+        z-index: 0;
+
+        @include mobile {
+          display: none;
+        }
+      }
+      &_4 {
+        position: absolute;
+        width: 170px;
+        bottom: 20px;
+        right: 330px;
+        z-index: 2;
+
+        @include netbook {
+          width: 348px;
+          bottom: 14px;
+          right: -50px;
+        }
+
+        @include mobile {
+          width: 238px;
+          right: -90px;
+          z-index: 1;
+        }
+      }
+      &_5 {
+        position: absolute;
+        width: 240px;
+        bottom: 25px;
+        right: 60px;
+        z-index: 0;
+
+        @include netbook {
+          right: 40%;
+          bottom: 170px;
+        }
+
+        @include mobile {
+          width: 130px;
+          right: 45%;
+          bottom: 190px;
+        }
+      }
+
+      &_6 {
+        position: absolute;
+        width: 180px;
+        bottom: 200px;
+        left: 20px;
+        z-index: 2;
+        animation: slide-right 5.5s infinite linear;
+        animation-direction: alternate;
+
+        @include netbook {
+          right: 40%;
+          bottom: 170px;
+        }
+
+        @include mobile {
+          width: 130px;
+          right: 45%;
+          bottom: 190px;
+        }
+      }
+
+      &_7 {
+        position: absolute;
+        width: 165px;
+        bottom: 255px;
+        left: 20px;
+        z-index: 1;
+        animation: slide-right 5.5s infinite linear;
+        animation-direction: alternate-reverse;
+
+        @include netbook {
+          right: 40%;
+          bottom: 150px;
+        }
+
+        @include mobile {
+          width: 115px;
+          right: 45%;
+          bottom: 170px;
+        }
+      }
+
+      &_8 {
+        position: absolute;
+        width: 165px;
+        bottom: 285px;
+        right: 300px;
+        z-index: 1;
+        animation: slide-right-slow 3s infinite linear;
+        animation-direction: alternate-reverse;
+
+        @include netbook {
+          right: 40%;
+          bottom: 150px;
+        }
+
+        @include mobile {
+          width: 115px;
+          right: 45%;
+          bottom: 170px;
+        }
+      }
+
+      &_9 {
+        position: absolute;
+        width: 190px;
+        top: 20px;
+        right: 30px;
+        z-index: 1;
+        background-color: #fff;
+        padding: 10px 10px 15px;
+        border-radius: 5px;
+
+        span {
+          font-size: 12px;
+          text-align: right;
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+        }
+
+        @include netbook {
+          right: 40%;
+          bottom: 150px;
+        }
+
+        @include mobile {
+          width: 115px;
+          right: 45%;
+          bottom: 170px;
+        }
+      }
+
+      &_num {
+        position: absolute;
+        width: 30px;
+        bottom: 165px;
+        left: 464px;
+        z-index: 2;
+
+        @include netbook {
+          left: 110px;
+          bottom: 168px;
+        }
+
+        @include mobile {
+          left: 50px;
+          bottom: 138px;
+        }
+      }
+      &_title {
+        position: absolute;
+        width: 75px;
+
+        bottom: 156px;
+        left: 144px;
+
+        z-index: 2;
+
+        @include netbook {
+          left: 110px;
+          bottom: 168px;
+        }
+
+        @include mobile {
+          left: 50px;
+          bottom: 138px;
+        }
+      }
+    }
+  }
+
+  &-tabs {
+    .uk-subnav {
+      width: 100%;
+      margin: 0;
+      border-radius: 3px;
+      border: 1px solid $blue;
+
+      li {
+        width: 50%;
+        padding: 0;
+        a {
+          padding: 12px;
+          text-align: center;
+          font-family: $font-h;
+          background-color: $bg-grey-2;
+          color: black;
+        }
+      }
+
+      .uk-active {
+        a {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+    &__video {
+      display: flex;
+      flex-direction: column;
+      background-color: $main-color;
+      color: white;
+      overflow-y: scroll;
+      height: 439px;
+
+      @include mobile{
+        height: 300px;
+      }
+
+      /* &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        background-image: linear-gradient(rgba(0, 91, 110, 0) 0%, rgb(0, 91, 110) 90%);
+      } */
+
+      &_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          padding: 15px;
+          display: flex;
+          color: white;
+
+          &:hover {
+            text-decoration: none;
+            background-color: #033540;
+          }
+
+          span {
+            &:first-child {
+              color: #5accbe;
+              text-align: center;
+            }
+            &:last-child {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      &_title {
+        padding: 15px;
+        border-bottom: 1px solid #033540;
+
+        h3 {
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        span {
+          color: #5accbe;
+          font-size: 14px;
+          line-height: 1;
+        }
+        img {
+          margin-right: 7px;
+        }
+      }
+
+      &_link {
+        height: 100%;
+        background-color: black;
+
+        iframe {
+          height: 437px !important;
+        }
+      }
+    }
+  }
+
+  &-people{
+    &__title{
+      text-align: center;
+      color: $cyan;
+    }
+    &__time{
+      text-align: center;
+      color: $main-color;
+      font-family: $font-h;
+      font-size: 28px;
+
+      @include mobile{
+        font-size: 24px;
+      }
+    }
+  }
+}

@@ -54,7 +54,7 @@ if ($(window).width() > 960) {
   });
 }
 
-$(window).scroll(function () {
+/* $(window).scroll(function () {
   $('.first-layout__title, .first-layout__text, .first-layout__figures_oval, .first-layout__figures_spider, .first-layout__figures_contact').each(function () {
     var imagePos = $(this).offset().top;
 
@@ -63,4 +63,26 @@ $(window).scroll(function () {
       $(this).addClass("swing-in-top-fwd");
     }
   });
-});
+}); */
+
+
+/* // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({
+    loop: true
+  })
+  .add({
+    targets: '.ml16 .letter',
+    translateY: [-100, 0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  }); */

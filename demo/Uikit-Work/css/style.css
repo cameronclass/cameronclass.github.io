@@ -190,7 +190,8 @@ h5 {
   .uk-navbar-nav li a:hover {
     color: #5accbe; }
 .uk-navbar-nav li.uk-active a {
-  color: #8AB448; }
+  color: #f3fc00;
+  opacity: 0.7; }
 
 .main-offer {
   background-color: #5accbe;
@@ -336,6 +337,42 @@ h5 {
   padding: 0 20px 50px;
   border-bottom: 1px solid #005C6F; }
 
+.main-card-man-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .main-card-man-inline__img img {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .main-card-man-inline__desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #efefef; }
+    .main-card-man-inline__desc_role {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #005C6F; }
+    .main-card-man-inline__desc_name {
+      margin: 0;
+      font-size: 16px;
+      color: #005C6F; }
+    .main-card-man-inline__desc_text {
+      color: black;
+      font-weight: bold;
+      margin: 0; }
+
 .modal-button {
   padding: 12px 30px;
   border-radius: 25px;
@@ -444,7 +481,7 @@ h5 {
             color: white;
             font-weight: 600; }
         .header__mobile_menu_canvas .uk-active a {
-          color: #d1ee6b; }
+          color: #f3fc00; }
   .header .uk-offcanvas-bar {
     background-color: #005C6F; }
   .header .uk-navbar-lef {
@@ -703,28 +740,279 @@ h5 {
         .masterskaya-offer__img_num {
           left: 50px;
           bottom: 138px; } }
-.masterskaya-title__title {
-  font-size: 52px;
+
+.universitet-offer {
+  position: relative;
+  height: 380px; }
+  .universitet-offer__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .universitet-offer__img_1 {
+      position: absolute;
+      width: 450px;
+      bottom: 15px;
+      left: 120px;
+      z-index: 1; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_1 {
+          width: 360px;
+          left: 0px;
+          bottom: 10px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_1 {
+          width: 268px;
+          left: -30px; } }
+    .universitet-offer__img_2 {
+      position: absolute;
+      width: 90px;
+      bottom: 20px;
+      left: 50px;
+      z-index: 2; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_2 {
+          left: 115px;
+          bottom: 100px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_2 {
+          left: 50px;
+          bottom: 65px; } }
+    .universitet-offer__img_3 {
+      position: absolute;
+      width: 160px;
+      bottom: 16px;
+      left: 530px;
+      z-index: 0; }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_3 {
+          display: none; } }
+    .universitet-offer__img_4 {
+      position: absolute;
+      width: 170px;
+      bottom: 20px;
+      right: 330px;
+      z-index: 2; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_4 {
+          width: 348px;
+          bottom: 14px;
+          right: -50px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_4 {
+          width: 238px;
+          right: -90px;
+          z-index: 1; } }
+    .universitet-offer__img_5 {
+      position: absolute;
+      width: 240px;
+      bottom: 25px;
+      right: 60px;
+      z-index: 0; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_5 {
+          right: 40%;
+          bottom: 170px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_5 {
+          width: 130px;
+          right: 45%;
+          bottom: 190px; } }
+    .universitet-offer__img_6 {
+      position: absolute;
+      width: 180px;
+      bottom: 200px;
+      left: 20px;
+      z-index: 2;
+      -webkit-animation: slide-right 5.5s infinite linear;
+              animation: slide-right 5.5s infinite linear;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_6 {
+          right: 40%;
+          bottom: 170px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_6 {
+          width: 130px;
+          right: 45%;
+          bottom: 190px; } }
+    .universitet-offer__img_7 {
+      position: absolute;
+      width: 165px;
+      bottom: 255px;
+      left: 20px;
+      z-index: 1;
+      -webkit-animation: slide-right 5.5s infinite linear;
+              animation: slide-right 5.5s infinite linear;
+      -webkit-animation-direction: alternate-reverse;
+              animation-direction: alternate-reverse; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_7 {
+          right: 40%;
+          bottom: 150px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_7 {
+          width: 115px;
+          right: 45%;
+          bottom: 170px; } }
+    .universitet-offer__img_8 {
+      position: absolute;
+      width: 165px;
+      bottom: 285px;
+      right: 300px;
+      z-index: 1;
+      -webkit-animation: slide-right-slow 3s infinite linear;
+              animation: slide-right-slow 3s infinite linear;
+      -webkit-animation-direction: alternate-reverse;
+              animation-direction: alternate-reverse; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_8 {
+          right: 40%;
+          bottom: 150px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_8 {
+          width: 115px;
+          right: 45%;
+          bottom: 170px; } }
+    .universitet-offer__img_9 {
+      position: absolute;
+      width: 190px;
+      top: 20px;
+      right: 30px;
+      z-index: 1;
+      background-color: #fff;
+      padding: 10px 10px 15px;
+      border-radius: 5px; }
+      .universitet-offer__img_9 span {
+        font-size: 12px;
+        text-align: right;
+        position: absolute;
+        right: 10px;
+        bottom: 10px; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_9 {
+          right: 40%;
+          bottom: 150px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_9 {
+          width: 115px;
+          right: 45%;
+          bottom: 170px; } }
+    .universitet-offer__img_num {
+      position: absolute;
+      width: 30px;
+      bottom: 165px;
+      left: 464px;
+      z-index: 2; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_num {
+          left: 110px;
+          bottom: 168px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_num {
+          left: 50px;
+          bottom: 138px; } }
+    .universitet-offer__img_title {
+      position: absolute;
+      width: 75px;
+      bottom: 156px;
+      left: 144px;
+      z-index: 2; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_title {
+          left: 110px;
+          bottom: 168px; } }
+      @media screen and (max-width: 576px) {
+        .universitet-offer__img_title {
+          left: 50px;
+          bottom: 138px; } }
+.universitet-tabs .uk-subnav {
+  width: 100%;
+  margin: 0;
+  border-radius: 3px;
+  border: 1px solid #008dab; }
+  .universitet-tabs .uk-subnav li {
+    width: 50%;
+    padding: 0; }
+    .universitet-tabs .uk-subnav li a {
+      padding: 12px;
+      text-align: center;
+      font-family: "CoreSansMSC75ExtraBold", sans-serif;
+      background-color: #efefef;
+      color: black; }
+  .universitet-tabs .uk-subnav .uk-active a {
+    background-color: #008dab;
+    color: white; }
+.universitet-tabs__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #005C6F;
+  color: white;
+  overflow-y: scroll;
+  height: 439px;
+  /* &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 91, 110, 0) 0%, rgb(0, 91, 110) 90%);
+  } */ }
+  @media screen and (max-width: 576px) {
+    .universitet-tabs__video {
+      height: 300px; } }
+  .universitet-tabs__video_list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .universitet-tabs__video_list a {
+      padding: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: white; }
+      .universitet-tabs__video_list a:hover {
+        text-decoration: none;
+        background-color: #033540; }
+      .universitet-tabs__video_list a span:first-child {
+        color: #5accbe;
+        text-align: center; }
+      .universitet-tabs__video_list a span:last-child {
+        margin-left: 10px; }
+  .universitet-tabs__video_title {
+    padding: 15px;
+    border-bottom: 1px solid #033540; }
+    .universitet-tabs__video_title h3 {
+      color: white;
+      margin-bottom: 10px; }
+    .universitet-tabs__video_title span {
+      color: #5accbe;
+      font-size: 14px;
+      line-height: 1; }
+    .universitet-tabs__video_title img {
+      margin-right: 7px; }
+  .universitet-tabs__video_link {
+    height: 100%;
+    background-color: black; }
+    .universitet-tabs__video_link iframe {
+      height: 437px !important; }
+.universitet-people__title {
+  text-align: center;
   color: #5accbe; }
-  @media screen and (max-width: 992px) {
-    .masterskaya-title__title {
-      font-size: 30px; } }
-  .masterskaya-title__title_second {
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    opacity: 0.5;
-    color: black; }
-    @media screen and (max-width: 992px) {
-      .masterskaya-title__title_second {
-        font-size: 22px;
-        margin: 40px 0; } }
-  .masterskaya-title__title_text {
-    color: black;
-    font-size: 18px; }
-    @media screen and (max-width: 992px) {
-      .masterskaya-title__title_text {
-        font-size: 15px; } }
+.universitet-people__time {
+  text-align: center;
+  color: #005C6F;
+  font-family: "CoreSansMSC75ExtraBold", sans-serif;
+  font-size: 28px; }
+  @media screen and (max-width: 576px) {
+    .universitet-people__time {
+      font-size: 24px; } }
 
 /* Sliders */
 .rotate-90-ccw {
@@ -764,6 +1052,20 @@ h5 {
   100% {
     -webkit-transform: translateX(120px);
             transform: translateX(120px); } }
+@-webkit-keyframes slide-right-slow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px); } }
+@keyframes slide-right-slow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px); } }
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

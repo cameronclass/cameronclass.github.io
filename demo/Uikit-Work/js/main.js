@@ -15,6 +15,22 @@ $(function () {
 });
 
 
+/* $(".universitet-tabs__video").scrollTop(function () {
+  if ($(".universitet-tabs__video").scrollTop() + $(".universitet-tabs__video").height() == $(".universitet-tabs__video").height()) {
+    alert("bottom!");
+  }
+}); */
+$(".universitet-tabs__video").scroll(function () {
+  var scroll = $(".universitet-tabs__video").scrollTop() == $(".universitet-tabs__video").height();
+
+  if (scroll >= 500) {
+    $(".universitet-tabs__video").addClass("darkHeader");
+  } else {
+    $(".universitet-tabs__video").removeClass("darkHeader");
+  }
+});
+
+
 /* Tests */
 /*  */
   $('#quiz').quiz({
