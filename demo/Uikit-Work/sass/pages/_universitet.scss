@@ -13,14 +13,14 @@
         z-index: 1;
 
         @include netbook {
-          width: 360px;
-          left: 0px;
+          width: 380px;
+          left: 50px;
           bottom: 10px;
         }
 
         @include mobile {
-          width: 268px;
-          left: -30px;
+          width: 320px;
+          left: 50px;
         }
       }
 
@@ -32,13 +32,15 @@
         z-index: 2;
 
         @include netbook {
-          left: 115px;
-          bottom: 100px;
+          width: 70px;
+          left: 0px;
+          bottom: 20px;
         }
 
         @include mobile {
-          left: 50px;
-          bottom: 65px;
+          right: 5px;
+          bottom: 10px;
+          left: inherit;
         }
       }
 
@@ -49,8 +51,15 @@
         left: 530px;
         z-index: 0;
 
+        @include netbook {
+          width: 130px;
+          left: 380px;
+        }
+
         @include mobile {
-          display: none;
+          width: 150px;
+          left: 30px;
+          bottom: 80px;
         }
       }
       &_4 {
@@ -61,15 +70,16 @@
         z-index: 2;
 
         @include netbook {
-          width: 348px;
+          width: 150px;
           bottom: 14px;
-          right: -50px;
+          right: 100px;
         }
 
         @include mobile {
           width: 238px;
           right: -90px;
           z-index: 1;
+          display: none;
         }
       }
       &_5 {
@@ -80,14 +90,16 @@
         z-index: 0;
 
         @include netbook {
-          right: 40%;
-          bottom: 170px;
+          width: 200px;
+          right: 20px;
+          bottom: 20px;
         }
 
         @include mobile {
           width: 130px;
           right: 45%;
           bottom: 190px;
+          display: none;
         }
       }
 
@@ -101,14 +113,15 @@
         animation-direction: alternate;
 
         @include netbook {
-          right: 40%;
-          bottom: 170px;
+          width: 160px;
+          left: 20px;
+          bottom: 200px;
         }
 
         @include mobile {
           width: 130px;
-          right: 45%;
-          bottom: 190px;
+          left: 40px;
+          bottom: 260px;
         }
       }
 
@@ -122,14 +135,15 @@
         animation-direction: alternate-reverse;
 
         @include netbook {
-          right: 40%;
-          bottom: 150px;
+          left: 30px;
+          bottom: 240px;
         }
 
         @include mobile {
-          width: 115px;
-          right: 45%;
-          bottom: 170px;
+          width: 150px;
+          right: 30px;
+          left: inherit;
+          bottom: 230px;
         }
       }
 
@@ -143,14 +157,15 @@
         animation-direction: alternate-reverse;
 
         @include netbook {
-          right: 40%;
-          bottom: 150px;
+          width: 140px;
+          right: 250px;
+          bottom: 230px;
         }
 
         @include mobile {
           width: 115px;
-          right: 45%;
-          bottom: 170px;
+          right: 60px;
+          bottom: 200px;
         }
       }
 
@@ -170,17 +185,26 @@
           position: absolute;
           right: 10px;
           bottom: 10px;
+
+          @include mobile {
+            bottom: 2px;
+          }
         }
 
         @include netbook {
-          right: 40%;
-          bottom: 150px;
+          width: 170px;
+          right: 30px;
+          top: 30px;
         }
 
         @include mobile {
-          width: 115px;
-          right: 45%;
+          width: 125px;
+          left: 20px;
+          right: inherit;
           bottom: 170px;
+          top: inherit;
+          z-index: 3;
+          padding: 5px 5px 10px;
         }
       }
 
@@ -192,13 +216,14 @@
         z-index: 2;
 
         @include netbook {
-          left: 110px;
-          bottom: 168px;
+          left: 350px;
+          bottom: 148px;
         }
 
         @include mobile {
-          left: 50px;
-          bottom: 138px;
+          left: 265px;
+          width: 25px;
+          bottom: 115px;
         }
       }
       &_title {
@@ -211,13 +236,14 @@
         z-index: 2;
 
         @include netbook {
-          left: 110px;
-          bottom: 168px;
+          left: 65px;
+          bottom: 130px;
         }
 
         @include mobile {
-          left: 50px;
-          bottom: 138px;
+          width: 55px;
+          left: 300px;
+          bottom: 110px;
         }
       }
     }
@@ -229,16 +255,26 @@
       margin: 0;
       border-radius: 3px;
       border: 1px solid $blue;
+      overflow: hidden;
 
       li {
         width: 50%;
         padding: 0;
+        border-right: 1px solid $blue;
+
+        &:last-child {
+          border-right: none;
+        }
         a {
           padding: 12px;
           text-align: center;
           font-family: $font-h;
           background-color: $bg-grey-2;
           color: black;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
 
@@ -257,7 +293,7 @@
       overflow-y: scroll;
       height: 439px;
 
-      @include mobile{
+      @include mobile {
         height: 300px;
       }
 
@@ -328,18 +364,18 @@
     }
   }
 
-  &-people{
-    &__title{
+  &-people {
+    &__title {
       text-align: center;
       color: $cyan;
     }
-    &__time{
+    &__time {
       text-align: center;
       color: $main-color;
       font-family: $font-h;
       font-size: 28px;
 
-      @include mobile{
+      @include mobile {
         font-size: 24px;
       }
     }

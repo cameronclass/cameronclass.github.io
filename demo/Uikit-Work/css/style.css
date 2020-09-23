@@ -6,7 +6,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: #5ACCBE;
+  background: #005C6F;
   z-index: 100500; }
 
 .cssload-loader-inner {
@@ -206,6 +206,11 @@ h5 {
       -webkit-transform: translateX(-10%);
           -ms-transform: translateX(-10%);
               transform: translateX(-10%); }
+    @media screen and (max-width: 768px) {
+      .main-offer__img {
+        width: 200%; }
+        .main-offer__img img {
+          width: 200%; } }
     @media screen and (max-width: 576px) {
       .main-offer__img {
         width: 350%; }
@@ -308,6 +313,7 @@ h5 {
         .main-for__content_text {
           background-color: #efefef; } }
 
+/* Cards */
 .main-card__card_title {
   color: #005C6F;
   display: inline-block;
@@ -340,11 +346,13 @@ h5 {
 .main-card-man-inline {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .main-card-man-inline__img img {
-    height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover; }
+  display: flex;
+  margin: 0 0 30px; }
+  .main-card-man-inline__img {
+    /*  img {
+      height: 200px;
+      object-fit: cover;
+    } */ }
   .main-card-man-inline__desc {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,6 +381,161 @@ h5 {
       font-weight: bold;
       margin: 0; }
 
+.main-card-man-column {
+  margin-bottom: 35px; }
+  .main-card-man-column__block {
+    padding: 15px; }
+  .main-card-man-column__time {
+    color: #ff0000;
+    font-size: 12px;
+    font-family: "CoreSansMSC75ExtraBold", sans-serif;
+    letter-spacing: 2.5px; }
+  .main-card-man-column__title h3 {
+    font-size: 18px;
+    color: #005C6F;
+    margin: 5px 0; }
+  .main-card-man-column__name h4 {
+    font-size: 16px;
+    color: #005C6F;
+    text-transform: uppercase;
+    margin: 12px 0 5px; }
+  .main-card-man-column__text p {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-weight: 600; }
+  .main-card-man-column .modal-button {
+    position: absolute;
+    bottom: 0; }
+
+.main-relax-card {
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid #5accbe;
+  position: relative; }
+  .main-relax-card__btn {
+    margin: 25px auto 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main-relax-card__img {
+    position: relative;
+    width: 98px;
+    height: 98px;
+    display: block;
+    background-color: #5accbe;
+    border-radius: 50%;
+    margin: 30px auto 20px; }
+    .main-relax-card__img img {
+      position: absolute;
+      top: 45%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      max-width: 115px; }
+  .main-relax-card__number {
+    width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 50%;
+    color: #5accbe;
+    font-size: 20px;
+    font-family: "CoreSansMSC75ExtraBold", sans-serif;
+    background-color: #f5f5f5;
+    border: 2px solid #5accbe;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .main-relax-card__text p {
+    font-size: 14px;
+    color: #555;
+    text-align: center; }
+  .main-relax-card__title {
+    margin-top: 25px; }
+    .main-relax-card__title h3 {
+      font-size: 18px;
+      text-align: center;
+      color: #005C6F; }
+
+.main-card-comics {
+  background-color: #efefef;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  height: auto; }
+  .main-card-comics:hover {
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2); }
+  .main-card-comics__block {
+    padding: 20px; }
+  .main-card-comics__img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    overflow: hidden; }
+    .main-card-comics__img_overlay {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      -webkit-transition: 150ms ease;
+      -o-transition: 150ms ease;
+      transition: 150ms ease;
+      opacity: 0; }
+    .main-card-comics__img:hover .main-card-comics__img_overlay {
+      opacity: 1; }
+  .main-card-comics__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .main-card-comics__links .main-btn-2 {
+      background-color: #005C6F;
+      font-size: 13px;
+      width: inherit; }
+      .main-card-comics__links .main-btn-2:hover {
+        background-color: #5accbe; }
+    .main-card-comics__links .read-btn {
+      background-color: #c1e532; }
+  .main-card-comics__text {
+    height: 71px;
+    overflow: hidden; }
+    .main-card-comics__text p {
+      color: #555;
+      font-size: 14px;
+      text-align: center; }
+  .main-card-comics__title {
+    height: 62px;
+    overflow: hidden; }
+    .main-card-comics__title h3 {
+      color: #555;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 10px; }
+
 .modal-button {
   padding: 12px 30px;
   border-radius: 25px;
@@ -390,6 +553,7 @@ h5 {
     color: white;
     text-decoration: none; }
 
+/* Sections Slider */
 .main-partners__title {
   color: #5accbe;
   font-size: 42px; }
@@ -432,6 +596,27 @@ h5 {
     background-color: #5accbe;
     color: white;
     text-decoration: none; }
+
+.main-btn-2 {
+  padding: 10px 20px;
+  width: 85%;
+  font-size: 16px;
+  font-family: "CoreSansMSC75ExtraBold", sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #5accbe;
+  border-radius: 25px;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  text-transform: uppercase; }
+  .main-btn-2:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #005C6F; }
+
+.position-relative {
+  position: relative; }
 
 /* Sections for all pages */
 .header {
@@ -488,6 +673,135 @@ h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
+.header-turnir {
+  padding: 80px 0;
+  background: #1a2177;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a2177), color-stop(47%, #309ed5), to(#1b277c));
+  background: -webkit-linear-gradient(top, #1a2177 0%, #309ed5 47%, #1b277c 100%);
+  background: -o-linear-gradient(top, #1a2177 0%, #309ed5 47%, #1b277c 100%);
+  background: linear-gradient(180deg, #1a2177 0%, #309ed5 47%, #1b277c 100%); }
+  .header-turnir__title {
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 80px; }
+    @media screen and (max-width: 768px) {
+      .header-turnir__title {
+        font-size: 50px; } }
+    @media screen and (max-width: 576px) {
+      .header-turnir__title {
+        font-size: 30px; } }
+  .header-turnir__form {
+    background-color: #f5af3f;
+    padding: 40px 0 10px; }
+    .header-turnir__form_block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .header-turnir__form_label {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-right: 20px; }
+      .header-turnir__form_label span {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "CoreSansMSC75ExtraBold", sans-serif;
+        color: #253290;
+        margin-right: 20px;
+        text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        .header-turnir__form_label {
+          width: 100%;
+          margin-bottom: 20px; } }
+      @media screen and (max-width: 576px) {
+        .header-turnir__form_label {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          margin-right: 0; }
+          .header-turnir__form_label span {
+            margin-bottom: 7px; } }
+    .header-turnir__form_input {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px 15px;
+      border-radius: 12px;
+      border: 1px solid white;
+      background-color: transparent;
+      font-size: 16px;
+      color: #253290;
+      font-weight: bold; }
+      .header-turnir__form_input:focus {
+        outline: none;
+        border-color: #253290; }
+    .header-turnir__form_btn {
+      margin-right: 20px;
+      padding: 6px 15px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid white;
+      color: #253290;
+      font-weight: bold;
+      font-family: "CoreSansMSC75ExtraBold", sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .header-turnir__form_btn:focus {
+        outline: none; }
+      @media screen and (max-width: 576px) {
+        .header-turnir__form_btn {
+          padding: 10px 25px;
+          margin-right: 15px; } }
+    .header-turnir__form_info {
+      font-size: 18px;
+      font-weight: bold;
+      color: #253290; }
+  .header-turnir__table_header {
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: "CoreSansMSC75ExtraBold", sans-serif;
+    color: #253290;
+    text-transform: uppercase; }
+  .header-turnir__table_row {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 13px;
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    color: #008dab; }
+  .header-turnir__table_number span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header-turnir__table .uk-container .header-turnir__table_row:nth-child(-n + 10) {
+    color: #e43f00; }
+    .header-turnir__table .uk-container .header-turnir__table_row:nth-child(-n + 10) .header-turnir__table_number span:after {
+      content: "";
+      margin-left: 40px;
+      background-image: url(../img/star.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      width: 18px;
+      height: 18px; }
 
 .footer img {
   -webkit-filter: brightness(0.4);
@@ -756,13 +1070,13 @@ h5 {
       z-index: 1; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_1 {
-          width: 360px;
-          left: 0px;
+          width: 380px;
+          left: 50px;
           bottom: 10px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_1 {
-          width: 268px;
-          left: -30px; } }
+          width: 320px;
+          left: 50px; } }
     .universitet-offer__img_2 {
       position: absolute;
       width: 90px;
@@ -771,21 +1085,29 @@ h5 {
       z-index: 2; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_2 {
-          left: 115px;
-          bottom: 100px; } }
+          width: 70px;
+          left: 0px;
+          bottom: 20px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_2 {
-          left: 50px;
-          bottom: 65px; } }
+          right: 5px;
+          bottom: 10px;
+          left: inherit; } }
     .universitet-offer__img_3 {
       position: absolute;
       width: 160px;
       bottom: 16px;
       left: 530px;
       z-index: 0; }
+      @media screen and (max-width: 992px) {
+        .universitet-offer__img_3 {
+          width: 130px;
+          left: 380px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_3 {
-          display: none; } }
+          width: 150px;
+          left: 30px;
+          bottom: 80px; } }
     .universitet-offer__img_4 {
       position: absolute;
       width: 170px;
@@ -794,14 +1116,15 @@ h5 {
       z-index: 2; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_4 {
-          width: 348px;
+          width: 150px;
           bottom: 14px;
-          right: -50px; } }
+          right: 100px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_4 {
           width: 238px;
           right: -90px;
-          z-index: 1; } }
+          z-index: 1;
+          display: none; } }
     .universitet-offer__img_5 {
       position: absolute;
       width: 240px;
@@ -810,13 +1133,15 @@ h5 {
       z-index: 0; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_5 {
-          right: 40%;
-          bottom: 170px; } }
+          width: 200px;
+          right: 20px;
+          bottom: 20px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_5 {
           width: 130px;
           right: 45%;
-          bottom: 190px; } }
+          bottom: 190px;
+          display: none; } }
     .universitet-offer__img_6 {
       position: absolute;
       width: 180px;
@@ -829,13 +1154,14 @@ h5 {
               animation-direction: alternate; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_6 {
-          right: 40%;
-          bottom: 170px; } }
+          width: 160px;
+          left: 20px;
+          bottom: 200px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_6 {
           width: 130px;
-          right: 45%;
-          bottom: 190px; } }
+          left: 40px;
+          bottom: 260px; } }
     .universitet-offer__img_7 {
       position: absolute;
       width: 165px;
@@ -848,13 +1174,14 @@ h5 {
               animation-direction: alternate-reverse; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_7 {
-          right: 40%;
-          bottom: 150px; } }
+          left: 30px;
+          bottom: 240px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_7 {
-          width: 115px;
-          right: 45%;
-          bottom: 170px; } }
+          width: 150px;
+          right: 30px;
+          left: inherit;
+          bottom: 230px; } }
     .universitet-offer__img_8 {
       position: absolute;
       width: 165px;
@@ -867,13 +1194,14 @@ h5 {
               animation-direction: alternate-reverse; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_8 {
-          right: 40%;
-          bottom: 150px; } }
+          width: 140px;
+          right: 250px;
+          bottom: 230px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_8 {
           width: 115px;
-          right: 45%;
-          bottom: 170px; } }
+          right: 60px;
+          bottom: 200px; } }
     .universitet-offer__img_9 {
       position: absolute;
       width: 190px;
@@ -889,15 +1217,23 @@ h5 {
         position: absolute;
         right: 10px;
         bottom: 10px; }
+        @media screen and (max-width: 576px) {
+          .universitet-offer__img_9 span {
+            bottom: 2px; } }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_9 {
-          right: 40%;
-          bottom: 150px; } }
+          width: 170px;
+          right: 30px;
+          top: 30px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_9 {
-          width: 115px;
-          right: 45%;
-          bottom: 170px; } }
+          width: 125px;
+          left: 20px;
+          right: inherit;
+          bottom: 170px;
+          top: inherit;
+          z-index: 3;
+          padding: 5px 5px 10px; } }
     .universitet-offer__img_num {
       position: absolute;
       width: 30px;
@@ -906,12 +1242,13 @@ h5 {
       z-index: 2; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_num {
-          left: 110px;
-          bottom: 168px; } }
+          left: 350px;
+          bottom: 148px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_num {
-          left: 50px;
-          bottom: 138px; } }
+          left: 265px;
+          width: 25px;
+          bottom: 115px; } }
     .universitet-offer__img_title {
       position: absolute;
       width: 75px;
@@ -920,26 +1257,41 @@ h5 {
       z-index: 2; }
       @media screen and (max-width: 992px) {
         .universitet-offer__img_title {
-          left: 110px;
-          bottom: 168px; } }
+          left: 65px;
+          bottom: 130px; } }
       @media screen and (max-width: 576px) {
         .universitet-offer__img_title {
-          left: 50px;
-          bottom: 138px; } }
+          width: 55px;
+          left: 300px;
+          bottom: 110px; } }
 .universitet-tabs .uk-subnav {
   width: 100%;
   margin: 0;
   border-radius: 3px;
-  border: 1px solid #008dab; }
+  border: 1px solid #008dab;
+  overflow: hidden; }
   .universitet-tabs .uk-subnav li {
     width: 50%;
-    padding: 0; }
+    padding: 0;
+    border-right: 1px solid #008dab; }
+    .universitet-tabs .uk-subnav li:last-child {
+      border-right: none; }
     .universitet-tabs .uk-subnav li a {
       padding: 12px;
       text-align: center;
       font-family: "CoreSansMSC75ExtraBold", sans-serif;
       background-color: #efefef;
-      color: black; }
+      color: black;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .universitet-tabs .uk-subnav .uk-active a {
     background-color: #008dab;
     color: white; }
@@ -1013,6 +1365,39 @@ h5 {
   @media screen and (max-width: 576px) {
     .universitet-people__time {
       font-size: 24px; } }
+
+.multiki .uk-subnav {
+  width: 100%;
+  margin: 0;
+  border-radius: 3px;
+  border: 1px solid #008dab;
+  overflow: hidden; }
+  .multiki .uk-subnav li {
+    width: 25%;
+    padding: 0;
+    border-right: 1px solid #008dab; }
+    .multiki .uk-subnav li:last-child {
+      border-right: none; }
+    .multiki .uk-subnav li a {
+      padding: 14px 20px;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      background-color: #efefef;
+      color: black;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .multiki .uk-subnav .uk-active a {
+    background-color: #008dab;
+    color: white; }
 
 /* Sliders */
 .rotate-90-ccw {

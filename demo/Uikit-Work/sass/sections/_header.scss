@@ -53,7 +53,150 @@
     background-color: $main-color;
   }
 
-  .uk-navbar-lef{
+  .uk-navbar-lef {
     justify-content: center;
+  }
+}
+
+.header-turnir {
+  padding: 80px 0;
+  background: rgb(26, 33, 119);
+  background: linear-gradient(180deg, rgba(26, 33, 119, 1) 0%, rgba(48, 158, 213, 1) 47%, rgba(27, 39, 124, 1) 100%);
+
+  &__title {
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+
+    @include tablet{
+      font-size: 50px;
+    }
+
+    @include mobile{
+      font-size: 30px;
+    }
+  }
+
+  &__form {
+    background-color: #f5af3f;
+    padding: 40px 0 10px;
+    &_block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &_label {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      span {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: $font-h;
+        color: #253290;
+        margin-right: 20px;
+        text-transform: uppercase;
+      }
+      @include tablet{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      @include mobile{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+
+        span{
+          margin-bottom: 7px;
+        }
+      }
+    }
+    &_input {
+      width: 100%;
+      max-width: 400px;
+      padding: 10px 15px;
+      border-radius: 12px;
+      border: 1px solid white;
+      background-color: transparent;
+      font-size: 16px;
+
+
+      color: #253290;
+      font-weight: bold;
+
+      &:focus {
+        outline: none;
+        border-color: #253290;
+      }
+    }
+    &_btn {
+      margin-right: 20px;
+      padding: 6px 15px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid white;
+      color: #253290;
+      font-weight: bold;
+      font-family: $font-h;
+      font-size: 20px;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &:focus{
+        outline: none;
+      }
+
+      @include mobile{
+        padding: 10px 25px;
+        margin-right: 15px;
+      }
+    }
+    &_info {
+      font-size: 18px;
+      font-weight: bold;
+      color: #253290;
+    }
+  }
+
+  &__table {
+    &_header {
+      margin-top: 50px;
+      font-size: 18px;
+      font-family: $font-h;
+      color: #253290;
+      text-transform: uppercase;
+    }
+
+    &_row {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 13px;
+      font-weight: 800;
+      font-family: $font;
+      color: $blue;
+    }
+
+    &_number {
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .uk-container {
+      .header-turnir__table_row:nth-child(-n + 10) {
+        color: #e43f00;
+
+        .header-turnir__table_number {
+          span:after {
+            content: "";
+            margin-left: 40px;
+            @include icon(url(../img/star.svg), 18px, 18px);
+          }
+        }
+      }
+    }
   }
 }

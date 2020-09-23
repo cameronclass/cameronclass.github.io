@@ -33,61 +33,64 @@ $(".universitet-tabs__video").scroll(function () {
 
 /* Tests */
 /*  */
-  $('#quiz').quiz({
-    counterFormat: 'Вопрос %current из %total',
-    resultsFormat: "<img src=img/finish-quiz.png>Поздравляем! Вы заработали %score Баллов. <br> Следите за турнирной таблицей!",
-    questions: [{
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2',
-          'Answer 3',
-          'Answer 4'
-        ],
-        'correctIndex': 1,
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2'
-        ],
-        'correctIndex': 1,
+$('#quiz').quiz({
+  counterFormat: 'Вопрос %current из %total',
+  resultsFormat: "<img src=img/finish-quiz.png>Поздравляем! Вы заработали %score Баллов. <br> Следите за турнирной таблицей!",
+  questions: [{
+      'q': 'A smaple question?',
+      'options': [
+        'Answer 1',
+        'Answer 2',
+        'Answer 3',
+        'Answer 4'
+      ],
+      'correctIndex': 1,
+    },
+    {
+      'q': 'A smaple question?',
+      'options': [
+        'Answer 1',
+        'Answer 2'
+      ],
+      'correctIndex': 1,
 
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2',
-          'Answer 3',
-          'Answer 4'
-        ],
-        'correctIndex': 2,
+    },
+    {
+      'q': 'A smaple question?',
+      'options': [
+        'Answer 1',
+        'Answer 2',
+        'Answer 3',
+        'Answer 4'
+      ],
+      'correctIndex': 2,
 
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2'
-        ],
-        'correctIndex': 1,
+    },
+    {
+      'q': 'A smaple question?',
+      'options': [
+        'Answer 1',
+        'Answer 2'
+      ],
+      'correctIndex': 1,
 
-      },
-      {
-        'q': 'A smaple question?',
-        'options': [
-          'Answer 1',
-          'Answer 2',
-          'Answer 3',
-          'Answer 4'
-        ],
-        'correctIndex': 3,
+    },
+    {
+      'q': 'A smaple question?',
+      'options': [
+        'Answer 1',
+        'Answer 2',
+        'Answer 3',
+        'Answer 4'
+      ],
+      'correctIndex': 3,
+      'timer': 30
+    },
+  ],
+  nextButtonText: "Следующий вопрос",
+  finishButtonText: "Закончить",
+  restartButtonText: "Закрыть",
+});
 
-      },
-    ],
-    nextButtonText: "Следующий вопрос",
-    finishButtonText: "Закончить",
-    restartButtonText: "Закрыть",
-  }); 
+
+

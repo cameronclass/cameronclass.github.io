@@ -1,4 +1,4 @@
-.main-btn{
+.main-btn {
   display: inline-block;
   padding: 8px 20px;
   background-color: $main-color;
@@ -8,9 +8,32 @@
   font-weight: bold;
   transition: 200ms ease;
 
-  &:hover{
+  &:hover {
     background-color: $cyan;
     color: white;
     text-decoration: none;
   }
+}
+
+.main-btn-2 {
+  padding: 10px 20px;
+  width: 85%;
+  font-size: 16px;
+  font-family: $font-h;
+  color: white;
+  text-align: center;
+  background-color: $cyan;
+  border-radius: 25px;
+  transition: 300ms;
+  text-transform: uppercase;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    background-color: $main-color;
+  }
+}
+
+.position-relative {
+  position: relative;
 }
