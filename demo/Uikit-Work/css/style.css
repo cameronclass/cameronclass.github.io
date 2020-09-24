@@ -675,8 +675,8 @@ h5 {
             justify-content: center; }
 
 .header-turnir {
-  padding: 80px 0;
   background: #1a2177;
+  overflow: hidden;
   background: -webkit-gradient(linear, left top, left bottom, from(#1a2177), color-stop(47%, #309ed5), to(#1b277c));
   background: -webkit-linear-gradient(top, #1a2177 0%, #309ed5 47%, #1b277c 100%);
   background: -o-linear-gradient(top, #1a2177 0%, #309ed5 47%, #1b277c 100%);
@@ -685,16 +685,22 @@ h5 {
     color: white;
     font-size: 80px;
     text-transform: uppercase;
-    margin-bottom: 80px; }
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 2; }
     @media screen and (max-width: 768px) {
       .header-turnir__title {
         font-size: 50px; } }
     @media screen and (max-width: 576px) {
       .header-turnir__title {
-        font-size: 30px; } }
+        font-size: 30px;
+        margin-top: 60px; } }
   .header-turnir__form {
     background-color: #f5af3f;
-    padding: 40px 0 10px; }
+    padding: 40px 0 10px;
+    position: relative;
+    z-index: 2; }
     .header-turnir__form_block {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -711,7 +717,9 @@ h5 {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-right: 20px; }
+      margin-right: 20px;
+      max-width: 620px;
+      width: 100%; }
       .header-turnir__form_label span {
         font-size: 22px;
         font-weight: bold;
@@ -770,38 +778,67 @@ h5 {
       font-size: 18px;
       font-weight: bold;
       color: #253290; }
-  .header-turnir__table_header {
-    margin-top: 50px;
-    font-size: 18px;
-    font-family: "CoreSansMSC75ExtraBold", sans-serif;
-    color: #253290;
-    text-transform: uppercase; }
-  .header-turnir__table_row {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 13px;
-    font-weight: 800;
-    font-family: "Open Sans", sans-serif;
-    color: #008dab; }
-  .header-turnir__table_number span {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .header-turnir__table .uk-container .header-turnir__table_row:nth-child(-n + 10) {
-    color: #e43f00; }
-    .header-turnir__table .uk-container .header-turnir__table_row:nth-child(-n + 10) .header-turnir__table_number span:after {
-      content: "";
-      margin-left: 40px;
-      background-image: url(../img/star.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      display: inline-block;
-      width: 18px;
-      height: 18px; }
+  .header-turnir__table {
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/bg-turnir-3.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 100%;
+    background-size: contain; }
+    .header-turnir__table_header {
+      margin-top: 50px;
+      font-size: 18px;
+      font-family: "CoreSansMSC75ExtraBold", sans-serif;
+      color: #253290;
+      text-transform: uppercase; }
+    .header-turnir__table_row {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 13px;
+      font-weight: 800;
+      font-family: "Open Sans", sans-serif;
+      color: #008dab; }
+      @media screen and (max-width: 576px) {
+        .header-turnir__table_row {
+          margin-top: 7px; } }
+    .header-turnir__table_number span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .header-turnir__table .uk-container .header-turnir__table_row:nth-child(-n + 10) {
+      color: #e43f00; }
+      .header-turnir__table .uk-container .header-turnir__table_row:nth-child(-n + 10) .header-turnir__table_number span:after {
+        content: "";
+        margin-left: 40px;
+        background-image: url(../img/star.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 18px;
+        height: 18px; }
+  .header-turnir .turnir-bg-1 {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+    @media screen and (max-width: 576px) {
+      .header-turnir .turnir-bg-1 {
+        width: 320px;
+        right: -100px; } }
+  .header-turnir .turnir-bg-2 {
+    width: 100%;
+    max-width: 700px;
+    left: 0;
+    top: 650px;
+    position: absolute;
+    z-index: 1; }
 
 .footer img {
   -webkit-filter: brightness(0.4);

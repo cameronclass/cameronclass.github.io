@@ -30,8 +30,7 @@
   <!-- Styles CSS -->
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Scripts -->
-  <script src="js/libs.min.js"></script>
+
 
   <!-- Fonts and Icons-->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -216,35 +215,59 @@
               </div>
             </div>
             <div class="main-card__card_button">
-              <a class="modal-button mt-3" href="#modal-container" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
+              <a class="modal-button mt-3" href="#quiz1" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
 
-              <div id="modal-container" class="uk-modal-container" uk-modal>
+              <div id="quiz1" class="uk-modal-container" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                   <button class="uk-modal-close-default" type="button" uk-close></button>
-                  <div class="row">
+                  <div class="row quiz-modal">
                     <div class="col-lg-7">
                       <h3>Введите данные команды для начала теста</h3>
                       <p>Выберите из списка название вашей команды и впишите кодовое
                         слово, указанные при регистрации.</p>
+                      <p class="quiz-modal__contact">Если вы не можете вспомнить данные команды, свяжитесь со службой
+                        поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+
+                      <form class="uk-form-horizontal uk-margin-large">
+
+                        <div class="uk-margin quiz-modal__command">
+                          <label class="uk-form-label" for="form-horizontal-select">Команда:</label>
+                          <div class="uk-form-controls">
+
+                            <select class="uk-select" name="" id="" aria-placeholder="Выберите команду">
+                              <option value="" disabled selected>Выберите команду</option>
+                              <option value="1 команда">1 команда</option>
+                              <option value="2 команда">2 команда</option>
+                              <option value="3 команда">3 команда</option>
+                            </select>
+
+                          </div>
+                        </div>
+
+                        <div class="uk-margin">
+                          <label class="uk-form-label" for="form-horizontal-text">Кодовое слово:</label>
+                          <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Кодовое слово:">
+                          </div>
+                        </div>
+
+                        <div class="uk-margin d-flex align-items-center flex-wrap quiz-button__block mt-5">
+                          <a href="test.html" class="quiz-button mt-2">Начать Тест</a>
+                          <span class="ml-4 mt-2">Не верно, попробуйте еще раз!</span>
+                        </div>
+                      </form>
+
                     </div>
                     <div class="col-lg-5">
-
+                      <p>Если вы не можете вспомнить данные команды, свяжитесь со службой поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+                      <img src="img/svg-bg.svg" alt="">
                     </div>
                   </div>
-                  <div class="container-quiz">
-                    <div id="quiz-count" class="quiz_counter">
-                      <div id="counters_1">
-                        <div class="counter" data-TargetNum="30" data-Speed="30000" data-Direction="reverse"
-                          data-Easing="linear"></div>
-                      </div>
-                    </div>
-                    <div id="quiz">
-                      <div id="quiz-start-screen">
-                        <p><a href="#" id="quiz-start-btn" class="quiz-button">Начать Тест</a></p>
-                      </div>
-                      <div id="results-screen"></div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -253,11 +276,11 @@
         </div>
         <div class="col-md-6 col-sm-6 col-12">
           <div class="main-card__card">
-            <h3 class="main-card__card_title">Пять уроков финансовой жизни</h3>
+            <h3 class="main-card__card_title">Умная копилка своими руками</h3>
             <div class="main-card__card_video-preview">
-              <a class="" href="#video2" uk-toggle>
+              <a class="" href="#video1" uk-toggle>
                 <div class="uk-inline">
-                  <img src="img/video/2.png" alt="">
+                  <img src="img/video/1.png" alt="">
                   <div class="uk-overlay uk-position-center">
                     <svg width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="30" cy="30" r="30" fill="black"></circle>
@@ -266,43 +289,81 @@
                   </div>
                 </div>
               </a>
-              <div id="video2" class="uk-flex-top" uk-modal>
+              <div id="video1" class="uk-flex-top" uk-modal>
                 <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
                   <button class="uk-modal-close-outside" type="button" uk-close></button>
-                  <iframe src="//www.youtube.com/embed/zuhg_ui_LTk?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1"
-                    width="1280" height="720" frameborder="0" uk-video uk-responsive></iframe>
+                  <iframe src="//www.youtube.com/embed/j6umjvmIfUM?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" width="1280"
+                    height="720" frameborder="0" uk-video uk-responsive></iframe>
                 </div>
               </div>
             </div>
             <div class="main-card__card_button">
-              <a class="modal-button mt-3" href="#modal-container" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
-
-              <div id="modal-container" class="uk-modal-container" uk-modal>
+              <a class="modal-button mt-3" href="#quiz1" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
+        
+              <div id="quiz1" class="uk-modal-container" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                   <button class="uk-modal-close-default" type="button" uk-close></button>
-                  <h2 class="uk-modal-title">Headline</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</p>
+                  <div class="row quiz-modal">
+                    <div class="col-lg-7">
+                      <h3>Введите данные команды для начала теста</h3>
+                      <p>Выберите из списка название вашей команды и впишите кодовое
+                        слово, указанные при регистрации.</p>
+                      <p class="quiz-modal__contact">Если вы не можете вспомнить данные команды, свяжитесь со службой
+                        поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+        
+                      <form class="uk-form-horizontal uk-margin-large">
+        
+                        <div class="uk-margin quiz-modal__command">
+                          <label class="uk-form-label" for="form-horizontal-select">Команда:</label>
+                          <div class="uk-form-controls">
+        
+                            <select class="uk-select" name="" id="" aria-placeholder="Выберите команду">
+                              <option value="" disabled selected>Выберите команду</option>
+                              <option value="1 команда">1 команда</option>
+                              <option value="2 команда">2 команда</option>
+                              <option value="3 команда">3 команда</option>
+                            </select>
+        
+                          </div>
+                        </div>
+        
+                        <div class="uk-margin">
+                          <label class="uk-form-label" for="form-horizontal-text">Кодовое слово:</label>
+                          <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Кодовое слово:">
+                          </div>
+                        </div>
+        
+                        <div class="uk-margin d-flex align-items-center flex-wrap quiz-button__block mt-5">
+                          <a href="test.html" class="quiz-button mt-2">Начать Тест</a>
+                          <span class="ml-4 mt-2">Не верно, попробуйте еще раз!</span>
+                        </div>
+                      </form>
+        
+                    </div>
+                    <div class="col-lg-5">
+                      <p>Если вы не можете вспомнить данные команды, свяжитесь со службой поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+                      <img src="img/svg-bg.svg" alt="">
+                    </div>
+                  </div>
+        
                 </div>
               </div>
             </div>
-
+        
           </div>
-
         </div>
         <div class="col-md-6 col-sm-6 col-12">
           <div class="main-card__card">
-            <h3 class="main-card__card_title">Банковская карта</h3>
+            <h3 class="main-card__card_title">Умная копилка своими руками</h3>
             <div class="main-card__card_video-preview">
-              <a class="" href="#video3" uk-toggle>
+              <a class="" href="#video1" uk-toggle>
                 <div class="uk-inline">
-                  <img src="img/video/3.png" alt="">
+                  <img src="img/video/1.png" alt="">
                   <div class="uk-overlay uk-position-center">
                     <svg width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="30" cy="30" r="30" fill="black"></circle>
@@ -311,43 +372,81 @@
                   </div>
                 </div>
               </a>
-              <div id="video3" class="uk-flex-top" uk-modal>
+              <div id="video1" class="uk-flex-top" uk-modal>
                 <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
                   <button class="uk-modal-close-outside" type="button" uk-close></button>
-                  <iframe src="//www.youtube.com/embed/yoHuZN08UTk?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1"
-                    width="1280" height="720" frameborder="0" uk-video uk-responsive></iframe>
+                  <iframe src="//www.youtube.com/embed/j6umjvmIfUM?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" width="1280"
+                    height="720" frameborder="0" uk-video uk-responsive></iframe>
                 </div>
               </div>
             </div>
             <div class="main-card__card_button">
-              <a class="modal-button mt-3" href="#modal-container" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
-
-              <div id="modal-container" class="uk-modal-container" uk-modal>
+              <a class="modal-button mt-3" href="#quiz1" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
+        
+              <div id="quiz1" class="uk-modal-container" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                   <button class="uk-modal-close-default" type="button" uk-close></button>
-                  <h2 class="uk-modal-title">Headline</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</p>
+                  <div class="row quiz-modal">
+                    <div class="col-lg-7">
+                      <h3>Введите данные команды для начала теста</h3>
+                      <p>Выберите из списка название вашей команды и впишите кодовое
+                        слово, указанные при регистрации.</p>
+                      <p class="quiz-modal__contact">Если вы не можете вспомнить данные команды, свяжитесь со службой
+                        поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+        
+                      <form class="uk-form-horizontal uk-margin-large">
+        
+                        <div class="uk-margin quiz-modal__command">
+                          <label class="uk-form-label" for="form-horizontal-select">Команда:</label>
+                          <div class="uk-form-controls">
+        
+                            <select class="uk-select" name="" id="" aria-placeholder="Выберите команду">
+                              <option value="" disabled selected>Выберите команду</option>
+                              <option value="1 команда">1 команда</option>
+                              <option value="2 команда">2 команда</option>
+                              <option value="3 команда">3 команда</option>
+                            </select>
+        
+                          </div>
+                        </div>
+        
+                        <div class="uk-margin">
+                          <label class="uk-form-label" for="form-horizontal-text">Кодовое слово:</label>
+                          <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Кодовое слово:">
+                          </div>
+                        </div>
+        
+                        <div class="uk-margin d-flex align-items-center flex-wrap quiz-button__block mt-5">
+                          <a href="test.html" class="quiz-button mt-2">Начать Тест</a>
+                          <span class="ml-4 mt-2">Не верно, попробуйте еще раз!</span>
+                        </div>
+                      </form>
+        
+                    </div>
+                    <div class="col-lg-5">
+                      <p>Если вы не можете вспомнить данные команды, свяжитесь со службой поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+                      <img src="img/svg-bg.svg" alt="">
+                    </div>
+                  </div>
+        
                 </div>
               </div>
             </div>
-
+        
           </div>
-
         </div>
         <div class="col-md-6 col-sm-6 col-12">
           <div class="main-card__card">
-            <h3 class="main-card__card_title">Приумножение денег</h3>
+            <h3 class="main-card__card_title">Умная копилка своими руками</h3>
             <div class="main-card__card_video-preview">
-              <a class="" href="#video4" uk-toggle>
+              <a class="" href="#video1" uk-toggle>
                 <div class="uk-inline">
-                  <img src="img/video/4.png" alt="">
+                  <img src="img/video/1.png" alt="">
                   <div class="uk-overlay uk-position-center">
                     <svg width="70" height="70" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="30" cy="30" r="30" fill="black"></circle>
@@ -356,35 +455,73 @@
                   </div>
                 </div>
               </a>
-              <div id="video4" class="uk-flex-top" uk-modal>
+              <div id="video1" class="uk-flex-top" uk-modal>
                 <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
                   <button class="uk-modal-close-outside" type="button" uk-close></button>
-                  <iframe src="//www.youtube.com/embed/3pRfHxyYvlQ?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1"
-                    width="1280" height="720" frameborder="0" uk-video uk-responsive></iframe>
+                  <iframe src="//www.youtube.com/embed/j6umjvmIfUM?rel=0&fmt=18&html5=1&showinfo=0&autoplay=1" width="1280"
+                    height="720" frameborder="0" uk-video uk-responsive></iframe>
                 </div>
               </div>
             </div>
             <div class="main-card__card_button">
-              <a class="modal-button mt-3" href="#modal-container" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
-
-              <div id="modal-container" class="uk-modal-container" uk-modal>
+              <a class="modal-button mt-3" href="#quiz1" uk-toggle>ПРОВЕРИТЬ ЗНАНИЯ</a>
+        
+              <div id="quiz1" class="uk-modal-container" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body">
                   <button class="uk-modal-close-default" type="button" uk-close></button>
-                  <h2 class="uk-modal-title">Headline</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.</p>
+                  <div class="row quiz-modal">
+                    <div class="col-lg-7">
+                      <h3>Введите данные команды для начала теста</h3>
+                      <p>Выберите из списка название вашей команды и впишите кодовое
+                        слово, указанные при регистрации.</p>
+                      <p class="quiz-modal__contact">Если вы не можете вспомнить данные команды, свяжитесь со службой
+                        поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+        
+                      <form class="uk-form-horizontal uk-margin-large">
+        
+                        <div class="uk-margin quiz-modal__command">
+                          <label class="uk-form-label" for="form-horizontal-select">Команда:</label>
+                          <div class="uk-form-controls">
+        
+                            <select class="uk-select" name="" id="" aria-placeholder="Выберите команду">
+                              <option value="" disabled selected>Выберите команду</option>
+                              <option value="1 команда">1 команда</option>
+                              <option value="2 команда">2 команда</option>
+                              <option value="3 команда">3 команда</option>
+                            </select>
+        
+                          </div>
+                        </div>
+        
+                        <div class="uk-margin">
+                          <label class="uk-form-label" for="form-horizontal-text">Кодовое слово:</label>
+                          <div class="uk-form-controls">
+                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Кодовое слово:">
+                          </div>
+                        </div>
+        
+                        <div class="uk-margin d-flex align-items-center flex-wrap quiz-button__block mt-5">
+                          <a href="test.html" class="quiz-button mt-2">Начать Тест</a>
+                          <span class="ml-4 mt-2">Не верно, попробуйте еще раз!</span>
+                        </div>
+                      </form>
+        
+                    </div>
+                    <div class="col-lg-5">
+                      <p>Если вы не можете вспомнить данные команды, свяжитесь со службой поддержки в нижнем правом углу
+                        сайта или напишите нам
+                        на Info@familymoneyfest.ru.</p>
+                      <img src="img/svg-bg.svg" alt="">
+                    </div>
+                  </div>
+        
                 </div>
               </div>
             </div>
-
+        
           </div>
-
         </div>
       </div>
     </section>
@@ -637,6 +774,8 @@
       </div>
     </div>
   </footer>
+  <!-- Scripts -->
+  <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
