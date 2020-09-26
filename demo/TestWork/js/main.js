@@ -3,17 +3,23 @@ $(document).ready(function () {
   var count = 0;
   var counter = setInterval(function () {
     if (count < 100) {
-      $('.page-preloader__count_number_span').text(count);
-      count++
+      $(".page-preloader__count_number_span").text(count);
+      count++;
     } else {
-      clearInterval(counter)
-    };
+      clearInterval(counter);
+    }
     if (count > 50) {
-      $('.page-preloader__count_icon').css("filter", "brightness(100)").css("mix-blend-mode", "hard-light");
-    };
+      $(".page-preloader__count_icon")
+        .css("filter", "brightness(100)")
+        .css("mix-blend-mode", "hard-light");
+    }
     if (count > 60) {
-      $('.page-preloader__count').css("color", "white").css("mix-blend-mode", "hard-light");
-      $('.page-preloader__count_block').css("color", "white").css("mix-blend-mode", "hard-light");
+      $(".page-preloader__count")
+        .css("color", "white")
+        .css("mix-blend-mode", "hard-light");
+      $(".page-preloader__count_block")
+        .css("color", "white")
+        .css("mix-blend-mode", "hard-light");
     }
   }, 30);
 
@@ -22,40 +28,42 @@ $(document).ready(function () {
   }, 4500);
 });
 
-
-var rellax = new Rellax('.rellax',{
-  horizontal: true
+var rellax = new Rellax(".rellax", {
+  horizontal: true,
 });
 
-
 if ($(window).width() > 960) {
-  $('body').parallax({
-    'elements': [{
-      'selector': '.header__offer_btn a',
-      'properties': {
-        'x': {
-          'right': {
-            'initial': 0,
-            'multiplier': 0.04,
-            'unit': 'px',
-            'invert': false
-          }
+  $("body").parallax({
+    elements: [
+      {
+        selector: ".header__offer_btn a",
+        properties: {
+          x: {
+            right: {
+              initial: 0,
+              multiplier: 0.04,
+              unit: "px",
+              invert: false,
+            },
+          },
+          y: {
+            top: {
+              initial: 0,
+              multiplier: 0.1,
+              unit: "px",
+              invert: true,
+            },
+          },
         },
-        'y': {
-          'top': {
-            'initial': 0,
-            'multiplier': 0.1,
-            'unit': 'px',
-            'invert': true
-          }
-        }
-      }
-    }]
+      },
+    ],
   });
 }
 
-/* $(window).scroll(function () {
-  $('.first-layout__title, .first-layout__text, .first-layout__figures_oval, .first-layout__figures_spider, .first-layout__figures_contact').each(function () {
+$(window).scroll(function () {
+  $(
+    ".first-layout__figures_oval, .first-layout__figures_spider, .first-layout__figures_contact"
+  ).each(function () {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
@@ -63,26 +71,22 @@ if ($(window).width() > 960) {
       $(this).addClass("swing-in-top-fwd");
     }
   });
+});
+
+/* $(window).scroll(function () {
+  $(".js-fall-down").each(function () {
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+    if (imagePos < topOfWindow + 550) {
+      $(this).addClass("fall-down");
+    }
+  });
 }); */
 
-
-/* // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml16');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({
-    loop: true
-  })
-  .add({
-    targets: '.ml16 .letter',
-    translateY: [-100, 0],
-    easing: "easeOutExpo",
-    duration: 1400,
-    delay: (el, i) => 30 * i
-  }).add({
-    targets: '.ml16',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  }); */
+Splitting({
+  /* target: String selector, Element, Array of Elements, or NodeList fall-down*/
+  target: "[data-splitting]",
+  /* by: String of the plugin name */
+  /* by: "lines" */
+});

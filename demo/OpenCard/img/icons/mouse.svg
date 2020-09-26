@@ -1,0 +1,26 @@
+<svg id="Группа_5" data-name="Группа 5" xmlns="http://www.w3.org/2000/svg" width="1612.8" height="5644.8" viewBox="0 0 21 74.5">
+  <defs>
+    <style>
+      .cls-2 {
+        fill: #fff;
+        stroke: #939598;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+        fill-rule: evenodd;
+        fill: transparent;
+        stroke: #939598;
+      }
+
+      .cls-2 {
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="Прямоугольник_27_копия_2" data-name="Прямоугольник 27 копия 2" class="cls-1" d="M1988,902.909L1984,907l-4-4.094" transform="translate(-1973.5 -859.5)"/>
+  <path id="Прямоугольник_27_копия_3" data-name="Прямоугольник 27 копия 3" class="cls-1" d="M1988,915.909L1984,920l-4-4.094" transform="translate(-1973.5 -859.5)"/>
+  <path id="Прямоугольник_27_копия_4" data-name="Прямоугольник 27 копия 4" class="cls-1" d="M1988,927.909L1984,932l-4-4.094" transform="translate(-1973.5 -859.5)"/>
+  <rect id="Прямоугольник_32" data-name="Прямоугольник 32" class="cls-2" x="0.5" y="0.5" width="20" height="33" rx="10" ry="10"/>
+  <rect id="Прямоугольник_32_копия" data-name="Прямоугольник 32 копия" class="cls-2" x="8.5" y="6.5" width="4" height="8" rx="2" ry="2"/>
+</svg>
