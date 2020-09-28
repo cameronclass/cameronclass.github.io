@@ -87,8 +87,15 @@
   &__img {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 95px;
+    position: relative;
+    top: 140px;
+
+    @include netbook{
+      justify-content: center;
+      top: 0;
+      margin-top: 100px;
+    }
+
     &_bg {
       width: 425px;
       height: 425px;
@@ -101,6 +108,11 @@
       z-index: 1;
       left: -140px;
       box-shadow: 0px 0px 80px -30px rgba(0, 169, 167, 1);
+
+      @include netbook {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     &_nilon {
       background-image: url(../img/offer-nilon.png);
@@ -114,6 +126,10 @@
       height: 460px;
       object-fit: contain;
       opacity: 0.7;
+
+      @include netbook {
+        left: 0;
+      }
     }
     img {
       width: 100%;
@@ -122,6 +138,10 @@
       left: -70px;
       z-index: 3;
       object-fit: contain;
+
+      @include netbook {
+        left: 0;
+      }
     }
   }
 
@@ -138,14 +158,14 @@
 
 .home-catalog {
   background-color: #f4f6fa;
-  padding: 0 0 50px;
+  padding: 0 0 80px;
   position: relative;
   top: -5px;
   box-shadow: 0 -15px 110px 46px #ffffffd6;
   z-index: 2;
   &__block {
     background-color: #fff;
-    box-shadow: 0px 60px 72px -54px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 75px 78px -54px rgba(0, 0, 0, 0.35);
   }
   &__block_slide {
     padding: 40px;
@@ -247,6 +267,7 @@
     margin-bottom: 30px;
     h2 {
       font-size: 24px;
+      text-align: left;
     }
     @include tablet {
       width: 100%;
@@ -293,8 +314,159 @@
     }
   }
 }
+
+/* About */
+.about {
+  position: relative;
+  z-index: 2;
+  padding: 0 0 50px;
+  box-shadow: 0 -15px 110px 46px #ffffffd6;
+  background-color: #f4f6fa;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  &__bg-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -88px;
+    left: 0;
+    z-index: 1;
+  }
+  .about-bg-img {
+    &__overlay {
+      background: #ffffff;
+      opacity: 0.7;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      mix-blend-mode: screen;
+      display: block;
+
+      &_block {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+      }
+
+      &_1 {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 90px;
+        left: 20px;
+        border-radius: 50%;
+        background-color: #4d6a73;
+
+        @include laptop {
+          left: 100px;
+          width: 350px;
+          height: 350px;
+        }
+
+        @include tablet {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &_2 {
+        width: 270px;
+        height: 270px;
+        position: absolute;
+        top: 460px;
+        right: 80px;
+        border-radius: 50%;
+        background-color: #4d6a73;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+    left: 0;
+    top: 30px;
+    margin-bottom: 150px;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+    }
+    @include laptop {
+      top: 0;
+      width: 90%;
+    }
+  }
+
+  &__company {
+    &_title {
+    }
+
+    &_text {
+      width: 100%;
+      max-width: 490px;
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+    }
+
+    &_btn {
+      margin-top: 90px;
+    }
+    &_video {
+      margin-top: 70px;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+
+      &_line {
+        width: 100%;
+        max-width: 280px;
+        position: absolute;
+        left: 55%;
+        transform: translateX(-50%);
+        top: -100px;
+
+        @include laptop {
+          left: 70%;
+        }
+      }
+
+      &_overlay {
+        position: absolute;
+        max-width: 420px;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+/* News */
 .news {
   padding: 40px 0 80px;
+  position: relative;
+  z-index: 4;
+  background-color: #f4f6fa00;
   &__title {
   }
 
@@ -327,7 +499,7 @@
       color: black;
       transition: 200ms;
 
-      &:hover{
+      &:hover {
         color: $cyan;
         text-decoration: none;
       }
@@ -348,7 +520,7 @@
     &_text {
       height: 130px;
       overflow: hidden;
-      p{
+      p {
         font-size: 14px;
         line-height: 1.4;
       }

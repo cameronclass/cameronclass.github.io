@@ -274,9 +274,38 @@ button {
     font-weight: bold;
   }
 
+  &__mail{
+    img{
+      position: relative;
+      left: 3px;
+    }
+  }
+
   &:hover {
     color: $cyan;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+
+.h3{
+  position: relative;
+  text-align: left;
+  padding-bottom: 15px;
+  font-size: 33px;
+  color: $cyan;
+  font-weight: bold;
+
+
+  &::after{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: $cyan;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 }
