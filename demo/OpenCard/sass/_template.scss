@@ -180,7 +180,9 @@
 html,
 body {
   background-color: #fafcff;
+  overflow-x: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -196,14 +198,21 @@ h2 {
   font-size: 60px;
   color: black;
   font-weight: 800;
+
+  @include netbook {
+    font-size: 36px;
+  }
+
+  @include tablet {
+    font-size: 36px;
+  }
 }
-h2{
+h2 {
   position: relative;
   text-align: center;
   padding-bottom: 15px;
 
-
-  &::after{
+  &::after {
     content: "";
     display: inline-block;
     width: 60px;
@@ -215,7 +224,13 @@ h2{
     transform: translateX(-50%);
   }
 }
-p{
+
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 1em 0;
+}
+p {
   line-height: 1.2;
 }
 
@@ -253,7 +268,7 @@ button {
     &_border {
       width: 40px;
       height: 40px;
-      border: solid 1px #b8e7e6;
+      border: solid 1px #9fd0d6;
       border-radius: 50%;
 
       display: flex;
@@ -274,8 +289,8 @@ button {
     font-weight: bold;
   }
 
-  &__mail{
-    img{
+  &__mail {
+    img {
       position: relative;
       left: 3px;
     }
@@ -288,8 +303,7 @@ button {
   }
 }
 
-
-.h3{
+.h3 {
   position: relative;
   text-align: left;
   padding-bottom: 15px;
@@ -297,8 +311,11 @@ button {
   color: $cyan;
   font-weight: bold;
 
+  @include tablet {
+    font-size: 25px;
+  }
 
-  &::after{
+  &::after {
     content: "";
     display: inline-block;
     width: 40px;
@@ -307,5 +324,232 @@ button {
     position: absolute;
     bottom: 0;
     left: 0;
+  }
+}
+
+.pages {
+  background-color: #fafcff;
+  margin-bottom: 40px;
+
+  @include mobile {
+    margin-top: 70px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+  h2 {
+    text-align: left;
+    &::after {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 30px 0 0;
+  li {
+    padding-right: 10px;
+
+    a {
+      color: black;
+      &::after {
+        padding-left: 10px;
+        content: "/";
+        display: inline-block;
+        color: black;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $cyan;
+      }
+    }
+  }
+}
+
+.card {
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+  margin: 10px 0;
+  box-shadow: 0px 5px 26px -15px #00000040;
+  &__img {
+  }
+  &__block {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  &__title {
+    height: 100px;
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    @include mobile {
+      height: auto;
+      margin-bottom: 80px;
+
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
+  &__link {
+    padding: 0 15px;
+    box-sizing: border-box;
+    .btn {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__img {
+  }
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+  li {
+    border-bottom: none;
+    position: relative;
+    box-sizing: border-box;
+
+    &:first-child {
+      a {
+        border-radius: 0 14px 0 0;
+      }
+    }
+
+    a {
+      display: inline-block;
+      color: black;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 8px 60px;
+      background-color: #e8e8e8;
+      border: 1px solid #d0d0d0;
+      border-radius: 14px 14px 0 0;
+      position: relative;
+
+      &:hover {
+        background-color: #fff;
+        text-decoration: none;
+      }
+
+      @include mobile {
+        width: 100%;
+        padding: 10px 5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px dashed #ccc;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 7px;
+          height: 16px;
+          background-color: $cyan;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 5px;
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+    &.active {
+      a {
+        border-bottom: none;
+        background-color: #fff;
+        border: 1px solid #d0d0d0;
+        border-bottom: none;
+        @include mobile {
+          border: none;
+          border-bottom: 2px dashed #ccc;
+          background-color: #0000000a;
+          border-radius: 0;
+
+          &::after {
+            transform: rotate(90deg) translateX(-100%);
+          }
+
+          &:hover {
+            background-color: #0000000a;
+          }
+        }
+      }
+    }
+  }
+
+  &__container {
+    border: 1px solid #d0d0d0;
+    border-top: none;
+    background-color: #fff;
+    padding: 40px 60px;
+
+    @include mobile {
+      padding: 20px 0;
+      border: none;
+
+      .btn {
+        display: flex;
+        width: 100%;
+        .header__btn_block {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 850px;
+    p {
+      line-height: 1.4;
+    }
+  }
+
+  &__table {
+    max-width: 100%;
+
+    @include mobile {
+      .table th,
+      .table td {
+        padding: 5px 8px;
+        border: none;
+      }
+      .table tr {
+        display: flex;
+        flex-direction: column;
+
+        td {
+          background-color: white;
+          margin-bottom: 18px;
+        }
+        th {
+          background-color: #dedede;
+        }
+      }
+      font-size: 14px;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: #fff;
+    }
   }
 }

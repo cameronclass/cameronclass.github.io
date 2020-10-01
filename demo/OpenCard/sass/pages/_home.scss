@@ -2,11 +2,52 @@
   background-image: url(../img/bg-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: 50% -2px;
   width: 100%;
   height: auto;
   padding: 90px 0 250px;
   position: relative;
+
+  &__contact {
+    display: none;
+  }
+
+  @include netbook {
+    padding: 60px 0 100px;
+  }
+
+  @include mobile {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    /* background-position: -1310px 0px; */
+    background-position: -1000px 0px;
+
+    &__contact {
+      display: block;
+      margin-bottom: 20px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-bottom: 20px;
+
+          .icon-link {
+            font-size: 14px;
+            line-height: 1.2;
+
+            &__content {
+              font-size: 22px;
+            }
+
+            &__icon {
+              border-color: #b8b8b850;
+            }
+          }
+        }
+      }
+    }
+  }
 
   &__block {
     position: relative;
@@ -23,6 +64,12 @@
       span {
         font-weight: 500;
         color: $cyan;
+      }
+    }
+
+    @include mobile {
+      p {
+        font-size: 17px;
       }
     }
   }
@@ -53,11 +100,24 @@
       max-width: 519px;
       font-size: 22px;
     }
+
+    @include netbook {
+      margin-bottom: 50px;
+    }
+
+    @include mobile {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      p {
+        font-size: 17px;
+      }
+    }
   }
 
   &__btn {
     position: relative;
     display: inline-block;
+    z-index: 5;
 
     button {
       padding: 24px 83px;
@@ -90,10 +150,14 @@
     position: relative;
     top: 140px;
 
-    @include netbook{
+    @include netbook {
       justify-content: center;
       top: 0;
       margin-top: 100px;
+    }
+
+    @include mobile {
+      margin-top: 10px;
     }
 
     &_bg {
@@ -109,9 +173,22 @@
       left: -140px;
       box-shadow: 0px 0px 80px -30px rgba(0, 169, 167, 1);
 
+      @include laptop {
+        width: 370px;
+        height: 370px;
+        left: -70px;
+      }
+
       @include netbook {
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      @include mobile {
+        width: 100%;
+        height: 100%;
+        max-width: 270px;
+        max-height: 270px;
       }
     }
     &_nilon {
@@ -121,7 +198,8 @@
       z-index: 2;
       left: -150px;
       top: -80px;
-      width: 500px;
+      width: 80%;
+      max-width: 500px;
       background-position: center;
       height: 460px;
       object-fit: contain;
@@ -130,17 +208,27 @@
       @include netbook {
         left: 0;
       }
+
+      @include mobile {
+        left: 40px;
+        top: -90px;
+      }
     }
     img {
-      width: 100%;
+      width: 80%;
       max-width: 370px;
       position: relative;
       left: -70px;
       z-index: 3;
       object-fit: contain;
 
-      @include netbook {
+      @include laptop {
         left: 0;
+        width: 100%;
+      }
+
+      @include mobile {
+        max-width: 250px;
       }
     }
   }
@@ -151,6 +239,10 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 100px;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
@@ -166,11 +258,36 @@
   &__block {
     background-color: #fff;
     box-shadow: 0px 75px 78px -54px rgba(0, 0, 0, 0.35);
+    border: 1px solid #dcdcdc;
+    position: relative;
+
+    @include mobile {
+      padding-bottom: 30px;
+    }
   }
   &__block_slide {
     padding: 40px;
     width: 100%;
     box-sizing: border-box;
+
+    &_line {
+      width: 1px;
+      /* max-height: 400px; */
+      background-color: #d8d9da;
+      height: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      @include netbook {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      padding: 30px 15px 50px;
+    }
   }
 
   &__block_img {
@@ -182,16 +299,36 @@
       height: 440px;
       object-fit: contain;
     }
+
+    @include mobile {
+      img {
+        width: 100%;
+        height: 280px;
+        object-fit: contain;
+      }
+    }
   }
 
   &__block_link {
     margin-top: 30px;
+
+    @include mobile {
+      a {
+        width: 100%;
+      }
+    }
   }
 
   &__block_pretitle {
     h3 {
       font-size: 18px;
       font-weight: 500;
+    }
+
+    @include mobile {
+      h3 {
+        font-size: 15px;
+      }
     }
   }
 
@@ -213,12 +350,20 @@
       font-size: 14px;
       line-height: 1.2;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__block_text {
     &_block {
       margin-top: 15px;
       width: 85%;
+
+      @include netbook {
+        width: 100%;
+      }
     }
 
     h4 {
@@ -260,6 +405,16 @@
         background: #555;
       }
     }
+
+    @include mobile {
+      p {
+        height: 142px;
+        overflow: hidden;
+        padding: 0;
+
+        border: none;
+      }
+    }
   }
 
   &__block_title {
@@ -268,9 +423,22 @@
     h2 {
       font-size: 24px;
       text-align: left;
+
+      &::after {
+        display: none;
+      }
     }
-    @include tablet {
+
+    @include netbook {
       width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 15px;
+
+      h2 {
+        font-size: 20px;
+      }
     }
   }
 
@@ -280,7 +448,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 330px;
+    left: 290px;
     bottom: 40px;
     z-index: 2;
 
@@ -312,6 +480,13 @@
       position: relative;
       bottom: -2px;
     }
+
+    @include mobile {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
   }
 }
 
@@ -329,12 +504,16 @@
 
   &__bg-img {
     width: 100%;
-    height: auto;
+    height: 1000px;
     object-fit: cover;
     position: absolute;
     top: -88px;
     left: 0;
     z-index: 1;
+
+    @include mobile {
+      object-position: 17% -85px;
+    }
   }
   .about-bg-img {
     &__overlay {
@@ -365,13 +544,13 @@
         border-radius: 50%;
         background-color: #4d6a73;
 
-        @include laptop {
+        @include netbook {
+          width: 250px;
+          height: 250px;
           left: 100px;
-          width: 350px;
-          height: 350px;
         }
 
-        @include tablet {
+        @include mobile {
           left: 50%;
           transform: translateX(-50%);
         }
@@ -384,6 +563,10 @@
         right: 80px;
         border-radius: 50%;
         background-color: #4d6a73;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
@@ -401,7 +584,7 @@
     position: relative;
     left: 0;
     top: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 
     img {
       width: 100%;
@@ -410,6 +593,15 @@
     @include laptop {
       top: 0;
       width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @include mobile {
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0;
     }
   }
 
@@ -429,12 +621,33 @@
 
     &_btn {
       margin-top: 90px;
+
+      @include netbook {
+        margin-top: 50px;
+      }
+
+      @include mobile {
+        margin-top: 30px;
+
+        .btn {
+          width: 100%;
+        }
+      }
     }
     &_video {
       margin-top: 70px;
       position: relative;
       overflow: hidden;
       width: 100%;
+
+      @include mobile {
+        margin-top: 20px;
+
+        img {
+          height: 300px;
+          object-fit: cover;
+        }
+      }
 
       &_line {
         width: 100%;
@@ -446,6 +659,10 @@
 
         @include laptop {
           left: 70%;
+        }
+
+        @include mobile {
+          display: none;
         }
       }
 
@@ -537,6 +754,45 @@
           text-decoration: none;
           color: $cyan;
         }
+      }
+    }
+  }
+}
+
+/* Checkout */
+.checkout {
+  &__big-img {
+    padding-right: 40px;
+    margin-bottom: 15px;
+
+    img {
+      height: 360px;
+      object-fit: cover;
+      border: 1px solid #d0d0d0;
+      box-shadow: 0px 0 30px -10px #00000030;
+    }
+    @include netbook {
+      padding-right: 15px;
+      img {
+        height: auto;
+      }
+    }
+  }
+
+  &__small-img {
+    img {
+      height: 170px;
+      object-fit: cover;
+      border: 1px solid #d0d0d0;
+      box-shadow: 0px 0 20px -5px #00000030;
+    }
+    @include mobile {
+      img {
+        height: auto;
+      }
+      a {
+        width: 100%;
+        display: block;
       }
     }
   }

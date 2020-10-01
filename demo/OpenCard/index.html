@@ -49,14 +49,17 @@
     <div class="container">
       <div class="header__top">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-xl-3 col-lg-2 mb-lg-0 col-md-4 mb-md-4 col-sm-12">
             <div class="header__logo">
-              <a href="#">
+              <a class="header__logo_img" href="index.html">
                 <img src="img/logo.png" alt="Логотип">
+              </a>
+              <a class="header__logo_burger" href="#">
+                <img src="img/icons/burger.svg" alt="">
               </a>
             </div>
           </div>
-          <div class="col-lg-7 d-flex align-items-center">
+          <div class="col-xl-7 col-lg-8 order-lg-2 col-md-12 d-flex align-items-center order-md-3">
             <div class="header__contact">
               <ul class="header__contact_block">
                 <li>
@@ -66,7 +69,7 @@
                         <img src="img/icons/location.svg" alt="">
                       </span>
                     </span>
-                    <span class="d-flex flex-column ml-3">
+                    <span class="d-flex flex-column ml-xl-3 ml-lg-2 ml-3">
                       <span class="icon-link__title">Нур-Султан:</span>
                       <span class="icon-link__content">+7 717 240 69 06</span>
                     </span>
@@ -79,7 +82,7 @@
                         <img src="img/icons/location.svg" alt="">
                       </span>
                     </span>
-                    <span class="d-flex flex-column ml-3">
+                    <span class="d-flex flex-column ml-xl-3 ml-lg-2 ml-3">
                       <span class="icon-link__title">Алматы:</span>
                       <span class="icon-link__content">+7 727 317 35 00</span>
                     </span>
@@ -92,7 +95,7 @@
                         <img src="img/icons/file.svg" alt="">
                       </span>
                     </span>
-                    <span class="d-flex flex-column ml-3">
+                    <span class="d-flex flex-column ml-xl-3 ml-lg-2 ml-3">
                       <span class="icon-link__content">info@hisense-air.kz</span>
                     </span>
                   </a>
@@ -100,7 +103,8 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div
+            class="col-lg-2 order-lg-3 mb-lg-0 offset-lg-0 col-md-6 mb-md-4 offset-md-2 d-md-flex align-items-md-center justify-content-md-end order-md-2 header__btn_wrapper">
             <button class="header__btn btn">
               <span class="header__btn_block">
                 <span>Получить</span>
@@ -115,11 +119,12 @@
       <div class="header__bottom">
         <div class="header__menu">
           <ul class="header__menu_list">
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Технологии</a></li>
-            <li><a href="#">Партнерам</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="tehnologii.html">Технологии</a></li>
+            <li><a href="partners.html">Партнерам</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contact.html">Контакты</a></li>
           </ul>
         </div>
         <div class="header__social">
@@ -147,6 +152,10 @@
             </li>
           </ul>
         </div>
+        <div class="header__bottom_close">
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
@@ -156,7 +165,37 @@
     <section class="container-fluid offer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-xl-8 col-lg-8 col-md-7 col-12">
+            <div class="offer__contact">
+              <ul>
+                <li>
+                  <a class="icon-link" href="#">
+                    <span class="icon-link__icon">
+                      <span class="icon-link__icon_border">
+                        <img src="img/icons/location.svg" alt="">
+                      </span>
+                    </span>
+                    <span class="d-flex flex-column ml-xl-3 ml-lg-2 ml-3">
+                      <span class="icon-link__title">Нур-Султан:</span>
+                      <span class="icon-link__content">+7 717 240 69 06</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon-link" href="#">
+                    <span class="icon-link__icon">
+                      <span class="icon-link__icon_border">
+                        <img src="img/icons/location.svg" alt="">
+                      </span>
+                    </span>
+                    <span class="d-flex flex-column ml-xl-3 ml-lg-2 ml-3">
+                      <span class="icon-link__title">Алматы:</span>
+                      <span class="icon-link__content">+7 727 317 35 00</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div class="offer__block">
               <div class="offer__pretitle">
                 <p>Официальное представительство
@@ -170,7 +209,7 @@
                 <p>Кондиционеры и полупромышленные системы
                   кондиционирования Hisense</p>
               </div>
-              <div class="offer__btn">
+              <div class="offer__btn d-md-inline-block d-none">
                 <button>
                   <span class="offer__btn_text">
                     <span>Заполнить</span>
@@ -181,16 +220,27 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 position-relative">
+          <div class="col-xl-4 col-lg-4 col-md-5 col-12 position-relative">
             <div class="offer__img">
               <img src="img/offer-home.png" alt="">
               <div class="offer__img_bg"> </div>
               <div class="offer__img_nilon"> </div>
             </div>
           </div>
-          <a href="#" class="offer__mouse">
+          <div class="col-12 d-md-none d-flex justify-content-center mt-4">
+            <div class="offer__btn">
+              <button>
+                <span class="offer__btn_text">
+                  <span>Заполнить</span>
+                  <span class="bold"> заявку</span>
+                </span>
+                <span class="offer__btn_icon"><img src="img/icons/btn-img.png" alt=""></span>
+              </button>
+            </div>
+          </div>
+          <div class="offer__mouse">
             <img src="img/icons/mouse.svg" alt="">
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -203,8 +253,9 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="home-catalog__block_slide">
+                  <div class="home-catalog__block_slide_line"></div>
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-7">
                       <div class="home-catalog__block_pretitle">
                         <h3>Внутренние блоки настенного типа</h3>
                       </div>
@@ -240,13 +291,16 @@
                             цена/качество</span>
                         </div>
                       </div>
-                      <div class="home-catalog__block_link">
+                      <div class="home-catalog__block_link d-md-block d-none">
                         <a href="#" class="btn btn-main">Перейти в каталог</a>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-5">
                       <div class="home-catalog__block_img">
                         <img src="img/slider/1.jpg" alt="">
+                      </div>
+                      <div class="home-catalog__block_link d-md-none d-flex justify-content-center">
+                        <a href="#" class="btn btn-main">Перейти в каталог</a>
                       </div>
                     </div>
                   </div>
@@ -254,22 +308,26 @@
               </div>
               <div class="swiper-slide">
                 <div class="home-catalog__block_slide">
+                  <div class="home-catalog__block_slide_line"></div>
                   <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-7">
                       <div class="home-catalog__block_pretitle">
-                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3>Внутренние блоки настенного типа</h3>
                       </div>
                       <div class="home-catalog__block_title">
-                        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                        <h2>Premium SLIM Design FREE
+                          Match DC Inverter</h2>
                       </div>
                       <div class="home-catalog__block_text">
                         <h4>Описание:</h4>
                         <div class="home-catalog__block_text_block">
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam consequatur odit hic
-                            voluptate blanditiis optio quibusdam, ea officia! Itaque, consequuntur. Dolor provident
-                            repellat suscipit placeat totam voluptates laudantium vero enim at, sunt, quasi veritatis
-                            corporis ratione tenetur modi accusamus animi quidem odit nulla? Tempora laboriosam maxime,
-                            unde necessitatibus accusamus itaque!</p>
+                          <p>По своей сути рыбатекст является альтернативой
+                            традиционному lorem ipsum, который вызывает
+                            у некторых людей недоумение при попытках прочитать
+                            рыбу текст. В отличии от lorem ipsum, текст рыба на
+                            русском языке наполнит любой макет непонятным
+                            смыслом и придаст неповторимый колорит советских наполнит любой макет непонятным
+                            смыслом и придаст неповторимый колорит советских</p>
                         </div>
                       </div>
                       <div class="home-catalog__block_rating">
@@ -288,14 +346,16 @@
                             цена/качество</span>
                         </div>
                       </div>
-                      <div class="home-catalog__block_link">
+                      <div class="home-catalog__block_link d-md-block d-none">
                         <a href="#" class="btn btn-main">Перейти в каталог</a>
                       </div>
-
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-5">
                       <div class="home-catalog__block_img">
                         <img src="img/slider/1.jpg" alt="">
+                      </div>
+                      <div class="home-catalog__block_link d-md-none d-flex justify-content-center">
+                        <a href="#" class="btn btn-main">Перейти в каталог</a>
                       </div>
                     </div>
                   </div>
@@ -333,12 +393,12 @@
       <div class="container about__container">
         <h2>О компании</h2>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="about__img">
               <img src="img/about-logo.png" alt="">
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="about__company">
               <div class="about__company_title">
                 <h3 class="h3">Компания Hisense</h3>
@@ -355,7 +415,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 mt-md-5 pt-md-5 pt-0 mt-3">
             <div class="about__company">
               <div class="about__company_title">
                 <h3 class="h3">Видео о компании Hisense</h3>
@@ -551,8 +611,9 @@
       <img src="img/bg-footer.png" alt="">
     </div>
     <div class="container">
+      <h2 class="footer__title">Контакты</h2>
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 order-lg-1 order-3">
           <div class="row">
             <div class="col-lg-12 col-md-6">
               <div class="footer__logo">
@@ -572,7 +633,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 order-lg-2">
           <div class="footer__links">
             <ul>
               <li>
@@ -615,7 +676,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 order-lg-3">
           <div class="footer__links">
             <ul>
               <li>
@@ -658,7 +719,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 order-lg-4 order-4">
           <div class="footer__copyright">
             <p>Все права зажищены. Hisense 2020</p>
           </div>

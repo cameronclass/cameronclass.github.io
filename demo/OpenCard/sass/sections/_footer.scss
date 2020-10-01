@@ -6,6 +6,18 @@
   .container {
     padding-top: 50px;
     border-top: 1px solid #7d808440;
+
+    @include mobile {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    display: none;
+    @include mobile {
+      display: block;
+    }
   }
 
   &__bg {
@@ -14,12 +26,26 @@
     left: 0;
     width: 100%;
     height: auto;
+
+    @include tablet {
+      img {
+        height: 900px;
+        object-fit: cover;
+        object-position: 20%;
+      }
+    }
   }
 
   &__logo {
     width: 90%;
     max-width: 300px;
     margin-bottom: 70px;
+
+    @include mobile {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
   }
   &__text {
     max-width: 270px;
@@ -28,6 +54,10 @@
     p {
       font-size: 14px;
       line-height: 1.6;
+    }
+
+    @include mobile {
+      margin-bottom: 30px;
     }
   }
   &__links {
@@ -38,12 +68,21 @@
       padding-left: 0;
     }
 
+    @include mobile {
+      border-bottom: 2px dashed #7d808440;
+      padding-top: 20px;
+    }
+
     ul {
       list-style: none;
       margin: 0;
       padding: 0;
       li {
         margin-bottom: 40px;
+
+        @include mobile {
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -76,6 +115,10 @@
       padding: 0;
       font-size: 14px;
       font-weight: 500;
+    }
+
+    @include mobile {
+      border-top: 2px dashed #7d808440;
     }
   }
 }
