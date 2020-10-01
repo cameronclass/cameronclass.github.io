@@ -44,6 +44,25 @@ $(function () {
 
     $(selectTab).fadeIn();
   });
+
+  /* modal  modal-toggle*/
+  $(".js-modal-toggle").click(function (e) {
+    e.preventDefault();
+    $("#modal").addClass("is-visible");
+  });
+  $(".modal-overlay").click( function (e) {
+    e.preventDefault();
+    $("#modal").removeClass("is-visible");
+  });
+
+  $(".js-modal-toggle-2").click(function (e) {
+    e.preventDefault();
+    $("#modal-2").addClass("is-visible");
+  });
+  $(".modal-overlay").click(function (e) {
+    e.preventDefault();
+    $("#modal-2").removeClass("is-visible");
+  });
 });
 
 /* Slider */

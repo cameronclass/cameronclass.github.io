@@ -105,7 +105,7 @@
           </div>
           <div
             class="col-lg-2 order-lg-3 mb-lg-0 offset-lg-0 col-md-6 mb-md-4 offset-md-2 d-md-flex align-items-md-center justify-content-md-end order-md-2 header__btn_wrapper">
-            <button class="header__btn btn">
+            <button class="header__btn btn js-modal-toggle">
               <span class="header__btn_block">
                 <span>Получить</span>
                 <span class="bold">консультацию</span>
@@ -346,6 +346,19 @@
       </div>
     </div>
   </footer>
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-overlay modal-toggle"></div>
+    <form action="#" method="POST" class="modal-wrapper modal-transition">
+      <h2 class="modal-heading">Получить консультацию!</h2>
+      <div class="modal__content">
+        <input type="text" class="mt-3" name="name" placeholder="Ваще имя" id="">
+        <input type="tel" class="mt-3" name="tel" placeholder="Ваще Телефон" id="">
+        <input type="email" class="mt-3" name="email" placeholder="Ваще E-mail" id="">
+        <button class="btn btn-main btn-modal mt-4" type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>

@@ -249,6 +249,29 @@ button {
   }
 }
 
+input,
+textarea {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 150ms;
+
+  &:focus {
+    outline: none;
+    border-color: $cyan;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+textarea {
+  text-align: left;
+}
+
 .icon-link {
   display: flex;
   align-items: center;
@@ -378,7 +401,7 @@ button {
   background-color: #fff;
   margin: 10px 0;
   box-shadow: 0px 5px 26px -15px #00000040;
-  &__date{
+  &__date {
     font-size: 14px;
     font-weight: 500;
   }
@@ -451,7 +474,7 @@ button {
         text-decoration: none;
       }
 
-      @include netbook{
+      @include netbook {
         padding: 8px 40px;
       }
 
@@ -550,7 +573,7 @@ button {
           margin-bottom: 18px;
         }
         th {
-          background-color:#dededea1;
+          background-color: #dededea1;
           font-weight: 500;
         }
       }
@@ -560,5 +583,75 @@ button {
         background-color: #fff;
       }
     }
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 10000; /* 1 */
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.modal.is-visible {
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.modal.is-visible .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.modal-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+
+  @include mobile{
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+.modal-transition {
+  transition: all 0.3s 0.12s;
+  transform: translate(-50%, -70%);
+  opacity: 0;
+}
+
+.modal.is-visible .modal-transition {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.modal{
+  h2{
+    font-size: 22px;
+    text-transform: uppercase;
   }
 }

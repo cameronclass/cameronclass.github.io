@@ -303,6 +303,30 @@ button {
   button:focus {
     outline: none; }
 
+input,
+textarea {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 150ms;
+  -o-transition: 150ms;
+  transition: 150ms; }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #00a9a7; }
+  @media screen and (max-width: 767px) {
+    input,
+    textarea {
+      font-size: 14px;
+      text-align: left; } }
+
+textarea {
+  text-align: left; }
+
 .icon-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,6 +594,78 @@ button {
         .tabs__table .table-striped tbody tr:nth-of-type(odd) {
           background-color: #fff; } }
 
+.modal {
+  position: fixed;
+  z-index: 10000;
+  /* 1 */
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%; }
+
+.modal.is-visible {
+  visibility: visible; }
+
+.modal-overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear 0.3s, opacity 0.3s;
+  -o-transition: visibility 0s linear 0.3s, opacity 0.3s;
+  transition: visibility 0s linear 0.3s, opacity 0.3s; }
+
+.modal.is-visible .modal-overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s; }
+
+.modal-wrapper {
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.35); }
+  @media screen and (max-width: 767px) {
+    .modal-wrapper {
+      width: 90%;
+      padding: 20px; } }
+
+.modal-transition {
+  -webkit-transition: all 0.3s 0.12s;
+  -o-transition: all 0.3s 0.12s;
+  transition: all 0.3s 0.12s;
+  -webkit-transform: translate(-50%, -70%);
+      -ms-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
+  opacity: 0; }
+
+.modal.is-visible .modal-transition {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.modal h2 {
+  font-size: 22px;
+  text-transform: uppercase; }
+
 .btn {
   padding: 12px 40px;
   border-radius: 50px;
@@ -603,6 +699,12 @@ button {
     -webkit-transform: translateY(-5px);
         -ms-transform: translateY(-5px);
             transform: translateY(-5px); }
+
+.btn-modal {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 4px; }
 
 .bold {
   font-weight: bold; }
@@ -1763,11 +1865,44 @@ button {
     border-top: 2px dashed #d0d0d0; }
   .about-page__list li.active a::after {
     opacity: 1;
-    background-image: url(../../img/icons/right-arrow-cyan.svg);
+    background-image: url(../img/icons/right-arrow-cyan.svg);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
     width: 18px;
     height: 20px; }
+
+.contact__h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2; }
+.contact hr {
+  background-color: #d0d0d0;
+  border: none;
+  height: 1px;
+  width: 100%; }
+.contact iframe {
+  -webkit-box-shadow: 0 0 15px -5px #00000015;
+          box-shadow: 0 0 15px -5px #00000015;
+  border: 1px solid #d0d0d0; }
+.contact input {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 15px -5px #00000015;
+          box-shadow: 0 0 15px -5px #00000015; }
+.contact textarea {
+  height: 144px;
+  -webkit-box-shadow: 0 0 15px -5px #00000015;
+          box-shadow: 0 0 15px -5px #00000015; }
+@media screen and (max-width: 767px) {
+  .contact .header__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+@media screen and (max-width: 767px) {
+  .contact_h2 {
+    font-size: 26px; } }
+@media screen and (max-width: 767px) {
+  .contact_h3 {
+    font-size: 20px; } }
 
 /* Sliders */

@@ -893,10 +893,59 @@
         a {
           &::after {
             opacity: 1;
-            @include icon(url(../../img/icons/right-arrow-cyan.svg), 18px, 20px);
+            @include icon(url(../img/icons/right-arrow-cyan.svg), 18px, 20px);
           }
         }
       }
+    }
+  }
+}
+
+.contact {
+  &__h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  hr {
+    background-color: #d0d0d0;
+    border: none;
+    height: 1px;
+    width: 100%;
+  }
+  iframe {
+    box-shadow: 0 0 15px -5px #00000015;
+    border: 1px solid #d0d0d0;
+  }
+
+  input {
+    padding: 20px;
+    box-shadow: 0 0 15px -5px #00000015;
+  }
+  textarea {
+    height: 144px;
+    box-shadow: 0 0 15px -5px #00000015;
+  }
+
+  .header__btn {
+    @include mobile {
+      display: flex;
+    }
+  }
+
+  &__form {
+  }
+
+  &_h2 {
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  &_h3 {
+    @include mobile {
+      font-size: 20px;
     }
   }
 }
