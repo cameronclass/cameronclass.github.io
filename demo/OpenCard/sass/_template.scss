@@ -378,6 +378,10 @@ button {
   background-color: #fff;
   margin: 10px 0;
   box-shadow: 0px 5px 26px -15px #00000040;
+  &__date{
+    font-size: 14px;
+    font-weight: 500;
+  }
   &__img {
   }
   &__block {
@@ -445,6 +449,10 @@ button {
       &:hover {
         background-color: #fff;
         text-decoration: none;
+      }
+
+      @include netbook{
+        padding: 8px 40px;
       }
 
       @include mobile {
@@ -542,14 +550,15 @@ button {
           margin-bottom: 18px;
         }
         th {
-          background-color: #dedede;
+          background-color:#dededea1;
+          font-weight: 500;
         }
       }
       font-size: 14px;
-    }
 
-    .table-striped tbody tr:nth-of-type(odd) {
-      background-color: #fff;
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #fff;
+      }
     }
   }
 }

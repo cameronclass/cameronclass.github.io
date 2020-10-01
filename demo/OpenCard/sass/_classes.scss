@@ -1,9 +1,15 @@
 .bold {
   font-weight: bold;
 }
+
 .color-cyan {
   color: $cyan;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .position-relative {
   position: relative;
 }
@@ -18,7 +24,7 @@
   grid-auto-flow: row;
   grid-gap: 20px;
 
-  @include mobile{
+  @include mobile {
     grid-gap: 8px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
