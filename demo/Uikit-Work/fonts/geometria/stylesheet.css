@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Geometria LF';
-    src: url('GeometriaLF-Heavy.woff2') format('woff2'),
-        url('GeometriaLF-Heavy.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
