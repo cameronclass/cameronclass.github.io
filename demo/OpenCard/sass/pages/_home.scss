@@ -888,11 +888,12 @@
           border-top: 2px dashed #d0d0d0;
         }
       }
+
       &.active {
         a {
           &::after {
             opacity: 1;
-            background-image: url(../img/icons/right-arrow-cyaa.png);
+            @include icon(url(../../img/icons/right-arrow-cyan.svg), 18px, 20px);
           }
         }
       }

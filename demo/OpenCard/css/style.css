@@ -1763,6 +1763,11 @@ button {
     border-top: 2px dashed #d0d0d0; }
   .about-page__list li.active a::after {
     opacity: 1;
-    background-image: url(../img/icons/right-arrow-cyaa.png); }
+    background-image: url(../../img/icons/right-arrow-cyan.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 18px;
+    height: 20px; }
 
 /* Sliders */
