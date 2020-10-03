@@ -1,0 +1,163 @@
+/* ========================================================================
+   Component: Transition
+ ========================================================================== */
+/* Toggle (Hover + Focus)
+ ========================================================================== */
+/*
+ * 1. Prevent tab highlighting on iOS.
+ */
+.uk-transition-toggle {
+  /* 1 */
+  -webkit-tap-highlight-color: transparent; }
+
+/*
+ * Remove outline for `tabindex`
+ */
+.uk-transition-toggle:focus {
+  outline: none; }
+
+/* Transitions
+ ========================================================================== */
+/*
+ * The toggle is triggered on touch devices by two methods:
+ * 1. Using `:focus` and tabindex
+ * 2. Using `:hover` and a `touchstart` event listener registered on the document
+ *    (Doesn't work on Surface touch devices)
+ *
+ * Note: Transitions don't work with `uk-postion-center-*` classes because they also use `transform`,
+ *       therefore it's recommended to use an extra `div` for the transition.
+ */
+.uk-transition-fade,
+[class*='uk-transition-scale'],
+[class*='uk-transition-slide'] {
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  -webkit-transition-property: opacity, -webkit-transform, -webkit-filter;
+  transition-property: opacity, -webkit-transform, -webkit-filter;
+  -o-transition-property: opacity, transform, filter;
+  transition-property: opacity, transform, filter;
+  transition-property: opacity, transform, filter, -webkit-transform, -webkit-filter;
+  opacity: 0; }
+
+/*
+ * Fade
+ */
+.uk-transition-toggle:hover .uk-transition-fade,
+.uk-transition-toggle:focus .uk-transition-fade,
+.uk-transition-active.uk-active .uk-transition-fade {
+  opacity: 1; }
+
+/*
+ * Scale
+ */
+.uk-transition-scale-up {
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1); }
+
+.uk-transition-scale-down {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1); }
+
+/* Show */
+.uk-transition-toggle:hover .uk-transition-scale-up,
+.uk-transition-toggle:focus .uk-transition-scale-up,
+.uk-transition-active.uk-active .uk-transition-scale-up {
+  opacity: 1;
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1); }
+
+.uk-transition-toggle:hover .uk-transition-scale-down,
+.uk-transition-toggle:focus .uk-transition-scale-down,
+.uk-transition-active.uk-active .uk-transition-scale-down {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1); }
+
+/*
+ * Slide
+ */
+.uk-transition-slide-top {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
+.uk-transition-slide-bottom {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%); }
+
+.uk-transition-slide-left {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%); }
+
+.uk-transition-slide-right {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%); }
+
+.uk-transition-slide-top-small {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px); }
+
+.uk-transition-slide-bottom-small {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px); }
+
+.uk-transition-slide-left-small {
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px); }
+
+.uk-transition-slide-right-small {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px); }
+
+.uk-transition-slide-top-medium {
+  -webkit-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+          transform: translateY(-50px); }
+
+.uk-transition-slide-bottom-medium {
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px); }
+
+.uk-transition-slide-left-medium {
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px); }
+
+.uk-transition-slide-right-medium {
+  -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+          transform: translateX(50px); }
+
+/* Show */
+.uk-transition-toggle:hover [class*='uk-transition-slide'],
+.uk-transition-toggle:focus [class*='uk-transition-slide'],
+.uk-transition-active.uk-active [class*='uk-transition-slide'] {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0); }
+
+/* Opacity modifier
+ ========================================================================== */
+.uk-transition-opaque {
+  opacity: 1; }
+
+/* Duration modifiers
+ ========================================================================== */
+.uk-transition-slow {
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s; }

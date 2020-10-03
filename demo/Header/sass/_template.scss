@@ -1,0 +1,526 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.header-container {
+  max-width: 960px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @include tablet {
+    width: 80%;
+  }
+
+  @include mobile {
+    width: 85%;
+  }
+}
+
+.loc-kinoteart {
+  background-image: linear-gradient(to bottom, rgba(46, 49, 146, 1), rgba(41, 171, 226, 1));
+  width: 100%;
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+
+  @include netbook {
+    height: 400px;
+  }
+
+  &__block {
+    padding: 30px 0 0;
+    position: relative;
+  }
+
+  &__1 {
+    position: absolute;
+    left: -140px;
+    top: -25px;
+    img {
+      width: 480px;
+    }
+
+    @include laptop {
+      left: -240px;
+      top: 40px;
+
+      img {
+        width: 410px;
+      }
+    }
+
+    @include netbook {
+      top: inherit;
+      bottom: -100px;
+      left: 0;
+      img {
+        width: 300px;
+      }
+    }
+
+    @include mobile {
+      bottom: 0;
+      left: -100px;
+      img {
+        width: 240px;
+      }
+    }
+  }
+
+  &__2 {
+    position: absolute;
+    right: -60px;
+    top: -120px;
+    img {
+      width: 430px;
+    }
+
+    @include laptop {
+      right: -170px;
+      top: -40px;
+
+      img {
+        width: 300px;
+      }
+    }
+
+    @include netbook {
+      right: -70px;
+      top: 40px;
+
+      img {
+        width: 260px;
+      }
+    }
+  }
+
+  &__3 {
+    img {
+      width: 30px;
+    }
+
+    @include mobile {
+      position: absolute;
+      left: 120px;
+      top: 38px;
+    }
+  }
+
+  &__4 {
+    margin-top: 8px;
+    img {
+      width: 170px;
+    }
+
+    @include netbook {
+      img {
+        width: 150px;
+      }
+    }
+
+    @include mobile {
+      img {
+        width: 110px;
+      }
+    }
+  }
+
+  &__5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+      width: 240px;
+    }
+
+    @include mobile {
+      margin: 10px 0;
+      img {
+        width: 180px;
+      }
+    }
+  }
+
+  &__6 {
+    margin-top: 20px;
+    img {
+      width: 310px;
+      @include laptop {
+        width: 270px;
+      }
+    }
+    @include netbook {
+      img {
+        width: 220px;
+      }
+    }
+
+    @include mobile {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      img {
+        width: 190px;
+      }
+    }
+  }
+
+  &__7 {
+    position: relative;
+    z-index: 2;
+    top: -38px;
+    left: 65px;
+    animation: loc-1 1.5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    img {
+      width: 280px;
+    }
+
+    @include laptop {
+      img {
+        width: 250px;
+      }
+    }
+
+    @include netbook {
+      top: 0px;
+      left: 40px;
+      img {
+        width: 220px;
+      }
+    }
+
+    @include mobile {
+      left: -10px;
+      top: 80px;
+      img {
+        width: 180px;
+      }
+    }
+  }
+
+  &__8 {
+    position: absolute;
+    right: -55px;
+    top: 26px;
+    z-index: 2;
+    img {
+      width: 490px;
+    }
+
+    @include laptop {
+      top: 60px;
+      img {
+        width: 400px;
+      }
+    }
+    @include netbook {
+      right: 0;
+      top: inherit;
+      bottom: 10px;
+      img {
+        width: 360px;
+      }
+    }
+
+    @include mobile {
+      bottom: -65px;
+      right: -30px;
+      img {
+        width: 260px;
+      }
+    }
+    &:hover {
+      ~ .loc-kinoteart__11 {
+        opacity: 1;
+      }
+    }
+  }
+  &__9 {
+    position: absolute;
+    right: -4px;
+    bottom: 93px;
+    z-index: 3;
+
+    img {
+      width: 174px;
+    }
+
+    &:hover {
+      ~ .loc-kinoteart__11 {
+        opacity: 1;
+      }
+    }
+
+    @include laptop {
+      bottom: 58px;
+      right: 0px;
+      img {
+        width: 140px;
+      }
+    }
+
+    @include netbook {
+      right: 51px;
+    }
+
+    @include mobile {
+      bottom: -46px;
+      right: 21px;
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  &__10 {
+    position: absolute;
+    right: -95px;
+    bottom: 193px;
+    z-index: 3;
+    img {
+      width: 174px;
+    }
+
+    @include laptop {
+      bottom: 145px;
+      right: -110px;
+      img {
+        width: 160px;
+      }
+    }
+
+    @include netbook {
+      right: -45px;
+    }
+
+    @include mobile {
+      bottom: 15px;
+      right: -75px;
+      img {
+        width: 130px;
+      }
+    }
+  }
+
+  &__11 {
+    position: absolute;
+    right: 64px;
+    bottom: 198px;
+    z-index: 2;
+    opacity: 0;
+    transition: 300ms;
+    img {
+      width: 71px;
+    }
+    @include laptop {
+      right: 43px;
+      bottom: 176px;
+      img {
+        width: 57px;
+      }
+    }
+    @include netbook {
+      right: 87px;
+      bottom: 155px;
+      img {
+        width: 52px;
+      }
+    }
+  }
+
+  &__12 {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: -50px;
+    animation: loc-2 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    img {
+      width: 300px;
+    }
+
+    @include laptop {
+      right: -140px;
+      /* img {
+        width: 250px;
+      } */
+    }
+
+    @include netbook {
+      top: 40px;
+      right: 0px;
+      img {
+        width: 240px;
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__13 {
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    right: 240px;
+    animation: loc-2 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    img {
+      width: 270px;
+    }
+
+    @include laptop {
+      right: -200px;
+      /* img {
+        width: 220px;
+      } */
+    }
+
+    @include netbook {
+      top: 80px;
+      right: -110px;
+      img {
+        width: 190px;
+      }
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    height: 58px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.loc-univer {
+  &__life {
+    width: 55px;
+    position: absolute;
+    left: 45px;
+    top: 35px;
+
+    animation: loc-3 1.2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  &__1 {
+    width: 530px;
+    position: absolute;
+    right: -122px;
+    bottom: -122px;
+    z-index: 3;
+  }
+  &__2 {
+    width: 530px;
+    position: absolute;
+    right: 175px;
+    top: -51px;
+    z-index: 1;
+  }
+  &__3 {
+    width: 250px;
+    position: absolute;
+    right: 245px;
+    top: 0px;
+    z-index: 2;
+  }
+  &__4 {
+    width: 50px;
+    position: absolute;
+    left: 315px;
+    top: 17px;
+    z-index: 1;
+  }
+  &__5 {
+    width: 40px;
+    position: absolute;
+    right: 470px;
+    top: 115px;
+    z-index: 2;
+  }
+  &__6 {
+    width: 40px;
+    position: absolute;
+    right: 270px;
+    top: 0px;
+    z-index: 1;
+  }
+  &__7 {
+    width: 30px;
+    position: absolute;
+    right: 250px;
+    bottom: -30px;
+    z-index: 3;
+  }
+  &__8 {
+    width: 40px;
+    position: absolute;
+    left: 395px;
+    top: 2px;
+    z-index: 2;
+  }
+  &__9 {
+    width: 120px;
+    position: absolute;
+    left: 370px;
+    top: 40px;
+    z-index: 1;
+  }
+  &__10 {
+    width: 20px;
+    position: absolute;
+    left: 410px;
+    top: 120px;
+    z-index: 1;
+  }
+  &__11 {
+    width: 20px;
+    position: absolute;
+    right: 160px;
+    bottom: -70px;
+    z-index: 3;
+  }
+  &__12 {
+    width: 20px;
+    position: absolute;
+    right: 180px;
+    bottom: -10px;
+    z-index: 3;
+  }
+  &__13 {
+    width: 40px;
+    position: absolute;
+    right: 430px;
+    top: 192px;
+    z-index: 1;
+  }
+}
