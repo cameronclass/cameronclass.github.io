@@ -23,3 +23,9 @@
   }
 }
 
+@mixin laptop-2 {
+  @media screen and (max-width: 1300px) {
+    @content;
+  }
+}
+

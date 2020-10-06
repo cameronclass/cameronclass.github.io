@@ -55,12 +55,12 @@
     opacity: 0;
     transform: translateX(0) translateY(0);
   }
-  20% {
+  25% {
     transform: translateX(0) translateY(0);
     opacity: 1;
   }
 
-  70% {
+  60% {
     transform: translateX(-380px) translateY(140px);
     opacity: 0;
   }

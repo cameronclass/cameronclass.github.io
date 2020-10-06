@@ -53,6 +53,10 @@ img {
       width: 480px;
     }
 
+    @include laptop-2 {
+      left: -320px;
+    }
+
     @include laptop {
       left: -240px;
       top: 40px;
@@ -86,6 +90,10 @@ img {
     top: -120px;
     img {
       width: 430px;
+    }
+
+    @include laptop-2 {
+      right: -250px;
     }
 
     @include laptop {
@@ -186,7 +194,7 @@ img {
 
   &__7 {
     position: relative;
-    z-index: 2;
+    z-index: 11;
     top: -38px;
     left: 65px;
     animation: loc-1 1.5s;
@@ -430,6 +438,9 @@ img {
 
 .loc-univer {
   .header-container {
+    @include laptop-2 {
+      width: 80%;
+    }
     @include mobile {
       width: 75%;
     }
@@ -855,7 +866,7 @@ img {
     animation: loc-5 4.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-delay: 4s;
+    animation-delay: 3s;
     opacity: 0;
 
     @include laptop {
@@ -871,6 +882,20 @@ img {
       right: inherit;
       left: 66px;
       top: 249px;
+    }
+  }
+
+  &__5 {
+    img {
+      width: 260px;
+
+      @include netbook{
+        width: 220px;
+      }
+
+      @include mobile{
+        width: 170px;
+      }
     }
   }
 
