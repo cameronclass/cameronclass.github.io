@@ -1,0 +1,59 @@
+.footer {
+  position: relative;
+  &__block {
+    padding: 100px 0 200px;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__contact {
+    display: flex;
+    flex-wrap: wrap;
+
+    &_block {
+      margin-right: 56px;
+    }
+    &_link{
+      color: $black;
+      font-family: $font-link;
+      font-size: 22px;
+    }
+  }
+
+  &__social {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin: 0 15px 0 0;
+
+        a {
+          display: block;
+          width: 43px;
+          height: 43px;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  &__color {
+    background: linear-gradient(180deg, #f4f4f4 0%, #dbecf2 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1800px;
+  }
+
+  &__elips{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 307px;
+    height: auto;
+  }
+}

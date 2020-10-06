@@ -1,0 +1,178 @@
+.first-layout {
+  margin-top: 50px;
+  position: relative;
+  z-index: 10;
+  &__text {
+    width: 100%;
+    max-width: 715px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 105px;
+    margin-top: 80px;
+
+    img {
+      position: absolute;
+      left: -95px;
+      top: -35px;
+      width: 367px;
+      height: 367px;
+      object-fit: contain;
+      display: inline-block;
+      z-index: 1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 730px;
+    margin-left: auto;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+  }
+}
+
+.about {
+  position: relative;
+  z-index: 5;
+  &__text {
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 630px;
+  }
+
+  h3 {
+    margin-top: 100px;
+  }
+}
+
+.advantages {
+  margin-top: 140px;
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 5;
+
+  &__text {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  &__img {
+    max-width: 525px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: -70px;
+
+    &_last {
+      margin-top: -250px;
+    }
+  }
+
+  &__list {
+    color: #2c2840;
+  }
+}
+
+.form {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 200px;
+  &__form {
+    width: 100%;
+    max-width: 650px;
+
+    .input,
+    .select {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__btn {
+    margin-top: 30px;
+  }
+
+  &__elips{
+    position: absolute;
+    right: 0;
+    bottom: -230px;
+    width: 352px;
+    img{
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.news {
+  margin-bottom: 150px;
+  position: relative;
+  z-index: 5;
+
+  &__card {
+    display: block;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: $black;
+    &_title {
+      h4 {
+        text-align: center;
+      }
+    }
+    &_img {
+      width: 100%;
+      height: 320px;
+      background-color: #534f68;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_time {
+      color: #787589;
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    &_text {
+      p {
+        font-size: 18px;
+        font-family: $font-link;
+        margin-bottom: 0;
+      }
+    }
+
+    &_more {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      color: #534f68;
+      font-size: 22px;
+      font-family: $font-link;
+      span {
+        &:first-child {
+          margin-right: 20px;
+        }
+        &:last-child {
+          width: 26px;
+          object-fit: contain;
+        }
+      }
+
+      &:hover {
+        color: inherit;
+      }
+    }
+
+    &:hover {
+      color: inherit;
+      transform: translate(-5px, -5px);
+      box-shadow: 5px 5px 0 0px $cyan;
+    }
+  }
+}

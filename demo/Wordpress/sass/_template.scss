@@ -1,10 +1,128 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/century/CenturyGothic.woff2") format("woff2"),
+    url("../fonts/century/CenturyGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("../fonts/century/CenturyGothic-Bold.woff2") format("woff2"),
+    url("../fonts/century/CenturyGothic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   font-family: $font;
+  background-color: #f4f4f4;
 }
 
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+h1 {
+  font-family: $font;
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: $font-link;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 45px;
+  font-family: $font-link;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+h4 {
+  font-size: 22px;
+  font-family: $font-link;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+h5 {
+  font-family: $font-link;
+  font-weight: normal;
+  font-size: 16px;
+  color: #534f68;
+}
+
+p {
+  font-weight: 400;
+  font-size: 22px;
+  color: #534f68;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+a {
+  transition: 300ms ease;
+  &:hover {
+    text-decoration: none;
+    color: darken($color: $cyan, $amount: 20%);
+  }
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #97e4d6;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 16px;
+  font-family: $font-link;
+  font-size: 28px;
+  background-color: transparent;
+  padding: 0.6em 0.9em;
+  color: black;
+  position: relative;
+  z-index: 5;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #5a5670;
+  }
+}
+
+select {
+  background-image: none;
+  appearance: none;
+  color: #5a5670;
+}
+
+textarea {
+  height: 267px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 100px;
+}
+
+.input {
+}
+
+.select {
+  &-1 {
+    color: red;
+  }
 }

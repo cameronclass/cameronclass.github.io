@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  font-size: 24px;
+  padding: 18px 40px;
+  font-weight: 500;
+  font-family: $font;
+  background: linear-gradient(94.11deg, #8dd1c5 21.33%, #98e7d8 101.64%);
+  border-radius: 16px;
+  color: $black;
+  display: inline-block;
+  transition: 250ms ease;
+  position: relative;
+  z-index: 5;
+
+  &:hover{
+    color: #000;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0 0px #1f8a77;
+  }
+
+  &:focus{
+    outline: none;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0 0px #4f8a77;
+  }
+}
