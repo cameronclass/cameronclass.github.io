@@ -32,6 +32,13 @@ img {
 h1 {
   font-family: $font;
   font-size: 90px;
+
+  @include laptop {
+    font-size: 68px;
+  }
+  @include netbook{
+    font-size: 50px;
+  }
 }
 
 h2 {
@@ -39,6 +46,10 @@ h2 {
   margin-bottom: 30px;
   font-family: $font-link;
   font-weight: bold;
+
+  @include laptop {
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -46,6 +57,10 @@ h3 {
   font-family: $font-link;
   font-weight: 400;
   margin-bottom: 25px;
+
+  @include laptop {
+    font-size: 36px;
+  }
 }
 
 h4 {
@@ -70,6 +85,10 @@ p {
   z-index: 5;
   margin-bottom: 25px;
   line-height: 1.6;
+
+  @include laptop {
+    font-size: 20px;
+  }
 }
 
 a {
@@ -117,6 +136,10 @@ textarea {
   max-width: 1920px;
   width: 100%;
   padding: 0 100px;
+
+  @include netbook{
+    padding: 0 50px;
+  }
 }
 
 .input {

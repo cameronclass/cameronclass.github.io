@@ -317,18 +317,30 @@ img {
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 90px; }
+  @media screen and (max-width: 1400px) {
+    h1 {
+      font-size: 68px; } }
+  @media screen and (max-width: 992px) {
+    h1 {
+      font-size: 50px; } }
 
 h2 {
   font-size: 50px;
   margin-bottom: 30px;
   font-family: "Century Gothic";
   font-weight: bold; }
+  @media screen and (max-width: 1400px) {
+    h2 {
+      font-size: 40px; } }
 
 h3 {
   font-size: 45px;
   font-family: "Century Gothic";
   font-weight: 400;
   margin-bottom: 25px; }
+  @media screen and (max-width: 1400px) {
+    h3 {
+      font-size: 36px; } }
 
 h4 {
   font-size: 22px;
@@ -350,6 +362,9 @@ p {
   z-index: 5;
   margin-bottom: 25px;
   line-height: 1.6; }
+  @media screen and (max-width: 1400px) {
+    p {
+      font-size: 20px; } }
 
 a {
   -webkit-transition: 300ms ease;
@@ -409,6 +424,9 @@ textarea {
   max-width: 1920px;
   width: 100%;
   padding: 0 100px; }
+  @media screen and (max-width: 992px) {
+    .container-fluid {
+      padding: 0 50px; } }
 
 .select-1 {
   color: red; }
@@ -471,18 +489,24 @@ textarea {
         margin-left: 30px; }
         .header__menu ul li a {
           color: #312A36;
-          font-size: 16px;
+          font-size: 18px;
           font-family: "Century Gothic";
           -webkit-transition: 200ms;
           -o-transition: 200ms;
           transition: 200ms; }
           .header__menu ul li a:hover {
             color: #5cb4a4; }
+          @media screen and (max-width: 1400px) {
+            .header__menu ul li a {
+              font-size: 16px; } }
     .header__menu .elips-1 {
       position: absolute;
       right: -100px;
       top: -58px;
       width: 377px; }
+      @media screen and (max-width: 1400px) {
+        .header__menu .elips-1 {
+          width: 300px; } }
 
 .footer {
   position: relative; }
@@ -512,7 +536,7 @@ textarea {
     margin: 0;
     padding: 0; }
     .footer__social ul li {
-      margin: 0 15px 0 0; }
+      margin: 0 20px 0 0; }
       .footer__social ul li a {
         display: block;
         width: 43px;
@@ -545,8 +569,8 @@ textarea {
     max-width: 715px;
     position: relative;
     z-index: 2;
-    margin-bottom: 105px;
-    margin-top: 80px; }
+    margin-bottom: 110px;
+    margin-top: 60px; }
     .first-layout__text img {
       position: absolute;
       left: -95px;
@@ -557,12 +581,15 @@ textarea {
          object-fit: contain;
       display: inline-block;
       z-index: 1; }
+      @media screen and (max-width: 1400px) {
+        .first-layout__text img {
+          width: 300px; } }
   .first-layout__img {
     width: 100%;
     max-width: 730px;
     margin-left: auto;
     position: relative;
-    top: -50px;
+    top: -35px;
     z-index: 1; }
 
 .about {

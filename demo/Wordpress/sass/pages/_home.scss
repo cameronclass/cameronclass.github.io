@@ -7,8 +7,8 @@
     max-width: 715px;
     position: relative;
     z-index: 2;
-    margin-bottom: 105px;
-    margin-top: 80px;
+    margin-bottom: 110px;
+    margin-top: 60px;
 
     img {
       position: absolute;
@@ -19,6 +19,10 @@
       object-fit: contain;
       display: inline-block;
       z-index: 1;
+
+      @include laptop {
+        width: 300px;
+      }
     }
   }
 
@@ -27,7 +31,7 @@
     max-width: 730px;
     margin-left: auto;
     position: relative;
-    top: -50px;
+    top: -35px;
     z-index: 1;
   }
 }
