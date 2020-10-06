@@ -295,7 +295,8 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  overflow-x: hidden; }
 
 img {
   width: 100%;
@@ -555,12 +556,18 @@ textarea {
 
 .about {
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  margin-top: 50px; }
+  .about h3 {
+    margin-top: 100px; }
   .about__img {
     width: 100%;
     max-width: 630px; }
-  .about h3 {
-    margin-top: 100px; }
+  .about__elips {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    width: 360px; }
 
 .advantages {
   margin-top: 140px;

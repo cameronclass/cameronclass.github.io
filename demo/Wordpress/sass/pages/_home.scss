@@ -35,6 +35,12 @@
 .about {
   position: relative;
   z-index: 5;
+  margin-top: 50px;
+
+  h3 {
+    margin-top: 100px;
+  }
+
   &__text {
   }
 
@@ -43,8 +49,11 @@
     max-width: 630px;
   }
 
-  h3 {
-    margin-top: 100px;
+  &__elips {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    width: 360px;
   }
 }
 
@@ -94,12 +103,12 @@
     margin-top: 30px;
   }
 
-  &__elips{
+  &__elips {
     position: absolute;
     right: 0;
     bottom: -230px;
     width: 352px;
-    img{
+    img {
       position: relative;
       z-index: 1;
     }
