@@ -18,7 +18,8 @@
 
 html,
 body {
-  font-family: $font;
+  font-family: $font-link;
+  font-weight: normal;
   background-color: #f4f4f4;
   overflow-x: hidden;
 }
@@ -30,7 +31,7 @@ img {
 }
 
 h1 {
-  font-family: $font;
+  font-family: $font-link;
   font-size: 90px;
 
   @include laptop {
@@ -100,6 +101,13 @@ h5 {
   color: #534f68;
 }
 
+h6 {
+  font-size: 26px;
+  font-family: $font-link;
+  font-weight: normal;
+  margin: 0.5em 0 1em;
+}
+
 p {
   font-weight: 400;
   font-size: 22px;
@@ -154,8 +162,10 @@ textarea {
     color: #5a5670;
   }
 
-  @include tablet {
+  @include laptop {
+    font-size: 22px;
   }
+
   @include mobile {
     font-size: 18px;
   }
@@ -175,6 +185,10 @@ textarea {
   max-width: 1920px;
   width: 100%;
   padding: 0 100px;
+
+  @include laptop {
+    padding: 0 75px;
+  }
 
   @include netbook {
     padding: 0 50px;

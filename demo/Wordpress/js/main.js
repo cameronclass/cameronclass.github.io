@@ -21,4 +21,11 @@ $(function () {
     $(".header__menu").toggleClass("header__menu_active");
     $("html").toggleClass("lock");
   });
+
+  $('a[href="#contact"]').click(function (event) {
+    event.preventDefault();
+    $("#modal").modal({
+      fadeDuration: 250,
+    });
+  });
 });

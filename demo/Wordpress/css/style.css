@@ -305,7 +305,8 @@
   font-display: swap; }
 html,
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Century Gothic";
+  font-weight: normal;
   background-color: #f4f4f4;
   overflow-x: hidden; }
 
@@ -315,7 +316,7 @@ img {
   display: block; }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Century Gothic";
   font-size: 90px; }
   @media screen and (max-width: 1400px) {
     h1 {
@@ -370,6 +371,12 @@ h5 {
   font-weight: normal;
   font-size: 16px;
   color: #534f68; }
+
+h6 {
+  font-size: 26px;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  margin: 0.5em 0 1em; }
 
 p {
   font-weight: 400;
@@ -432,6 +439,11 @@ textarea {
   select::placeholder,
   textarea::placeholder {
     color: #5a5670; }
+  @media screen and (max-width: 1400px) {
+    input,
+    select,
+    textarea {
+      font-size: 22px; } }
   @media screen and (max-width: 576px) {
     input,
     select,
@@ -452,6 +464,9 @@ textarea {
   max-width: 1920px;
   width: 100%;
   padding: 0 100px; }
+  @media screen and (max-width: 1400px) {
+    .container-fluid {
+      padding: 0 75px; } }
   @media screen and (max-width: 992px) {
     .container-fluid {
       padding: 0 50px; } }
@@ -492,7 +507,7 @@ textarea {
   font-size: 24px;
   padding: 18px 40px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Century Gothic";
   background: -webkit-linear-gradient(355.89deg, #8dd1c5 21.33%, #98e7d8 101.64%);
   background: -o-linear-gradient(355.89deg, #8dd1c5 21.33%, #98e7d8 101.64%);
   background: linear-gradient(94.11deg, #8dd1c5 21.33%, #98e7d8 101.64%);
@@ -787,6 +802,12 @@ textarea {
     padding: 100px 0 200px;
     position: relative;
     z-index: 5; }
+    @media screen and (max-width: 1400px) {
+      .footer__block {
+        padding: 80px 0 150px; } }
+    @media screen and (max-width: 768px) {
+      .footer__block {
+        padding: 80px 0 100px; } }
     @media screen and (max-width: 576px) {
       .footer__block {
         padding: 80px 0 50px; } }
@@ -843,6 +864,11 @@ textarea {
     bottom: 0;
     width: 307px;
     height: auto; }
+    @media screen and (max-width: 768px) {
+      .footer__elips {
+        left: inherit;
+        right: 0;
+        width: 260px; } }
 
 /* Pages */
 .first-layout {
@@ -875,7 +901,7 @@ textarea {
       z-index: 1; }
       @media screen and (max-width: 1400px) {
         .first-layout__text img {
-          width: 300px; } }
+          width: 270px; } }
       @media screen and (max-width: 576px) {
         .first-layout__text img {
           display: none; } }
@@ -896,6 +922,12 @@ textarea {
     @media screen and (max-width: 576px) {
       .about h3 {
         margin-top: 30px; } }
+  @media screen and (max-width: 768px) {
+    .about__text {
+      margin-top: 50px; } }
+  @media screen and (max-width: 576px) {
+    .about__text {
+      margin-top: 10px; } }
   .about__img {
     width: 100%;
     max-width: 630px; }
@@ -908,6 +940,9 @@ textarea {
     right: 0px;
     top: -50px;
     width: 360px; }
+    @media screen and (max-width: 1400px) {
+      .about__elips {
+        width: 300px; } }
     @media screen and (max-width: 576px) {
       .about__elips {
         display: none; } }
@@ -932,7 +967,7 @@ textarea {
     top: -70px; }
     .advantages__img_last {
       margin-top: -250px; }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 1400px) {
       .advantages__img {
         width: 90%;
         top: 0;
@@ -953,6 +988,9 @@ textarea {
     .form__form .input,
     .form__form .select {
       margin-bottom: 24px; }
+    @media screen and (max-width: 768px) {
+      .form__form {
+        max-width: 100%; } }
   .form__btn {
     margin-top: 30px; }
     .form__btn_file {
@@ -968,6 +1006,9 @@ textarea {
     .form__elips img {
       position: relative;
       z-index: 1; }
+    @media screen and (max-width: 1400px) {
+      .form__elips {
+        width: 300px; } }
     @media screen and (max-width: 576px) {
       .form__elips {
         display: none; } }
@@ -976,6 +1017,9 @@ textarea {
   margin-bottom: 150px;
   position: relative;
   z-index: 5; }
+  @media screen and (max-width: 1400px) {
+    .news {
+      margin-bottom: 100px; } }
   @media screen and (max-width: 576px) {
     .news {
       margin-bottom: 50px; } }
@@ -1041,5 +1085,15 @@ textarea {
               transform: translate(-5px, -5px);
       -webkit-box-shadow: 5px 5px 0 0px #9BD1C7;
               box-shadow: 5px 5px 0 0px #9BD1C7; }
+
+.modal {
+  padding: 30px;
+  border-radius: 16px; }
+  .modal .input {
+    margin-bottom: 30px; }
+    .modal .input input {
+      font-size: 24px; }
+  .modal .btn {
+    font-size: 24px; }
 
 /* Sliders */

@@ -30,7 +30,7 @@
       z-index: 1;
 
       @include laptop {
-        width: 300px;
+        width: 270px;
       }
 
       @include mobile {
@@ -63,6 +63,13 @@
   }
 
   &__text {
+    @include tablet {
+      margin-top: 50px;
+    }
+
+    @include mobile {
+      margin-top: 10px;
+    }
   }
 
   &__img {
@@ -80,6 +87,10 @@
     right: 0px;
     top: -50px;
     width: 360px;
+
+    @include laptop {
+      width: 300px;
+    }
 
     @include mobile {
       display: none;
@@ -114,7 +125,7 @@
       margin-top: -250px;
     }
 
-    @include mobile {
+    @include laptop {
       width: 90%;
       top: 0;
       margin: 40px auto;
@@ -142,12 +153,16 @@
     .select {
       margin-bottom: 24px;
     }
+
+    @include tablet {
+      max-width: 100%;
+    }
   }
 
   &__btn {
     margin-top: 30px;
 
-    &_file{
+    &_file {
       width: 32px;
       height: 32px;
       border: none;
@@ -164,6 +179,10 @@
       position: relative;
       z-index: 1;
     }
+
+    @include laptop {
+      width: 300px;
+    }
     @include mobile {
       display: none;
     }
@@ -174,6 +193,10 @@
   margin-bottom: 150px;
   position: relative;
   z-index: 5;
+
+  @include laptop{
+    margin-bottom: 100px;
+  }
 
   @include mobile {
     margin-bottom: 50px;
@@ -254,5 +277,21 @@
       transform: translate(-5px, -5px);
       box-shadow: 5px 5px 0 0px $cyan;
     }
+  }
+}
+
+
+.modal{
+  padding: 30px;
+  border-radius: 16px;
+  .input{
+    margin-bottom: 30px;
+    input{
+      font-size: 24px;
+    }
+  }
+
+  .btn{
+    font-size: 24px;
   }
 }

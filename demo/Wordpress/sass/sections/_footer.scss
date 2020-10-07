@@ -4,6 +4,14 @@
     padding: 100px 0 200px;
     position: relative;
     z-index: 5;
+
+    @include laptop{
+      padding: 80px 0 150px;
+    }
+
+    @include tablet{
+      padding: 80px 0 100px;
+    }
     @include mobile {
       padding: 80px 0 50px;
     }
@@ -65,5 +73,11 @@
     bottom: 0;
     width: 307px;
     height: auto;
+
+    @include tablet{
+      left: inherit;
+      right: 0;
+      width: 260px;
+    }
   }
 }
