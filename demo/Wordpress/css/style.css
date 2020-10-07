@@ -691,7 +691,7 @@ textarea {
     .header {
       padding: 15px 0 30px;
       position: fixed;
-      height: 84px;
+      height: 80px;
       z-index: 300ms;
       background-color: white;
       width: 100%;
