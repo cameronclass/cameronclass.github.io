@@ -127,3 +127,15 @@
     transform: translateY(-15px);
   }
 }
+
+@keyframes loc-3 {
+  0% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -53,12 +53,12 @@
   <header class="container-fluid">
     <div class="header">
       <div class="row">
-        <div class="col-lg-2 col-md-3">
+        <div class="col-lg-2 col-md-3 col-5">
           <a class="header__logo" href="#">
             <img src="img/лого.svg" alt="">
           </a>
         </div>
-        <div class="col-lg-10 col-md-9 d-lg-block d-md-flex align-items-md-center justify-content-md-end">
+        <div class="col-lg-10 col-md-9 d-lg-block d-md-flex align-items-md-center justify-content-md-end d-sm-none">
           <div class="header__menu">
             <ul>
               <li><a href="#">Услуги</a></li>
@@ -70,6 +70,13 @@
 
             <img class="elips-1" src="img/home/elips-1.svg" alt="">
           </div>
+        </div>
+        <div class="col-7 d-flex justify-content-end d-md-none">
+          <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -89,7 +96,7 @@
           </div>
           <a href="#" class="btn">Свяжитесь с нами</a>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-5 pt-4 mt-sm-0 pt-sm-0">
           <div class="first-layout__img">
             <img src="img/home/1.svg" alt="Изображения">
           </div>
@@ -127,7 +134,7 @@
     <section class="container-fluid advantages">
       <h2>Преимущества</h2>
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-1 order-2">
           <div class="advantages__text">
             <p>Почему стоит доверить маркетинговое сопровождение именно нам: </p>
             <p class="advantages__list">1. Опыт работы в разных нишах</p>
@@ -140,17 +147,17 @@
           </div>
 
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-2 order-1">
           <div class="advantages__img">
             <img src="img/home/3.svg" alt="Изображения">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-3 order-3">
           <div class="advantages__img">
             <img src="img/home/4.svg" alt="Изображения">
           </div>
         </div>
-        <div class="col-lg-6 d-flex align-items-center">
+        <div class="col-lg-6 d-flex align-items-center order-sm-4 order-4">
           <div class="advantages__text">
             <p class="advantages__list">2. Профессионализм и постоянный контакт с клиентом</p>
             <p>Наши специалисты регулярно проходят профессиональное обучение по digital-продвижению и повышают
@@ -162,7 +169,7 @@
           </div>
 
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-5 order-6">
           <div class="advantages__text">
             <p class="advantages__list">3. Грамотное планирование бюджета</p>
             <p>Мы основываемся на принципе комплексного продвижения, подбираем только то, что подойдет индивидуально
@@ -174,17 +181,17 @@
               бренд узнаваемым, привлекать целевых клиентов, а на что не стоит тратить бюджет.</p>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-6 order-5">
           <div class="advantages__img">
             <img src="img/home/5.svg" alt="Изображения">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-7 order-7">
           <div class="advantages__img advantages__img_last">
             <img src="img/home/6.svg" alt="Изображения">
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-sm-8 order-8">
           <div class="advantages__text">
             <p class="advantages__list">4. Непрерывный рабочий процесс</p>
             <p>Наша команда не уходит на больничные и отпуска, не увольняется. Вы исключите значительные риски и сможете
@@ -227,10 +234,9 @@
             <div class="form__btn">
               <button type="button" class="btn">Рассчитать</button>
             </div>
-
           </form>
         </div>
-        <div class="col-lg-5">
+        <div class="col-lg-5 mt-5 mt-sm-0">
           <h2>Пригласить в тендер</h2>
           <form action="#" class="form__form">
             <div class="row">
@@ -254,7 +260,11 @@
               </div>
               <div class="col-12">
                 <div class="form__btn">
-                  <button type="button" class="btn">Рассчитать</button>
+                  <button type="button" class="btn">Отправить</button>
+                  <button type="button" class="form__btn_file">
+                    <img src="img/icons/file.svg" alt="">
+                  </button>
+                  <!-- <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png"> -->
                 </div>
               </div>
             </div>
@@ -267,8 +277,8 @@
     </section>
     <section class="container-fluid news">
       <h2>Новости</h2>
-      <div class="row mt-5">
-        <div class="col-xl-3 mt-3">
+      <div class="row mt-0 mt-sm-5">
+        <div class="col-xl-3 mt-4 mt-sm-3">
           <a href="#" class="news__card">
             <div class="news__card_title">
               <h4>Название новости</h4>
@@ -285,7 +295,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xl-3 mt-3">
+        <div class="col-xl-3 mt-4 mt-sm-3">
           <a href="#" class="news__card">
             <div class="news__card_title">
               <h4>Название новости</h4>
@@ -302,7 +312,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xl-3 mt-3">
+        <div class="col-xl-3 mt-4 mt-sm-3">
           <a href="#" class="news__card">
             <div class="news__card_title">
               <h4>Название новости</h4>
@@ -319,7 +329,7 @@
             </div>
           </a>
         </div>
-        <div class="col-xl-3 mt-3">
+        <div class="col-xl-3 mt-4 mt-sm-3">
           <a href="#" class="news__card">
             <div class="news__card_title">
               <h4>Название новости</h4>
@@ -350,7 +360,7 @@
     <div class="footer__block">
       <h2>Контакты</h2>
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-xl-6 mb-5">
           <div class="footer__contact">
             <div class="footer__contact_block">
               <h5>Телефон</h5>
@@ -362,7 +372,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6 d-flex justify-content-end">
+        <div class="col-xl-6 d-flex justify-content-start justify-content-sm-end">
           <div class="footer__social">
             <h5>Соц. сети</h5>
             <ul>

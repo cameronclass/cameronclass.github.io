@@ -2,6 +2,10 @@
   margin-top: 50px;
   position: relative;
   z-index: 10;
+
+  @include mobile {
+    padding-top: 15px;
+  }
   &__text {
     width: 100%;
     max-width: 715px;
@@ -9,6 +13,11 @@
     z-index: 2;
     margin-bottom: 110px;
     margin-top: 60px;
+
+    @include mobile {
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
 
     img {
       position: absolute;
@@ -22,6 +31,10 @@
 
       @include laptop {
         width: 300px;
+      }
+
+      @include mobile {
+        display: none;
       }
     }
   }
@@ -43,6 +56,10 @@
 
   h3 {
     margin-top: 100px;
+
+    @include mobile {
+      margin-top: 30px;
+    }
   }
 
   &__text {
@@ -51,6 +68,11 @@
   &__img {
     width: 100%;
     max-width: 630px;
+
+    @include mobile {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &__elips {
@@ -58,6 +80,10 @@
     right: 0px;
     top: -50px;
     width: 360px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -66,6 +92,11 @@
   margin-bottom: 150px;
   position: relative;
   z-index: 5;
+
+  @include mobile {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
   &__text {
     max-width: 800px;
@@ -82,6 +113,12 @@
     &_last {
       margin-top: -250px;
     }
+
+    @include mobile {
+      width: 90%;
+      top: 0;
+      margin: 40px auto;
+    }
   }
 
   &__list {
@@ -93,6 +130,10 @@
   position: relative;
   z-index: 5;
   margin-bottom: 200px;
+
+  @include mobile {
+    margin-bottom: 80px;
+  }
   &__form {
     width: 100%;
     max-width: 650px;
@@ -105,6 +146,13 @@
 
   &__btn {
     margin-top: 30px;
+
+    &_file{
+      width: 32px;
+      height: 32px;
+      border: none;
+      margin-left: 30px;
+    }
   }
 
   &__elips {
@@ -116,6 +164,9 @@
       position: relative;
       z-index: 1;
     }
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -124,6 +175,10 @@
   position: relative;
   z-index: 5;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
   &__card {
     display: block;
     background: #ffffff;
@@ -131,6 +186,10 @@
     padding: 30px;
     box-sizing: border-box;
     color: $black;
+
+    @include mobile {
+      padding: 20px;
+    }
     &_title {
       h4 {
         text-align: center;
@@ -146,6 +205,10 @@
         height: 100%;
         object-fit: cover;
       }
+
+      @include mobile {
+        height: 280px;
+      }
     }
     &_time {
       color: #787589;
@@ -157,6 +220,10 @@
         font-size: 18px;
         font-family: $font-link;
         margin-bottom: 0;
+
+        @include mobile {
+          font-size: 16px;
+        }
       }
     }
 
