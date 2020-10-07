@@ -216,17 +216,31 @@
             <div class="select">
               <select class="theme-select" name="format">
                 <option value="" class="select-1" disabled="true" selected>Формат промо</option>
-                <option value="1">Text</option>
-                <option value="2">Text</option>
-                <option value="3">Text</option>
+                <option value="1">Лифлетинг (раздача листовок)</option>
+                <option value="2">Дегустация</option>
+                <option value="3">Промо-ролики</option>
+                <option value="4">Промо на коньках</option>
+                <option value="5">Промо на велосипедах</option>
+                <option value="3">Промо на самокате</option>
+                <option value="3">Промо с планшетами (I-Promo)</option>
+                <option value="3">Сэмплинг</option>
+                <option value="3">Опрос</option>
+                <option value="3">Консультация и сбор контактов</option>
+                <option value="3">Конкурс</option>
+                <option value="3">Ростовая кукла</option>
+                <option value="3">Выставка</option>
+                <option value="3">Листовки под дворники</option>
+                <option value="3">Промо в "пробке"</option>
+                <option value="3">Промо на футбольном матче</option>
               </select>
             </div>
             <div class="select">
               <select class="theme-select" name="parametr">
                 <option value="" class="select-1" disabled="true" selected>Параметры промоутера</option>
-                <option value="1">Text</option>
-                <option value="2">Text</option>
-                <option value="3">Text</option>
+                <option value="1">Модельная внешность</option>
+                <option value="2">Стандарт</option>
+                <option value="3">Только мужчины</option>
+                <option value="3">Только девушки</option>
               </select>
             </div>
             <div class="form__btn">
@@ -259,10 +273,10 @@
               <div class="col-12">
                 <div class="form__btn">
                   <button type="button" class="btn">Отправить</button>
-                  <button type="button" class="form__btn_file">
+                  <input type="file" name="file-input" id="file-input" class="file-input__input" />
+                  <label class="file-input__label form__btn_file" for="file-input">
                     <img src="img/icons/file.svg" alt="">
-                  </button>
-                  <!-- <input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png"> -->
+                  </label>
                 </div>
               </div>
             </div>
@@ -390,16 +404,16 @@
 
   <!-- Modal -->
   <!-- Modal HTML embedded directly into document -->
-  <div id="contact" class="modal">
+  <form action="#" id="contact" class="modal">
     <h6>Заказать обратный звонок</h6>
     <div class="input">
-      <input type="text" name="days" placeholder="Компания">
+      <input type="text" name="days" placeholder="Ваше имя">
     </div>
     <div class="input">
-      <input type="text" name="days" placeholder="Компания">
+      <input type="tel" name="days" placeholder="Телефон">
     </div>
-    <a href="#" class="btn">Заказать звонок</a>
-  </div>
+    <button type="submit" class="btn">Заказать звонок</>
+  </form>
 
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>

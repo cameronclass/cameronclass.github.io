@@ -106,6 +106,10 @@ h6 {
   font-family: $font-link;
   font-weight: normal;
   margin: 0.5em 0 1em;
+
+  @include mobile{
+    font-size: 19px;
+  }
 }
 
 p {
