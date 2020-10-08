@@ -29,3 +29,16 @@ $(function () {
     });
   });
 });
+
+
+map = new ymaps.Map(id, {
+  center: center,
+  zoom: 13,
+});
+map.controls.remove("geolocationControl");
+map.controls.remove("searchControl");
+map.controls.remove("trafficControl");
+map.controls.remove("typeSelector");
+map.controls.remove("fullscreenControl");
+map.controls.remove("rulerControl");
+map.behaviors.disable(["scrollZoom"]);

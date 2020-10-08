@@ -1,0 +1,42 @@
+.vacancy{
+  position: relative;
+  z-index: 5;
+  &__block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card{
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 45px;
+    box-sizing: border-box;
+    border-radius: 16px;
+
+    @include mobile{
+      padding: 30px 20px;
+      margin-bottom: 20px;
+    }
+    &_title{
+      h3{
+        font-size: 30px;
+        font-weight: bold;
+        color: #534F68;
+
+        @include mobile{
+          font-size: 24px;
+        }
+      }
+      margin-bottom: 30px;
+
+      @include mobile{
+        margin-bottom: 20px;
+      }
+    }
+    &_text{
+      margin-bottom: 35px;
+    }
+    &_btn{}
+  }
+
+}
