@@ -82,11 +82,9 @@ $("#form-calculate").submit(function (e) {
   if (
     inputValidate("#days", $(this)) &&
     inputValidate("#hours", $(this)) &&
-    inputValidate("#format", $(this)) &&
-    inputValidate("#pounts", $(this))
+    inputValidate("#pounts", $(this)) &&
+    inputValidate("#format", $(this))
   ) {
-    console.log("Hello");
-
     $(".js-calc-modal").addClass("js-modal-open");
   }
 });
