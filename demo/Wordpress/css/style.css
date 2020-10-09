@@ -1326,7 +1326,7 @@ textarea {
   background-color: #13564b85;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 50;
+  z-index: 999;
   display: none; }
   .js-calc-modal__modal {
     display: block;
@@ -1336,18 +1336,39 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     border-radius: 16px;
     padding: 40px 30px;
     background-color: #fff;
     height: auto;
-    z-index: 1000; }
+    z-index: 10000; }
+    @media screen and (max-width: 576px) {
+      .js-calc-modal__modal {
+        padding: 20px; } }
     .js-calc-modal__modal p {
       color: black; }
+      @media screen and (max-width: 576px) {
+        .js-calc-modal__modal p {
+          font-size: 16px;
+          margin-bottom: 8px; } }
     .js-calc-modal__modal h3 {
       font-size: 30px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      font-weight: 700; }
+      @media screen and (max-width: 576px) {
+        .js-calc-modal__modal h3 {
+          font-size: 24px;
+          margin-bottom: 20px; } }
+    .js-calc-modal__modal ul {
+      margin: 15px 0 0;
+      padding-left: 15px;
+      list-style: disc; }
+      .js-calc-modal__modal ul li {
+        margin-bottom: 8px;
+        font-size: 16px; }
+        .js-calc-modal__modal ul li span {
+          font-weight: bold; }
   .js-calc-modal__modal a.close-modal {
     position: absolute;
     top: 20px;
@@ -1355,6 +1376,7 @@ textarea {
     display: block;
     width: 20px;
     height: 20px;
+    z-index: 9999;
     text-indent: -9999px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1491,7 +1513,7 @@ textarea {
         flex-wrap: wrap; }
   .team__card {
     width: 28%;
-    max-width: 400px;
+    max-width: 435px;
     position: relative;
     z-index: 5;
     background-color: #fff;

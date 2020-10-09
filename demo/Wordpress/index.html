@@ -55,7 +55,7 @@
     <div class="header">
       <div class="row">
         <div class="col-lg-2 col-md-3 col-5">
-          <a class="header__logo" href="index.html">
+          <a class="header__logo" href="/">
             <img src="img/logo.svg" alt="">
           </a>
         </div>
@@ -65,8 +65,8 @@
               <li><a href="services.html">Услуги</a></li>
               <li><a href="cases.html">Кейсы</a></li>
               <li><a href="team.html">Команда</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="vacancy.html">Вакансии</a></li>
+              <!-- <li><a href="news.html">Новости</a></li>
+              <li><a href="vacancy.html">Вакансии</a></li> -->
             </ul>
 
             <img class="elips-1" src="img/home/elips-1.svg" alt="">
@@ -253,30 +253,30 @@
         </div>
         <div class="col-xl-5 col-lg-6 mt-5 mt-lg-0">
           <h2>Пригласить в тендер</h2>
-          <form action="#" class="form__form">
+          <form action="/mail2.php" method="post" id="feedback" enctype="multipart/form-data" class="form__form">
             <div class="row">
               <div class="col-xl-6 col-lg-12">
                 <div class="input">
-                  <input type="text" name="days" placeholder="Ваше имя">
+                  <input type="text" name="name" id="client_name" required placeholder="Ваше имя">
                 </div>
               </div>
               <div class="col-xl-6 col-lg-12">
                 <div class="input">
-                  <input type="text" name="days" placeholder="Компания">
+                  <input type="text" name="company" id="client_company" required  placeholder="Компания">
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="input">
-                  <input type="text" name="days" placeholder="Контакты">
+                  <input type="tel" class="phone" name="contact" id="client_contact" required  placeholder="Контакты">
                 </div>
               </div>
               <div class="col-lg-12">
-                <textarea name="" placeholder="Комментарий"></textarea>
+                <textarea name="text" id="client_text" required placeholder="Комментарий"></textarea>
               </div>
               <div class="col-12">
                 <div class="form__btn">
-                  <button type="button" class="btn">Отправить</button>
-                  <input type="file" name="file-input" id="file-input" class="file-input__input" />
+                  <button type="submit" class="btn">Отправить</button>
+                  <input type="file" name="file" id="file-input" class="file-input__input" />
                   <label class="file-input__label form__btn_file" for="file-input">
                     <img src="img/icons/file.svg" alt="">
                   </label>
@@ -290,7 +290,7 @@
         <img src="img/home/elips-3.svg" alt="">
       </div>
     </section>
-    <section class="container-fluid news">
+    <!-- <section class="container-fluid news">
       <h2>Новости</h2>
       <div class="row mt-0 mt-sm-5">
         <div class="col-xl-3 col-sm-6 mt-4">
@@ -368,7 +368,7 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <!-- Footer -->
   <footer class="container-fluid footer">
@@ -406,15 +406,18 @@
   </footer>
 
   <!-- Modal -->
-  <div action="#" id="contact" class="modal">
-    <h6>Заказать обратный звонок</h6>
-    <div class="input">
-      <input type="text" name="days" placeholder="Ваше имя">
-    </div>
-    <div class="input">
-      <input type="tel" name="days" placeholder="Телефон">
-    </div>
-    <button type="submit" class="btn">Заказать звонок<button />
+  <div id="contact" class="modal">
+    <form action="mail.php" method="post">
+      <h6>Заказать обратный звонок</h6>
+      <div class="input">
+        <input type="text" name="modal_name" placeholder="Ваше имя">
+      </div>
+      <div class="input">
+        <input type="tel" class="phone" name="modal_number" placeholder="Телефон">
+      </div>
+      <button type="submit" class="btn">Заказать звонок</button>
+    </form>
+
   </div>
 
 
@@ -426,9 +429,9 @@
       <p>Для увеличения эффективности промо подогрейте интерес в других точках касания с клиентом</p>
       <p>Закажите также</p>
       <ul>
-        <li>Развес хэнгеров в районе промо - от 9,5 руб /руб</li>
-        <li>Размещение в лифтовых конструкциях - от 100 руб</li>
-        <li>Размещение на наддомофонных стендах - от 90 руб</li>
+        <li>Развес хэнгеров в районе промо - <span>от 9,5 руб /руб</span></li>
+        <li>Размещение в лифтовых конструкциях - <span>от 100 руб</span></li>
+        <li>Размещение на наддомофонных стендах - <span>от 90 руб</span></li>
         <li>Запустите геотаргетинг в соц.сетях</li>
       </ul>
     </div>

@@ -134,7 +134,7 @@
   height: 100vh;
   background-color: #13564b85;
   box-sizing: border-box;
-  z-index: 50;
+  z-index: 999;
   display: none;
   &__modal {
     display: block;
@@ -142,21 +142,49 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     border-radius: 16px;
     padding: 40px 30px;
     background-color: #fff;
     height: auto;
-    z-index: 1000;
+    z-index: 10000;
 
-    p{
-      color: black;
+    @include mobile {
+      padding: 20px;
     }
 
-    h3{
+    p {
+      color: black;
+      @include mobile {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+    }
+
+    h3 {
       font-size: 30px;
       margin-bottom: 40px;
+      font-weight: 700;
+
+      @include mobile {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+
+    ul {
+      margin: 15px 0 0;
+      padding-left: 15px;
+      list-style: disc;
+      li {
+        margin-bottom: 8px;
+        font-size: 16px;
+
+        span {
+          font-weight: bold;
+        }
+      }
     }
   }
 
@@ -167,6 +195,7 @@
     display: block;
     width: 20px;
     height: 20px;
+    z-index: 9999;
     text-indent: -9999px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -182,8 +211,6 @@
   }
 }
 
-.js-modal-open{
+.js-modal-open {
   display: block;
 }
-
-

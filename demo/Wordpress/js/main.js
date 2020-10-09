@@ -42,6 +42,26 @@ function inputValidate(selector, that) {
     return true;
   }
 }
+function inputClientValidate(selector, that) {
+  if (
+    $(that)
+      .closest("#feedback")
+      .find("" + selector + "")
+      .val() == ""
+  ) {
+    $(that)
+      .closest("#ffeedback")
+      .find("" + selector + "")
+      .css("border", "1px solid red");
+    return false;
+  } else {
+    $(that)
+      .closest("#feedback")
+      .find("" + selector + "")
+      .css("border", "1px solid green");
+    return true;
+  }
+}
 
 function selectValidate(selector, that) {
   if (
@@ -86,10 +106,20 @@ $("#form-calculate").submit(function (e) {
     inputValidate("#format", $(this))
   ) {
     $(".js-calc-modal").addClass("js-modal-open");
+    $("html").addClass("lock");
   }
 });
+// $('#feedback').submit(function(){
+//   inputClientValidate("#client_name", $(this))
+// })
 /*  js-modal-open */
 $(".js-calc-modal__modal .close-modal").click(function (e) {
   e.preventDefault();
   $(".js-calc-modal").removeClass("js-modal-open");
+  $("html").removeClass("lock");
+});
+
+
+jQuery(function($){
+   $(".phone").mask("+7 (999) 999-9999");
 });
