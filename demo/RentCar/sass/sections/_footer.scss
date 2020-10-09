@@ -70,6 +70,10 @@
   &__contact{
     padding: 35px 0 35px 30px;
 
+    @include mobile{
+      padding: 35px 0;
+    }
+
     span{
       font-size: 14px;
       color: $muted;
@@ -124,7 +128,7 @@
       padding: 8px 0;
 
       li{
-        margin: 0 10px 8px;
+        margin: 10px;
       }
     }
   }

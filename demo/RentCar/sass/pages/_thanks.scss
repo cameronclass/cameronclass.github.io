@@ -1,0 +1,17 @@
+.thanks {
+  margin: 50px 0;
+  table {
+    max-width: 650px;
+    width: 100%;
+    box-shadow: $box-shadow;
+  }
+
+  th {
+    text-align: right;
+    width: 50%;
+  }
+  td {
+    text-align: left;
+    width: 50%;
+  }
+}

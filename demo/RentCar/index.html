@@ -85,7 +85,7 @@
             </a>
           </li>
           <li class="header__menu_control_currency">
-            <a href="#" class="waves-effect waves-light btn btn-green">
+            <a href="#" class="waves-effect waves-light btn btn-green js-disable">
               <span class="i-lira icon invert"></span>
               <span>TRY</span>
             </a>
@@ -101,15 +101,15 @@
             </ul>
           </li>
           <li class="header__menu_control_lang">
-            <a href="#" class="waves-effect waves-light btn btn-language">
+            <a href="#" class="waves-effect waves-light btn btn-language js-disable">
               <span class="i-turkey icon"></span>
               <span>TR</span>
             </a>
             <ul class="header__menu_dropdown header__menu_dropdown_language">
-              <!-- <li><a href="#" class="btn btn-language waves-effect waves-light">
+              <li><a href="#" class="btn btn-language waves-effect waves-light">
                   <span class="i-german icon"></span>
                   <span>DE</span>
-                </a></li> -->
+                </a></li>
               <li><a href="#" class="btn btn-language waves-effect waves-light">
                   <span class="i-english icon"></span>
                   <span>EN</span>
@@ -132,20 +132,23 @@
           <li><a href="#">S.S.S</a></li>
           <li><a href="#">Kurumsal</a></li>
           <li><a href="#">İletişim</a></li>
-          <li class="header__menu_control_id">
+          <li class="header__menu_control_mobile_id">
             <a href="#modal-resevation" class="waves-effect waves-light btn btn-reservation modal-trigger">
               <span class="i-search icon invert"></span>
               <span>Rezervasyon Ara</span>
             </a>
           </li>
+          <li class="js-menu-close">
+            <span class="i-close"></span>
+          </li>
         </ul>
-        
+
       </div>
-      
+
     </div>
     <div class="header__mobile-menu_overlay"></div>
   </header>
- 
+
   <!-- Main -->
   <main class="container-fluid px-0 main-header-padding">
     <!-- Form Section -->
@@ -174,14 +177,14 @@
                   </div> -->
                   <div class="input-field day-picker location-picker">
                     <select class="position-relative">
-                      <option value="" disabled selected><span class="i-date icon icon-input"></span>Nereden Alacaksınız?</option>
+                      <option value="" disabled selected><span class="i-date icon icon-input"></span>Nereden Alacaksınız?
+                      </option>
                       <option value="1">Antalya Havalimanı</option>
                       <option value="2">Antalya Merkez</option>
                       <option value="3">Antalya Otogar</option>
                       <option value="4">Lara</option>
                       <option value="5">Konyaalti</option>
                       <option value="6">Ofis</option>
-                      
                     </select>
                   </div>
                 </div>
@@ -197,7 +200,8 @@
                     <div class="col-sm-5">
                       <div class="input-field d-flex align-items-center position-relative">
                         <span class="i-date icon icon-input"></span>
-                        <input type="text" readonly class="timepicker input-text input-text-icon" placeholder="Alış Saati">
+                        <input type="text" readonly class="timepicker input-text input-text-icon"
+                          placeholder="Alış Saati">
                       </div>
                     </div>
                   </div>
@@ -602,9 +606,11 @@
               <img src="img/logo.png" alt="">
             </div>
             <div class="footer__about_text">
-              <p> <b>CLK GROUP CAR RENTALS</b> 1983 yılından itibaren Tokat merkezli çalışma hayatına başlamış geçen yılların ardından Akdeniz bölgesinin aranan
-              kuruluşlarından birisi olmayı başarmış, Rent a car, gayrimenkul, otomotiv sektörlerinde lider firmalar arasına
-              girmiştir.</p>
+              <p> <b>CLK GROUP CAR RENTALS</b> 1983 yılından itibaren Tokat merkezli çalışma hayatına başlamış geçen
+                yılların ardından Akdeniz bölgesinin aranan
+                kuruluşlarından birisi olmayı başarmış, Rent a car, gayrimenkul, otomotiv sektörlerinde lider firmalar
+                arasına
+                girmiştir.</p>
             </div>
           </div>
         </div>
@@ -658,7 +664,7 @@
             <a href="#" class="footer__contact_mail">
               <span class="i-telegram icon"></span>
               <span>rezervasyon@clkcarrentals.com</span>
-            </a>  
+            </a>
           </div>
         </div>
       </div>
@@ -680,13 +686,27 @@
 
   <!-- Modals -->
   <div id="modal-resevation" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+    <div class="modal-content form row">
+      <div class="col-12 mb-5">
+        <h4>Rezervasyon Ara</h4>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="input-field">
+          <input placeholder="Rezervasyon No" id="first_name" type="text" class="validate">
+          <label for="first_name">Rezervasyon No</label>
+        </div>
+      </div>
+      <div class="col-12 mb-3">
+        <div class="input-field">
+          <input placeholder="E-Posta" id="last_name" type="email" class="validate">
+          <label for="last_name">E-Posta</label>
+        </div>
+      </div>
+      <div class="col-12">
+        <a href="#" class="btn btn-yellow btn-find waves-effect waves-light py-1">Ara</a>
+      </div>
     </div>
-    <div class="modal-footer">
-      <a href="#" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+
   </div>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>

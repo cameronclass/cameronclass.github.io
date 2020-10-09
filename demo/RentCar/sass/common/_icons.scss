@@ -118,3 +118,7 @@
 .i-car-blue {
   @include icon(url(../img/icons/car-blue.svg), 44px, 44px);
 }
+
+.i-close{
+  @include icon(url(../img/icons/close.svg), 20px, 20px);
+}

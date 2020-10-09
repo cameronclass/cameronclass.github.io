@@ -24,7 +24,7 @@
     padding: 15px 0;
     display: flex;
 
-    @include mobile{
+    @include mobile {
       padding: 10px 0;
     }
 
@@ -47,7 +47,7 @@
           font-weight: 500;
           color: black;
 
-          @include mobile{
+          @include mobile {
             height: 30px;
           }
 
@@ -76,7 +76,7 @@
       top: 35px;
       box-shadow: $box-shadow;
 
-      @include mobile{
+      @include mobile {
         top: 29px;
       }
 
@@ -101,7 +101,7 @@
       a {
         width: 67.56px;
 
-        @include mobile{
+        @include mobile {
           width: 60px;
         }
       }
@@ -111,6 +111,18 @@
       &_id {
         @include tablet {
           display: none;
+        }
+      }
+
+      &_mobile_id {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        a {
+          height: auto;
+          display: flex !important;
+          padding: 0 !important;
         }
       }
 
@@ -129,7 +141,7 @@
   &__mobile-menu {
     &_navigation {
       position: fixed;
-      width: 320px;
+      width: 80%;
       height: 100%;
       background-color: white;
       display: flex;
@@ -187,4 +199,12 @@
   @include mobile {
     margin-left: 15px !important;
   }
+}
+
+
+.js-menu-close{
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  opacity: 0.6;
 }
