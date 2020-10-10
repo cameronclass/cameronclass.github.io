@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AdminLTE 3 | Starter</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../dist/css/mystyle.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  </head>
+
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+          </li>
+        </ul>
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-location-arrow nav-icon"></i> Siteyi Aç </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index3.html" class="brand-link">
+          <img src="https://clktransfer.com/img/logo.png" alt="CLK Tranfer" class="brand-image">
+          <span class="brand-text font-weight-light">CLK Tranfer</span>
+        </a>
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+              <li class="nav-item has-treeview menu-open">
+                <a href="../starter.html" class="nav-link active">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p> Giriş</i>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas nav-icon fa-car"></i>
+                  <p> Araçlar <i class="right fas fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview bg-gray-dark disabled color-palette nav-child-indent pl-3">
+                  <li class="nav-item">
+                    <a href="car-list.html" class="nav-link">
+                      <i class="fas fa-list-ol nav-icon"></i>
+                      <p>Araç listesi</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="car-add.html" class="nav-link">
+                      <i class="fas fa-location-arrow nav-icon"></i>
+                      <p>Araç ekle</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-lira-sign"></i>
+                  <p> Transfer Fiyatları <i class="right fas fa-angle-left"></i> </p>
+                </a>
+                <ul class="nav nav-treeview bg-gray-dark disabled color-palette nav-child-indent pl-3">
+                  <li class="nav-item">
+                    <a href="transfer-prices.html" class="nav-link">
+                      <i class="fas fa-list-ol nav-icon"></i>
+                      <p>Fiyat listesi</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="transfer-price-place.html" class="nav-link">
+                      <i class="fas fa-location-arrow nav-icon"></i>
+                      <p>Bölge ekle</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-file-word"></i>
+                  <p> Transfer Bölgeler <i class="right fas fa-angle-left"></i> </p>
+                </a>
+                <ul class="nav nav-treeview bg-gray-dark disabled color-palette nav-child-indent pl-3">
+                  <li class="nav-item">
+                    <a href="place-word-list.html" class="nav-link">
+                      <i class="fas fa-list-ol nav-icon"></i>
+                      <p>Bölgeler listesi</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="place-word-add.html" class="nav-link">
+                      <i class="fas fa-location-arrow nav-icon"></i>
+                      <p>Bölge ekle</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="place-word-list.html" class="nav-link">
+                      <i class="fas fa-list-ol nav-icon"></i>
+                      <p>Gezi Tur Listesi</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="place-word-add.html" class="nav-link">
+                      <i class="fas fa-location-arrow nav-icon"></i>
+                      <p>Gezi Turu ekle</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="gallery-list.html" class="nav-link">
+                  <i class="nav-icon far fa-image"></i>
+                  <p> Galeri </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon far fa-file-word"></i>
+                  <p> S.S.S <i class="right fas fa-angle-left"></i> </p>
+                </a>
+                <ul class="nav nav-treeview bg-gray-dark disabled color-palette nav-child-indent pl-3">
+                  <li class="nav-item">
+                    <a href="sss-list.html" class="nav-link">
+                      <i class="fas fa-list-ol nav-icon"></i>
+                      <p>S.S.S listesi</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="sss-add.html" class="nav-link">
+                      <i class="fas fa-location-arrow nav-icon"></i>
+                      <p>S.S.S ekle</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                  <i class="nav-icon far fa-file-word"></i>
+                  <p> Hakkımızda <span class="right badge badge-primary">Text</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-cogs"></i>
+                  <p> Ayarlar <i class="right fas fa-angle-left"></i> </p>
+                </a>
+                <ul class="nav nav-treeview bg-gray-dark disabled color-palette nav-child-indent pl-3">
+                  <li class="nav-item">
+                    <a href="vacabulary.html" class="nav-link">
+                      <i class="fas fa-list-ol nav-icon"></i>
+                      <p>Sözlük</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="general-settings.html" class="nav-link">
+                      <i class="fas fa-location-arrow nav-icon"></i>
+                      <p>Site Genel Ayarları</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p> İletişim </p>
+                </a>
+              </li> -->
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Sözlük</h1>
+              </div><!-- /.col -->
+            </div><!-- /.row -->
+          </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <!-- Main content -->
+        <section class="content mx-2">
+          <div class="row">
+            <div class="col-12">
+              <div class="w-100 w-lg-50 mb-3">
+                <a href="#" class="btn bg-gradient-success btn-lg px-5">Kaydet &nbsp; &nbsp;<i class="fas fa-location-arrow nav-icon"></i></a>
+              </div>
+              <!-- /.card -->
+            </div>
+            <div class="col-md-3 col-12 mb-3">
+              <input type="text" name="" value="Türkçe" class="form-control">
+            </div>
+            <div class="col-md-3 col-12">
+              <input type="text" name="" value="Rusça" class="form-control">
+            </div>
+            <div class="col-md-3 col-12">
+              <input type="text" name="" value="Ingilizce" class="form-control">
+            </div>
+            <div class="col-md-3 col-12">
+              <a href="sss-add.html" class="btn bg-gradient-primary px-5">Sözlük ekle &nbsp; &nbsp;<i class="fas fa-location-arrow nav-icon"></i></a>
+            </div>
+          </div>
+          <!-- /.row -->
+        </section>
+        <!-- /.content -->
+        <!-- Main content -->
+        <!-- Main content -->
+        <section class="content mx-2">
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example1" class="table table-bordered table-striped table-responsive-sm">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Türkçe</th>
+                        <th>Rusça</th>
+                        <th>Ingilizce</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>
+                          <div class="d-none"> Antalya Transfer </div>
+                          <input type="text" class="form-control" name="" value="Antalya Transfer">
+                        </td>
+                        <td>
+                          <div class="d-none"> Анталья Трансфер </div>
+                          <input type="text" class="form-control" name="" value="Анталья Трансфер">
+                        </td>
+                        <td>
+                          <div class="d-none"> Antalya Transfer </div>
+                          <input type="text" class="form-control" name="" value="Antalya Transfer">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>
+                          <div class="d-none"> Hemen Destek </div>
+                          <input type="text" class="form-control" name="" value="Hemen Destek">
+                        </td>
+                        <td>
+                          <div class="d-none"> Помощь </div>
+                          <input type="text" class="form-control" name="" value="Помощь">
+                        </td>
+                        <td>
+                          <div class="d-none"> Contact With Us </div>
+                          <input type="text" class="form-control" name="" value="Contact With Us">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>
+                          <div class="d-none"> Anasayfa </div>
+                          <input type="text" class="form-control" name="" value="Anasayfa">
+                        </td>
+                        <td>
+                          <div class="d-none"> Главная </div>
+                          <input type="text" class="form-control" name="" value="Главная">
+                        </td>
+                        <td>
+                          <div class="d-none"> Home </div>
+                          <input type="text" class="form-control" name="" value="Home">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </section>
+        <!-- /.content -->
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+          <h5>Title</h5>
+          <p>Sidebar content</p>
+        </div>
+      </aside>
+      <!-- /.control-sidebar -->
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline"> CLK Transfer </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2020 <a href="https://studio-projects.com/resume.html">Studio Projects</a>.</strong> All rights reserved.
+      </footer>
+    </div>
+    <!-- ./wrapper -->
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <script>
+      $(function() {
+        $("#example1").DataTable({
+          "responsive": true,
+          "autoWidth": false,
+        });
+        $('#example2').DataTable({
+          "paging": true,
+          "lengthChange": false,
+          "searching": false,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false,
+          "responsive": true,
+        });
+      });
+
+    </script>
+  </body>
+
+</html>

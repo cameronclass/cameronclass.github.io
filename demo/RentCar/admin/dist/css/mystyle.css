@@ -1,0 +1,30 @@
+.table-inside {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.table-inside li {
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #7e7e7e14;
+}
+
+.table-inside input {
+  margin: 0;
+  padding: 0 5px;
+}
+
+.w-15 {
+  padding: 5px 50px !important;
+}
+
+.table-img {
+  width: 300px;
+}
