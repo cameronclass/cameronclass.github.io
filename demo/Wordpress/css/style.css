@@ -515,6 +515,9 @@ textarea {
 .lock {
   overflow-y: hidden; }
 
+.bold {
+  font-weight: bold; }
+
 .btn {
   border: none;
   font-size: 24px;

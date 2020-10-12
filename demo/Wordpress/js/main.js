@@ -88,10 +88,8 @@ function selectValidate(selector, that) {
 
 $(".js-btn").on("click", function () {
   $(".mylabel").text(
-    parseInt($("select[name=format]").val()) +
-      parseInt($("input[name=days]").val()) *
-        parseInt($("input[name=hours]").val()) *
-        (parseInt($("input[name=pounts]").val()) / 2)
+    parseInt($("input[name=days]").val()) *      parseInt($("input[name=hours]").val()) *      parseInt($("input[name=pounts]").val())
+    /*  $("input[name=format]").val() */
     /* parseInt($("select[name=parametr]").val()) + */
   );
 });
@@ -119,7 +117,6 @@ $(".js-calc-modal__modal .close-modal").click(function (e) {
   $("html").removeClass("lock");
 });
 
-
-jQuery(function($){
-   $(".phone").mask("+7 (999) 999-9999");
+jQuery(function ($) {
+  $(".phone").mask("+7 (999) 999-9999");
 });

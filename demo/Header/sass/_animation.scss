@@ -32,15 +32,14 @@
   0% {
     transform: translateX(0) translateY(0);
   }
-  40% {
+  20% {
     transform: translateX(320px) translateY(200px);
     opacity: 1;
   }
-
-  60% {
+  30% {
     opacity: 1;
   }
-  80% {
+  40% {
     transform: translateX(320px) translateY(200px);
     opacity: 0;
   }
@@ -55,13 +54,17 @@
     opacity: 0;
     transform: translateX(0) translateY(0);
   }
-  25% {
+
+  10% {
     transform: translateX(0) translateY(0);
     opacity: 1;
   }
 
-  60% {
+  30% {
     transform: translateX(-380px) translateY(140px);
+    opacity: 0;
+  }
+  70%{
     opacity: 0;
   }
   100% {
