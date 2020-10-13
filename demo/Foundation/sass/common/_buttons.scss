@@ -1,0 +1,12 @@
+.btn{
+  padding: 3px 23px;
+  color: $orange;
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: 200ms ;
+
+  &:hover{
+    color: darken($color: $orange, $amount: 10);
+  }
+}

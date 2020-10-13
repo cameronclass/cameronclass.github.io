@@ -35,22 +35,151 @@
 </head>
 
 <body>
-  <!-- Preloader -->
-  <div id="page-preloader">
-    <div class="cssload-wraper">
-      <div class="cssload-dots"></div>
-    </div>
-  </div>
   <!-- Header -->
-  <header>
+  <header class="container-fluid header">
+    <div class="container">
+      <div class="grid-x">
+        <div class="cell small-4">
+          <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
   </header>
   <!-- Main -->
   <main>
-    <section>
+    <!-- Первый экран -->
+    <section class="container-fluid home-layout" style="background-image: url(img/home/1.jpg);">
+      <div class="container">
+        <div class="home-layout__block">
+          <div class="home-layout__title">
+            <h2>Исследования NAUMEN</h2>
+          </div>
+          <div class="home-layout__subtitle">
+            <h3>Совершаем более 6000 контрольных звонков ежегодно</h3>
+          </div>
+          <div class="home-layout__text">
+            <h4>С 2013 года на регулярной основе оцениваем работу контакт-центров банков и страховых компаний</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ссылки на другие страницы -->
+    <section class="container-fluid home-links">
+      <div class="container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-6">
+            <a href="#" class="icon-link">
+              <span class="icon-link__text">Банковское исследование</span>
+              <span class="icon-link__icon">
+                <img src="img/icons/arrow-right.svg" alt="">
+              </span>
+            </a>
+          </div>
+          <div class="cell small-6">
+            <a href="#" class="icon-link">
+              <span class="icon-link__text">Исследование страховых компаний</span>
+              <span class="icon-link__icon">
+                <img src="img/icons/arrow-right.svg" alt="">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Галерея -->
+    <section class="container-fluid gallery">
+      <div class="container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-4 gallery__x">
+            <div class="grid-y grid-margin-y">
+              <div class="cell large-4 gallery__y">
+                <a href="#" class="gallery__link">
+                  <img src="img/home/gallery1.jpg" alt="">
+                  <span class="gallery__link_overlay">
+                    <span class="gallery__link_year">2020</span>
+                    <span class="gallery__link_icon"><img src="img/icons/arrow-right-2.svg" alt=""></span>
+                  </span>
+                </a>
+              </div>
+              <div class="cell large-8">
+                <a href="#" class="gallery__link">
+                  <img src="img/home/gallery2.jpg" alt="">
+                  <span class="gallery__link_overlay">
+                    <span class="gallery__link_year">2019</span>
+                    <span class="gallery__link_icon"><img src="img/icons/arrow-right-2.svg" alt=""></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cell small-4">
+            <div class="grid-y grid-margin-y">
+              <div class="cell large-8">
+                <a href="#" class="gallery__link">
+                  <img src="img/home/gallery3.jpg" alt="">
+                  <span class="gallery__link_overlay">
+                    <span class="gallery__link_year">2018</span>
+                    <span class="gallery__link_icon"><img src="img/icons/arrow-right-2.svg" alt=""></span>
+                  </span>
+                </a>
+              </div>
+              <div class="cell large-4">
+                <a href="#" class="gallery__link">
+                  <img src="img/home/gallery4.jpg" alt="">
+                  <span class="gallery__link_overlay">
+                    <span class="gallery__link_year">2017</span>
+                    <span class="gallery__link_icon"><img src="img/icons/arrow-right-2.svg" alt=""></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cell small-4">
+            <div class="grid-y grid-margin-y">
+              <div class="cell large-4">
+                <a href="#" class="gallery__link">
+                  <img src="img/home/gallery5.jpg" alt="">
+                  <span class="gallery__link_overlay">
+                    <span class="gallery__link_year">2016</span>
+                    <span class="gallery__link_icon"><img src="img/icons/arrow-right-2.svg" alt=""></span>
+                  </span>
+                </a>
+              </div>
+              <div class="cell large-8">
+                <a href="#" class="gallery__link">
+                  <img src="img/home/gallery6.jpg" alt="">
+                  <span class="gallery__link_overlay">
+                    <span class="gallery__link_year">2015</span>
+                    <span class="gallery__link_icon"><img src="img/icons/arrow-right-2.svg" alt=""></span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <!-- Footer -->
-  <footer></footer>
+  <footer class="container-fluid footer">
+    <div class="container">
+      <div class="grid-x">
+        <div class="cell medium-7">
+          <div class="footer__logo">
+            <img src="img/logo.svg" alt="">
+            <p>© 2020 NAUMEN</p>
+          </div>
+        </div>
+        <div class="cell medium-5">
+          <div class="footer__contact">
+            <a href="tel:+7 (495) 145 90 45">+7 (495) 145 90 45</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Scripts -->
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
