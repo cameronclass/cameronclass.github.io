@@ -424,8 +424,8 @@
 
       &:hover {
         background-color: white;
-        color: darken($color: $red, $amount: 1%);
-        border-color: darken($color: $red, $amount: 1%);
+        color: darken($color: $red2, $amount: 1%);
+        border-color: darken($color: $red2, $amount: 1%);
         border-width: 2px;
         padding: 10px 24px;
       }

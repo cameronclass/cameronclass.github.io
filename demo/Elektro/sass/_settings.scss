@@ -1,13 +1,31 @@
+/* Цвета */
+:root {
+  --blue: #1773cf;
+  --dark-blue: #34495e;
+  --green: #3ab503;
+  --border: #ececec;
+  --light-grey: #b0b0a8;
+  --grey: #555555;
+  --black: #282828;
+  --red: #e52929;
+  --bg-white: #f9f9f9;
+}
+
 // Colors
-$blue: #1773cf; /* #2992d9 */
-$dark-blue: #34495e;
-$green: #3ab503;
-$border: #ececec;
-$light-grey: #b0b0a8;
-$grey: #555555;
-$black: #282828;
-$red: #e52929;
-$bg-white: #f9f9f9;
+$blue: var(--blue); 
+$blue2: #1773cf;
+$dark-blue: var(--dark-blue);
+$dark-blue2: #34495e;
+$green: var(--green);
+$green2: #3ab503;
+$border: var(--border);
+$border2: #ececec;
+$light-grey: var(--light-grey);
+$grey: var(--grey);
+$black: var(--black);
+$red: var(--red);
+$red2: #e52929;
+$bg-white: var(--bg-white);
 
 $font-exo: "Exo 2", Helvetica, Arial, sans-serif;
 $font-roboto: "Roboto", Helvetica, Arial, sans-serif;
@@ -136,7 +154,20 @@ img {
   box-sizing: border-box;
 }
 
-.input {
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input,
+.textarea {
   padding: 10px 15px;
   border: 1px solid $light-grey;
   border-radius: 2px;
@@ -149,6 +180,10 @@ img {
   &:focus {
     border-color: $black;
   }
+}
+
+.textarea {
+  height: 100px;
 }
 
 .form-input {
@@ -181,7 +216,7 @@ img {
     }
 
     &:hover {
-      background-color: darken($green, 5%);
+      background-color: darken($green2, 5%);
     }
   }
 }
@@ -276,7 +311,8 @@ img {
   color: white;
 
   &:hover {
-    background-color: darken($green, 6%);
+    background-color: darken($green2, 6%);
+    border-color: $green;
   }
 }
 
@@ -366,6 +402,19 @@ img {
   align-items: flex-start;
 }
 
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: flex-start;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .justify-content-between {
   justify-content: space-between !important;
 }
@@ -427,6 +476,10 @@ img {
   margin: 0 !important;
 }
 
+.mt-2 {
+  margin-top: 16px;
+}
+
 .mr-1 {
   margin-right: 8px;
 }
@@ -435,6 +488,9 @@ img {
   margin-right: 15px;
 }
 
+.p-0 {
+  padding: 0 !important;
+}
 .p-1 {
   padding: 10px;
 }
@@ -640,7 +696,7 @@ img {
     a {
       width: 32px;
       height: 32px;
-       margin-bottom: 5px;
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -839,7 +895,7 @@ img {
           transition: 200ms ease;
 
           &:hover {
-            background-color: darken($color: $blue, $amount: 7%);
+            background-color: darken($color: $blue2, $amount: 7%);
           }
 
           @include lg-600 {
@@ -959,7 +1015,7 @@ img {
       transition: 200ms ease;
 
       &:hover {
-        background-color: darken($color: $blue, $amount: 7%);
+        background-color: darken($color: $blue2, $amount: 7%);
       }
 
       @include lg-600 {
@@ -1035,7 +1091,7 @@ ul.social {
       }
 
       &:hover {
-        background-color: darken($green, 5%);
+        background-color: darken($green2, 5%);
       }
     }
   }
@@ -1227,7 +1283,7 @@ ul.social {
     margin-bottom: 4px;
 
     &:hover {
-      background-color: darken($color: $border, $amount: 8%);
+      background-color: darken($color: $border2, $amount: 8%);
     }
   }
 }
@@ -1462,4 +1518,82 @@ table {
       }
     }
   }
+}
+
+.control {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: white;
+    border: 1px solid $border;
+  }
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+}
+
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+  background: $bg-white;
+}
+
+.control input:checked ~ .control__indicator {
+  background: $green;
+}
+
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+  background: $green;
+}
+
+.control input:disabled ~ .control__indicator {
+  background: darken($color: $green2, $amount: 10);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.control__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.control input:checked ~ .control__indicator:after {
+  display: block;
+}
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: $green;
+}
+
+.control--radio .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.control--radio input:disabled ~ .control__indicator:after {
+  background: #7b7b7b;
 }

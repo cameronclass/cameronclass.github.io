@@ -107,22 +107,63 @@
   @include icon(url(../img/icons/list-text.svg), 17px, 17px);
 }
 
-.i-refresh-green{
+.i-refresh-green {
   @include icon(url(../img/icons/refresh.svg), 15px, 15px);
 }
 
-.i-filter{
+.i-filter {
   @include icon(url(../img/icons/filter.svg), 15px, 15px);
 }
 
-.i-share{
+.i-share {
   @include icon(url(../img/icons/share.svg), 17px, 17px);
 }
 
-.i-wallet{
+.i-wallet {
   @include icon(url(../img/icons/wallet.svg), 15px, 15px);
 }
 
-.i-close{
+.i-close {
   @include icon(url(../img/icons/close.svg), 15px, 15px);
+}
+
+.i-user {
+  @include icon(url(../img/icons/user.svg), 35px, 35px);
+
+  @include lg-720 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.i-shipping-green {
+  @include icon(url(../img/icons/shipping.svg), 35px, 35px);
+  @include lg-720 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.i-location-green {
+  @include icon(url(../img/icons/location-green.svg), 35px, 35px);
+  @include lg-720 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.i-wallet-green {
+  @include icon(url(../img/icons/wallet-green.svg), 35px, 35px);
+  @include lg-720 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.i-alert {
+  @include icon(url(../img/icons/alert.svg), 18px, 18px);
+  @include lg-720 {
+    width: 12px;
+    height: 12px;
+  }
 }
