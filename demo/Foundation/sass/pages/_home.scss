@@ -1,0 +1,405 @@
+.home-layout {
+  background-repeat: no-repeat;
+  height: 410px;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  @include laptop {
+    height: auto;
+  }
+
+  @include mobile {
+    margin-top: 50px;
+  }
+
+  &__block {
+    max-width: 47%;
+    width: 100%;
+
+    @include laptop {
+      max-width: 70%;
+      padding: 40px 0;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+  }
+}
+
+.home-links {
+  padding: 48px 0;
+
+  @include mobile {
+    padding: 30px 0 20px;
+  }
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $orange;
+  padding: 30px;
+  border-radius: 4px;
+
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+
+  transition: 200ms ease;
+
+  @include netbook {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  @include mobile {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  &__text {
+    font-weight: bold;
+    max-width: 65%;
+    width: 100%;
+    line-height: 1;
+
+    @include laptop {
+      max-width: 75%;
+    }
+    @include netbook {
+      max-width: 85%;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: auto;
+    display: block;
+
+    @include netbook {
+      width: 30px;
+    }
+  }
+
+  &:hover {
+    color: white;
+
+    background-color: darken($orange, 10%);
+  }
+}
+
+/* Gallery */
+
+.gallery {
+  padding: 20px 0 100px;
+
+  @include mobile {
+    padding-bottom: 40px;
+  }
+  &__link {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    height: 100%;
+
+    @include netbook {
+      font-size: 18px;
+    }
+
+    img {
+      transition: 200ms ease-in-out;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &_overlay {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+
+      background-color: $orange;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 12px;
+      line-height: 1;
+    }
+
+    &_year {
+      font-weight: 800;
+      color: white;
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 2px;
+    }
+
+    &_icon {
+      width: 29px;
+      display: block;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      > img {
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+  &__y {
+    height: 765px;
+  }
+}
+
+/* Slider */
+.slider {
+  position: relative;
+
+  @include mobile {
+    margin-top: 70px;
+  }
+  .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 410px;
+    img {
+      width: 100%;
+      height: 410px;
+      object-fit: cover;
+    }
+  }
+
+  .container-buttons {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    height: 410px;
+    width: 98%;
+    max-width: 1268px;
+
+    @include mobile {
+      width: 103%;
+      display: none;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    img {
+      object-fit: contain;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      background: none;
+      filter: none;
+    }
+
+    @include mobile {
+      width: 30px;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 50%;
+    width: 78%;
+    max-width: 1010px;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+
+    @include mobile {
+      width: 94%;
+    }
+
+    &_title {
+      max-width: 600px;
+      width: 100%;
+      font-weight: 800;
+      font-size: 40px;
+
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+    &_subtitle {
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 22px;
+    }
+    &_btn {
+      color: white;
+      font-weight: bold;
+      padding: 5px 46px;
+
+      &:hover {
+        color: darken($color: white, $amount: 10);
+      }
+    }
+    &_text {
+      margin-top: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      max-width: 615px;
+      width: 100%;
+      line-height: 1.15;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include mobile {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    @include mobile {
+      width: 35px;
+      height: 3px;
+    }
+  }
+}
+
+.services {
+  margin: 85px 0 60px;
+  @include mobile {
+    margin: 50px 0 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 1.1;
+
+    @include laptop {
+      font-size: 24px;
+    }
+  }
+  &__icon {
+    width: 42px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-weight: 400;
+    color: $dark-gray;
+    line-height: 1.5;
+  }
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include mobile {
+      position: inherit;
+    }
+    img {
+      display: block;
+    }
+  }
+
+  &__block {
+    height: 330px;
+    width: 100%;
+    max-width: 340px;
+    position: relative;
+    margin-bottom: 66px;
+
+    overflow: hidden;
+
+    @include mobile {
+      height: auto;
+    }
+
+    &_vertical {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      padding: 30px 50px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+
+      @include mobile {
+        padding: 20px;
+      }
+
+      &_title {
+        display: flex;
+        align-items: center;
+      }
+
+      .services__title {
+        margin: 0;
+      }
+      .services__icon {
+        margin: 0 30px 0 0;
+      }
+      .services__text {
+        margin: 0;
+
+        @include mobile {
+          margin-top: 20px;
+        }
+      }
+      .services__link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: inherit;
+
+        @include mobile {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

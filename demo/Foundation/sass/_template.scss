@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circle/Circe-ExtraLight.woff2") format("woff2"),
+    url("../fonts/circle/Circe-ExtraLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circle/Circe-Light.woff2") format("woff2"), url("../fonts/circle/Circe-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circle/Circe-Regular.woff2") format("woff2"),
+    url("../fonts/circle/Circe-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circle/Circe-Bold.woff2") format("woff2"), url("../fonts/circle/Circe-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/circle/Circe-ExtraBold.woff2") format("woff2"),
+    url("../fonts/circle/Circe-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: $font;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.15;
+  font-family: $font;
+}
+
+h2 {
+  font-size: 50px;
+
+  @include netbook {
+    font-size: 40px;
+  }
+
+  @include mobile{
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 36px;
+
+  @include netbook {
+    font-size: 28px;
+  }
+
+  @include mobile{
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+
+  @include netbook {
+    font-size: 20px;
+  }
+
+  @include mobile{
+    font-size: 18px;
+  }
+}
+
+p {
+  line-height: 1.2;
+}
+
+button{
+  &:focus{
+    outline: none;
+  }
+}

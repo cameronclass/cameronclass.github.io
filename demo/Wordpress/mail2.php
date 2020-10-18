@@ -15,15 +15,16 @@ $contact = $_POST['contact'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'mail.hosting.reg.ru';                                                                                            // Specify main and backup SMTP servers
+$mail->isSMTP();                                      // Set mailer to use SMTP  mail.nic.ru
+$mail->Host = 'mail.nic.ru';                                                                                            // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'postmaster@jurist-spb.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = '1grQNRy!'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'postmaster@wazzup.pro'; // Ваш логин от почты с которой будут отправляться письма  postmaster@wazzup.pro
+$mail->Password = 'Cameron.Class2701'; // Ваш пароль от почты с которой будут отправляться письма  Cameron.Class2701
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('postmaster@jurist-spb.com');
+$mail->setFrom('postmaster@wazzup.pro');
+$mail->addAddress('mail@wazzup.pro');   // Кому будет уходить письмо  mail@wazzup.pro
 $mail->addAddress('kamrankutumov@gmail.com');   // Кому будет уходить письмо
 //$mail->addAddress('example@gmail.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
