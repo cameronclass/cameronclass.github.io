@@ -83,15 +83,30 @@ function selectValidate(selector, that) {
     return true;
   }
 }
+/*  $("input[name=format]").val() */
+/* parseInt($("select[name=parametr]").val()) + */
+/* $( "#myselect option:selected" ).text(); */
+$(".js-btn").click(function () {
+  let hours =
+    parseInt($("input[name=days]").val()) *
+    parseInt($("input[name=hours]").val()) *
+    parseInt($("input[name=pounts]").val());
+  $(".mylabel").text(hours);
+  $(".mylabel2").text(hours / 2);
+  $(".mylabel3").text(parseInt($("select[name=format]").val()) * hours);
+  $(".mylabel4").text(parseInt($("select[name=format]").val()) * hours);
+  $(".mylabel5").text(parseInt($("select[name=format]").val()) * hours * 0.9);
 
-// this will run on every select value change. if you want it to only run for those specific selects, add the same class in all of them and change the selector to $('select.yourclass')
-
-$(".js-btn").on("click", function () {
-  $(".mylabel").text(
-    parseInt($("input[name=days]").val()) *      parseInt($("input[name=hours]").val()) *      parseInt($("input[name=pounts]").val())
-    /*  $("input[name=format]").val() */
-    /* parseInt($("select[name=parametr]").val()) + */
-  );
+  if ($("select[name=format] option:selected").val() == 1) {
+    $(".label__list").addClass("d-none");
+    $(".label__others").removeClass("d-none");
+  } else if ($("select[name=format] option:selected").val() == 0) {
+    $(".label__list_text").text("сэмплов");
+  } else {
+    $(".label__list").removeClass("d-none");
+    $(".label__others").addClass("d-none");
+    $(".label__list_text").text("листовок");
+  }
 });
 
 $("#form-calculate").submit(function (e) {
@@ -101,7 +116,8 @@ $("#form-calculate").submit(function (e) {
     inputValidate("#days", $(this)) &&
     inputValidate("#hours", $(this)) &&
     inputValidate("#pounts", $(this)) &&
-    inputValidate("#format", $(this))
+    inputValidate("#format", $(this)) &&
+    inputValidate("#parametr", $(this))
   ) {
     $(".js-calc-modal").addClass("js-modal-open");
     $("html").addClass("lock");

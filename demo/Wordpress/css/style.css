@@ -518,6 +518,9 @@ textarea {
 .bold {
   font-weight: bold; }
 
+/* .d-none{
+  display: none;
+} */
 .btn {
   border: none;
   font-size: 24px;
@@ -1330,7 +1333,8 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 999;
-  display: none; }
+  display: none;
+  overflow-y: auto; }
   .js-calc-modal__modal {
     display: block;
     position: absolute;
@@ -1350,15 +1354,17 @@ textarea {
       .js-calc-modal__modal {
         padding: 20px; } }
     .js-calc-modal__modal p {
-      color: black; }
+      color: black;
+      font-weight: 600;
+      font-size: 18px; }
       @media screen and (max-width: 576px) {
         .js-calc-modal__modal p {
           font-size: 16px;
           margin-bottom: 8px; } }
     .js-calc-modal__modal h3 {
-      font-size: 30px;
-      margin-bottom: 40px;
-      font-weight: 700; }
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 500; }
       @media screen and (max-width: 576px) {
         .js-calc-modal__modal h3 {
           font-size: 24px;
@@ -1372,6 +1378,10 @@ textarea {
         font-size: 16px; }
         .js-calc-modal__modal ul li span {
           font-weight: bold; }
+    .js-calc-modal__modal .mylabel {
+      font-weight: bold; }
+    .js-calc-modal__modal span {
+      font-weight: bold; }
   .js-calc-modal__modal a.close-modal {
     position: absolute;
     top: 20px;
