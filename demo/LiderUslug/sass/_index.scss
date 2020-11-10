@@ -1,16 +1,16 @@
 // Tags section
 .tags-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
   padding-top: 20px;
 
   h1 {
     width: 315px;
     line-height: 1;
     margin-top: 5px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+  }
+
+  .breadcrumbs {
+    padding-bottom: 20px;
   }
 
   .tags {
@@ -32,7 +32,7 @@
     color: #636363;
     border-radius: 5px;
     border: 1px solid #f3f3f3;
-    background-color: $color-border;
+    background-color: $color-border2;
     &:hover {
       background-color: lighten($color-border, 5%);
     }
@@ -48,7 +48,7 @@
   select {
     width: 100%;
     box-sizing: border-box;
-    border-color: $color-border;
+    border-color: $color-border2;
     color: #000;
     background-color: #fff;
     border-radius: 0;
@@ -113,7 +113,7 @@
       padding: 7px 12px;
 
       &:focus ~ .content-search__btn {
-        border-left-color: $blue;
+        border-left-color: $blue2;
       }
     }
   }
@@ -126,7 +126,7 @@
     color: #818181;
     background-color: #f8f8f8;
     border-radius: 0 4px 4px 0;
-    border-color: $color-border;
+    border-color: $color-border2;
 
     &:hover {
       color: #818181;
@@ -153,7 +153,7 @@
 
       &_number {
         font-size: 36px;
-        color: $green;
+        color: $green2;
         padding-left: 17px;
       }
       &_text {
@@ -206,8 +206,8 @@
 
     hr {
       border: none; /* Убираем границу для браузера Firefox */
-      color: $color-border; /* Цвет линии для остальных браузеров */
-      background-color: $color-border; /* Цвет линии для браузера Firefox и Opera */
+      color: $color-border2; /* Цвет линии для остальных браузеров */
+      background-color: $color-border2; /* Цвет линии для браузера Firefox и Opera */
       height: 1px;
       margin: 20px 0 10px;
     }
@@ -226,7 +226,7 @@
         width: 100%;
         padding: 8px;
         &:focus {
-          border-color: $color-border;
+          border-color: $color-border2;
         }
       }
     }
@@ -267,12 +267,12 @@
         left: 0;
         height: 16px;
         width: 16px;
-        border: 2px solid $blue;
+        border: 2px solid $blue2;
         border-radius: 2px;
       }
 
       label input:checked ~ .checkmark {
-        background-color: $blue;
+        background-color: $blue2;
       }
 
       .checkmark:after {
@@ -296,27 +296,27 @@
       }
     }
     .filter-btn {
-      background-color: $blue;
+      background-color: $blue2;
       color: white;
       font-size: 16px;
       padding: 5px;
-      border: 2px solid $blue;
+      border: 2px solid $blue2;
       margin-bottom: 10px;
       &:hover {
-        color: $blue;
+        color: $blue2;
         background-color: white;
       }
     }
 
     &_category {
       .return {
-        color: $grey;
+        color: $grey2;
         display: flex;
         align-items: center;
         line-height: 1.5;
         margin-bottom: 10px;
         &:before {
-          color: $color-border;
+          color: $color-border2;
           font-family: "Font Awesome 5 Free";
           font-weight: 700;
           content: "\f053";
@@ -330,7 +330,7 @@
         margin: 0 0 0 20px;
         padding: 0;
 
-        a{
+        a {
           font-size: 14px;
         }
 
@@ -359,18 +359,18 @@
 
             &:hover {
               a {
-                color: $orange;
+                color: $orange2;
               }
 
               &::before {
-                color: $orange;
+                color: $orange2;
               }
             }
           }
 
           &:before {
             width: 6%;
-            color: $color-border;
+            color: $color-border2;
             font-family: "Font Awesome 5 Free";
             font-weight: 700;
             content: "\f078";
@@ -382,7 +382,7 @@
               color: #000;
             }
             &::before {
-              color: $color-border;
+              color: $color-border2;
             }
           }
         }
@@ -396,11 +396,11 @@
 
           &:hover {
             a {
-              color: $orange;
+              color: $orange2;
             }
 
             &::before {
-              color: $orange;
+              color: $orange2;
             }
           }
 
@@ -410,7 +410,7 @@
 
           &:before {
             width: 5%;
-            color: $color-border;
+            color: $color-border2;
             font-family: "Font Awesome 5 Free";
             font-weight: 700;
             content: "\f054";
@@ -427,6 +427,9 @@
     }
 
     &_tags {
+      ul{
+        margin: 0;
+      }
     }
 
     &_contact {
@@ -489,7 +492,7 @@
           }
         }
         button.active {
-          background-color: $blue;
+          background-color: $blue2;
           color: white;
         }
       }
@@ -548,5 +551,130 @@
 
   .catalog__pagination {
     margin-bottom: 20px;
+  }
+}
+
+.offer-block {
+  background-color: #fdf6e6;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin: 40px 0;
+
+  border: 1px solid $color-border2;
+
+  &__text {
+    width: 48%;
+    padding: 20px 0 40px 70px;
+    .icon-text {
+      .text {
+        font-size: 16px;
+      }
+    }
+  }
+  &__img {
+    width: 48%;
+    &_block {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.popular-services {
+  .works-cards {
+    padding: 0;
+
+    li {
+      height: 220px;
+    }
+  }
+}
+
+.pricelist-block {
+  margin-top: 40px;
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    display: block;
+    margin: 20px 0;
+    color: $orange2;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.home-review {
+  margin: 40px 0;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 48.5%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    &_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &_name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &_stars {
+      }
+    }
+    &_content {
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid $color-border2;
+      margin: 12px 0 16px;
+      p{
+        margin: 0;
+      }
+    }
+    &_details {
+      &_date {
+        color: $grey2;
+        margin-bottom: 10px;
+      }
+      &_author {
+        margin-bottom: 10px;
+        a{
+          color: $blue2;
+        }
+      }
+      &_order {
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.find-more-block {
+  margin: 40px 0;
+  .tags {
+    ul {
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
