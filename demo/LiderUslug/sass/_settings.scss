@@ -38,11 +38,9 @@ $color-border2: var(--color-border);
 $font: "Liberation Sans";
 $font-bold: "Liberation Sans Bold";
 
-@mixin icon($content, $weight) {
-  font-family: "Font Awesome 5 Free";
-  content: $content;
-  font-weight: $weight;
-}
+$bs: 0px 3px 4px 0px #616161;
+
+
 
 @font-face {
   font-family: "Liberation Sans Bold";
@@ -185,7 +183,8 @@ hr {
 }
 
 .container {
-  width: 1364px;
+  max-width: 1364px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
