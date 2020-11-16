@@ -1,5 +1,2 @@
-# Cameron Class Resume / Demo sites
+# Cameron Class Resume 
 
-<a href="https://cameronclass.github.io/demo/OlegsPage/" target="_blank"></a>
-<br>
-<a href="https://cameronclass.github.io/demo/LiderUslug/" target="_blank"></a>
